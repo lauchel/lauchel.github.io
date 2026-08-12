@@ -1,0 +1,20 @@
+{
+  "name": "Rachel",
+  "target_roles": ["FP&A Analyst", "Financial Analyst", "Senior Financial Analyst"],
+  "comp_floor": 81000,
+  "must_haves": [
+    "H-1B sponsorship or E-Verify enrollment",
+    "SOC 13-2051 (Financial Analysts) eligible title/duties"
+  ],
+  "education": "B.A. Finance & Information Systems (Data Science minor), UW Foster School of Business; pursuing CFI FMVA certification",
+  "technical_toolkit": ["Excel (advanced)", "SQL", "Power Query", "Power BI", "QuickBooks", "HTML/JavaScript dashboards"],
+  "proof_points": [
+    {"tag": "fpna", "text": "Handle FP&A, multi-entity reporting, and bookkeeping for a multi-entity real estate development and property management firm"},
+    {"tag": "bankruptcy", "text": "Prepared Chapter 11 bankruptcy schedules (A/B, D, E/F, G, H, Form 207) across multiple property assets and secured/unsecured creditors"},
+    {"tag": "systems", "text": "Evaluated and vetted fintech platforms (e.g. rent collection software) for newly acquired property assets"},
+    {"tag": "vendor_analysis", "text": "Ran vendor contract analysis (cost comparison, terms) across multiple operating locations"},
+    {"tag": "data_consolidation", "text": "Used Power Query to consolidate data across QuickBooks, a property management system, and email records to support an acquisition decision"},
+    {"tag": "portfolio", "text": "Built 5 interactive financial analysis web apps (forecasting, unit economics, SQL database, geographic revenue) using Chart.js, sql.js, and SEC filing data"},
+    {"tag": "prioritization", "text": "Managed competing month-end close deadlines against ad hoc reporting requests without missing close"}
+  ]
+}
