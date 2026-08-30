@@ -1,0 +1,502 @@
+{
+  "_comment": "Behavioral interview story bank. Text is the candidate's own locked wording - rephrase for delivery, never invent facts, numbers, or outcomes not present here.",
+  "version": 1,
+  "framework": "Amazon Leadership Principles",
+  "stories": [
+    {
+      "id": "S3",
+      "title": "Packwood Pause",
+      "setting": "Packwood RV park (100 units)",
+      "lps": ["Have Backbone, Disagree and Commit", "Deliver Results"],
+      "situation": [
+        "Packwood is a 100-unit RV park at $1,500/month rent per unit.",
+        "Ownership wanted to start a $200K renovation during peak season.",
+        "Their thinking: renovate now, get rents up to $2,500 sooner - a $1,000/month uplift per unit, $100K/month total."
+      ],
+      "task": [
+        "I thought the timing was wrong.",
+        "I needed to show ownership the full cost of renovating during peak versus waiting for off-season."
+      ],
+      "action": [
+        "Built a side-by-side analysis comparing peak vs off-season.",
+        "Peak: 100% occupancy, renovation displaces half the units, losing $75K/month. Over 8 months, $600K lost. Plus carrying the $200K loan during highest-revenue period.",
+        "Off-season: occupancy drops to 70%, displacing only 35 occupied units at $52.5K/month. Over 8 months, $420K lost.",
+        "Difference: $180K less revenue lost by waiting.",
+        "Modeled break-even: $1,000/month uplift per unit would take 6 months post-completion to recover peak losses - 14 months total.",
+        "Ownership pushed back - didn't want to miss out on higher rents sooner.",
+        "Walked them through the side-by-side showing waiting actually gets to profitability faster."
+      ],
+      "result": [
+        "Ownership delayed renovation to off-season.",
+        "Protected $600K in peak revenue.",
+        "Saved $180K in displaced-tenant losses compared to peak scenario."
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "River Oaks Tax Assumption Error",
+      "setting": "River Oaks RV park acquisition, Lewis County (~$2M)",
+      "lps": ["Earn Trust", "Insist on the Highest Standards", "Dive Deep", "Are Right, A Lot"],
+      "is_failure_story": true,
+      "situation": [
+        "Evaluating purchase of River Oaks RV park in Lewis County for roughly $2M.",
+        "I built the pro forma to forecast operating income and loan coverage."
+      ],
+      "task": [
+        "Needed to accurately estimate annual operating costs, especially property taxes, to meet lender's 1.25x DSCR requirement."
+      ],
+      "action": [
+        "Made two mistakes in my initial draft.",
+        "First: mistook seller's $3,583 semi-annual tax payment for the full annual bill. Actual annual tax was $7,126.",
+        "Second: applied a flat 3% inflation rate to historical costs, but acquisition would trigger a county revaluation against our $2M purchase price.",
+        "That meant an unexpected $4,300 annual expense jump.",
+        "Consulted CPA on revaluation mechanics and staff accountant on billing structure. Both inputs changed my model.",
+        "Corrected both errors, rebuilt the cash flow model, brought updated numbers to leadership showing NOI was overstated."
+      ],
+      "result": [
+        "Leadership negotiated $55K price reduction using my corrected model.",
+        "Caught tax errors and protected debt covenant thresholds.",
+        "Saved over $4K annually in unexpected costs."
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "Packwood Weekly Occupancy Dashboard",
+      "setting": "Packwood RV park (100 units)",
+      "lps": ["Deliver Results", "Invent and Simplify", "Bias for Action", "Customer Obsession", "Think Big"],
+      "situation": [
+        "Packwood is a 100-unit RV park.",
+        "Onsite manager could see bookings in the system's calendar, but no structured report tracking pacing against targets.",
+        "Only formal reporting was month-end reports - by then the month was closed and too late to act."
+      ],
+      "task": [
+        "Needed to build a forward-looking tool that shows how we're pacing for the next few weeks, so operations can adjust pricing before we lose revenue."
+      ],
+      "action": [
+        "Pulled reservation data from Camplife, our booking software. Raw export was messy: a guest booking Friday to Sunday shows as one row when I needed each night as its own line; dates came as text with timestamps Excel couldn't read; the export lumps firewood and pet fees in with site rental charges.",
+        "Wrote a VBA macro to handle it all. Download CSV, click one button: strips extra charges, fixes dates, splits multi-night bookings, drops clean data into calculation tab.",
+        "Dashboard shows next 4 weeks: occupancy rate, sites still open, average rate per site per night, revenue per available site.",
+        "If any period 3+ weeks out is below 90% occupancy, cell turns red.",
+        "Before any promotion runs, stress tested three discount levels - 10%, 15%, 20%. 10% didn't move bookings, 20% cut too deep into margin, 15% was the sweet spot."
+      ],
+      "result": [
+        "Went from only seeing revenue after month closed to seeing 4 weeks ahead.",
+        "Saved about 4 hours a week.",
+        "Mid-May: dashboard flagged weekend at 68% occupancy, 32 sites open. Ops manager ran 15% discount. Booked 18 of 32 sites, pushed occupancy to 86%, protected $2,500 that weekend.",
+        "Over one quarter, occupancy on slow weekends went up 12%, captured extra $15K."
+      ],
+      "spoken_result": "Before, we only saw revenue after the month closed. Now we could see four weeks out. In mid-May it flagged a weekend sitting at 68% - the ops manager sent a discount to past guests and we filled it to 86% before that weekend arrived. The next month we ran that same play a few more times, and slow weekends stopped catching us off guard.",
+      "delivery_notes": [
+        "Lead with the trimmed spoken_result. Hold the $2,500 / 12% / $15K / 4-hours figures as pocket answers - offer them only when asked.",
+        "Say 'revenue per available site', not 'RevPAS'. Avoid industry jargon that invites a probe."
+      ],
+      "pocket_answers": {
+        "How did you communicate this tool?": "I walked the ops manager through it - showed them how to read the dashboard, what the red flag means, and what action to take when they see it. Took one Monday morning walkthrough and they were using it on their own after that.",
+        "Doesn't Camplife already do this?": "Camplife shows you raw bookings and generates reports, but it doesn't track pacing against a target or flag low occupancy. It tells you what you have - it doesn't tell you whether that's good enough or what to do about it.",
+        "What KPIs drove the promotion decision?": "Three things: occupancy rate against our 90% target, average rate per site per night, and revenue per available site. Occupancy tells you how full you are, average rate tells you what you're earning, and revenue per available site combines both - it shows the total yield on your inventory whether it's occupied or not.",
+        "Did it save you time?": "About four hours a week of manual pulling.",
+        "Any dollar impact?": "That one weekend was roughly $2,500 protected. Over the quarter it was around $15K."
+      },
+      "open_questions": [
+        "UNRESOLVED - refresh cadence is missing from the Action. Was it weekly, and was it Monday?",
+        "UNRESOLVED - who actually ran the macro each cycle, the candidate or the ops manager? The 'How did you communicate this tool?' pocket answer says they used it on their own; that contradicts the candidate refreshing it weekly. Pick one before using both in the same loop.",
+        "UNRESOLVED - did the red flag reach the manager as a conversation, an email, or a shared file?"
+      ]
+    },
+    {
+      "id": "S7",
+      "title": "Packwood Consolidation",
+      "setting": "Packwood RV park, rolled out across 4 properties",
+      "lps": ["Dive Deep", "Invent and Simplify"],
+      "situation": [
+        "Packwood RV park had cash from 4 sources - short-term platform, long-term platform, onsite manager cash, and QuickBooks.",
+        "Process was entirely manual - onsite manager sent receipts, I entered into QuickBooks by hand.",
+        "With 4 sources and manual entry, transactions were getting missed or entered incorrectly."
+      ],
+      "task": [
+        "Needed to build a single reconciliation tracker matching every dollar across all 4 sources and catching discrepancies from manual entry."
+      ],
+      "action": [
+        "Used Power Query to pull exports from each platform into one workbook, standardize formats.",
+        "Built VBA matching logic - same tenant could appear under different names across systems.",
+        "Macro mapped name variations to single tenant ID, cross-referenced payment amounts and dates.",
+        "Found $10K in discrepancies - transactions missed during manual entry.",
+        "Designed it so both onsite manager and I could see the same reconciled data instead of me chasing receipts.",
+        "Rolled out across 4 properties."
+      ],
+      "result": [
+        "Caught $10K in discrepancies across 4 properties.",
+        "Every source now reconciled automatically every month.",
+        "Tracker became standard process for all properties with onsite cash collection."
+      ],
+      "delivery_notes": [
+        "Overlaps heavily with S19 (both are multi-source consolidation + VBA tenant-name matching). Do not use both in the same loop."
+      ]
+    },
+    {
+      "id": "S8",
+      "title": "Signature Photo Client Communication",
+      "setting": "Signature Photo",
+      "lps": ["Customer Obsession", "Earn Trust", "Invent and Simplify", "Have Backbone, Disagree and Commit"],
+      "situation": [
+        "At Signature Photo, one client hired us to digitize photos of his late mother.",
+        "He called every few days to check in - extra time on top of actual work.",
+        "We had 20-30 concurrent projects."
+      ],
+      "task": [
+        "Cut down his calls and give him more visibility into progress."
+      ],
+      "action": [
+        "Proposed automated weekly email with status page showing actual photos and next steps.",
+        "Leadership pushed back - worried about losing human touch.",
+        "Teammate pushed back - tight schedule for setup.",
+        "Explained email wasn't replacing the relationship - just removing the wait. Keeping bi-weekly check-in calls.",
+        "Showed teammate it would take 2 days to build but save far more once running.",
+        "Both agreed.",
+        "Built it in Excel with mail merge.",
+        "Checked in after 2 weeks - client said seeing real photos and knowing next steps gave him the reassurance he'd been calling for.",
+        "Asked owner which clients were highest priority and why, asked colleague which projects caused most delays. Their input shaped prioritization."
+      ],
+      "result": [
+        "Calls dropped to almost none.",
+        "Rolled out to 5 other projects.",
+        "Staff check-in time dropped from 5 hours/week to 1 hour - 80% reduction.",
+        "Freed up time to take on more projects without adding headcount."
+      ],
+      "delivery_notes": [
+        "The only story outside the real-estate firm. Use it deliberately to vary the setting across a loop."
+      ]
+    },
+    {
+      "id": "S19",
+      "title": "P&L Consolidation (Power Query/VBA)",
+      "setting": "Packwood, rolled out across 10 entities",
+      "lps": ["Invent and Simplify", "Deliver Results"],
+      "situation": [
+        "CPA needed one consolidated P&L for Packwood for tax filing.",
+        "Rent income from 4 sources - Camplife, Hemlane, texted payments, mailed checks. Each tracked separately, which worked for day-to-day.",
+        "Nobody had combined all 4 into one P&L before. When I tried for the first time, numbers didn't add up - CPA kept questioning double-counted income.",
+        "Manual cross-referencing took about 2 weeks."
+      ],
+      "task": [
+        "Produce clean, accurate consolidated P&L the CPA could file confidently without back-and-forth - and build a repeatable process for every year."
+      ],
+      "action": [
+        "Each platform exported differently - Camplife as CSV, Hemlane as Excel - different columns, date formats, naming conventions.",
+        "Same tenant might be 'John Smith' in Camplife and 'J. Smith' in mailed check log.",
+        "Power Query pulled each export into one workbook, standardized columns.",
+        "VBA macro: first piece was lookup table mapping tenant name variations to single master ID. Second piece was duplicate detection scanning amounts, dates, and tenant IDs across all 4 sources.",
+        "Caught 10-20 duplicate payments at $1-2K each - tenants who paid through Camplife and also had mailed check logged for same month. $20K total.",
+        "Cleaned it all, validated against QuickBooks, delivered corrected P&L to CPA.",
+        "Rolled out across all 10 entities."
+      ],
+      "result": [
+        "P&L prep from 2 weeks to 1 day across 10 entities.",
+        "Caught $20K in double-counted income before CPA filing.",
+        "CPA questions stopped.",
+        "Tool became standard for all tax filings."
+      ],
+      "delivery_notes": [
+        "Overlaps heavily with S7. Do not use both in the same loop - S19 is the stronger version (bigger scale, clearer stakes)."
+      ]
+    },
+    {
+      "id": "S26",
+      "title": "River Oaks Washer/Dryer Pushback",
+      "setting": "River Oaks RV park (100 units)",
+      "lps": ["Frugality", "Have Backbone, Disagree and Commit", "Are Right, A Lot", "Earn Trust"],
+      "situation": [
+        "River Oaks is a 100-unit RV park making $1,000/month from coin-op washers/dryers.",
+        "Ownership wanted to replace 4 of 8 sets with tap-payment machines - $1,500 each, $6,000 total.",
+        "They assumed 50% revenue uplift - extra $500/month."
+      ],
+      "task": [
+        "Validate the 50% assumption before committing $6,000."
+      ],
+      "action": [
+        "Pulled usage data from comparable park, looked at occupancy, checked what residents actually pay per load.",
+        "Realistic uplift was 22% ($220/month), not 50%. At $220/month, payback on $6,000 stretches to 27 months on working machines.",
+        "Ownership pushed back - felt it would improve the park.",
+        "Acknowledged their point, walked them through why numbers didn't justify full replacement.",
+        "Offered alternative: coin-to-card adapters on existing machines. $560 upfront for all 16 devices, plus $69/month subscription.",
+        "Same tap capability, $220/month in extra revenue, $69/month subscription cost.",
+        "Low-risk test - if tenants don't use it, pull it without being stuck with $6,000."
+      ],
+      "result": [
+        "Ownership went with adapters.",
+        "Revenue actually increased 30% - $300/month - beating 22% estimate.",
+        "Saved $5,440 upfront.",
+        "Track results via PayRange transaction dashboard month over month."
+      ],
+      "delivery_notes": [
+        "Only Frugality story in the bank. Protect it - don't spend it on a Have Backbone prompt if Frugality might come up later in the loop."
+      ]
+    },
+    {
+      "id": "S27",
+      "title": "SQL Rent Roll Consolidation",
+      "setting": "10-property portfolio, ~700 tenants",
+      "lps": ["Learn and Be Curious", "Customer Obsession", "Dive Deep", "Think Big"],
+      "situation": [
+        "When portfolio was smaller, ownership tracked each property's rent roll individually - worked fine with a few properties.",
+        "By the time I joined, portfolio had grown to 10 properties, about 700 tenants. Each still in its own Excel sheet.",
+        "Looking at properties one by one meant nobody could see portfolio-level patterns. Caught a delinquent tenant only because I happened to open that specific sheet."
+      ],
+      "task": [
+        "That made me realize we needed a consolidated view. If one slipped through, others probably were too. Wanted to build something leadership could rely on for the full portfolio picture every month."
+      ],
+      "action": [
+        "Taught myself SQL through YouTube and Claude AI.",
+        "Built SQLite database, loaded all 700 tenants.",
+        "Can run queries in seconds - filter tenants owing more than $5K or more than 5 months, pull total rent revenue by month or year, all in one place.",
+        "Built monthly summary report tracking 5 KPIs: rent collection rate, vacancy by property, aging buckets at 30/60/90, revenue per occupied unit, expense per unit."
+      ],
+      "result": [
+        "30-45 minutes to under 1 minute.",
+        "Leadership gets consolidated monthly report they never had.",
+        "Catch delinquencies earlier across full portfolio."
+      ]
+    },
+    {
+      "id": "S28",
+      "title": "Month-End Close Accrual",
+      "setting": "Month-end close",
+      "lps": ["Bias for Action", "Deliver Results"],
+      "situation": [
+        "Month-end close. CPA waiting on P&L for filings.",
+        "3 vendor bills totaling $50K hadn't come in."
+      ],
+      "task": [
+        "Either hold the close or find a way to keep moving without actual bills."
+      ],
+      "action": [
+        "Considered three options: call vendors to rush invoices (unrealistic timeline based on past experience); ask CPA for deadline extension (their filing schedule couldn't flex); estimate and accrue - went with this.",
+        "Classic two-way door: if actuals come in different, true up next month.",
+        "For each vendor: pulled PO contract amounts, cross-checked prior month actuals, looked at historical averages.",
+        "Accrued $50K across all three. Delivered P&L to CPA with accrued items noted."
+      ],
+      "result": [
+        "Close went out on time. CPA had what they needed.",
+        "Estimates were about 80% accurate.",
+        "Trued up the difference next month. No filing impact."
+      ]
+    },
+    {
+      "id": "S29",
+      "title": "Mercer Island Duplicate Invoice",
+      "setting": "Mercer Island house renovation, $50K monthly CapEx",
+      "lps": ["Insist on the Highest Standards", "Earn Trust", "Dive Deep", "Ownership"],
+      "has_variants": true,
+      "situation": [
+        "Managing vendor payments for Mercer Island house renovation. $50K monthly CapEx budget. Tight deadlines."
+      ],
+      "task": [
+        "Subcontractor submitted $20K invoice for structural concrete work. Needed to verify every dollar before releasing funds."
+      ],
+      "variants": {
+        "A - Insist on the Highest Standards": [
+          "Cross-referenced invoice against QuickBooks and site progress photos.",
+          "Found $8,500 foundation prep charge already paid 2 months earlier.",
+          "Met with contractor and site manager collaboratively. Honest admin error - their accounting person re-billed a milestone.",
+          "Relationship got stronger. Built Excel template flagging duplicates."
+        ],
+        "B - Failure / Earn Trust": [
+          "Almost sent report trusting raw GL at face value.",
+          "Caught myself, paused, audited against source documents.",
+          "Found the $8,500 duplicate. Built cross-reference check."
+        ]
+      },
+      "result": [
+        "Prevented $8,500 duplicate payment.",
+        "Contractor started proactively reviewing draws before submission.",
+        "Template adopted across all active projects."
+      ],
+      "delivery_notes": [
+        "HARD RULE: never use both variants with the same interviewer."
+      ]
+    },
+    {
+      "id": "S30",
+      "title": "Database Migration Deadline Miss",
+      "setting": "Centralized SQLite migration, 18 months of GL data",
+      "lps": ["Earn Trust", "Insist on the Highest Standards"],
+      "is_failure_story": true,
+      "target_questions": ["Q2", "Q4"],
+      "situation": [
+        "Decided to migrate property financial records into centralized SQLite database.",
+        "Committed to completing within 2 weeks. 18 months of historical GL data."
+      ],
+      "task": [
+        "Extract, standardize, and upload all vendor payment logs and CapEx records."
+      ],
+      "action": [
+        "Day 8: found 7 vendors logged under multiple names, GL codes didn't match across files.",
+        "150+ transactions scattered across wrong P&L lines - mixing OpEx and CapEx.",
+        "Audited past invoices to reclassify $40K properly.",
+        "Alerted manager on day 11. Took full ownership for underestimating data-cleaning scope.",
+        "Showed what was done, proposed 4-day extension rather than pushing dirty data."
+      ],
+      "result": [
+        "Launched 4 days late with 100% accurate data.",
+        "Manager said I should have scoped data quality before committing. He was right.",
+        "From then on, always run data quality check before committing to any migration timeline.",
+        "Validation macro became standard for all future uploads, cutting verification time by 60%."
+      ]
+    },
+    {
+      "id": "S31",
+      "title": "Concrete Weekly Payouts",
+      "setting": "Concrete apartment project, $100K monthly CapEx",
+      "lps": ["Have Backbone, Disagree and Commit", "Deliver Results"],
+      "target_questions": ["Q3"],
+      "situation": [
+        "Concrete apartment project, running bi-weekly payouts on $100K monthly CapEx budget.",
+        "Project manager wanted weekly to keep contractors on-site and speed timeline."
+      ],
+      "task": [
+        "Evaluate cash flow impact and ensure working capital and invoice controls stayed stable."
+      ],
+      "action": [
+        "Disagreed. Showed three risks: ACH fees increase 15%, double GL reconciliation workload, higher duplicate payment risk.",
+        "Proposed staying bi-weekly.",
+        "Leadership overruled - vendor satisfaction and speed mattered more.",
+        "Committed fully. Built automated Excel macro flagging duplicate invoice numbers and cross-referencing weekly draws against contract limits."
+      ],
+      "result": [
+        "Construction accelerated 10 days.",
+        "Processing costs rose, reconciliation jumped 6 hours/week - exactly what I flagged.",
+        "Maintained 100% accuracy with zero duplicates.",
+        "Learned that operational momentum sometimes outweighs financial friction."
+      ],
+      "delivery_notes": [
+        "This is the true 'disagree and commit' story - the commit half is what makes it land. S3 and S26 are backbone stories where the candidate won; this is the one where they lost and executed anyway."
+      ]
+    },
+    {
+      "id": "S32",
+      "title": "Packwood Cash Crunch / Forward-Looking Cash Tracker",
+      "setting": "Packwood RV park (100 units)",
+      "lps": ["Ownership", "Bias for Action", "Invent and Simplify", "Think Big"],
+      "situation": [
+        "Packwood is a 100-unit RV park. RV parks are seasonal - off-season revenue drops to $50K/month, fixed costs run $55K.",
+        "Cover gap with cash reserves from summer.",
+        "Electrical upgrade was planned for spring. Contractor finished early, billed full $100K in February - lowest-revenue month."
+      ],
+      "task": [
+        "Monthly outflows spiked from $55K to $155K against $50K revenue. $105K gap.",
+        "Needed to cover it without missing payroll or mortgage, then make sure we never get blindsided by timing like this again."
+      ],
+      "action": [
+        "Immediate fix: called contractor, renegotiated payment - 50/50 split, $50K now, $50K pushed 45 days. Drew $30K from revolving line of credit, repaid once March bookings picked up.",
+        "Long-term fix: built rolling 30-day forward-looking cash tracker in Excel.",
+        "Shows three things day by day: cash coming in from booking software, cash going out for vendors/payroll/utilities/debt service, projected balance at end of each week.",
+        "If any week drops below $25K, sheet turns red.",
+        "Now time CapEx around summer when revenue is high, stagger contractor invoices to avoid seasonal stacking."
+      ],
+      "result": [
+        "Covered February without missing payroll or mortgage.",
+        "Zero cash surprises since building the tracker.",
+        "Went from managing cash month to month to planning around seasonal cycles."
+      ],
+      "delivery_notes": [
+        "Shares the 'built a forward-looking tracker with a red threshold' shape with S6. If both are used in one loop, lead S32 with the crisis (the $105K gap and the renegotiation) rather than the tool."
+      ]
+    },
+    {
+      "id": "S33",
+      "title": "River Oaks Billing Automation (Google Sheets/Apps Script)",
+      "setting": "River Oaks RV park (42 units)",
+      "lps": ["Invent and Simplify", "Deliver Results", "Dive Deep", "Learn and Be Curious", "Customer Obsession"],
+      "situation": [
+        "Recently acquired River Oaks, a 42-unit RV park. No billing system in place - had to build from scratch.",
+        "Onsite manager tracked check payments in a spreadsheet. Online payments came through Baselane - separate system.",
+        "Manually pulling from both sources, calculating each tenant's utility bill, building individual statements one by one.",
+        "Process took about 5 hours every month."
+      ],
+      "task": [
+        "Build one centralized system where onsite manager's data and Baselane talk to each other.",
+        "Automate all utility calculations and generate all 42 invoices with one click.",
+        "Without changing onsite manager's existing workflow."
+      ],
+      "action": [
+        "Built entire pipeline in Google Sheets with Apps Script.",
+        "Set up clean buffer zones - two import tabs for pasting data as values only. Tried linking directly to manager's live sheet first, hit permission errors and formatting kept breaking the ledger.",
+        "Built self-healing master ledger with array formula stacking physical and digital payments. Hit circular dependency - fixed by locking row limits.",
+        "Noticed Baselane's data was inconsistent - sometimes '32 Jennifer Holmes,' sometimes just '32.' Rewrote formula to separate numbers from text, added VLOOKUP that auto-finds tenant name from rent roll.",
+        "Automated utility math - electric bills at $0.07394/kWh + $3 service fee + 6% tax. Initially multiplying current reading instead of usage - caught it, rebuilt to subtract previous read.",
+        "Deleted 42 manual tabs, replaced with single dynamic template. Wrote Apps Script to generate all 42 PDFs with one click. Hit Google's API rate limit (Error 429) - added retry loop with 3-second delay."
+      ],
+      "result": [
+        "Monthly billing from 5 hours to 30 minutes.",
+        "4-step routine: paste data, let ledger update, click button, 42 PDFs land in Google Drive.",
+        "Zero manual math, zero duplicate tabs, zero formatting errors."
+      ],
+      "delivery_notes": [
+        "Richest Dive Deep detail in the bank - the debugging beats (circular dependency, Error 429, wrong meter math) are what sell it. Don't compress them away."
+      ]
+    },
+    {
+      "id": "S34",
+      "title": "Concrete R&M Variance Investigation",
+      "setting": "Concrete apartment project",
+      "lps": ["Dive Deep", "Insist on the Highest Standards", "Deliver Results", "Earn Trust", "Are Right, A Lot", "Ownership"],
+      "situation": [
+        "During month-end variance analysis for Concrete apartment project, Repairs and Maintenance line item triggered 10% negative variance flag two months in a row.",
+        "Bleeding cash on unit turns - cleaning and painting when tenants move out."
+      ],
+      "task": [
+        "Property manager assumed more move-outs than usual.",
+        "Needed to figure out if this was volume or cost, and stop the overrun."
+      ],
+      "action": [
+        "Didn't accept the manager's assumption.",
+        "Exported raw QuickBooks GL data, ran pivot table by vendor and unit.",
+        "Found it was cost, not volume - still turning about 8 units per month, same as usual.",
+        "Primary painting vendor had raised per-unit price from $1,250 to $1,500 - 20% increase on standard 2-bedroom repaint - without renegotiating contract.",
+        "8 units x $250 overage = exactly the $2,000 monthly variance.",
+        "Property manager was approving invoices in a stack, didn't catch the rate creep.",
+        "Flagged to leadership immediately, paused vendor, partnered with operations to build standardized rate card."
+      ],
+      "result": [
+        "Property manager can only approve invoices matching the rate card.",
+        "R&M variance back to zero the following month.",
+        "Saved roughly $2,000/month in bloated vendor costs.",
+        "Proved the value of investigating at GL invoice level rather than accepting high-level assumptions."
+      ],
+      "delivery_notes": [
+        "Strongest Dive Deep story: a stated assumption, a disproof, and an arithmetic reconciliation that lands exactly on the variance. Default pick for 'tell me about a time you dug into data.'"
+      ]
+    }
+  ],
+  "lp_index": {
+    "Customer Obsession": ["S6", "S8", "S27", "S33"],
+    "Ownership": ["S29", "S32", "S34"],
+    "Invent and Simplify": ["S6", "S7", "S8", "S19", "S32", "S33"],
+    "Are Right, A Lot": ["S5", "S26", "S34"],
+    "Learn and Be Curious": ["S27", "S33"],
+    "Hire and Develop the Best": [],
+    "Insist on the Highest Standards": ["S5", "S29", "S30", "S34"],
+    "Think Big": ["S6", "S27", "S32"],
+    "Bias for Action": ["S6", "S28", "S32"],
+    "Frugality": ["S26"],
+    "Earn Trust": ["S5", "S8", "S26", "S29", "S30", "S34"],
+    "Dive Deep": ["S5", "S7", "S27", "S29", "S33", "S34"],
+    "Have Backbone, Disagree and Commit": ["S3", "S8", "S26", "S31"],
+    "Deliver Results": ["S3", "S6", "S19", "S28", "S31", "S33", "S34"],
+    "Strive to be Earth's Best Employer": [],
+    "Success and Scale Bring Broad Responsibility": []
+  },
+  "coverage_gaps": [
+    "No story for Hire and Develop the Best, Strive to be Earth's Best Employer, or Success and Scale Bring Broad Responsibility. The last two rarely come up for individual-contributor analyst loops; Hire and Develop does surface as mentoring/knowledge-transfer prompts. The closest available material is the ops-manager walkthrough in S6 and the shared-visibility design in S7.",
+    "Frugality has exactly one story (S26). A second Frugality prompt in the same loop has no backup.",
+    "Learn and Be Curious has two (S27, S33), both self-taught-a-technology stories with the same arc.",
+    "14 of 15 stories are set at the same real-estate firm; S8 (Signature Photo) is the only outside setting. Across a 5-interviewer loop the setting will repeat - vary the property and the stakeholder so the stories don't blur together.",
+    "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss."
+  ],
+  "usage_rules": [
+    "Never use both S29 variants with the same interviewer.",
+    "Never use S7 and S19 in the same loop - same mechanism, S19 is stronger.",
+    "Do not invent numbers, outcomes, or LP mappings not present in this file.",
+    "S6's refresh cadence and tool ownership are unresolved - see its open_questions before using it."
+  ]
+}
