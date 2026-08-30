@@ -91,7 +91,8 @@
         "Lead with the trimmed spoken_result. Hold the $2,500 / 12% / $15K / 4-hours figures as pocket answers - offer them only when asked.",
         "Say 'revenue per available site', not 'RevPAS'. Avoid industry jargon that invites a probe.",
         "Don't skip the cadence beat. 'They called me when it went red' is the adoption proof - it shows the tool worked without the candidate pushing it, which is what separates a built tool from a used one.",
-        "Weekly cadence is confirmed; the specific day is not established. Say 'once a week', not 'Monday morning'."
+        "Weekly cadence is confirmed; the specific day is not established. Say 'once a week', not 'Monday morning'.",
+        "DO NOT LEAD WITH THIS FOR BIAS FOR ACTION. The BFA tag here is the weak sense - nobody asked for the tool and the candidate built it anyway. But a BFA prompt asks about moving fast under uncertainty, and this is a careful multi-week build. Answering a speed question with a tool-building story reads as missing the question. Route BFA prompts to S28 first, S32 second."
       ],
       "pocket_answers": {
         "How did you communicate this tool?": "I walked the ops manager through it once - how to read it, what the red flag means, and what to do when they see it. I kept running the refresh each week, but they read the dashboard on their own. That was the real signal it worked: they'd call me when a week went red, instead of me chasing them.",
@@ -255,6 +256,11 @@
         "30-45 minutes to under 1 minute.",
         "Leadership gets consolidated monthly report they never had.",
         "Catch delinquencies earlier across full portfolio."
+      ],
+      "delivery_notes": [
+        "DEFAULT PICK for Learn and Be Curious, but REFRAME THE OPENING. Do not open with 'I taught myself SQL' - that answers 'can you learn a tool', which is not what the LP asks.",
+        "Open with the accidental catch instead: found a delinquent tenant only because you happened to open that one sheet, then asked 'if one slipped through, how many others did?' That question is the curiosity. The SQL is just how you answered it.",
+        "Ordering that lands: the accident -> the question it raised -> teaching yourself SQL to answer it at portfolio scale -> the 5-KPI monthly report. Learning the tool is a beat in the middle, not the headline."
       ]
     },
     {
@@ -279,6 +285,11 @@
         "Close went out on time. CPA had what they needed.",
         "Estimates were about 80% accurate.",
         "Trued up the difference next month. No filing impact."
+      ],
+      "delivery_notes": [
+        "DEFAULT PICK for Bias for Action - lead with this one, not S6. It is the only story with the true BFA shape: a hard deadline, incomplete information, options weighed and discarded fast, a reversible call made rather than waiting for certainty.",
+        "Say 'two-way door' out loud - it is already the structure of the decision, and it signals you think in Amazon's terms.",
+        "The 80% accuracy is a strength, not a weakness. It shows the estimate was disciplined and the true-up was planned, not a lucky guess. Don't apologize for it."
       ]
     },
     {
@@ -489,7 +500,8 @@
   "coverage_gaps": [
     "No story for Hire and Develop the Best, Strive to be Earth's Best Employer, or Success and Scale Bring Broad Responsibility. The last two rarely come up for individual-contributor analyst loops; Hire and Develop does surface as mentoring/knowledge-transfer prompts. The closest available material is the ops-manager walkthrough in S6 and the shared-visibility design in S7.",
     "Frugality has exactly one story (S26). A second Frugality prompt in the same loop has no backup.",
-    "Learn and Be Curious has two (S27, S33), both self-taught-a-technology stories with the same arc.",
+    "Learn and Be Curious has two (S27, S33), both self-taught-a-technology stories with the same arc. KNOWN WEAK AREA - the candidate self-identified this as an underperforming LP in a prior loop. Both stories currently answer 'can you learn a tool' rather than 'what curiosity led you somewhere unexpected'. S27 has the better hook buried in its Situation (see its delivery_notes); S33's is the Baselane data inconsistency the candidate noticed and chased down. Lead with the noticing, not the learning.",
+    "Bias for Action is KNOWN WEAK - the candidate self-identified this as an underperforming LP in a prior loop. The bench is nominally 3 (S6, S28, S32) but effectively 2: S6 is tagged BFA in the weak 'built it unasked' sense and misreads as a tool-building story against a speed prompt. S28 is the real default; S32 is the strong backup (contractor renegotiated, LOC drawn, gap closed in-month).",
     "14 of 15 stories are set at the same real-estate firm; S8 (Signature Photo) is the only outside setting. Across a 5-interviewer loop the setting will repeat - vary the property and the stakeholder so the stories don't blur together.",
     "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss."
   ],
