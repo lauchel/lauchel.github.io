@@ -77,6 +77,7 @@
         "Wrote a VBA macro to handle it all. Download CSV, click one button: strips extra charges, fixes dates, splits multi-night bookings, drops clean data into calculation tab.",
         "Dashboard shows next 4 weeks: occupancy rate, sites still open, average rate per site per night, revenue per available site.",
         "If any period 3+ weeks out is below 90% occupancy, cell turns red.",
+        "Ran the cycle once a week - pulled the CSV, ran the macro, dashboard refreshed in about a minute. The ops manager read it on their own and called me when a week went red.",
         "Before any promotion runs, stress tested three discount levels - 10%, 15%, 20%. 10% didn't move bookings, 20% cut too deep into margin, 15% was the sweet spot."
       ],
       "result": [
@@ -88,20 +89,19 @@
       "spoken_result": "Before, we only saw revenue after the month closed. Now we could see four weeks out. In mid-May it flagged a weekend sitting at 68% - the ops manager sent a discount to past guests and we filled it to 86% before that weekend arrived. The next month we ran that same play a few more times, and slow weekends stopped catching us off guard.",
       "delivery_notes": [
         "Lead with the trimmed spoken_result. Hold the $2,500 / 12% / $15K / 4-hours figures as pocket answers - offer them only when asked.",
-        "Say 'revenue per available site', not 'RevPAS'. Avoid industry jargon that invites a probe."
+        "Say 'revenue per available site', not 'RevPAS'. Avoid industry jargon that invites a probe.",
+        "Don't skip the cadence beat. 'They called me when it went red' is the adoption proof - it shows the tool worked without the candidate pushing it, which is what separates a built tool from a used one.",
+        "Weekly cadence is confirmed; the specific day is not established. Say 'once a week', not 'Monday morning'."
       ],
       "pocket_answers": {
-        "How did you communicate this tool?": "I walked the ops manager through it - showed them how to read the dashboard, what the red flag means, and what action to take when they see it. Took one Monday morning walkthrough and they were using it on their own after that.",
+        "How did you communicate this tool?": "I walked the ops manager through it once - how to read it, what the red flag means, and what to do when they see it. I kept running the refresh each week, but they read the dashboard on their own. That was the real signal it worked: they'd call me when a week went red, instead of me chasing them.",
+        "Who ran it?": "I ran the weekly refresh - download, macro, done in about a minute. The manager didn't need to touch the pipeline, which was the point. They just needed the read.",
         "Doesn't Camplife already do this?": "Camplife shows you raw bookings and generates reports, but it doesn't track pacing against a target or flag low occupancy. It tells you what you have - it doesn't tell you whether that's good enough or what to do about it.",
         "What KPIs drove the promotion decision?": "Three things: occupancy rate against our 90% target, average rate per site per night, and revenue per available site. Occupancy tells you how full you are, average rate tells you what you're earning, and revenue per available site combines both - it shows the total yield on your inventory whether it's occupied or not.",
         "Did it save you time?": "About four hours a week of manual pulling.",
         "Any dollar impact?": "That one weekend was roughly $2,500 protected. Over the quarter it was around $15K."
       },
-      "open_questions": [
-        "UNRESOLVED - refresh cadence is missing from the Action. Was it weekly, and was it Monday?",
-        "UNRESOLVED - who actually ran the macro each cycle, the candidate or the ops manager? The 'How did you communicate this tool?' pocket answer says they used it on their own; that contradicts the candidate refreshing it weekly. Pick one before using both in the same loop.",
-        "UNRESOLVED - did the red flag reach the manager as a conversation, an email, or a shared file?"
-      ]
+      "open_questions": []
     },
     {
       "id": "S7",
@@ -496,7 +496,6 @@
   "usage_rules": [
     "Never use both S29 variants with the same interviewer.",
     "Never use S7 and S19 in the same loop - same mechanism, S19 is stronger.",
-    "Do not invent numbers, outcomes, or LP mappings not present in this file.",
-    "S6's refresh cadence and tool ownership are unresolved - see its open_questions before using it."
+    "Do not invent numbers, outcomes, or LP mappings not present in this file."
   ]
 }
