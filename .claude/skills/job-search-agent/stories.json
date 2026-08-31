@@ -983,5 +983,32 @@
       "S6": "Invent and Simplify backup behind S33.",
       "S7": "Never in the same loop as S19."
     }
+  },
+  "fallback_routing": {
+    "why": "Three principles have no story built for them after the audit retagging. Each is covered by re-entering an existing story on a different beat - the facts do not change, only which moment you open on.",
+    "Are Right, A Lot": {
+      "lead": "S34",
+      "backup": "S26",
+      "reframe": "Open on the judgement, not the pivot table. 'The property manager had a theory - more move-outs than usual. I didn't think that was right, because if it were volume we'd have seen more turns and I hadn't seen that in the schedule. So I went and checked.' Then the GL work, then the exact reconciliation.",
+      "why_it_works": "Are Right, A Lot tests judgement against incomplete information, and S34 is the only story where the candidate formed a contrary view and was unambiguously proved right, to the dollar.",
+      "backup_reframe": "S26: 'Ownership's number was 50%. My read was that was too high, and rather than argue from instinct I went and pulled comparable data.' Own the miss - the estimate was 22% and actual came in 30%. Say so. The judgement that mattered was that 50% didn't justify $6,000, and that held.",
+      "collision": "S34 is also the lead for Dive Deep. If Dive Deep has already come up in the loop, go to S26."
+    },
+    "Think Big": {
+      "lead": "S27",
+      "backup": "S32",
+      "reframe": "Do NOT open on teaching yourself SQL - that is the Learn and Be Curious entry. Open on the scope problem: 'We were running ten properties like ten separate businesses. Every rent roll was its own spreadsheet, so nobody could see the portfolio at once - and at 700 tenants that stops being workable.' Then the database as the answer to that.",
+      "why_it_works": "Think Big is about working at a larger scope than the task required. Nobody asked for a portfolio-level view; the candidate decided the organisation needed one.",
+      "backup_reframe": "S32: open on the systemic gap rather than the February crisis. 'The real problem wasn't that one $100K invoice - it was that we had no forward visibility at all, so any timing shock would have hit us the same way.' Then the rolling 30-day tracker and the shift to planning CapEx around the season.",
+      "collision": "S27 is also the lead for Learn and Be Curious. Whichever comes up first takes the story; the other goes to S32 or S33."
+    },
+    "Deliver Results": {
+      "lead": "S19",
+      "backup": "S33 or S28",
+      "reframe": "Lead with the obstacle and the deadline, not the tooling. 'The CPA needed one consolidated P&L to file, and nobody had ever combined our four rent sources. When I tried, the numbers didn't reconcile and doing it by hand took two weeks.' Then the fix, then the before/after.",
+      "why_it_works": "Deliver Results wants an outcome delivered despite obstacles. S19 has the cleanest quantified swing in the bank - two weeks to one day, across ten entities.",
+      "backup_reframe": "S28 is the better pick when the prompt stresses a deadline or pressure: a hard filing date, three missing invoices, delivered on time anyway. S33 is better when the prompt stresses scale of improvement: five hours to thirty minutes.",
+      "collision": "S19 and S33 are both Invent and Simplify leads, but that bench has three stories (S6, S19, S33), so borrowing one for Deliver Results costs nothing."
+    }
   }
 }
