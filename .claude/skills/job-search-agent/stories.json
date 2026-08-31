@@ -26,21 +26,28 @@
         "Off-season: occupancy drops to 70%, displacing only 35 occupied units at $52.5K/month. Over 8 months, $420K lost.",
         "Difference: $180K less revenue lost by waiting.",
         "Modeled break-even: $1,000/month uplift per unit would take 6 months post-completion to recover peak losses - 14 months total.",
-        "Ownership pushed back - didn't want to miss out on higher rents sooner.",
-        "Walked them through the side-by-side showing waiting actually gets to profitability faster."
+        "Ownership pushed back - didn't want to miss out on higher rents sooner. They decided to proceed at peak season.",
+        "Committed to their decision and used the same displacement model to build a phased renovation schedule, so fewer units were out of service at any one time instead of half the park at once."
       ],
       "result": [
-        "Ownership delayed renovation to off-season.",
-        "$180K less revenue lost than the peak-season plan - $420K forgone off-season versus $600K at peak."
+        "Ownership proceeded with the peak-season renovation.",
+        "Built a phased schedule that cut the number of units displaced at any one time, reducing the revenue loss below the $75K/month the unphased plan would have cost."
       ],
       "delivery_notes": [
-        "DO NOT USE until the peak-vs-off-season contradiction in open_questions is resolved. The current Result may describe an outcome that did not happen.",
-        "Claim $180K, once. Do NOT also say 'protected $600K' - that counts the same decision twice, and the renovation still costs $420K off-season. The subtraction takes an interviewer about ten seconds.",
-        "The occupancy subtlety is the smartest thing in the story: renovation displaces 50 units either way, but off-season only 35 of them are occupied. Say that part slowly."
+        "THIS IS THE COMMIT HALF OF THE LP, NOT A BACKBONE WIN. Do not say ownership changed their mind - they did not. The story is that you made a rigorous case, lost, and then executed the decision you had argued against.",
+        "STRONGEST LINE AVAILABLE: the model they rejected is the model you used to reduce the damage. Say that explicitly - it shows the analysis was never wasted and that you committed with the same rigour you argued with.",
+        "Do not sound bitter or vindicated. Losing the argument does not make the analysis wrong, and the phased schedule is the part that demonstrates maturity. Deliver the override neutrally and move straight to what you did about it.",
+        "Claim $180K as the modelled difference, once. Do NOT say 'protected $600K' - that outcome did not happen.",
+        "The occupancy subtlety is the smartest thing in the analysis: renovation displaces 50 units either way, but off-season only 35 of them are occupied. Say that part slowly.",
+        "Now competes with S31 for the Disagree and Commit slot. S3 has larger stakes; S31 has the better evidenced outcome. See loop_plan."
       ],
       "open_questions": [
-        "BLOCKING CONTRADICTION - the Result says ownership delayed the renovation to off-season, but the candidate states the renovation happened at PEAK season. Both cannot be true. If ownership overruled the analysis and renovated at peak, this is not a Have Backbone win at all and the entire Result must be rewritten. Do not use this story until resolved.",
-        "Did rents reach $2,500 after the renovation?"
+        "How did the phasing actually work - how many units at a time, over what period? The mechanism needs one concrete detail to be credible.",
+        "What did the phased schedule actually save against the $75K/month unphased case? A number here turns a good story into a strong one.",
+        "Did rents reach $2,500 after the renovation completed?"
+      ],
+      "primary_lps": [
+        "Have Backbone, Disagree and Commit"
       ]
     },
     {
@@ -809,7 +816,7 @@
       "Month-end close": 1
     },
     "held_back": {
-      "S3": "Backbone backup. Packwood is already used twice.",
+      "S3": "Disagree and Commit alternative to S31 - larger stakes ($600K displacement vs ACH fees and reconciliation hours) but the outcome is less well evidenced. Promote to slot 5 over S31 if the phasing savings can be quantified.",
       "S5": "Earn Trust backup behind S30. Retagged, do not open with it.",
       "S6": "Invent and Simplify backup behind S33.",
       "S7": "Never in the same loop as S19."
