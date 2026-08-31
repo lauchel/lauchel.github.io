@@ -9,6 +9,7 @@
       "setting": "Packwood RV park (100 units)",
       "lps": [
         "Have Backbone, Disagree and Commit",
+        "Are Right, A Lot",
         "Deliver Results"
       ],
       "situation": [
@@ -19,61 +20,47 @@
         "Run a scenario analysis on whether we could afford to renovate now, or should wait."
       ],
       "action": [
-        "Built a side-by-side analysis comparing peak vs off-season.",
-        "Half the park is 50 sites - about $75K/month of rent at full occupancy.",
-        "Peak: occupancy runs around 95%, so renovating then costs roughly $71K/month. Over 8 months, $570K.",
-        "Off-season: occupancy drops to 70%, so the same work costs $52.5K/month. Over 8 months, $420K.",
-        "Difference: $150K less revenue lost by waiting.",
-        "Modeled break-even: once complete the uplift is $95K/month (100 units at 95% x $1,000), so the $570K peak loss takes 6 months post-completion to recover - 14 months total.",
-        "My real concern was liquidity, not revenue - the park already runs a structural cash deficit off-season, roughly $50K revenue against $55K fixed costs, covered from summer reserves. That is seasonal, not caused by the renovation.",
-        "Recommended waiting. Ownership weighed the revenue upside higher and decided to proceed at peak season.",
-        "Committed to their decision and used the same displacement model to build a phased schedule - 10 units out at a time across the 8 months instead of 50 at once."
+        "Built two scenarios.",
+        "Renovate now: take a loan for the $200K and lose rent on the 50 sites while they were out of service. Calculated the interest cost and checked it against our debt ratio - we already carried debt from another project.",
+        "Wait and self-fund: worked out how much we could set aside monthly from the property's cash flow. About 8 months to cover most of the cost.",
+        "Borrowing came out slightly cheaper on interest, but it pushed our debt ratio into risky territory. Waiting cost a few months of higher rent and nothing structural.",
+        "Recommended we wait and self-fund.",
+        "My manager pushed back - 8 months meant 8 months of rent we weren't collecting. Walked him through where the debt ratio would land, and he agreed the risk wasn't worth the time saved."
       ],
       "result": [
-        "Ownership proceeded with the peak-season renovation.",
-        "Phasing cut displaced rent to about $14K/month - roughly $114K over the 8 months, against the $570K the unphased plan would have cost.",
-        "Rents reached $2,500 per unit after completion."
+        "Waited and self-funded - took on no new debt.",
+        "Rent on the renovated sites went up about 15%, roughly $225 a site or $11K/month across the 50.",
+        "Self-funding versus borrowing became the standard question asked before any renovation."
       ],
       "delivery_notes": [
-        "DO NOT USE until the open questions are resolved. The Situation and Task are correct; the Action and Result are still carrying figures from a version that conflicts with the earlier telling.",
-        "THIS IS THE COMMIT HALF OF THE LP. Ownership overruled you - do not imply they changed their mind. Say 'I came back recommending we wait' so the disagreement is explicit, since the task was assigned rather than self-initiated.",
-        "STRONGEST LINE: the model they rejected is the model you used to reduce the damage. $570K of projected displacement down to about $114K.",
-        "EVERY NUMBER DERIVES FROM ONE LINE: half the park is $75,000/month at full occupancy. Peak is that x 95%, off-season x 70%, phased is a fifth of it x 95%. If asked how you got any figure, walk back to the $75,000. See calc_sheet.",
-        "SAY 'AROUND 95%', NOT '100%'. A flat full-occupancy figure invites two objections - no park sustains literal 100%, and an eight-month window cannot all be peak season. 95% is realistic and still makes the point.",
-        "BE READY FOR THE DELAY-COST PROBE. On revenue alone, waiting loses money: the uplift is $95K/month once complete, so even a 2-month delay forgoes $190K to save $150K. Lead with liquidity, not revenue - 'the revenue math favoured going sooner and I knew that'.",
-        "THE BREAK-EVEN CROSS-CHECKS EXACTLY: $570K of peak loss divided by $95K/month of uplift is 6.0 months. If they test your arithmetic, this is the number that shows the model hangs together.",
-        "IF ASKED whether the off-season deficit is caused by the renovation: no, it is structural and seasonal, covered from summer reserves every year. Say so unprompted.",
-        "If pushed on the renovation's return: $200K across 100 units is about a 2-month payback on a $1,000/month uplift. Concede readily - that is exactly why ownership wanted to move.",
-        "Do not sound bitter or vindicated. Deliver the override neutrally and move straight to the phasing.",
-        "$150K is the modelled peak-vs-off-season difference. $456K is what phasing actually saved against the unphased peak plan. Two different numbers - do not merge them.",
-        "WATCH THE CROSS-STORY NUMBERS. S3's 70% of 100 units at $1,500 implies about $105K/month off-season, while S32 states about $50K. The $1,500 is the peak monthly rate; off-season rates are discounted. The loop plan keeps S3 and S32 apart."
+        "THIS IS A BACKBONE WIN, NOT A COMMIT STORY. You persuaded your manager with the analysis. S31 is the disagree-and-COMMIT story where you lost and executed anyway - keep them straight, and do not use both against the same prompt.",
+        "CONCEDE THAT BORROWING WAS CHEAPER. That concession is what makes the risk argument credible - you are not claiming your option cost less, you are claiming it was safer. Say it before they find it.",
+        "THE DEBT RATIO IS THE DETAIL THAT SELLS IT. 'We already carried debt from another project' turns a vague caution into a specific constraint. Do not compress it out.",
+        "The practice change is the strongest part of the Result - self-funding versus borrowing became a standing question. Institutional change outlasts any single number.",
+        "If asked what the debt ratio would have hit, or the interest rate: give what you have and say the rest is from memory. The shape of the argument matters more than the decimal.",
+        "Now also serves ARE RIGHT, A LOT - you formed a judgement against the cheaper option, argued it, and it held. That bench was thin, so this is a useful second home for the story."
       ],
-      "open_questions": [
-        "BLOCKING - an earlier telling of this story conflicts with the current one on three points, and the Action and Result cannot be finalised until they are settled. (1) OUTCOME: the earlier version has the manager agreeing after being walked through the analysis; the current version has ownership overruling and the candidate phasing the work. (2) THE 8 MONTHS: earlier it is how long self-funding from cash flow would take; currently it is the renovation's duration. (3) RENT UPLIFT: earlier it is about 15%; currently it is $1,500 to $2,500, a 67% lift.",
-        "The earlier version's real tension is BORROW vs SELF-FUND, not peak vs off-season - it has a loan, an interest cost, and an existing debt ratio from another project that borrowing would push into risky territory. That is a sharper and more specific argument than the current liquidity framing and should probably be recovered."
-      ],
+      "open_questions": [],
       "primary_lps": [
         "Have Backbone, Disagree and Commit"
       ],
       "spoken_star": {
         "primary": "Have Backbone, Disagree and Commit",
         "also": [
+          "Are Right, A Lot",
           "Deliver Results"
         ],
         "s": "Leadership wanted to renovate half of Packwood — fifty of our hundred sites — to increase the property's value.",
-        "t": "I was asked to run a scenario analysis: could we actually afford to renovate now, or should we wait?",
-        "a": "I built a side-by-side. Half the park is fifty sites — about $75,000 a month of rent if every one is full. At peak we run around 95%, so renovating then costs roughly $71,000 a month, about $570,000 across the eight months. Off-season, occupancy drops to 70%, so the same work costs $52,500 a month — $420,000. Waiting was $150,000 cheaper.\n\nBut my real concern was cash, not revenue. The park already runs a deficit off-season — about $50,000 coming in against $55,000 of fixed costs, and that's just the season, not the renovation — so we cover it from summer reserves. I didn't want to be carrying $200,000 of new debt service into that on top.\n\nSo I came back recommending we wait. Ownership weighed the revenue upside higher and decided to go ahead at peak. So I took the same model they'd rejected and used it to build a phased schedule — ten sites out at a time instead of fifty.",
-        "r": "Ten sites out at a time is about $14,000 a month instead of $71,000 — roughly $114,000 of displaced rent over the eight months, against the $570,000 the unphased plan would have cost. Rents went from $1,500 to $2,500 after completion."
+        "t": "I was asked to run a scenario analysis: could we actually afford to do it now, or should we wait?",
+        "a": "I built two scenarios.\n\nRenovating now meant taking a loan for the $200,000, and losing rent on those fifty sites while they were out of service. I calculated the interest cost and checked it against our debt ratio — we already carried debt from another project.\n\nWaiting meant self-funding. I worked out how much we could set aside each month from the property's cash flow: about eight months to cover most of it.\n\nBorrowing actually came out slightly cheaper on interest. But it pushed our debt ratio into risky territory, and waiting only cost us a few months of higher rent — nothing structural.\n\nSo I recommended we wait and self-fund. My manager pushed back: eight months meant eight months of rent we weren't collecting. I walked him through where the debt ratio would land, and he agreed the risk wasn't worth the time saved.",
+        "r": "We waited and self-funded, so we took on no new debt at all. Rent on the renovated sites went up about 15% — roughly $225 a site, about $11,000 a month across the fifty. And self-funding versus borrowing became the standard question we asked before any renovation after that."
       },
       "calc_sheet": {
-        "base": "50 sites (half the park) x $1,500 = $75,000/month at full occupancy. Every other figure comes off this one line.",
-        "peak": "$75,000 x 95% = $71,250/month. x 8 months = $570,000.",
-        "off_season": "$75,000 x 70% = $52,500/month. x 8 months = $420,000.",
-        "difference": "$570,000 - $420,000 = $150,000 cheaper to wait.",
-        "phased": "10 sites x $1,500 = $15,000/month at full. x 95% = $14,250/month. x 8 months = $114,000.",
-        "phasing_saved": "$570,000 - $114,000 = $456,000.",
-        "break_even": "Uplift once complete = 100 units x 95% x $1,000 = $95,000/month. $570,000 / $95,000 = exactly 6.0 months to recover, 14 months including the build.",
-        "delay_cost": "Waiting costs $95,000/month of forgone uplift. Even a 2-month delay forgoes $190,000 to save $150,000 - a net loss of $40,000. This is why the argument must be liquidity, not revenue."
+        "scope": "50 of 100 sites renovated, $200,000 total cost.",
+        "uplift": "$1,500 x 15% = $225 per site per month. Across 50 renovated sites = $11,250/month.",
+        "payback": "$200,000 / $11,250 = about 18 months.",
+        "self_funding": "8 months to cover most of the $200,000 implies roughly $20-25K/month set aside from cash flow.",
+        "cost_of_waiting": "8 months x $11,250 = about $90,000 of forgone uplift - which is why borrowing looked cheaper on interest, and why the argument had to be the debt ratio rather than the cost."
       }
     },
     {
@@ -837,6 +824,7 @@
       "S33"
     ],
     "Are Right, A Lot": [
+      "S3",
       "S26",
       "S34"
     ],
@@ -999,7 +987,7 @@
       "Month-end close": 1
     },
     "held_back": {
-      "S3": "Now fully evidenced and arguably a STRONGER disagree-and-commit story than S31 - larger stakes and a quantified commit outcome ($600K projected displacement cut to ~$120K). S31 keeps slot 5 only to hold Packwood at two appearances across the loop. Swap S3 in if S19 or S32 is dropped.",
+      "S3": "Backbone win - persuaded the manager with a borrow-versus-self-fund analysis. Distinct from S31, which is the commit-after-losing story. Also a viable Are Right, A Lot answer. Held back only to keep Packwood at two appearances across the loop.",
       "S5": "Earn Trust backup behind S30. Retagged, do not open with it.",
       "S6": "Invent and Simplify backup behind S33.",
       "S7": "Never in the same loop as S19."
@@ -1009,11 +997,11 @@
     "why": "Three principles have no story built for them after the audit retagging. Each is covered by re-entering an existing story on a different beat - the facts do not change, only which moment you open on.",
     "Are Right, A Lot": {
       "lead": "S34",
-      "backup": "S26",
+      "backup": "S26 or S3",
       "reframe": "Open on the judgement, not the pivot table. 'The property manager had a theory - more move-outs than usual. I didn't think that was right, because if it were volume we'd have seen more turns and I hadn't seen that in the schedule. So I went and checked.' Then the GL work, then the exact reconciliation.",
       "why_it_works": "Are Right, A Lot tests judgement against incomplete information, and S34 is the only story where the candidate formed a contrary view and was unambiguously proved right, to the dollar.",
       "backup_reframe": "S26: 'Ownership's number was 50%. My read was that was too high, and rather than argue from instinct I went and pulled comparable data.' Own the miss - the estimate was 22% and actual came in 30%. Say so. The judgement that mattered was that 50% didn't justify $6,000, and that held.",
-      "collision": "S34 is also the lead for Dive Deep. If Dive Deep has already come up in the loop, go to S26."
+      "collision": "S34 is also the lead for Dive Deep. If Dive Deep has already come up, go to S26, or to S3 - it now qualifies, since you argued against the cheaper option on risk grounds and were proved right."
     },
     "Think Big": {
       "lead": "S27",
