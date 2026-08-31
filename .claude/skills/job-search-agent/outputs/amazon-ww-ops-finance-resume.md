@@ -49,18 +49,18 @@ Luk Fook Financial Services Limited                                   Sheung Wan
   recurring internal reporting cycles.
 
 PROJECTS
-WBR-Style Operations Variance Dashboard | lauchel.github.io/financial-analyst-portfolio
-- Designed a Weekly Business Review-style variance dashboard tracking operations KPIs including cost
-  per unit, on-time performance, and volume against plan, prior year, and prior week.
+Operations Cost Variance & Bridge Dashboard | lauchel.github.io/financial-analyst-portfolio
+- Designed a leadership-facing variance reporting package tracking operations KPIs including cost
+  per unit, on-time performance, and volume against plan and prior period across recurring reporting cycles.
 - Built automated variance bridges isolating volume, rate, and mix drivers behind cost movement,
-  replicating the bridge logic used in enterprise-level WBR reporting packages.
+  replicating the bridge logic used in enterprise-level consolidated reporting packages.
 - Modeled scenario toggles for volume and cost assumptions to quantify upside and downside impact on
   total network cost, supporting a forward-looking narrative for leadership review.
 
 SKILLS
 Financial Analysis: Budgeting, Planning, Forecasting, Variance Analysis, Multi-Entity Consolidation,
-Operating Expense and Employee Cost Planning, Controllership, KPI Reporting, Weekly Business Review
-Reporting, Scenario Modeling, Process Automation, Accounts Receivable, Accounts Payable
+Operating Expense and Employee Cost Planning, Controllership, KPI Reporting, Monthly and Annual Planning
+Cycles, Scenario Modeling, Process Automation, Accounts Receivable, Accounts Payable
 Tools: Excel (PivotTables, XLOOKUP, INDEX/MATCH, Arrays, Macros, VBA, Power Query, Financial Models),
 SQL, Power BI, Tableau, Python, BigQuery, QuickBooks, Claude AI
 
