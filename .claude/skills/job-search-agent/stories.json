@@ -17,8 +17,7 @@
         "Their thinking: renovate now, get rents up to $2,500 sooner - a $1,000/month uplift per unit, $100K/month total."
       ],
       "task": [
-        "I thought the timing was wrong - not on revenue, but on liquidity.",
-        "I needed to show ownership the full cost of renovating during peak versus waiting for off-season, and the risk of carrying new debt service into the low season."
+        "I was asked to run a scenario analysis on whether the plan worked - renovating at peak versus waiting for off-season."
       ],
       "action": [
         "Built a side-by-side analysis comparing peak vs off-season.",
@@ -36,6 +35,7 @@
       ],
       "delivery_notes": [
         "THIS IS THE COMMIT HALF OF THE LP. Ownership overruled you - do not imply they changed their mind.",
+        "The task was ASSIGNED - you were asked to run the scenario analysis, not volunteering an objection. That is stronger, not weaker: it means the disagreement came out of the work rather than out of an opinion. Make sure you say 'I came back recommending we wait' so the disagreement is still explicit.",
         "STRONGEST LINE: the model they rejected is the model you used to reduce the damage. $600K projected displacement down to about $120K. Say the mechanism - 10 units at a time instead of 50 - because that is what makes the number believable.",
         "BE READY FOR THE DELAY-COST PROBE. On revenue alone, waiting loses money: the uplift is $100K/month once complete, so even a 2-month delay forgoes $200K to save $180K of displacement. Do not get caught by this - lead with liquidity, not revenue. 'The revenue math favoured going sooner and I knew that; my concern was carrying debt service into a season where the park runs a cash deficit.'",
         "If pushed on the return: $200K across 100 units is a 2-month payback on a $1,000/month uplift. That is genuinely strong, which is exactly why ownership wanted to move - concede that readily.",
@@ -52,8 +52,8 @@
           "Deliver Results"
         ],
         "s": "Ownership wanted to start a $200K renovation on our 100-unit RV park during peak season.",
-        "t": "I thought the timing was wrong, and I needed to show them what renovating at peak would actually cost us.",
-        "a": "I built a side-by-side. Renovating at peak takes half the park offline — about $600K of lost rent over eight months. Waiting for off-season costs $420K, because only 70% of units are occupied then. So $180K cheaper to wait.\n\nBut my real concern was cash, not revenue. The park runs a deficit off-season — about $50K coming in against $55K of fixed costs — and I didn't want to carry $200K of new debt service into that.\n\nOwnership weighed the revenue upside higher and decided to go ahead at peak. So I took the same model they'd rejected and used it to build a phased schedule — ten units out at a time instead of fifty.",
+        "t": "I was asked to run a scenario analysis on whether the plan worked — renovating now versus waiting for the off-season.",
+        "a": "I built a side-by-side. Renovating at peak takes half the park offline — about $600K of lost rent over eight months. Waiting for off-season costs $420K, because only 70% of units are occupied then. So $180K cheaper to wait.\n\nBut my real concern was cash, not revenue. The park runs a deficit off-season — about $50K coming in against $55K of fixed costs — and I didn't want to carry $200K of new debt service into that.\n\nSo I came back recommending we wait. Ownership weighed the revenue upside higher and decided to go ahead at peak. So I took the same model they'd rejected and used it to build a phased schedule — ten units out at a time instead of fifty.",
         "r": "That brought actual displacement down to about $120K, against the $600K the original plan would have cost. Rents went from $1,500 to $2,500 after completion."
       }
     },
