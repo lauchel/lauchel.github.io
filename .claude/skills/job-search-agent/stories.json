@@ -75,12 +75,13 @@
       "result": [
         "Leadership negotiated $55K price reduction using my corrected model.",
         "Corrected model still cleared the lender's 1.25x DSCR requirement.",
-        "Caught tax errors and protected debt covenant thresholds.",
         "Surfaced a $4.3K annual expense increase before close that the original model had missed."
       ],
       "delivery_notes": [
         "RETAGGED - 'Are Right, A Lot' removed. This is a story about being wrong twice; against a judgement prompt it answers the opposite of what was asked. Lead it as Earn Trust, with Dive Deep second.",
-        "'Saved over $4K annually' was corrected to 'surfaced' - the revaluation was a cost the acquisition caused, not a saving you produced. The real win is the $55K price reduction."
+        "'Saved over $4K annually' was corrected to 'surfaced' - the revaluation was a cost the acquisition caused, not a saving you produced. The real win is the $55K price reduction.",
+        "HAVE THE $55K BRIDGE READY - 'how does a tax error become a $55K price cut?' is the obvious probe. The corrected NOI was about $7,800/year lower ($3,543 of understated tax plus the $4,300 revaluation). Capitalised at 6-8% that implies $98K-$131K of value, so $55K is what the negotiation actually landed, not the full theoretical hit. Saying that unprompted is what makes you sound like you own the model.",
+        "This is an error CAUGHT BEFORE DAMAGE, not a failure with consequences. Against 'tell me about a time you failed', use S30 - it has a real cost. Use S5 when the prompt is about standards, catching your own work, or telling someone something they did not want to hear."
       ],
       "open_questions": [
         "Tax figure does not reconcile: $3,583 semi-annual x 2 = $7,166, but the story states $7,126 annual. Check the county bill."
