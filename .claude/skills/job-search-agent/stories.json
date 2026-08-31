@@ -34,11 +34,13 @@
         "$180K less revenue lost than the peak-season plan - $420K forgone off-season versus $600K at peak."
       ],
       "delivery_notes": [
+        "DO NOT USE until the peak-vs-off-season contradiction in open_questions is resolved. The current Result may describe an outcome that did not happen.",
         "Claim $180K, once. Do NOT also say 'protected $600K' - that counts the same decision twice, and the renovation still costs $420K off-season. The subtraction takes an interviewer about ten seconds.",
         "The occupancy subtlety is the smartest thing in the story: renovation displaces 50 units either way, but off-season only 35 of them are occupied. Say that part slowly."
       ],
       "open_questions": [
-        "Did the renovation actually happen off-season, and did rents reach $2,500? The story has no ending."
+        "BLOCKING CONTRADICTION - the Result says ownership delayed the renovation to off-season, but the candidate states the renovation happened at PEAK season. Both cannot be true. If ownership overruled the analysis and renovated at peak, this is not a Have Backbone win at all and the entire Result must be rewritten. Do not use this story until resolved.",
+        "Did rents reach $2,500 after the renovation?"
       ]
     },
     {
@@ -68,6 +70,7 @@
       ],
       "result": [
         "Leadership negotiated $55K price reduction using my corrected model.",
+        "Corrected model still cleared the lender's 1.25x DSCR requirement.",
         "Caught tax errors and protected debt covenant thresholds.",
         "Surfaced a $4.3K annual expense increase before close that the original model had missed."
       ],
@@ -76,8 +79,7 @@
         "'Saved over $4K annually' was corrected to 'surfaced' - the revaluation was a cost the acquisition caused, not a saving you produced. The real win is the $55K price reduction."
       ],
       "open_questions": [
-        "Tax figure does not reconcile: $3,583 semi-annual x 2 = $7,166, but the story states $7,126 annual. Check the county bill.",
-        "Did the corrected model still clear the lender's 1.25x DSCR? The covenant is raised and never resolved."
+        "Tax figure does not reconcile: $3,583 semi-annual x 2 = $7,166, but the story states $7,126 annual. Check the county bill."
       ]
     },
     {
@@ -160,7 +162,7 @@
         "Rolled out across 4 properties."
       ],
       "result": [
-        "Caught $10K in discrepancies across 4 properties.",
+        "Caught and recovered $10K in discrepancies across 4 properties.",
         "Every source now reconciled automatically every month.",
         "Tracker became standard process for all properties with onsite cash collection."
       ],
@@ -168,9 +170,7 @@
         "Overlaps heavily with S19 (both are multi-source consolidation + VBA tenant-name matching). Do not use both in the same loop.",
         "BACKUP ONLY. If used, lead with the shared-visibility design (the onsite manager and the candidate seeing the same reconciled data) - that is the one thing S7 has that S19 does not."
       ],
-      "open_questions": [
-        "Was the $10K in discrepancies actually recovered, or only identified?"
-      ]
+      "open_questions": []
     },
     {
       "id": "S8",
@@ -346,7 +346,8 @@
       ],
       "situation": [
         "Month-end close. CPA waiting on P&L for filings.",
-        "3 vendor bills totaling $50K hadn't come in."
+        "3 vendor bills totaling $50K hadn't come in.",
+        "Missing the CPA's filing deadline would have meant a late-filing penalty."
       ],
       "task": [
         "Either hold the close or find a way to keep moving without actual bills."
@@ -366,11 +367,11 @@
         "DEFAULT PICK for Bias for Action - lead with this one, not S6. It is the only story with the true BFA shape: a hard deadline, incomplete information, options weighed and discarded fast, a reversible call made rather than waiting for certainty.",
         "Say 'two-way door' out loud - it is already the structure of the decision, and it signals you think in Amazon's terms.",
         "The 80% accuracy is a strength, not a weakness. It shows the estimate was disciplined and the true-up was planned, not a lucky guess. Don't apologize for it.",
-        "Thinnest story in the bank - it will not fill four minutes as written. Add the stakes (the CPA's filing deadline and the consequence of missing it) and the real true-up figures."
+        "Thinnest story in the bank - it will not fill four minutes as written. Add the stakes (the CPA's filing deadline and the consequence of missing it) and the real true-up figures.",
+        "Name the late-filing penalty early - it is what makes the deadline real. Without it the urgency is asserted rather than shown."
       ],
       "open_questions": [
-        "What did the actuals come in at, and what was trued up? '80% accurate' is undefended - 80% of total dollars, or per vendor?",
-        "What was the consequence of missing the CPA's filing deadline? The urgency is asserted, not shown."
+        "What did the actuals come in at, and what was trued up? '80% accurate' is undefended - 80% of total dollars, or per vendor?"
       ]
     },
     {
@@ -607,6 +608,7 @@
         "Flagged to leadership immediately, paused vendor, partnered with operations to build standardized rate card."
       ],
       "result": [
+        "Recovered the vendor overpayment.",
         "Property manager can only approve invoices matching the rate card.",
         "R&M variance back to zero the following month.",
         "Saved roughly $2,000/month in bloated vendor costs.",
@@ -621,9 +623,7 @@
         "Dive Deep",
         "Insist on the Highest Standards"
       ],
-      "open_questions": [
-        "Was the overpayment recovered from the vendor, or only stopped going forward?"
-      ]
+      "open_questions": []
     }
   ],
   "lp_index": {
