@@ -99,7 +99,9 @@
         "HAVE THE $55K BRIDGE READY - 'how does a tax error become a $55K price cut?' is the obvious probe. The corrected NOI was about $7,800/year lower ($3,543 of understated tax plus the $4,300 revaluation). Capitalised at 6-8% that implies $98K-$131K of value, so $55K is what the negotiation actually landed, not the full theoretical hit. Saying that unprompted is what makes you sound like you own the model.",
         "This is an error CAUGHT BEFORE DAMAGE, not a failure with consequences. Against 'tell me about a time you failed', use S30 - it has a real cost. Use S5 when the prompt is about standards, catching your own work, or telling someone something they did not want to hear.",
         "The $7,800 is your own arithmetic - $3,543 of understated tax plus the $4,300 revaluation. Stating the size of your own error before the $55K is what makes the story Earn Trust rather than a humblebrag about a negotiation win.",
-        "THE TAX FIGURES RECONCILE - do not 'fix' them. $3,583 and $7,126 imply a second installment of $3,543, a $40 difference from the first. Unequal property-tax installments are normal (rounding on the split, or a fee on one). The script now states both figures directly instead of saying 'understated by half', so nobody is invited to double $3,583 and query the $40. If asked: the installments weren't identical."
+        "THE TAX FIGURES RECONCILE - do not 'fix' them. $3,583 and $7,126 imply a second installment of $3,543, a $40 difference from the first. Unequal property-tax installments are normal (rounding on the split, or a fee on one). The script now states both figures directly instead of saying 'understated by half', so nobody is invited to double $3,583 and query the $40. If asked: the installments weren't identical.",
+        "SAY 'FINANCIAL MODEL' OR 'BUSINESS CASE', NOT 'PRO FORMA'. Pro forma is real-estate and private-equity vernacular; Amazon finance says business case, financial model, payback, free cash flow. Do not scrub the domain entirely though - the real-estate specifics are genuine expertise. Translate the container, keep the contents.",
+        "EXPLAIN DSCR, DON'T NAME IT. 'The lender required the property to earn 1.25 times its loan payments' lands with anyone; 'we needed a 1.25x DSCR' only lands with someone who already knows, and invites a definition question you gain nothing from answering."
       ],
       "open_questions": [],
       "spoken_star": {
@@ -108,8 +110,8 @@
           "Insist on the Highest Standards",
           "Dive Deep"
         ],
-        "s": "I was building the pro forma for a $2M RV park acquisition — the model leadership was using to decide whether to buy.",
-        "t": "I needed the operating costs right, especially property taxes, because the lender required 1.25 times debt coverage.",
+        "s": "I built the financial model behind a $2M RV park acquisition — the business case leadership was using to decide whether to buy.",
+        "t": "I needed the operating cost assumptions right, especially property taxes, because the lender required the property to earn 1.25 times its loan payments before they'd fund it.",
         "a": "Going back through it, I found two mistakes I'd made. I'd taken the seller's $3,583 tax payment as the annual bill when it was actually semi-annual — the real annual figure was $7,126. And I'd inflated historical costs by 3%, when buying the park would trigger a county revaluation against our purchase price — another $4,300 a year.\n\nI checked both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I'd given them was overstated.",
         "r": "The corrected model showed operating income about $7,800 a year lower than my original. Leadership used it to negotiate $55K off the $2M purchase price, and it still cleared the lender's 1.25 times coverage requirement."
       }
@@ -1019,5 +1021,28 @@
       "backup_reframe": "S28 is the better pick when the prompt stresses a deadline or pressure: a hard filing date, three missing invoices, delivered on time anyway. S33 is better when the prompt stresses scale of improvement: five hours to thirty minutes.",
       "collision": "S19 and S33 are both Invent and Simplify leads, but that bench has three stories (S6, S19, S33), so borrowing one for Deliver Results costs nothing."
     }
+  },
+  "vocabulary_notes": {
+    "why": "The candidate's experience is real estate; the target roles are Amazon finance. Translate the vocabulary that does not travel, but keep the domain detail - it is genuine expertise, and scrubbing it makes the answers sound rehearsed.",
+    "swaps": {
+      "pro forma": "financial model, or business case when it is the document behind a decision",
+      "DSCR": "say it in words - 'the lender required the property to earn 1.25 times its loan payments'",
+      "NOI / net operating income": "operating income",
+      "cap rate": "explain as 'what the property is worth is its operating income divided by the market yield' if it comes up at all",
+      "RevPAS / revenue per available site": "revenue per available site, spelled out - never the acronym",
+      "rent roll": "fine as-is, but gloss it once: 'the rent roll, our list of tenants and what each owes'",
+      "unit turn": "gloss it once: 'a unit turn - the cleaning and painting between tenants'",
+      "draw": "gloss it once: 'a draw, the contractor's progress payment'"
+    },
+    "keep": [
+      "variance analysis",
+      "OPEX and CAPEX",
+      "accrual",
+      "month-end close",
+      "payback period",
+      "free cash flow",
+      "reconciliation"
+    ],
+    "principle": "Any term that needs a definition costs you the follow-up question you actually wanted. Either say it in plain words, or gloss it in the same breath."
   }
 }
