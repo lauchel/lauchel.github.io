@@ -81,12 +81,12 @@
         "Needed to accurately estimate annual operating costs, especially property taxes, to meet lender's 1.25x DSCR requirement."
       ],
       "action": [
-        "Made two mistakes in my initial draft.",
-        "First: mistook seller's $3,583 semi-annual tax payment for the full annual bill. Actual annual tax was $7,126.",
-        "Second: applied a flat 3% inflation rate to historical costs, but acquisition would trigger a county revaluation against our $2M purchase price.",
-        "That meant an unexpected $4,300 annual expense jump.",
-        "Consulted CPA on revaluation mechanics and staff accountant on billing structure. Both inputs changed my model.",
-        "Corrected both errors, rebuilt the cash flow model, brought updated numbers to leadership showing NOI was overstated."
+        "Found two mistakes in my draft, both from the same root: I'd built the model on the seller's numbers without asking what changes when the property changes hands.",
+        "First: took the seller's $3,583 tax payment as the annual bill. It was semi-annual - the real annual figure was $7,126.",
+        "Second, and the bigger one: grew historical costs forward at a flat 3% inflation. But property tax is assessed value times rate, not an inflation-driven cost. The county's valuation was years old and low, and our purchase price would reset it.",
+        "That line was not drifting up 3% - it was resetting to about $11,400, an extra $4,300 a year.",
+        "Consulted the CPA on revaluation mechanics and the staff accountant on billing structure. Both changed the model.",
+        "Corrected both, rebuilt the cash flow model, and went back to leadership to tell them the operating income I had given them was overstated."
       ],
       "result": [
         "Leadership negotiated $55K price reduction using my corrected model.",
@@ -102,7 +102,8 @@
         "THE TAX FIGURES RECONCILE - do not 'fix' them. $3,583 and $7,126 imply a second installment of $3,543, a $40 difference from the first. Unequal property-tax installments are normal (rounding on the split, or a fee on one). The script now states both figures directly instead of saying 'understated by half', so nobody is invited to double $3,583 and query the $40. If asked: the installments weren't identical.",
         "SAY 'FINANCIAL MODEL' OR 'BUSINESS CASE', NOT 'PRO FORMA'. Pro forma is real-estate and private-equity vernacular; Amazon finance says business case, financial model, payback, free cash flow. Do not scrub the domain entirely though - the real-estate specifics are genuine expertise. Translate the container, keep the contents.",
         "EXPLAIN DSCR, DON'T NAME IT. 'The lender required the property to earn 1.25 times its loan payments' lands with anyone; 'we needed a 1.25x DSCR' only lands with someone who already knows, and invites a definition question you gain nothing from answering.",
-        "THE REVALUATION IS THE SMARTER OF THE TWO ERRORS - the semi-annual mix-up is a slip, but catching that a blanket 3% inflation factor was wrong because the acquisition itself resets the tax basis shows real modelling judgement. Spend your words there, not on the tax-payment slip."
+        "THE REVALUATION IS THE SMARTER OF THE TWO ERRORS - the semi-annual mix-up is a slip, but catching that a blanket 3% inflation factor was wrong because the acquisition itself resets the tax basis shows real modelling judgement. Spend your words there, not on the tax-payment slip.",
+        "THREE LEVERS THAT MAKE THIS STORY STRONG - the errors themselves never will be. (1) ONE ROOT, NOT TWO SLIPS: say 'they had the same root - I'd built the model on the seller's numbers without asking what changes when the property changes hands.' That turns two careless-sounding mistakes into one insight. (2) MECHANISM, NOT JUST THE NUMBER: 'our purchase price would tell the county what the park was actually worth' shows you understand why, not just that you were off. (3) THE WALK-BACK IS THE STORY: going to leadership to say the deal looks worse than you told them is the uncomfortable part and the whole reason this is Earn Trust. Slow down on that sentence - do not deliver it as a subordinate clause."
       ],
       "open_questions": [],
       "spoken_star": {
@@ -113,13 +114,14 @@
         ],
         "s": "I built the financial model behind a $2M RV park acquisition — the business case leadership was using to decide whether to buy.",
         "t": "I needed the operating cost assumptions right, especially property taxes, because the lender required the property to earn 1.25 times its loan payments before they'd fund it.",
-        "a": "Going back through it, I found two mistakes I'd made. I'd taken the seller's $3,583 tax payment as the annual bill when it was actually semi-annual — the real annual figure was $7,126. And I'd inflated historical costs by 3%, when buying the park would trigger a county revaluation against our purchase price — another $4,300 a year.\n\nI checked both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I'd given them was overstated.",
+        "a": "Going back through it I found two mistakes — and they had the same root. I'd built the model on the seller's numbers without asking what changes when the property changes hands.\n\nFirst, I'd taken their $3,583 tax payment as the annual bill. It was semi-annual; the real figure was $7,126.\n\nThe second one mattered more. I'd grown their historical costs forward at 3% inflation, which is what you normally do. But property tax isn't an inflation cost — the county taxes you on what they think the property is worth, and their number was years old and low. Our purchase price would tell them what it was actually worth. So that line wasn't drifting up 3%, it was resetting — about $11,400, an extra $4,300 a year.\n\nI checked both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I'd given them was overstated.",
         "r": "The corrected model showed operating income about $7,800 a year lower than my original. Leadership used it to negotiate $55K off the $2M purchase price, and it still cleared the lender's 1.25 times coverage requirement."
       },
       "pocket_answers": {
         "What do you mean you inflated historical costs by 3%?": "I'd taken the seller's historical operating expenses and grown them forward at 3% a year, which is standard for most lines - insurance, utilities, wages. But property tax isn't an inflation-driven cost, it's assessed value times the tax rate, and buying the park would trigger a county reassessment against our $2M purchase price. The seller's assessment was years old and well below that, so that line wasn't going up 3%, it was going up about $4,300.",
         "How big was the jump?": "The historical bill was about $7,100. Three percent inflation would have put it at $7,300. After reassessment it was closer to $11,400 - roughly a 60% increase, because the county had the park assessed about 38% below what we paid.",
-        "What did you take from it?": "That a blanket inflation factor is fine until something structurally resets how a cost is calculated. Now I ask of every expense line whether anything about the transaction changes the basis, not just how fast it grows. Property tax on an acquisition is the obvious one, but it's the same trap with insurance after a claim or any fee that's a percentage of revenue."
+        "What did you take from it?": "That a blanket inflation factor is fine until something structurally resets how a cost is calculated. Now I ask of every expense line whether anything about the transaction changes the basis, not just how fast it grows. Property tax on an acquisition is the obvious one, but it's the same trap with insurance after a claim or any fee that's a percentage of revenue.",
+        "Why would the tax jump just because you bought it?": "The county taxes you on what they think the property is worth, and they don't re-check every year - they use an old number until something tells them otherwise. A sale is that something. Our purchase price told them what the park was actually worth, and the bill reset against it."
       }
     },
     {
