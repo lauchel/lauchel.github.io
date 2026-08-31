@@ -91,7 +91,8 @@
         "RETAGGED - 'Are Right, A Lot' removed. This is a story about being wrong twice; against a judgement prompt it answers the opposite of what was asked. Lead it as Earn Trust, with Dive Deep second.",
         "'Saved over $4K annually' was corrected to 'surfaced' - the revaluation was a cost the acquisition caused, not a saving you produced. The real win is the $55K price reduction.",
         "HAVE THE $55K BRIDGE READY - 'how does a tax error become a $55K price cut?' is the obvious probe. The corrected NOI was about $7,800/year lower ($3,543 of understated tax plus the $4,300 revaluation). Capitalised at 6-8% that implies $98K-$131K of value, so $55K is what the negotiation actually landed, not the full theoretical hit. Saying that unprompted is what makes you sound like you own the model.",
-        "This is an error CAUGHT BEFORE DAMAGE, not a failure with consequences. Against 'tell me about a time you failed', use S30 - it has a real cost. Use S5 when the prompt is about standards, catching your own work, or telling someone something they did not want to hear."
+        "This is an error CAUGHT BEFORE DAMAGE, not a failure with consequences. Against 'tell me about a time you failed', use S30 - it has a real cost. Use S5 when the prompt is about standards, catching your own work, or telling someone something they did not want to hear.",
+        "The $7,800 is your own arithmetic - $3,543 of understated tax plus the $4,300 revaluation. Stating the size of your own error before the $55K is what makes the story Earn Trust rather than a humblebrag about a negotiation win."
       ],
       "open_questions": [
         "Tax figure does not reconcile: $3,583 semi-annual x 2 = $7,166, but the story states $7,126 annual. Check the county bill."
@@ -105,7 +106,7 @@
         "s": "I was building the pro forma for a $2M RV park acquisition — the model leadership was using to decide whether to buy.",
         "t": "I needed the operating costs right, especially property taxes, because the lender required 1.25 times debt coverage.",
         "a": "Going back through it, I found two mistakes I'd made. I'd taken the seller's tax payment as the annual bill when it was actually semi-annual, so I'd understated it by half. And I'd inflated historical costs by 3%, when buying the park would trigger a county revaluation against our purchase price — another $4,300 a year.\n\nI checked both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I'd given them was overstated.",
-        "r": "They used the corrected numbers to negotiate $55K off the purchase price, and it still cleared the lender's coverage requirement."
+        "r": "The corrected model showed operating income about $7,800 a year lower than my original. Leadership used it to negotiate $55K off the $2M purchase price, and it still cleared the lender's 1.25 times coverage requirement."
       }
     },
     {
@@ -147,7 +148,8 @@
         "Don't skip the cadence beat. 'They called me when it went red' is the adoption proof - it shows the tool worked without the candidate pushing it, which is what separates a built tool from a used one.",
         "Weekly cadence is confirmed; the specific day is not established. Say 'once a week', not 'Monday morning'.",
         "DO NOT LEAD WITH THIS FOR BIAS FOR ACTION. The BFA tag here is the weak sense - nobody asked for the tool and the candidate built it anyway. But a BFA prompt asks about moving fast under uncertainty, and this is a careful multi-week build. Answering a speed question with a tool-building story reads as missing the question. Route BFA prompts to S28 first, S32 second.",
-        "'Think Big' tag removed - a dashboard for one 100-unit park is strong execution, not scale-thinking. Route Think Big prompts to S27 or S32."
+        "'Think Big' tag removed - a dashboard for one 100-unit park is strong execution, not scale-thinking. Route Think Big prompts to S27 or S32.",
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
       ],
       "pocket_answers": {
         "How did you communicate this tool?": "I walked the ops manager through it once - how to read it, what the red flag means, and what to do when they see it. I kept running the refresh each week, but they read the dashboard on their own. That was the real signal it worked: they'd call me when a week went red, instead of me chasing them.",
@@ -171,7 +173,7 @@
         "s": "Our 100-unit RV park only had month-end reporting. By the time we saw the numbers the month was closed — so if a weekend came in soft, there was nothing anyone could do about it.",
         "t": "I wanted something forward-looking, so operations could adjust pricing before we lost the revenue instead of after.",
         "a": "I pulled the reservation data out of our booking software. The export was messy — a guest booking Friday to Sunday came through as one row, but I needed each night separately to count occupancy. Dates came through as text Excel couldn't read. And site rental was lumped in with firewood and pet fees.\n\nI wrote a macro that cleans all of that in one click, and built a dashboard showing the next four weeks — occupancy, sites still open, average rate, and revenue per available site. Anything more than three weeks out that's below 90% turns red.\n\nI ran it once a week, took about a minute. The ops manager read it on their own and called me when something went red.",
-        "r": "In mid-May it flagged a weekend at 68% — they sent a 15% discount to past guests, and we filled it to 86% before that weekend arrived."
+        "r": "In mid-May it flagged a weekend at 68% — they sent a 15% discount to past guests, and we filled it to 86% before that weekend arrived. That was about $2,500 of revenue we'd otherwise have lost on one weekend, and the weekly run took me about a minute instead of the four hours I used to spend pulling numbers."
       }
     },
     {
@@ -358,7 +360,8 @@
       "delivery_notes": [
         "Only Frugality story in the bank. Protect it - don't spend it on a Have Backbone prompt if Frugality might come up later in the loop.",
         "STATE THE ADAPTER PAYBACK - it is the strongest number in the story and it is currently missing. Replacement: $6,000 / $220 per month = 27 months. Adapters: $560 / ($220 - $69 subscription) = 3.7 months. At the actual $300/month uplift, 2.4 months. 27 against 3.7 ends the argument.",
-        "Prepared answer for 'your estimate was 22% and it came in at 30% - so your analysis was wrong too?': the 22% was deliberately conservative for a go/no-go, and the decision holds at either number. That is what a conservative case is for."
+        "Prepared answer for 'your estimate was 22% and it came in at 30% - so your analysis was wrong too?': the 22% was deliberately conservative for a go/no-go, and the decision holds at either number. That is what a conservative case is for.",
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
       ],
       "spoken_star": {
         "primary": "Frugality",
@@ -370,7 +373,7 @@
         "s": "Our 100-unit park made about $1,000 a month from coin-op laundry. Ownership wanted to replace four of the eight machines with tap-payment ones — $1,500 each, $6,000 total — assuming it would lift revenue 50%.",
         "t": "I wanted to validate that 50% before we committed the $6,000.",
         "a": "I pulled usage data from a comparable park, looked at our occupancy, and worked out what residents actually pay per load. Realistic uplift was about 22%, not 50 — around $220 a month. On $6,000 that's a 27-month payback, on machines that already worked.\n\nOwnership pushed back — they felt it would improve the park, and they weren't wrong about that. So rather than just saying no, I found another way to get there: coin-to-card adapters on the existing machines. $560 up front for all sixteen, plus $69 a month. Same tap payment, and it pays back in under four months instead of 27. And if tenants didn't use it, we could pull it out without being stuck with $6,000 of hardware.",
-        "r": "They went with the adapters. Revenue actually went up 30% — better than my estimate."
+        "r": "They went with the adapters. Revenue went up 30% — about $300 a month, better than my 22% estimate — and we avoided $5,440 of upfront spend on machines that already worked."
       }
     },
     {
@@ -406,7 +409,8 @@
         "DEFAULT PICK for Learn and Be Curious, but REFRAME THE OPENING. Do not open with 'I taught myself SQL' - that answers 'can you learn a tool', which is not what the LP asks.",
         "Open with the accidental catch instead: found a delinquent tenant only because you happened to open that one sheet, then asked 'if one slipped through, how many others did?' That question is the curiosity. The SQL is just how you answered it.",
         "Ordering that lands: the accident -> the question it raised -> teaching yourself SQL to answer it at portfolio scale -> the 5-KPI monthly report. Learning the tool is a beat in the middle, not the headline.",
-        "The Result deliberately closes by echoing the Situation - 'instead of whenever a person happens to open the right file' calls back to the tenant you found by accident. That lands harder than a specific example would, and it needs no figure you'd have to defend. If they ask for a concrete catch, give one if you have it; if not, 'I'd have to pull the numbers' is fine."
+        "The Result deliberately closes by echoing the Situation - 'instead of whenever a person happens to open the right file' calls back to the tenant you found by accident. That lands harder than a specific example would, and it needs no figure you'd have to defend. If they ask for a concrete catch, give one if you have it; if not, 'I'd have to pull the numbers' is fine.",
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
       ],
       "primary_lps": [
         "Learn and Be Curious",
@@ -423,7 +427,7 @@
         "s": "We had ten properties and about seven hundred tenants, and each property's rent roll lived in its own spreadsheet. That worked fine when the portfolio was small.",
         "t": "One day I happened to open one of those sheets and found a tenant months behind that nobody had flagged. I only caught it because I opened that particular file — and that bothered me. If one slipped through because nobody was looking, how many others were there? I wanted a way to answer that.",
         "a": "There was no portfolio-level view, so I taught myself SQL, mostly off YouTube. I built a SQLite database and loaded all seven hundred tenants in. Now I can ask questions in seconds — who owes more than $5,000, who's more than five months behind, total revenue by month.\n\nThen I built a monthly report on top of it tracking five things: collection rate, vacancy by property, aging at 30, 60 and 90 days, revenue per occupied unit, and expense per unit.",
-        "r": "Queries that used to mean opening ten spreadsheets one at a time now run in seconds. Leadership had never had a portfolio view before — now they get one every month, and someone months behind shows up as soon as they cross the threshold, instead of whenever a person happens to open the right file."
+        "r": "What used to take half an hour of opening spreadsheets one at a time now runs in under a minute. Leadership had never had a view across all 700 tenants before — now they get one every month, and someone months behind surfaces as soon as they cross the threshold, instead of whenever a person happens to open the right file."
       }
     },
     {
@@ -459,7 +463,8 @@
         "The 80% accuracy is a strength, not a weakness. It shows the estimate was disciplined and the true-up was planned, not a lucky guess. Don't apologize for it.",
         "Thinnest story in the bank - it will not fill four minutes as written. Add the stakes (the CPA's filing deadline and the consequence of missing it) and the real true-up figures.",
         "Name the late-filing penalty early - it is what makes the deadline real. Without it the urgency is asserted rather than shown.",
-        "'About 80% accurate' is your own recollection and is fine to say. If probed on the exact split: 'I don't have the figure in front of me - we accrued $50K and landed within about 20%, and trued up the next month.' Not knowing a detail two levels down is normal; inventing one is not."
+        "'About 80% accurate' is your own recollection and is fine to say. If probed on the exact split: 'I don't have the figure in front of me - we accrued $50K and landed within about 20%, and trued up the next month.' Not knowing a detail two levels down is normal; inventing one is not.",
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
       ],
       "open_questions": [],
       "spoken_star": {
@@ -470,7 +475,7 @@
         "s": "It was month-end close and the CPA was waiting on the P&L for tax filings. Three vendor bills totaling about $50K hadn't come in, and missing the filing deadline meant a late penalty.",
         "t": "I had to either hold the close or find a way to deliver an accurate P&L without the actual invoices.",
         "a": "Three options. Chase the vendors — but from experience they weren't going to turn invoices around that fast. Ask the CPA for an extension — their filing schedule couldn't flex. Or estimate the bills and accrue them.\n\nI went with accruing, because it's a two-way door: if the actuals came in different, we true it up the following month and nothing downstream breaks. For each vendor I pulled the contract amount off the PO, cross-checked what they'd billed the prior month, and looked at their historical average.\n\nI delivered the P&L on time with the accrued items flagged, so the CPA knew exactly what was estimated.",
-        "r": "The estimates came in about 80% accurate. We trued up the difference the following month, and there was no impact on the filing — which is exactly what the accrual was there to allow."
+        "r": "The $50K accrual came in about 80% accurate, and we trued up the difference the following month. The close went out on time, the CPA filed on schedule, and we avoided the late penalty — which is exactly what the accrual was there to allow."
       }
     },
     {
@@ -510,7 +515,8 @@
       ],
       "delivery_notes": [
         "HARD RULE: never use both variants with the same interviewer.",
-        "Variant B is NOT a failure story - 'almost trusted the GL, then caught myself' is a success with tension. Offered against 'tell me about a mistake' it reads as dodging, which scores worse than a real mistake would. Send failure prompts to S30 or S5."
+        "Variant B is NOT a failure story - 'almost trusted the GL, then caught myself' is a success with tension. Offered against 'tell me about a mistake' it reads as dodging, which scores worse than a real mistake would. Send failure prompts to S30 or S5.",
+        "'Over 40% of the invoice' lands harder than $8,500 alone - it shows the scale of what was nearly paid twice. 8,500 of 20,000 is 42.5%, so 'over 40%' is safe."
       ],
       "spoken_star": {
         "primary": "Insist on the Highest Standards",
@@ -522,7 +528,7 @@
         "s": "I was managing vendor payments on a house renovation with a $50K monthly capital budget. A subcontractor sent a $20K invoice for structural concrete work.",
         "t": "Before releasing that much I wanted to verify every line against what we'd actually already paid.",
         "a": "I cross-referenced it against QuickBooks and the site progress photos. One line — $8,500 for foundation prep — we'd already paid two months earlier.\n\nI sat down with the contractor and the site manager rather than just rejecting the invoice. It turned out to be an honest mistake: their accounting person had re-billed a milestone that was already closed out.\n\nThen I built an Excel template that flags anything already paid.",
-        "r": "We avoided the $8,500 duplicate. Handling it that way strengthened the relationship — afterwards they started reviewing their own draws before submitting them. And we adopted the template across all the active projects."
+        "r": "We avoided the $8,500 duplicate — over 40% of that $20K invoice. Handling it collaboratively strengthened the relationship: afterwards they reviewed their own draws before submitting them. And the template went out across every active project."
       }
     },
     {
@@ -655,7 +661,8 @@
       "delivery_notes": [
         "Shares the 'built a forward-looking tracker with a red threshold' shape with S6. If both are used in one loop, lead S32 with the crisis (the $105K gap and the renegotiation) rather than the tool.",
         "CLOSE THE ARITHMETIC HOLE. You name a $105K gap then describe covering $80K ($50K deferred + $30K revolver). Name the third source explicitly - almost certainly the summer reserves mentioned in the Situation. One clause fixes it.",
-        "Naming all three sources closes the arithmetic: $50K deferred, $30K revolver, $25K reserves against the $105K gap. The reserves are also the stronger detail - they existed because the seasonality was already planned for."
+        "Naming all three sources closes the arithmetic: $50K deferred, $30K revolver, $25K reserves against the $105K gap. The reserves are also the stronger detail - they existed because the seasonality was already planned for.",
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
       ],
       "primary_lps": [
         "Ownership",
@@ -673,7 +680,7 @@
         "s": "RV parks are seasonal. Off-season our park brings in about $50K a month against $55K of fixed costs, and we cover the gap from reserves we build over summer. We had an electrical upgrade planned for spring, but the contractor finished early and billed the full $100K in February — our lowest revenue month.",
         "t": "Outflows jumped from $55K to $155K against $50K of income. A $105K gap, with payroll and the mortgage both due — and I needed to make sure timing like that couldn't blindside us again.",
         "a": "First I called the contractor and renegotiated — split it 50/50, $50K then and $50K pushed out 45 days. I drew $30K on our line of credit and repaid it once March bookings picked up, and covered the remaining $25K out of the reserves we'd built over the summer.\n\nThen I built a rolling 30-day cash tracker so it couldn't happen again. It shows day by day what's coming in from bookings, what's going out for vendors, payroll, utilities and debt service, and the projected balance each week. If any week drops below $25K, the sheet turns red.",
-        "r": "We covered February without missing payroll or the mortgage. There have been no cash surprises since, and now we time capital projects for summer and stagger contractor invoices so they don't stack up in the off-season."
+        "r": "We closed the $105K gap without missing payroll or the mortgage. There have been no cash surprises since — the tracker gives us 30 days of visibility — and we now time capital projects for summer so invoices don't stack up against the off-season."
       }
     },
     {
@@ -772,7 +779,8 @@
       "delivery_notes": [
         "Strongest Dive Deep story: a stated assumption, a disproof, and an arithmetic reconciliation that lands exactly on the variance. Default pick for 'tell me about a time you dug into data.'",
         "Cut to Dive Deep primary, Highest Standards secondary. Six tags means reaching for this against prompts it only loosely fits.",
-        "The finding reconciles exactly - 8 units x $250 = the $2,000 variance. Say the multiplication out loud; exact reconciliation is rare and very convincing."
+        "The finding reconciles exactly - 8 units x $250 = the $2,000 variance. Say the multiplication out loud; exact reconciliation is rare and very convincing.",
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
       ],
       "primary_lps": [
         "Dive Deep",
@@ -788,7 +796,7 @@
         "s": "During month-end variance analysis on an apartment project, repairs and maintenance came in more than 10% over budget — second month running. We were bleeding cash on unit turns, the cleaning and painting between tenants.",
         "t": "The property manager assumed we were just doing more move-outs than usual. I needed to know whether that was actually true, because cost and volume are very different problems.",
         "a": "I exported the raw GL data from QuickBooks and ran a pivot by vendor and by unit. Volume was flat — still about eight turns a month, same as always.\n\nWhat had changed was our main painting vendor: they'd raised the price on a standard two-bedroom repaint from $1,250 to $1,500, a 20% increase, without renegotiating the contract. Eight units times $250 was exactly the $2,000 we were over.\n\nThe property manager had been approving invoices in a stack and hadn't caught the rate creep. I flagged it to leadership, we paused the vendor, and I worked with operations to build a standard rate card.",
-        "r": "We recovered the overpayment, invoices now only get approved if they match the rate card, and variance was back to zero the next month."
+        "r": "We recovered the overpayment and stopped about $2,000 a month of overcharging. Invoices now only get approved if they match the rate card, and the variance was back to zero the following month."
       }
     }
   ],
