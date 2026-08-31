@@ -21,29 +21,32 @@
       ],
       "action": [
         "Built a side-by-side analysis comparing peak vs off-season.",
-        "Peak: modelled at 100% occupancy (the park is essentially full in season), renovation displaces half the units with every one earning, losing $75K/month. Over 8 months, $600K lost.",
-        "Off-season: occupancy drops to 70%, displacing only 35 occupied units at $52.5K/month. Over 8 months, $420K lost.",
-        "Difference: $180K less revenue lost by waiting.",
-        "My real concern was liquidity, not revenue - the park already runs a structural cash deficit off-season, roughly $50K revenue against $55K fixed costs, covered from summer reserves. That is seasonal, not caused by the renovation. I didn't want to carry $200K of new debt service on top of it.",
-        "Ownership weighed the revenue upside higher and decided to proceed at peak season.",
+        "Half the park is 50 sites - about $75K/month of rent at full occupancy.",
+        "Peak: occupancy runs around 95%, so renovating then costs roughly $71K/month. Over 8 months, $570K.",
+        "Off-season: occupancy drops to 70%, so the same work costs $52.5K/month. Over 8 months, $420K.",
+        "Difference: $150K less revenue lost by waiting.",
+        "Modeled break-even: once complete the uplift is $95K/month (100 units at 95% x $1,000), so the $570K peak loss takes 6 months post-completion to recover - 14 months total.",
+        "My real concern was liquidity, not revenue - the park already runs a structural cash deficit off-season, roughly $50K revenue against $55K fixed costs, covered from summer reserves. That is seasonal, not caused by the renovation.",
+        "Recommended waiting. Ownership weighed the revenue upside higher and decided to proceed at peak season.",
         "Committed to their decision and used the same displacement model to build a phased schedule - 10 units out at a time across the 8 months instead of 50 at once."
       ],
       "result": [
         "Ownership proceeded with the peak-season renovation.",
-        "Phasing cut displaced revenue from the projected $600K to about $120K - 10 units out at a time rather than 50.",
+        "Phasing cut displaced rent to about $14K/month - roughly $114K over the 8 months, against the $570K the unphased plan would have cost.",
         "Rents reached $2,500 per unit after completion."
       ],
       "delivery_notes": [
-        "THIS IS THE COMMIT HALF OF THE LP. Ownership overruled you - do not imply they changed their mind.",
-        "The task was ASSIGNED - you were asked to run the scenario analysis, not volunteering an objection. That is stronger, not weaker: it means the disagreement came out of the work rather than out of an opinion. Make sure you say 'I came back recommending we wait' so the disagreement is still explicit.",
-        "STRONGEST LINE: the model they rejected is the model you used to reduce the damage. $600K projected displacement down to about $120K. Say the mechanism - 10 units at a time instead of 50 - because that is what makes the number believable.",
-        "BE READY FOR THE DELAY-COST PROBE. On revenue alone, waiting loses money: the uplift is $100K/month once complete, so even a 2-month delay forgoes $200K to save $180K of displacement. Do not get caught by this - lead with liquidity, not revenue. 'The revenue math favoured going sooner and I knew that; my concern was carrying debt service into a season where the park runs a cash deficit.'",
-        "If pushed on the return: $200K across 100 units is a 2-month payback on a $1,000/month uplift. That is genuinely strong, which is exactly why ownership wanted to move - concede that readily.",
+        "THIS IS THE COMMIT HALF OF THE LP. Ownership overruled you - do not imply they changed their mind. Say 'I came back recommending we wait' so the disagreement is explicit, since the task was assigned rather than self-initiated.",
+        "STRONGEST LINE: the model they rejected is the model you used to reduce the damage. $570K of projected displacement down to about $114K.",
+        "EVERY NUMBER DERIVES FROM ONE LINE: half the park is $75,000/month at full occupancy. Peak is that x 95%, off-season x 70%, phased is a fifth of it x 95%. If asked how you got any figure, walk back to the $75,000. See calc_sheet.",
+        "SAY 'AROUND 95%', NOT '100%'. A flat full-occupancy figure invites two objections - no park sustains literal 100%, and an eight-month window cannot all be peak season. 95% is realistic and still makes the point.",
+        "BE READY FOR THE DELAY-COST PROBE. On revenue alone, waiting loses money: the uplift is $95K/month once complete, so even a 2-month delay forgoes $190K to save $150K. Lead with liquidity, not revenue - 'the revenue math favoured going sooner and I knew that'.",
+        "THE BREAK-EVEN CROSS-CHECKS EXACTLY: $570K of peak loss divided by $95K/month of uplift is 6.0 months. If they test your arithmetic, this is the number that shows the model hangs together.",
+        "IF ASKED whether the off-season deficit is caused by the renovation: no, it is structural and seasonal, covered from summer reserves every year. Say so unprompted.",
+        "If pushed on the renovation's return: $200K across 100 units is about a 2-month payback on a $1,000/month uplift. Concede readily - that is exactly why ownership wanted to move.",
         "Do not sound bitter or vindicated. Deliver the override neutrally and move straight to the phasing.",
-        "Claim $180K as the modelled difference between peak and off-season, and $480K as what phasing actually saved. Two different numbers - do not merge them.",
-        "IF ASKED whether the off-season deficit is caused by the renovation: no, it is structural and seasonal - it happens every year and is covered from summer reserves. Say so unprompted; the argument is stronger when they understand you were protecting an already-tight season rather than describing a problem you created.",
-        "WATCH THE CROSS-STORY NUMBERS. S3 says off-season occupancy is 70% of 100 units at $1,500, which implies about $105K/month. S32 says off-season revenue is about $50K/month. Both cannot be literally true at the same rate - off-season nightly rates are far lower than peak. The loop plan already keeps S3 and S32 apart, but know which figure is which if both come up: the $1,500 is the peak monthly rate, the $50K is actual off-season revenue at discounted rates.",
-        "SAY 'I MODELLED IT AT 100%', NOT 'WE RUN AT 100%'. Two objections land on a flat full-occupancy figure: no park sustains literal 100%, and an eight-month window cannot all be peak season - peak is more like five months, so the tail runs through shoulder and into off-season. Naming it as a modelling assumption answers both at once, and labelling your assumptions is what an analyst is supposed to do. If pushed: 'I held occupancy flat on both sides so the comparison was like-for-like - blending the seasons would have moved both numbers down, not changed which was cheaper.'"
+        "$150K is the modelled peak-vs-off-season difference. $456K is what phasing actually saved against the unphased peak plan. Two different numbers - do not merge them.",
+        "WATCH THE CROSS-STORY NUMBERS. S3's 70% of 100 units at $1,500 implies about $105K/month off-season, while S32 states about $50K. The $1,500 is the peak monthly rate; off-season rates are discounted. The loop plan keeps S3 and S32 apart."
       ],
       "open_questions": [],
       "primary_lps": [
@@ -56,8 +59,18 @@
         ],
         "s": "Ownership wanted to start a $200K renovation on our 100-unit RV park during peak season.",
         "t": "I was asked to run a scenario analysis on whether the plan worked — renovating now versus waiting for the off-season.",
-        "a": "I built a side-by-side. At peak we're essentially full, so I modelled it at 100% — renovating then takes half the park offline with every unit earning, about $600K of lost rent over eight months. Off-season, occupancy drops to around 70%, so the same work displaces fewer paying units: $420K. So waiting was $180K cheaper.\n\nBut my real concern was cash, not revenue. The park already runs a deficit off-season — about $50K coming in against $55K of fixed costs, and that's just the season, not the renovation — so we cover it from summer reserves. I didn't want to be carrying $200K of new debt service into that on top.\n\nSo I came back recommending we wait. Ownership weighed the revenue upside higher and decided to go ahead at peak. So I took the same model they'd rejected and used it to build a phased schedule — ten units out at a time instead of fifty.",
-        "r": "That brought actual displacement down to about $120K, against the $600K the original plan would have cost. Rents went from $1,500 to $2,500 after completion."
+        "a": "I built a side-by-side. Half the park is fifty sites — about $75,000 a month of rent if every one is full. At peak we run around 95%, so renovating then costs roughly $71,000 a month, about $570,000 across the eight months. Off-season, occupancy drops to 70%, so the same work costs $52,500 a month — $420,000. Waiting was $150,000 cheaper.\n\nBut my real concern was cash, not revenue. The park already runs a deficit off-season — about $50,000 coming in against $55,000 of fixed costs, and that's just the season, not the renovation — so we cover it from summer reserves. I didn't want to be carrying $200,000 of new debt service into that on top.\n\nSo I came back recommending we wait. Ownership weighed the revenue upside higher and decided to go ahead at peak. So I took the same model they'd rejected and used it to build a phased schedule — ten sites out at a time instead of fifty.",
+        "r": "Ten sites out at a time is about $14,000 a month instead of $71,000 — roughly $114,000 of displaced rent over the eight months, against the $570,000 the unphased plan would have cost. Rents went from $1,500 to $2,500 after completion."
+      },
+      "calc_sheet": {
+        "base": "50 sites (half the park) x $1,500 = $75,000/month at full occupancy. Every other figure comes off this one line.",
+        "peak": "$75,000 x 95% = $71,250/month. x 8 months = $570,000.",
+        "off_season": "$75,000 x 70% = $52,500/month. x 8 months = $420,000.",
+        "difference": "$570,000 - $420,000 = $150,000 cheaper to wait.",
+        "phased": "10 sites x $1,500 = $15,000/month at full. x 95% = $14,250/month. x 8 months = $114,000.",
+        "phasing_saved": "$570,000 - $114,000 = $456,000.",
+        "break_even": "Uplift once complete = 100 units x 95% x $1,000 = $95,000/month. $570,000 / $95,000 = exactly 6.0 months to recover, 14 months including the build.",
+        "delay_cost": "Waiting costs $95,000/month of forgone uplift. Even a 2-month delay forgoes $190,000 to save $150,000 - a net loss of $40,000. This is why the argument must be liquidity, not revenue."
       }
     },
     {
