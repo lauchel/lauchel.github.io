@@ -13,11 +13,10 @@
       ],
       "situation": [
         "Packwood is a 100-unit RV park at $1,500/month rent per unit.",
-        "Ownership wanted to start a $200K renovation during peak season.",
-        "Their thinking: renovate now, get rents up to $2,500 sooner - a $1,000/month uplift per unit, $100K/month total."
+        "Leadership wanted to renovate half the park - 50 sites - to increase the property's value."
       ],
       "task": [
-        "I was asked to run a scenario analysis on whether the plan worked - renovating at peak versus waiting for off-season."
+        "Run a scenario analysis on whether we could afford to renovate now, or should wait."
       ],
       "action": [
         "Built a side-by-side analysis comparing peak vs off-season.",
@@ -36,6 +35,7 @@
         "Rents reached $2,500 per unit after completion."
       ],
       "delivery_notes": [
+        "DO NOT USE until the open questions are resolved. The Situation and Task are correct; the Action and Result are still carrying figures from a version that conflicts with the earlier telling.",
         "THIS IS THE COMMIT HALF OF THE LP. Ownership overruled you - do not imply they changed their mind. Say 'I came back recommending we wait' so the disagreement is explicit, since the task was assigned rather than self-initiated.",
         "STRONGEST LINE: the model they rejected is the model you used to reduce the damage. $570K of projected displacement down to about $114K.",
         "EVERY NUMBER DERIVES FROM ONE LINE: half the park is $75,000/month at full occupancy. Peak is that x 95%, off-season x 70%, phased is a fifth of it x 95%. If asked how you got any figure, walk back to the $75,000. See calc_sheet.",
@@ -48,7 +48,10 @@
         "$150K is the modelled peak-vs-off-season difference. $456K is what phasing actually saved against the unphased peak plan. Two different numbers - do not merge them.",
         "WATCH THE CROSS-STORY NUMBERS. S3's 70% of 100 units at $1,500 implies about $105K/month off-season, while S32 states about $50K. The $1,500 is the peak monthly rate; off-season rates are discounted. The loop plan keeps S3 and S32 apart."
       ],
-      "open_questions": [],
+      "open_questions": [
+        "BLOCKING - an earlier telling of this story conflicts with the current one on three points, and the Action and Result cannot be finalised until they are settled. (1) OUTCOME: the earlier version has the manager agreeing after being walked through the analysis; the current version has ownership overruling and the candidate phasing the work. (2) THE 8 MONTHS: earlier it is how long self-funding from cash flow would take; currently it is the renovation's duration. (3) RENT UPLIFT: earlier it is about 15%; currently it is $1,500 to $2,500, a 67% lift.",
+        "The earlier version's real tension is BORROW vs SELF-FUND, not peak vs off-season - it has a loan, an interest cost, and an existing debt ratio from another project that borrowing would push into risky territory. That is a sharper and more specific argument than the current liquidity framing and should probably be recovered."
+      ],
       "primary_lps": [
         "Have Backbone, Disagree and Commit"
       ],
@@ -57,8 +60,8 @@
         "also": [
           "Deliver Results"
         ],
-        "s": "Ownership wanted to start a $200K renovation on our 100-unit RV park during peak season.",
-        "t": "I was asked to run a scenario analysis on whether the plan worked — renovating now versus waiting for the off-season.",
+        "s": "Leadership wanted to renovate half of Packwood — fifty of our hundred sites — to increase the property's value.",
+        "t": "I was asked to run a scenario analysis: could we actually afford to renovate now, or should we wait?",
         "a": "I built a side-by-side. Half the park is fifty sites — about $75,000 a month of rent if every one is full. At peak we run around 95%, so renovating then costs roughly $71,000 a month, about $570,000 across the eight months. Off-season, occupancy drops to 70%, so the same work costs $52,500 a month — $420,000. Waiting was $150,000 cheaper.\n\nBut my real concern was cash, not revenue. The park already runs a deficit off-season — about $50,000 coming in against $55,000 of fixed costs, and that's just the season, not the renovation — so we cover it from summer reserves. I didn't want to be carrying $200,000 of new debt service into that on top.\n\nSo I came back recommending we wait. Ownership weighed the revenue upside higher and decided to go ahead at peak. So I took the same model they'd rejected and used it to build a phased schedule — ten sites out at a time instead of fifty.",
         "r": "Ten sites out at a time is about $14,000 a month instead of $71,000 — roughly $114,000 of displaced rent over the eight months, against the $570,000 the unphased plan would have cost. Rents went from $1,500 to $2,500 after completion."
       },
