@@ -722,6 +722,97 @@
     "Do not invent numbers, outcomes, or LP mappings not present in this file.",
     "Where a story has primary_lps, route from that field - the full lps list records what the story touches, not what it should be picked for.",
     "Two stories are backup-only and should not open a loop: S5 (retagged, and it is a being-wrong story) and S7 (redundant with S19).",
-    "11 open questions remain across 8 stories - mostly missing endings and undefended figures. Surface them before recommending a story, per the story-prep mode."
-  ]
+    "11 open questions remain across 8 stories - mostly missing endings and undefended figures. Surface them before recommending a story, per the story-prep mode.",
+    "Assign stories by SETTING as well as by LP - see loop_plan. No setting should appear more than twice across one loop."
+  ],
+  "loop_plan": {
+    "purpose": "Fixes the setting-monotony gap: 14 of 15 stories share one employer and 5 are Packwood. This assigns stories to interviewer slots so no setting appears more than twice across a full loop, and every likely LP is reachable.",
+    "rule": "Track settings, not just LPs. If two interviewers hear about the same RV park, the loop debrief blurs them into one candidate anecdote.",
+    "slots": [
+      {
+        "slot": 1,
+        "likely_focus": "Hiring manager - Dive Deep, Deliver Results",
+        "primary": {
+          "id": "S34",
+          "setting": "Concrete"
+        },
+        "second": {
+          "id": "S19",
+          "setting": "Packwood"
+        },
+        "note": "S34 is the strongest story in the bank and reconciles exactly. Open with it."
+      },
+      {
+        "slot": 2,
+        "likely_focus": "Bar raiser - Earn Trust, failure, Highest Standards",
+        "primary": {
+          "id": "S30",
+          "setting": "Portfolio migration"
+        },
+        "second": {
+          "id": "S29A",
+          "setting": "Mercer Island"
+        },
+        "note": "S30 is the only genuine failure. Have the day 8-11 pocket answer ready. Use S29 variant A only."
+      },
+      {
+        "slot": 3,
+        "likely_focus": "Customer Obsession, Invent and Simplify",
+        "primary": {
+          "id": "S8",
+          "setting": "Signature Photo"
+        },
+        "second": {
+          "id": "S33",
+          "setting": "River Oaks"
+        },
+        "note": "S8 mid-loop is deliberate - it is the only non-real-estate setting and the only human stakes. Do not save it for last; it may never get asked."
+      },
+      {
+        "slot": 4,
+        "likely_focus": "Ownership, Bias for Action",
+        "primary": {
+          "id": "S32",
+          "setting": "Packwood"
+        },
+        "second": {
+          "id": "S28",
+          "setting": "Month-end close"
+        },
+        "note": "S28 is the default Bias for Action answer, not S6. Close S32's $25K gap before using it."
+      },
+      {
+        "slot": 5,
+        "likely_focus": "Have Backbone, Frugality, Learn and Be Curious",
+        "primary": {
+          "id": "S31",
+          "setting": "Concrete"
+        },
+        "second": {
+          "id": "S26",
+          "setting": "River Oaks"
+        },
+        "third": {
+          "id": "S27",
+          "setting": "Portfolio"
+        },
+        "note": "S31 is the only disagree-and-COMMIT story. S26 is the only Frugality story - do not spend it on a backbone prompt when S31 covers that."
+      }
+    ],
+    "setting_spread": {
+      "Concrete": 2,
+      "Packwood": 2,
+      "Portfolio": 2,
+      "River Oaks": 2,
+      "Signature Photo": 1,
+      "Mercer Island": 1,
+      "Month-end close": 1
+    },
+    "held_back": {
+      "S3": "Backbone backup. Packwood is already used twice.",
+      "S5": "Earn Trust backup behind S30. Retagged, do not open with it.",
+      "S6": "Invent and Simplify backup behind S33.",
+      "S7": "Never in the same loop as S19."
+    }
+  }
 }
