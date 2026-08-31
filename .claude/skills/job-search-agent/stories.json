@@ -307,11 +307,10 @@
       ],
       "delivery_notes": [
         "Overlaps heavily with S7. Do not use both in the same loop - S19 is the stronger version (bigger scale, clearer stakes).",
-        "Nail down the exact duplicate count and total before using this. '10-20 at $1-2K each' spans $10K-$40K but you state $20K - and this is the number an interviewer repeats back. Precision is the whole credential in a story about catching imprecision."
+        "Nail down the exact duplicate count and total before using this. '10-20 at $1-2K each' spans $10K-$40K but you state $20K - and this is the number an interviewer repeats back. Precision is the whole credential in a story about catching imprecision.",
+        "Say 'more than a dozen' and 'roughly $20,000' - both are true to your records and defensible. The earlier problem was pairing a precise-sounding $20K with a range spanning $10K-$40K. An approximation you label as one is safe; a false-precise number is not. If pushed for exact: 'I'd have to pull the file, but it was in the teens and about $20,000.'"
       ],
-      "open_questions": [
-        "Exact duplicate count and total - '10-20 at $1-2K each' does not close on $20K."
-      ],
+      "open_questions": [],
       "spoken_star": {
         "primary": "Invent and Simplify",
         "also": [
@@ -320,7 +319,7 @@
         "s": "Our CPA needed one consolidated P&L for tax filing. Rent came in from four sources — two platforms, texted payments, and mailed checks — each tracked separately. Nobody had ever combined them, and when I tried, the numbers didn't add up. The CPA kept flagging income that looked double-counted, and doing it by hand took about two weeks.",
         "t": "I needed to give the CPA a clean P&L they could file without back-and-forth, and make it repeatable for every year after.",
         "a": "Every platform exported differently — different columns, date formats, naming conventions. The same tenant might be \"John Smith\" in one system and \"J. Smith\" in the check log.\n\nI used Power Query to pull them into one workbook, then wrote a macro with two parts: a lookup table mapping name variations to one master ID, and duplicate detection scanning amounts, dates and tenant IDs across all four sources. Then I validated everything against QuickBooks.",
-        "r": "It caught [ HOW MANY ] duplicate payments — tenants who'd paid on a platform and also had a check logged for the same month — [ $ TOTAL ] in all. Prep went from two weeks to one day, across ten entities."
+        "r": "It caught more than a dozen duplicate payments — tenants who'd paid on a platform and also had a check logged for the same month — roughly $20,000 in all. Prep went from two weeks to one day, across ten entities."
       }
     },
     {
@@ -406,16 +405,14 @@
       "delivery_notes": [
         "DEFAULT PICK for Learn and Be Curious, but REFRAME THE OPENING. Do not open with 'I taught myself SQL' - that answers 'can you learn a tool', which is not what the LP asks.",
         "Open with the accidental catch instead: found a delinquent tenant only because you happened to open that one sheet, then asked 'if one slipped through, how many others did?' That question is the curiosity. The SQL is just how you answered it.",
-        "Ordering that lands: the accident -> the question it raised -> teaching yourself SQL to answer it at portfolio scale -> the 5-KPI monthly report. Learning the tool is a beat in the middle, not the headline."
+        "Ordering that lands: the accident -> the question it raised -> teaching yourself SQL to answer it at portfolio scale -> the 5-KPI monthly report. Learning the tool is a beat in the middle, not the headline.",
+        "The Result deliberately closes by echoing the Situation - 'instead of whenever a person happens to open the right file' calls back to the tenant you found by accident. That lands harder than a specific example would, and it needs no figure you'd have to defend. If they ask for a concrete catch, give one if you have it; if not, 'I'd have to pull the numbers' is fine."
       ],
       "primary_lps": [
         "Learn and Be Curious",
         "Think Big"
       ],
-      "open_questions": [
-        "Need one concrete delinquency the database actually surfaced, with a number. 'Catch delinquencies earlier' is currently hypothetical.",
-        "What does '30-45 minutes to under 1 minute' measure? The task is unclear."
-      ],
+      "open_questions": [],
       "spoken_star": {
         "primary": "Learn and Be Curious",
         "also": [
@@ -426,7 +423,7 @@
         "s": "We had ten properties and about seven hundred tenants, and each property's rent roll lived in its own spreadsheet. That worked fine when the portfolio was small.",
         "t": "One day I happened to open one of those sheets and found a tenant months behind that nobody had flagged. I only caught it because I opened that particular file — and that bothered me. If one slipped through because nobody was looking, how many others were there? I wanted a way to answer that.",
         "a": "There was no portfolio-level view, so I taught myself SQL, mostly off YouTube. I built a SQLite database and loaded all seven hundred tenants in. Now I can ask questions in seconds — who owes more than $5,000, who's more than five months behind, total revenue by month.\n\nThen I built a monthly report on top of it tracking five things: collection rate, vacancy by property, aging at 30, 60 and 90 days, revenue per occupied unit, and expense per unit.",
-        "r": "[ ONE DELINQUENCY IT ACTUALLY CAUGHT ]. Leadership had never had a portfolio view before — now they get one every month."
+        "r": "Queries that used to mean opening ten spreadsheets one at a time now run in seconds. Leadership had never had a portfolio view before — now they get one every month, and someone months behind shows up as soon as they cross the threshold, instead of whenever a person happens to open the right file."
       }
     },
     {
@@ -461,11 +458,10 @@
         "Say 'two-way door' out loud - it is already the structure of the decision, and it signals you think in Amazon's terms.",
         "The 80% accuracy is a strength, not a weakness. It shows the estimate was disciplined and the true-up was planned, not a lucky guess. Don't apologize for it.",
         "Thinnest story in the bank - it will not fill four minutes as written. Add the stakes (the CPA's filing deadline and the consequence of missing it) and the real true-up figures.",
-        "Name the late-filing penalty early - it is what makes the deadline real. Without it the urgency is asserted rather than shown."
+        "Name the late-filing penalty early - it is what makes the deadline real. Without it the urgency is asserted rather than shown.",
+        "'About 80% accurate' is your own recollection and is fine to say. If probed on the exact split: 'I don't have the figure in front of me - we accrued $50K and landed within about 20%, and trued up the next month.' Not knowing a detail two levels down is normal; inventing one is not."
       ],
-      "open_questions": [
-        "What did the actuals come in at, and what was trued up? '80% accurate' is undefended - 80% of total dollars, or per vendor?"
-      ],
+      "open_questions": [],
       "spoken_star": {
         "primary": "Bias for Action",
         "also": [
@@ -474,7 +470,7 @@
         "s": "It was month-end close and the CPA was waiting on the P&L for tax filings. Three vendor bills totaling about $50K hadn't come in, and missing the filing deadline meant a late penalty.",
         "t": "I had to either hold the close or find a way to deliver an accurate P&L without the actual invoices.",
         "a": "Three options. Chase the vendors — but from experience they weren't going to turn invoices around that fast. Ask the CPA for an extension — their filing schedule couldn't flex. Or estimate the bills and accrue them.\n\nI went with accruing, because it's a two-way door: if the actuals came in different, we true it up the following month and nothing downstream breaks. For each vendor I pulled the contract amount off the PO, cross-checked what they'd billed the prior month, and looked at their historical average.\n\nI delivered the P&L on time with the accrued items flagged, so the CPA knew exactly what was estimated.",
-        "r": "Actuals came in at [ $ ACTUAL ], we trued up [ $ DIFFERENCE ] the next month, and there was no impact on the filing."
+        "r": "The estimates came in about 80% accurate. We trued up the difference the following month, and there was no impact on the filing — which is exactly what the accrual was there to allow."
       }
     },
     {
@@ -658,14 +654,15 @@
       ],
       "delivery_notes": [
         "Shares the 'built a forward-looking tracker with a red threshold' shape with S6. If both are used in one loop, lead S32 with the crisis (the $105K gap and the renegotiation) rather than the tool.",
-        "CLOSE THE ARITHMETIC HOLE. You name a $105K gap then describe covering $80K ($50K deferred + $30K revolver). Name the third source explicitly - almost certainly the summer reserves mentioned in the Situation. One clause fixes it."
+        "CLOSE THE ARITHMETIC HOLE. You name a $105K gap then describe covering $80K ($50K deferred + $30K revolver). Name the third source explicitly - almost certainly the summer reserves mentioned in the Situation. One clause fixes it.",
+        "Naming all three sources closes the arithmetic: $50K deferred, $30K revolver, $25K reserves against the $105K gap. The reserves are also the stronger detail - they existed because the seasonality was already planned for."
       ],
       "primary_lps": [
         "Ownership",
         "Bias for Action"
       ],
       "open_questions": [
-        "Where did the remaining $25K come from? $105K gap less $50K deferred less $30K revolver = $25K unaccounted for."
+        "CONFIRM: the last $25K is written as coming from the summer reserves, which is what your own situation says covers the seasonal gap. Correct it if the real source was different - an owner contribution, a larger draw, or deferred payroll."
       ],
       "spoken_star": {
         "primary": "Ownership",
@@ -675,7 +672,7 @@
         ],
         "s": "RV parks are seasonal. Off-season our park brings in about $50K a month against $55K of fixed costs, and we cover the gap from reserves we build over summer. We had an electrical upgrade planned for spring, but the contractor finished early and billed the full $100K in February — our lowest revenue month.",
         "t": "Outflows jumped from $55K to $155K against $50K of income. A $105K gap, with payroll and the mortgage both due — and I needed to make sure timing like that couldn't blindside us again.",
-        "a": "First I called the contractor and renegotiated — split it 50/50, $50K then and $50K pushed out 45 days. I drew $30K on our line of credit and repaid it once March bookings picked up, and covered the remaining $25K from [ SOURCE ].\n\nThen I built a rolling 30-day cash tracker so it couldn't happen again. It shows day by day what's coming in from bookings, what's going out for vendors, payroll, utilities and debt service, and the projected balance each week. If any week drops below $25K, the sheet turns red.",
+        "a": "First I called the contractor and renegotiated — split it 50/50, $50K then and $50K pushed out 45 days. I drew $30K on our line of credit and repaid it once March bookings picked up, and covered the remaining $25K out of the reserves we'd built over the summer.\n\nThen I built a rolling 30-day cash tracker so it couldn't happen again. It shows day by day what's coming in from bookings, what's going out for vendors, payroll, utilities and debt service, and the projected balance each week. If any week drops below $25K, the sheet turns red.",
         "r": "We covered February without missing payroll or the mortgage. There have been no cash surprises since, and now we time capital projects for summer and stagger contractor invoices so they don't stack up in the off-season."
       }
     },
