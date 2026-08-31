@@ -17,35 +17,32 @@
         "Their thinking: renovate now, get rents up to $2,500 sooner - a $1,000/month uplift per unit, $100K/month total."
       ],
       "task": [
-        "I thought the timing was wrong.",
-        "I needed to show ownership the full cost of renovating during peak versus waiting for off-season."
+        "I thought the timing was wrong - not on revenue, but on liquidity.",
+        "I needed to show ownership the full cost of renovating during peak versus waiting for off-season, and the risk of carrying new debt service into the low season."
       ],
       "action": [
         "Built a side-by-side analysis comparing peak vs off-season.",
-        "Peak: 100% occupancy, renovation displaces half the units, losing $75K/month. Over 8 months, $600K lost. Plus carrying the $200K loan during highest-revenue period.",
+        "Peak: 100% occupancy, renovation displaces half the units, losing $75K/month. Over 8 months, $600K lost.",
         "Off-season: occupancy drops to 70%, displacing only 35 occupied units at $52.5K/month. Over 8 months, $420K lost.",
         "Difference: $180K less revenue lost by waiting.",
-        "Modeled break-even: $1,000/month uplift per unit would take 6 months post-completion to recover peak losses - 14 months total.",
-        "Ownership pushed back - didn't want to miss out on higher rents sooner. They decided to proceed at peak season.",
-        "Committed to their decision and used the same displacement model to build a phased renovation schedule, so fewer units were out of service at any one time instead of half the park at once."
+        "My real concern was liquidity, not revenue - the park runs a cash deficit off-season, roughly $50K revenue against $55K fixed costs, and I didn't want to carry $200K of new debt service into that.",
+        "Ownership weighed the revenue upside higher and decided to proceed at peak season.",
+        "Committed to their decision and used the same displacement model to build a phased schedule - 10 units out at a time across the 8 months instead of 50 at once."
       ],
       "result": [
         "Ownership proceeded with the peak-season renovation.",
-        "Built a phased schedule that cut the number of units displaced at any one time, reducing the revenue loss below the $75K/month the unphased plan would have cost."
+        "Phasing cut displaced revenue from the projected $600K to about $120K - 10 units out at a time rather than 50.",
+        "Rents reached $2,500 per unit after completion."
       ],
       "delivery_notes": [
-        "THIS IS THE COMMIT HALF OF THE LP, NOT A BACKBONE WIN. Do not say ownership changed their mind - they did not. The story is that you made a rigorous case, lost, and then executed the decision you had argued against.",
-        "STRONGEST LINE AVAILABLE: the model they rejected is the model you used to reduce the damage. Say that explicitly - it shows the analysis was never wasted and that you committed with the same rigour you argued with.",
-        "Do not sound bitter or vindicated. Losing the argument does not make the analysis wrong, and the phased schedule is the part that demonstrates maturity. Deliver the override neutrally and move straight to what you did about it.",
-        "Claim $180K as the modelled difference, once. Do NOT say 'protected $600K' - that outcome did not happen.",
-        "The occupancy subtlety is the smartest thing in the analysis: renovation displaces 50 units either way, but off-season only 35 of them are occupied. Say that part slowly.",
-        "Now competes with S31 for the Disagree and Commit slot. S3 has larger stakes; S31 has the better evidenced outcome. See loop_plan."
+        "THIS IS THE COMMIT HALF OF THE LP. Ownership overruled you - do not imply they changed their mind.",
+        "STRONGEST LINE: the model they rejected is the model you used to reduce the damage. $600K projected displacement down to about $120K. Say the mechanism - 10 units at a time instead of 50 - because that is what makes the number believable.",
+        "BE READY FOR THE DELAY-COST PROBE. On revenue alone, waiting loses money: the uplift is $100K/month once complete, so even a 2-month delay forgoes $200K to save $180K of displacement. Do not get caught by this - lead with liquidity, not revenue. 'The revenue math favoured going sooner and I knew that; my concern was carrying debt service into a season where the park runs a cash deficit.'",
+        "If pushed on the return: $200K across 100 units is a 2-month payback on a $1,000/month uplift. That is genuinely strong, which is exactly why ownership wanted to move - concede that readily.",
+        "Do not sound bitter or vindicated. Deliver the override neutrally and move straight to the phasing.",
+        "Claim $180K as the modelled difference between peak and off-season, and $480K as what phasing actually saved. Two different numbers - do not merge them."
       ],
-      "open_questions": [
-        "How did the phasing actually work - how many units at a time, over what period? The mechanism needs one concrete detail to be credible.",
-        "What did the phased schedule actually save against the $75K/month unphased case? A number here turns a good story into a strong one.",
-        "Did rents reach $2,500 after the renovation completed?"
-      ],
+      "open_questions": [],
       "primary_lps": [
         "Have Backbone, Disagree and Commit"
       ]
@@ -816,7 +813,7 @@
       "Month-end close": 1
     },
     "held_back": {
-      "S3": "Disagree and Commit alternative to S31 - larger stakes ($600K displacement vs ACH fees and reconciliation hours) but the outcome is less well evidenced. Promote to slot 5 over S31 if the phasing savings can be quantified.",
+      "S3": "Now fully evidenced and arguably a STRONGER disagree-and-commit story than S31 - larger stakes and a quantified commit outcome ($600K projected displacement cut to ~$120K). S31 keeps slot 5 only to hold Packwood at two appearances across the loop. Swap S3 in if S19 or S32 is dropped.",
       "S5": "Earn Trust backup behind S30. Retagged, do not open with it.",
       "S6": "Invent and Simplify backup behind S33.",
       "S7": "Never in the same loop as S19."
