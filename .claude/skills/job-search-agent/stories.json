@@ -21,7 +21,7 @@
       ],
       "action": [
         "Built a side-by-side analysis comparing peak vs off-season.",
-        "Peak: 100% occupancy, renovation displaces half the units with every one full, losing $75K/month. Over 8 months, $600K lost.",
+        "Peak: modelled at 100% occupancy (the park is essentially full in season), renovation displaces half the units with every one earning, losing $75K/month. Over 8 months, $600K lost.",
         "Off-season: occupancy drops to 70%, displacing only 35 occupied units at $52.5K/month. Over 8 months, $420K lost.",
         "Difference: $180K less revenue lost by waiting.",
         "My real concern was liquidity, not revenue - the park already runs a structural cash deficit off-season, roughly $50K revenue against $55K fixed costs, covered from summer reserves. That is seasonal, not caused by the renovation. I didn't want to carry $200K of new debt service on top of it.",
@@ -42,7 +42,8 @@
         "Do not sound bitter or vindicated. Deliver the override neutrally and move straight to the phasing.",
         "Claim $180K as the modelled difference between peak and off-season, and $480K as what phasing actually saved. Two different numbers - do not merge them.",
         "IF ASKED whether the off-season deficit is caused by the renovation: no, it is structural and seasonal - it happens every year and is covered from summer reserves. Say so unprompted; the argument is stronger when they understand you were protecting an already-tight season rather than describing a problem you created.",
-        "WATCH THE CROSS-STORY NUMBERS. S3 says off-season occupancy is 70% of 100 units at $1,500, which implies about $105K/month. S32 says off-season revenue is about $50K/month. Both cannot be literally true at the same rate - off-season nightly rates are far lower than peak. The loop plan already keeps S3 and S32 apart, but know which figure is which if both come up: the $1,500 is the peak monthly rate, the $50K is actual off-season revenue at discounted rates."
+        "WATCH THE CROSS-STORY NUMBERS. S3 says off-season occupancy is 70% of 100 units at $1,500, which implies about $105K/month. S32 says off-season revenue is about $50K/month. Both cannot be literally true at the same rate - off-season nightly rates are far lower than peak. The loop plan already keeps S3 and S32 apart, but know which figure is which if both come up: the $1,500 is the peak monthly rate, the $50K is actual off-season revenue at discounted rates.",
+        "SAY 'I MODELLED IT AT 100%', NOT 'WE RUN AT 100%'. Two objections land on a flat full-occupancy figure: no park sustains literal 100%, and an eight-month window cannot all be peak season - peak is more like five months, so the tail runs through shoulder and into off-season. Naming it as a modelling assumption answers both at once, and labelling your assumptions is what an analyst is supposed to do. If pushed: 'I held occupancy flat on both sides so the comparison was like-for-like - blending the seasons would have moved both numbers down, not changed which was cheaper.'"
       ],
       "open_questions": [],
       "primary_lps": [
@@ -55,7 +56,7 @@
         ],
         "s": "Ownership wanted to start a $200K renovation on our 100-unit RV park during peak season.",
         "t": "I was asked to run a scenario analysis on whether the plan worked — renovating now versus waiting for the off-season.",
-        "a": "I built a side-by-side. At peak we're at 100% occupancy, so renovating then takes half the park offline with every unit full — about $600K of lost rent over eight months. Off-season, occupancy drops to around 70%, so the same work displaces fewer paying units: $420K. So waiting was $180K cheaper.\n\nBut my real concern was cash, not revenue. The park already runs a deficit off-season — about $50K coming in against $55K of fixed costs, and that's just the season, not the renovation — so we cover it from summer reserves. I didn't want to be carrying $200K of new debt service into that on top.\n\nSo I came back recommending we wait. Ownership weighed the revenue upside higher and decided to go ahead at peak. So I took the same model they'd rejected and used it to build a phased schedule — ten units out at a time instead of fifty.",
+        "a": "I built a side-by-side. At peak we're essentially full, so I modelled it at 100% — renovating then takes half the park offline with every unit earning, about $600K of lost rent over eight months. Off-season, occupancy drops to around 70%, so the same work displaces fewer paying units: $420K. So waiting was $180K cheaper.\n\nBut my real concern was cash, not revenue. The park already runs a deficit off-season — about $50K coming in against $55K of fixed costs, and that's just the season, not the renovation — so we cover it from summer reserves. I didn't want to be carrying $200K of new debt service into that on top.\n\nSo I came back recommending we wait. Ownership weighed the revenue upside higher and decided to go ahead at peak. So I took the same model they'd rejected and used it to build a phased schedule — ten units out at a time instead of fifty.",
         "r": "That brought actual displacement down to about $120K, against the $600K the original plan would have cost. Rents went from $1,500 to $2,500 after completion."
       }
     },
