@@ -92,11 +92,10 @@
         "'Saved over $4K annually' was corrected to 'surfaced' - the revaluation was a cost the acquisition caused, not a saving you produced. The real win is the $55K price reduction.",
         "HAVE THE $55K BRIDGE READY - 'how does a tax error become a $55K price cut?' is the obvious probe. The corrected NOI was about $7,800/year lower ($3,543 of understated tax plus the $4,300 revaluation). Capitalised at 6-8% that implies $98K-$131K of value, so $55K is what the negotiation actually landed, not the full theoretical hit. Saying that unprompted is what makes you sound like you own the model.",
         "This is an error CAUGHT BEFORE DAMAGE, not a failure with consequences. Against 'tell me about a time you failed', use S30 - it has a real cost. Use S5 when the prompt is about standards, catching your own work, or telling someone something they did not want to hear.",
-        "The $7,800 is your own arithmetic - $3,543 of understated tax plus the $4,300 revaluation. Stating the size of your own error before the $55K is what makes the story Earn Trust rather than a humblebrag about a negotiation win."
+        "The $7,800 is your own arithmetic - $3,543 of understated tax plus the $4,300 revaluation. Stating the size of your own error before the $55K is what makes the story Earn Trust rather than a humblebrag about a negotiation win.",
+        "THE TAX FIGURES RECONCILE - do not 'fix' them. $3,583 and $7,126 imply a second installment of $3,543, a $40 difference from the first. Unequal property-tax installments are normal (rounding on the split, or a fee on one). The script now states both figures directly instead of saying 'understated by half', so nobody is invited to double $3,583 and query the $40. If asked: the installments weren't identical."
       ],
-      "open_questions": [
-        "Tax figure does not reconcile: $3,583 semi-annual x 2 = $7,166, but the story states $7,126 annual. Check the county bill."
-      ],
+      "open_questions": [],
       "spoken_star": {
         "primary": "Earn Trust",
         "also": [
@@ -105,7 +104,7 @@
         ],
         "s": "I was building the pro forma for a $2M RV park acquisition — the model leadership was using to decide whether to buy.",
         "t": "I needed the operating costs right, especially property taxes, because the lender required 1.25 times debt coverage.",
-        "a": "Going back through it, I found two mistakes I'd made. I'd taken the seller's tax payment as the annual bill when it was actually semi-annual, so I'd understated it by half. And I'd inflated historical costs by 3%, when buying the park would trigger a county revaluation against our purchase price — another $4,300 a year.\n\nI checked both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I'd given them was overstated.",
+        "a": "Going back through it, I found two mistakes I'd made. I'd taken the seller's $3,583 tax payment as the annual bill when it was actually semi-annual — the real annual figure was $7,126. And I'd inflated historical costs by 3%, when buying the park would trigger a county revaluation against our purchase price — another $4,300 a year.\n\nI checked both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I'd given them was overstated.",
         "r": "The corrected model showed operating income about $7,800 a year lower than my original. Leadership used it to negotiate $55K off the $2M purchase price, and it still cleared the lender's 1.25 times coverage requirement."
       }
     },
@@ -668,9 +667,7 @@
         "Ownership",
         "Bias for Action"
       ],
-      "open_questions": [
-        "CONFIRM: the last $25K is written as coming from the summer reserves, which is what your own situation says covers the seasonal gap. Correct it if the real source was different - an owner contribution, a larger draw, or deferred payroll."
-      ],
+      "open_questions": [],
       "spoken_star": {
         "primary": "Ownership",
         "also": [
