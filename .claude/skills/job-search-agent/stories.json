@@ -7,7 +7,10 @@
       "id": "S3",
       "title": "Packwood Pause",
       "setting": "Packwood RV park (100 units)",
-      "lps": ["Have Backbone, Disagree and Commit", "Deliver Results"],
+      "lps": [
+        "Have Backbone, Disagree and Commit",
+        "Deliver Results"
+      ],
       "situation": [
         "Packwood is a 100-unit RV park at $1,500/month rent per unit.",
         "Ownership wanted to start a $200K renovation during peak season.",
@@ -28,15 +31,25 @@
       ],
       "result": [
         "Ownership delayed renovation to off-season.",
-        "Protected $600K in peak revenue.",
-        "Saved $180K in displaced-tenant losses compared to peak scenario."
+        "$180K less revenue lost than the peak-season plan - $420K forgone off-season versus $600K at peak."
+      ],
+      "delivery_notes": [
+        "Claim $180K, once. Do NOT also say 'protected $600K' - that counts the same decision twice, and the renovation still costs $420K off-season. The subtraction takes an interviewer about ten seconds.",
+        "The occupancy subtlety is the smartest thing in the story: renovation displaces 50 units either way, but off-season only 35 of them are occupied. Say that part slowly."
+      ],
+      "open_questions": [
+        "Did the renovation actually happen off-season, and did rents reach $2,500? The story has no ending."
       ]
     },
     {
       "id": "S5",
       "title": "River Oaks Tax Assumption Error",
       "setting": "River Oaks RV park acquisition, Lewis County (~$2M)",
-      "lps": ["Earn Trust", "Insist on the Highest Standards", "Dive Deep", "Are Right, A Lot"],
+      "lps": [
+        "Earn Trust",
+        "Insist on the Highest Standards",
+        "Dive Deep"
+      ],
       "is_failure_story": true,
       "situation": [
         "Evaluating purchase of River Oaks RV park in Lewis County for roughly $2M.",
@@ -56,14 +69,27 @@
       "result": [
         "Leadership negotiated $55K price reduction using my corrected model.",
         "Caught tax errors and protected debt covenant thresholds.",
-        "Saved over $4K annually in unexpected costs."
+        "Surfaced a $4.3K annual expense increase before close that the original model had missed."
+      ],
+      "delivery_notes": [
+        "RETAGGED - 'Are Right, A Lot' removed. This is a story about being wrong twice; against a judgement prompt it answers the opposite of what was asked. Lead it as Earn Trust, with Dive Deep second.",
+        "'Saved over $4K annually' was corrected to 'surfaced' - the revaluation was a cost the acquisition caused, not a saving you produced. The real win is the $55K price reduction."
+      ],
+      "open_questions": [
+        "Tax figure does not reconcile: $3,583 semi-annual x 2 = $7,166, but the story states $7,126 annual. Check the county bill.",
+        "Did the corrected model still clear the lender's 1.25x DSCR? The covenant is raised and never resolved."
       ]
     },
     {
       "id": "S6",
       "title": "Packwood Weekly Occupancy Dashboard",
       "setting": "Packwood RV park (100 units)",
-      "lps": ["Deliver Results", "Invent and Simplify", "Bias for Action", "Customer Obsession", "Think Big"],
+      "lps": [
+        "Deliver Results",
+        "Invent and Simplify",
+        "Bias for Action",
+        "Customer Obsession"
+      ],
       "situation": [
         "Packwood is a 100-unit RV park.",
         "Onsite manager could see bookings in the system's calendar, but no structured report tracking pacing against targets.",
@@ -92,7 +118,8 @@
         "Say 'revenue per available site', not 'RevPAS'. Avoid industry jargon that invites a probe.",
         "Don't skip the cadence beat. 'They called me when it went red' is the adoption proof - it shows the tool worked without the candidate pushing it, which is what separates a built tool from a used one.",
         "Weekly cadence is confirmed; the specific day is not established. Say 'once a week', not 'Monday morning'.",
-        "DO NOT LEAD WITH THIS FOR BIAS FOR ACTION. The BFA tag here is the weak sense - nobody asked for the tool and the candidate built it anyway. But a BFA prompt asks about moving fast under uncertainty, and this is a careful multi-week build. Answering a speed question with a tool-building story reads as missing the question. Route BFA prompts to S28 first, S32 second."
+        "DO NOT LEAD WITH THIS FOR BIAS FOR ACTION. The BFA tag here is the weak sense - nobody asked for the tool and the candidate built it anyway. But a BFA prompt asks about moving fast under uncertainty, and this is a careful multi-week build. Answering a speed question with a tool-building story reads as missing the question. Route BFA prompts to S28 first, S32 second.",
+        "'Think Big' tag removed - a dashboard for one 100-unit park is strong execution, not scale-thinking. Route Think Big prompts to S27 or S32."
       ],
       "pocket_answers": {
         "How did you communicate this tool?": "I walked the ops manager through it once - how to read it, what the red flag means, and what to do when they see it. I kept running the refresh each week, but they read the dashboard on their own. That was the real signal it worked: they'd call me when a week went red, instead of me chasing them.",
@@ -102,13 +129,20 @@
         "Did it save you time?": "About four hours a week of manual pulling.",
         "Any dollar impact?": "That one weekend was roughly $2,500 protected. Over the quarter it was around $15K."
       },
-      "open_questions": []
+      "open_questions": [],
+      "primary_lps": [
+        "Invent and Simplify",
+        "Customer Obsession"
+      ]
     },
     {
       "id": "S7",
       "title": "Packwood Consolidation",
       "setting": "Packwood RV park, rolled out across 4 properties",
-      "lps": ["Dive Deep", "Invent and Simplify"],
+      "lps": [
+        "Dive Deep",
+        "Invent and Simplify"
+      ],
       "situation": [
         "Packwood RV park had cash from 4 sources - short-term platform, long-term platform, onsite manager cash, and QuickBooks.",
         "Process was entirely manual - onsite manager sent receipts, I entered into QuickBooks by hand.",
@@ -131,14 +165,23 @@
         "Tracker became standard process for all properties with onsite cash collection."
       ],
       "delivery_notes": [
-        "Overlaps heavily with S19 (both are multi-source consolidation + VBA tenant-name matching). Do not use both in the same loop."
+        "Overlaps heavily with S19 (both are multi-source consolidation + VBA tenant-name matching). Do not use both in the same loop.",
+        "BACKUP ONLY. If used, lead with the shared-visibility design (the onsite manager and the candidate seeing the same reconciled data) - that is the one thing S7 has that S19 does not."
+      ],
+      "open_questions": [
+        "Was the $10K in discrepancies actually recovered, or only identified?"
       ]
     },
     {
       "id": "S8",
       "title": "Signature Photo Client Communication",
       "setting": "Signature Photo",
-      "lps": ["Customer Obsession", "Earn Trust", "Invent and Simplify", "Have Backbone, Disagree and Commit"],
+      "lps": [
+        "Customer Obsession",
+        "Earn Trust",
+        "Invent and Simplify",
+        "Have Backbone, Disagree and Commit"
+      ],
       "situation": [
         "At Signature Photo, one client hired us to digitize photos of his late mother.",
         "He called every few days to check in - extra time on top of actual work.",
@@ -165,14 +208,20 @@
         "Freed up time to take on more projects without adding headcount."
       ],
       "delivery_notes": [
-        "The only story outside the real-estate firm. Use it deliberately to vary the setting across a loop."
+        "The only story outside the real-estate firm. Use it deliberately to vary the setting across a loop.",
+        "MOST UNDERUSED STORY IN THE BANK. Only non-real-estate setting, only genuine human stakes, only story where the customer's feelings can be described. Place it mid-loop to break up the RV-park run.",
+        "Cut the last Action beat (asking the owner about client priority and the colleague about delays) - unrelated to the spine and it dilutes the ending.",
+        "Close on the client's reassurance, not the 80% time reduction. The hours figure is a pocket answer for 'what was the impact?', not the closer."
       ]
     },
     {
       "id": "S19",
       "title": "P&L Consolidation (Power Query/VBA)",
       "setting": "Packwood, rolled out across 10 entities",
-      "lps": ["Invent and Simplify", "Deliver Results"],
+      "lps": [
+        "Invent and Simplify",
+        "Deliver Results"
+      ],
       "situation": [
         "CPA needed one consolidated P&L for Packwood for tax filing.",
         "Rent income from 4 sources - Camplife, Hemlane, texted payments, mailed checks. Each tracked separately, which worked for day-to-day.",
@@ -198,14 +247,23 @@
         "Tool became standard for all tax filings."
       ],
       "delivery_notes": [
-        "Overlaps heavily with S7. Do not use both in the same loop - S19 is the stronger version (bigger scale, clearer stakes)."
+        "Overlaps heavily with S7. Do not use both in the same loop - S19 is the stronger version (bigger scale, clearer stakes).",
+        "Nail down the exact duplicate count and total before using this. '10-20 at $1-2K each' spans $10K-$40K but you state $20K - and this is the number an interviewer repeats back. Precision is the whole credential in a story about catching imprecision."
+      ],
+      "open_questions": [
+        "Exact duplicate count and total - '10-20 at $1-2K each' does not close on $20K."
       ]
     },
     {
       "id": "S26",
       "title": "River Oaks Washer/Dryer Pushback",
       "setting": "River Oaks RV park (100 units)",
-      "lps": ["Frugality", "Have Backbone, Disagree and Commit", "Are Right, A Lot", "Earn Trust"],
+      "lps": [
+        "Frugality",
+        "Have Backbone, Disagree and Commit",
+        "Are Right, A Lot",
+        "Earn Trust"
+      ],
       "situation": [
         "River Oaks is a 100-unit RV park making $1,000/month from coin-op washers/dryers.",
         "Ownership wanted to replace 4 of 8 sets with tap-payment machines - $1,500 each, $6,000 total.",
@@ -230,14 +288,21 @@
         "Track results via PayRange transaction dashboard month over month."
       ],
       "delivery_notes": [
-        "Only Frugality story in the bank. Protect it - don't spend it on a Have Backbone prompt if Frugality might come up later in the loop."
+        "Only Frugality story in the bank. Protect it - don't spend it on a Have Backbone prompt if Frugality might come up later in the loop.",
+        "STATE THE ADAPTER PAYBACK - it is the strongest number in the story and it is currently missing. Replacement: $6,000 / $220 per month = 27 months. Adapters: $560 / ($220 - $69 subscription) = 3.7 months. At the actual $300/month uplift, 2.4 months. 27 against 3.7 ends the argument.",
+        "Prepared answer for 'your estimate was 22% and it came in at 30% - so your analysis was wrong too?': the 22% was deliberately conservative for a go/no-go, and the decision holds at either number. That is what a conservative case is for."
       ]
     },
     {
       "id": "S27",
       "title": "SQL Rent Roll Consolidation",
       "setting": "10-property portfolio, ~700 tenants",
-      "lps": ["Learn and Be Curious", "Customer Obsession", "Dive Deep", "Think Big"],
+      "lps": [
+        "Learn and Be Curious",
+        "Customer Obsession",
+        "Dive Deep",
+        "Think Big"
+      ],
       "situation": [
         "When portfolio was smaller, ownership tracked each property's rent roll individually - worked fine with a few properties.",
         "By the time I joined, portfolio had grown to 10 properties, about 700 tenants. Each still in its own Excel sheet.",
@@ -261,13 +326,24 @@
         "DEFAULT PICK for Learn and Be Curious, but REFRAME THE OPENING. Do not open with 'I taught myself SQL' - that answers 'can you learn a tool', which is not what the LP asks.",
         "Open with the accidental catch instead: found a delinquent tenant only because you happened to open that one sheet, then asked 'if one slipped through, how many others did?' That question is the curiosity. The SQL is just how you answered it.",
         "Ordering that lands: the accident -> the question it raised -> teaching yourself SQL to answer it at portfolio scale -> the 5-KPI monthly report. Learning the tool is a beat in the middle, not the headline."
+      ],
+      "primary_lps": [
+        "Learn and Be Curious",
+        "Think Big"
+      ],
+      "open_questions": [
+        "Need one concrete delinquency the database actually surfaced, with a number. 'Catch delinquencies earlier' is currently hypothetical.",
+        "What does '30-45 minutes to under 1 minute' measure? The task is unclear."
       ]
     },
     {
       "id": "S28",
       "title": "Month-End Close Accrual",
       "setting": "Month-end close",
-      "lps": ["Bias for Action", "Deliver Results"],
+      "lps": [
+        "Bias for Action",
+        "Deliver Results"
+      ],
       "situation": [
         "Month-end close. CPA waiting on P&L for filings.",
         "3 vendor bills totaling $50K hadn't come in."
@@ -289,14 +365,24 @@
       "delivery_notes": [
         "DEFAULT PICK for Bias for Action - lead with this one, not S6. It is the only story with the true BFA shape: a hard deadline, incomplete information, options weighed and discarded fast, a reversible call made rather than waiting for certainty.",
         "Say 'two-way door' out loud - it is already the structure of the decision, and it signals you think in Amazon's terms.",
-        "The 80% accuracy is a strength, not a weakness. It shows the estimate was disciplined and the true-up was planned, not a lucky guess. Don't apologize for it."
+        "The 80% accuracy is a strength, not a weakness. It shows the estimate was disciplined and the true-up was planned, not a lucky guess. Don't apologize for it.",
+        "Thinnest story in the bank - it will not fill four minutes as written. Add the stakes (the CPA's filing deadline and the consequence of missing it) and the real true-up figures."
+      ],
+      "open_questions": [
+        "What did the actuals come in at, and what was trued up? '80% accurate' is undefended - 80% of total dollars, or per vendor?",
+        "What was the consequence of missing the CPA's filing deadline? The urgency is asserted, not shown."
       ]
     },
     {
       "id": "S29",
       "title": "Mercer Island Duplicate Invoice",
       "setting": "Mercer Island house renovation, $50K monthly CapEx",
-      "lps": ["Insist on the Highest Standards", "Earn Trust", "Dive Deep", "Ownership"],
+      "lps": [
+        "Insist on the Highest Standards",
+        "Earn Trust",
+        "Dive Deep",
+        "Ownership"
+      ],
       "has_variants": true,
       "situation": [
         "Managing vendor payments for Mercer Island house renovation. $50K monthly CapEx budget. Tight deadlines."
@@ -311,7 +397,7 @@
           "Met with contractor and site manager collaboratively. Honest admin error - their accounting person re-billed a milestone.",
           "Relationship got stronger. Built Excel template flagging duplicates."
         ],
-        "B - Failure / Earn Trust": [
+        "B - Self-audit / Earn Trust": [
           "Almost sent report trusting raw GL at face value.",
           "Caught myself, paused, audited against source documents.",
           "Found the $8,500 duplicate. Built cross-reference check."
@@ -323,16 +409,23 @@
         "Template adopted across all active projects."
       ],
       "delivery_notes": [
-        "HARD RULE: never use both variants with the same interviewer."
+        "HARD RULE: never use both variants with the same interviewer.",
+        "Variant B is NOT a failure story - 'almost trusted the GL, then caught myself' is a success with tension. Offered against 'tell me about a mistake' it reads as dodging, which scores worse than a real mistake would. Send failure prompts to S30 or S5."
       ]
     },
     {
       "id": "S30",
       "title": "Database Migration Deadline Miss",
       "setting": "Centralized SQLite migration, 18 months of GL data",
-      "lps": ["Earn Trust", "Insist on the Highest Standards"],
+      "lps": [
+        "Earn Trust",
+        "Insist on the Highest Standards"
+      ],
       "is_failure_story": true,
-      "target_questions": ["Q2", "Q4"],
+      "target_questions": [
+        "Q2",
+        "Q4"
+      ],
       "situation": [
         "Decided to migrate property financial records into centralized SQLite database.",
         "Committed to completing within 2 weeks. 18 months of historical GL data."
@@ -352,14 +445,25 @@
         "Manager said I should have scoped data quality before committing. He was right.",
         "From then on, always run data quality check before committing to any migration timeline.",
         "Validation macro became standard for all future uploads, cutting verification time by 60%."
-      ]
+      ],
+      "delivery_notes": [
+        "BEST FAILURE STORY IN THE BANK. The strongest beat is quoting the manager's criticism and agreeing with it - that reads as genuinely coachable."
+      ],
+      "pocket_answers": {
+        "You knew on day 8 - why wait until day 11 to tell your manager?": "I spent those days scoping the true extent so I could bring a specific ask instead of a vague alarm - I wanted to say 'four days and here's exactly what's wrong', not 'this might slip.' In hindsight I'd have flagged it on day 8 with the estimate to follow, and that's what I do now."
+      }
     },
     {
       "id": "S31",
       "title": "Concrete Weekly Payouts",
       "setting": "Concrete apartment project, $100K monthly CapEx",
-      "lps": ["Have Backbone, Disagree and Commit", "Deliver Results"],
-      "target_questions": ["Q3"],
+      "lps": [
+        "Have Backbone, Disagree and Commit",
+        "Deliver Results"
+      ],
+      "target_questions": [
+        "Q3"
+      ],
       "situation": [
         "Concrete apartment project, running bi-weekly payouts on $100K monthly CapEx budget.",
         "Project manager wanted weekly to keep contractors on-site and speed timeline."
@@ -380,14 +484,21 @@
         "Learned that operational momentum sometimes outweighs financial friction."
       ],
       "delivery_notes": [
-        "This is the true 'disagree and commit' story - the commit half is what makes it land. S3 and S26 are backbone stories where the candidate won; this is the one where they lost and executed anyway."
+        "This is the true 'disagree and commit' story - the commit half is what makes it land. S3 and S26 are backbone stories where the candidate won; this is the one where they lost and executed anyway.",
+        "Deliver the cost line FLATLY. 'Exactly what I flagged' is true but lands as 'I told you so', which undercuts the commit half you are actually scored on. Say instead: 'The costs did rise and reconciliation went up about six hours a week - so I built the controls to absorb that, and we ran it with zero duplicates.'",
+        "Make sure you reach the closing line about operational momentum outweighing financial friction. It is the best sentence in the story."
       ]
     },
     {
       "id": "S32",
       "title": "Packwood Cash Crunch / Forward-Looking Cash Tracker",
       "setting": "Packwood RV park (100 units)",
-      "lps": ["Ownership", "Bias for Action", "Invent and Simplify", "Think Big"],
+      "lps": [
+        "Ownership",
+        "Bias for Action",
+        "Invent and Simplify",
+        "Think Big"
+      ],
       "situation": [
         "Packwood is a 100-unit RV park. RV parks are seasonal - off-season revenue drops to $50K/month, fixed costs run $55K.",
         "Cover gap with cash reserves from summer.",
@@ -410,14 +521,28 @@
         "Went from managing cash month to month to planning around seasonal cycles."
       ],
       "delivery_notes": [
-        "Shares the 'built a forward-looking tracker with a red threshold' shape with S6. If both are used in one loop, lead S32 with the crisis (the $105K gap and the renegotiation) rather than the tool."
+        "Shares the 'built a forward-looking tracker with a red threshold' shape with S6. If both are used in one loop, lead S32 with the crisis (the $105K gap and the renegotiation) rather than the tool.",
+        "CLOSE THE ARITHMETIC HOLE. You name a $105K gap then describe covering $80K ($50K deferred + $30K revolver). Name the third source explicitly - almost certainly the summer reserves mentioned in the Situation. One clause fixes it."
+      ],
+      "primary_lps": [
+        "Ownership",
+        "Bias for Action"
+      ],
+      "open_questions": [
+        "Where did the remaining $25K come from? $105K gap less $50K deferred less $30K revolver = $25K unaccounted for."
       ]
     },
     {
       "id": "S33",
       "title": "River Oaks Billing Automation (Google Sheets/Apps Script)",
       "setting": "River Oaks RV park (42 units)",
-      "lps": ["Invent and Simplify", "Deliver Results", "Dive Deep", "Learn and Be Curious", "Customer Obsession"],
+      "lps": [
+        "Invent and Simplify",
+        "Deliver Results",
+        "Dive Deep",
+        "Learn and Be Curious",
+        "Customer Obsession"
+      ],
       "situation": [
         "Recently acquired River Oaks, a 42-unit RV park. No billing system in place - had to build from scratch.",
         "Onsite manager tracked check payments in a spreadsheet. Online payments came through Baselane - separate system.",
@@ -443,14 +568,27 @@
         "Zero manual math, zero duplicate tabs, zero formatting errors."
       ],
       "delivery_notes": [
-        "Richest Dive Deep detail in the bank - the debugging beats (circular dependency, Error 429, wrong meter math) are what sell it. Don't compress them away."
+        "Richest Dive Deep detail in the bank - the debugging beats (circular dependency, Error 429, wrong meter math) are what sell it. Don't compress them away.",
+        "TRIM TO THREE DEBUGGING BEATS, not six: the name-matching, the meter math, the 429 rate limit. Six will overrun four minutes and you will get cut off before the result.",
+        "Promote the 'without changing the onsite manager's existing workflow' constraint into the spoken opening. Designing around someone else's habits is the Customer Obsession angle and it is currently buried in the Task."
+      ],
+      "primary_lps": [
+        "Invent and Simplify",
+        "Dive Deep"
       ]
     },
     {
       "id": "S34",
       "title": "Concrete R&M Variance Investigation",
       "setting": "Concrete apartment project",
-      "lps": ["Dive Deep", "Insist on the Highest Standards", "Deliver Results", "Earn Trust", "Are Right, A Lot", "Ownership"],
+      "lps": [
+        "Dive Deep",
+        "Insist on the Highest Standards",
+        "Deliver Results",
+        "Earn Trust",
+        "Are Right, A Lot",
+        "Ownership"
+      ],
       "situation": [
         "During month-end variance analysis for Concrete apartment project, Repairs and Maintenance line item triggered 10% negative variance flag two months in a row.",
         "Bleeding cash on unit turns - cleaning and painting when tenants move out."
@@ -475,25 +613,97 @@
         "Proved the value of investigating at GL invoice level rather than accepting high-level assumptions."
       ],
       "delivery_notes": [
-        "Strongest Dive Deep story: a stated assumption, a disproof, and an arithmetic reconciliation that lands exactly on the variance. Default pick for 'tell me about a time you dug into data.'"
+        "Strongest Dive Deep story: a stated assumption, a disproof, and an arithmetic reconciliation that lands exactly on the variance. Default pick for 'tell me about a time you dug into data.'",
+        "Cut to Dive Deep primary, Highest Standards secondary. Six tags means reaching for this against prompts it only loosely fits.",
+        "The finding reconciles exactly - 8 units x $250 = the $2,000 variance. Say the multiplication out loud; exact reconciliation is rare and very convincing."
+      ],
+      "primary_lps": [
+        "Dive Deep",
+        "Insist on the Highest Standards"
+      ],
+      "open_questions": [
+        "Was the overpayment recovered from the vendor, or only stopped going forward?"
       ]
     }
   ],
   "lp_index": {
-    "Customer Obsession": ["S6", "S8", "S27", "S33"],
-    "Ownership": ["S29", "S32", "S34"],
-    "Invent and Simplify": ["S6", "S7", "S8", "S19", "S32", "S33"],
-    "Are Right, A Lot": ["S5", "S26", "S34"],
-    "Learn and Be Curious": ["S27", "S33"],
+    "Customer Obsession": [
+      "S6",
+      "S8",
+      "S27",
+      "S33"
+    ],
+    "Ownership": [
+      "S29",
+      "S32",
+      "S34"
+    ],
+    "Invent and Simplify": [
+      "S6",
+      "S7",
+      "S8",
+      "S19",
+      "S32",
+      "S33"
+    ],
+    "Are Right, A Lot": [
+      "S26",
+      "S34"
+    ],
+    "Learn and Be Curious": [
+      "S27",
+      "S33"
+    ],
     "Hire and Develop the Best": [],
-    "Insist on the Highest Standards": ["S5", "S29", "S30", "S34"],
-    "Think Big": ["S6", "S27", "S32"],
-    "Bias for Action": ["S6", "S28", "S32"],
-    "Frugality": ["S26"],
-    "Earn Trust": ["S5", "S8", "S26", "S29", "S30", "S34"],
-    "Dive Deep": ["S5", "S7", "S27", "S29", "S33", "S34"],
-    "Have Backbone, Disagree and Commit": ["S3", "S8", "S26", "S31"],
-    "Deliver Results": ["S3", "S6", "S19", "S28", "S31", "S33", "S34"],
+    "Insist on the Highest Standards": [
+      "S5",
+      "S29",
+      "S30",
+      "S34"
+    ],
+    "Think Big": [
+      "S27",
+      "S32"
+    ],
+    "Bias for Action": [
+      "S6",
+      "S28",
+      "S32"
+    ],
+    "Frugality": [
+      "S26"
+    ],
+    "Earn Trust": [
+      "S5",
+      "S8",
+      "S26",
+      "S29",
+      "S30",
+      "S34"
+    ],
+    "Dive Deep": [
+      "S5",
+      "S7",
+      "S27",
+      "S29",
+      "S33",
+      "S34"
+    ],
+    "Have Backbone, Disagree and Commit": [
+      "S3",
+      "S8",
+      "S26",
+      "S31"
+    ],
+    "Deliver Results": [
+      "S3",
+      "S6",
+      "S19",
+      "S28",
+      "S31",
+      "S33",
+      "S34"
+    ],
     "Strive to be Earth's Best Employer": [],
     "Success and Scale Bring Broad Responsibility": []
   },
@@ -503,11 +713,15 @@
     "Learn and Be Curious has two (S27, S33), both self-taught-a-technology stories with the same arc. KNOWN WEAK AREA - the candidate self-identified this as an underperforming LP in a prior loop. Both stories currently answer 'can you learn a tool' rather than 'what curiosity led you somewhere unexpected'. S27 has the better hook buried in its Situation (see its delivery_notes); S33's is the Baselane data inconsistency the candidate noticed and chased down. Lead with the noticing, not the learning.",
     "Bias for Action is KNOWN WEAK - the candidate self-identified this as an underperforming LP in a prior loop. The bench is nominally 3 (S6, S28, S32) but effectively 2: S6 is tagged BFA in the weak 'built it unasked' sense and misreads as a tool-building story against a speed prompt. S28 is the real default; S32 is the strong backup (contractor renegotiated, LOC drawn, gap closed in-month).",
     "14 of 15 stories are set at the same real-estate firm; S8 (Signature Photo) is the only outside setting. Across a 5-interviewer loop the setting will repeat - vary the property and the stakeholder so the stories don't blur together.",
-    "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss."
+    "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss.",
+    "Two benches thinned during the audit and are now at two stories each. Think Big is S27 and S32 after S6's tag was removed (a one-park dashboard is execution, not scale-thinking). Are Right, A Lot is S26 and S34 after S5's was removed (S5 is a story about being wrong twice). Both are correct as retagged, but neither has a third if a loop probes twice."
   ],
   "usage_rules": [
     "Never use both S29 variants with the same interviewer.",
     "Never use S7 and S19 in the same loop - same mechanism, S19 is stronger.",
-    "Do not invent numbers, outcomes, or LP mappings not present in this file."
+    "Do not invent numbers, outcomes, or LP mappings not present in this file.",
+    "Where a story has primary_lps, route from that field - the full lps list records what the story touches, not what it should be picked for.",
+    "Two stories are backup-only and should not open a loop: S5 (retagged, and it is a being-wrong story) and S7 (redundant with S19).",
+    "11 open questions remain across 8 stories - mostly missing endings and undefended figures. Surface them before recommending a story, per the story-prep mode."
   ]
 }
