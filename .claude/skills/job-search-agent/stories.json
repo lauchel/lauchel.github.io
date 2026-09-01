@@ -992,7 +992,7 @@
         "Compared platforms on three criteria: transaction fees, how fast money actually landed in our account, and how easy it was for a tenant to pay without help.",
         "The criteria pulled against each other - the cheapest option was not the easiest to use.",
         "Weighted tenant ease highest: a cheaper platform that half the tenants wouldn't touch leaves you exactly where you started, still chasing paper.",
-        "[ WHICH PLATFORM, AND THE DECIDING REASON ]"
+        "Went with Baselane. Not the cheapest option, but the one a tenant could pay through without needing help."
       ],
       "result": [
         "About 70% of tenants moved to online payment.",
@@ -1006,7 +1006,7 @@
         ],
         "s": "We'd just acquired a property where tenants were still paying by check and cash, and payments were going missing somewhere between the onsite manager collecting them and them landing in our books.",
         "t": "I needed to find a rent collection platform tenants would actually use — because a system they won't adopt doesn't fix anything.",
-        "a": "I compared the options on three things: transaction fees, how fast the money actually landed in our account, and how easy it was for a tenant to pay without needing help.\n\nThose pulled against each other — the cheapest option wasn't the easiest to use. I weighted tenant ease highest, because a platform with lower fees that half our tenants wouldn't touch would leave us exactly where we started, still chasing paper.\n\n[ WHICH PLATFORM YOU PICKED, AND THE ONE THING THAT DECIDED IT ]",
+        "a": "I compared the options on three things: transaction fees, how fast the money actually landed in our account, and how easy it was for a tenant to pay without needing help.\n\nThose pulled against each other — the cheapest option wasn't the easiest to use. I weighted tenant ease highest, because a platform with lower fees that half our tenants wouldn't touch would leave us exactly where we started, still chasing paper.\n\nI went with Baselane. It wasn't the cheapest, but it was the one a tenant could actually pay through without calling anyone for help.",
         "r": "About 70% of tenants moved to online payment. Payments stopped going missing between collection and the books, because most of them no longer passed through anyone's hands."
       },
       "calc_sheet": {
@@ -1018,18 +1018,18 @@
         "Why did you weight tenant ease over fees?": "Because the problem wasn't cost, it was payments going missing. A cheaper platform that tenants didn't adopt would have left the paper trail intact and saved us nothing that mattered. Fees only matter on payments that actually come through the system.",
         "Is 70% good?": "It's the number that tells you the weighting was right. Going from everyone paying by check and cash to seven in ten paying online in the first stretch means the barrier was low enough - and the remaining 30% are the ones who were always going to hand the manager a check.",
         "What about the 30% who didn't move?": "They still pay the old way, and the onsite manager still logs those. The point wasn't to force everyone online, it was to take most of the volume out of the path where things were getting lost.",
-        "How did you know payments were getting lost?": "They'd show up in the onsite manager's log without a matching deposit, or the other way round - which is the same reconciliation problem I later built the tracker for."
+        "How did you know payments were getting lost?": "They'd show up in the onsite manager's log without a matching deposit, or the other way round - which is the same reconciliation problem I later built the tracker for.",
+        "Why Baselane specifically?": "Ease of use for the tenant. All three platforms handled the basics, but Baselane was the one someone could pay through without needing help - and given the problem was payments going missing outside the system, adoption was the thing that actually mattered."
       },
       "delivery_notes": [
         "THIS IS YOUR SECOND CUSTOMER OBSESSION STORY, and the bank badly needed one - S8 was carrying five of the nine official questions alone.",
         "THE WHOLE STORY TURNS ON ONE SENTENCE: tenant ease beat cost, and 70% adoption proved the weighting right. If you only get one line out, that is the line.",
         "Say 'a system they won't use doesn't fix anything' early. It states the customer-first logic before you list criteria, so the comparison reads as customer-led rather than procurement-led.",
-        "Pairs with S33 - the billing automation at River Oaks. Do not tell both in one loop without varying the angle; S35 is about choosing for the tenant, S33 is about building around the onsite manager."
+        "Pairs with S33 - the billing automation at River Oaks. Do not tell both in one loop without varying the angle; S35 is about choosing for the tenant, S33 is about building around the onsite manager.",
+        "'Not the cheapest, but the one a tenant could pay through without calling anyone' is the sentence that makes this Customer Obsession rather than procurement. You had a cheaper option and turned it down for the user. Do not soften it."
       ],
       "open_questions": [
-        "Which platform did you choose, and what was the one thing that decided it? The story needs the name and the deciding reason to land.",
-        "CONFIRM THE REASONING: the line about a cheap platform tenants won't touch leaving you chasing paper is my framing of why you weighted ease highest. It follows from what you told me, but say so if that wasn't your actual thinking.",
-        "Optional, would strengthen the result: transaction fee, days faster to deposit, or any drop in late payments."
+        "Optional, would strengthen the Result: the transaction fee, how many days faster deposits landed, or any drop in late payments."
       ]
     }
   ],
@@ -1488,6 +1488,7 @@
           "S8"
         ],
         "5": [
+          "S35",
           "S8"
         ],
         "6": [
@@ -1498,6 +1499,7 @@
           "S3"
         ],
         "8": [
+          "S35",
           "S6"
         ],
         "9": [
@@ -1524,7 +1526,9 @@
         "6": [
           "S30"
         ],
-        "7": []
+        "7": [
+          "S35"
+        ]
       },
       "Earn Trust": {
         "1": [
@@ -1627,7 +1631,8 @@
           "S26"
         ],
         "2": [
-          "S3"
+          "S3",
+          "S35"
         ],
         "3": [
           "S3"
