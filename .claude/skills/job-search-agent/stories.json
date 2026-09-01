@@ -1699,5 +1699,94 @@
       "THINK BIG IS THIN AGAINST ITS OWN QUESTIONS. Only 4 of 8 map, and the unmapped ones ask about bold direction and long-range vision at a scale this experience does not reach. S27 (per-property to portfolio) is the strongest available.",
       "Strive to be Earth's Best Employer and Success and Scale Bring Broad Responsibility have no coverage at all. Both are rare in analyst loops and neither is worth manufacturing a story for."
     ]
+  },
+  "candidate_stories": {
+    "why": "All seven proof points in profile.json are absent from the story bank. Each identified gap has raw material already - these are the stories to build, with the facts still needed for each.",
+    "candidates": [
+      {
+        "id": "S35",
+        "working_title": "Fintech platform evaluation (rent collection)",
+        "source_proof_point": "systems",
+        "fills": [
+          "Customer Obsession - a second story with real end users (tenants), which currently rests entirely on S8",
+          "Learn and Be Curious Q7 - using external trends, currently unanswered",
+          "Are Right, A Lot - a third story for a thin bench"
+        ],
+        "priority": "HIGHEST - closes two gaps at once, including the most exposed one",
+        "questions_needed": [
+          "What made you go looking - was there no system at the newly acquired property, or was something failing?",
+          "Which platforms did you compare, and on what criteria? (fees, tenant experience, integration with QuickBooks, deposit timing)",
+          "What did you pick, and what did tenants actually do once it launched - adoption rate, complaints, on-time payment change?",
+          "Any number: fees per transaction, time saved on collections, percentage of tenants who switched to online payment?"
+        ]
+      },
+      {
+        "id": "S36",
+        "working_title": "Chapter 11 schedules",
+        "source_proof_point": "bankruptcy",
+        "fills": [
+          "Earn Trust Q5 - goals out of alignment with another team you depend on, currently unanswered",
+          "Insist on the Highest Standards - filings that must be exact",
+          "Deliver Results - a hard external deadline with legal consequence"
+        ],
+        "priority": "HIGH - the most substantial unused material in the profile, and the only work with legal stakes",
+        "questions_needed": [
+          "How many properties and roughly what scale of secured and unsecured debt?",
+          "Who else was involved - bankruptcy attorney, CPA, trustee - and where did their needs or timelines conflict with yours?",
+          "What was hardest: reconciling creditor lists, asset valuations, or something else?",
+          "Outcome: filed on time? Were the schedules accepted without amendment, or did anything come back?"
+        ]
+      },
+      {
+        "id": "S37",
+        "working_title": "Vendor contract analysis across locations",
+        "source_proof_point": "vendor_analysis",
+        "fills": [
+          "Frugality - currently a bench of one (S26), which is a real risk if the principle comes up twice",
+          "Dive Deep - comparing terms across locations"
+        ],
+        "priority": "HIGH - Frugality with a single story is the thinnest bench in the bank",
+        "questions_needed": [
+          "How many locations and vendors, and what category of spend?",
+          "What did the comparison actually turn up - price variance for the same service, duplicate coverage, auto-renewals?",
+          "What changed as a result, and what did it save annually?"
+        ]
+      },
+      {
+        "id": "S38",
+        "working_title": "Competing close deadlines against ad hoc requests",
+        "source_proof_point": "prioritization",
+        "fills": [
+          "Deliver Results - prioritisation under conflicting demands",
+          "Bias for Action - a third story for a bench of two",
+          "Earn Trust - saying no or sequencing without damaging the relationship"
+        ],
+        "priority": "MEDIUM-HIGH - 'how do you prioritise competing demands' is among the most commonly asked questions",
+        "questions_needed": [
+          "Pick one specific month where close and ad hoc requests actually collided. Who was asking for what?",
+          "How did you decide the order - what got pushed, and how did you tell the person asking?",
+          "Did close still go out on time, and did anything break?"
+        ]
+      },
+      {
+        "id": "S39",
+        "working_title": "Financial analysis web apps (SEC filing data)",
+        "source_proof_point": "portfolio",
+        "fills": [
+          "Learn and Be Curious - a third story",
+          "Think Big - currently thin against its own questions"
+        ],
+        "priority": "LOWER - self-directed rather than employer work, which carries less weight in a loop, but it is a strong answer to 'what have you learned recently'",
+        "questions_needed": [
+          "What made you build them - a specific question you wanted answered, or skill-building?",
+          "Which was the hardest and why?",
+          "Has anyone other than you used them?"
+        ]
+      }
+    ],
+    "not_worth_building": [
+      "Hire and Develop the Best - no raw material and almost every question is marked (Manager). If it comes up, the ops-manager walkthrough in S6 and the documented handover in S33 are the honest answer.",
+      "Strive to be Earth's Best Employer and Success and Scale Bring Broad Responsibility - rare in analyst loops and not worth manufacturing."
+    ]
   }
 }
