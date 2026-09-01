@@ -279,7 +279,6 @@
       "setting": "Signature Photo",
       "lps": [
         "Customer Obsession",
-        "Earn Trust",
         "Invent and Simplify",
         "Have Backbone, Disagree and Commit"
       ],
@@ -317,7 +316,6 @@
       "spoken_star": {
         "primary": "Customer Obsession",
         "also": [
-          "Earn Trust",
           "Invent and Simplify",
           "Have Backbone, Disagree and Commit"
         ],
@@ -371,13 +369,14 @@
       "delivery_notes": [
         "Overlaps heavily with S7. Do not use both in the same loop - S19 is the stronger version (bigger scale, clearer stakes).",
         "Nail down the exact duplicate count and total before using this. '10-20 at $1-2K each' spans $10K-$40K but you state $20K - and this is the number an interviewer repeats back. Precision is the whole credential in a story about catching imprecision.",
-        "Say 'more than a dozen' and 'roughly $20,000' - both are true to your records and defensible. The earlier problem was pairing a precise-sounding $20K with a range spanning $10K-$40K. An approximation you label as one is safe; a false-precise number is not. If pushed for exact: 'I'd have to pull the file, but it was in the teens and about $20,000.'"
+        "Say 'more than a dozen' and 'roughly $20,000' - both are true to your records and defensible. The earlier problem was pairing a precise-sounding $20K with a range spanning $10K-$40K. An approximation you label as one is safe; a false-precise number is not. If pushed for exact: 'I'd have to pull the file, but it was in the teens and about $20,000.'",
+        "PROMOTED TO LEAD DELIVER RESULTS. Two weeks to one day across ten entities is the cleanest before/after in the bank, and Deliver Results had no lead story. Invent and Simplify still has S6 and S33, so nothing is lost."
       ],
       "open_questions": [],
       "spoken_star": {
-        "primary": "Invent and Simplify",
+        "primary": "Deliver Results",
         "also": [
-          "Deliver Results"
+          "Invent and Simplify"
         ],
         "s": "Our CPA needed one consolidated P&L for tax filing. Rent came in from four sources — two platforms, texted payments, and mailed checks — each tracked separately. Nobody had ever combined them, and when I tried, the numbers didn't add up. The CPA kept flagging income that looked double-counted, and doing it by hand took about two weeks.",
         "t": "I needed to give the CPA a clean P&L they could file without back-and-forth, and make it repeatable for every year after.",
@@ -393,7 +392,10 @@
         "How many duplicates exactly?": "More than a dozen, roughly $20,000 in all. I'd have to pull the file for the exact count.",
         "How did you know they were duplicates and not two legitimate payments?": "Same tenant, same amount, same month, in two different systems - somebody paid on the platform and also mailed a check that got logged separately. A real second payment would be a different month or a different amount.",
         "What if you'd removed a legitimate payment?": "That's why the macro flagged rather than deleted, and why I validated the whole thing against QuickBooks before it went to the CPA."
-      }
+      },
+      "primary_lps": [
+        "Deliver Results"
+      ]
     },
     {
       "id": "S26",
@@ -402,8 +404,7 @@
       "lps": [
         "Frugality",
         "Have Backbone, Disagree and Commit",
-        "Are Right, A Lot",
-        "Earn Trust"
+        "Are Right, A Lot"
       ],
       "situation": [
         "River Oaks is a 100-unit RV park making $1,000/month from coin-op washers/dryers.",
@@ -438,8 +439,7 @@
         "primary": "Frugality",
         "also": [
           "Have Backbone, Disagree and Commit",
-          "Are Right, A Lot",
-          "Earn Trust"
+          "Are Right, A Lot"
         ],
         "s": "Our 100-unit park made about $1,000 a month from coin-op laundry. Ownership wanted to replace four of the eight machines with tap-payment ones — $1,500 each, $6,000 total — assuming it would lift revenue 50%.",
         "t": "I wanted to validate that 50% before we committed the $6,000.",
@@ -466,9 +466,8 @@
       "setting": "10-property portfolio, ~700 tenants",
       "lps": [
         "Learn and Be Curious",
-        "Customer Obsession",
-        "Dive Deep",
-        "Think Big"
+        "Think Big",
+        "Dive Deep"
       ],
       "situation": [
         "When portfolio was smaller, ownership tracked each property's rent roll individually - worked fine with a few properties.",
@@ -505,8 +504,7 @@
         "primary": "Learn and Be Curious",
         "also": [
           "Think Big",
-          "Dive Deep",
-          "Customer Obsession"
+          "Dive Deep"
         ],
         "s": "We had ten properties and about seven hundred tenants, and each property's rent roll lived in its own spreadsheet. That worked fine when the portfolio was small.",
         "t": "One day I happened to open one of those sheets and found a tenant months behind that nobody had flagged. I only caught it because I opened that particular file — and that bothered me. If one slipped through because nobody was looking, how many others were there? I wanted a way to answer that.",
@@ -592,7 +590,6 @@
       "lps": [
         "Insist on the Highest Standards",
         "Earn Trust",
-        "Dive Deep",
         "Ownership"
       ],
       "has_variants": true,
@@ -629,7 +626,6 @@
         "primary": "Insist on the Highest Standards",
         "also": [
           "Earn Trust",
-          "Dive Deep",
           "Ownership"
         ],
         "s": "I was managing vendor payments on a house renovation with a $50K monthly capital budget. A subcontractor sent a $20K invoice for structural concrete work.",
@@ -842,8 +838,6 @@
       "setting": "River Oaks RV park (42 units)",
       "lps": [
         "Invent and Simplify",
-        "Deliver Results",
-        "Dive Deep",
         "Learn and Be Curious",
         "Customer Obsession"
       ],
@@ -883,7 +877,6 @@
       "spoken_star": {
         "primary": "Invent and Simplify",
         "also": [
-          "Dive Deep",
           "Learn and Be Curious",
           "Customer Obsession"
         ],
@@ -1216,5 +1209,495 @@
       "reconciliation"
     ],
     "principle": "Any term that needs a definition costs you the follow-up question you actually wanted. Either say it in plain words, or gloss it in the same breath."
+  },
+  "question_bank": {
+    "source": "Amazon Interview Question Bank (official), 16 leadership principles, 128 suggested behavioural questions.",
+    "note": "The PDF's Definition and Indicators blocks are images and did not extract; only the questions are captured here.",
+    "guidance": "Amazon's own instruction on each page is to prepare 2-3 questions per principle.",
+    "priority_lps_for_financial_analyst": [
+      "Bias for Action",
+      "Dive Deep",
+      "Learn and Be Curious",
+      "Earn Trust",
+      "Deliver Results",
+      "Invent and Simplify",
+      "Customer Obsession"
+    ],
+    "questions": {
+      "Are Right, A Lot": [
+        "Tell me about a time when you didn't have enough data to make the right decision. What did you do? What path did you take? Did the decision turn out to be the correct one?",
+        "Tell me about a strategic decision you had to make without clear data or benchmarks. How did you make your final decision? What alternatives did you consider? What were the tradeoffs of each? How did you mitigate risk?",
+        "Tell me about a time when you made a difficult decision with input from many different sources (customers, stakeholders, partner teams, etc.). What was the situation and how did you arrive at your decision? Did the decision turn out to be the correct one? Why or why not?",
+        "We don't always make the right decision all the time. Tell me about a time when you made a bad decision. What was the impact of that decision? What did you learn? How have you applied what you learned?",
+        "We don't always make the right judgment all the time. Tell me about a time when you made an error in judgment. What was the impact? What did you learn? How have you applied what you learned?",
+        "Tell me about a time when you discovered that your idea was not the best course of action. What was your idea? Why wasn't your idea the best course of action? How did you find out it was not the correct path? What was the best course of action? Who provided it? What did you learn from the experience?",
+        "Describe a time when you brought different perspectives together to solve a problem. What types of different perspectives were represented? How did you seek out different points of view? What was the outcome? Where there any key learnings from this experience? Knowing what you know now, would you have done anything different?"
+      ],
+      "Bias for Action": [
+        "Give me an example of a calculated risk that you have taken where speed was critical. What was the situation and how did you handle it? What steps did you take to mitigate the risk? What was the outcome? Knowing what you know now, would you have done anything differently?",
+        "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a dec ision. How much time did you have? What approach did you take? What did you learn from the situation?",
+        "Describe a situation where you made an important business decision without consulting your manager. What was the situation and how did it turn out? Would you have done anything differently?",
+        "Tell me about a time when you had to gather information and respond immediately to a situation. What was the outcome? Would you have done anything differently?",
+        "Give me an example of when you had to make an important decision and had to decide between moving forward or gathering more information. What did you do? What was the outcome? What information is necessary for you to have before acting?",
+        "Tell me about a time when you saw an issue that would impact your team and took a proactive approach to solve it. What was the issue? What did you do and what was the outcome? What did you learn from this situation?",
+        "Tell me about a time when you felt your team was not moving to action quickly enough. What was the situation? What did you do? What was the outcome? Would you have done anything differently? (Manager)",
+        "Tell me about a time when you were able to remove a serious roadblock/barrier preventing your team from making progress. What was the barrier? How were you able to remove it? What was the outcome? Knowing what you know now, would you have done anything differently? (Manager)"
+      ],
+      "Customer Obsession": [
+        "Describe a difficult interaction you had with a customer. How did you deal with it? What was the outcome? How would you handle it differently?",
+        "Tell me about a time when you went above and beyond for a customer. Why did you do it? How did the customer respond? What was the outcome?",
+        "Give me an example of when you were able to anticipate a customer need with a solution/product they didn't know they needed/wanted yet. How did you know they needed this? How did they respond?",
+        "Give me an example of a time when you asked for customer feedback. How did you use that feedback to drive innovation or improvement? How did the customer respond?",
+        "Tell me about a time when you evaluated the customer experience of your product or service. What did you do? What was the result?",
+        "Tell me about a time when a customer came to you for something that wouldn't actually address their need. How did you approach the situation? What was the result?",
+        "Sometimes customers make unreasonable requests. Tell me about a time when you've had to push back or say no to a customer request. What did you say or do in response to that request?",
+        "Tell me about a time when you had to balance the needs of the customer with the needs of the business. What did you do? What was the result?",
+        "Give me an example of a change you implemented in your current team or organization to meet the needs of your customers. What has been the result? (Manager)"
+      ],
+      "Deliver Results": [
+        "Give me an example of a time when you were able to deliver an important project under a tight deadline. What sacrifices did you have to make to meet the deadline? How did they impact the final deliverable? What was the final outcome?",
+        "Tell me about a time when you had significant, unanticipated obstacles to overcome in achieving a key goal. What was the obstacle? Were you eventually successful? Knowing what you know now, is there anything you would have done differently?",
+        "Tell me about a time when you not only met a goal but considerably exceeded expectations. How were you able to do it? What challenges did you have to overcome?",
+        "Tell me about a time when you or your team were more than half way to meeting a goal when you realized it may not be the right goal or may have unintended consequences. What was the situation? What did you do? What was the outcome? Looking back, would you have done anything differently?",
+        "Give me an example of a mission or goal you didn’t think was achievable. What was it and how did you help your team try to achieve it? Were you successful in the end? Looking back, would you have done anything differently?",
+        "Tell me about a time when you did not effectively manage your projects and something did not get completed on time. What was the impact? What approaches do you use to make sure you are focusing on the right deliverables when you have several competing priorities?",
+        "It can be difficult to set goals for a team that are challenging, yet achie vable. Tell me about a time when you hit the right balance. How did you approach setting the goals? What was the outcome? (Manager)"
+      ],
+      "Dive Deep": [
+        "Tell me about a time when you were trying to understand a complex problem on your team and you had to dig into the details to figure it out . Who did you talk with or where did you have to look to find the most valuable information? How did you use that information to help solve the problem?",
+        "Tell me about a situation that required you to dig deep to get to the root cause. How did you know you were focusing on the right things? What was the outcome? Would you have done anything differently?",
+        "Tell me about a problem you had to solve that required in-depth thought and analysis. How did you know you were focusing on the right things? What was the outcome? Would you have done anything differently?",
+        "Walk me through a big problem or issue in your organization that you helped to solve. How did you become aware of it? What information did you gather? What information was missing and how did you fill the gaps? Did you do a reflection at the conclusion of the project? If so, what did you learn?",
+        "Tell me about a specific metric you have used to identify a need for a change in your department. Did you create the metric or was it already available? How did this and other information influence the change? What was the outcome of this change?",
+        "Have you ever created a metric that helped identify a need for a change in your department? What was the metric? Why did you create it? How did this and other information influence change? What was the outcome of the change?",
+        "Tell me about a time when you had to validate the assumptions underlying a direct report's project. How did you decide follow up was necessary? What steps, if any, did you take to validate the assumptions? What was the result? (Manager)"
+      ],
+      "Earn Trust": [
+        "Tell me about a time when you had to communicate a change in direction that you anticipated people would have concerns with. What did you do to understand the concerns and mitigate them? Were there any changes you made along the way after hearing these concerns? How did you handle questions and/or resistance? Were you able to get people comfortable with the change?",
+        "Give me an example of a tough or critical piece of feedback you received. What was it and what did you do about it?",
+        "Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Give me an example of a time when you were not able to meet a commitment. What was the commitment and what were the obstacles that prevented success? What was the impact to your customers/peers and what did you learn from it?",
+        "Tell me about a time when your team’s goals were out of alignment with another team you relied on in order to meet your goal. How did you work with the other team? Were you able to achieve your goals?",
+        "Tell me about a time when you uncovered a significant problem in your team. What was it and how did you communicate it to your manager and other stakeholders? What did you do to address the problem? How did you manage the impact of this problem for the rest of your team?",
+        "Describe a time when you improved morale and productivity on your team. What were the underlying problems and their causes? How did you prevent them from negatively impacting the team in the future?",
+        "Tell me about a time when a team member was struggling to keep up or fit in and you stepped in to help out. Why did you think they were struggling or not fitting in? Why did you decide in step in and support? What did you do to help out? How did it impact your work? What was the outcome? What did you learn from that situation?",
+        "Tell me about a time when a team member was not performing well and impacted your work. How did you handle that situation? Why were they not performing well? What was the outcome? What did you learn from that situation?"
+      ],
+      "Frugality": [
+        "Give me an example of how you have helped save costs or eliminate waste within your role or organization . What was the situation? What was the impact?",
+        "Describe a time when you had to get a project or initiative completed with limited resources. How did you approach the situation? What was the impact? Knowing what you know now, would you have done anything differently?",
+        "Tell me about a time when you didn’t have enough r esources to do something you felt was important but found a creative way to get it done anyway. What was the situation? What other options did you consider? How did you decide on a path forward? What was the outcome?",
+        "Tell me about a time when you had to make tradeoffs between quality and cost. How did you weigh the options? What was the result? Would you have done anything differently?",
+        "Tell me about a time when you generated a creative solution to a problem or project without requiring additional resources . What was the problem? What was the solution and how did you come up with it? What was the outcome?",
+        "Give an example of a time you requested additional funding/budget to complete a project. Why was it needed? Did you try to figure out another approach? Did you get the additional resources? Why or why not?",
+        "Describe a time when you had to decide whether or not to award or ask for additional resources. What criteria do you use for making the call? What was the outcome? Knowing what you know now, would you have done anything differently? (Manager)",
+        "Give an example of a time when you challenged your team to come up with a more efficient solution or process. What drove the request? How did you help? What were some of your biggest challenges? What were the end results? (Manager)"
+      ],
+      "Have Backbone, Disagree and Commit": [
+        "Tell me about a time when you strongly disagreed with your manager or peer on something you considered very important to the business. What was it and how did you handle it? Knowing what you know now, would you do anything differently?",
+        "Describe a time when you took an unpopular stance in a meeting with peers and your leader. What was it? Why did you feel strongly about it? What did you do? What was the outcome?",
+        "Often, we must make decisions as a group. Give me an example of a time you committed to a group decision even though you disagreed. What factors led you to commit to the decision? Would you make the same decision now?",
+        "Describe a time when you felt really strongly about something on a project but the team decided to go in a different direction. How hard did you press the issue? How did you approach that project afterward?",
+        "Tell me about a time when you pushed back against a decision that negatively impacted your team. What was the issue? How did it turn out? Would you have done anything differently?",
+        "Give me an example of when you submitted a great idea to your manager and they did not support it. What was the idea? How did you handle the lack of support?",
+        "Describe a time when you had to support a business initiative that you didn't agree with . How did you handle it? How did you deliver the message to your team?",
+        "Tell me about a time when the business gained something because you persisted for a length of time . Why were you so determined? How did it turn out?"
+      ],
+      "Hire and Develop the Best": [
+        "Tell me about a time when you helped one of your team members develop their career. How did you help that team member? What was the result?",
+        "Tell me about a time when you invested in an employee's development. What did you invest in and why? What was the outcome? Can you share an example where investing in an employee's development didn't work out?",
+        "Give me an examp le of a time you provided feedback to develop the strengths of someone on your team . Were you able to positively impact their performance?",
+        "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Tell me about someone you hired that you thought complemented your skills. How did you coach an individual in areas where you have a weakness? (Manager)",
+        "Tell me about a time when you helped a remote team member develop their career. Can you give me an example of a specific team member and how you helped them develop across the geographic distance? (Manager)",
+        "Describe a person who struggled to get promoted under your leadership and how you helped facilitate their success. (Manager)",
+        "Tell me about your most challenging talent review and promotion process that you conducted for your team . What made it challenging? What factors did you consider in your talent review? What factors did you consider in the promotion process? Did you incorporate a tool to cou nter unconscious bias? If yes, how? How do you manage perceptions of unfair treatment? What did you learn from this process? Knowing what you know now, woul d you have done anything different? (Manager)",
+        "Describe a time when you constructed a team to accomplish a goal. What factors did you consider in constructing the team? Did you factor diversity into your team construction? How did you balance work requirements, team skill composition, and team stretch opportunities? What d o you consider when you allocate work? How did you ensure team members were able to work effectively together? Would you have done anything differently? (Manager)",
+        "Tell me about a time when you had a low performing individual on your team. How did you deliver feedback? Did their performance improve? (Manager)"
+      ],
+      "Insist on the Highest Standards": [
+        "Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Tell me about a time when you were unsatisfied with the status quo . What did you do to change it? What was the impact? Would you do anything differently in the future?",
+        "Tell me about a time when you worked to improve the quality of a product / service / solution that was already getting good customer feedback. Why did you think it needed improvement? How did customers react?",
+        "Tell me about a time when you had to make a decision between standards and delivery. What tradeoffs did you have make? What was the outcome? Knowing what you know now, would you have done anything differently?",
+        "Give me an example of a goal you’ve had where you wish you had done better. What was the goal? How could you have improved on it?",
+        "Describe the most significant continuous improvement project that you led. What was the catalyst to this change and how did you go about it? What was the outcome?",
+        "Tell me about a tim e when you used feedback about your team to drive a change. How did you gather or receive feedback on your team's performance? What was the outcome? (Manager)"
+      ],
+      "Invent and Simplify": [
+        "Give me an example of a complex problem you solved with a simple solution. What made the problem complex? How do you know your solution addressed the problem?",
+        "Describe the most innovative thing you’ve done and why you thought it was innovative. Ask for one or two more examples to see if it's a pattern of innovative thinking. What was the problem it was solving? What was innovative about it?",
+        "Tell me about a time when you were able to make something simpler for customers. What drove you to implement this change? What was the impact?",
+        "Describe a time when you influenced and drove new thinking and innovation out of your team. Give an example of how your approach led to a specific innovation.",
+        "Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address. How did you select an alternative approach? What alternative approach(es) did you consider? What was the end result? What was the impact?",
+        "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?",
+        "Tell me about a time when you enabled your team/a team member to implement a significant change or improvement. What problem were you trying to solve? How did you measure success? What was the end result/impact? (Manager)"
+      ],
+      "Learn and Be Curious": [
+        "Tell me about a time when you realized you needed a deeper level of subject matter expertise to do your job well. What did you do about it? What was the outcome? Is there anything you would have done differently?",
+        "Describe a time when you took on work outside of your comfort area. How did you identify what you needed to learn to be successful? How did you go about building expertise to meet your goal? Did you meet your goal?",
+        "Tell me about a time when you didn’t know what to do next or how to solve a challenging problem. How do you learn what you don't know? What were the options you considered? How did you decide the best path forward? What was the outcome?",
+        "We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Give me an example of a time when you explored a new or unexpected area of an existing space. Why hadn't this been explored already? Why did you move forward? What were the results or what was the impact?",
+        "Describe a time when someone on your team challenged you to think differently about a problem. What was the situation? How did you respond? What was the outcome?",
+        "Tell me about a time when you used external trends to improve your own company's products or services. How did you keep up to date with external trends? How did you decide to apply them to your own company? What was the result?"
+      ],
+      "Ownership": [
+        "Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Describe a time when you didn't think you were going to meet a commitment you promised. How did you identify the risk and communicate it to stakeholders? Is there anything you would do differently?",
+        "Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn’t within any group’s individual responsibility so nothing was being done.",
+        "Tell me about a time when you made a hard decision to sacrifice short term gain for something that would create long term value for the business. What was the outcome? Knowing what you know now, would you have done anything differently?",
+        "Describe a time when you had to transition a project you owned to a new owner. What steps did you take to make sure the transition went smoothly? Tell me about a time that you chose to get involved in a project that you had already transitioned to somebody else. What was the situation? Why was it important to get involved?",
+        "Tell me about a tim e when you saw a peer struggling and decided to step in and help. What was the situation? Why did you decide to step in? What actions did you take?"
+      ],
+      "Think Big": [
+        "Tell me about time when you were working on an initiative or goal and saw an opportunity to do something much bigger or better than the initial focus. Did you take that opportunity? Why or why not? What was the outcome?",
+        "Give me an example of how you have changed the direction or view of a specific function/department and helped them embrace a new way of thinking. Why was a change needed? What was the outcome?",
+        "Give me an example of a time you proposed a novel approach to a problem. What was the problem and why did it require a novel approach? Was your approach successful?",
+        "Tell me about a time when you drove adoption for your vision/ideas. How did you know your vision/idea was adopted by other s? How did you drive adoption for your vision/ideas? How did you track adoption? Would you do anything differently?",
+        "Give me an example of an idea or vision you had which was adopted by global stakeholders. How did you drive adoption for your vision/ideas? How did you track adoption? Would you do anything differently?",
+        "Tell me about a time when you thought differently to improve a process that was working. What assumptions did you have to question? How did you evaluate if the change improved the process? Knowing what you know now, would you do anything differently?",
+        "Tell me about a time when you encouraged a team member or organization to take a big risk. How did you balance the risk against existing business goals? What was the outcome? What did you learn from this situation? (Manager)",
+        "Tell me about a time when you established a vision for a (team, product, initiative) when there wasn't one. How did you gain buy-in and drive execution? What was the outcome? Would you have done anything differently? (Manager)"
+      ],
+      "Strive to be Earth's Best Employer": [
+        "Tell me a time when you helped build a more inclusive working environment. What problems were you trying to address? What did you do? What were the employees’ reactions? How did the changes help the employees?",
+        "Tell me about a time when you advocated for someone who had less influence or seniority than you. How or why did you advocate for them and what was the outcome?",
+        "Describe a time when you implemented a change at work aimed at improving the work experience of yourself or coworkers. What was the goal? Why did you feel this change was necessary? What was the outcome?",
+        "Describe a time when you promoted diversity, equity, or inclusion in the workplace. What forms of diversity did you consider (e.g., gender, ethnicity, personal interests)? What approach did you use?",
+        "Tell me about a time when you showed compassion toward someone during a stressful or high-pressure situation. How did you recognize that it was important to demonstrate sensitivity? What did you do to demonstrate compassion? What were the outcomes for that person and the situation?",
+        "Tell me about a time when you supported or empowered someone else on your team to achieve a professional or personal goal. What was your role in the situation? How did it impact you?",
+        "Give me an example of a time when you organized or participated in an initiative to foster an enjoyable work environment. What was the activity or initiative? What did you do? How did other employees react?",
+        "Tell me about a time when you noticed someone was being excluded or treated unfairly. Were you able to do anything to help?",
+        "Tell me about a time you created an environment where your direct reports felt comfortable speaking up with questions, concerns, ideas, or mistakes. How did you do this and how do you know that it worked? (Manager)",
+        "Give me an example of when you worked to improve your team’s work environment? Why did you think the improvement was needed? How did you decide what steps to take? What impact did this improvement have on your team? (Manager)",
+        "Tell me about a time you influenced a change that fostered fostered diversity, equity, and inclusion on your team or in your org? What indicators did you use to identify the problem? What measures did you employ to course correct the issue? (Manager)"
+      ],
+      "Success and Scale Bring Broad Responsibility": [
+        "Tell me about a time you worked on a project that had impact beyond your immediate client/customer/organization. How did you approach the potential downstream impact of this work? When in the course of the project did you start thinking about this impact, and what efforts did you make to manage this impact? What were the risks?",
+        "Tell me about a time when you decided to change a decision because of unintended consequences for your customers. What was the impact to your customers? What tradeoffs did you have to make? How did your new solution better serve your customers?",
+        "Tell me about a time when you changed course because of the negative impact you were going to cause to a third-party.",
+        "Tell me a time when you thought carefully about social responsibility as a critical aspect of your decision making. Why was social responsibility important? How did it (i.e., considering social responsibility) have impact on the decision-making process?",
+        "Tell me about a time when you considered everyone who was affected by your work, not just your direct customers or people within your organization.",
+        "Describe a time when you had to balance growth or perceived progress with environmental or societal impacts. What were the environmental or societal impacts? What steps did you take to minimize any negative impacts?",
+        "Tell me about a time where you realized a project you were working on would have unintended, and perhaps undesired, consequences in the future. Can you tell me about a time when you didn’t realize the unintended consequences until the project was complete?",
+        "Tell me about a time you left something better than how you found it. What was it and how did you change or impact it? How did your actions influence things for the better?",
+        "Tell me about a time you influenced an organizational change to bring new social awareness and responsibility among the teams. What activities or exercises did you employ to promote this awareness? What was the outcome from these efforts? (Manager)"
+      ]
+    },
+    "routing": {
+      "Bias for Action": {
+        "1": [
+          "S32"
+        ],
+        "2": [
+          "S28"
+        ],
+        "3": [
+          "S6",
+          "S28"
+        ],
+        "4": [
+          "S32"
+        ],
+        "5": [
+          "S28"
+        ],
+        "6": [
+          "S6",
+          "S32"
+        ],
+        "7": [],
+        "8": []
+      },
+      "Customer Obsession": {
+        "1": [
+          "S8"
+        ],
+        "2": [
+          "S8"
+        ],
+        "3": [
+          "S6",
+          "S8"
+        ],
+        "4": [
+          "S8"
+        ],
+        "5": [
+          "S8"
+        ],
+        "6": [
+          "S26"
+        ],
+        "7": [
+          "S26",
+          "S3"
+        ],
+        "8": [
+          "S6"
+        ],
+        "9": [
+          "S33"
+        ]
+      },
+      "Learn and Be Curious": {
+        "1": [
+          "S27"
+        ],
+        "2": [
+          "S33",
+          "S27"
+        ],
+        "3": [
+          "S33"
+        ],
+        "4": [
+          "S30"
+        ],
+        "5": [
+          "S27"
+        ],
+        "6": [
+          "S30"
+        ],
+        "7": []
+      },
+      "Earn Trust": {
+        "1": [
+          "S8"
+        ],
+        "2": [
+          "S30"
+        ],
+        "3": [
+          "S3",
+          "S31"
+        ],
+        "4": [
+          "S30"
+        ],
+        "5": [],
+        "6": [
+          "S5",
+          "S34"
+        ],
+        "7": [],
+        "8": [],
+        "9": []
+      },
+      "Deliver Results": {
+        "1": [
+          "S19"
+        ],
+        "2": [
+          "S28"
+        ],
+        "3": [
+          "S32"
+        ],
+        "4": [
+          "S19",
+          "S33"
+        ],
+        "5": [
+          "S31"
+        ],
+        "6": [
+          "S30"
+        ],
+        "7": [
+          "S6"
+        ]
+      },
+      "Dive Deep": {
+        "1": [
+          "S34"
+        ],
+        "2": [
+          "S34"
+        ],
+        "3": [
+          "S7",
+          "S19"
+        ],
+        "4": [
+          "S34"
+        ],
+        "5": [
+          "S27"
+        ],
+        "6": [
+          "S33"
+        ],
+        "7": [
+          "S5"
+        ]
+      },
+      "Invent and Simplify": {
+        "1": [
+          "S6",
+          "S33"
+        ],
+        "2": [
+          "S19"
+        ],
+        "3": [
+          "S33"
+        ],
+        "4": [
+          "S7"
+        ],
+        "5": [
+          "S6"
+        ],
+        "6": [
+          "S19",
+          "S33"
+        ],
+        "7": [
+          "S32"
+        ]
+      },
+      "Are Right, A Lot": {
+        "1": [
+          "S26"
+        ],
+        "2": [
+          "S3"
+        ],
+        "3": [
+          "S3"
+        ],
+        "4": [
+          "S30"
+        ],
+        "5": [
+          "S5"
+        ],
+        "6": [
+          "S31"
+        ],
+        "7": [
+          "S8"
+        ]
+      },
+      "Frugality": {
+        "1": [
+          "S26"
+        ],
+        "2": [
+          "S26"
+        ],
+        "3": [
+          "S3"
+        ],
+        "4": [
+          "S26"
+        ],
+        "5": [
+          "S33"
+        ],
+        "6": [
+          "S26"
+        ],
+        "7": [],
+        "8": []
+      },
+      "Have Backbone, Disagree and Commit": {
+        "1": [
+          "S26"
+        ],
+        "2": [
+          "S31"
+        ],
+        "3": [
+          "S3"
+        ],
+        "4": [
+          "S31"
+        ],
+        "5": [
+          "S8"
+        ],
+        "6": [
+          "S3"
+        ],
+        "7": [
+          "S31"
+        ],
+        "8": []
+      },
+      "Insist on the Highest Standards": {
+        "1": [
+          "S34"
+        ],
+        "2": [
+          "S29"
+        ],
+        "3": [
+          "S30"
+        ],
+        "4": [
+          "S34"
+        ],
+        "5": [
+          "S5"
+        ],
+        "6": [
+          "S29"
+        ],
+        "7": [
+          "S19"
+        ]
+      },
+      "Ownership": {
+        "1": [
+          "S32"
+        ],
+        "2": [
+          "S32"
+        ],
+        "3": [
+          "S30"
+        ],
+        "4": [
+          "S29"
+        ],
+        "5": [
+          "S6"
+        ],
+        "6": []
+      },
+      "Think Big": {
+        "1": [
+          "S27"
+        ],
+        "2": [
+          "S27"
+        ],
+        "3": [
+          "S32"
+        ],
+        "4": [
+          "S27"
+        ],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": []
+      },
+      "Hire and Develop the Best": {},
+      "Strive to be Earth's Best Employer": {},
+      "Success and Scale Bring Broad Responsibility": {}
+    },
+    "gaps": [
+      "CUSTOMER OBSESSION RESTS ALMOST ENTIRELY ON S8. Five of the nine official questions route there, and it is the only story with an external paying customer - everywhere else the customer is internal (ops manager, leadership, the CPA). Customer Obsession is the principle Amazon opens with, so a second question on it has thin backup: S6 and S26 cover the anticipate-a-need and say-no angles, but neither has a real customer in it.",
+      "NO CROSS-TEAM ALIGNMENT STORY. Earn Trust Q5 (goals out of alignment with another team you depend on) has no answer, and this is a common Amazon question because the company runs on dependencies between teams.",
+      "NO EXTERNAL-TRENDS STORY. Learn and Be Curious Q7 (using external trends to improve your company's products) has no answer. The closest material is evaluating fintech platforms and the comparable-park data in S26 - could be built into one.",
+      "NO PEOPLE-MANAGEMENT STORIES. Hire and Develop the Best has zero coverage across all 10 questions, and Earn Trust Q7-Q9 (morale, a struggling teammate, an underperformer) are unanswered. Most are marked (Manager) in the bank and are unlikely for an individual-contributor analyst loop, but Hire and Develop does sometimes appear as a mentoring or knowledge-transfer question - the ops-manager walkthrough in S6 and the documented handover in S33 are the closest material.",
+      "THINK BIG IS THIN AGAINST ITS OWN QUESTIONS. Only 4 of 8 map, and the unmapped ones ask about bold direction and long-range vision at a scale this experience does not reach. S27 (per-property to portfolio) is the strongest available.",
+      "Strive to be Earth's Best Employer and Success and Scale Bring Broad Responsibility have no coverage at all. Both are rare in analyst loops and neither is worth manufacturing a story for."
+    ]
   }
 }
