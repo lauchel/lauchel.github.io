@@ -968,6 +968,69 @@
         "Did you recover the money?": "Yes, we recovered the overpayment, paused the vendor, and put a rate card in place so invoices only get approved when they match the agreed price.",
         "Why not just switch vendors?": "That was on the table, but the issue was an unrenegotiated increase rather than the vendor's work. The rate card fixed the control gap, which would have existed with any vendor."
       }
+    },
+    {
+      "id": "S35",
+      "title": "Rent Collection Platform",
+      "setting": "Newly acquired property",
+      "lps": [
+        "Customer Obsession",
+        "Learn and Be Curious",
+        "Are Right, A Lot"
+      ],
+      "primary_lps": [
+        "Customer Obsession"
+      ],
+      "situation": [
+        "Newly acquired property where tenants still paid by check and cash.",
+        "Payments were going missing between the onsite manager collecting them and them landing in the books."
+      ],
+      "task": [
+        "Find a rent collection platform that tenants would actually use - a system they won't adopt doesn't solve anything."
+      ],
+      "action": [
+        "Compared platforms on three criteria: transaction fees, how fast money actually landed in our account, and how easy it was for a tenant to pay without help.",
+        "The criteria pulled against each other - the cheapest option was not the easiest to use.",
+        "Weighted tenant ease highest: a cheaper platform that half the tenants wouldn't touch leaves you exactly where you started, still chasing paper.",
+        "[ WHICH PLATFORM, AND THE DECIDING REASON ]"
+      ],
+      "result": [
+        "About 70% of tenants moved to online payment.",
+        "Payments stopped going missing between collection and the books, because most no longer passed through anyone's hands."
+      ],
+      "spoken_star": {
+        "primary": "Customer Obsession",
+        "also": [
+          "Learn and Be Curious",
+          "Are Right, A Lot"
+        ],
+        "s": "We'd just acquired a property where tenants were still paying by check and cash, and payments were going missing somewhere between the onsite manager collecting them and them landing in our books.",
+        "t": "I needed to find a rent collection platform tenants would actually use — because a system they won't adopt doesn't fix anything.",
+        "a": "I compared the options on three things: transaction fees, how fast the money actually landed in our account, and how easy it was for a tenant to pay without needing help.\n\nThose pulled against each other — the cheapest option wasn't the easiest to use. I weighted tenant ease highest, because a platform with lower fees that half our tenants wouldn't touch would leave us exactly where we started, still chasing paper.\n\n[ WHICH PLATFORM YOU PICKED, AND THE ONE THING THAT DECIDED IT ]",
+        "r": "About 70% of tenants moved to online payment. Payments stopped going missing between collection and the books, because most of them no longer passed through anyone's hands."
+      },
+      "calc_sheet": {
+        "adoption": "About 70% of tenants moved to online payment after launch.",
+        "why_that_matters": "Adoption is the customer's verdict on the criteria weighting. Optimising purely on fees would have bought a cheaper platform with lower uptake - and the lost-payment problem would have survived.",
+        "the_tradeoff": "Cheapest was not easiest. Fees, deposit timing and tenant ease were the three axes, and they did not point the same way."
+      },
+      "pocket_answers": {
+        "Why did you weight tenant ease over fees?": "Because the problem wasn't cost, it was payments going missing. A cheaper platform that tenants didn't adopt would have left the paper trail intact and saved us nothing that mattered. Fees only matter on payments that actually come through the system.",
+        "Is 70% good?": "It's the number that tells you the weighting was right. Going from everyone paying by check and cash to seven in ten paying online in the first stretch means the barrier was low enough - and the remaining 30% are the ones who were always going to hand the manager a check.",
+        "What about the 30% who didn't move?": "They still pay the old way, and the onsite manager still logs those. The point wasn't to force everyone online, it was to take most of the volume out of the path where things were getting lost.",
+        "How did you know payments were getting lost?": "They'd show up in the onsite manager's log without a matching deposit, or the other way round - which is the same reconciliation problem I later built the tracker for."
+      },
+      "delivery_notes": [
+        "THIS IS YOUR SECOND CUSTOMER OBSESSION STORY, and the bank badly needed one - S8 was carrying five of the nine official questions alone.",
+        "THE WHOLE STORY TURNS ON ONE SENTENCE: tenant ease beat cost, and 70% adoption proved the weighting right. If you only get one line out, that is the line.",
+        "Say 'a system they won't use doesn't fix anything' early. It states the customer-first logic before you list criteria, so the comparison reads as customer-led rather than procurement-led.",
+        "Pairs with S33 - the billing automation at River Oaks. Do not tell both in one loop without varying the angle; S35 is about choosing for the tenant, S33 is about building around the onsite manager."
+      ],
+      "open_questions": [
+        "Which platform did you choose, and what was the one thing that decided it? The story needs the name and the deciding reason to land.",
+        "CONFIRM THE REASONING: the line about a cheap platform tenants won't touch leaving you chasing paper is my framing of why you weighted ease highest. It follows from what you told me, but say so if that wasn't your actual thinking.",
+        "Optional, would strengthen the result: transaction fee, days faster to deposit, or any drop in late payments."
+      ]
     }
   ],
   "lp_index": {
