@@ -996,6 +996,8 @@
       ],
       "result": [
         "About 70% of tenants moved to online payment.",
+        "Deposits landed about 4 days faster.",
+        "Late payments came down - paying stopped meaning getting a check to somebody by a certain day.",
         "Payments stopped going missing between collection and the books, because most no longer passed through anyone's hands."
       ],
       "spoken_star": {
@@ -1007,30 +1009,34 @@
         "s": "We'd just acquired a property where tenants were still paying by check and cash, and payments were going missing somewhere between the onsite manager collecting them and them landing in our books.",
         "t": "I needed to find a rent collection platform tenants would actually use — because a system they won't adopt doesn't fix anything.",
         "a": "I compared the options on three things: transaction fees, how fast the money actually landed in our account, and how easy it was for a tenant to pay without needing help.\n\nThose pulled against each other — the cheapest option wasn't the easiest to use. I weighted tenant ease highest, because a platform with lower fees that half our tenants wouldn't touch would leave us exactly where we started, still chasing paper.\n\nI went with Baselane. It wasn't the cheapest, but it was the one a tenant could actually pay through without calling anyone for help.",
-        "r": "About 70% of tenants moved to online payment. Payments stopped going missing between collection and the books, because most of them no longer passed through anyone's hands."
+        "r": "About 70% of tenants moved to online payment, and deposits landed about four days faster. Late payments came down too — paying stopped meaning getting a check to somebody by a certain day. And payments stopped going missing between collection and the books, because most of them no longer passed through anyone's hands."
       },
       "calc_sheet": {
         "adoption": "About 70% of tenants moved to online payment after launch.",
         "why_that_matters": "Adoption is the customer's verdict on the criteria weighting. Optimising purely on fees would have bought a cheaper platform with lower uptake - and the lost-payment problem would have survived.",
-        "the_tradeoff": "Cheapest was not easiest. Fees, deposit timing and tenant ease were the three axes, and they did not point the same way."
+        "the_tradeoff": "Cheapest was not easiest. Fees, deposit timing and tenant ease were the three axes, and they did not point the same way.",
+        "deposit_timing": "About 4 days faster from tenant payment to money in the account. Across a full rent roll that is 4 days of rent sitting in the bank instead of in transit - the same timing problem the cash tracker in S32 was built for.",
+        "late_payments": "Came down, no figure recorded. The mechanism is the credible part: paying no longer required physically getting a check to someone by a date."
       },
       "pocket_answers": {
         "Why did you weight tenant ease over fees?": "Because the problem wasn't cost, it was payments going missing. A cheaper platform that tenants didn't adopt would have left the paper trail intact and saved us nothing that mattered. Fees only matter on payments that actually come through the system.",
         "Is 70% good?": "It's the number that tells you the weighting was right. Going from everyone paying by check and cash to seven in ten paying online in the first stretch means the barrier was low enough - and the remaining 30% are the ones who were always going to hand the manager a check.",
         "What about the 30% who didn't move?": "They still pay the old way, and the onsite manager still logs those. The point wasn't to force everyone online, it was to take most of the volume out of the path where things were getting lost.",
         "How did you know payments were getting lost?": "They'd show up in the onsite manager's log without a matching deposit, or the other way round - which is the same reconciliation problem I later built the tracker for.",
-        "Why Baselane specifically?": "Ease of use for the tenant. All three platforms handled the basics, but Baselane was the one someone could pay through without needing help - and given the problem was payments going missing outside the system, adoption was the thing that actually mattered."
+        "Why Baselane specifically?": "Ease of use for the tenant. All three platforms handled the basics, but Baselane was the one someone could pay through without needing help - and given the problem was payments going missing outside the system, adoption was the thing that actually mattered.",
+        "By how much did late payments drop?": "I don't have the exact figure. What I can say is why it moved - paying stopped requiring someone to physically get a check to the manager by a date, so the friction that caused most of the lateness was gone.",
+        "Why does four days matter?": "It's four days of rent sitting in the account instead of in transit. On a seasonal property where the off-season runs a cash deficit, timing is most of the problem - the same reason I later built the rolling cash tracker."
       },
       "delivery_notes": [
         "THIS IS YOUR SECOND CUSTOMER OBSESSION STORY, and the bank badly needed one - S8 was carrying five of the nine official questions alone.",
         "THE WHOLE STORY TURNS ON ONE SENTENCE: tenant ease beat cost, and 70% adoption proved the weighting right. If you only get one line out, that is the line.",
         "Say 'a system they won't use doesn't fix anything' early. It states the customer-first logic before you list criteria, so the comparison reads as customer-led rather than procurement-led.",
         "Pairs with S33 - the billing automation at River Oaks. Do not tell both in one loop without varying the angle; S35 is about choosing for the tenant, S33 is about building around the onsite manager.",
-        "'Not the cheapest, but the one a tenant could pay through without calling anyone' is the sentence that makes this Customer Obsession rather than procurement. You had a cheaper option and turned it down for the user. Do not soften it."
+        "'Not the cheapest, but the one a tenant could pay through without calling anyone' is the sentence that makes this Customer Obsession rather than procurement. You had a cheaper option and turned it down for the user. Do not soften it.",
+        "THE 4 DAYS IS YOUR SECOND-BEST NUMBER after adoption, and it connects to S32 - faster deposits are a working-capital improvement on a property that runs a seasonal cash deficit. If the interviewer is a finance person, that link is worth making out loud.",
+        "SAY THE LATE-PAYMENT DROP WITH ITS MECHANISM, not as a bare claim. 'Late payments came down - paying stopped meaning getting a check to somebody by a certain day' is defensible without a figure. 'Late payments dropped significantly' is not."
       ],
-      "open_questions": [
-        "Optional, would strengthen the Result: the transaction fee, how many days faster deposits landed, or any drop in late payments."
-      ]
+      "open_questions": []
     }
   ],
   "lp_index": {
