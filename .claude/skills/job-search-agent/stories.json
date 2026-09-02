@@ -743,7 +743,8 @@
         "This is the true 'disagree and commit' story - the commit half is what makes it land. S3 and S26 are backbone stories where the candidate won; this is the one where they lost and executed anyway.",
         "Deliver the cost line FLATLY. 'Exactly what I flagged' is true but lands as 'I told you so', which undercuts the commit half you are actually scored on. Say instead: 'The costs did rise and reconciliation went up about six hours a week - so I built the controls to absorb that, and we ran it with zero duplicates.'",
         "Make sure you reach the closing line about operational momentum outweighing financial friction. It is the best sentence in the story.",
-        "ALSO ANSWERS THE CROSS-TEAM ALIGNMENT QUESTION. Project management and finance had genuinely conflicting goals - schedule versus cost control - and mutual dependency. Framed that way it is an Earn Trust answer: you protected the other team's decision by building the controls that made it safe, and both goals were met. Open on the conflicting goals, not on your disagreement, when the question is framed around teams."
+        "ALSO ANSWERS THE CROSS-TEAM ALIGNMENT QUESTION. Project management and finance had genuinely conflicting goals - schedule versus cost control - and mutual dependency. Framed that way it is an Earn Trust answer: you protected the other team's decision by building the controls that made it safe, and both goals were met. Open on the conflicting goals, not on your disagreement, when the question is framed around teams.",
+        "SAY 'I ESTIMATED FEES WOULD RISE ABOUT 15%', NOT 'FEES ROSE 15%'. It was a forward-looking risk you raised while arguing the case, not a measured result - framing it as an estimate removes the need to defend it precisely. If probed on why not double, the answer is that most of the ACH cost was the fixed monthly charge; only the per-payment portion scaled with the number of runs."
       ],
       "spoken_star": {
         "primary": "Have Backbone, Disagree and Commit",
@@ -760,18 +761,18 @@
         "scale": "$100K monthly capital budget, moving from 2 payment runs a month to 4.",
         "costs": "ACH fees up about 15%, reconciliation up about 6 hours a week.",
         "benefit": "Construction accelerated about 10 days.",
-        "controls": "Macro flags duplicate invoice numbers and cross-references each weekly draw against contract limits. Zero duplicates across the run."
+        "controls": "Macro flags duplicate invoice numbers and cross-references each weekly draw against contract limits. Zero duplicates across the run.",
+        "the_15_percent": "An ex-ante estimate, not a measured outcome - it was one of three risks raised while arguing against the change. It is also defensible on the mechanics: ACH cost is a fixed monthly service charge plus per-payment fees, and doubling the runs doubles only the variable half. For the total to rise about 15%, the fixed charge has to be roughly 11x the per-run fees - e.g. ~$57/month fixed against ~$5 of transaction fees a run, which is ordinary for a business account."
       },
       "pocket_answers": {
         "Why did ACH fees only rise 15% if you doubled the runs?": "CHECK THIS BEFORE USING - doubling payment runs would normally roughly double per-transaction fees. If the 15% is right, know why: batch pricing, a fixed monthly component, or only part of the vendor list moving to weekly.",
         "Was the ten days worth it?": "Not on my numbers, and I said so. Leadership weighed contractor availability and schedule risk higher than the processing cost, and that's a call above the spreadsheet - keeping crews on site has value that doesn't show up in ACH fees.",
         "How did you stop duplicate payments?": "A macro flagging repeated invoice numbers and cross-referencing every weekly draw against the contract limit. More payment runs means more chances to pay twice, so the control had to scale with the frequency.",
         "How did you handle being overruled?": "I'd made my case and it didn't win, so the useful thing left was making their decision work. I built the controls the same week.",
-        "Tell me about a time your goals were out of alignment with another team you depended on.": "On the apartment project, project management and finance wanted different things. They wanted weekly payouts to keep contractors on site and protect the schedule; I wanted bi-weekly to hold down processing cost and duplicate-payment risk. Both goals were legitimate and we depended on each other - they couldn't pay contractors without me, I couldn't control the spend without their schedule. Leadership went their way. So rather than treat it as lost, I built the controls that made their decision safe: a macro flagging duplicate invoice numbers and cross-referencing every weekly draw against the contract limit. They got their ten days, and we ran it with zero duplicate payments. Both goals landed."
+        "Tell me about a time your goals were out of alignment with another team you depended on.": "On the apartment project, project management and finance wanted different things. They wanted weekly payouts to keep contractors on site and protect the schedule; I wanted bi-weekly to hold down processing cost and duplicate-payment risk. Both goals were legitimate and we depended on each other - they couldn't pay contractors without me, I couldn't control the spend without their schedule. Leadership went their way. So rather than treat it as lost, I built the controls that made their decision safe: a macro flagging duplicate invoice numbers and cross-referencing every weekly draw against the contract limit. They got their ten days, and we ran it with zero duplicate payments. Both goals landed.",
+        "Why would fees only rise 15% if you doubled the payment runs?": "Because most of the cost was the fixed monthly service charge, not per-payment fees. Doubling the runs doubles only the variable half. If it had been pure per-transaction pricing the answer would have been closer to double - the fact that it wasn't is why the number was 15%. That was also an estimate I made before the change, arguing against it, not something I measured afterwards."
       },
-      "open_questions": [
-        "CHECK: ACH fees are stated as rising about 15% when payment runs doubled from 2 to 4 a month. Per-transaction pricing would roughly double. Know why before using this story - batch pricing, a fixed monthly component, or only some vendors moving to weekly."
-      ]
+      "open_questions": []
     },
     {
       "id": "S32",
