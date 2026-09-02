@@ -1844,5 +1844,123 @@
       "S38": "Built, then dropped. Shared six anchors with S28 - close, CPA, tax filing, late penalty, missing vendor invoices, Deliver Results - and contradicted it: S28 accrues around missing invoices and hits the date, S38 waits and misses it. It also carried no business metric and reported a missed deadline as its outcome. Its two good elements, the deadline-flexibility criterion and the closed-books dependency, moved to S28's pocket answers.",
       "S36": "Chapter 11 schedules - declined by the candidate, who does not want to raise bankruptcy work in interviews. Do not propose it again."
     }
+  },
+  "target_roles_detail": {
+    "WW Ops Finance - Financial Analyst (10522171)": {
+      "stage": "final interview",
+      "why_it_fits": "The JD is central consolidation, multi-source accuracy checking, and automation of controllership - which is what most of this bank already is. S19 alone answers four of the six listed responsibilities.",
+      "jd_to_story": {
+        "Month-end / quarterly / annual planning cycles": [
+          "S28",
+          "S19",
+          "S34"
+        ],
+        "Cross-check data against multiple sources for accuracy": [
+          "S19",
+          "S7",
+          "S5",
+          "S29"
+        ],
+        "Extract, validate, synthesize from various sources": [
+          "S19",
+          "S27",
+          "S33"
+        ],
+        "Drive automation, streamline controllership, scale capability": [
+          "S6",
+          "S19",
+          "S33"
+        ],
+        "Partner with FP&A leaders and influence decisions": [
+          "S3",
+          "S5",
+          "S31"
+        ],
+        "Documentation and SOPs for knowledge transfer": [
+          "S33",
+          "S6",
+          "S34"
+        ]
+      },
+      "loop_plan": [
+        {
+          "slot": 1,
+          "focus": "Hiring manager - Dive Deep, Deliver Results",
+          "stories": [
+            "S34 (Concrete)",
+            "S19 (Packwood)"
+          ]
+        },
+        {
+          "slot": 2,
+          "focus": "Bar raiser - Earn Trust, failure, Highest Standards",
+          "stories": [
+            "S30 (Portfolio)",
+            "S29 (Mercer Island)"
+          ]
+        },
+        {
+          "slot": 3,
+          "focus": "Finance peer - Invent and Simplify, Learn and Be Curious",
+          "stories": [
+            "S33 (River Oaks)",
+            "S27 (Portfolio)"
+          ]
+        },
+        {
+          "slot": 4,
+          "focus": "FP&A partner - Customer Obsession, Earn Trust",
+          "stories": [
+            "S35 (River Oaks)",
+            "S8 (Signature Photo)"
+          ]
+        },
+        {
+          "slot": 5,
+          "focus": "Senior - Ownership, Backbone, Bias for Action",
+          "stories": [
+            "S32 (Packwood)",
+            "S31 (Concrete)",
+            "S28 (month-end)"
+          ]
+        }
+      ],
+      "setting_spread": {
+        "Concrete": 2,
+        "Packwood": 2,
+        "River Oaks": 2,
+        "Portfolio": 2,
+        "Mercer Island": 1,
+        "Signature Photo": 1,
+        "Month-end": 1
+      },
+      "hard_questions": {
+        "The scale gap": {
+          "risk": "HIGHEST. The bank tops out at 700 tenants and 10 entities. The role consolidates headcount and opex across worldwide operations moving tens of millions of units. They will ask, and pretending the scale is comparable is the fastest way to lose the room.",
+          "answer": "Name the difference, then say what does not change. 'The scale is not comparable and I would not pretend otherwise. What transfers is the method - standardise the inputs, match on more than one key, detect duplicates, validate against a control total. What changes is that at your scale none of that runs in Power Query on a laptop; it runs in the warehouse and the cube. The discipline is the same, the tooling isn't.'",
+          "the_advantage_to_claim": "At a small firm I owned the whole pipeline - source system to filed statement. Most people arriving from large companies have only ever owned one slice of it. For a consolidation role that matters, because I know what breaks upstream and why the numbers stop agreeing."
+        },
+        "Essbase, Oracle, Access": {
+          "risk": "HIGH. All three are named in the basic qualifications and none are in the toolkit. Essbase matters most - it is the standard FP&A cube and Amazon runs on it.",
+          "answer": "Do not bluff. 'I haven't used Essbase. I have worked with dimensional data in Power BI and built a SQL database from scratch, so the concepts - dimensions, hierarchies, aggregation - aren't new. When I've needed a tool I didn't have, I've picked it up: I taught myself SQL to build the rent roll database because there was no other way to answer the question. I'd expect Essbase to be weeks, not a quarter.'",
+          "evidence": "S27 is the proof. Do not just claim you learn fast - point at the database you built after teaching yourself SQL."
+        },
+        "Experience level": {
+          "risk": "MEDIUM. Basic qualification is 1+ years, preferred is 3+. Sitting at the lower end is fine for the bar but invites 'have you done this at this level'.",
+          "answer": "Lean on breadth rather than tenure. Multi-entity FP&A, month-end close, consolidated P&L across ten entities, acquisition modelling, variance analysis to invoice level, and automation across all of it - that is a wider surface than most analysts touch in three years at a large company."
+        }
+      },
+      "questions_to_ask": [
+        "What does the consolidation actually run on today - where does the data land before it reaches the cube?",
+        "Which part of the monthly cycle is still manual enough that automating it would matter?",
+        "What does the first ninety days look like - shadowing a cycle, or owning a piece of one?",
+        "How does this team define a good month? What is the measure of the work being done well?"
+      ],
+      "gate_check": {
+        "SOC 13-2051": "PASS - the title is Financial Analyst and the duties are budgeting, forecasting and reporting.",
+        "sponsorship": "Amazon sponsors; confirm nothing role-specific blocks it.",
+        "comp": "UNKNOWN - the posted range was not included in what was pasted. Confirm it clears the $81K floor before the offer stage."
+      }
+    }
   }
 }
