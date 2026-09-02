@@ -1082,7 +1082,7 @@
       ],
       "result": [
         "Project landed within the revised budget.",
-        "[ THE SLIP - how many weeks the schedule ran long with the same crew ]"
+        "The schedule ran two weeks long on the same crew - once that was in the forecast, the number held."
       ],
       "spoken_star": {
         "primary": "Dive Deep",
@@ -1092,20 +1092,22 @@
         "s": "On our Mercer Island renovation — a project running about $50,000 a month of capital spend — I'd built the labour budget bottom-up: crew size, duration, and rate.",
         "t": "The labour line came in over, and I wanted to know why before we adjusted anything.",
         "a": "I checked the two obvious drivers first. Crew size was what we'd planned, and the rate was what we'd contracted — neither had moved. So it was the third one: duration. The schedule had slipped, and one of the crew had been pulled to another site, so the same scope was taking longer.\n\nI reforecast the line against the actual timeline rather than the planned one, and flagged it to the project manager so the slip surfaced as a schedule problem rather than just a cost surprise. Then I changed how I build these budgets going forward: I now put schedule contingency into the duration assumption instead of budgeting the planned timeline as if it were fixed.",
-        "r": "The project landed within the revised budget. [ THE SLIP - how many weeks it ran long on the same crew ]"
+        "r": "The project landed within the revised budget. The schedule had run two weeks long on the same crew — once that was in the forecast, the number held."
       },
       "calc_sheet": {
         "how_the_budget_is_built": "Bottom-up: crew size x duration x rate.",
         "the_three_drivers": "Crew size, rate, duration. Crew and rate were both as planned; the variance was entirely duration.",
         "why_duration_matters": "It is the driver that dominates headcount forecasting too - a req filled in Q3 costs a quarter, not a year. Same mechanic, found on a labour line.",
         "project_scale": "Mercer Island renovation, about $50K a month of capital spend - the same project as S29.",
-        "the_fix": "Schedule contingency now sits in the duration assumption. Budgeting the planned timeline as if it were fixed is what let a slip land as a cost surprise."
+        "the_fix": "Schedule contingency now sits in the duration assumption. Budgeting the planned timeline as if it were fixed is what let a slip land as a cost surprise.",
+        "the_slip": "Two weeks. Same crew, same rate, two weeks longer - which is the entire variance."
       },
       "pocket_answers": {
         "How did you know it wasn't crew size or rate?": "Because I'd built the budget from those two, so I could check them directly - the crew on site matched the plan and the rate matched the contract. When both come back clean, the only thing left is time.",
         "Why did the schedule slip matter so much?": "Because labour cost is crew times rate times time. If the first two hold and the third stretches, the line moves regardless. That's also why a hiring plan's start dates matter more than the rate you assumed.",
         "Wasn't the crew being pulled someone else's decision?": "It was, and that's the point - the cost showed up on my line but the cause sat in the schedule. Flagging it that way meant it got solved where it actually lived instead of being absorbed as an overspend.",
-        "How much contingency do you build in now?": "It depends on how much of the schedule depends on crews I don't control. The point isn't a fixed percentage - it's that duration is an assumption like any other, and budgeting the planned timeline as though it were fixed is what turned a schedule problem into a cost surprise."
+        "How much contingency do you build in now?": "It depends on how much of the schedule depends on crews I don't control. The point isn't a fixed percentage - it's that duration is an assumption like any other, and budgeting the planned timeline as though it were fixed is what turned a schedule problem into a cost surprise.",
+        "How much did the two weeks cost?": "I'd have to pull the exact figure, but the mechanic is straightforward - same crew at the same rate for two more weeks. That's the point: nothing about the crew or the rate changed, only the time, and the time was the one input I'd treated as fixed."
       },
       "delivery_notes": [
         "THE VALUE IS LOOKING PAST THE OBVIOUS TWO. Everyone checks volume and rate. This is the story where both came back clean and you kept going - that is what separates a checklist from an investigation.",
@@ -1114,10 +1116,7 @@
         "SAY 'DURATION' EXPLICITLY as the third driver. Naming crew, rate and time as the three things that move a labour line shows you think in drivers, which is the language an FP&A interviewer works in.",
         "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S34's rate card, S3's self-funding question. Say what changed, not just that something did."
       ],
-      "open_questions": [
-        "THE SLIP: how many weeks did the schedule run long? That is the number this story wants - it is the duration driver the whole story is about, and it is easier to state accurately than a reconstructed labour line. Pull the labour line total too if the budget has it, but the slip is the one that matters.",
-        "Do not estimate the labour line from a percentage of project cost. Textbook construction labour shares are 30-50%, but applying one produces a figure that was never measured."
-      ]
+      "open_questions": []
     }
   ],
   "lp_index": {
@@ -2066,7 +2065,7 @@
   "scale_framing": {
     "principle": "Do not inflate a number. Do state the larger true one. These stories have consistently been told at the property level when the work sat at portfolio level - that is understating, and it is the thing to fix.",
     "open_every_story_from_the_portfolio": "Say the frame once, early: 'We ran ten properties, about seven hundred tenants.' Then zoom in. An interviewer who hears '100-unit RV park' with no frame files you as small-business; the same story opened with the portfolio lands completely differently, and it is the same set of facts.",
-    "the_number_you_have_never_said": "Total rent under management. 700 tenants at a blended monthly rate is an eight-figure annual rent roll - pull the actual figure from the rent roll rather than estimating it. It is the single most useful number missing from the bank, and it reframes the whole portfolio in one clause.",
+    "the_number_you_have_never_said": "Total rent under management. DO NOT derive it from 700 tenants times an assumed rate - the blend between $700 and $1,500 spans $5.9M and $12.6M a year, which is far too wide to guess. Look it up: the SQLite rent roll from S27 holds all 700 tenants, so one sum over the monthly rent column gives it, or pull total rental income for a month from QuickBooks. It is one number, it is real, and it reframes the whole portfolio in a clause.",
     "capital_under_control": "$100K/month on the apartment project and $50K/month on the renovation are $1.2M and $600K annually. Say the annual figure when scale is the question; say the monthly when cadence is.",
     "per_story": {
       "S6": "'One of ten properties in a ~700-tenant portfolio' rather than 'a 100-unit RV park'.",
