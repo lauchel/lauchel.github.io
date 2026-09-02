@@ -312,7 +312,8 @@
         "The only story outside the real-estate firm. Use it deliberately to vary the setting across a loop.",
         "MOST UNDERUSED STORY IN THE BANK. Only non-real-estate setting, only genuine human stakes, only story where the customer's feelings can be described. Place it mid-loop to break up the RV-park run.",
         "Cut the last Action beat (asking the owner about client priority and the colleague about delays) - unrelated to the spine and it dilutes the ending.",
-        "Close on the client's reassurance, not the 80% time reduction. The hours figure is a pocket answer for 'what was the impact?', not the closer."
+        "Close on the client's reassurance, not the 80% time reduction. The hours figure is a pocket answer for 'what was the impact?', not the closer.",
+        "CARRIES A WORKFORCE PRODUCTIVITY OUTCOME - five hours a week to one, and capacity for more projects without a hire. That line had been cut for brevity and is restored. For an Ops Finance loop it is the closest thing in the bank to the JD's 'workforce productivity enhancements'."
       ],
       "spoken_star": {
         "primary": "Customer Obsession",
@@ -323,16 +324,18 @@
         "s": "A client hired us to digitize photos of his late mother. He called every few days to check on it — completely understandable, but we had twenty to thirty projects running and the calls were eating real time.",
         "t": "I wanted to give him more visibility into the work, so he wouldn't have to call to find out where things stood.",
         "a": "I proposed an automated weekly email with a status page showing the actual photos we'd scanned and what was coming next.\n\nLeadership worried it would feel impersonal. A teammate thought we didn't have time to build it. I said the email wasn't replacing the relationship — we'd keep the check-in calls, it just meant he didn't have to wait to find out where things stood. And I showed my teammate it would take two days to build and save far more than that.\n\nI built it in Excel with mail merge, and checked in with him two weeks later.",
-        "r": "He said seeing the real photos and knowing what came next gave him exactly the reassurance he'd been calling for. The calls basically stopped. We rolled it out to five other projects, and staff check-in time went from five hours a week to one."
+        "r": "He said seeing the real photos and knowing what came next gave him exactly the reassurance he'd been calling for. The calls basically stopped. We rolled it out to five other projects, and staff check-in time went from five hours a week to one — which is what let us take on more projects without adding anyone."
       },
       "calc_sheet": {
         "time_saved": "Staff check-in time 5 hours/week down to 1 = an 80% reduction.",
-        "build_cost": "Two days to build, against roughly 4 hours a week saved - it paid for itself in about a month."
+        "build_cost": "Two days to build, against roughly 4 hours a week saved - it paid for itself in about a month.",
+        "capacity_released": "5 hours a week down to 1 is 4 hours a week returned - about 200 hours a year, or a tenth of a full-time week - and it absorbed additional projects without a hire."
       },
       "pocket_answers": {
         "How did you know it was five hours a week?": "That was our own check-in time across the 20-30 active projects - calls and the follow-up they generated.",
         "What if the client had wanted more contact, not less?": "That's why I kept the bi-weekly calls. The email wasn't replacing the relationship, it was removing the wait - he could see progress without having to ask for it.",
-        "How did you get leadership comfortable?": "Their worry was that automation would feel impersonal on a sensitive project. I made the case that what felt impersonal was him not knowing where his mother's photos were, and that showing him the actual scanned images was more personal than a status update over the phone."
+        "How did you get leadership comfortable?": "Their worry was that automation would feel impersonal on a sensitive project. I made the case that what felt impersonal was him not knowing where his mother's photos were, and that showing him the actual scanned images was more personal than a status update over the phone.",
+        "Was that a headcount saving?": "Not a reduction - an avoidance. The four hours a week we got back is what let us take on more projects without hiring. That's the same shape as a productivity gain: same people, more output, because the work per project came down."
       }
     },
     {
@@ -950,7 +953,8 @@
         "Cut to Dive Deep primary, Highest Standards secondary. Six tags means reaching for this against prompts it only loosely fits.",
         "The finding reconciles exactly - 8 units x $250 = the $2,000 variance. Say the multiplication out loud; exact reconciliation is rare and very convincing.",
         "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
-        "Say '$100K a month capital budget' when scale matters. R&M variance analysis is the closest match to the operating expense half of the Ops Finance mandate."
+        "Say '$100K a month capital budget' when scale matters. R&M variance analysis is the closest match to the operating expense half of the Ops Finance mandate.",
+        "VOLUME VERSUS RATE IS THE HEADCOUNT BRIDGE. For an FP&A role with a headcount mandate, this is the story that proves the analysis transfers: the same question asked of a salary line is 'more heads than plan, or higher cost per head'. Say the parallel explicitly rather than hoping they see it."
       ],
       "primary_lps": [
         "Dive Deep",
@@ -1955,9 +1959,17 @@
         },
         "Headcount": {
           "risk": "HIGHEST alongside scale, and previously missed. The team is Central Headcount AND Operating Expense FP&A. The opex half is directly yours - variance analysis, accruals, budget against actual. The headcount half is absent from the bank entirely: no workforce planning, no employee expense forecasting, no productivity metrics. 'Payroll' appears only as an obligation in the cash tracker.",
-          "answer": "Split the mandate and be straight about which half you have. 'Operating expense is what I've done - variance to budget, accruals, tracking a cost line back to the invoice that moved it. Headcount forecasting I haven't owned, and I'd be learning that part. What I understand about it is that it's a cost line like any other, just with a different driver: heads times a fully loaded rate, and most of the variance comes from timing rather than rate - a req filled in Q3 costs a quarter, not a year. So the work is the hiring plan, attrition, and start-date timing rather than the rate itself.'",
+          "answer": "Split the mandate and be straight about which half you have. 'Operating expense is what I've done - variance to budget, accruals, tracing a cost line back to the invoice that moved it. Headcount forecasting I haven't owned, and I'd be learning that part. But the analysis transfers more than it might sound: the last variance I chased, the assumption was that we were overspending on volume, and it turned out to be rate - the vendor had raised the price per unit. That's the same question you ask on a headcount line: is this more heads than plan, or higher cost per head? And on the productivity side, I've built the thing that takes work out - one automation cut a recurring task from five hours a week to one and let us absorb more projects without hiring.'",
           "the_transferable_claim": "The occupancy dashboard in S6 is structurally a utilisation metric - sites occupied against sites available, tracked against a target with a threshold that flags underperformance early. That is the same shape as units per labour hour or cost per unit. Say that link out loud; it is the closest thing in the bank to workforce productivity and it is a real parallel, not a stretch.",
-          "do_not": "Do not claim headcount experience. Naming the half you have not done, and then showing you understand its mechanics anyway, reads far better than a vague claim that collapses on the first follow-up."
+          "do_not": "Do not claim headcount experience. Naming the half you have not done, and then showing you understand its mechanics anyway, reads far better than a vague claim that collapses on the first follow-up.",
+          "what_you_actually_have": {
+            "S34 - volume versus rate": "The strongest bridge, and it is not a stretch. The property manager assumed the overspend was volume - more move-outs. It was rate: the vendor had raised the price per unit. Volume versus rate is the core diagnostic in headcount variance too - did we overspend because we hired more heads than plan, or because cost per head moved? Same analysis, different cost line. Say that out loud.",
+            "S8 - capacity without a hire": "Staff check-in time went from five hours a week to one, and that freed capacity to take on more projects without adding anyone. That is workforce productivity in the sense the JD means it - same people, more output, because the work per unit came down. About 200 hours a year returned.",
+            "S28 - accruing before the invoice": "Payroll accrual is standard in employee expense close, and estimating a known obligation from contract terms and prior-period actuals is exactly what you did with the vendor bills.",
+            "S32 - payroll as a forecast line": "The rolling 30-day tracker forecast payroll day by day alongside vendors and debt service. Forecasting employee expense for liquidity rather than planning, but it is the same line.",
+            "S6 - utilisation against a target": "Occupancy against a 90% target with a threshold that flags underperformance early is structurally what units per labour hour is.",
+            "S19 and S7 - one line consolidated across entities": "Central consolidation of a cost line across ten entities is mechanically what consolidating headcount across orgs is."
+          }
         }
       },
       "questions_to_ask": [
