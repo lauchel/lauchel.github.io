@@ -714,7 +714,8 @@
       "setting": "Concrete apartment project, $100K monthly CapEx",
       "lps": [
         "Have Backbone, Disagree and Commit",
-        "Deliver Results"
+        "Deliver Results",
+        "Earn Trust"
       ],
       "target_questions": [
         "Q3"
@@ -741,12 +742,14 @@
       "delivery_notes": [
         "This is the true 'disagree and commit' story - the commit half is what makes it land. S3 and S26 are backbone stories where the candidate won; this is the one where they lost and executed anyway.",
         "Deliver the cost line FLATLY. 'Exactly what I flagged' is true but lands as 'I told you so', which undercuts the commit half you are actually scored on. Say instead: 'The costs did rise and reconciliation went up about six hours a week - so I built the controls to absorb that, and we ran it with zero duplicates.'",
-        "Make sure you reach the closing line about operational momentum outweighing financial friction. It is the best sentence in the story."
+        "Make sure you reach the closing line about operational momentum outweighing financial friction. It is the best sentence in the story.",
+        "ALSO ANSWERS THE CROSS-TEAM ALIGNMENT QUESTION. Project management and finance had genuinely conflicting goals - schedule versus cost control - and mutual dependency. Framed that way it is an Earn Trust answer: you protected the other team's decision by building the controls that made it safe, and both goals were met. Open on the conflicting goals, not on your disagreement, when the question is framed around teams."
       ],
       "spoken_star": {
         "primary": "Have Backbone, Disagree and Commit",
         "also": [
-          "Deliver Results"
+          "Deliver Results",
+          "Earn Trust"
         ],
         "s": "We were running bi-weekly vendor payouts on an apartment project with a $100K monthly capital budget. The project manager wanted to move to weekly, to keep contractors on site and speed up the build.",
         "t": "I needed to assess what that would do to our cash flow and our invoice controls.",
@@ -763,7 +766,8 @@
         "Why did ACH fees only rise 15% if you doubled the runs?": "CHECK THIS BEFORE USING - doubling payment runs would normally roughly double per-transaction fees. If the 15% is right, know why: batch pricing, a fixed monthly component, or only part of the vendor list moving to weekly.",
         "Was the ten days worth it?": "Not on my numbers, and I said so. Leadership weighed contractor availability and schedule risk higher than the processing cost, and that's a call above the spreadsheet - keeping crews on site has value that doesn't show up in ACH fees.",
         "How did you stop duplicate payments?": "A macro flagging repeated invoice numbers and cross-referencing every weekly draw against the contract limit. More payment runs means more chances to pay twice, so the control had to scale with the frequency.",
-        "How did you handle being overruled?": "I'd made my case and it didn't win, so the useful thing left was making their decision work. I built the controls the same week."
+        "How did you handle being overruled?": "I'd made my case and it didn't win, so the useful thing left was making their decision work. I built the controls the same week.",
+        "Tell me about a time your goals were out of alignment with another team you depended on.": "On the apartment project, project management and finance wanted different things. They wanted weekly payouts to keep contractors on site and protect the schedule; I wanted bi-weekly to hold down processing cost and duplicate-payment risk. Both goals were legitimate and we depended on each other - they couldn't pay contractors without me, I couldn't control the spend without their schedule. Leadership went their way. So rather than treat it as lost, I built the controls that made their decision safe: a macro flagging duplicate invoice numbers and cross-referencing every weekly draw against the contract limit. They got their ten days, and we ran it with zero duplicate payments. Both goals landed."
       },
       "open_questions": [
         "CHECK: ACH fees are stated as rising about 15% when payment runs doubled from 2 to 4 a month. Per-transaction pricing would roughly double. Know why before using this story - batch pricing, a fixed monthly component, or only some vendors moving to weekly."
@@ -1554,7 +1558,9 @@
         "4": [
           "S30"
         ],
-        "5": [],
+        "5": [
+          "S31"
+        ],
         "6": [
           "S5",
           "S34"
@@ -1771,7 +1777,7 @@
     },
     "gaps": [
       "CUSTOMER OBSESSION RESTS ALMOST ENTIRELY ON S8. Five of the nine official questions route there, and it is the only story with an external paying customer - everywhere else the customer is internal (ops manager, leadership, the CPA). Customer Obsession is the principle Amazon opens with, so a second question on it has thin backup: S6 and S26 cover the anticipate-a-need and say-no angles, but neither has a real customer in it.",
-      "NO CROSS-TEAM ALIGNMENT STORY. Earn Trust Q5 - goals out of alignment with another team you depend on - has no answer, and it is a common Amazon question because the company runs on dependencies between teams. The year-end close-versus-planning material was considered and dropped: it is stakeholder sequencing rather than conflicting team goals, it duplicates S28's setup, and it had no quantified outcome. Its prioritisation logic now lives as a pocket answer on S28.",
+      "CROSS-TEAM ALIGNMENT is covered by S31, but only with a reframe. Project management wanted weekly payouts for schedule, finance wanted bi-weekly for cost and control, and each depended on the other - which is a genuine conflict of team goals. It has to be opened on the conflicting goals rather than on the disagreement, or it reads as a Have Backbone story told against an Earn Trust question.",
       "NO EXTERNAL-TRENDS STORY. Learn and Be Curious Q7 (using external trends to improve your company's products) has no answer. The closest material is evaluating fintech platforms and the comparable-park data in S26 - could be built into one.",
       "NO PEOPLE-MANAGEMENT STORIES. Hire and Develop the Best has zero coverage across all 10 questions, and Earn Trust Q7-Q9 (morale, a struggling teammate, an underperformer) are unanswered. Most are marked (Manager) in the bank and are unlikely for an individual-contributor analyst loop, but Hire and Develop does sometimes appear as a mentoring or knowledge-transfer question - the ops-manager walkthrough in S6 and the documented handover in S33 are the closest material.",
       "THINK BIG IS THIN AGAINST ITS OWN QUESTIONS. Only 4 of 8 map, and the unmapped ones ask about bold direction and long-range vision at a scale this experience does not reach. S27 (per-property to portfolio) is the strongest available.",
@@ -1796,23 +1802,6 @@
           "Which platforms did you compare, and on what criteria? (fees, tenant experience, integration with QuickBooks, deposit timing)",
           "What did you pick, and what did tenants actually do once it launched - adoption rate, complaints, on-time payment change?",
           "Any number: fees per transaction, time saved on collections, percentage of tenants who switched to online payment?"
-        ]
-      },
-      {
-        "id": "S36",
-        "working_title": "Chapter 11 schedules",
-        "source_proof_point": "bankruptcy",
-        "fills": [
-          "Earn Trust Q5 - goals out of alignment with another team you depend on, currently unanswered",
-          "Insist on the Highest Standards - filings that must be exact",
-          "Deliver Results - a hard external deadline with legal consequence"
-        ],
-        "priority": "HIGH - the most substantial unused material in the profile, and the only work with legal stakes",
-        "questions_needed": [
-          "How many properties and roughly what scale of secured and unsecured debt?",
-          "Who else was involved - bankruptcy attorney, CPA, trustee - and where did their needs or timelines conflict with yours?",
-          "What was hardest: reconciling creditor lists, asset valuations, or something else?",
-          "Outcome: filed on time? Were the schedules accepted without amendment, or did anything come back?"
         ]
       },
       {
@@ -1851,7 +1840,8 @@
       "Strive to be Earth's Best Employer and Success and Scale Bring Broad Responsibility - rare in analyst loops and not worth manufacturing."
     ],
     "dropped": {
-      "S38": "Built, then dropped. Shared six anchors with S28 - close, CPA, tax filing, late penalty, missing vendor invoices, Deliver Results - and contradicted it: S28 accrues around missing invoices and hits the date, S38 waits and misses it. It also carried no business metric and reported a missed deadline as its outcome. Its two good elements, the deadline-flexibility criterion and the closed-books dependency, moved to S28's pocket answers."
+      "S38": "Built, then dropped. Shared six anchors with S28 - close, CPA, tax filing, late penalty, missing vendor invoices, Deliver Results - and contradicted it: S28 accrues around missing invoices and hits the date, S38 waits and misses it. It also carried no business metric and reported a missed deadline as its outcome. Its two good elements, the deadline-flexibility criterion and the closed-books dependency, moved to S28's pocket answers.",
+      "S36": "Chapter 11 schedules - declined by the candidate, who does not want to raise bankruptcy work in interviews. Do not propose it again."
     }
   }
 }
