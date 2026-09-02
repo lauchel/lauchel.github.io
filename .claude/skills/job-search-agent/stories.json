@@ -1842,6 +1842,22 @@
           "Which was the hardest and why?",
           "Has anyone other than you used them?"
         ]
+      },
+      {
+        "id": "S40",
+        "working_title": "Construction crew labour budgeting",
+        "source_proof_point": "new - surfaced during Ops Finance prep",
+        "fills": [
+          "The headcount and employee expense half of the WW Ops Finance mandate, which nothing in the bank currently covers",
+          "Deliver Results or Dive Deep depending on whether a variance was involved"
+        ],
+        "priority": "HIGH for this loop - it is the only labour-cost planning material available, and the role is half employee expense",
+        "questions_needed": [
+          "How do you build the staffing budget - crew size times duration times rate, or straight off the contractor's bid?",
+          "Have you ever analysed a variance on the labour line specifically? Came in over, and was it crew size or the rate?",
+          "Has a crew plan had to change mid-project - schedule slipped, crew ran longer, someone pulled off to another site?",
+          "Roughly what does the labour line run per project or per month?"
+        ]
       }
     ],
     "not_worth_building": [
@@ -1959,9 +1975,9 @@
         },
         "Headcount": {
           "risk": "HIGHEST alongside scale, and previously missed. The team is Central Headcount AND Operating Expense FP&A. The opex half is directly yours - variance analysis, accruals, budget against actual. The headcount half is absent from the bank entirely: no workforce planning, no employee expense forecasting, no productivity metrics. 'Payroll' appears only as an obligation in the cash tracker.",
-          "answer": "Split the mandate and be straight about which half you have. 'Operating expense is what I've done - variance to budget, accruals, tracing a cost line back to the invoice that moved it. Headcount forecasting I haven't owned, and I'd be learning that part. But the analysis transfers more than it might sound: the last variance I chased, the assumption was that we were overspending on volume, and it turned out to be rate - the vendor had raised the price per unit. That's the same question you ask on a headcount line: is this more heads than plan, or higher cost per head? And on the productivity side, I've built the thing that takes work out - one automation cut a recurring task from five hours a week to one and let us absorb more projects without hiring.'",
+          "answer": "Lead with what you have rather than the gap. 'On employee expense I've booked payroll accruals through close - wages earned but not yet paid at the cutoff, accrued into the period the work happened. And I plan and budget crew staffing on our construction projects, so forecasting a labour line and tracking spend against it is familiar - contractor labour rather than salaried headcount, but the same shape. What I haven't owned is a salaried headcount forecast at scale - hiring plans, attrition, start-date timing. The analysis I'd bring to it is the one I already run on any cost line: the last variance I chased, everyone assumed it was volume and it turned out to be rate. On a headcount line that's the same question - more heads than plan, or higher cost per head.'",
           "the_transferable_claim": "The occupancy dashboard in S6 is structurally a utilisation metric - sites occupied against sites available, tracked against a target with a threshold that flags underperformance early. That is the same shape as units per labour hour or cost per unit. Say that link out loud; it is the closest thing in the bank to workforce productivity and it is a real parallel, not a stretch.",
-          "do_not": "Do not claim headcount experience, payroll accrual experience, or seasonal staffing planning. Two bridges carry real weight - S34's volume-versus-rate diagnosis and S8's capacity gained without a hire. Lead with those and let the rest go.",
+          "do_not": "Do not claim salaried headcount forecasting at scale, hiring plans, or attrition modelling. DO claim payroll accruals and contractor labour budgeting - both are real. The earlier note saying not to claim payroll accrual experience was wrong and is corrected.",
           "what_you_actually_have": {
             "S34 - volume versus rate": "The strongest bridge, and it is not a stretch. The property manager assumed the overspend was volume - more move-outs. It was rate: the vendor had raised the price per unit. Volume versus rate is the core diagnostic in headcount variance too - did we overspend because we hired more heads than plan, or because cost per head moved? Same analysis, different cost line. Say that out loud.",
             "S8 - capacity without a hire": "Staff check-in time went from five hours a week to one, and that freed capacity to take on more projects without adding anyone. That is workforce productivity in the sense the JD means it - same people, more output, because the work per unit came down. About 200 hours a year returned.",
@@ -1969,10 +1985,10 @@
             "S32 - payroll as a forecast line": "Weakest of the surviving bridges but true - the rolling tracker forecast payroll day by day. Staffing at the properties is constant, so there is no seasonal headcount planning to claim.",
             "S6 - utilisation against a target": "Occupancy against a 90% target with a threshold that flags underperformance early is structurally what units per labour hour is."
           },
-          "closed_leads": [
-            "Payroll accruals - not booked. Pay periods presumably align, or the properties use contractors.",
-            "Seasonal staffing - staffing is constant at the properties, so there is no volume-driven headcount planning to claim."
-          ]
+          "direct_experience": {
+            "payroll accruals": "BOOKED THEM. This is direct experience, not a bridge - say it plainly. Wages earned but unpaid at the cutoff, accrued into the period the work happened and reversed on payment. It is a standard part of employee expense close and it is a real answer to 'have you worked on employee expense'.",
+            "labour budgeting on construction projects": "Plans and budgets crew staffing for construction projects - contractor labour rather than W-2 headcount, but it is labour cost planning: forecasting a workforce line, then tracking spend against it. Relevant beyond the obvious, because Amazon Operations runs heavily on flex, seasonal and contingent labour, so a variable workforce line is closer to that team's actual work than a fixed salaried roster would be."
+          }
         }
       },
       "questions_to_ask": [
