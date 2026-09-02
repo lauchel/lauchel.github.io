@@ -1961,15 +1961,18 @@
           "risk": "HIGHEST alongside scale, and previously missed. The team is Central Headcount AND Operating Expense FP&A. The opex half is directly yours - variance analysis, accruals, budget against actual. The headcount half is absent from the bank entirely: no workforce planning, no employee expense forecasting, no productivity metrics. 'Payroll' appears only as an obligation in the cash tracker.",
           "answer": "Split the mandate and be straight about which half you have. 'Operating expense is what I've done - variance to budget, accruals, tracing a cost line back to the invoice that moved it. Headcount forecasting I haven't owned, and I'd be learning that part. But the analysis transfers more than it might sound: the last variance I chased, the assumption was that we were overspending on volume, and it turned out to be rate - the vendor had raised the price per unit. That's the same question you ask on a headcount line: is this more heads than plan, or higher cost per head? And on the productivity side, I've built the thing that takes work out - one automation cut a recurring task from five hours a week to one and let us absorb more projects without hiring.'",
           "the_transferable_claim": "The occupancy dashboard in S6 is structurally a utilisation metric - sites occupied against sites available, tracked against a target with a threshold that flags underperformance early. That is the same shape as units per labour hour or cost per unit. Say that link out loud; it is the closest thing in the bank to workforce productivity and it is a real parallel, not a stretch.",
-          "do_not": "Do not claim headcount experience. Naming the half you have not done, and then showing you understand its mechanics anyway, reads far better than a vague claim that collapses on the first follow-up.",
+          "do_not": "Do not claim headcount experience, payroll accrual experience, or seasonal staffing planning. Two bridges carry real weight - S34's volume-versus-rate diagnosis and S8's capacity gained without a hire. Lead with those and let the rest go.",
           "what_you_actually_have": {
             "S34 - volume versus rate": "The strongest bridge, and it is not a stretch. The property manager assumed the overspend was volume - more move-outs. It was rate: the vendor had raised the price per unit. Volume versus rate is the core diagnostic in headcount variance too - did we overspend because we hired more heads than plan, or because cost per head moved? Same analysis, different cost line. Say that out loud.",
             "S8 - capacity without a hire": "Staff check-in time went from five hours a week to one, and that freed capacity to take on more projects without adding anyone. That is workforce productivity in the sense the JD means it - same people, more output, because the work per unit came down. About 200 hours a year returned.",
-            "S28 - accruing before the invoice": "Payroll accrual is standard in employee expense close, and estimating a known obligation from contract terms and prior-period actuals is exactly what you did with the vendor bills.",
-            "S32 - payroll as a forecast line": "The rolling 30-day tracker forecast payroll day by day alongside vendors and debt service. Forecasting employee expense for liquidity rather than planning, but it is the same line.",
-            "S6 - utilisation against a target": "Occupancy against a 90% target with a threshold that flags underperformance early is structurally what units per labour hour is.",
-            "S19 and S7 - one line consolidated across entities": "Central consolidation of a cost line across ten entities is mechanically what consolidating headcount across orgs is."
-          }
+            "S28 - accruing before the invoice": "The estimation method maps one-to-one onto a payroll accrual: PO contract amount -> roster times fully-loaded rate; what they billed last month -> last period's actual payroll; historical average -> average rate adjusted for known changes. Say the mapping, not 'it's similar'. NOTE: she has not booked a payroll accrual - do not imply otherwise.",
+            "S32 - payroll as a forecast line": "Weakest of the surviving bridges but true - the rolling tracker forecast payroll day by day. Staffing at the properties is constant, so there is no seasonal headcount planning to claim.",
+            "S6 - utilisation against a target": "Occupancy against a 90% target with a threshold that flags underperformance early is structurally what units per labour hour is."
+          },
+          "closed_leads": [
+            "Payroll accruals - not booked. Pay periods presumably align, or the properties use contractors.",
+            "Seasonal staffing - staffing is constant at the properties, so there is no volume-driven headcount planning to claim."
+          ]
         }
       },
       "questions_to_ask": [
@@ -1982,6 +1985,15 @@
         "SOC 13-2051": "PASS - the title is Financial Analyst and the duties are budgeting, forecasting and reporting.",
         "sponsorship": "Amazon sponsors; confirm nothing role-specific blocks it.",
         "comp": "UNKNOWN - the posted range was not included in what was pasted. Confirm it clears the $81K floor before the offer stage."
+      },
+      "employee_expense_primer": {
+        "why": "Not experience to claim - background so a technical follow-up does not land flat. The role is employee expense FP&A; these are the mechanics anyone in it assumes you know.",
+        "payroll accrual": "Pay periods rarely align with month-end, so wages earned but unpaid at the cutoff are accrued into the month the work happened and reversed when paid. Without it, monthly labour cost moves for calendar reasons and variance analysis cannot separate a timing artefact from a real overspend.",
+        "fully loaded rate": "Base salary plus employer taxes, benefits, and equity or bonus. Headcount forecasts are built on fully loaded cost, not base - using base understates the line badly.",
+        "timing is most of the variance": "A req filled in Q3 costs a quarter, not a year. Most headcount variance to plan comes from hiring earlier or later than assumed rather than from paying a different rate.",
+        "the two drivers": "Heads and rate. Every headcount variance question reduces to which one moved - the same question S34 answers about a vendor line.",
+        "attrition": "Forecasts assume a leaver rate; under-assuming it overstates cost, over-assuming it hides an under-hiring problem.",
+        "productivity metrics": "Units per labour hour, cost per unit, or hours per unit of output. The JD's 'workforce productivity' means these."
       }
     }
   },
