@@ -1853,11 +1853,22 @@
         ],
         "priority": "HIGH for this loop - it is the only labour-cost planning material available, and the role is half employee expense",
         "questions_needed": [
-          "How do you build the staffing budget - crew size times duration times rate, or straight off the contractor's bid?",
-          "Have you ever analysed a variance on the labour line specifically? Came in over, and was it crew size or the rate?",
-          "Has a crew plan had to change mid-project - schedule slipped, crew ran longer, someone pulled off to another site?",
-          "Roughly what does the labour line run per project or per month?"
-        ]
+          "Once you found it was duration rather than crew or rate, what did you do - reforecast the line, flag it to the project manager, change how you build the budget?",
+          "What happened - did the project land within a revised budget, or did it overrun? Any figure for the labour line or the size of the overrun?",
+          "Confirm: the budget is built crew size x duration x rate, not taken off the contractor's bid?"
+        ],
+        "known_so_far": {
+          "method": "Labour budget built bottom-up: crew size x duration x rate.",
+          "the_variance": "Labour line came in over budget.",
+          "the_cause": "Not crew size and not rate - duration. The schedule slipped and a crew member was pulled to another site, so the same scope took longer.",
+          "why_this_matters": "Duration is the third driver, and it is the one that dominates headcount forecasting - a req filled in Q3 costs a quarter, not a year. She found that mechanic experientially on a real labour line. That is a far stronger bridge than generic budgeting, and it pairs with S34: same volume-versus-rate question, but the answer turned out to be neither."
+        },
+        "draft_shape": {
+          "s": "A construction project where I built the labour budget bottom-up - crew size, duration, and rate.",
+          "t": "The labour line came in over budget and I needed to know why before we adjusted anything.",
+          "a": "Checked the two obvious drivers first. Crew size was as planned and the rate was as contracted - neither had moved. The variance was duration: the schedule had slipped and one of the crew had been pulled to another site, so the same scope was taking longer. [ WHAT YOU DID ABOUT IT ]",
+          "r": "[ OUTCOME - did it land within a revised budget, and what was the labour line worth ]"
+        }
       }
     ],
     "not_worth_building": [
