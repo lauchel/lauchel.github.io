@@ -1037,6 +1037,69 @@
         "SAY THE LATE-PAYMENT DROP WITH ITS MECHANISM, not as a bare claim. 'Late payments came down - paying stopped meaning getting a check to somebody by a certain day' is defensible without a figure. 'Late payments dropped significantly' is not."
       ],
       "open_questions": []
+    },
+    {
+      "id": "S38",
+      "title": "Year-End Close vs Annual Planning",
+      "setting": "Year-end, multi-entity portfolio",
+      "lps": [
+        "Earn Trust",
+        "Deliver Results"
+      ],
+      "primary_lps": [
+        "Earn Trust"
+      ],
+      "situation": [
+        "Year-end. The CPA needed the consolidated P&L for tax filings - a hard date with a late penalty behind it.",
+        "At the same time, leadership wanted numbers for next year's annual planning."
+      ],
+      "task": [
+        "Both landed in the same window and both were mine. I had to decide what got done first."
+      ],
+      "action": [
+        "Ranked them on three things: urgency, impact if it slipped, and which deadline could genuinely move.",
+        "The filing date could not move - the penalty was fixed. Planning mattered but the date had give in it.",
+        "What settled it: planning numbers come off the closed books anyway. Starting planning early would have meant building on figures I would have to revise once close landed.",
+        "So close first was not just the safer order, it was the faster route to what leadership actually wanted.",
+        "Went back to leadership with when they would have the numbers, rather than leaving them waiting."
+      ],
+      "result": [
+        "Filing went in on time.",
+        "Leadership got planning numbers off properly closed books rather than figures that would have moved.",
+        "The internal close itself ran a few days long - still waiting on vendor invoices - but the deadline carrying a penalty was the one protected."
+      ],
+      "spoken_star": {
+        "primary": "Earn Trust",
+        "also": [
+          "Deliver Results"
+        ],
+        "s": "It was year-end. The CPA needed the consolidated P&L for tax filings — a hard date with a late penalty behind it. At the same time, leadership wanted numbers for next year's annual planning.",
+        "t": "Both landed in the same window and both were mine. I had to decide what got done first.",
+        "a": "I ranked them on three things: how urgent each was, what the impact would be if it slipped, and — the one that actually decided it — which deadline could genuinely move. The filing date couldn't; the penalty was fixed. Planning mattered, but that date had give in it.\n\nWhat really settled it was that the planning numbers come off the closed books anyway. Starting the planning work early would have meant building on figures I'd have to revise once close landed. So doing close first wasn't just the safer order — it was the faster route to what leadership actually wanted.\n\nAnd I went back to them with when they'd have it, rather than leaving them waiting.",
+        "r": "The filing went in on time, and leadership got their planning numbers off properly closed books instead of figures that would have moved under them. The internal close itself ran a few days long — I was still waiting on vendor invoices — but the deadline that carried a penalty was the one I protected."
+      },
+      "calc_sheet": {
+        "the_conflict": "Two year-end demands in the same window: the CPA's tax filing (hard date, late penalty) and leadership's annual planning numbers (important, but the date had slack).",
+        "the_deciding_criterion": "Not urgency or impact - both scored high. Which deadline could actually move. Only one of them could.",
+        "the_dependency": "Annual planning is built off closed actuals, so the planning numbers required close to be finished. Sequencing close first served both demands rather than trading one against the other.",
+        "what_slipped": "The internal close ran a few days long, waiting on vendor invoices. The filing itself was not late."
+      },
+      "pocket_answers": {
+        "Didn't leadership outrank the CPA?": "Seniority wasn't the question - the filing had a fixed penalty and the planning date didn't. And the planning numbers depended on the close anyway, so doing close first got leadership what they wanted sooner than starting their work early would have.",
+        "Did everything land on time?": "The filing did. The internal close ran a few days long because I was still waiting on vendor invoices - that was a supply problem, not a sequencing one. The deadline with money attached to it was the one I protected.",
+        "What would you do differently?": "Accrue the missing invoices rather than wait on them. That's what I do now - estimate from the purchase order and prior-month actuals, deliver on the date, and true up when the invoice arrives.",
+        "How did you tell leadership?": "I gave them a date rather than an apology. The thing that damages trust isn't waiting, it's not knowing how long you're waiting."
+      },
+      "delivery_notes": [
+        "THE THIRD CRITERION IS THE WHOLE STORY. Everyone prioritises on urgency and impact. 'Which deadline can actually move' is the one that shows judgement - say it as the deciding factor, not as a third item in a list.",
+        "THE DEPENDENCY IS THE BEST BEAT: you didn't choose the CPA over leadership, you found the order that served both. Say that explicitly - it turns a trade-off into a solution.",
+        "OWN THE LATE CLOSE, DON'T BURY IT. 'The internal close ran a few days long, I was still waiting on vendor invoices' is honest and it separates a supply problem from a sequencing one. Hiding it and getting caught is far worse.",
+        "OVERLAPS WITH S28 - both are close, missing invoices, a CPA deadline. S28 has the better outcome (accrued and delivered on time). Do not tell both in one loop. If asked what you'd do differently here, S28's accrual method IS the answer - which makes the pair a genuine learning arc if S28 came later.",
+        "This fills EARN TRUST, not Bias for Action. The sequencing was deliberate, not fast - do not stretch it into a speed story."
+      ],
+      "open_questions": [
+        "Did S28 (the accrual) happen after this year-end? If so, say so - 'that's what I do now' becomes a real arc rather than a hypothetical improvement."
+      ]
     }
   ],
   "lp_index": {
@@ -1550,7 +1613,9 @@
         "4": [
           "S30"
         ],
-        "5": [],
+        "5": [
+          "S38"
+        ],
         "6": [
           "S5",
           "S34"
@@ -1564,7 +1629,8 @@
           "S19"
         ],
         "2": [
-          "S28"
+          "S28",
+          "S38"
         ],
         "3": [
           "S32"
@@ -1767,7 +1833,7 @@
     },
     "gaps": [
       "CUSTOMER OBSESSION RESTS ALMOST ENTIRELY ON S8. Five of the nine official questions route there, and it is the only story with an external paying customer - everywhere else the customer is internal (ops manager, leadership, the CPA). Customer Obsession is the principle Amazon opens with, so a second question on it has thin backup: S6 and S26 cover the anticipate-a-need and say-no angles, but neither has a real customer in it.",
-      "NO CROSS-TEAM ALIGNMENT STORY. Earn Trust Q5 (goals out of alignment with another team you depend on) has no answer, and this is a common Amazon question because the company runs on dependencies between teams.",
+      "CROSS-TEAM ALIGNMENT is now partly covered by S38 - competing year-end demands between the CPA and leadership. It is a stakeholder-sequencing story rather than a two-teams-with-conflicting-goals story, so a question framed hard around team dependencies is still thin.",
       "NO EXTERNAL-TRENDS STORY. Learn and Be Curious Q7 (using external trends to improve your company's products) has no answer. The closest material is evaluating fintech platforms and the comparable-park data in S26 - could be built into one.",
       "NO PEOPLE-MANAGEMENT STORIES. Hire and Develop the Best has zero coverage across all 10 questions, and Earn Trust Q7-Q9 (morale, a struggling teammate, an underperformer) are unanswered. Most are marked (Manager) in the bank and are unlikely for an individual-contributor analyst loop, but Hire and Develop does sometimes appear as a mentoring or knowledge-transfer question - the ops-manager walkthrough in S6 and the documented handover in S33 are the closest material.",
       "THINK BIG IS THIN AGAINST ITS OWN QUESTIONS. Only 4 of 8 map, and the unmapped ones ask about bold direction and long-range vision at a scale this experience does not reach. S27 (per-property to portfolio) is the strongest available.",
