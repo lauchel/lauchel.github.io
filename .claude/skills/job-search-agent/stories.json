@@ -1058,7 +1058,7 @@
     {
       "id": "S40",
       "title": "Construction Labour Variance",
-      "setting": "Construction project (confirm which)",
+      "setting": "Mercer Island renovation (~$50K/month capital budget)",
       "lps": [
         "Dive Deep",
         "Deliver Results"
@@ -1067,7 +1067,8 @@
         "Dive Deep"
       ],
       "situation": [
-        "Built the labour budget for a construction project bottom-up: crew size, duration, and rate."
+        "Mercer Island house renovation, running about $50K a month of capital spend.",
+        "Built the labour budget bottom-up: crew size x duration x rate."
       ],
       "task": [
         "The labour line came in over budget. Needed to know why before adjusting anything."
@@ -1077,42 +1078,45 @@
         "The variance was duration: the schedule had slipped and one of the crew had been pulled to another site, so the same scope was taking longer.",
         "Reforecast the line against the actual timeline rather than the planned one.",
         "Flagged it to the project manager so the slip surfaced as a schedule problem rather than only as a cost surprise.",
-        "Changed how the budget is built going forward - [ WHAT CHANGED ]."
+        "Changed how the budget is built going forward - now builds schedule contingency into the duration assumption rather than budgeting the planned timeline as if it were fixed."
       ],
       "result": [
         "Project landed within the revised budget.",
-        "[ FIGURE - what the labour line was worth, or the size of the overrun ]"
+        "[ THE SLIP - how many weeks the schedule ran long with the same crew ]"
       ],
       "spoken_star": {
         "primary": "Dive Deep",
         "also": [
           "Deliver Results"
         ],
-        "s": "On one of our construction projects I'd built the labour budget bottom-up — crew size, duration, and rate.",
+        "s": "On our Mercer Island renovation — a project running about $50,000 a month of capital spend — I'd built the labour budget bottom-up: crew size, duration, and rate.",
         "t": "The labour line came in over, and I wanted to know why before we adjusted anything.",
-        "a": "I checked the two obvious drivers first. Crew size was what we'd planned, and the rate was what we'd contracted — neither had moved. So it was the third one: duration. The schedule had slipped, and one of the crew had been pulled to another site, so the same scope was taking longer.\n\nI reforecast the line against the actual timeline rather than the planned one, and flagged it to the project manager so the slip surfaced as a schedule problem rather than just a cost surprise. Then I changed how I build these budgets going forward — [ WHAT CHANGED ].",
-        "r": "The project landed within the revised budget. [ FIGURE ]"
+        "a": "I checked the two obvious drivers first. Crew size was what we'd planned, and the rate was what we'd contracted — neither had moved. So it was the third one: duration. The schedule had slipped, and one of the crew had been pulled to another site, so the same scope was taking longer.\n\nI reforecast the line against the actual timeline rather than the planned one, and flagged it to the project manager so the slip surfaced as a schedule problem rather than just a cost surprise. Then I changed how I build these budgets going forward: I now put schedule contingency into the duration assumption instead of budgeting the planned timeline as if it were fixed.",
+        "r": "The project landed within the revised budget. [ THE SLIP - how many weeks it ran long on the same crew ]"
       },
       "calc_sheet": {
         "how_the_budget_is_built": "Bottom-up: crew size x duration x rate.",
         "the_three_drivers": "Crew size, rate, duration. Crew and rate were both as planned; the variance was entirely duration.",
-        "why_duration_matters": "It is the driver that dominates headcount forecasting too - a req filled in Q3 costs a quarter, not a year. Same mechanic, found on a labour line."
+        "why_duration_matters": "It is the driver that dominates headcount forecasting too - a req filled in Q3 costs a quarter, not a year. Same mechanic, found on a labour line.",
+        "project_scale": "Mercer Island renovation, about $50K a month of capital spend - the same project as S29.",
+        "the_fix": "Schedule contingency now sits in the duration assumption. Budgeting the planned timeline as if it were fixed is what let a slip land as a cost surprise."
       },
       "pocket_answers": {
         "How did you know it wasn't crew size or rate?": "Because I'd built the budget from those two, so I could check them directly - the crew on site matched the plan and the rate matched the contract. When both come back clean, the only thing left is time.",
         "Why did the schedule slip matter so much?": "Because labour cost is crew times rate times time. If the first two hold and the third stretches, the line moves regardless. That's also why a hiring plan's start dates matter more than the rate you assumed.",
-        "Wasn't the crew being pulled someone else's decision?": "It was, and that's the point - the cost showed up on my line but the cause sat in the schedule. Flagging it that way meant it got solved where it actually lived instead of being absorbed as an overspend."
+        "Wasn't the crew being pulled someone else's decision?": "It was, and that's the point - the cost showed up on my line but the cause sat in the schedule. Flagging it that way meant it got solved where it actually lived instead of being absorbed as an overspend.",
+        "How much contingency do you build in now?": "It depends on how much of the schedule depends on crews I don't control. The point isn't a fixed percentage - it's that duration is an assumption like any other, and budgeting the planned timeline as though it were fixed is what turned a schedule problem into a cost surprise."
       },
       "delivery_notes": [
         "THE VALUE IS LOOKING PAST THE OBVIOUS TWO. Everyone checks volume and rate. This is the story where both came back clean and you kept going - that is what separates a checklist from an investigation.",
         "PAIRS WITH S34 for an FP&A loop: same question, opposite answer. There the variance was rate; here it was neither crew nor rate but duration. Told together they show a method rather than a lucky catch. Do not tell both in the same slot, but referencing the pair across a loop is fine.",
         "THIS IS THE LABOUR-LINE STORY. For the WW Ops Finance role it is the closest thing to the headcount half of the mandate - forecasting a workforce line, tracking spend against it, and diagnosing the variance. Lead with it if the question is about employee expense.",
-        "SAY 'DURATION' EXPLICITLY as the third driver. Naming crew, rate and time as the three things that move a labour line shows you think in drivers, which is the language an FP&A interviewer works in."
+        "SAY 'DURATION' EXPLICITLY as the third driver. Naming crew, rate and time as the three things that move a labour line shows you think in drivers, which is the language an FP&A interviewer works in.",
+        "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S34's rate card, S3's self-funding question. Say what changed, not just that something did."
       ],
       "open_questions": [
-        "What specifically changed in how you build these budgets afterwards? 'Changed it going forward' is vague - the institutional fix is the strongest part of the result and it needs one concrete detail.",
-        "Any figure: what the labour line was worth, or the size of the overrun before the reforecast.",
-        "Which project was this? If it was Concrete or Mercer Island, the loop plan needs checking so the setting does not appear three times."
+        "THE SLIP: how many weeks did the schedule run long? That is the number this story wants - it is the duration driver the whole story is about, and it is easier to state accurately than a reconstructed labour line. Pull the labour line total too if the budget has it, but the slip is the one that matters.",
+        "Do not estimate the labour line from a percentage of project cost. Textbook construction labour shares are 30-50%, but applying one produces a figure that was never measured."
       ]
     }
   ],
@@ -1955,7 +1959,7 @@
           "slot": 1,
           "focus": "Hiring manager - Dive Deep, Deliver Results",
           "stories": [
-            "S34 (Concrete)",
+            "S40 (Mercer Island)",
             "S19 (Packwood)"
           ]
         },
@@ -1964,7 +1968,8 @@
           "focus": "Bar raiser - Earn Trust, failure, Highest Standards",
           "stories": [
             "S30 (Portfolio)",
-            "S29 (Mercer Island)"
+            "S29 (Mercer Island)",
+            "S31 (Concrete)"
           ]
         },
         {
@@ -1985,20 +1990,20 @@
         },
         {
           "slot": 5,
-          "focus": "Senior - Ownership, Backbone, Bias for Action",
+          "focus": "Senior - Ownership, Dive Deep, Bias for Action",
           "stories": [
             "S32 (Packwood)",
-            "S31 (Concrete)",
+            "S34 (Concrete)",
             "S28 (month-end)"
           ]
         }
       ],
       "setting_spread": {
-        "Concrete": 2,
+        "Mercer Island": 2,
         "Packwood": 2,
-        "River Oaks": 2,
         "Portfolio": 2,
-        "Mercer Island": 1,
+        "River Oaks": 2,
+        "Concrete": 2,
         "Signature Photo": 1,
         "Month-end": 1
       },
@@ -2054,7 +2059,8 @@
         "the two drivers": "Heads and rate. Every headcount variance question reduces to which one moved - the same question S34 answers about a vendor line.",
         "attrition": "Forecasts assume a leaver rate; under-assuming it overstates cost, over-assuming it hides an under-hiring problem.",
         "productivity metrics": "Units per labour hour, cost per unit, or hours per unit of output. The JD's 'workforce productivity' means these."
-      }
+      },
+      "loop_note": "S40 leads slot one: it is the only labour-line story and the role is half employee expense, so it should reach the hiring manager. S34 moves to slot five - the two pair well across a loop but must not share a slot."
     }
   },
   "scale_framing": {
