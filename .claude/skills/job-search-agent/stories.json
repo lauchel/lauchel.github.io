@@ -206,7 +206,7 @@
           "Customer Obsession",
           "Deliver Results"
         ],
-        "s": "Our 100-unit RV park only had month-end reporting. By the time we saw the numbers the month was closed — so if a weekend came in soft, there was nothing anyone could do about it.",
+        "s": "We ran ten properties, about seven hundred tenants. At one of them — a 100-unit RV park — we only had month-end reporting, so by the time we saw the numbers the month was closed and a soft weekend was already lost.",
         "t": "I wanted something forward-looking, so operations could adjust pricing before we lost the revenue instead of after.",
         "a": "I pulled the reservation data out of our booking software. The export was messy — a guest booking Friday to Sunday came through as one row, but I needed each night separately to count occupancy. Dates came through as text Excel couldn't read. And site rental was lumped in with firewood and pet fees.\n\nI wrote a macro that cleans all of that in one click, and built a dashboard showing the next four weeks — occupancy, sites still open, average rate, and revenue per available site. Anything more than three weeks out that's below 90% turns red.\n\nI ran it once a week, took about a minute. The ops manager read it on their own and called me when something went red.",
         "r": "In mid-May it flagged a weekend at 68% — they sent a 15% discount to past guests, and we filled it to 86% before that weekend arrived. That was about $2,500 of revenue we'd otherwise have lost on one weekend, and the weekly run took me about a minute instead of the four hours I used to spend pulling numbers."
@@ -257,7 +257,7 @@
         "also": [
           "Invent and Simplify"
         ],
-        "s": "Our RV park took rent from four places — two booking platforms, cash the onsite manager collected, and QuickBooks. They'd send me receipts and I'd enter them by hand, and with four sources things were getting missed.",
+        "s": "One of our properties took rent from four places — two booking platforms, cash the onsite manager collected, and QuickBooks. They'd send me receipts and I'd enter them by hand, and with four sources things were getting missed.",
         "t": "I needed one tracker that matched every dollar across all four sources and caught what manual entry had dropped.",
         "a": "I used Power Query to pull every platform's export into one workbook, then wrote a macro to match them up. The tricky part was the same tenant appearing under different names across systems, so the macro maps name variations to one tenant ID, then cross-references amounts and dates.\n\nI also built it so the onsite manager and I saw the same reconciled data, instead of me chasing them for receipts.",
         "r": "It found $10K that had been missed in manual entry, and we recovered it. We rolled it out across four properties and it became the standard process."
@@ -380,7 +380,7 @@
         "also": [
           "Invent and Simplify"
         ],
-        "s": "Our CPA needed one consolidated P&L for tax filing. Rent came in from four sources — two platforms, texted payments, and mailed checks — each tracked separately. Nobody had ever combined them, and when I tried, the numbers didn't add up. The CPA kept flagging income that looked double-counted, and doing it by hand took about two weeks.",
+        "s": "Our CPA needed one consolidated P&L for tax filing across all ten of our entities. Rent came in from four sources — two platforms, texted payments, and mailed checks — each tracked separately. Nobody had ever combined them, and when I tried, the numbers didn't add up. The CPA kept flagging income that looked double-counted, and doing it by hand took about two weeks.",
         "t": "I needed to give the CPA a clean P&L they could file without back-and-forth, and make it repeatable for every year after.",
         "a": "Every platform exported differently — different columns, date formats, naming conventions. The same tenant might be \"John Smith\" in one system and \"J. Smith\" in the check log.\n\nI used Power Query to pull them into one workbook, then wrote a macro with two parts: a lookup table mapping name variations to one master ID, and duplicate detection scanning amounts, dates and tenant IDs across all four sources. Then I validated everything against QuickBooks.",
         "r": "It caught more than a dozen duplicate payments — tenants who'd paid on a platform and also had a check logged for the same month — roughly $20,000 in all. Prep went from two weeks to one day, across ten entities."
@@ -892,7 +892,7 @@
           "Learn and Be Curious",
           "Customer Obsession"
         ],
-        "s": "We acquired a 42-unit RV park with no billing system at all. The onsite manager tracked check payments in a spreadsheet, online payments came through a separate platform, and every month I pulled from both, calculated each tenant's utility bill by hand, and built 42 statements one at a time. About five hours a month.",
+        "s": "We'd just added a 42-unit RV park to the portfolio, with no billing system at all. The onsite manager tracked check payments in a spreadsheet, online payments came through a separate platform, and every month I pulled from both, calculated each tenant's utility bill by hand, and built 42 statements one at a time. About five hours a month.",
         "t": "I wanted one system where both sources fed the same ledger and all 42 invoices generated in one click — without changing how the onsite manager worked, because their spreadsheet was fine and retraining them wasn't worth it.",
         "a": "I built it in Google Sheets with Apps Script. Three things I had to work through.\n\nThe payment platform's data was inconsistent — sometimes \"32 Jennifer Holmes,\" sometimes just \"32\" — so I wrote a formula to split the number from the text and look the tenant up from the rent roll. I'd also been calculating utilities off the current meter reading instead of the usage, which I caught and rebuilt to subtract the previous read. And when I automated the PDFs, Google rate-limited me, so I added a retry with a delay.",
         "r": "Now it's four steps: paste the data, the ledger updates, click a button, and 42 PDFs land in Drive. Five hours down to thirty minutes."
@@ -963,7 +963,7 @@
           "Insist on the Highest Standards",
           "Deliver Results"
         ],
-        "s": "During month-end variance analysis on an apartment project, repairs and maintenance came in more than 10% over budget — second month running. We were bleeding cash on unit turns, the cleaning and painting between tenants.",
+        "s": "During month-end variance analysis on an apartment project running a $100K a month capital budget, repairs and maintenance came in more than 10% over budget — second month running. We were bleeding cash on unit turns, the cleaning and painting between tenants.",
         "t": "The property manager assumed we were just doing more move-outs than usual. I needed to know whether that was actually true, because cost and volume are very different problems.",
         "a": "I exported the raw GL data from QuickBooks and ran a pivot by vendor and by unit. Volume was flat — still about eight turns a month, same as always.\n\nWhat had changed was our main painting vendor: they'd raised the price on a standard two-bedroom repaint from $1,250 to $1,500, a 20% increase, without renegotiating the contract. Eight units times $250 was exactly the $2,000 we were over.\n\nThe property manager had been approving invoices in a stack and hadn't caught the rate creep. I flagged it to leadership, we paused the vendor, and I worked with operations to build a standard rate card.",
         "r": "We recovered the overpayment and stopped about $2,000 a month of overcharging. Invoices now only get approved if they match the rate card, and the variance was back to zero the following month."
