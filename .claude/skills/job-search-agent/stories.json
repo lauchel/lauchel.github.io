@@ -180,7 +180,8 @@
         "Weekly cadence is confirmed; the specific day is not established. Say 'once a week', not 'Monday morning'.",
         "DO NOT LEAD WITH THIS FOR BIAS FOR ACTION. The BFA tag here is the weak sense - nobody asked for the tool and the candidate built it anyway. But a BFA prompt asks about moving fast under uncertainty, and this is a careful multi-week build. Answering a speed question with a tool-building story reads as missing the question. Route BFA prompts to S28 first, S32 second.",
         "'Think Big' tag removed - a dashboard for one 100-unit park is strong execution, not scale-thinking. Route Think Big prompts to S27 or S32.",
-        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
+        "OPEN ON THE PORTFOLIO for the Ops Finance loop: 'one of ten properties in a roughly 700-tenant portfolio'. Also the closest thing in the bank to a utilisation metric - occupancy against a target with an early-warning threshold is structurally what units per labour hour is."
       ],
       "pocket_answers": {
         "How did you communicate this tool?": "I walked the ops manager through it once - how to read it, what the red flag means, and what to do when they see it. I kept running the refresh each week, but they read the dashboard on their own. That was the real signal it worked: they'd call me when a week went red, instead of me chasing them.",
@@ -370,7 +371,8 @@
         "Overlaps heavily with S7. Do not use both in the same loop - S19 is the stronger version (bigger scale, clearer stakes).",
         "Nail down the exact duplicate count and total before using this. '10-20 at $1-2K each' spans $10K-$40K but you state $20K - and this is the number an interviewer repeats back. Precision is the whole credential in a story about catching imprecision.",
         "Say 'more than a dozen' and 'roughly $20,000' - both are true to your records and defensible. The earlier problem was pairing a precise-sounding $20K with a range spanning $10K-$40K. An approximation you label as one is safe; a false-precise number is not. If pushed for exact: 'I'd have to pull the file, but it was in the teens and about $20,000.'",
-        "PROMOTED TO LEAD DELIVER RESULTS. Two weeks to one day across ten entities is the cleanest before/after in the bank, and Deliver Results had no lead story. Invent and Simplify still has S6 and S33, so nothing is lost."
+        "PROMOTED TO LEAD DELIVER RESULTS. Two weeks to one day across ten entities is the cleanest before/after in the bank, and Deliver Results had no lead story. Invent and Simplify still has S6 and S33, so nothing is lost.",
+        "FOR THE OPS FINANCE LOOP this is the lead story - it answers four of the six listed responsibilities. Lead with 'consolidated P&L across all ten entities', not with Packwood."
       ],
       "open_questions": [],
       "spoken_star": {
@@ -493,7 +495,8 @@
         "Open with the accidental catch instead: found a delinquent tenant only because you happened to open that one sheet, then asked 'if one slipped through, how many others did?' That question is the curiosity. The SQL is just how you answered it.",
         "Ordering that lands: the accident -> the question it raised -> teaching yourself SQL to answer it at portfolio scale -> the 5-KPI monthly report. Learning the tool is a beat in the middle, not the headline.",
         "The Result deliberately closes by echoing the Situation - 'instead of whenever a person happens to open the right file' calls back to the tenant you found by accident. That lands harder than a specific example would, and it needs no figure you'd have to defend. If they ask for a concrete catch, give one if you have it; if not, 'I'd have to pull the numbers' is fine.",
-        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
+        "USE THIS TO ESTABLISH SCALE - 10 properties, 700 tenants is the largest number in the bank. If it comes early in the loop it frames everything after it."
       ],
       "primary_lps": [
         "Learn and Be Curious",
@@ -946,7 +949,8 @@
         "Strongest Dive Deep story: a stated assumption, a disproof, and an arithmetic reconciliation that lands exactly on the variance. Default pick for 'tell me about a time you dug into data.'",
         "Cut to Dive Deep primary, Highest Standards secondary. Six tags means reaching for this against prompts it only loosely fits.",
         "The finding reconciles exactly - 8 units x $250 = the $2,000 variance. Say the multiplication out loud; exact reconciliation is rare and very convincing.",
-        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
+        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
+        "Say '$100K a month capital budget' when scale matters. R&M variance analysis is the closest match to the operating expense half of the Ops Finance mandate."
       ],
       "primary_lps": [
         "Dive Deep",
@@ -1948,6 +1952,12 @@
         "Experience level": {
           "risk": "MEDIUM. Basic qualification is 1+ years, preferred is 3+. Sitting at the lower end is fine for the bar but invites 'have you done this at this level'.",
           "answer": "Lean on breadth rather than tenure. Multi-entity FP&A, month-end close, consolidated P&L across ten entities, acquisition modelling, variance analysis to invoice level, and automation across all of it - that is a wider surface than most analysts touch in three years at a large company."
+        },
+        "Headcount": {
+          "risk": "HIGHEST alongside scale, and previously missed. The team is Central Headcount AND Operating Expense FP&A. The opex half is directly yours - variance analysis, accruals, budget against actual. The headcount half is absent from the bank entirely: no workforce planning, no employee expense forecasting, no productivity metrics. 'Payroll' appears only as an obligation in the cash tracker.",
+          "answer": "Split the mandate and be straight about which half you have. 'Operating expense is what I've done - variance to budget, accruals, tracking a cost line back to the invoice that moved it. Headcount forecasting I haven't owned, and I'd be learning that part. What I understand about it is that it's a cost line like any other, just with a different driver: heads times a fully loaded rate, and most of the variance comes from timing rather than rate - a req filled in Q3 costs a quarter, not a year. So the work is the hiring plan, attrition, and start-date timing rather than the rate itself.'",
+          "the_transferable_claim": "The occupancy dashboard in S6 is structurally a utilisation metric - sites occupied against sites available, tracked against a target with a threshold that flags underperformance early. That is the same shape as units per labour hour or cost per unit. Say that link out loud; it is the closest thing in the bank to workforce productivity and it is a real parallel, not a stretch.",
+          "do_not": "Do not claim headcount experience. Naming the half you have not done, and then showing you understand its mechanics anyway, reads far better than a vague claim that collapses on the first follow-up."
         }
       },
       "questions_to_ask": [
@@ -1961,6 +1971,20 @@
         "sponsorship": "Amazon sponsors; confirm nothing role-specific blocks it.",
         "comp": "UNKNOWN - the posted range was not included in what was pasted. Confirm it clears the $81K floor before the offer stage."
       }
+    }
+  },
+  "scale_framing": {
+    "principle": "Do not inflate a number. Do state the larger true one. These stories have consistently been told at the property level when the work sat at portfolio level - that is understating, and it is the thing to fix.",
+    "open_every_story_from_the_portfolio": "Say the frame once, early: 'We ran ten properties, about seven hundred tenants.' Then zoom in. An interviewer who hears '100-unit RV park' with no frame files you as small-business; the same story opened with the portfolio lands completely differently, and it is the same set of facts.",
+    "the_number_you_have_never_said": "Total rent under management. 700 tenants at a blended monthly rate is an eight-figure annual rent roll - pull the actual figure from the rent roll rather than estimating it. It is the single most useful number missing from the bank, and it reframes the whole portfolio in one clause.",
+    "capital_under_control": "$100K/month on the apartment project and $50K/month on the renovation are $1.2M and $600K annually. Say the annual figure when scale is the question; say the monthly when cadence is.",
+    "per_story": {
+      "S6": "'One of ten properties in a ~700-tenant portfolio' rather than 'a 100-unit RV park'.",
+      "S19": "Lead with 'consolidated P&L across all ten entities' - the entity count is the scale, not Packwood.",
+      "S7": "'Rolled out across four properties', not 'our RV park'.",
+      "S27": "Already the strongest on scale - 10 properties, 700 tenants. Use it as the story that establishes the portfolio.",
+      "S33": "'A newly acquired property in a ten-property portfolio'.",
+      "S34": "'A project running a $100K a month capital budget' rather than 'an apartment project'."
     }
   }
 }
