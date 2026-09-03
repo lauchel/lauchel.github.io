@@ -2468,19 +2468,21 @@
     "Learn and Be Curious": {
       "leads": [
         "S27",
-        "S33"
+        "S33",
+        "+ S30 and S5 as the setback half"
       ],
-      "score": "4 of 8 - the weakest priority LP",
+      "score": "6 of 8 at bank level (4 of 8 on S27+S33 alone) - 1 partial, 1 hard gap",
       "detail": {
         "Seeks opportunities to explore new possibilities and learn new skills": "COVERED, strongly - self-taught SQL off YouTube.",
         "Shows curiosity about how things work": "COVERED.",
         "Asks 'I wonder what would happen if'": "COVERED, strongly - 'if one slipped through because nobody was looking, how many others were there?' That is the single best line you own for this LP.",
         "Accepts new and challenging situations despite risk of failure": "COVERED.",
-        "Willing to pursue knowledge with no immediate gain": "PARTIAL - both stories had a clear deliverable, which is the opposite of this criterion.",
-        "Seeks and embraces feedback from others": "GAP here; S30 carries it.",
-        "Discusses lessons learned from past setbacks": "GAP here; S30 and S5 carry it.",
+        "Willing to pursue knowledge with no immediate gain": "PARTIAL and genuinely short. Both S27 and S33 had a deliverable attached, which is the opposite of this criterion. The likeliest fix is the same answer that closes the present-tense criterion below - something currently being learned without a project demanding it.",
+        "Seeks and embraces feedback from others": "COVERED at bank level by S30 - you took your manager's criticism, agreed with it, and changed your process. Not in S27 or S33, so if a Learn and Be Curious interviewer asks about feedback, reach for S30. That is a delivery instruction, not a content gap.",
+        "Discusses lessons learned from past setbacks": "COVERED at bank level by S30 and S5. Same note: it is not in the two lead stories, so bring the failure stories into a Learn and Be Curious slot rather than assuming S27 covers everything.",
         "Currently working on initiatives to improve themselves": "HARD GAP - NO STORY ANYWHERE, and this one is present tense. It is a real and common question and the bank cannot answer it. NEEDS A TRUE ANSWER FROM THE CANDIDATE about what she is learning right now."
-      }
+      },
+      "note": "The two lead stories carry the curiosity half. The setback half - feedback, lessons learned - sits in S30 and S5. A Learn and Be Curious slot needs BOTH halves available, so plan to reach across."
     },
     "Customer Obsession": {
       "leads": [
