@@ -2317,7 +2317,62 @@
         "attrition": "Forecasts assume a leaver rate; under-assuming it overstates cost, over-assuming it hides an under-hiring problem.",
         "productivity metrics": "Units per labour hour, cost per unit, or hours per unit of output. The JD's 'workforce productivity' means these."
       },
-      "loop_note": "S41 leads slot one: portfolio-level variance work with two root causes, which is the closest thing in the bank to what this team does daily. S40 moves to slot five as the labour-line story - the role is half employee expense, so it must reach someone. The two pair well across a loop but must not share a slot."
+      "loop_note": "S41 leads slot one: portfolio-level variance work with two root causes, which is the closest thing in the bank to what this team does daily. S40 moves to slot five as the labour-line story - the role is half employee expense, so it must reach someone. The two pair well across a loop but must not share a slot.",
+      "key_responsibilities_coverage": {
+        "1. Month-end, quarterly and annual planning cycles; consolidated forecasts and reports supporting headcount and employee expense decisions": {
+          "strength": "GOOD on cycles, THIN on headcount",
+          "lead": "S28",
+          "support": [
+            "S19",
+            "S40",
+            "S32"
+          ],
+          "detail": "S28 is month-end close under a hard filing deadline - the cleanest cycle story. S19 is the annual consolidation across ten entities. S32 and S40 are the forecasting ones. HEADCOUNT AND EMPLOYEE EXPENSE rests almost entirely on S40, the labour budget built crew x duration x rate - plus the payroll line she owns and the payroll accruals she has booked. Say the payroll line explicitly; it is the direct bridge and it is easy to leave out.",
+          "gap": "'Consolidated forecast' - S19 consolidates actuals, not forecasts. If pressed on consolidated forecasting at scale, be straight: the consolidation was of actuals across ten entities; the forecasting was per-property and bottom-up. Both are real, they were just not the same exercise."
+        },
+        "2. Analyze complex financial data, cross-check against multiple sources for accuracy": {
+          "strength": "STRONGEST - this is the best-covered responsibility in the bank",
+          "lead": "S41",
+          "support": [
+            "S19",
+            "S7",
+            "S29"
+          ],
+          "detail": "S41 cross-checks main-meter bills against individual tenant meters. S19 reconciles four payment sources and validates against QuickBooks. S7 does the same across four sources. S29 checks an invoice against the ledger AND the site photographs - three sources on one line. Every one of these is literally 'cross-check against multiple sources to ensure accuracy'. Use their language back."
+        },
+        "3. Extract, validate and synthesize data into reports and models enabling leadership decisions": {
+          "strength": "STRONG",
+          "lead": "S27",
+          "support": [
+            "S5",
+            "S6",
+            "S19"
+          ],
+          "detail": "S27 is extract-validate-synthesize end to end: ten spreadsheets into one database, five monthly KPIs, a view leadership had never had. S5 is the model that a purchase decision turned on. S6 is the forward-looking report ops acted on."
+        },
+        "4. Drive automation and continuous improvement; streamline controllership processes; measurable results": {
+          "strength": "STRONG - and every one has a number",
+          "lead": "S33",
+          "support": [
+            "S19",
+            "S27",
+            "S7",
+            "S30"
+          ],
+          "detail": "S33 five hours to thirty minutes. S19 two weeks to one day across ten entities. S27 half an hour to under a minute. S30's validation macro cut verification time by more than half. Controllership specifically: S28 (close), S29 (invoice control), S31 (duplicate payment controls)."
+        },
+        "5. Partner with FP&A leaders and stakeholders; influence executive decisions; documentation and SOPs for knowledge transfer": {
+          "strength": "SPLIT - influence is strong, documentation is the weakest thing in the bank",
+          "lead": "S5",
+          "support": [
+            "S3",
+            "S26",
+            "S32"
+          ],
+          "detail": "Influencing executive decisions is well covered: S5 fed a $55K price negotiation, S3 changed her manager's mind on financing, S26 reversed a $6,000 spend decision, S32 shaped how a cash shortfall was covered.",
+          "gap": "DOCUMENTATION AND SOPs IS THE REAL GAP. Four stories end with something becoming 'the standard' - S7's reconciliation, S29's invoice template, S30's validation macro, S33's billing system - but not one of them says HOW it was handed over. No story mentions writing a procedure, documenting a process, or training anyone to run it. NEEDS AN ANSWER FROM THE CANDIDATE. Also thin: partnering with finance PEERS. She partners with the CPA, ops managers and project managers, not other analysts, because there mostly aren't any."
+        }
+      }
     }
   },
   "scale_framing": {
