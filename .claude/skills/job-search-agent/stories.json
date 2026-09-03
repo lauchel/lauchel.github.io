@@ -565,6 +565,7 @@
         "Trued up the difference next month. No filing impact."
       ],
       "delivery_notes": [
+        "NOW THE BIAS FOR ACTION LEAD, taking over from S32. It fits the criteria better than S32 ever did: you moved with information missing (three invoices), you judged which deadline could flex, and you chose a reversible option rather than waiting for certainty. Lead on the speed of the judgement, not the accounting.",
         "DEFAULT PICK for Bias for Action - lead with this one, not S6. It is the only story with the true BFA shape: a hard deadline, incomplete information, options weighed and discarded fast, a reversible call made rather than waiting for certainty.",
         "Say 'two-way door' out loud - it is already the structure of the decision, and it signals you think in Amazon's terms.",
         "The 80% accuracy is a strength, not a weakness. It shows the estimate was disciplined and the true-up was planned, not a lucky guess. Don't apologize for it.",
@@ -599,7 +600,11 @@
         "What did the actuals come in at?": "About 80% accurate, so roughly $10K trued up the next month. No impact on the filing.",
         "How do you prioritise competing demands?": "Urgency and impact first, but the thing that usually decides it is which deadline can actually move. A filing date with a penalty behind it can't; an internal request often can, even when it feels louder. At year-end I had the CPA's filing and leadership's annual planning numbers land in the same window - I sequenced close first, because the planning numbers come off the closed books anyway. Starting their work early would have meant building on figures I'd have to revise. So it wasn't choosing one over the other, it was finding the order that served both.",
         "How do you handle the person whose request you pushed back?": "Give them a date, not an apology. What damages trust isn't waiting - it's not knowing how long you're waiting for."
-      }
+      },
+      "primary_lps": [
+        "Bias for Action",
+        "Deliver Results"
+      ]
     },
     {
       "id": "S29",
@@ -793,81 +798,6 @@
         "Why would fees only rise 15% if you doubled the payment runs?": "Because most of the cost was the fixed monthly service charge, not per-payment fees. Doubling the runs doubles only the variable half. If it had been pure per-transaction pricing the answer would have been closer to double - the fact that it wasn't is why the number was 15%. That was also an estimate I made before the change, arguing against it, not something I measured afterwards."
       },
       "open_questions": []
-    },
-    {
-      "id": "S32",
-      "title": "Packwood Cash Crunch / Forward-Looking Cash Tracker",
-      "setting": "Packwood RV park (100 units)",
-      "lps": [
-        "Ownership",
-        "Bias for Action",
-        "Invent and Simplify",
-        "Think Big"
-      ],
-      "situation": [
-        "Packwood is a 100-unit RV park. RV parks are seasonal - off-season revenue drops to $50K/month, fixed costs run $55K.",
-        "Cover gap with cash reserves from summer.",
-        "Electrical upgrade was planned for spring. Contractor finished early, billed full $100K in February - lowest-revenue month."
-      ],
-      "task": [
-        "Monthly outflows spiked from $55K to $155K against $50K revenue. $105K gap.",
-        "Needed to cover it without missing payroll or mortgage, then make sure we never get blindsided by timing like this again."
-      ],
-      "action": [
-        "Immediate fix: called contractor, renegotiated payment - 50/50 split, $50K now, $50K pushed 45 days. Drew $30K from revolving line of credit, repaid once March bookings picked up.",
-        "Long-term fix: built rolling 30-day forward-looking cash tracker in Excel.",
-        "Shows three things day by day: cash coming in from booking software, cash going out for vendors/payroll/utilities/debt service, projected balance at end of each week.",
-        "If any week drops below $25K, sheet turns red.",
-        "Now time CapEx around summer when revenue is high, stagger contractor invoices to avoid seasonal stacking."
-      ],
-      "result": [
-        "Covered February without missing payroll or mortgage.",
-        "Zero cash surprises since building the tracker.",
-        "Went from managing cash month to month to planning around seasonal cycles."
-      ],
-      "delivery_notes": [
-        "SCOPE AND POSTURE - this is a planning and forecasting story, and you RECOMMENDED. Do not say you called the contractor or drew on financing. But equally, do not say you 'laid out the options' - you had a view, you backed it with the week-by-week cash position, and you argued for it. Presenting a neutral menu sounds like a reporting function; recommending sounds like an analyst.",
-        "DO NOT imply the company had no forecasting. They had a budget and the spend was in it. The gap was cash timing - monthly P&L budgeting versus weekly cash. Saying that precisely shows you understand the difference, which is a better signal than the story itself.",
-        "Shares the 'built a forward-looking tracker with a red threshold' shape with S6. If both are used in one loop, lead S32 with the crisis (the $105K gap and the renegotiation) rather than the tool.",
-        "CLOSE THE ARITHMETIC HOLE. You name a $105K gap then describe covering $80K ($50K deferred + $30K revolver). Name the third source explicitly - almost certainly the summer reserves mentioned in the Situation. One clause fixes it.",
-        "Naming all three sources closes the arithmetic: $50K deferred, $30K revolver, $25K reserves against the $105K gap. The reserves are also the stronger detail - they existed because the seasonality was already planned for.",
-        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
-      ],
-      "primary_lps": [
-        "Ownership",
-        "Bias for Action"
-      ],
-      "open_questions": [],
-      "spoken_star": {
-        "primary": "Ownership",
-        "also": [
-          "Bias for Action",
-          "Invent and Simplify"
-        ],
-        "s": "RV parks are seasonal. In the off-season our park earns about $50K a month against about $55K of fixed costs, so we run a planned shortfall and cover it from summer savings. The electrical upgrade was in the capital budget too, scheduled for spring. The contractor finished early and sent the full $100K invoice in February, our lowest revenue month.",
-        "t": "So the spending was planned, just not for that month. Our budget was monthly and P&L based. It told us what we would earn and spend. It did not tell us what our bank balance would be in a given week — and with payroll and the mortgage both due, that was the number I needed.",
-        "a": "First I built the view we did not have. I took every payment due and every booking expected for the next six weeks and laid them out by date, to find which week the balance actually went negative. At the worst point we were about $105K short. Payroll and the mortgage had fixed dates. The contractor's invoice was the only flexible payment.\n\nThen I took it to leadership with a recommendation, not a list of options. My recommendation was to delay part of that invoice instead of paying all of it from reserves. The reserve is what covers the rest of the off-season. Spending it in February solves one month and creates a bigger problem in March and April.\n\nI showed them the week-by-week balance under each approach, so they could see it rather than take my word for it. They agreed, and we got through the month.\n\nThen I made that view permanent, because building it once for an emergency is not a system. It became a rolling 30-day cash forecast — day by day, money coming in from bookings, money going out for vendors, payroll, utilities and loan payments, with the expected balance each week. If a week falls below our minimum, it turns red. Thirty days is enough warning to do something planned about an invoice, instead of reacting to one that has already arrived.",
-        "r": "We covered the $105K without missing payroll or the mortgage. There have been no cash surprises since — the forecast still runs, and leadership looks at it before committing to anything mid-season. It sits alongside the budget rather than replacing it: the budget says what we will spend, the forecast says when. And capital projects are now scheduled for summer instead of spring, so the invoices arrive in the months when the money is coming in."
-      },
-      "calc_sheet": {
-        "seasonal_base": "Off-season: about $50K/month revenue against $55K of fixed costs - a $5K structural gap covered from summer reserves.",
-        "the_shock": "The $100K electrical invoice landed in February, so outflows went $55K to $155K against $50K of income.",
-        "the_gap": "$155K - $50K = $105K.",
-        "how_covered": "$50K deferred 45 days + $30K on the revolver + $25K from reserves = $105K.",
-        "threshold": "The tracker turns red below $25K in any week - roughly half a month of fixed costs.",
-        "ATTRIBUTION": "The candidate did NOT call the contractor, did NOT draw on financing, and did NOT decide how the gap was covered. Hers: the week-by-week shortfall analysis, costing the options, presenting to leadership, and building the 30-day cash forecast. This is a planning and forecasting story, not a treasury one.",
-        "what_existed_before": "IMPORTANT - they DID have a budget and a P&L. What did not exist was cash forecasting at weekly or daily granularity. Do not say 'we had no forecast' - it is not true and it makes a competent finance function sound negligent. Say the budget was monthly and P&L-based, so it showed what we would spend but not what the balance would be on a given date."
-      },
-      "pocket_answers": {
-        "Why did the contractor agree to defer half?": "They'd finished early and knew the invoice was ahead of schedule. Splitting it 50/50 with the balance in 45 days kept them whole and kept us solvent - it was easier to ask because we had a working relationship and I asked before we missed anything.",
-        "What did the revolver cost you?": "Interest on $30K for about a month - small against the alternative of missing payroll or a mortgage payment.",
-        "Why $25K as the red line?": "Roughly half a month of fixed costs - enough cushion to absorb a surprise without being so conservative that it flags constantly.",
-        "Why didn't you see it coming?": "We had no forward visibility at all - that's the honest answer. We tracked cash monthly after the fact. The contractor finishing early was ordinary; not being able to see the collision coming was the actual problem, which is why the tracker was the real fix rather than the renegotiation.",
-        "Who did you consult before acting?": "I renegotiated with the contractor myself - that was a conversation I could have without escalating, and waiting for a meeting would have cost us the timing. Drawing on the line of credit I did raise with ownership, because that is their decision, not mine. The tracker I just built. The rule I use is whether the decision is reversible: the contractor call and the tracker were, drawing debt was not.",
-        "What was actually yours in this?": "The analysis, the recommendation, and the forecast. I worked out which week we'd run out and what was genuinely flexible, formed a view on what we should do about it, and showed leadership the week-by-week position behind that view. The decision was theirs. The 30-day forecast I built, and that's the part that stopped it recurring.",
-        "Didn't you already have a forecast?": "We had a budget, and the upgrade was in it — it was scheduled for spring. But a budget is monthly and it is P&L based. It tells you what you will spend in February. It does not tell you what your bank balance is on the 14th of February. That is the difference this exposed, and it is why a business can be perfectly on budget and still not be able to pay people.",
-        "Why didn't the budget catch it?": "Because the budget was right — the money was approved and planned. What moved was the timing, and a monthly P&L view has nothing to say about timing inside a month. The invoice arriving in February instead of April did not change the annual number at all. It changed which week we had cash."
-      }
     },
     {
       "id": "S33",
@@ -1186,11 +1116,12 @@
       "lps": [
         "Deliver Results",
         "Invent and Simplify",
+        "Ownership",
         "Dive Deep"
       ],
       "primary_lps": [
         "Deliver Results",
-        "Invent and Simplify"
+        "Ownership"
       ],
       "situation": [
         "Ten parks, about 700 tenant pads. Two income types: stable long-term mobile home rent and highly seasonal short-term RV income.",
@@ -1249,6 +1180,8 @@
       },
       "delivery_notes": [
         "THE FORECASTING LEAD. Your forecasting bench was two stories; this is now the strongest of them and it maps directly to the JD line about contributing to consolidated forecasts.",
+        "NOW THE OWNERSHIP LEAD as well as forecasting. Nobody asked you to rebuild the budgeting method - you found it in your first budget-to-actual review and took it on. That is Ownership: acting outside the immediate assignment and building something that lasts. Say 'nobody asked me to do this' out loud.",
+        "DO NOT USE THIS FOR BIAS FOR ACTION. It is careful, methodical work - three years of data and a rebuilt model. Against a 'moved quickly with incomplete information' prompt it reads as the opposite. S28 is your Bias for Action answer.",
         "DO NOT USE IN THE SAME SLOT AS S32. Both are seasonal, both involve cash timing, both are these parks. S42 is the planning and forecasting story; S32 is the crisis and ownership story. Across a loop they reinforce each other. In one slot they blur.",
         "'A forecast nobody checks against reality is just an opinion' is the line this story turns on. It is what separates building a model from owning a number.",
         "The insight is the SPLIT, not the model. One stable income stream and one seasonal one, averaged together, means the stable half hides how wrong the seasonal half is. Say that - it is the part that shows judgement rather than technique.",
@@ -1266,15 +1199,14 @@
     ],
     "Ownership": [
       "S29",
-      "S32",
-      "S41"
+      "S41",
+      "S42"
     ],
     "Invent and Simplify": [
       "S6",
       "S7",
       "S8",
       "S19",
-      "S32",
       "S33",
       "S42"
     ],
@@ -1296,13 +1228,11 @@
       "S41"
     ],
     "Think Big": [
-      "S27",
-      "S32"
+      "S27"
     ],
     "Bias for Action": [
       "S6",
-      "S28",
-      "S32"
+      "S28"
     ],
     "Frugality": [
       "S26"
@@ -1464,11 +1394,11 @@
     },
     "Think Big": {
       "lead": "S27",
-      "backup": "S32",
+      "backup": "S42",
       "reframe": "Do NOT open on teaching yourself SQL - that is the Learn and Be Curious entry. Open on the scope problem: 'We were running ten properties like ten separate businesses. Every rent roll was its own spreadsheet, so nobody could see the portfolio at once - and at 700 tenants that stops being workable.' Then the database as the answer to that.",
       "why_it_works": "Think Big is about working at a larger scope than the task required. Nobody asked for a portfolio-level view; the candidate decided the organisation needed one.",
-      "backup_reframe": "S32: open on the systemic gap rather than the February crisis. 'The real problem wasn't that one $100K invoice - it was that we had no forward visibility at all, so any timing shock would have hit us the same way.' Then the rolling 30-day tracker and the shift to planning CapEx around the season.",
-      "collision": "S27 is also the lead for Learn and Be Curious. Whichever comes up first takes the story; the other goes to S32 or S33."
+      "backup_reframe": "S42: open on the systemic gap rather than the February crisis. 'The real problem wasn't that one $100K invoice - it was that we had no forward visibility at all, so any timing shock would have hit us the same way.' Then the rolling 30-day tracker and the shift to planning CapEx around the season.",
+      "collision": "S27 is also the lead for Learn and Be Curious. Whichever comes up first takes the story; the other goes to S42 or S33."
     },
     "Deliver Results": {
       "lead": "S19",
@@ -1688,7 +1618,7 @@
     "routing": {
       "Bias for Action": {
         "1": [
-          "S32"
+          "S28"
         ],
         "2": [
           "S28"
@@ -1698,14 +1628,15 @@
           "S28"
         ],
         "4": [
-          "S32"
+          "S28",
+          "S6"
         ],
         "5": [
           "S28"
         ],
         "6": [
           "S6",
-          "S32"
+          "S28"
         ],
         "7": [],
         "8": []
@@ -1799,7 +1730,8 @@
           "S28"
         ],
         "3": [
-          "S32"
+          "S42",
+          "S19"
         ],
         "4": [
           "S19",
@@ -1864,7 +1796,8 @@
           "S33"
         ],
         "7": [
-          "S32"
+          "S42",
+          "S33"
         ]
       },
       "Are Right, A Lot": {
@@ -1967,10 +1900,12 @@
       },
       "Ownership": {
         "1": [
-          "S32"
+          "S42",
+          "S41"
         ],
         "2": [
-          "S32"
+          "S42",
+          "S29"
         ],
         "3": [
           "S30"
@@ -1991,7 +1926,8 @@
           "S27"
         ],
         "3": [
-          "S32"
+          "S27",
+          "S42"
         ],
         "4": [
           "S27"
@@ -2255,6 +2191,87 @@
             "Why did a $2,000 item deserve your time?": "Because it wasn't $2,000 - it was $2,000 a month and climbing. That's $24,000 a year on one vendor at one property, and nothing in the process would have caught it spreading. It's also 10% of the R&M line, not a rounding error against it."
           }
         }
+      },
+      "S32": {
+        "id": "S32",
+        "title": "Packwood Cash Crunch / Forward-Looking Cash Tracker",
+        "status": "retired 2026-09-03",
+        "why_retired": "Replaced by S42 at the candidate's direction. S42 covers the same portfolio and carries Ownership more convincingly - an unprompted rebuild of the forecasting method, with a measured result. What S32 uniquely held was Bias for Action, which S42 cannot carry because it is deliberate rather than fast; S28 takes that over and fits the criteria better. The genuine loss is the crisis shape - a story where something broke and she moved inside the month. If a question is specifically about acting under sudden pressure, S28 is the only remaining answer.",
+        "archived_story": {
+          "id": "S32",
+          "title": "Packwood Cash Crunch / Forward-Looking Cash Tracker",
+          "setting": "Packwood RV park (100 units)",
+          "lps": [
+            "Ownership",
+            "Bias for Action",
+            "Invent and Simplify",
+            "Think Big"
+          ],
+          "situation": [
+            "Packwood is a 100-unit RV park. RV parks are seasonal - off-season revenue drops to $50K/month, fixed costs run $55K.",
+            "Cover gap with cash reserves from summer.",
+            "Electrical upgrade was planned for spring. Contractor finished early, billed full $100K in February - lowest-revenue month."
+          ],
+          "task": [
+            "Monthly outflows spiked from $55K to $155K against $50K revenue. $105K gap.",
+            "Needed to cover it without missing payroll or mortgage, then make sure we never get blindsided by timing like this again."
+          ],
+          "action": [
+            "Immediate fix: called contractor, renegotiated payment - 50/50 split, $50K now, $50K pushed 45 days. Drew $30K from revolving line of credit, repaid once March bookings picked up.",
+            "Long-term fix: built rolling 30-day forward-looking cash tracker in Excel.",
+            "Shows three things day by day: cash coming in from booking software, cash going out for vendors/payroll/utilities/debt service, projected balance at end of each week.",
+            "If any week drops below $25K, sheet turns red.",
+            "Now time CapEx around summer when revenue is high, stagger contractor invoices to avoid seasonal stacking."
+          ],
+          "result": [
+            "Covered February without missing payroll or mortgage.",
+            "Zero cash surprises since building the tracker.",
+            "Went from managing cash month to month to planning around seasonal cycles."
+          ],
+          "delivery_notes": [
+            "SCOPE AND POSTURE - this is a planning and forecasting story, and you RECOMMENDED. Do not say you called the contractor or drew on financing. But equally, do not say you 'laid out the options' - you had a view, you backed it with the week-by-week cash position, and you argued for it. Presenting a neutral menu sounds like a reporting function; recommending sounds like an analyst.",
+            "DO NOT imply the company had no forecasting. They had a budget and the spend was in it. The gap was cash timing - monthly P&L budgeting versus weekly cash. Saying that precisely shows you understand the difference, which is a better signal than the story itself.",
+            "Shares the 'built a forward-looking tracker with a red threshold' shape with S6. If both are used in one loop, lead S32 with the crisis (the $105K gap and the renegotiation) rather than the tool.",
+            "CLOSE THE ARITHMETIC HOLE. You name a $105K gap then describe covering $80K ($50K deferred + $30K revolver). Name the third source explicitly - almost certainly the summer reserves mentioned in the Situation. One clause fixes it.",
+            "Naming all three sources closes the arithmetic: $50K deferred, $30K revolver, $25K reserves against the $105K gap. The reserves are also the stronger detail - they existed because the seasonality was already planned for.",
+            "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
+          ],
+          "primary_lps": [
+            "Ownership",
+            "Bias for Action"
+          ],
+          "open_questions": [],
+          "spoken_star": {
+            "primary": "Ownership",
+            "also": [
+              "Bias for Action",
+              "Invent and Simplify"
+            ],
+            "s": "RV parks are seasonal. In the off-season our park earns about $50K a month against about $55K of fixed costs, so we run a planned shortfall and cover it from summer savings. The electrical upgrade was in the capital budget too, scheduled for spring. The contractor finished early and sent the full $100K invoice in February, our lowest revenue month.",
+            "t": "So the spending was planned, just not for that month. Our budget was monthly and P&L based. It told us what we would earn and spend. It did not tell us what our bank balance would be in a given week — and with payroll and the mortgage both due, that was the number I needed.",
+            "a": "First I built the view we did not have. I took every payment due and every booking expected for the next six weeks and laid them out by date, to find which week the balance actually went negative. At the worst point we were about $105K short. Payroll and the mortgage had fixed dates. The contractor's invoice was the only flexible payment.\n\nThen I took it to leadership with a recommendation, not a list of options. My recommendation was to delay part of that invoice instead of paying all of it from reserves. The reserve is what covers the rest of the off-season. Spending it in February solves one month and creates a bigger problem in March and April.\n\nI showed them the week-by-week balance under each approach, so they could see it rather than take my word for it. They agreed, and we got through the month.\n\nThen I made that view permanent, because building it once for an emergency is not a system. It became a rolling 30-day cash forecast — day by day, money coming in from bookings, money going out for vendors, payroll, utilities and loan payments, with the expected balance each week. If a week falls below our minimum, it turns red. Thirty days is enough warning to do something planned about an invoice, instead of reacting to one that has already arrived.",
+            "r": "We covered the $105K without missing payroll or the mortgage. There have been no cash surprises since — the forecast still runs, and leadership looks at it before committing to anything mid-season. It sits alongside the budget rather than replacing it: the budget says what we will spend, the forecast says when. And capital projects are now scheduled for summer instead of spring, so the invoices arrive in the months when the money is coming in."
+          },
+          "calc_sheet": {
+            "seasonal_base": "Off-season: about $50K/month revenue against $55K of fixed costs - a $5K structural gap covered from summer reserves.",
+            "the_shock": "The $100K electrical invoice landed in February, so outflows went $55K to $155K against $50K of income.",
+            "the_gap": "$155K - $50K = $105K.",
+            "how_covered": "$50K deferred 45 days + $30K on the revolver + $25K from reserves = $105K.",
+            "threshold": "The tracker turns red below $25K in any week - roughly half a month of fixed costs.",
+            "ATTRIBUTION": "The candidate did NOT call the contractor, did NOT draw on financing, and did NOT decide how the gap was covered. Hers: the week-by-week shortfall analysis, costing the options, presenting to leadership, and building the 30-day cash forecast. This is a planning and forecasting story, not a treasury one.",
+            "what_existed_before": "IMPORTANT - they DID have a budget and a P&L. What did not exist was cash forecasting at weekly or daily granularity. Do not say 'we had no forecast' - it is not true and it makes a competent finance function sound negligent. Say the budget was monthly and P&L-based, so it showed what we would spend but not what the balance would be on a given date."
+          },
+          "pocket_answers": {
+            "Why did the contractor agree to defer half?": "They'd finished early and knew the invoice was ahead of schedule. Splitting it 50/50 with the balance in 45 days kept them whole and kept us solvent - it was easier to ask because we had a working relationship and I asked before we missed anything.",
+            "What did the revolver cost you?": "Interest on $30K for about a month - small against the alternative of missing payroll or a mortgage payment.",
+            "Why $25K as the red line?": "Roughly half a month of fixed costs - enough cushion to absorb a surprise without being so conservative that it flags constantly.",
+            "Why didn't you see it coming?": "We had no forward visibility at all - that's the honest answer. We tracked cash monthly after the fact. The contractor finishing early was ordinary; not being able to see the collision coming was the actual problem, which is why the tracker was the real fix rather than the renegotiation.",
+            "Who did you consult before acting?": "I renegotiated with the contractor myself - that was a conversation I could have without escalating, and waiting for a meeting would have cost us the timing. Drawing on the line of credit I did raise with ownership, because that is their decision, not mine. The tracker I just built. The rule I use is whether the decision is reversible: the contractor call and the tracker were, drawing debt was not.",
+            "What was actually yours in this?": "The analysis, the recommendation, and the forecast. I worked out which week we'd run out and what was genuinely flexible, formed a view on what we should do about it, and showed leadership the week-by-week position behind that view. The decision was theirs. The 30-day forecast I built, and that's the part that stopped it recurring.",
+            "Didn't you already have a forecast?": "We had a budget, and the upgrade was in it — it was scheduled for spring. But a budget is monthly and it is P&L based. It tells you what you will spend in February. It does not tell you what your bank balance is on the 14th of February. That is the difference this exposed, and it is why a business can be perfectly on budget and still not be able to pay people.",
+            "Why didn't the budget catch it?": "Because the budget was right — the money was approved and planned. What moved was the timing, and a monthly P&L view has nothing to say about timing inside a month. The invoice arriving in February instead of April did not change the annual number at all. It changed which week we had cash."
+          }
+        }
       }
     }
   },
@@ -2472,102 +2489,96 @@
       },
       {
         "rank": 2,
-        "id": "S32",
+        "id": "S42",
         "tier": "tier1",
-        "why": "Highest utility story you own: 8 questions, 7 of them as first choice. Carries Ownership AND Bias for Action, your weakest LP."
+        "why": "Your forecasting and Ownership lead. A flat 1/12 budget rebuilt driver-based, with a measured result - 25% variance down to 5%. Maps straight onto the JD line about consolidated forecasts."
       },
       {
         "rank": 3,
-        "id": "S42",
-        "tier": "tier1",
-        "why": "Your strongest forecasting story, and forecasting was the thinnest bench you had. Driver-based rebuild, cash timing, scenarios, and a measured result - 25% variance down to 5%. Maps straight onto the JD."
-      },
-      {
-        "rank": 4,
         "id": "S40",
         "tier": "tier1",
         "why": "Your only labour-cost story - hourly crews, hours tracked, the line forecast and its variance explained. That is the employee-expense bridge. Newest and least rehearsed, so highest risk per hour spent."
       },
       {
-        "rank": 5,
+        "rank": 4,
         "id": "S30",
         "tier": "tier1",
         "why": "The only genuine failure. Non-substitutable: the bar raiser will ask, and nothing else can stand in."
       },
       {
-        "rank": 6,
+        "rank": 5,
         "id": "S33",
         "tier": "tier1",
         "why": "Most-routed story in the bank - 9 questions, 6 as first choice. Invent and Simplify plus Learn and Be Curious."
       },
       {
-        "rank": 7,
+        "rank": 6,
         "id": "S19",
         "tier": "tier2",
         "why": "Deliver Results lead. Ten entities, two weeks to one day, 0K of duplicates caught."
       },
       {
-        "rank": 8,
+        "rank": 7,
         "id": "S27",
         "tier": "tier2",
         "why": "Best scale story: 10 properties, ~700 tenants. Lead with the noticing, not the learning."
       },
       {
-        "rank": 9,
+        "rank": 8,
         "id": "S28",
         "tier": "tier2",
-        "why": "The real Bias for Action default, not S6. Judgment under a hard close deadline."
+        "why": "Now the Bias for Action lead. Moved with three invoices missing rather than wait, and judged which deadline could actually flex."
       },
       {
-        "rank": 10,
+        "rank": 9,
         "id": "S35",
         "tier": "tier2",
         "why": "Customer Obsession lead. Tenant-side, which nothing else in the bank is."
       },
       {
-        "rank": 11,
+        "rank": 10,
         "id": "S8",
         "tier": "tier2",
         "why": "Only non-real-estate setting and the only human stakes in the loop. Use it mid-loop or it never gets heard."
       },
       {
-        "rank": 12,
+        "rank": 11,
         "id": "S31",
         "tier": "tier3",
         "why": "Have Backbone with a real cost admitted - you owned the six hours a week the decision added."
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "S29",
         "tier": "tier3",
         "why": "Short and clean. Backup to S30 on Highest Standards; variant A only."
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "S6",
         "tier": "bench",
         "why": "Redundant with S33 and S32 - same tool-building arc, same park. Do not use it against a speed prompt."
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "S26",
         "tier": "bench",
         "why": "Only Frugality story, and Frugality is unlikely in this loop."
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "S5",
         "tier": "bench",
         "why": "Good Earn Trust backup. Know the two unequal installments cold or do not open it."
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "S3",
         "tier": "bench",
         "why": "Have Backbone backup behind S31 and S26."
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "S7",
         "tier": "bench",
         "why": "Superseded by S19, which is the same idea at ten times the scale."
@@ -2783,14 +2794,6 @@
         ],
         "one_line": "A cost line moved, the stated cause was wrong, and the real one was found in the source data."
       },
-      "S32": {
-        "primary": "Forecasting",
-        "also": [
-          "Planning and budgeting",
-          "Reporting to leadership"
-        ],
-        "one_line": "Built a rolling 30-day cash forecast after a seasonal timing problem."
-      },
       "S40": {
         "primary": "Variance analysis",
         "also": [
@@ -2953,10 +2956,9 @@
       "Forecasting": {
         "lead": "S42",
         "also": [
-          "S32",
           "S40"
         ],
-        "depth": "NOW STRONG - S42 is a full forecasting rebuild with a measured accuracy result."
+        "depth": "S42 is a full forecasting rebuild with a measured accuracy result. S40 is the labour forecast."
       },
       "Reporting to leadership": {
         "lead": "S27",
