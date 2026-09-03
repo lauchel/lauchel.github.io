@@ -1098,7 +1098,7 @@
     {
       "id": "S42",
       "title": "Rolling Cash Flow and Seasonal Forecast Rebuild",
-      "setting": "10-park portfolio, 700 pads, mixed mobile home and RV income",
+      "setting": "10-park portfolio, 700 units, mixed mobile home and RV income",
       "lps": [
         "Deliver Results",
         "Invent and Simplify",
@@ -1110,7 +1110,7 @@
         "Ownership"
       ],
       "situation": [
-        "Ten parks, about 700 tenant pads. Two income types: stable long-term mobile home rent and highly seasonal short-term RV income.",
+        "Ten parks, about 700 units. Two income types: stable long-term mobile home rent and highly seasonal short-term RV income.",
         "The annual budget divided the annual total into twelve equal months, ignoring that split entirely."
       ],
       "task": [
@@ -1118,7 +1118,7 @@
         "Because the forecast was unreliable, leadership held back routine maintenance out of caution."
       ],
       "action": [
-        "Extracted three years of pad-level billing data across all 700 units from the property management system.",
+        "Extracted three years of unit-level billing data across all 700 units from the property management system.",
         "Identified the core flaw: the budget treated seasonal RV site revenue identically to flat mobile home rent, so it was too high all winter and far too low at peak.",
         "Rebuilt driver-based - RV separated from long-term leases, seasonal occupancy curves by month, actual daily site rates.",
         "Modelled cash collection timing separately from revenue recognition.",
@@ -1140,9 +1140,9 @@
           "Invent and Simplify",
           "Dive Deep"
         ],
-        "s": "We had ten parks and about seven hundred tenant pads. The business is really two businesses: long-term mobile home residents paying a stable monthly rent, and short-term RV guests, who are highly seasonal. Our budget did not reflect that at all. It took the annual total and divided it into twelve equal months.",
+        "s": "We had ten parks and about seven hundred units. The business is really two businesses: long-term mobile home residents paying a stable monthly rent, and short-term RV guests, who are highly seasonal. Our budget did not reflect that at all. It took the annual total and divided it into twelve equal months.",
         "t": "In my first budget-to-actual review, monthly revenue and operating cash flow were coming in as much as 25% away from forecast. And because the forecast could not be trusted, leadership was being cautious in ways that cost us — holding back routine park maintenance rather than risk running short.",
-        "a": "The flat twelve-month split was the problem, so I pulled three years of pad-level billing data across all seven hundred units. Mobile home rent really is close to flat. RV income is not — it concentrates in the summer. Averaged together, the forecast is too high all winter and too low at peak, and the stable half hides how wrong the seasonal half is.\n\nSo I rebuilt it driver-based. I separated the RV sites from the long-term leases and built seasonal occupancy curves for the pads, using historical occupancy by month and our daily site rates. I used an AI assistant for the Excel side of it, so my time went into the assumptions rather than the formulas.\n\nThen I modelled the cash separately from the revenue, because they do not land in the same month. An RV guest books in March for a July stay and pays a deposit then — the cash arrives in spring, the revenue belongs to July. Forecast cash off the revenue line and you think the money arrives in summer, when much of it already has.\n\nAnd I built it to re-base every month instead of sitting fixed for the year, so by March it already knows what July's bookings look like.\n\nThen I measured it — forecast against actuals, month by month, park by park.",
+        "a": "The flat twelve-month split was the problem, so I pulled three years of unit-level billing data across all seven hundred units. Mobile home rent really is close to flat. RV income is not — it concentrates in the summer. Averaged together, the forecast is too high all winter and too low at peak, and the stable half hides how wrong the seasonal half is.\n\nSo I rebuilt it driver-based. I separated the RV sites from the long-term leases and built seasonal occupancy curves, using historical occupancy by month and our daily site rates. I used an AI assistant for the Excel side of it, so my time went into the assumptions rather than the formulas.\n\nThen I modelled the cash separately from the revenue, because they do not land in the same month. An RV guest books in March for a July stay and pays a deposit then — the cash arrives in spring, the revenue belongs to July. Forecast cash off the revenue line and you think the money arrives in summer, when much of it already has.\n\nAnd I built it to re-base every month instead of sitting fixed for the year, so by March it already knows what July's bookings look like.\n\nThen I measured it — forecast against actuals, month by month, park by park.",
         "r": "Monthly revenue and operating expense variance came down from about 25% to about 5%, measured against actuals across all ten parks. That is the number I care about most, because a forecast nobody checks against reality is just an opinion.\n\nWhat changed in practice is that leadership stopped being cautious by default. They could schedule maintenance and improvements in advance, because the forecast told them what the cash position would actually be, rather than a flat number that was wrong every month."
       },
       "calc_sheet": {
@@ -1153,7 +1153,7 @@
         "scenarios": "Conservative, base, aggressive. The point is the range for advance commitments, not predicting the outcome.",
         "the_measurement": "Forecast versus actual, through the season, park by park. 25% variance down to about 5%. CONFIRMED by the candidate that she measured this herself.",
         "RETIRED_NUMBERS": "Drafts of this story have carried figures that changed between versions, which means they are not remembered. DO NOT USE: 12 parks (it is 10); 3% variance (the candidate confirmed 5%); $180,000 and $120,000 of accelerated improvements (two different values for the same claim); '4 weeks to 5 days' and '3 days to 2 hours' (two different claims about process time). Only 25% to 5% is confirmed and measured.",
-        "the_data": "Three years of pad-level billing data across all 700 units, from the property management software.",
+        "the_data": "Three years of unit-level billing data across all 700 units, from the property management software.",
         "cash_versus_revenue": "They fall in different months. RV guests book ahead and pay a deposit at booking, so cash arrives before the stay while revenue is earned during it. Forecasting cash off the revenue line puts the money in the wrong month. The P&L answers when something is earned; the cash forecast answers when the balance moves, and only the second one decides whether you can commit to spending.",
         "rolling_versus_fixed": "A fixed annual budget is set once and held so you can measure against it. A rolling 12-month forecast re-bases monthly - the closed month is replaced with actuals and a new month is added at the far end, so the horizon stays 12 months and every update absorbs what happened. Both were kept: the budget is the commitment, the forecast is the current estimate."
       },
@@ -1434,7 +1434,8 @@
       "free cash flow",
       "reconciliation"
     ],
-    "principle": "Any term that needs a definition costs you the follow-up question you actually wanted. Either say it in plain words, or gloss it in the same breath."
+    "principle": "Any term that needs a definition costs you the follow-up question you actually wanted. Either say it in plain words, or gloss it in the same breath.",
+    "pad": "Do NOT say 'pad' or 'pad-level'. Say 'unit' and 'unit-level'. It is industry jargon that invites a definition, and the definition costs the follow-up you actually wanted. If the per-unit rent is questioned, explain that residents own their homes and rent the lot - without using the word."
   },
   "question_bank": {
     "source": "Amazon Interview Question Bank (official), 16 leadership principles, 128 suggested behavioural questions.",
@@ -2487,8 +2488,8 @@
       "portfolio_monthly": "$210K in the off-season to $270K at peak.",
       "annual": "About $2.8M. Four, five or six peak months all give $2.76M-$2.88M, so the figure is stable regardless of how the season splits.",
       "the_line": "'We collected between about $210,000 and $270,000 a month depending on the season - call it $2.8 million a year across the portfolio.' Give the range, not just the annual figure; the range shows you understand the business is seasonal, which a single number hides.",
-      "per_pad_check": "$2.8M / 700 pads = about $343 a month per pad. If anyone thinks that sounds low for 700 units, the answer is that these are PADS, not homes - tenants own the mobile home and rent the land. Pad rent in that range is normal. Only someone who knows real estate asks this, and having the answer ready turns it into a good moment.",
-      "where_to_use": "Anywhere scale is being established, and especially early in the loop. 'Ten properties, seven hundred pads, about $2.8 million a year' is one clause and it reframes everything that follows."
+      "where_to_use": "Anywhere scale is being established, and especially early in the loop. 'Ten properties, about seven hundred units, roughly $2.8 million a year' is one clause and it reframes everything that follows.",
+      "per_unit_check": "$2.8M / 700 units = about $343 a month each. If anyone does that division and thinks it sounds low, the answer is that the mobile home residents own their homes - we rent them the lot. So it is lot rent, not a full housing rent, and that range is normal. Only someone who knows real estate asks this, and having the answer ready turns it into a good moment. Say 'units' throughout; do not use the word 'pad'."
     }
   },
   "memorisation_order": {
