@@ -53,7 +53,7 @@
         "s": "Leadership wanted to renovate half of Packwood — fifty of our hundred sites — to increase the property's value.",
         "t": "I was asked to run a scenario analysis: could we actually afford to do it now, or should we wait?",
         "a": "I built two scenarios.\n\nRenovating now meant taking a loan for the $200,000, and losing rent on those fifty sites while they were out of service. I calculated the interest cost and checked it against our debt ratio — we already carried debt from another project.\n\nWaiting meant self-funding. I worked out how much we could set aside each month from the property's cash flow: about eight months to cover most of it.\n\nBorrowing actually came out slightly cheaper on interest. But it pushed our debt ratio into risky territory, and waiting only cost us a few months of higher rent — nothing structural.\n\nSo I recommended we wait and self-fund. My manager pushed back: eight months meant eight months of rent we weren't collecting. I walked him through where the debt ratio would land, and he agreed the risk wasn't worth the time saved.",
-        "r": "We waited and self-funded, so we took on no new debt at all. Rent on the renovated sites went up about 15% — roughly $225 a site, about $11,000 a month across the fifty. And self-funding versus borrowing became the standard question we asked before any renovation after that."
+        "r": "We waited and self-funded, so we took on no new debt at all. Rent on the renovated sites went up about 15% — roughly $11,000 a month across the fifty. And self-funding versus borrowing became the standard question we asked before any renovation after that."
       },
       "calc_sheet": {
         "scope": "50 of 100 sites renovated, $200,000 total cost.",
@@ -121,8 +121,8 @@
         ],
         "s": "I built the financial model behind a $2M RV park acquisition — the business case leadership was using to decide whether to buy.",
         "t": "I needed the operating cost assumptions right, especially property taxes, because the lender required the property to earn 1.25 times its loan payments before they'd fund it.",
-        "a": "Going back through it I found two mistakes — and they had the same root. I'd built the model on the seller's numbers without asking what changes when the property changes hands.\n\nFirst, I'd taken their $3,583 tax payment as the annual bill. It was semi-annual; the real figure was $7,126.\n\nThe second one mattered more. I'd grown their historical costs forward at 3% inflation, which is what you normally do. But property tax isn't an inflation cost — the county taxes you on what they think the property is worth, and their number was years old and low. Our purchase price would tell them what it was actually worth. So that line wasn't drifting up 3%, it was resetting — about $11,400, an extra $4,300 a year.\n\nI checked both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I'd given them was overstated.",
-        "r": "The corrected model showed operating income about $7,800 a year lower than my original. Leadership used it to negotiate $55K off the $2M purchase price, and it still cleared the lender's 1.25 times coverage requirement."
+        "a": "Going back through it I found two mistakes — and they had the same root. I'd built the model on the seller's numbers without asking what changes when the property changes hands.\n\nFirst, I'd taken the seller's tax payment as the annual bill. It was semi-annual, so the real figure was double that — about $7,000.\n\nThe second one mattered more. I'd grown their historical costs forward at 3% inflation, which is what you normally do. But property tax isn't an inflation cost — the county taxes you on what they think the property is worth, and their number was years old and low. Our purchase price would tell them what it was actually worth. So that line wasn't drifting up 3%, it was resetting — to about $11,000, an extra $4,000 a year.\n\nI checked both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I'd given them was overstated.",
+        "r": "The corrected model showed operating income about $8,000 a year lower than my original. Leadership used it to negotiate $55K off the purchase price, and it still cleared the lender's coverage requirement."
       },
       "pocket_answers": {
         "What do you mean you inflated historical costs by 3%?": "I'd taken the seller's historical operating expenses and grown them forward at 3% a year, which is standard for most lines - insurance, utilities, wages. But property tax isn't an inflation-driven cost, it's assessed value times the tax rate, and buying the park would trigger a county reassessment against our $2M purchase price. The seller's assessment was years old and well below that, so that line wasn't going up 3%, it was going up about $4,300.",
@@ -209,7 +209,7 @@
         "s": "We ran ten properties, about seven hundred tenants. At one of them — a 100-unit RV park — we only had month-end reporting, so by the time we saw the numbers the month was closed and a soft weekend was already lost.",
         "t": "I wanted something forward-looking, so operations could adjust pricing before we lost the revenue instead of after.",
         "a": "I pulled the reservation data out of our booking software. The export was messy — a guest booking Friday to Sunday came through as one row, but I needed each night separately to count occupancy. Dates came through as text Excel couldn't read. And site rental was lumped in with firewood and pet fees.\n\nI wrote a macro that cleans all of that in one click, and built a dashboard showing the next four weeks — occupancy, sites still open, average rate, and revenue per available site. Anything more than three weeks out that's below 90% turns red.\n\nI ran it once a week, took about a minute. The ops manager read it on their own and called me when something went red.",
-        "r": "In mid-May it flagged a weekend at 68% — they sent a 15% discount to past guests, and we filled it to 86% before that weekend arrived. That was about $2,500 of revenue we'd otherwise have lost on one weekend, and the weekly run took me about a minute instead of the four hours I used to spend pulling numbers."
+        "r": "In mid-May it flagged a weekend running well under target. They sent a discount to past guests and filled it to 86% before that weekend arrived — about $2,500 of revenue we'd otherwise have lost on one weekend. And the weekly run took me about a minute instead of the four hours I used to spend pulling numbers."
       },
       "calc_sheet": {
         "occupancy": "68% occupancy on 100 sites = 68 booked, 32 open. Booking 18 of the 32 takes it to 86.",
@@ -446,10 +446,10 @@
           "Have Backbone, Disagree and Commit",
           "Are Right, A Lot"
         ],
-        "s": "Our 100-unit park made about $1,000 a month from coin-op laundry. Ownership wanted to replace four of the eight machines with tap-payment ones — $1,500 each, $6,000 total — assuming it would lift revenue 50%.",
-        "t": "I wanted to validate that 50% before we committed the $6,000.",
-        "a": "I pulled usage data from a comparable park, looked at our occupancy, and worked out what residents actually pay per load. Realistic uplift was about 22%, not 50 — around $220 a month. On $6,000 that's a 27-month payback, on machines that already worked.\n\nOwnership pushed back — they felt it would improve the park, and they weren't wrong about that. So rather than just saying no, I found another way to get there: coin-to-card adapters on the existing machines. $560 up front for all sixteen, plus $69 a month. Same tap payment, and it pays back in under four months instead of 27. And if tenants didn't use it, we could pull it out without being stuck with $6,000 of hardware.",
-        "r": "They went with the adapters. Revenue went up 30% — about $300 a month, better than my 22% estimate — and we avoided $5,440 of upfront spend on machines that already worked."
+        "s": "Our park made about $1,000 a month from coin-op laundry. Ownership wanted to replace half the machines with tap-payment ones — about $6,000 — assuming it would lift revenue 50%.",
+        "t": "I wanted to validate that 50% before we committed the money.",
+        "a": "I pulled usage data from a comparable park, looked at our occupancy, and worked out what residents actually pay per load. Realistic uplift was about 20%, not 50 — roughly $200 a month. On $6,000 that's more than two years to pay back, on machines that already worked.\n\nOwnership pushed back — they felt it would improve the park, and they weren't wrong about that. So rather than just saying no, I found another way to get there: coin-to-card adapters on the existing machines. About $500 up front plus a small monthly fee. Same tap payment, and it pays back in under four months instead of two years. And if tenants didn't use it, we could pull it out without being stuck with $6,000 of hardware.",
+        "r": "They went with the adapters. Revenue went up about 30% — better than my own estimate — and we avoided roughly $5,000 of upfront spend on machines that already worked."
       },
       "calc_sheet": {
         "replacement": "$6,000 for 4 sets. At $220/month of realistic uplift that is a 27-month payback, on machines that still worked.",
@@ -514,7 +514,7 @@
         ],
         "s": "We had ten properties and about seven hundred tenants, and each property's rent roll lived in its own spreadsheet. That worked fine when the portfolio was small.",
         "t": "One day I happened to open one of those sheets and found a tenant months behind that nobody had flagged. I only caught it because I opened that particular file — and that bothered me. If one slipped through because nobody was looking, how many others were there? I wanted a way to answer that.",
-        "a": "There was no portfolio-level view, so I taught myself SQL, mostly off YouTube. I built a SQLite database and loaded all seven hundred tenants in. Now I can ask questions in seconds — who owes more than $5,000, who's more than five months behind, total revenue by month.\n\nThen I built a monthly report on top of it tracking five things: collection rate, vacancy by property, aging at 30, 60 and 90 days, revenue per occupied unit, and expense per unit.",
+        "a": "There was no portfolio-level view, so I taught myself SQL, mostly off YouTube. I built a SQLite database and loaded all seven hundred tenants in. Now I can ask questions in seconds — who owes more than $5,000, who's more than five months behind, total revenue by month.\n\nThen I built a monthly report on top of it tracking five things: collection rate, vacancy by property, aging, revenue per occupied unit, and expense per unit.",
         "r": "What used to take half an hour of opening spreadsheets one at a time now runs in under a minute. Leadership had never had a view across all 700 tenants before — now they get one every month, and someone months behind surfaces as soon as they cross the threshold, instead of whenever a person happens to open the right file."
       },
       "calc_sheet": {
@@ -641,7 +641,7 @@
         "s": "I was managing vendor payments on a house renovation with a $50K monthly capital budget. A subcontractor sent a $20K invoice for structural concrete work.",
         "t": "Before releasing that much I wanted to verify every line against what we'd actually already paid.",
         "a": "I cross-referenced it against QuickBooks and the site progress photos. One line — $8,500 for foundation prep — we'd already paid two months earlier.\n\nI sat down with the contractor and the site manager rather than just rejecting the invoice. It turned out to be an honest mistake: their accounting person had re-billed a milestone that was already closed out.\n\nThen I built an Excel template that flags anything already paid.",
-        "r": "We avoided the $8,500 duplicate — over 40% of that $20K invoice. Handling it collaboratively strengthened the relationship: afterwards they reviewed their own draws before submitting them. And the template went out across every active project."
+        "r": "We avoided the $8,500 duplicate — more than 40% of the bill. Handling it collaboratively strengthened the relationship: afterwards they reviewed their own draws before submitting them. And the template went out across every active project."
       },
       "calc_sheet": {
         "share": "$8,500 of a $20,000 invoice - over 40% of the bill was already paid.",
@@ -703,8 +703,8 @@
         "also": [],
         "s": "I decided to migrate our property financial records into a central database — eighteen months of general ledger data — and I committed to doing it in two weeks.",
         "t": "I had to extract, standardize and upload every vendor payment log and capital expenditure record.",
-        "a": "On day eight I hit a wall. Seven vendors were logged under multiple names, GL codes didn't match across files, and more than 150 transactions were sitting on the wrong P&L lines — operating expenses mixed in with capital expenditures. I had to audit past invoices to reclassify about $40K correctly.\n\nI went to my manager on day eleven and owned it. I'd underestimated how much cleaning the data needed before I committed to a timeline. I showed him what was done and asked for four more days rather than loading dirty data into a system people would rely on.",
-        "r": "We launched four days late, but accurate. He told me I should have scoped data quality before committing to a date, and he was right. Now I run a data quality check before committing to any migration timeline — and the validation macro I wrote became standard for uploads, cutting verification time about 60%."
+        "a": "On day eight I hit a wall. Seven vendors were logged under multiple names, GL codes didn't match across files, and more than a hundred transactions were sitting on the wrong P&L lines — operating expenses mixed in with capital expenditures. I had to audit past invoices to reclassify about $40K correctly.\n\nI went to my manager on day eleven and owned it. I'd underestimated how much cleaning the data needed before I committed to a timeline. I showed him what was done and asked for four more days rather than loading dirty data into a system people would rely on.",
+        "r": "We launched four days late, but accurate. He told me I should have scoped data quality before committing to a date, and he was right. Now I run a data quality check before committing to any migration timeline — and the validation macro I wrote became standard for uploads, cutting verification time by more than half."
       },
       "calc_sheet": {
         "scope": "18 months of general ledger data, committed to a 2-week migration.",
@@ -832,8 +832,8 @@
           "Invent and Simplify"
         ],
         "s": "RV parks are seasonal. Off-season our park brings in about $50K a month against $55K of fixed costs, and we cover the gap from reserves we build over summer. We had an electrical upgrade planned for spring, but the contractor finished early and billed the full $100K in February — our lowest revenue month.",
-        "t": "Outflows jumped from $55K to $155K against $50K of income. A $105K gap, with payroll and the mortgage both due — and I needed to make sure timing like that couldn't blindside us again.",
-        "a": "First I called the contractor and renegotiated — split it 50/50, $50K then and $50K pushed out 45 days. I drew $30K on our line of credit and repaid it once March bookings picked up, and covered the remaining $25K out of the reserves we'd built over the summer.\n\nThen I built a rolling 30-day cash tracker so it couldn't happen again. It shows day by day what's coming in from bookings, what's going out for vendors, payroll, utilities and debt service, and the projected balance each week. If any week drops below $25K, the sheet turns red.",
+        "t": "That left us about $105K short, with payroll and the mortgage both due — and I needed to make sure timing like that couldn't blindside us again.",
+        "a": "First I called the contractor and renegotiated — half then, half pushed out six weeks. I drew $30K on our line of credit and repaid it once March bookings picked up, and covered the rest from the reserves we'd built over summer.\n\nThen I built a rolling 30-day cash tracker so it couldn't happen again. It shows day by day what's coming in from bookings and what's going out for vendors, payroll, utilities and debt service, with the projected balance each week. If any week drops below our floor, the sheet turns red.",
         "r": "We closed the $105K gap without missing payroll or the mortgage. There have been no cash surprises since — the tracker gives us 30 days of visibility — and we now time capital projects for summer so invoices don't stack up against the off-season."
       },
       "calc_sheet": {
@@ -899,9 +899,9 @@
           "Customer Obsession"
         ],
         "s": "We'd just added a 42-unit RV park to the portfolio, with no billing system at all. The onsite manager tracked check payments in a spreadsheet, online payments came through a separate platform, and every month I pulled from both, calculated each tenant's utility bill by hand, and built 42 statements one at a time. About five hours a month.",
-        "t": "I wanted one system where both sources fed the same ledger and all 42 invoices generated in one click — without changing how the onsite manager worked, because their spreadsheet was fine and retraining them wasn't worth it.",
+        "t": "I wanted one system where both sources fed the same ledger and every invoice generated in one click — without changing how the onsite manager worked, because their spreadsheet was fine and retraining them wasn't worth it.",
         "a": "I built it in Google Sheets with Apps Script. Three things I had to work through.\n\nThe payment platform's data was inconsistent — sometimes \"32 Jennifer Holmes,\" sometimes just \"32\" — so I wrote a formula to split the number from the text and look the tenant up from the rent roll. I'd also been calculating utilities off the current meter reading instead of the usage, which I caught and rebuilt to subtract the previous read. And when I automated the PDFs, Google rate-limited me, so I added a retry with a delay.",
-        "r": "Now it's four steps: paste the data, the ledger updates, click a button, and 42 PDFs land in Drive. Five hours down to thirty minutes."
+        "r": "Now it's four steps: paste the data, the ledger updates, click a button, and all 42 statements land in Drive. Five hours down to about thirty minutes."
       },
       "calc_sheet": {
         "scale": "42 units, previously about 5 hours a month of manual billing, now about 30 minutes - a 90% reduction.",
@@ -1088,7 +1088,7 @@
         "s": "I handle monthly finances and utilities for a portfolio of ten RV and mobile home parks. In a monthly budget review, water cost jumped 18% at three of them, and occupancy hadn't moved.",
         "t": "The park managers put it down to city rate increases. That was plausible — but water is billed through to tenants, so a rate increase shouldn't land on us at all. I wanted to know why it had.",
         "a": "I pulled the main-meter bills and the tenant meter readings for all three parks and matched them in Excel. Two different problems came out.\n\nAt one park the main meter showed 35% more water than the tenants had actually used. That gap is water going somewhere — it turned out to be an underground pipe leak. At the other two, the city rate had gone up but our billing system hadn't picked up the new rate, so we were charging tenants the old one and absorbing the difference. So the managers were right that rates rose — what they'd missed was that we were the ones paying for it.\n\nWe repaired the pipe and corrected the billing settings.",
-        "r": "The billing fix recovers about $24,000 a year, and that one's permanent — a corrected rate keeps recovering every month. The leak was costing about $1,600 a month, and catching it at three months instead of a year took roughly $19,000 a year off the cost base. About $43,000 a year in total. And I built a tracker comparing main-meter usage against tenant meters monthly, so the next gap shows up when it appears instead of at a budget review."
+        "r": "The billing fix recovers about $24,000 a year, and that one's permanent — a corrected rate keeps recovering every month. With the leak repair on top it's roughly $40,000 a year off the cost base. And I built a tracker comparing main-meter usage against tenant meters every month, so the next gap shows up when it appears instead of at a budget review."
       },
       "calc_sheet": {
         "the_flag": "Water cost up 18% at three of ten parks, occupancy flat. Flat occupancy is what rules out volume before you start.",
@@ -1214,7 +1214,8 @@
     "Where a story has primary_lps, route from that field - the full lps list records what the story touches, not what it should be picked for.",
     "Two stories are backup-only and should not open a loop: S5 (retagged, and it is a being-wrong story) and S7 (redundant with S19).",
     "11 open questions remain across 8 stories - mostly missing endings and undefended figures. Surface them before recommending a story, per the story-prep mode.",
-    "Assign stories by SETTING as well as by LP - see loop_plan. No setting should appear more than twice across one loop."
+    "Assign stories by SETTING as well as by LP - see loop_plan. No setting should appear more than twice across one loop.",
+    "ROUNDING RULE. The spoken script carries rounded numbers and at most two in the Result; calc_sheet carries the exact figures for probing. Always round DOWN, so nothing said aloud is larger than what can be proved. Exact figures said aloud invite arithmetic in the room; rounded ones invite the follow-up question, which is where the calc sheet earns its keep. If asked for the precise number, give it - having it ready is the point."
   ],
   "loop_plan": {
     "purpose": "Fixes the setting-monotony gap: 14 of 15 stories share one employer and 5 are Packwood. This assigns stories to interviewer slots so no setting appears more than twice across a full loop, and every likely LP is reachable.",
