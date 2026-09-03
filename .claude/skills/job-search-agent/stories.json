@@ -2680,5 +2680,235 @@
       "The watching-them-get-stuck detail is the credible part. Anyone can say they wrote documentation; noticing that the walk-through is really a test of the document is what shows you've actually done it.",
       "Do not oversell the scale. This was a handful of colleagues at a small company, not a training programme."
     ]
+  },
+  "function_map": {
+    "_comment": "Which finance function each story demonstrates. Use it when a question names a task rather than a principle - 'tell me about your forecasting experience', 'walk me through a close'.",
+    "by_story": {
+      "S41": {
+        "primary": "Variance analysis",
+        "also": [
+          "Month-end / budget review",
+          "Ad hoc investigation",
+          "Reporting to leadership"
+        ],
+        "one_line": "A cost line moved, the stated cause was wrong, and the real one was found in the source data."
+      },
+      "S32": {
+        "primary": "Forecasting",
+        "also": [
+          "Planning and budgeting",
+          "Reporting to leadership"
+        ],
+        "one_line": "Built a rolling 30-day cash forecast after a seasonal timing problem."
+      },
+      "S40": {
+        "primary": "Variance analysis",
+        "also": [
+          "Budgeting",
+          "Forecasting",
+          "Employee expense / labour cost"
+        ],
+        "one_line": "Built the labour budget bottom-up, then diagnosed which of its three drivers moved."
+      },
+      "S30": {
+        "primary": "Reporting infrastructure",
+        "also": [
+          "Data quality",
+          "Process improvement"
+        ],
+        "one_line": "Centralised the ledger data people report from - and learned to scope data quality first."
+      },
+      "S33": {
+        "primary": "Automation",
+        "also": [
+          "Process improvement",
+          "Billing operations"
+        ],
+        "one_line": "Automated a manual monthly billing process end to end."
+      },
+      "S19": {
+        "primary": "Close and consolidation",
+        "also": [
+          "Automation",
+          "Reconciliation",
+          "Annual cycle"
+        ],
+        "one_line": "Consolidated a P&L across ten entities for the annual filing and automated it."
+      },
+      "S27": {
+        "primary": "Reporting to leadership",
+        "also": [
+          "Automation",
+          "Ad hoc analysis",
+          "Data extraction"
+        ],
+        "one_line": "Built the portfolio-level view and the monthly KPI report that did not exist before."
+      },
+      "S28": {
+        "primary": "Month-end close",
+        "also": [
+          "Accruals",
+          "Judgement under deadline"
+        ],
+        "one_line": "Closed on time with an accrual when three vendor invoices did not arrive."
+      },
+      "S35": {
+        "primary": "Ad hoc analysis",
+        "also": [
+          "Vendor / system evaluation",
+          "Business case"
+        ],
+        "one_line": "Evaluated payment platforms on three criteria and recommended one."
+      },
+      "S8": {
+        "primary": "Process improvement",
+        "also": [
+          "Client communication"
+        ],
+        "one_line": "Different employer. Automated client status reporting and removed the calls."
+      },
+      "S31": {
+        "primary": "Cash flow analysis",
+        "also": [
+          "Controls / controllership",
+          "Ad hoc analysis"
+        ],
+        "one_line": "Priced the cost of doubling payment frequency, then built the controls when overruled."
+      },
+      "S29": {
+        "primary": "Controls / controllership",
+        "also": [
+          "Capital expenditure tracking",
+          "Invoice review"
+        ],
+        "one_line": "Caught a duplicated invoice line and built the control that catches the next one."
+      },
+      "S6": {
+        "primary": "Reporting",
+        "also": [
+          "Automation",
+          "Forward-looking analysis"
+        ],
+        "one_line": "Turned backward-looking month-end reporting into a four-week forward view operations acted on."
+      },
+      "S26": {
+        "primary": "Capital business case",
+        "also": [
+          "Planning and budgeting",
+          "Payback analysis"
+        ],
+        "one_line": "Tested the assumption behind a $6,000 capex request and found a cheaper way to the same outcome."
+      },
+      "S5": {
+        "primary": "Financial modelling",
+        "also": [
+          "Planning",
+          "Acquisition analysis"
+        ],
+        "one_line": "Built the model behind a $2M purchase, found my own two errors in the tax assumptions."
+      },
+      "S3": {
+        "primary": "Scenario analysis",
+        "also": [
+          "Capital planning",
+          "Planning and budgeting"
+        ],
+        "one_line": "Modelled borrow-versus-self-fund on a $200K renovation and recommended waiting."
+      },
+      "S7": {
+        "primary": "Reconciliation",
+        "also": [
+          "Automation",
+          "Month-end",
+          "Knowledge transfer"
+        ],
+        "one_line": "Reconciled four rent sources into one tracker and handed it over so it runs monthly."
+      }
+    },
+    "by_function": {
+      "Month-end close": {
+        "lead": "S28",
+        "also": [
+          "S19",
+          "S7",
+          "S41"
+        ],
+        "depth": "STRONG"
+      },
+      "Variance analysis": {
+        "lead": "S41",
+        "also": [
+          "S40"
+        ],
+        "depth": "STRONG but only two - they are your two best, so this is fine"
+      },
+      "Planning and budgeting": {
+        "lead": "S3",
+        "also": [
+          "S26",
+          "S40",
+          "S5"
+        ],
+        "depth": "STRONG"
+      },
+      "Forecasting": {
+        "lead": "S32",
+        "also": [
+          "S40"
+        ],
+        "depth": "THINNEST - only two. The JD emphasises consolidated forecasts, so know both cold."
+      },
+      "Reporting to leadership": {
+        "lead": "S27",
+        "also": [
+          "S6",
+          "S5",
+          "S41"
+        ],
+        "depth": "STRONG"
+      },
+      "Ad hoc analysis": {
+        "lead": "S26",
+        "also": [
+          "S35",
+          "S31",
+          "S3"
+        ],
+        "depth": "STRONG"
+      },
+      "Automation and process improvement": {
+        "lead": "S33",
+        "also": [
+          "S19",
+          "S27",
+          "S7",
+          "S6"
+        ],
+        "depth": "STRONGEST - five stories, every one with a number"
+      },
+      "Controls and controllership": {
+        "lead": "S29",
+        "also": [
+          "S31",
+          "S30",
+          "S19"
+        ],
+        "depth": "STRONG"
+      },
+      "Reconciliation and data accuracy": {
+        "lead": "S19",
+        "also": [
+          "S7",
+          "S41",
+          "S29"
+        ],
+        "depth": "STRONG"
+      },
+      "Employee expense / labour cost": {
+        "lead": "S40",
+        "also": [],
+        "depth": "ONE STORY. Supported by the payroll line you own and the payroll accruals you have booked - say those too."
+      }
+    }
   }
 }
