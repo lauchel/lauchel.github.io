@@ -909,7 +909,7 @@
         ],
         "s": "We'd just added a 42-unit RV park to the portfolio, with no billing system at all. The onsite manager tracked check payments in a spreadsheet, online payments came through a separate platform, and every month I pulled from both, calculated each tenant's utility bill by hand, and built 42 statements one at a time. About five hours a month.",
         "t": "I wanted one system where both sources fed the same ledger and every invoice generated in one click — without changing how the onsite manager worked, because their spreadsheet was fine and retraining them wasn't worth it.",
-        "a": "I built it in Google Sheets with Apps Script. Three things I had to work through.\n\nThe payment platform's data was inconsistent — sometimes \"32 Jennifer Holmes,\" sometimes just \"32\" — so I wrote a formula to split the number from the text and look the tenant up from the rent roll. I'd also been calculating utilities off the current meter reading instead of the usage, which I caught and rebuilt to subtract the previous read. And when I automated the PDFs, Google rate-limited me, so I added a retry with a delay.",
+        "a": "I built it in Google Sheets with Apps Script — which I hadn't used before, so I worked it out from documentation and forums as I went. Three things I had to work through.\n\nThe payment platform's data was inconsistent — sometimes \"32 Jennifer Holmes,\" sometimes just \"32\" — so I wrote a formula to split the number from the text and look the tenant up from the rent roll. I'd also been calculating utilities off the current meter reading instead of the usage, which I caught and rebuilt to subtract the previous read. And when I automated the PDFs, Google rate-limited me, so I added a retry with a delay.",
         "r": "Now it's four steps: paste the data, the ledger updates, click a button, and all 42 statements land in Drive. Five hours down to about thirty minutes."
       },
       "calc_sheet": {
@@ -922,7 +922,7 @@
         "What happens if a meter reading is missing?": "The bill for that unit doesn't generate rather than generating wrong - I'd rather chase one reading than send 42 statements with one bad number in them.",
         "Why Google Sheets rather than Excel?": "The onsite manager needed to keep working in their own sheet without a license or a new tool, and Apps Script let me automate the PDF generation on the same platform.",
         "What happens when you're not there?": "It's four steps and they're documented - paste, let the ledger update, click, collect the PDFs. That was deliberate; a tool only one person can run isn't finished.",
-        "Where did the design come from?": "The constraint came from the onsite manager - their spreadsheet worked and retraining them wasn't worth it, so the system had to fit around them rather than the other way round. The technique I picked up as I went; the shape of it came from watching how the work was already being done."
+        "Where did the design come from?": "Two places. The constraint came from the onsite manager - their spreadsheet worked and retraining them wasn't worth it, so the system had to fit around them rather than the other way round. The technique I researched as I went, since I hadn't written Apps Script before - documentation and forums, and asking around the office where someone had done something similar."
       }
     },
     {
@@ -1248,7 +1248,8 @@
     "Two stories are backup-only and should not open a loop: S5 (retagged, and it is a being-wrong story) and S7 (redundant with S19).",
     "11 open questions remain across 8 stories - mostly missing endings and undefended figures. Surface them before recommending a story, per the story-prep mode.",
     "Assign stories by SETTING as well as by LP - see loop_plan. No setting should appear more than twice across one loop.",
-    "ROUNDING RULE. The spoken script carries rounded numbers and at most two in the Result; calc_sheet carries the exact figures for probing. Always round DOWN, so nothing said aloud is larger than what can be proved. Exact figures said aloud invite arithmetic in the room; rounded ones invite the follow-up question, which is where the calc sheet earns its keep. If asked for the precise number, give it - having it ready is the point."
+    "ROUNDING RULE. The spoken script carries rounded numbers and at most two in the Result; calc_sheet carries the exact figures for probing. Always round DOWN, so nothing said aloud is larger than what can be proved. Exact figures said aloud invite arithmetic in the room; rounded ones invite the follow-up question, which is where the calc sheet earns its keep. If asked for the precise number, give it - having it ready is the point.",
+    "SOURCING RULE. Several criteria across Invent and Simplify, Learn and Be Curious and Are Right A Lot reward gathering input, and the bar is lower than it sounds - asking a colleague, pulling a comparable, reading documentation all count. The candidate does this constantly and under-reports it. Whenever an answer touches how something was figured out, NAME the source specifically: the CPA, the staff accountant, the onsite manager, a comparable park, YouTube, the platform's documentation. Specific sources score; 'I researched it' does not."
   ],
   "loop_plan": {
     "purpose": "Fixes the setting-monotony gap: 14 of 15 stories share one employer and 5 are Packwood. This assigns stories to interviewer slots so no setting appears more than twice across a full loop, and every likely LP is reachable.",
@@ -2455,11 +2456,11 @@
         "S33",
         "S6"
       ],
-      "score": "3.5 of 5",
+      "score": "4.5 of 5",
       "detail": {
         "Generates new ideas or methods": "COVERED.",
         "Delivers scalable improvements without unnecessary complexity": "COVERED, strongly - 'without changing how the onsite manager worked' is exactly this.",
-        "Actively gathers ideas from a wide range of internal and external sources": "GAP. Both stories are you building alone. If probed, the honest answer is where you learned the method (YouTube for SQL in S27, the ops manager shaping the dashboard in S6) - do not claim collaboration that did not happen.",
+        "Actively gathers ideas from a wide range of internal and external sources": "COVERED after review - the criterion means asking colleagues and researching, not running a working group. It is evidenced throughout: S33 researched Apps Script from documentation and forums and took the design constraint from the onsite manager; S27 taught itself SQL off YouTube; S26 pulled usage data from a comparable park (external benchmark); S5 checked the tax finding with both the CPA and the staff accountant; S35 evaluated several external platforms side by side. NAME THE SOURCE when you answer - 'I asked around and looked it up' is weak, 'I pulled comparable data from another park and checked the read with our CPA' is the same fact and scores.",
         "Focuses on solutions that improve the customer experience long-term": "PARTIAL - tenants get clean statements, but the script frames it as your time saved.",
         "Seeks out opportunities to improve a process": "COVERED."
       }
