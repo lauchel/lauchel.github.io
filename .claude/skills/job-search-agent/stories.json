@@ -330,7 +330,8 @@
       "calc_sheet": {
         "time_saved": "Staff check-in time 5 hours/week down to 1 = an 80% reduction.",
         "build_cost": "Two days to build, against roughly 4 hours a week saved - it paid for itself in about a month.",
-        "capacity_released": "5 hours a week down to 1 is 4 hours a week returned - about 200 hours a year, or a tenth of a full-time week - and it absorbed additional projects without a hire."
+        "capacity_released": "5 hours a week down to 1 is 4 hours a week returned - about 200 hours a year, or a tenth of a full-time week - and it absorbed additional projects without a hire.",
+        "ATTRIBUTION": "Different employer - Signature Photo, not the real estate company - so the FP&A remit doesn't apply here. Proposing and building the client status email was genuinely hers in that role."
       },
       "pocket_answers": {
         "How did you know it was five hours a week?": "That was our own check-in time across the 20-30 active projects - calls and the follow-up they generated.",
@@ -588,7 +589,8 @@
         "accrual": "Three vendor bills, about $50K total, estimated from PO contract amounts, prior-month actuals and historical averages.",
         "accuracy": "Estimates came in about 80% accurate, so roughly $10K to true up the following month.",
         "why_reversible": "An accrual is a two-way door - if actuals differ you adjust next month and nothing downstream breaks.",
-        "prioritisation_criteria": "Urgency, impact if it slips, and - the deciding one - which deadline can genuinely move. A filing date with a penalty cannot; an internal request usually can."
+        "prioritisation_criteria": "Urgency, impact if it slips, and - the deciding one - which deadline can genuinely move. A filing date with a penalty cannot; an internal request usually can.",
+        "ATTRIBUTION": "'I went with the accrual' is correct and in remit - booking an accrual is an accounting judgement made by whoever closes the books, and that is her. Do not soften this one to 'I recommended'."
       },
       "pocket_answers": {
         "Is accruing an estimate actually allowed?": "Yes - that's what accruals are for. The obligation existed, we just didn't have the invoice. You recognise the expense in the period it belongs to and true it up when the actual arrives.",
@@ -646,13 +648,14 @@
         ],
         "s": "I was handling vendor payments on a house renovation with a $50K monthly capital budget. A subcontractor sent us a $20K invoice for structural concrete work. That's close to half a month's spend at that property, so it wasn't something to approve on sight.",
         "t": "Before releasing that much I wanted to check every line against what we'd actually already paid. Not because I suspected anything — we'd worked with them a while. Just that at that size, on staged work, each line should be something new.",
-        "a": "I went through it line by line against QuickBooks, and separately against the site progress photos.\n\nOne line stood out — $8,500 for foundation prep. We'd already paid for that two months earlier. The photos backed it up: that work was finished and photographed back then, so it wasn't a second phase of the same thing, it was the same thing billed again.\n\nThe obvious move would have been to reject the invoice and send it back. I didn't do that. I sat down with the contractor and the site manager and walked them through what I'd found — the QuickBooks entry, the date, and the photo.\n\nIt turned out to be an honest mistake. Their accounts person had re-billed a milestone that was already closed out, and nobody on their side had spotted it either. Handling it in a room rather than over email meant it stayed a shared problem instead of an accusation.\n\nThen I built an Excel template that checks new invoice lines against everything we've already paid on that project, so a closed-out milestone gets flagged before it ever reaches approval.",
-        "r": "We didn't pay the $8,500 twice — more than 40% of that bill, and about 17% of the month's whole capital budget.\n\nAnd handling it that way made the relationship better rather than worse. Afterwards they checked their own invoices before sending them, which saved us both time. The template went out across every active project, so the catch doesn't depend on someone being careful that day."
+        "a": "I went through it line by line against QuickBooks, and separately against the site progress photos.\n\nOne line stood out — $8,500 for foundation prep. We'd already paid for that two months earlier. The photos backed it up: that work was finished and photographed back then, so it wasn't a second phase of the same thing, it was the same thing billed twice.\n\nI put it together as evidence rather than an accusation — the QuickBooks entry, the payment date, and the photograph — and took it to the project manager, because the contractor relationship is his. That mattered for how it landed. It turned out to be an honest mistake: their accounts person had re-billed a milestone that was already closed out, and nobody on their side had spotted it.\n\nThen I built an Excel template that checks new invoice lines against everything already paid on that project, so a closed-out milestone gets flagged before it reaches approval at all.",
+        "r": "We didn't pay the $8,500 twice — more than 40% of that bill, and about 17% of the month's whole capital budget.\n\nAnd because it went over as evidence rather than a rejection, it didn't damage anything. Afterwards they checked their own draws before submitting them, which saved us both time. The template went out across every active project, so the catch doesn't depend on someone being careful that day."
       },
       "calc_sheet": {
         "share": "$8,500 of a $20,000 invoice - over 40% of the bill was already paid.",
         "context": "$50K monthly capital budget, so the duplicate was about 17% of a month's spend.",
-        "how_found": "Cross-referenced the invoice line by line against QuickBooks payments and the site progress photos."
+        "how_found": "Cross-referenced the invoice line by line against QuickBooks payments and the site progress photos.",
+        "ATTRIBUTION": "Reviewing capital invoices against the ledger is in remit. Talking to the contractor is not - that is the project manager's relationship. The story is the catch, the evidence, and the control."
       },
       "pocket_answers": {
         "How did you spot it?": "I cross-referenced the invoice against what we'd already paid in QuickBooks and against the site progress photos. The foundation prep line was work that was finished and paid two months earlier.",
@@ -778,7 +781,8 @@
         "costs": "ACH fees up about 15%, reconciliation up about 6 hours a week.",
         "benefit": "Construction accelerated about 10 days.",
         "controls": "Macro flags duplicate invoice numbers and cross-references each weekly draw against contract limits. Zero duplicates across the run.",
-        "the_15_percent": "An ex-ante estimate, not a measured outcome - it was one of three risks raised while arguing against the change. It is also defensible on the mechanics: ACH cost is a fixed monthly service charge plus per-payment fees, and doubling the runs doubles only the variable half. For the total to rise about 15%, the fixed charge has to be roughly 11x the per-run fees - e.g. ~$57/month fixed against ~$5 of transaction fees a run, which is ordinary for a business account."
+        "the_15_percent": "An ex-ante estimate, not a measured outcome - it was one of three risks raised while arguing against the change. It is also defensible on the mechanics: ACH cost is a fixed monthly service charge plus per-payment fees, and doubling the runs doubles only the variable half. For the total to rise about 15%, the fixed charge has to be roughly 11x the per-run fees - e.g. ~$57/month fixed against ~$5 of transaction fees a run, which is ordinary for a business account.",
+        "ATTRIBUTION": "'I recommended staying at two weeks' and 'I committed to it' are both correct. The payment frequency decision was leadership's and the story says so. The controls she built are hers."
       },
       "pocket_answers": {
         "Why did ACH fees only rise 15% if you doubled the runs?": "CHECK THIS BEFORE USING - doubling payment runs would normally roughly double per-transaction fees. If the 15% is right, know why: batch pricing, a fixed monthly component, or only part of the vendor list moving to weekly.",
@@ -822,7 +826,7 @@
         "Went from managing cash month to month to planning around seasonal cycles."
       ],
       "delivery_notes": [
-        "ATTRIBUTION - do NOT say you called the contractor or drew on the credit line. Vendor terms are the project manager's; drawing debt is ownership's. Yours is the analysis, the options, the recommendation, and the tracker. Saying 'I recommended and they approved' is stronger than overclaiming, because it survives the follow-up 'was that your call to make?'",
+        "SCOPE - this is a planning and forecasting story. Do not say you called the contractor or drew on financing; neither is in your remit. Yours is the week-by-week shortfall, the costed options, the presentation to leadership, and the forecast you built.",
         "Shares the 'built a forward-looking tracker with a red threshold' shape with S6. If both are used in one loop, lead S32 with the crisis (the $105K gap and the renegotiation) rather than the tool.",
         "CLOSE THE ARITHMETIC HOLE. You name a $105K gap then describe covering $80K ($50K deferred + $30K revolver). Name the third source explicitly - almost certainly the summer reserves mentioned in the Situation. One clause fixes it.",
         "Naming all three sources closes the arithmetic: $50K deferred, $30K revolver, $25K reserves against the $105K gap. The reserves are also the stronger detail - they existed because the seasonality was already planned for.",
@@ -841,8 +845,8 @@
         ],
         "s": "RV parks are seasonal. Off-season, ours takes about $50K a month against $55K of fixed costs, and we cover the gap from summer reserves. We'd booked an electrical upgrade for spring. The contractor finished early and billed the whole $100K in February, our worst month.",
         "t": "That turned a manageable shortfall into a $105K hole, with payroll and the mortgage both due. I had to get us through the month — and then make sure timing like that couldn't creep up on us again.",
-        "a": "The first thing I did was work out exactly how short we were, and when. Not just the $105K headline — which week we'd actually run out, and what had to be paid on which day. Payroll and the mortgage were fixed dates. The contractor's invoice was the only flexible piece in there.\n\nThen I laid out the options with the numbers against each one. Ask the contractor to split the payment — costs us nothing but a conversation. Draw on the line of credit — costs interest, but keeps the reserve intact. Or take the whole thing out of reserves — no interest, but it leaves us with nothing if anything else goes wrong in March.\n\nI recommended a combination rather than any single one: split the invoice, draw a smaller amount on the credit line, and cover the balance from reserves. The project manager took the payment terms to the contractor and they agreed to half then, half six weeks later. Ownership approved a $30K draw, which we repaid once March bookings came in.\n\nThen I built the piece that would stop it happening again — a rolling 30-day cash tracker. Day by day, what's coming in from bookings and what's going out for vendors, payroll, utilities and debt service, with the projected balance each week. If a week dips below our floor, it turns red.\n\nThe point isn't sophistication, it's lead time. Thirty days is enough to renegotiate an invoice or draw on credit deliberately, instead of reacting to something that's already arrived.",
-        "r": "We closed the $105K gap without missing payroll or the mortgage. There have been no cash surprises since — the tracker's been running ever since. And it changed one thing structurally: we now schedule capital projects for summer rather than spring, so the invoices land in the months the money's actually coming in. That's the part that fixed the cause rather than the symptom."
+        "a": "The first thing I did was work out exactly how short we were, and when. Not the $105K headline — which week we'd actually run out, and what had to be paid on which day. Payroll and the mortgage were fixed dates. The contractor's invoice was the only flexible piece in there.\n\nSo I put it in front of leadership as a week-by-week picture rather than one number, with the cost of each way of covering the gap set against it — what deferring part of the invoice would do to the shortfall, and what covering it out of reserves would leave us with going into March. That second part mattered, because the reserve is what carries the rest of the off-season. Spending all of it in February solves one month and creates another.\n\nThey made the call from that, and we got through it.\n\nThen I built the piece that would stop it happening again — a rolling 30-day cash forecast. Day by day, what's coming in from bookings and what's going out for vendors, payroll, utilities and debt service, with the projected balance each week. If a week dips below our floor, it turns red.\n\nThe point isn't sophistication, it's lead time. Thirty days is enough to do something deliberate about an invoice, instead of reacting to one that's already arrived.",
+        "r": "We got through it without missing payroll or the mortgage. There have been no cash surprises since — the forecast has been running ever since, and it's what leadership looks at now before committing to anything mid-season. And it changed one thing structurally: capital projects get scheduled for summer rather than spring, so the invoices land in the months the money's actually coming in."
       },
       "calc_sheet": {
         "seasonal_base": "Off-season: about $50K/month revenue against $55K of fixed costs - a $5K structural gap covered from summer reserves.",
@@ -850,7 +854,7 @@
         "the_gap": "$155K - $50K = $105K.",
         "how_covered": "$50K deferred 45 days + $30K on the revolver + $25K from reserves = $105K.",
         "threshold": "The tracker turns red below $25K in any week - roughly half a month of fixed costs.",
-        "ATTRIBUTION": "CORRECTED 2026-09-03. The candidate did NOT call the contractor - vendor terms are the project manager's remit - and did NOT draw on the line of credit, which is ownership's decision. What is hers: quantifying the gap and its timing, laying out the options with numbers, recommending the combination, and building the tracker. Do not reclaim the execution."
+        "ATTRIBUTION": "The candidate did NOT call the contractor, did NOT draw on financing, and did NOT decide how the gap was covered. Hers: the week-by-week shortfall analysis, costing the options, presenting to leadership, and building the 30-day cash forecast. This is a planning and forecasting story, not a treasury one."
       },
       "pocket_answers": {
         "Why did the contractor agree to defer half?": "They'd finished early and knew the invoice was ahead of schedule. Splitting it 50/50 with the balance in 45 days kept them whole and kept us solvent - it was easier to ask because we had a working relationship and I asked before we missed anything.",
@@ -858,8 +862,7 @@
         "Why $25K as the red line?": "Roughly half a month of fixed costs - enough cushion to absorb a surprise without being so conservative that it flags constantly.",
         "Why didn't you see it coming?": "We had no forward visibility at all - that's the honest answer. We tracked cash monthly after the fact. The contractor finishing early was ordinary; not being able to see the collision coming was the actual problem, which is why the tracker was the real fix rather than the renegotiation.",
         "Who did you consult before acting?": "I renegotiated with the contractor myself - that was a conversation I could have without escalating, and waiting for a meeting would have cost us the timing. Drawing on the line of credit I did raise with ownership, because that is their decision, not mine. The tracker I just built. The rule I use is whether the decision is reversible: the contractor call and the tracker were, drawing debt was not.",
-        "Whose decision was the credit line draw?": "Ownership's - drawing debt isn't mine to authorise. I brought them the three options with the cost of each and a recommendation, and they approved the draw. Same with the contractor: the payment terms went through the project manager, because that's his relationship, not mine.",
-        "What was actually yours in this?": "The analysis and the recommendation, and then the tracker. I worked out which week we'd run out and what was flexible, priced the three ways of covering it, and recommended the combination rather than any single one. The execution went through the people who own those relationships. The tracker I built myself, and that's the part that stopped it recurring."
+        "What was actually yours in this?": "The analysis and the forecast. I worked out which week we'd run out and what was actually flexible, costed the ways of covering it, and put it to leadership week by week instead of as one number. They decided how to cover it — that's their call, not mine. The 30-day forecast I built, and that's the part that stopped it recurring."
       }
     },
     {
@@ -968,7 +971,7 @@
         ],
         "s": "We'd just acquired a property where tenants were all still paying by check and cash. The onsite manager collected it, and it made its way to us and into the books eventually. The problem was that payments were going missing somewhere in between.",
         "t": "Not often and not large, but consistently enough that reconciling that property meant chasing things that had disappeared. I was asked to find a rent collection platform and move them onto it — and it had to be one tenants would actually use.",
-        "a": "I compared the options on three things: the transaction fees, how quickly the money actually landed in our account after a tenant paid, and how easy it was for a tenant to pay without needing help from anyone.\n\nThose three didn't point the same way. The cheapest platform wasn't the easiest to use, which is what made it a real decision rather than a spreadsheet exercise.\n\nI weighted tenant ease highest, and the reasoning was about certainty as much as size. The fee difference between the options was small, and it was certain — I could calculate it exactly. The adoption difference was large, and it was uncertain. If I optimised on fees and half our tenants stayed on checks, I'd have saved a small known amount and kept the entire problem I'd been asked to fix. Whereas if adoption worked, the fee difference was noise.\n\nI also thought about who's actually paying. If someone has to work out an app to pay their rent, some of them just won't — they'll keep writing checks, and you've bought a platform for half your tenants.\n\nI went with Baselane. It wasn't the cheapest, but it was the one somebody could pay through without ringing anyone for help.",
+        "a": "I compared the options on three things: the transaction fees, how quickly the money actually landed in our account after a tenant paid, and how easy it was for a tenant to pay without needing help from anyone.\n\nThose three didn't point the same way. The cheapest platform wasn't the easiest to use, which is what made it a real decision rather than a spreadsheet exercise.\n\nI weighted tenant ease highest, and the reasoning was about certainty as much as size. The fee difference between the options was small, and it was certain — I could calculate it exactly. The adoption difference was large, and it was uncertain. If I optimised on fees and half our tenants stayed on checks, I'd have saved a small known amount and kept the entire problem I'd been asked to fix. Whereas if adoption worked, the fee difference was noise.\n\nI also thought about who's actually paying. If someone has to work out an app to pay their rent, some of them just won't — they'll keep writing checks, and you've bought a platform for half your tenants.\n\nI recommended Baselane. It wasn't the cheapest, but it was the one somebody could pay through without ringing anyone for help, and I put the case that way — the fee saving was the smaller and more certain number, and adoption was the one that decided whether we'd actually fixed anything. Leadership agreed and we moved the property onto it.",
         "r": "About 70% of tenants moved onto online payment, and the money reached our account about four days faster — across a full rent roll, that's four days of rent sitting with us instead of in transit, every month.\n\nLate payments came down too, and the mechanism is the part I'd point to: paying stopped meaning physically getting a check to somebody by a certain day. And the original problem went away, because most payments no longer passed through anyone's hands."
       },
       "calc_sheet": {
@@ -976,7 +979,8 @@
         "why_that_matters": "Adoption is the customer's verdict on the criteria weighting. Optimising purely on fees would have bought a cheaper platform with lower uptake - and the lost-payment problem would have survived.",
         "the_tradeoff": "Cheapest was not easiest. Fees, deposit timing and tenant ease were the three axes, and they did not point the same way.",
         "deposit_timing": "About 4 days faster from tenant payment to money in the account. Across a full rent roll that is 4 days of rent sitting in the bank instead of in transit - the same timing problem the cash tracker in S32 was built for.",
-        "late_payments": "Came down, no figure recorded. The mechanism is the credible part: paying no longer required physically getting a check to someone by a date."
+        "late_payments": "Came down, no figure recorded. The mechanism is the credible part: paying no longer required physically getting a check to someone by a date.",
+        "ATTRIBUTION": "She was asked to evaluate and recommend. The choice of platform is leadership's - say 'I recommended', not 'I went with'. The evaluation, the weighting and the case for it are hers, and they are the part being scored anyway."
       },
       "pocket_answers": {
         "Why did you weight tenant ease over fees?": "Because the problem wasn't cost, it was payments going missing. A cheaper platform that tenants didn't adopt would have left the paper trail intact and saved us nothing that mattered. Fees only matter on payments that actually come through the system.",
@@ -989,6 +993,7 @@
         "How did you know the payment method was the problem?": "Because of where the money was getting lost - between the onsite manager collecting it and it landing in our books. That is not a tenant problem, it is a handling problem, and every step where a person touches a payment is a step where it can go missing."
       },
       "delivery_notes": [
+        "SCOPE - say 'I recommended Baselane', not 'I went with Baselane'. Procuring a system isn't your authority, and the recommendation is the part that shows judgement.",
         "THIS IS YOUR SECOND CUSTOMER OBSESSION STORY, and the bank badly needed one - S8 was carrying five of the nine official questions alone.",
         "THE WHOLE STORY TURNS ON ONE SENTENCE: tenant ease beat cost, and 70% adoption proved the weighting right. If you only get one line out, that is the line.",
         "Say 'a system they won't use doesn't fix anything' early. It states the customer-first logic before you list criteria, so the comparison reads as customer-led rather than procurement-led.",
@@ -1115,7 +1120,7 @@
         ],
         "s": "I look after monthly finances and utilities for ten RV and mobile home parks, about seven hundred tenants. In a monthly budget review, water was up 18% at three of them. The other seven were flat, and occupancy hadn't moved.",
         "t": "The managers said the city had raised rates. But tenants are metered individually and pay for their own water — we charge the city's bill straight back on. So a rate rise should be neutral to us. I wanted to know why this one wasn't.",
-        "a": "So I went and got the raw data: the city's bills off the main meter at each park, and every individual tenant's meter reading. Then I matched them in Excel, line by line, park by park. It's slow work — three parks, every tenant — but the whole thing depends on comparing what came through the main meter against what all the tenant meters add up to, and there's no shortcut to that.\n\nTwo completely different problems came out of it.\n\nAt the first park, the main meter said we'd used about 35% more water than the tenants actually had. That's a gap that has to go somewhere. Water was coming onto the property and not reaching anybody's tap — which turned out to be a pipe leaking underground, and that's why nobody had ever seen it.\n\nAt the other two parks, the meters agreed with each other. Usage was fine. What had happened there was that the city had raised its rate and our billing system hadn't picked up the new one — so we were being charged the new rate and still charging tenants the old one. Every month, quietly, we were covering the difference.\n\nThen I checked the rate loaded at the other seven parks against the city's current schedule, because I wanted to know whether this was two parks or ten. They were all correct — so it was contained.\n\nSo the managers were right that rates had gone up. What they'd missed was that we were the ones absorbing it. We got the pipe repaired, and I corrected the rate in the billing settings.",
+        "a": "So I went and got the raw data: the city's bills off the main meter at each park, and every individual tenant's meter reading. Then I matched them in Excel, line by line, park by park. It's slow work — three parks, every tenant — but the whole thing depends on comparing what came through the main meter against what all the tenant meters add up to, and there's no shortcut to that.\n\nTwo completely different problems came out of it.\n\nAt the first park, the main meter said we'd used about 35% more water than the tenants actually had. That's a gap that has to go somewhere. Water was coming onto the property and not reaching anybody's tap — which turned out to be a pipe leaking underground, and that's why nobody had ever seen it.\n\nAt the other two parks, the meters agreed with each other. Usage was fine. What had happened there was that the city had raised its rate and our billing system hadn't picked up the new one — so we were being charged the new rate and still charging tenants the old one. Every month, quietly, we were covering the difference.\n\nThen I checked the rate loaded at the other seven parks against the city's current schedule, because I wanted to know whether this was two parks or ten. They were all correct — so it was contained.\n\nSo the managers were right that rates had gone up. What they'd missed was that we were the ones absorbing it.\n\nI wrote both findings up with the cost attached to each and took them to leadership. The leak went to the operations side to repair, and the billing rate got corrected.",
         "r": "The billing fix brings back about $24,000 a year, and that one keeps going — once the rate's right, it recovers every month without anyone touching it. The leak was about $1,600 a month and we caught it at three months instead of a year. Together, roughly $40,000 off our annual costs. And I built a tracker comparing main-meter usage to the tenant meters every month, so the next gap shows up when it starts."
       },
       "calc_sheet": {
@@ -1269,7 +1274,8 @@
     "Assign stories by SETTING as well as by LP - see loop_plan. No setting should appear more than twice across one loop.",
     "ROUNDING RULE. The spoken script carries rounded numbers and at most two in the Result; calc_sheet carries the exact figures for probing. Always round DOWN, so nothing said aloud is larger than what can be proved. Exact figures said aloud invite arithmetic in the room; rounded ones invite the follow-up question, which is where the calc sheet earns its keep. If asked for the precise number, give it - having it ready is the point.",
     "SOURCING RULE. Several criteria across Invent and Simplify, Learn and Be Curious and Are Right A Lot reward gathering input, and the bar is lower than it sounds - asking a colleague, pulling a comparable, reading documentation all count. The candidate does this constantly and under-reports it. Whenever an answer touches how something was figured out, NAME the source specifically: the CPA, the staff accountant, the onsite manager, a comparable park, YouTube, the platform's documentation. Specific sources score; 'I researched it' does not.",
-    "ATTRIBUTION RULE. Never claim an action that belongs to someone else's remit - vendor negotiations, drawing debt, approving spend, changing a schedule. An interviewer at a large company knows where those authorities sit, and an overclaim invites 'was that your decision to make?', which is a question you lose. The analyst's honest verbs are: quantified, laid out the options, recommended, flagged, built. Those score fine - Amazon does not require personal authority for Ownership or Deliver Results. It requires that the outcome traces to you."
+    "ATTRIBUTION RULE. Never claim an action that belongs to someone else's remit - vendor negotiations, drawing debt, approving spend, changing a schedule. An interviewer at a large company knows where those authorities sit, and an overclaim invites 'was that your decision to make?', which is a question you lose. The analyst's honest verbs are: quantified, laid out the options, recommended, flagged, built. Those score fine - Amazon does not require personal authority for Ownership or Deliver Results. It requires that the outcome traces to you.",
+    "SCOPE RULE. The candidate is a Financial Analyst at a real estate construction company: month-end close, variance analysis, forecasting, planning and budgeting, reporting to leadership, and ad hoc analysis. Every Action must sit inside that. She does not negotiate with vendors, draw on financing, approve spend, procure systems, or execute operational fixes - other people do, and the stories should say so. See role_scope for the honest verb list."
   ],
   "loop_plan": {
     "purpose": "Fixes the setting-monotony gap: 14 of 15 stories share one employer and 5 are Packwood. This assigns stories to interviewer slots so no setting appears more than twice across a full loop, and every likely LP is reachable.",
@@ -2552,5 +2558,46 @@
       "How do you know you're actually getting better?": "By what I can build that I couldn't before. Two years ago the rent roll was ten spreadsheets I opened one at a time; now it's a database I query in under a minute. That's the measure I trust more than a certificate.",
       "What would you want to learn first here?": "Essbase, and whatever the equivalent of the source system is - I'd want to know where the numbers come from before I start reporting on them. That is the part that has always determined whether I could answer a question or not."
     }
+  },
+  "role_scope": {
+    "_comment": "The candidate's actual remit. Every story's Action must stay inside it. Stated by the candidate 2026-09-03.",
+    "employer": "Real estate construction company",
+    "title": "Financial Analyst",
+    "owns": [
+      "Month-end close",
+      "Variance analysis",
+      "Planning and budgeting",
+      "Forecasting",
+      "Reporting to leadership",
+      "Ad hoc analysis and reporting"
+    ],
+    "does_not_own": [
+      "Negotiating with vendors or contractors",
+      "Drawing on financing / any treasury decision",
+      "Approving or authorising spend",
+      "Operational execution - repairs, scheduling, staffing",
+      "Selecting or procuring systems on her own authority"
+    ],
+    "honest_verbs": [
+      "quantified",
+      "modelled",
+      "forecast",
+      "analysed",
+      "laid out the options",
+      "recommended",
+      "flagged",
+      "reported",
+      "built (a report, model or tracker)"
+    ],
+    "verbs_to_avoid": [
+      "negotiated",
+      "approved",
+      "authorised",
+      "drew",
+      "repaired",
+      "arranged",
+      "instructed"
+    ],
+    "why": "An interviewer at a large company knows where these authorities sit. An action outside the remit invites 'was that your decision to make?' - a question that costs the whole story. Recommending is not weaker than deciding; it is the job."
   }
 }
