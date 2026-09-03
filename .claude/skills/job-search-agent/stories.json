@@ -883,16 +883,16 @@
       "delivery_notes": [
         "Richest Dive Deep detail in the bank - the debugging beats (circular dependency, Error 429, wrong meter math) are what sell it. Don't compress them away.",
         "TRIM TO THREE DEBUGGING BEATS, not six: the name-matching, the meter math, the 429 rate limit. Six will overrun four minutes and you will get cut off before the result.",
-        "Promote the 'without changing the onsite manager's existing workflow' constraint into the spoken opening. Designing around someone else's habits is the Customer Obsession angle and it is currently buried in the Task."
+        "Promote the 'without changing the onsite manager's existing workflow' constraint into the spoken opening. Designing around someone else's habits is the Customer Obsession angle and it is currently buried in the Task.",
+        "Dive Deep was dropped from this story's primary tags - with S41, S34 and S40 on the bench, S33 does not need to carry it, and its arc is build-a-tool rather than investigate."
       ],
       "primary_lps": [
         "Invent and Simplify",
-        "Dive Deep"
+        "Learn and Be Curious"
       ],
       "spoken_star": {
         "primary": "Invent and Simplify",
         "also": [
-          "Learn and Be Curious",
           "Customer Obsession"
         ],
         "s": "We'd just added a 42-unit RV park to the portfolio, with no billing system at all. The onsite manager tracked check payments in a spreadsheet, online payments came through a separate platform, and every month I pulled from both, calculated each tenant's utility bill by hand, and built 42 statements one at a time. About five hours a month.",
@@ -1121,19 +1121,91 @@
         "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S34's rate card, S3's self-funding question. Say what changed, not just that something did."
       ],
       "open_questions": []
+    },
+    {
+      "id": "S41",
+      "title": "Portfolio Water Variance - Leak and Billing Glitch",
+      "setting": "10-park portfolio; 3 parks investigated",
+      "lps": [
+        "Dive Deep",
+        "Insist on the Highest Standards",
+        "Ownership"
+      ],
+      "primary_lps": [
+        "Dive Deep"
+      ],
+      "situation": [
+        "Monthly budget review across a 10-park RV and mobile home portfolio. Water cost jumped 18% at three parks with no change in occupancy."
+      ],
+      "task": [
+        "Park managers attributed it to city rate increases. Water is billed through to tenants, so a rate increase should not hit the company P&L at all - the question was why it had."
+      ],
+      "action": [
+        "Pulled main-meter bills and individual tenant meter readings for all three parks and matched them in Excel.",
+        "Park 1: main meter showed 35% more water than tenants had used - a physical loss, traced to an underground pipe leak.",
+        "Parks 2 and 3: the city rate had risen but the billing system had not picked up the new rate, so tenants were charged the old rate and the company absorbed the difference.",
+        "Repaired the pipe; corrected the billing rate settings.",
+        "Built a monthly tracker comparing main-meter usage to summed tenant meters so a gap surfaces the month it appears."
+      ],
+      "result": [
+        "Billing correction recovers about $24,000 a year, permanently - a rate fix recurs every month.",
+        "Leak was costing about $1,600 a month; caught at three months instead of running a full year - roughly $19,000 a year off the cost base going forward.",
+        "Combined forward run-rate about $43,000 a year across the three parks.",
+        "Tracker turns a once-a-year budget-review discovery into a monthly exception."
+      ],
+      "open_questions": [],
+      "spoken_star": {
+        "primary": "Dive Deep",
+        "also": [
+          "Insist on the Highest Standards",
+          "Ownership"
+        ],
+        "s": "I handle monthly finances and utilities for a portfolio of ten RV and mobile home parks. In a monthly budget review, water cost jumped 18% at three of them, and occupancy hadn't moved.",
+        "t": "The park managers put it down to city rate increases. That was plausible — but water is billed through to tenants, so a rate increase shouldn't land on us at all. I wanted to know why it had.",
+        "a": "I pulled the main-meter bills and the individual tenant meter readings for all three parks and matched them in Excel. Two different problems came out.\n\nAt one park the main meter showed 35% more water than the tenants had actually used. That gap is water going somewhere — it turned out to be an underground pipe leak. At the other two, the city rate had gone up but our billing system hadn't picked up the new rate, so we were charging tenants the old one and absorbing the difference. So the managers were right that rates rose; what they'd missed was that we were the ones paying for it.\n\nWe repaired the pipe and corrected the billing settings.",
+        "r": "The billing fix recovers about $24,000 a year, and that's permanent — a corrected rate keeps recovering every month. The leak was costing about $1,600 a month, and we caught it at three months instead of letting it run a year, so that's roughly $19,000 a year off the cost base going forward. About $43,000 a year in total. And I built a tracker that compares main-meter usage against tenant meters every month, so the next gap shows up the month it appears instead of at a budget review."
+      },
+      "calc_sheet": {
+        "the_flag": "Water cost up 18% at three of ten parks, occupancy flat. Flat occupancy is what rules out volume before you start.",
+        "leak_park_bill": "Main meter about $6,000 a month.",
+        "leak_size": "Main meter ran 35% above summed tenant usage. So tenant usage = $6,000 / 1.35 = about $4,444, and the leak = about $1,556 a month. Call it $1,600.",
+        "leak_actual_vs_annual": "It ran three months, so about $4,700 was actually lost. Annualised, it was on track for about $19,000 a year - that is the avoided figure, and it must be stated as forward run-rate, NOT as money saved.",
+        "billing_glitch": "Two parks, similar size, so about $12,000 a month of water billed. An 18% rate rise not passed through leaves 18/118 = about 15% of the new bill unrecovered = about $1,830 a month = roughly $22,000 a year. The candidate's own figure of $24,000 corroborates this independently.",
+        "combined": "About $43,000 a year forward run-rate. Over the three months before it was caught, about $10,200 was actually at stake.",
+        "valuation_if_asked": "At a 6% cap rate, $43,000 of NOI is about $717,000 of value. Do not volunteer this - it is the only number not observed, and it moves the conversation to cap rate assumptions.",
+        "RETIRED_NUMBERS": "An earlier telling claimed $42,000/yr leak, $66,000/yr total and $1.1M of value. The $42,000 is impossible against a $6,000/month bill (it would need over half the water to be leaking) and $66,000 and $1.1M fall with it. Do not use them."
+      },
+      "pocket_answers": {
+        "What was the water bill?": "About $6,000 a month at the leak park. The main meter was running 35% above what the tenants actually used, so roughly $1,600 a month was going into the ground.",
+        "How did you know the gap was a leak and not bad tenant meters?": "A meter problem would show up as one or two units reading oddly. This was a consistent gap between the main meter and the sum of all the tenant meters, month after month - that pattern is loss between the main and the units. We confirmed it by finding the pipe.",
+        "So the managers were wrong about the rate increase?": "No, they were right that rates went up. What they'd missed is that a rate increase is supposed to pass through to tenants, so it shouldn't reach our P&L. The real finding was that the pass-through had stopped working.",
+        "Is that $43,000 money you saved?": "It's forward run-rate. The billing correction recovers about $24,000 a year and keeps doing it. The leak was about $1,600 a month and ran three months, so roughly $4,700 was actually lost - the $19,000 is what it would have cost over a full year if we hadn't found it.",
+        "Did you back-bill the tenants for the undercharge?": "The correction was applied going forward. The under-recovery over those three months was about $5,500, and the ongoing rate fix is the larger number by far.",
+        "What did it do to property value?": "At a 6% cap rate, about $43,000 of recurring NOI is roughly $700,000 of value across those parks - though that's a valuation assumption, not an observed number.",
+        "How would you catch it faster next time?": "That's what the tracker does. Main-meter usage against summed tenant meters, every month, with the variance shown as a percentage. Anything above a few percent is either a leak or a billing error, and both are worth a look."
+      },
+      "delivery_notes": [
+        "LEAD DIVE DEEP STORY. It has everything S34 has plus portfolio scale and two distinct root causes from one investigation - one physical, one systems.",
+        "Do not say the managers were wrong. Say they were right about the rate rise and had missed that it shouldn't have reached us. That framing is both more accurate and more generous, and it is what leads to the billing finding.",
+        "NEVER say $42,000, $66,000, or $1.1 million. Those numbers do not survive a question about the size of the water bill. See calc_sheet.RETIRED_NUMBERS.",
+        "Say '$24,000 a year, permanently' before the leak figure. It is the recurring one and it is the one that survives any probe.",
+        "Flat occupancy is the hinge of the whole story - it rules out volume in one clause. Say it in the Situation, not later.",
+        "Hold the valuation back. Answer it if asked, with the cap rate stated out loud."
+      ]
     }
   ],
   "lp_index": {
     "Customer Obsession": [
       "S6",
       "S8",
-      "S27",
-      "S33"
+      "S33",
+      "S35"
     ],
     "Ownership": [
       "S29",
       "S32",
-      "S34"
+      "S34",
+      "S41"
     ],
     "Invent and Simplify": [
       "S6",
@@ -1146,18 +1218,21 @@
     "Are Right, A Lot": [
       "S3",
       "S26",
-      "S34"
+      "S34",
+      "S35"
     ],
     "Learn and Be Curious": [
       "S27",
-      "S33"
+      "S33",
+      "S35"
     ],
     "Hire and Develop the Best": [],
     "Insist on the Highest Standards": [
       "S5",
       "S29",
       "S30",
-      "S34"
+      "S34",
+      "S41"
     ],
     "Think Big": [
       "S27",
@@ -1173,19 +1248,18 @@
     ],
     "Earn Trust": [
       "S5",
-      "S8",
-      "S26",
       "S29",
       "S30",
+      "S31",
       "S34"
     ],
     "Dive Deep": [
       "S5",
       "S7",
       "S27",
-      "S29",
-      "S33",
-      "S34"
+      "S34",
+      "S40",
+      "S41"
     ],
     "Have Backbone, Disagree and Commit": [
       "S3",
@@ -1199,8 +1273,8 @@
       "S19",
       "S28",
       "S31",
-      "S33",
-      "S34"
+      "S34",
+      "S40"
     ],
     "Strive to be Earth's Best Employer": [],
     "Success and Scale Bring Broad Responsibility": []
@@ -2085,102 +2159,108 @@
     "ranked": [
       {
         "rank": 1,
-        "id": "S34",
+        "id": "S41",
         "tier": "tier1",
-        "why": "Strongest in the bank and the math reconciles exactly. Dive Deep lead, and rate-vs-volume variance is literally the JD."
+        "why": "Strongest Dive Deep story: portfolio scale, an assumption from people closer to the asset, two distinct root causes from one investigation, recurring dollars, and a control built. Displaces S34 as the lead."
       },
       {
         "rank": 2,
+        "id": "S34",
+        "tier": "tier1",
+        "why": "Backup Dive Deep behind S41. Still the best answer to a variance-specific or controls prompt, and the 8 x $250 tie-out is exact."
+      },
+      {
+        "rank": 3,
         "id": "S32",
         "tier": "tier1",
         "why": "Highest utility story you own: 8 questions, 7 of them as first choice. Carries Ownership AND Bias for Action, your weakest LP."
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "S40",
         "tier": "tier1",
         "why": "Only labour/headcount story, and headcount FP&A is half the team remit. Newest and least rehearsed - highest risk per hour spent."
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "S30",
         "tier": "tier1",
         "why": "The only genuine failure. Non-substitutable: the bar raiser will ask, and nothing else can stand in."
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "S33",
         "tier": "tier1",
         "why": "Most-routed story in the bank - 9 questions, 6 as first choice. Invent and Simplify plus Learn and Be Curious."
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "S19",
         "tier": "tier2",
         "why": "Deliver Results lead. Ten entities, two weeks to one day, 0K of duplicates caught."
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "S27",
         "tier": "tier2",
         "why": "Best scale story: 10 properties, ~700 tenants. Lead with the noticing, not the learning."
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "S28",
         "tier": "tier2",
         "why": "The real Bias for Action default, not S6. Judgment under a hard close deadline."
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "S35",
         "tier": "tier2",
         "why": "Customer Obsession lead. Tenant-side, which nothing else in the bank is."
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "S8",
         "tier": "tier2",
         "why": "Only non-real-estate setting and the only human stakes in the loop. Use it mid-loop or it never gets heard."
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "S31",
         "tier": "tier3",
         "why": "Have Backbone with a real cost admitted. Strong, but overlaps S34 on setting."
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "S29",
         "tier": "tier3",
         "why": "Short and clean. Backup to S30 on Highest Standards; variant A only."
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "S6",
         "tier": "bench",
         "why": "Redundant with S33 and S32 - same tool-building arc, same park. Do not use it against a speed prompt."
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "S26",
         "tier": "bench",
         "why": "Only Frugality story, and Frugality is unlikely in this loop."
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "S5",
         "tier": "bench",
         "why": "Good Earn Trust backup. Know the two unequal installments cold or do not open it."
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "S3",
         "tier": "bench",
         "why": "Have Backbone backup behind S31 and S26."
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "S7",
         "tier": "bench",
         "why": "Superseded by S19, which is the same idea at ten times the scale."
