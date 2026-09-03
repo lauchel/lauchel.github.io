@@ -1140,7 +1140,7 @@
           "Invent and Simplify",
           "Dive Deep"
         ],
-        "s": "We had ten parks and about seven hundred units. The business is really two businesses: long-term mobile home residents paying a stable monthly rent, and short-term RV guests, who are highly seasonal. Our budget did not reflect that at all. It took the annual total and divided it into twelve equal months.",
+        "s": "We had ten parks, running about $2.8 million a year in rental income. The business is really two businesses: long-term mobile home residents paying a stable monthly rent, and short-term RV guests, who are highly seasonal. Our budget did not reflect that at all. It took the annual total and divided it into twelve equal months.",
         "t": "In my first budget-to-actual review, monthly revenue and operating cash flow were coming in as much as 25% away from forecast. And because the forecast could not be trusted, leadership was being cautious in ways that cost us — holding back routine park maintenance rather than risk running short.",
         "a": "The flat twelve-month split was the problem, so I pulled three years of unit-level billing data across all seven hundred units. Mobile home rent really is close to flat. RV income is not — it concentrates in the summer. Averaged together, the forecast is too high all winter and too low at peak, and the stable half hides how wrong the seasonal half is.\n\nSo I rebuilt it driver-based. I separated the RV sites from the long-term leases and built seasonal occupancy curves, using historical occupancy by month and our daily site rates. I used an AI assistant for the Excel side of it, so my time went into the assumptions rather than the formulas.\n\nThen I modelled the cash separately from the revenue, because they do not land in the same month. An RV guest books in March for a July stay and pays a deposit then — the cash arrives in spring, the revenue belongs to July. Forecast cash off the revenue line and you think the money arrives in summer, when much of it already has.\n\nAnd I built it to re-base every month instead of sitting fixed for the year, so by March it already knows what July's bookings look like.\n\nThen I measured it — forecast against actuals, month by month, park by park.",
         "r": "Monthly revenue and operating expense variance came down from about 25% to about 5%, measured against actuals across all ten parks. That is the number I care about most, because a forecast nobody checks against reality is just an opinion.\n\nWhat changed in practice is that leadership stopped being cautious by default. They could schedule maintenance and improvements in advance, because the forecast told them what the cash position would actually be, rather than a flat number that was wrong every month."
@@ -1180,7 +1180,8 @@
         "NEVER say 12 parks, 3% variance, $180K or $120K of improvements, or any process-time figure. Those appeared in drafts and changed between versions. Ten parks and 25% to 5% are the confirmed numbers. See calc_sheet.RETIRED_NUMBERS.",
         "Do not claim weather or fuel price drivers unless they were genuinely in the model - see open_questions.",
         "If asked to go deeper on cash timing or on rolling versus fixed, the deposit example is the one that lands: an RV guest books in March for July and pays then, so the cash and the revenue are four months apart. One concrete example beats a definition.",
-        "The rolling-forecast explanation was deliberately cut from the script - it is general, it is the thing they are most likely to ask about anyway, and it is in the pocket answers. The script keeps only the concrete hook: by March it already knows what July's bookings look like. If they want the mechanics of re-basing, give them then."
+        "The rolling-forecast explanation was deliberately cut from the script - it is general, it is the thing they are most likely to ask about anyway, and it is in the pocket answers. The script keeps only the concrete hook: by March it already knows what July's bookings look like. If they want the mechanics of re-basing, give them then.",
+        "Opens on the dollar figure rather than the unit count. The unit count still appears later, where the data extraction happened at unit level, which is where it earns its place."
       ]
     }
   ],
@@ -1435,7 +1436,8 @@
       "reconciliation"
     ],
     "principle": "Any term that needs a definition costs you the follow-up question you actually wanted. Either say it in plain words, or gloss it in the same breath.",
-    "pad": "Do NOT say 'pad' or 'pad-level'. Say 'unit' and 'unit-level'. It is industry jargon that invites a definition, and the definition costs the follow-up you actually wanted. If the per-unit rent is questioned, explain that residents own their homes and rent the lot - without using the word."
+    "pad": "Do NOT say 'pad' or 'pad-level'. Say 'unit' and 'unit-level'. It is industry jargon that invites a definition, and the definition costs the follow-up you actually wanted. If the per-unit rent is questioned, explain that residents own their homes and rent the lot - without using the word.",
+    "unit count": "Lead with dollars, not units. 'Ten properties, about $2.8 million a year' is the scale line. Say the 700 only where the count is the problem - S27 - or where the work was done at unit level - S42's data extraction. Adding it to the scale line gains nothing and invites the per-unit division."
   },
   "question_bank": {
     "source": "Amazon Interview Question Bank (official), 16 leadership principles, 128 suggested behavioural questions.",
@@ -2488,8 +2490,9 @@
       "portfolio_monthly": "$210K in the off-season to $270K at peak.",
       "annual": "About $2.8M. Four, five or six peak months all give $2.76M-$2.88M, so the figure is stable regardless of how the season splits.",
       "the_line": "'We collected between about $210,000 and $270,000 a month depending on the season - call it $2.8 million a year across the portfolio.' Give the range, not just the annual figure; the range shows you understand the business is seasonal, which a single number hides.",
-      "where_to_use": "Anywhere scale is being established, and especially early in the loop. 'Ten properties, about seven hundred units, roughly $2.8 million a year' is one clause and it reframes everything that follows.",
-      "per_unit_check": "$2.8M / 700 units = about $343 a month each. If anyone does that division and thinks it sounds low, the answer is that the mobile home residents own their homes - we rent them the lot. So it is lot rent, not a full housing rent, and that range is normal. Only someone who knows real estate asks this, and having the answer ready turns it into a good moment. Say 'units' throughout; do not use the word 'pad'."
+      "where_to_use": "Anywhere scale is being established, and especially early in the loop. 'Ten properties, about $2.8 million a year in rental income' is the whole line. DO NOT add the unit count to it - a finance interviewer weighs dollars, not door count, and 700 into $2.8M invites a question about why per-unit rent looks low. The dollar figure is the stronger signal and it carries no exposure.",
+      "per_unit_check": "$2.8M / 700 units = about $343 a month each. If anyone does that division and thinks it sounds low, the answer is that the mobile home residents own their homes - we rent them the lot. So it is lot rent, not a full housing rent, and that range is normal. Only someone who knows real estate asks this, and having the answer ready turns it into a good moment. Say 'units' throughout; do not use the word 'pad'.",
+      "when_to_say_units": "Only where the count is the problem being solved. S27 needs it - seven hundred tenants across ten spreadsheets, one of whom slipped through, is the story. S42 uses it because the data was extracted at unit level. Everywhere else, say dollars."
     }
   },
   "memorisation_order": {
