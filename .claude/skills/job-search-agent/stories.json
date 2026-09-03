@@ -1237,8 +1237,7 @@
     "Bias for Action is KNOWN WEAK - the candidate self-identified this as an underperforming LP in a prior loop. The bench is nominally 3 (S6, S28, S32) but effectively 2: S6 is tagged BFA in the weak 'built it unasked' sense and misreads as a tool-building story against a speed prompt. S28 is the real default; S32 is the strong backup (contractor renegotiated, LOC drawn, gap closed in-month).",
     "14 of 15 stories are set at the same real-estate firm; S8 (Signature Photo) is the only outside setting. Across a 5-interviewer loop the setting will repeat - vary the property and the stakeholder so the stories don't blur together.",
     "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss.",
-    "Are Right, A Lot is covered 7 of 7 but has no deep bench: S26 leads, with S3 and S35 behind, and the 'when were you wrong' half is carried by S30, S5 and S3. Think Big is the thinner one - S27 and S32 only, after S6's tag was removed (a one-park dashboard is execution, not scale-thinking).",
-    "HARD GAP - Learn and Be Curious criterion 'currently working on initiatives to improve themselves' is present tense and no story can answer it. Needs a true, current answer from the candidate: what she is learning or working on right now. UNRESOLVED as of 2026-09-03."
+    "Are Right, A Lot is covered 7 of 7 but has no deep bench: S26 leads, with S3 and S35 behind, and the 'when were you wrong' half is carried by S30, S5 and S3. Think Big is the thinner one - S27 and S32 only, after S6's tag was removed (a one-park dashboard is execution, not scale-thinking)."
   ],
   "usage_rules": [
     "Never use both S29 variants with the same interviewer.",
@@ -2471,16 +2470,16 @@
         "S33",
         "+ S30 and S5 as the setback half"
       ],
-      "score": "6 of 8 at bank level (4 of 8 on S27+S33 alone) - 1 partial, 1 hard gap",
+      "score": "8 of 8 at bank level, with current_development carrying the two present-tense criteria",
       "detail": {
         "Seeks opportunities to explore new possibilities and learn new skills": "COVERED, strongly - self-taught SQL off YouTube.",
         "Shows curiosity about how things work": "COVERED.",
         "Asks 'I wonder what would happen if'": "COVERED, strongly - 'if one slipped through because nobody was looking, how many others were there?' That is the single best line you own for this LP.",
         "Accepts new and challenging situations despite risk of failure": "COVERED.",
-        "Willing to pursue knowledge with no immediate gain": "PARTIAL and genuinely short. Both S27 and S33 had a deliverable attached, which is the opposite of this criterion. The likeliest fix is the same answer that closes the present-tense criterion below - something currently being learned without a project demanding it.",
+        "Willing to pursue knowledge with no immediate gain": "COVERED by current_development - 'nobody's asked me to do it' is exactly this criterion. S27 and S33 both had deliverables attached, so this answer carries it alone.",
         "Seeks and embraces feedback from others": "COVERED at bank level by S30 - you took your manager's criticism, agreed with it, and changed your process. Not in S27 or S33, so if a Learn and Be Curious interviewer asks about feedback, reach for S30. That is a delivery instruction, not a content gap.",
         "Discusses lessons learned from past setbacks": "COVERED at bank level by S30 and S5. Same note: it is not in the two lead stories, so bring the failure stories into a Learn and Be Curious slot rather than assuming S27 covers everything.",
-        "Currently working on initiatives to improve themselves": "HARD GAP - NO STORY ANYWHERE, and this one is present tense. It is a real and common question and the bank cannot answer it. NEEDS A TRUE ANSWER FROM THE CANDIDATE about what she is learning right now."
+        "Currently working on initiatives to improve themselves": "COVERED - see top-level current_development. Present-tense spoken answer, not a story."
       },
       "note": "The two lead stories carry the curiosity half. The setback half - feedback, lessons learned - sits in S30 and S5. A Learn and Be Curious slot needs BOTH halves available, so plan to reach across."
     },
@@ -2502,5 +2501,22 @@
         "Stops activities that no longer enhance the experience": "COVERED after review - S35 stopped check and cash collection entirely. 'Payments stopped going missing between collection and the books, because most of them no longer passed through anyone's hands.' That IS retiring an activity that had stopped serving the tenant. Say it as a decision, not a side effect."
       }
     }
+  },
+  "current_development": {
+    "_comment": "Answers the present-tense criteria no story can reach: Learn and Be Curious 'currently working on initiatives to improve themselves' and 'willing to pursue knowledge with no immediate gain'. Not a STAR story - a 60-second spoken answer. Content supplied by the candidate 2026-09-03: deeper expertise in Excel, SQL and VBA.",
+    "spoken": "Right now I'm pushing deeper on SQL and VBA. That started with the rent roll database — once I could ask questions across seven hundred tenants at once, I kept hitting questions I couldn't answer yet, and that's been the pattern since. Nobody's asked me to do it. It's that every time I go one level deeper, something that used to take me a day stops taking any time at all.\n\nThe direction I'm most interested in is dimensional data — how you structure something so the same numbers can be sliced by property, by period, by cost type, without rebuilding it each time. That's honestly part of why this role interests me. Essbase is that idea at a scale I've never had access to.",
+    "why_it_works": {
+      "currently working on initiatives to improve themselves": "Present tense and specific, which is what the criterion asks.",
+      "willing to pursue knowledge with no immediate gain": "'Nobody's asked me to do it' is the whole criterion in five words. Do not soften it - the fact that no project demanded this is the point.",
+      "shows curiosity about how things work": "The arc - each answer opening a new question - is curiosity described rather than claimed.",
+      "turns a weakness into evidence": "It walks straight into the Essbase gap on your own terms. Naming it yourself as something you want reads as curiosity; having it dragged out of you reads as a missing qualification."
+    },
+    "delivery_notes": [
+      "USE WHEN: 'what are you doing to develop yourself', 'what are you learning right now', 'tell me about a skill you're building'. Also a strong close if asked whether you have questions or anything to add.",
+      "Do NOT tell a past story here. The criterion is present tense; reaching for S27 answers a different question.",
+      "S27 is the proof underneath this, so it can follow naturally: 'the last time I did that, I taught myself SQL and built the rent roll database.' But lead with the present.",
+      "WEAKEST POINT: it is still a category rather than a concrete thing. If you can name what you are actually working through right now - a specific course, book, technique or project - say that instead of 'deeper on SQL and VBA'. Concrete beats general every time here.",
+      "Never say you are 'learning Essbase' unless you actually are. Wanting to is the honest and sufficient claim."
+    ]
   }
 }
