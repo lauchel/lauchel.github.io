@@ -2504,7 +2504,7 @@
   },
   "current_development": {
     "_comment": "Answers the present-tense criteria no story can reach: Learn and Be Curious 'currently working on initiatives to improve themselves' and 'willing to pursue knowledge with no immediate gain'. Not a STAR story - a 60-second spoken answer. Content supplied by the candidate 2026-09-03: deeper expertise in Excel, SQL and VBA.",
-    "spoken": "Right now I'm pushing deeper on SQL and VBA. That started with the rent roll database — once I could ask questions across seven hundred tenants at once, I kept hitting questions I couldn't answer yet, and that's been the pattern since. Nobody's asked me to do it. It's that every time I go one level deeper, something that used to take me a day stops taking any time at all.\n\nThe direction I'm most interested in is dimensional data — how you structure something so the same numbers can be sliced by property, by period, by cost type, without rebuilding it each time. That's honestly part of why this role interests me. Essbase is that idea at a scale I've never had access to.",
+    "spoken": "Right now I'm pushing deeper on SQL and VBA — mostly YouTube, and then using it on something real, which is how I learn anything. That started with the rent roll database: once I could ask questions across seven hundred tenants at once, I kept hitting questions I couldn't answer yet, and that's been the pattern since. Nobody's asked me to do it. It's that every time I go one level deeper, something that used to take me a day stops taking any time at all.\n\nThe direction I'm most interested in is dimensional data — how you structure something so the same numbers can be sliced by property, by period, by cost type, without rebuilding it each time. That's honestly part of why this role interests me. Essbase is that idea at a scale I've never had access to.",
     "why_it_works": {
       "currently working on initiatives to improve themselves": "Present tense and specific, which is what the criterion asks.",
       "willing to pursue knowledge with no immediate gain": "'Nobody's asked me to do it' is the whole criterion in five words. Do not soften it - the fact that no project demanded this is the point.",
@@ -2515,8 +2515,13 @@
       "USE WHEN: 'what are you doing to develop yourself', 'what are you learning right now', 'tell me about a skill you're building'. Also a strong close if asked whether you have questions or anything to add.",
       "Do NOT tell a past story here. The criterion is present tense; reaching for S27 answers a different question.",
       "S27 is the proof underneath this, so it can follow naturally: 'the last time I did that, I taught myself SQL and built the rent roll database.' But lead with the present.",
-      "WEAKEST POINT: it is still a category rather than a concrete thing. If you can name what you are actually working through right now - a specific course, book, technique or project - say that instead of 'deeper on SQL and VBA'. Concrete beats general every time here.",
-      "Never say you are 'learning Essbase' unless you actually are. Wanting to is the honest and sufficient claim."
-    ]
+      "Never say you are 'learning Essbase' unless you actually are. Wanting to is the honest and sufficient claim.",
+      "Say YouTube without apologising for it. It is what you did, it is what S27 already says, and 'I learn it then use it on something real' is a stronger claim than a half-finished certificate. Self-taught and applied is the pattern across your whole bank - own it."
+    ],
+    "pocket_answers": {
+      "Why not a formal course or certification?": "I learn by building something with it. A course would give me the syllabus but not the problem, and the problem is what makes it stick - I only really understood SQL joins when I had seven hundred tenants across ten spreadsheets that wouldn't line up.",
+      "How do you know you're actually getting better?": "By what I can build that I couldn't before. Two years ago the rent roll was ten spreadsheets I opened one at a time; now it's a database I query in under a minute. That's the measure I trust more than a certificate.",
+      "What would you want to learn first here?": "Essbase, and whatever the equivalent of the source system is - I'd want to know where the numbers come from before I start reporting on them. That is the part that has always determined whether I could answer a question or not."
+    }
   }
 }
