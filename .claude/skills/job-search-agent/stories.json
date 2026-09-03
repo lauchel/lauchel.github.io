@@ -2472,6 +2472,23 @@
       "S27": "Already the strongest on scale - 10 properties, 700 tenants. Use it as the story that establishes the portfolio.",
       "S33": "'A newly acquired property in a ten-property portfolio'.",
       "S34": "'A project running a $100K a month capital budget' rather than 'an apartment project'."
+    },
+    "rent_roll": {
+      "_comment": "RESOLVED 2026-09-03. This was the last open lookup in the bank. Figures supplied by the candidate.",
+      "by_property_monthly_K": {
+        "Packwood": "60-120 (seasonal RV)",
+        "Darr M": 20,
+        "Darr prop": 60,
+        "River Oaks": 30,
+        "Ocosta": 10,
+        "Other single families": 30
+      },
+      "fixed_non_packwood": "$150K a month.",
+      "portfolio_monthly": "$210K in the off-season to $270K at peak.",
+      "annual": "About $2.8M. Four, five or six peak months all give $2.76M-$2.88M, so the figure is stable regardless of how the season splits.",
+      "the_line": "'We collected between about $210,000 and $270,000 a month depending on the season - call it $2.8 million a year across the portfolio.' Give the range, not just the annual figure; the range shows you understand the business is seasonal, which a single number hides.",
+      "per_pad_check": "$2.8M / 700 pads = about $343 a month per pad. If anyone thinks that sounds low for 700 units, the answer is that these are PADS, not homes - tenants own the mobile home and rent the land. Pad rent in that range is normal. Only someone who knows real estate asks this, and having the answer ready turns it into a good moment.",
+      "where_to_use": "Anywhere scale is being established, and especially early in the loop. 'Ten properties, seven hundred pads, about $2.8 million a year' is one clause and it reframes everything that follows."
     }
   },
   "memorisation_order": {
