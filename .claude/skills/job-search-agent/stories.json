@@ -1043,9 +1043,19 @@
         "PAIRS WITH S41 for an FP&A loop: same question, different answer. There it was loss and a broken pass-through; here it was neither crew nor rate but duration. Told across a loop they show a method rather than a lucky find - do not put them in the same slot.",
         "THIS IS THE LABOUR-LINE STORY. For the WW Ops Finance role it is the closest thing to the headcount half of the mandate - forecasting a workforce line, tracking spend against it, and diagnosing the variance. Lead with it if the question is about employee expense.",
         "SAY 'DURATION' EXPLICITLY as the third driver. Naming crew, rate and time as the three things that move a labour line shows you think in drivers, which is the language an FP&A interviewer works in.",
-        "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S41's meter tracker, S3's self-funding question. Say what changed, not just that something did."
+        "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S41's meter tracker, S3's self-funding question. Say what changed, not just that something did.",
+        "DIVE DEEP RUBRIC: covers five of seven cleanly. Thin on 'steps in and gets work done' and 'difficult or time-consuming' - see rubric_coverage. If a Dive Deep interviewer is clearly working a checklist, lead with S41 and keep this as the second answer."
       ],
-      "open_questions": []
+      "open_questions": [],
+      "rubric_coverage": {
+        "Stays connected to the details": "STRONG. You built the labour budget yourself, bottom-up - crew, duration, rate. You knew its parts because you made them.",
+        "How different groups or systems work together": "MODERATE. The root cause was cross-site resource allocation - a crew member pulled to another project. Name that explicitly if probed: finance, the project manager, and site scheduling were not sharing one view of crew availability.",
+        "Critically evaluates metrics and data": "STRONG. Three drivers, tested one at a time, two ruled out. That is the cleanest decomposition in the bank.",
+        "Asks good questions": "STRONG. 'Was it crew, rate, or duration?' - the question makes the analysis obvious, which is the mark of a good one.",
+        "Steps in and gets work done": "WEAKEST HERE. You reforecast and flagged, but you did not fix the schedule - it was not yours to fix. Land it on what you did change: you made the slip visible to the person who could act, and you changed how you build every labour budget since. Say the second part; process change is the work an analyst actually owns.",
+        "Investigates and gets details": "STRONG.",
+        "Gathers information even if difficult or time-consuming": "WEAK. Checking three drivers is not portrayed as hard, and inventing difficulty would be worse than leaving it. Let S41 carry this criterion."
+      }
     },
     {
       "id": "S41",
@@ -1087,7 +1097,7 @@
         ],
         "s": "I handle monthly finances and utilities for a portfolio of ten RV and mobile home parks. In a monthly budget review, water cost jumped 18% at three of them, and occupancy hadn't moved.",
         "t": "The park managers put it down to city rate increases. That was plausible — but water is billed through to tenants, so a rate increase shouldn't land on us at all. I wanted to know why it had.",
-        "a": "I pulled the main-meter bills and the tenant meter readings for all three parks and matched them in Excel. Two different problems came out.\n\nAt one park the main meter showed 35% more water than the tenants had actually used. That gap is water going somewhere — it turned out to be an underground pipe leak. At the other two, the city rate had gone up but our billing system hadn't picked up the new rate, so we were charging tenants the old one and absorbing the difference. So the managers were right that rates rose — what they'd missed was that we were the ones paying for it.\n\nWe repaired the pipe and corrected the billing settings.",
+        "a": "I pulled the main-meter bills and the tenant meter readings for all three parks and matched them in Excel — every tenant, line by line against the main meter. Tedious, but it's the only way the gap shows up. Two different problems came out.\n\nAt one park the main meter showed 35% more water than the tenants had actually used. That gap is water going somewhere — it turned out to be an underground pipe leak. At the other two, the city rate had gone up but our billing system hadn't picked up the new rate, so we were charging tenants the old one and absorbing the difference. So the managers were right that rates rose — what they'd missed was that we were the ones paying for it.\n\nWe repaired the pipe and corrected the billing settings.",
         "r": "The billing fix recovers about $24,000 a year, and that one's permanent — a corrected rate keeps recovering every month. With the leak repair on top it's roughly $40,000 a year off the cost base. And I built a tracker comparing main-meter usage against tenant meters every month, so the next gap shows up when it appears instead of at a budget review."
       },
       "calc_sheet": {
@@ -1115,8 +1125,18 @@
         "NEVER say $42,000, $66,000, or $1.1 million. Those numbers do not survive a question about the size of the water bill. See calc_sheet.RETIRED_NUMBERS.",
         "Say '$24,000 a year, permanently' before the leak figure. It is the recurring one and it is the one that survives any probe.",
         "Flat occupancy is the hinge of the whole story - it rules out volume in one clause. Say it in the Situation, not later.",
-        "Hold the valuation back. Answer it if asked, with the cap rate stated out loud."
-      ]
+        "Hold the valuation back. Answer it if asked, with the cap rate stated out loud.",
+        "DIVE DEEP RUBRIC: this story covers all seven criteria - see rubric_coverage. The 'difficult or time-consuming' one lives entirely in the 'line by line, tedious' clause, so do not cut it for time."
+      ],
+      "rubric_coverage": {
+        "Stays connected to the details": "STRONG. 'In a monthly budget review, water cost jumped 18% at three of them.' You are in the numbers every month and you caught a three-park pattern, not a single anomaly.",
+        "How different groups or systems work together": "STRONG, but SAY IT OUT LOUD. The chain is city rate schedule -> our main-meter bill -> our billing system -> tenant invoices, with park managers operating it. The finding is that a link in that chain silently stopped working. If they probe, walk the chain.",
+        "Critically evaluates metrics and data": "STRONG. You did not accept 18% as a rate story - you decomposed it into main-meter versus summed tenant usage, which is what separates loss from pass-through failure.",
+        "Asks good questions": "STRONGEST. 'Water is billed through to tenants, so a rate increase shouldn't land on us at all. Why did it?' That one question is what unlocks the whole story. Say it slowly.",
+        "Steps in and gets work done": "STRONG. Pipe repaired, billing settings corrected, tracker built. Physical fix, systems fix, and a control - three different kinds of done.",
+        "Investigates and gets details": "STRONG. Individual tenant meter readings matched against main-meter bills at three parks.",
+        "Gathers information even if difficult or time-consuming": "NOW COVERED - this was the one gap. The script now says the matching was line by line and tedious, and that you did it anyway because it was the only way the gap surfaces. Do not skip that clause; it is the only place this criterion is earned."
+      }
     }
   ],
   "lp_index": {
@@ -1859,7 +1879,18 @@
       "NO PEOPLE-MANAGEMENT STORIES. Hire and Develop the Best has zero coverage across all 10 questions, and Earn Trust Q7-Q9 (morale, a struggling teammate, an underperformer) are unanswered. Most are marked (Manager) in the bank and are unlikely for an individual-contributor analyst loop, but Hire and Develop does sometimes appear as a mentoring or knowledge-transfer question - the ops-manager walkthrough in S6 and the documented handover in S33 are the closest material.",
       "THINK BIG IS THIN AGAINST ITS OWN QUESTIONS. Only 4 of 8 map, and the unmapped ones ask about bold direction and long-range vision at a scale this experience does not reach. S27 (per-property to portfolio) is the strongest available.",
       "Strive to be Earth's Best Employer and Success and Scale Bring Broad Responsibility have no coverage at all. Both are rare in analyst loops and neither is worth manufacturing a story for."
-    ]
+    ],
+    "lp_criteria": {
+      "Dive Deep": [
+        "Stays connected to the details of projects and programs",
+        "Understands how different groups or systems work together",
+        "Critically evaluates metrics and data",
+        "Asks good questions that provide clarity to situations",
+        "Steps in and gets work done",
+        "Investigates and gets details in order to solve a problem",
+        "Gathers information to solve a problem, even if it's difficult or time-consuming"
+      ]
+    }
   },
   "candidate_stories": {
     "why": "All seven proof points in profile.json are absent from the story bank. Each identified gap has raw material already - these are the stories to build, with the facts still needed for each.",
