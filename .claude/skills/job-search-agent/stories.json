@@ -2075,5 +2075,112 @@
       "S33": "'A newly acquired property in a ten-property portfolio'.",
       "S34": "'A project running a $100K a month capital budget' rather than 'an apartment project'."
     }
+  },
+  "memorisation_order": {
+    "_comment": "Ranked study order for the WW Ops Finance final (Job ID 10522171). Tier 1 = memorise cold. Tier 2 = know well. Tier 3 = know the beats. Bench = know it exists, read the card before the loop.",
+    "ranked": [
+      {
+        "rank": 1,
+        "id": "S34",
+        "tier": "tier1",
+        "why": "Strongest in the bank and the math reconciles exactly. Dive Deep lead, and rate-vs-volume variance is literally the JD."
+      },
+      {
+        "rank": 2,
+        "id": "S32",
+        "tier": "tier1",
+        "why": "Highest utility story you own: 8 questions, 7 of them as first choice. Carries Ownership AND Bias for Action, your weakest LP."
+      },
+      {
+        "rank": 3,
+        "id": "S40",
+        "tier": "tier1",
+        "why": "Only labour/headcount story, and headcount FP&A is half the team remit. Newest and least rehearsed - highest risk per hour spent."
+      },
+      {
+        "rank": 4,
+        "id": "S30",
+        "tier": "tier1",
+        "why": "The only genuine failure. Non-substitutable: the bar raiser will ask, and nothing else can stand in."
+      },
+      {
+        "rank": 5,
+        "id": "S33",
+        "tier": "tier1",
+        "why": "Most-routed story in the bank - 9 questions, 6 as first choice. Invent and Simplify plus Learn and Be Curious."
+      },
+      {
+        "rank": 6,
+        "id": "S19",
+        "tier": "tier2",
+        "why": "Deliver Results lead. Ten entities, two weeks to one day, 0K of duplicates caught."
+      },
+      {
+        "rank": 7,
+        "id": "S27",
+        "tier": "tier2",
+        "why": "Best scale story: 10 properties, ~700 tenants. Lead with the noticing, not the learning."
+      },
+      {
+        "rank": 8,
+        "id": "S28",
+        "tier": "tier2",
+        "why": "The real Bias for Action default, not S6. Judgment under a hard close deadline."
+      },
+      {
+        "rank": 9,
+        "id": "S35",
+        "tier": "tier2",
+        "why": "Customer Obsession lead. Tenant-side, which nothing else in the bank is."
+      },
+      {
+        "rank": 10,
+        "id": "S8",
+        "tier": "tier2",
+        "why": "Only non-real-estate setting and the only human stakes in the loop. Use it mid-loop or it never gets heard."
+      },
+      {
+        "rank": 11,
+        "id": "S31",
+        "tier": "tier3",
+        "why": "Have Backbone with a real cost admitted. Strong, but overlaps S34 on setting."
+      },
+      {
+        "rank": 12,
+        "id": "S29",
+        "tier": "tier3",
+        "why": "Short and clean. Backup to S30 on Highest Standards; variant A only."
+      },
+      {
+        "rank": 13,
+        "id": "S6",
+        "tier": "bench",
+        "why": "Redundant with S33 and S32 - same tool-building arc, same park. Do not use it against a speed prompt."
+      },
+      {
+        "rank": 14,
+        "id": "S26",
+        "tier": "bench",
+        "why": "Only Frugality story, and Frugality is unlikely in this loop."
+      },
+      {
+        "rank": 15,
+        "id": "S5",
+        "tier": "bench",
+        "why": "Good Earn Trust backup. Know the two unequal installments cold or do not open it."
+      },
+      {
+        "rank": 16,
+        "id": "S3",
+        "tier": "bench",
+        "why": "Have Backbone backup behind S31 and S26."
+      },
+      {
+        "rank": 17,
+        "id": "S7",
+        "tier": "bench",
+        "why": "Superseded by S19, which is the same idea at ten times the scale."
+      }
+    ]
   }
 }
