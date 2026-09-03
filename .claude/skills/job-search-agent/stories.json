@@ -1178,6 +1178,77 @@
         "Investigates and gets details": "STRONG. Individual tenant meter readings matched against main-meter bills at three parks.",
         "Gathers information even if difficult or time-consuming": "NOW COVERED - this was the one gap. The script now says the matching was line by line and tedious, and that you did it anyway because it was the only way the gap surfaces. Do not skip that clause; it is the only place this criterion is earned."
       }
+    },
+    {
+      "id": "S42",
+      "title": "Seasonal Revenue Forecast Rebuild",
+      "setting": "10-park portfolio, mobile home and RV income",
+      "lps": [
+        "Deliver Results",
+        "Invent and Simplify",
+        "Dive Deep"
+      ],
+      "primary_lps": [
+        "Deliver Results",
+        "Invent and Simplify"
+      ],
+      "situation": [
+        "Ten parks with two very different income types: stable monthly mobile home rent, and highly seasonal short-term RV income.",
+        "The company forecast the whole portfolio on a 12-month trailing average, treating both the same way."
+      ],
+      "task": [
+        "In the summer peak, actuals were deviating from budget by as much as 25%.",
+        "Leadership was deciding on site maintenance and capital projects against a number that could not be trusted."
+      ],
+      "action": [
+        "Separated the two income streams - mobile home rent forecast as a stable monthly figure; RV income rebuilt driver-based off historical occupancy by month and daily site rate.",
+        "Aligned cash timing: RV deposits arrive in a different month from the revenue, so mapped when cash actually lands against fixed monthly costs.",
+        "Built three scenarios - conservative, base, aggressive - because leadership commits months ahead and needs a range, not a point.",
+        "Measured the result against actuals through the season, park by park."
+      ],
+      "result": [
+        "Forecast variance came down from about 25% to about 5%, measured against actuals across all ten parks.",
+        "Leadership could commit to work in advance rather than waiting to see what the summer produced."
+      ],
+      "open_questions": [
+        "Two figures from an earlier draft are unverified and are NOT in the script: roughly $180,000 of park upgrades accelerated on the strength of the forecast, and budget preparation going from about 4 weeks to about 5 days. Both would strengthen the Result. Confirm before using either.",
+        "Were weather and fuel prices actually drivers in the model, or is that from the draft? Fuel price genuinely moves RV travel, so it is plausible - but only say it if it was really in there."
+      ],
+      "spoken_star": {
+        "primary": "Deliver Results",
+        "also": [
+          "Invent and Simplify",
+          "Dive Deep"
+        ],
+        "s": "We had ten parks, and two very different types of income in them. Mobile home residents pay a stable monthly rent. RV guests are short-term and highly seasonal. The company forecast the whole portfolio using a twelve-month trailing average, which treats both of them the same way.",
+        "t": "In the summer peak, actual income was coming in as much as 25% away from budget. That is a large gap when leadership is deciding whether we can afford site maintenance and capital projects. I was asked to build a forecast we could actually plan against.",
+        "a": "The core problem was the trailing average. It smooths everything, so it cannot predict a season. It only reports one, late.\n\nSo I rebuilt it in three parts.\n\nFirst, I separated the two income streams. Mobile home rent is stable and forecasts easily on its own. RV income does not, so I built that from drivers instead — historical occupancy by month and the daily site rate — rather than from an average of what happened before.\n\nSecond, I aligned the cash timing. RV guests pay deposits ahead of their stay, so the cash arrives in a different month from the revenue. I mapped when the money actually lands against our fixed monthly costs, so we could see the cash position and not only the P&L.\n\nThird, I built three scenarios — conservative, base and aggressive. Not because I know which one will happen, but because leadership commits months in advance and needs the range, not a single number.\n\nThen I measured it. I compared the forecast against actuals through the season, park by park.",
+        "r": "Forecast variance came down from about 25% to about 5%, and I measured that against actuals across all ten parks. That is the number I care about most, because a forecast nobody checks against reality is just an opinion.\n\nWhat it changed in practice is that leadership could commit to work in advance instead of waiting to see what the summer produced. Before, planning was reactive, because the number could not be trusted."
+      },
+      "calc_sheet": {
+        "the_before": "12-month trailing average across the whole portfolio, mobile home and RV income treated identically.",
+        "why_that_fails": "A trailing average smooths seasonality by construction. Applied to a business where one income stream is stable and the other swings hard by month, it is guaranteed to be wrong in both peak and trough - and it cannot say which.",
+        "the_split": "Mobile home rent forecast as a stable monthly figure. RV income forecast driver-based: occupancy by month x daily site rate.",
+        "cash_timing": "RV deposits land before the stay, so cash and revenue fall in different months. Mapped against fixed monthly costs - payroll, utilities, mortgage.",
+        "scenarios": "Conservative, base, aggressive. The point is the range for advance commitments, not predicting the outcome.",
+        "the_measurement": "Forecast versus actual, through the season, park by park. 25% variance down to about 5%. CONFIRMED by the candidate that she measured this herself.",
+        "RETIRED_NUMBERS": "An earlier draft said 12 parks (it is 10), 3% variance (it is 5%), $180,000 of accelerated upgrades and a 4-week-to-5-day budget cycle. The park count and the variance are corrected. The other two are unverified - see open_questions - and are not in the script."
+      },
+      "pocket_answers": {
+        "How did you measure the 5%?": "Forecast against actuals, month by month through the season, park by park. Before the rebuild the peak months were coming in as much as 25% away from budget. After it, the gap was around 5%. I checked it rather than assuming it worked, because a forecast nobody measures is just an opinion.",
+        "Why was the trailing average wrong?": "Because it smooths by design. It takes twelve months and averages them, so a seasonal swing disappears into the middle. That is fine for a stable income stream and useless for one that triples in July. And because both streams were in the same average, the stable half was hiding how wrong the seasonal half was.",
+        "What were the drivers?": "Occupancy by month and the daily site rate. Those are the two things that actually determine RV income, and both are observable - I had years of booking history for occupancy, and the rates are ours.",
+        "Why three scenarios rather than one number?": "Because leadership was committing to work months ahead. A single number invites people to treat it as certain. A range makes the uncertainty part of the decision, which is what it actually is.",
+        "Isn't 5% still a big variance?": "For a seasonal short-stay business, no. Occupancy depends on weather and travel behaviour, neither of which I control. The useful comparison is where it started - 25% is a number you cannot plan against at all. 5% is one you can."
+      },
+      "delivery_notes": [
+        "THE FORECASTING LEAD. Your forecasting bench was two stories; this is now the strongest of them and it maps directly to the JD line about contributing to consolidated forecasts.",
+        "DO NOT USE IN THE SAME SLOT AS S32. Both are seasonal, both involve cash timing, both are these parks. S42 is the planning and forecasting story; S32 is the crisis and ownership story. Across a loop they reinforce each other. In one slot they blur.",
+        "'A forecast nobody checks against reality is just an opinion' is the line this story turns on. It is what separates building a model from owning a number.",
+        "The insight is the SPLIT, not the model. One stable income stream and one seasonal one, averaged together, means the stable half hides how wrong the seasonal half is. Say that - it is the part that shows judgement rather than technique.",
+        "NEVER say 12 parks or 3% variance. An earlier draft had both. It is ten parks and about 5%, and four other stories say ten.",
+        "Do not claim weather or fuel price drivers unless they were genuinely in the model - see open_questions."
+      ]
     }
   ],
   "lp_index": {
@@ -1198,7 +1269,8 @@
       "S8",
       "S19",
       "S32",
-      "S33"
+      "S33",
+      "S42"
     ],
     "Are Right, A Lot": [
       "S3",
@@ -1240,7 +1312,8 @@
       "S7",
       "S27",
       "S40",
-      "S41"
+      "S41",
+      "S42"
     ],
     "Have Backbone, Disagree and Commit": [
       "S3",
@@ -1254,7 +1327,8 @@
       "S19",
       "S28",
       "S31",
-      "S40"
+      "S40",
+      "S42"
     ],
     "Strive to be Earth's Best Employer": [],
     "Success and Scale Bring Broad Responsibility": []
@@ -2398,90 +2472,96 @@
       },
       {
         "rank": 3,
+        "id": "S42",
+        "tier": "tier1",
+        "why": "Your strongest forecasting story, and forecasting was the thinnest bench you had. Driver-based rebuild, cash timing, scenarios, and a measured result - 25% variance down to 5%. Maps straight onto the JD."
+      },
+      {
+        "rank": 4,
         "id": "S40",
         "tier": "tier1",
         "why": "Your only labour-cost story - hourly crews, hours tracked, the line forecast and its variance explained. That is the employee-expense bridge. Newest and least rehearsed, so highest risk per hour spent."
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "S30",
         "tier": "tier1",
         "why": "The only genuine failure. Non-substitutable: the bar raiser will ask, and nothing else can stand in."
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "S33",
         "tier": "tier1",
         "why": "Most-routed story in the bank - 9 questions, 6 as first choice. Invent and Simplify plus Learn and Be Curious."
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "S19",
         "tier": "tier2",
         "why": "Deliver Results lead. Ten entities, two weeks to one day, 0K of duplicates caught."
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "S27",
         "tier": "tier2",
         "why": "Best scale story: 10 properties, ~700 tenants. Lead with the noticing, not the learning."
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "S28",
         "tier": "tier2",
         "why": "The real Bias for Action default, not S6. Judgment under a hard close deadline."
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "S35",
         "tier": "tier2",
         "why": "Customer Obsession lead. Tenant-side, which nothing else in the bank is."
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "S8",
         "tier": "tier2",
         "why": "Only non-real-estate setting and the only human stakes in the loop. Use it mid-loop or it never gets heard."
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "S31",
         "tier": "tier3",
         "why": "Have Backbone with a real cost admitted - you owned the six hours a week the decision added."
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "S29",
         "tier": "tier3",
         "why": "Short and clean. Backup to S30 on Highest Standards; variant A only."
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "S6",
         "tier": "bench",
         "why": "Redundant with S33 and S32 - same tool-building arc, same park. Do not use it against a speed prompt."
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "S26",
         "tier": "bench",
         "why": "Only Frugality story, and Frugality is unlikely in this loop."
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "S5",
         "tier": "bench",
         "why": "Good Earn Trust backup. Know the two unequal installments cold or do not open it."
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "S3",
         "tier": "bench",
         "why": "Have Backbone backup behind S31 and S26."
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "S7",
         "tier": "bench",
         "why": "Superseded by S19, which is the same idea at ten times the scale."
@@ -2827,6 +2907,15 @@
           "Knowledge transfer"
         ],
         "one_line": "Reconciled four rent sources into one tracker and handed it over so it runs monthly."
+      },
+      "S42": {
+        "primary": "Forecasting",
+        "also": [
+          "Planning and budgeting",
+          "Revenue modelling",
+          "Scenario analysis"
+        ],
+        "one_line": "Replaced a trailing-average forecast with a driver-based one and measured the variance down from 25% to 5%."
       }
     },
     "by_function": {
@@ -2856,11 +2945,12 @@
         "depth": "STRONG"
       },
       "Forecasting": {
-        "lead": "S32",
+        "lead": "S42",
         "also": [
+          "S32",
           "S40"
         ],
-        "depth": "THINNEST - only two. The JD emphasises consolidated forecasts, so know both cold."
+        "depth": "NOW STRONG - S42 is a full forecasting rebuild with a measured accuracy result."
       },
       "Reporting to leadership": {
         "lead": "S27",
