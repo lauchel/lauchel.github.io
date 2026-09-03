@@ -689,7 +689,8 @@
         "Validation macro became standard for all future uploads, cutting verification time by 60%."
       ],
       "delivery_notes": [
-        "BEST FAILURE STORY IN THE BANK. The strongest beat is quoting the manager's criticism and agreeing with it - that reads as genuinely coachable."
+        "BEST FAILURE STORY IN THE BANK. The strongest beat is quoting the manager's criticism and agreeing with it - that reads as genuinely coachable.",
+        "Now the lead for Insist on the Highest Standards as well as the failure story. It is the best answer to 'a decision between standards and delivery' - you chose accurate over on-time and said so."
       ],
       "pocket_answers": {
         "You knew on day 8 - why wait until day 11 to tell your manager?": "I spent those days scoping the true extent so I could bring a specific ask instead of a vague alarm - I wanted to say 'four days and here's exactly what's wrong', not 'this might slip.' In hindsight I'd have flagged it on day 8 with the estimate to follow, and that's what I do now.",
@@ -699,9 +700,7 @@
       },
       "spoken_star": {
         "primary": "Earn Trust",
-        "also": [
-          "Insist on the Highest Standards"
-        ],
+        "also": [],
         "s": "I decided to migrate our property financial records into a central database — eighteen months of general ledger data — and I committed to doing it in two weeks.",
         "t": "I had to extract, standardize and upload every vendor payment log and capital expenditure record.",
         "a": "On day eight I hit a wall. Seven vendors were logged under multiple names, GL codes didn't match across files, and more than 150 transactions were sitting on the wrong P&L lines — operating expenses mixed in with capital expenditures. I had to audit past invoices to reclassify about $40K correctly.\n\nI went to my manager on day eleven and owned it. I'd underestimated how much cleaning the data needed before I committed to a timeline. I showed him what was done and asked for four more days rather than loading dirty data into a system people would rely on.",
@@ -712,7 +711,11 @@
         "what_broke": "7 vendors under multiple names, mismatched GL codes, 150+ transactions on the wrong P&L lines - about $40K of OpEx and CapEx to reclassify.",
         "timeline": "Problem found day 8, escalated day 11, delivered 4 days past the 2-week commitment.",
         "downstream": "The validation macro cut verification time about 60% on every upload after."
-      }
+      },
+      "primary_lps": [
+        "Earn Trust",
+        "Insist on the Highest Standards"
+      ]
     },
     {
       "id": "S31",
@@ -884,7 +887,7 @@
         "Richest Dive Deep detail in the bank - the debugging beats (circular dependency, Error 429, wrong meter math) are what sell it. Don't compress them away.",
         "TRIM TO THREE DEBUGGING BEATS, not six: the name-matching, the meter math, the 429 rate limit. Six will overrun four minutes and you will get cut off before the result.",
         "Promote the 'without changing the onsite manager's existing workflow' constraint into the spoken opening. Designing around someone else's habits is the Customer Obsession angle and it is currently buried in the Task.",
-        "Dive Deep was dropped from this story's primary tags - with S41, S34 and S40 on the bench, S33 does not need to carry it, and its arc is build-a-tool rather than investigate."
+        "Dive Deep was dropped from this story's primary tags - S41 and S40 carry it, and S33's arc is build-a-tool rather than investigate."
       ],
       "primary_lps": [
         "Invent and Simplify",
@@ -910,84 +913,6 @@
         "What happens if a meter reading is missing?": "The bill for that unit doesn't generate rather than generating wrong - I'd rather chase one reading than send 42 statements with one bad number in them.",
         "Why Google Sheets rather than Excel?": "The onsite manager needed to keep working in their own sheet without a license or a new tool, and Apps Script let me automate the PDF generation on the same platform.",
         "What happens when you're not there?": "It's four steps and they're documented - paste, let the ledger update, click, collect the PDFs. That was deliberate; a tool only one person can run isn't finished."
-      }
-    },
-    {
-      "id": "S34",
-      "title": "Concrete R&M Variance Investigation",
-      "setting": "Concrete apartment project",
-      "lps": [
-        "Dive Deep",
-        "Insist on the Highest Standards",
-        "Deliver Results",
-        "Earn Trust",
-        "Are Right, A Lot",
-        "Ownership"
-      ],
-      "situation": [
-        "During month-end variance analysis for Concrete apartment project, Repairs and Maintenance ran about $2,000 over a $20,000 monthly budget - a 10% negative variance, two months in a row.",
-        "Bleeding cash on unit turns - cleaning and painting when tenants move out."
-      ],
-      "task": [
-        "Property manager assumed more move-outs than usual.",
-        "Needed to figure out if this was volume or cost, and stop the overrun."
-      ],
-      "action": [
-        "Didn't accept the manager's assumption.",
-        "Exported raw QuickBooks GL data, ran pivot table by vendor and unit.",
-        "Found it was cost, not volume - still turning about 8 units per month, same as usual.",
-        "Primary painting vendor had raised per-unit price from $1,250 to $1,500 - 20% increase on standard 2-bedroom repaint - without renegotiating contract.",
-        "8 units x $250 overage = exactly the $2,000 monthly variance.",
-        "Property manager was approving invoices in a stack, didn't catch the rate creep.",
-        "Flagged to leadership immediately, paused vendor, partnered with operations to build standardized rate card."
-      ],
-      "result": [
-        "Recovered the vendor overpayment.",
-        "Property manager can only approve invoices matching the rate card.",
-        "R&M variance back to zero the following month.",
-        "Saved roughly $2,000/month in bloated vendor costs.",
-        "Proved the value of investigating at GL invoice level rather than accepting high-level assumptions."
-      ],
-      "delivery_notes": [
-        "Strongest Dive Deep story: a stated assumption, a disproof, and an arithmetic reconciliation that lands exactly on the variance. Default pick for 'tell me about a time you dug into data.'",
-        "Cut to Dive Deep primary, Highest Standards secondary. Six tags means reaching for this against prompts it only loosely fits.",
-        "The finding reconciles exactly - 8 units x $250 = the $2,000 variance. Say the multiplication out loud; exact reconciliation is rare and very convincing.",
-        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
-        "Do NOT open with the $100K/month capital budget on this story. It sets up a 'why care about $2,000' counter. R&M is opex and sits outside that number. If they ask about project scale, give $100K then - not before.",
-        "$20,000 budget, $2,000 over, 10% - all three are confirmed and they reconcile. Say the dollar figure before the percentage; the dollars are what tie to 8 x $250.",
-        "VOLUME VERSUS RATE IS THE HEADCOUNT BRIDGE. For an FP&A role with a headcount mandate, this is the story that proves the analysis transfers: the same question asked of a salary line is 'more heads than plan, or higher cost per head'. Say the parallel explicitly rather than hoping they see it."
-      ],
-      "primary_lps": [
-        "Dive Deep",
-        "Insist on the Highest Standards"
-      ],
-      "open_questions": [],
-      "spoken_star": {
-        "primary": "Dive Deep",
-        "also": [
-          "Insist on the Highest Standards",
-          "Deliver Results"
-        ],
-        "s": "During month-end variance analysis on an apartment project, repairs and maintenance came in about $2,000 over a $20,000 monthly budget — 10% over, and it was the second month running. We were bleeding cash on unit turns, the cleaning and painting between tenants.",
-        "t": "The property manager assumed we were just doing more move-outs than usual. I needed to know whether that was actually true, because cost and volume are very different problems.",
-        "a": "I exported the raw GL data from QuickBooks and ran a pivot by vendor and by unit. Volume was flat — still about eight turns a month, same as always.\n\nWhat had changed was our main painting vendor: they'd raised the price on a standard two-bedroom repaint from $1,250 to $1,500, a 20% increase, without renegotiating the contract. Eight units times $250 was exactly the $2,000 we were over.\n\nThe property manager had been approving invoices in a stack and hadn't caught the rate creep. I flagged it to leadership, we paused the vendor, and I worked with operations to build a standard rate card.",
-        "r": "We recovered the overpayment and stopped about $2,000 a month of overcharging. Invoices now only get approved if they match the rate card, and the variance was back to zero the following month."
-      },
-      "calc_sheet": {
-        "the_flag": "R&M budget was $20,000 a month. Actual came in about $2,000 over - a 10% negative variance, two months running. CONFIRMED by the candidate, not back-solved.",
-        "volume_vs_cost": "Turns held at about 8 a month - flat. So it was price, not volume.",
-        "the_reconciliation": "Vendor raised a standard 2-bedroom repaint from $1,250 to $1,500 - a 20% increase, $250 a unit. 8 x $250 = $2,000, exactly the variance.",
-        "the_fix": "Standard rate card; invoices only approved if they match it.",
-        "why_it_mattered": "$2,000/month = $24,000 a year, on one vendor at one property, and rate creep spreads. The R&M line is operating expense - it is NOT part of the project's $100K/month capital budget, so it is not '2% of budget'. It is 10% of the line it belongs to."
-      },
-      "pocket_answers": {
-        "How did you know volume was flat?": "The pivot broke it out by unit as well as vendor - the turn count was steady at about eight a month, same as prior periods. If it had been volume, that count would have moved.",
-        "Ten percent of what?": "About $2,000 over on the R&M line, so a monthly budget in the region of $20,000.",
-        "Why didn't the property manager catch it?": "They were approving invoices in batches against the budget line rather than per-unit rates. Nothing looked wrong at the total level - the increase only shows up when you compare price per repaint across months.",
-        "Did you recover the money?": "Yes, we recovered the overpayment, paused the vendor, and put a rate card in place so invoices only get approved when they match the agreed price.",
-        "Why not just switch vendors?": "That was on the table, but the issue was an unrenegotiated increase rather than the vendor's work. The rate card fixed the control gap, which would have existed with any vendor.",
-        "What was the R&M budget?": "$20,000 a month. We came in about $2,000 over, so 10% - and it was the second consecutive month, which is what made it worth chasing rather than writing off as timing.",
-        "Why did a $2,000 item deserve your time?": "Because it wasn't $2,000 - it was $2,000 a month and climbing. That's $24,000 a year on one vendor at one property, and nothing in the process would have caught it spreading. It's also 10% of the R&M line, not a rounding error against it."
       }
     },
     {
@@ -1115,10 +1040,10 @@
       },
       "delivery_notes": [
         "THE VALUE IS LOOKING PAST THE OBVIOUS TWO. Everyone checks volume and rate. This is the story where both came back clean and you kept going - that is what separates a checklist from an investigation.",
-        "PAIRS WITH S34 for an FP&A loop: same question, opposite answer. There the variance was rate; here it was neither crew nor rate but duration. Told together they show a method rather than a lucky catch. Do not tell both in the same slot, but referencing the pair across a loop is fine.",
+        "PAIRS WITH S41 for an FP&A loop: same question, different answer. There it was loss and a broken pass-through; here it was neither crew nor rate but duration. Told across a loop they show a method rather than a lucky find - do not put them in the same slot.",
         "THIS IS THE LABOUR-LINE STORY. For the WW Ops Finance role it is the closest thing to the headcount half of the mandate - forecasting a workforce line, tracking spend against it, and diagnosing the variance. Lead with it if the question is about employee expense.",
         "SAY 'DURATION' EXPLICITLY as the third driver. Naming crew, rate and time as the three things that move a labour line shows you think in drivers, which is the language an FP&A interviewer works in.",
-        "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S34's rate card, S3's self-funding question. Say what changed, not just that something did."
+        "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S41's meter tracker, S3's self-funding question. Say what changed, not just that something did."
       ],
       "open_questions": []
     },
@@ -1132,7 +1057,8 @@
         "Ownership"
       ],
       "primary_lps": [
-        "Dive Deep"
+        "Dive Deep",
+        "Insist on the Highest Standards"
       ],
       "situation": [
         "Monthly budget review across a 10-park RV and mobile home portfolio. Water cost jumped 18% at three parks with no change in occupancy."
@@ -1157,7 +1083,6 @@
       "spoken_star": {
         "primary": "Dive Deep",
         "also": [
-          "Insist on the Highest Standards",
           "Ownership"
         ],
         "s": "I handle monthly finances and utilities for a portfolio of ten RV and mobile home parks. In a monthly budget review, water cost jumped 18% at three of them, and occupancy hadn't moved.",
@@ -1185,7 +1110,7 @@
         "How would you catch it faster next time?": "That's what the tracker does. Main-meter usage against summed tenant meters, every month, with the variance shown as a percentage. Anything above a few percent is either a leak or a billing error, and both are worth a look."
       },
       "delivery_notes": [
-        "LEAD DIVE DEEP STORY. It has everything S34 has plus portfolio scale and two distinct root causes from one investigation - one physical, one systems.",
+        "LEAD DIVE DEEP STORY, and the lead for Insist on the Highest Standards alongside S30. Portfolio scale, an assumption from people closer to the asset, and two distinct root causes from one investigation.",
         "Do not say the managers were wrong. Say they were right about the rate rise and had missed that it shouldn't have reached us. That framing is both more accurate and more generous, and it is what leads to the billing finding.",
         "NEVER say $42,000, $66,000, or $1.1 million. Those numbers do not survive a question about the size of the water bill. See calc_sheet.RETIRED_NUMBERS.",
         "Say '$24,000 a year, permanently' before the leak figure. It is the recurring one and it is the one that survives any probe.",
@@ -1204,7 +1129,6 @@
     "Ownership": [
       "S29",
       "S32",
-      "S34",
       "S41"
     ],
     "Invent and Simplify": [
@@ -1218,7 +1142,6 @@
     "Are Right, A Lot": [
       "S3",
       "S26",
-      "S34",
       "S35"
     ],
     "Learn and Be Curious": [
@@ -1231,7 +1154,6 @@
       "S5",
       "S29",
       "S30",
-      "S34",
       "S41"
     ],
     "Think Big": [
@@ -1250,14 +1172,12 @@
       "S5",
       "S29",
       "S30",
-      "S31",
-      "S34"
+      "S31"
     ],
     "Dive Deep": [
       "S5",
       "S7",
       "S27",
-      "S34",
       "S40",
       "S41"
     ],
@@ -1273,7 +1193,6 @@
       "S19",
       "S28",
       "S31",
-      "S34",
       "S40"
     ],
     "Strive to be Earth's Best Employer": [],
@@ -1286,7 +1205,7 @@
     "Bias for Action is KNOWN WEAK - the candidate self-identified this as an underperforming LP in a prior loop. The bench is nominally 3 (S6, S28, S32) but effectively 2: S6 is tagged BFA in the weak 'built it unasked' sense and misreads as a tool-building story against a speed prompt. S28 is the real default; S32 is the strong backup (contractor renegotiated, LOC drawn, gap closed in-month).",
     "14 of 15 stories are set at the same real-estate firm; S8 (Signature Photo) is the only outside setting. Across a 5-interviewer loop the setting will repeat - vary the property and the stakeholder so the stories don't blur together.",
     "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss.",
-    "Two benches thinned during the audit and are now at two stories each. Think Big is S27 and S32 after S6's tag was removed (a one-park dashboard is execution, not scale-thinking). Are Right, A Lot is S26 and S34 after S5's was removed (S5 is a story about being wrong twice). Both are correct as retagged, but neither has a third if a loop probes twice."
+    "Two benches are thin. Think Big is S27 and S32 after S6's tag was removed (a one-park dashboard is execution, not scale-thinking). Are Right, A Lot is S26, S3 and S35 after S5's was removed (S5 is a story about being wrong twice) and S34's retirement. S26 now leads it. Neither bench has real depth if a loop probes twice."
   ],
   "usage_rules": [
     "Never use both S29 variants with the same interviewer.",
@@ -1305,14 +1224,14 @@
         "slot": 1,
         "likely_focus": "Hiring manager - Dive Deep, Deliver Results",
         "primary": {
-          "id": "S34",
+          "id": "S40",
           "setting": "Concrete"
         },
         "second": {
           "id": "S19",
           "setting": "Packwood"
         },
-        "note": "S34 is the strongest story in the bank and reconciles exactly. Open with it."
+        "note": "S41 is the strongest story in the bank - portfolio scale, two distinct root causes, and the leak reconciles off the meter reading. Open with it."
       },
       {
         "slot": 2,
@@ -1390,12 +1309,12 @@
   "fallback_routing": {
     "why": "Three principles have no story built for them after the audit retagging. Each is covered by re-entering an existing story on a different beat - the facts do not change, only which moment you open on.",
     "Are Right, A Lot": {
-      "lead": "S34",
-      "backup": "S26 or S3",
-      "reframe": "Open on the judgement, not the pivot table. 'The property manager had a theory - more move-outs than usual. I didn't think that was right, because if it were volume we'd have seen more turns and I hadn't seen that in the schedule. So I went and checked.' Then the GL work, then the exact reconciliation.",
-      "why_it_works": "Are Right, A Lot tests judgement against incomplete information, and S34 is the only story where the candidate formed a contrary view and was unambiguously proved right, to the dollar.",
-      "backup_reframe": "S26: 'Ownership's number was 50%. My read was that was too high, and rather than argue from instinct I went and pulled comparable data.' Own the miss - the estimate was 22% and actual came in 30%. Say so. The judgement that mattered was that 50% didn't justify $6,000, and that held.",
-      "collision": "S34 is also the lead for Dive Deep. If Dive Deep has already come up, go to S26, or to S3 - it now qualifies, since you argued against the cheaper option on risk grounds and were proved right."
+      "lead": "S26",
+      "backup": "S3 or S35",
+      "reframe": "Open on the judgement, not the adapters. 'Ownership's number was 50% uplift. My read was that was too high, and rather than argue from instinct I pulled comparable data.' Then the two options and the payback. Own the miss openly - you estimated 22% and actual came in 30% - because being beaten by your own forecast is still being right about the decision, and saying so is what makes the story credible.",
+      "why_it_works": "Are Right, A Lot tests judgement against incomplete information. S26 is the cleanest case in the bank: a contrary view formed against the people above you, argued from data rather than instinct, and validated by the outcome - the uplift beat your own estimate and the $5,440 of avoided spend was real.",
+      "backup_reframe": "S3: you argued against the cheaper option on risk grounds and were proved right. S35: you judged that the friction was the payment method rather than the tenants, and 70% moved online.",
+      "collision": "S26 is only tagged Frugality, Customer Obsession, Have Backbone and Are Right A Lot, so it rarely collides. If Frugality has already taken it, go to S3."
     },
     "Think Big": {
       "lead": "S27",
@@ -1712,8 +1631,7 @@
           "S31"
         ],
         "6": [
-          "S5",
-          "S34"
+          "S5"
         ],
         "7": [],
         "8": [],
@@ -1745,17 +1663,20 @@
       },
       "Dive Deep": {
         "1": [
-          "S34"
+          "S41",
+          "S27"
         ],
         "2": [
-          "S34"
+          "S41",
+          "S40"
         ],
         "3": [
           "S7",
           "S19"
         ],
         "4": [
-          "S34"
+          "S41",
+          "S19"
         ],
         "5": [
           "S27"
@@ -1864,7 +1785,8 @@
       },
       "Insist on the Highest Standards": {
         "1": [
-          "S34"
+          "S30",
+          "S29"
         ],
         "2": [
           "S29"
@@ -1873,7 +1795,7 @@
           "S30"
         ],
         "4": [
-          "S34"
+          "S30"
         ],
         "5": [
           "S5"
@@ -1991,7 +1913,91 @@
     ],
     "dropped": {
       "S38": "Built, then dropped. Shared six anchors with S28 - close, CPA, tax filing, late penalty, missing vendor invoices, Deliver Results - and contradicted it: S28 accrues around missing invoices and hits the date, S38 waits and misses it. It also carried no business metric and reported a missed deadline as its outcome. Its two good elements, the deadline-flexibility criterion and the closed-books dependency, moved to S28's pocket answers.",
-      "S36": "Chapter 11 schedules - declined by the candidate, who does not want to raise bankruptcy work in interviews. Do not propose it again."
+      "S36": "Chapter 11 schedules - declined by the candidate, who does not want to raise bankruptcy work in interviews. Do not propose it again.",
+      "S34": {
+        "id": "S34",
+        "title": "Concrete R&M Variance Investigation",
+        "status": "retired 2026-09-03",
+        "why_retired": "Superseded by S41. Five shared beats (variance flagged at monthly review; operational staff supply an assumption; raw data disproves it; cause is a pricing failure; a control is installed) and S41 carries them at portfolio scale with two root causes instead of one. Every question S34 was routed to is answered better by S41 (Dive Deep) or S30 (Highest Standards). Its unique asset - volume-versus-rate as the headcount bridge - survives in S40.",
+        "archived_story": {
+          "id": "S34",
+          "title": "Concrete R&M Variance Investigation",
+          "setting": "Concrete apartment project",
+          "lps": [
+            "Dive Deep",
+            "Insist on the Highest Standards",
+            "Deliver Results",
+            "Earn Trust",
+            "Are Right, A Lot",
+            "Ownership"
+          ],
+          "situation": [
+            "During month-end variance analysis for Concrete apartment project, Repairs and Maintenance ran about $2,000 over a $20,000 monthly budget - a 10% negative variance, two months in a row.",
+            "Bleeding cash on unit turns - cleaning and painting when tenants move out."
+          ],
+          "task": [
+            "Property manager assumed more move-outs than usual.",
+            "Needed to figure out if this was volume or cost, and stop the overrun."
+          ],
+          "action": [
+            "Didn't accept the manager's assumption.",
+            "Exported raw QuickBooks GL data, ran pivot table by vendor and unit.",
+            "Found it was cost, not volume - still turning about 8 units per month, same as usual.",
+            "Primary painting vendor had raised per-unit price from $1,250 to $1,500 - 20% increase on standard 2-bedroom repaint - without renegotiating contract.",
+            "8 units x $250 overage = exactly the $2,000 monthly variance.",
+            "Property manager was approving invoices in a stack, didn't catch the rate creep.",
+            "Flagged to leadership immediately, paused vendor, partnered with operations to build standardized rate card."
+          ],
+          "result": [
+            "Recovered the vendor overpayment.",
+            "Property manager can only approve invoices matching the rate card.",
+            "R&M variance back to zero the following month.",
+            "Saved roughly $2,000/month in bloated vendor costs.",
+            "Proved the value of investigating at GL invoice level rather than accepting high-level assumptions."
+          ],
+          "delivery_notes": [
+            "Strongest Dive Deep story: a stated assumption, a disproof, and an arithmetic reconciliation that lands exactly on the variance. Default pick for 'tell me about a time you dug into data.'",
+            "Cut to Dive Deep primary, Highest Standards secondary. Six tags means reaching for this against prompts it only loosely fits.",
+            "The finding reconciles exactly - 8 units x $250 = the $2,000 variance. Say the multiplication out loud; exact reconciliation is rare and very convincing.",
+            "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
+            "Do NOT open with the $100K/month capital budget on this story. It sets up a 'why care about $2,000' counter. R&M is opex and sits outside that number. If they ask about project scale, give $100K then - not before.",
+            "$20,000 budget, $2,000 over, 10% - all three are confirmed and they reconcile. Say the dollar figure before the percentage; the dollars are what tie to 8 x $250.",
+            "VOLUME VERSUS RATE IS THE HEADCOUNT BRIDGE. For an FP&A role with a headcount mandate, this is the story that proves the analysis transfers: the same question asked of a salary line is 'more heads than plan, or higher cost per head'. Say the parallel explicitly rather than hoping they see it."
+          ],
+          "primary_lps": [
+            "Dive Deep",
+            "Insist on the Highest Standards"
+          ],
+          "open_questions": [],
+          "spoken_star": {
+            "primary": "Dive Deep",
+            "also": [
+              "Insist on the Highest Standards",
+              "Deliver Results"
+            ],
+            "s": "During month-end variance analysis on an apartment project, repairs and maintenance came in about $2,000 over a $20,000 monthly budget — 10% over, and it was the second month running. We were bleeding cash on unit turns, the cleaning and painting between tenants.",
+            "t": "The property manager assumed we were just doing more move-outs than usual. I needed to know whether that was actually true, because cost and volume are very different problems.",
+            "a": "I exported the raw GL data from QuickBooks and ran a pivot by vendor and by unit. Volume was flat — still about eight turns a month, same as always.\n\nWhat had changed was our main painting vendor: they'd raised the price on a standard two-bedroom repaint from $1,250 to $1,500, a 20% increase, without renegotiating the contract. Eight units times $250 was exactly the $2,000 we were over.\n\nThe property manager had been approving invoices in a stack and hadn't caught the rate creep. I flagged it to leadership, we paused the vendor, and I worked with operations to build a standard rate card.",
+            "r": "We recovered the overpayment and stopped about $2,000 a month of overcharging. Invoices now only get approved if they match the rate card, and the variance was back to zero the following month."
+          },
+          "calc_sheet": {
+            "the_flag": "R&M budget was $20,000 a month. Actual came in about $2,000 over - a 10% negative variance, two months running. CONFIRMED by the candidate, not back-solved.",
+            "volume_vs_cost": "Turns held at about 8 a month - flat. So it was price, not volume.",
+            "the_reconciliation": "Vendor raised a standard 2-bedroom repaint from $1,250 to $1,500 - a 20% increase, $250 a unit. 8 x $250 = $2,000, exactly the variance.",
+            "the_fix": "Standard rate card; invoices only approved if they match it.",
+            "why_it_mattered": "$2,000/month = $24,000 a year, on one vendor at one property, and rate creep spreads. The R&M line is operating expense - it is NOT part of the project's $100K/month capital budget, so it is not '2% of budget'. It is 10% of the line it belongs to."
+          },
+          "pocket_answers": {
+            "How did you know volume was flat?": "The pivot broke it out by unit as well as vendor - the turn count was steady at about eight a month, same as prior periods. If it had been volume, that count would have moved.",
+            "Ten percent of what?": "About $2,000 over on the R&M line, so a monthly budget in the region of $20,000.",
+            "Why didn't the property manager catch it?": "They were approving invoices in batches against the budget line rather than per-unit rates. Nothing looked wrong at the total level - the increase only shows up when you compare price per repaint across months.",
+            "Did you recover the money?": "Yes, we recovered the overpayment, paused the vendor, and put a rate card in place so invoices only get approved when they match the agreed price.",
+            "Why not just switch vendors?": "That was on the table, but the issue was an unrenegotiated increase rather than the vendor's work. The rate card fixed the control gap, which would have existed with any vendor.",
+            "What was the R&M budget?": "$20,000 a month. We came in about $2,000 over, so 10% - and it was the second consecutive month, which is what made it worth chasing rather than writing off as timing.",
+            "Why did a $2,000 item deserve your time?": "Because it wasn't $2,000 - it was $2,000 a month and climbing. That's $24,000 a year on one vendor at one property, and nothing in the process would have caught it spreading. It's also 10% of the R&M line, not a rounding error against it."
+          }
+        }
+      }
     }
   },
   "target_roles_detail": {
@@ -2002,7 +2008,7 @@
         "Month-end / quarterly / annual planning cycles": [
           "S28",
           "S19",
-          "S34"
+          "S41"
         ],
         "Cross-check data against multiple sources for accuracy": [
           "S19",
@@ -2028,7 +2034,7 @@
         "Documentation and SOPs for knowledge transfer": [
           "S33",
           "S6",
-          "S34"
+          "S41"
         ]
       },
       "loop_plan": [
@@ -2070,7 +2076,7 @@
           "focus": "Senior - Ownership, Dive Deep, Bias for Action",
           "stories": [
             "S32 (Packwood)",
-            "S34 (Concrete)",
+            "S40 (Mercer Island)",
             "S28 (month-end)"
           ]
         }
@@ -2133,11 +2139,11 @@
         "payroll accrual": "Pay periods rarely align with month-end, so wages earned but unpaid at the cutoff are accrued into the month the work happened and reversed when paid. Without it, monthly labour cost moves for calendar reasons and variance analysis cannot separate a timing artefact from a real overspend.",
         "fully loaded rate": "Base salary plus employer taxes, benefits, and equity or bonus. Headcount forecasts are built on fully loaded cost, not base - using base understates the line badly.",
         "timing is most of the variance": "A req filled in Q3 costs a quarter, not a year. Most headcount variance to plan comes from hiring earlier or later than assumed rather than from paying a different rate.",
-        "the two drivers": "Heads and rate. Every headcount variance question reduces to which one moved - the same question S34 answers about a vendor line.",
+        "the two drivers": "Heads and rate - and duration, which is the one people forget. Every headcount variance reduces to which moved. That is exactly the question S40 answers on a labour line: crew and rate were both as planned, so it was duration.",
         "attrition": "Forecasts assume a leaver rate; under-assuming it overstates cost, over-assuming it hides an under-hiring problem.",
         "productivity metrics": "Units per labour hour, cost per unit, or hours per unit of output. The JD's 'workforce productivity' means these."
       },
-      "loop_note": "S40 leads slot one: it is the only labour-line story and the role is half employee expense, so it should reach the hiring manager. S34 moves to slot five - the two pair well across a loop but must not share a slot."
+      "loop_note": "S41 leads slot one: portfolio-level variance work with two root causes, which is the closest thing in the bank to what this team does daily. S40 moves to slot five as the labour-line story - the role is half employee expense, so it must reach someone. The two pair well across a loop but must not share a slot."
     }
   },
   "scale_framing": {
@@ -2165,102 +2171,96 @@
       },
       {
         "rank": 2,
-        "id": "S34",
-        "tier": "tier1",
-        "why": "Backup Dive Deep behind S41. Still the best answer to a variance-specific or controls prompt, and the 8 x $250 tie-out is exact."
-      },
-      {
-        "rank": 3,
         "id": "S32",
         "tier": "tier1",
         "why": "Highest utility story you own: 8 questions, 7 of them as first choice. Carries Ownership AND Bias for Action, your weakest LP."
       },
       {
-        "rank": 4,
+        "rank": 3,
         "id": "S40",
         "tier": "tier1",
         "why": "Only labour/headcount story, and headcount FP&A is half the team remit. Newest and least rehearsed - highest risk per hour spent."
       },
       {
-        "rank": 5,
+        "rank": 4,
         "id": "S30",
         "tier": "tier1",
         "why": "The only genuine failure. Non-substitutable: the bar raiser will ask, and nothing else can stand in."
       },
       {
-        "rank": 6,
+        "rank": 5,
         "id": "S33",
         "tier": "tier1",
         "why": "Most-routed story in the bank - 9 questions, 6 as first choice. Invent and Simplify plus Learn and Be Curious."
       },
       {
-        "rank": 7,
+        "rank": 6,
         "id": "S19",
         "tier": "tier2",
         "why": "Deliver Results lead. Ten entities, two weeks to one day, 0K of duplicates caught."
       },
       {
-        "rank": 8,
+        "rank": 7,
         "id": "S27",
         "tier": "tier2",
         "why": "Best scale story: 10 properties, ~700 tenants. Lead with the noticing, not the learning."
       },
       {
-        "rank": 9,
+        "rank": 8,
         "id": "S28",
         "tier": "tier2",
         "why": "The real Bias for Action default, not S6. Judgment under a hard close deadline."
       },
       {
-        "rank": 10,
+        "rank": 9,
         "id": "S35",
         "tier": "tier2",
         "why": "Customer Obsession lead. Tenant-side, which nothing else in the bank is."
       },
       {
-        "rank": 11,
+        "rank": 10,
         "id": "S8",
         "tier": "tier2",
         "why": "Only non-real-estate setting and the only human stakes in the loop. Use it mid-loop or it never gets heard."
       },
       {
-        "rank": 12,
+        "rank": 11,
         "id": "S31",
         "tier": "tier3",
-        "why": "Have Backbone with a real cost admitted. Strong, but overlaps S34 on setting."
+        "why": "Have Backbone with a real cost admitted - you owned the six hours a week the decision added."
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "S29",
         "tier": "tier3",
         "why": "Short and clean. Backup to S30 on Highest Standards; variant A only."
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "S6",
         "tier": "bench",
         "why": "Redundant with S33 and S32 - same tool-building arc, same park. Do not use it against a speed prompt."
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "S26",
         "tier": "bench",
         "why": "Only Frugality story, and Frugality is unlikely in this loop."
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "S5",
         "tier": "bench",
         "why": "Good Earn Trust backup. Know the two unequal installments cold or do not open it."
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "S3",
         "tier": "bench",
         "why": "Have Backbone backup behind S31 and S26."
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "S7",
         "tier": "bench",
         "why": "Superseded by S19, which is the same idea at ten times the scale."
