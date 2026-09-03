@@ -1181,8 +1181,8 @@
     },
     {
       "id": "S42",
-      "title": "Seasonal Revenue Forecast Rebuild",
-      "setting": "10-park portfolio, mobile home and RV income",
+      "title": "Rolling Cash Flow and Seasonal Forecast Rebuild",
+      "setting": "10-park portfolio, 700 pads, mixed mobile home and RV income",
       "lps": [
         "Deliver Results",
         "Invent and Simplify",
@@ -1193,26 +1193,29 @@
         "Invent and Simplify"
       ],
       "situation": [
-        "Ten parks with two very different income types: stable monthly mobile home rent, and highly seasonal short-term RV income.",
-        "The company forecast the whole portfolio on a 12-month trailing average, treating both the same way."
+        "Ten parks, about 700 tenant pads. Two income types: stable long-term mobile home rent and highly seasonal short-term RV income.",
+        "The annual budget divided the annual total into twelve equal months, ignoring that split entirely."
       ],
       "task": [
-        "In the summer peak, actuals were deviating from budget by as much as 25%.",
-        "Leadership was deciding on site maintenance and capital projects against a number that could not be trusted."
+        "First budget-to-actual review showed monthly revenue and operating cash flow deviating from forecast by up to 25%.",
+        "Because the forecast was unreliable, leadership held back routine maintenance out of caution."
       ],
       "action": [
-        "Separated the two income streams - mobile home rent forecast as a stable monthly figure; RV income rebuilt driver-based off historical occupancy by month and daily site rate.",
-        "Aligned cash timing: RV deposits arrive in a different month from the revenue, so mapped when cash actually lands against fixed monthly costs.",
-        "Built three scenarios - conservative, base, aggressive - because leadership commits months ahead and needs a range, not a point.",
-        "Measured the result against actuals through the season, park by park."
+        "Extracted three years of pad-level billing data across all 700 units from the property management system.",
+        "Identified the core flaw: the budget treated seasonal RV site revenue identically to flat mobile home rent, so it was too high all winter and far too low at peak.",
+        "Rebuilt driver-based - RV separated from long-term leases, seasonal occupancy curves by month, actual daily site rates.",
+        "Modelled cash collection timing separately from revenue recognition.",
+        "Built it as a rolling 12-month forecast rather than a fixed annual budget.",
+        "Measured forecast against actuals, month by month and park by park."
       ],
       "result": [
-        "Forecast variance came down from about 25% to about 5%, measured against actuals across all ten parks.",
-        "Leadership could commit to work in advance rather than waiting to see what the summer produced."
+        "Monthly revenue and operating expense variance reduced from about 25% to about 5% across all ten parks, measured.",
+        "Leadership could schedule maintenance and improvements in advance instead of holding back out of caution."
       ],
       "open_questions": [
-        "Two figures from an earlier draft are unverified and are NOT in the script: roughly $180,000 of park upgrades accelerated on the strength of the forecast, and budget preparation going from about 4 weeks to about 5 days. Both would strengthen the Result. Confirm before using either.",
-        "Were weather and fuel prices actually drivers in the model, or is that from the draft? Fuel price genuinely moves RV travel, so it is plausible - but only say it if it was really in there."
+        "THE 60-DAY UTILITY LAG - CONFIRM AND ADD. A draft described master-metered utility costs spiking in winter, with tenant pass-through reimbursements arriving about 60 days later, creating a cash deficit unrelated to profitability. If that is real it is the strongest single detail in the story and it is consistent with S41's pass-through mechanic. It is left out only because it has not been confirmed.",
+        "Was there a measurable improvement to the re-forecasting or budget process, and what is the real figure? Two different claims have appeared. Leave it out until one is confirmed.",
+        "Did the forecast let the company bring forward a specific amount of park improvements? $180K and $120K have both appeared. Leave out until confirmed."
       ],
       "spoken_star": {
         "primary": "Deliver Results",
@@ -1220,33 +1223,36 @@
           "Invent and Simplify",
           "Dive Deep"
         ],
-        "s": "We had ten parks, and two very different types of income in them. Mobile home residents pay a stable monthly rent. RV guests are short-term and highly seasonal. The company forecast the whole portfolio using a twelve-month trailing average, which treats both of them the same way.",
-        "t": "In the summer peak, actual income was coming in as much as 25% away from budget. That is a large gap when leadership is deciding whether we can afford site maintenance and capital projects. I was asked to build a forecast we could actually plan against.",
-        "a": "The core problem was the trailing average. It smooths everything, so it cannot predict a season. It only reports one, late.\n\nSo I rebuilt it in three parts.\n\nFirst, I separated the two income streams. Mobile home rent is stable and forecasts easily on its own. RV income does not, so I built that from drivers instead — historical occupancy by month and the daily site rate — rather than from an average of what happened before.\n\nSecond, I aligned the cash timing. RV guests pay deposits ahead of their stay, so the cash arrives in a different month from the revenue. I mapped when the money actually lands against our fixed monthly costs, so we could see the cash position and not only the P&L.\n\nThird, I built three scenarios — conservative, base and aggressive. Not because I know which one will happen, but because leadership commits months in advance and needs the range, not a single number.\n\nThen I measured it. I compared the forecast against actuals through the season, park by park.",
-        "r": "Forecast variance came down from about 25% to about 5%, and I measured that against actuals across all ten parks. That is the number I care about most, because a forecast nobody checks against reality is just an opinion.\n\nWhat it changed in practice is that leadership could commit to work in advance instead of waiting to see what the summer produced. Before, planning was reactive, because the number could not be trusted."
+        "s": "We had ten parks and about seven hundred tenant pads. The business is really two businesses: long-term mobile home residents paying a stable monthly rent, and short-term RV guests, who are highly seasonal. Our budget did not reflect that at all. It took the annual total and divided it into twelve equal months.",
+        "t": "In my first budget-to-actual review, monthly revenue and operating cash flow were coming in as much as 25% away from forecast. And because the forecast could not be trusted, leadership was being cautious in ways that cost us — holding back routine park maintenance rather than risk running short.",
+        "a": "The flat twelve-month split was the problem. It cannot be right in any month, because it assumes every month is the same and none of them are.\n\nI pulled three years of pad-level billing data out of our property management software, across all seven hundred units, and looked at how the two income types actually behaved.\n\nThe first flaw was that the budget treated RV site revenue exactly like long-term mobile home rent. Mobile home rent really is close to flat month to month. RV income is not — it concentrates heavily in the summer, and averaging it across twelve months means the forecast is too high all winter and far too low in the peak.\n\nSo I rebuilt it driver-based. I separated the RV sites from the long-term leases and built seasonal occupancy curves for the pads, using historical occupancy by month and our daily site rates, rather than an annual average divided by twelve.\n\nThen I modelled the cash timing separately from the revenue, because they do not happen in the same month. And I built it as a rolling twelve-month forecast rather than a fixed annual budget, so it updates as actuals come in.\n\nThen I measured it — forecast against actuals, month by month, park by park.",
+        "r": "Monthly revenue and operating expense variance came down from about 25% to about 5%, measured against actuals across all ten parks. That is the number I care about most, because a forecast nobody checks against reality is just an opinion.\n\nWhat changed in practice is that leadership stopped being cautious by default. They could schedule maintenance and improvements in advance, because the forecast told them what the cash position would actually be, rather than a flat number that was wrong every month."
       },
       "calc_sheet": {
-        "the_before": "12-month trailing average across the whole portfolio, mobile home and RV income treated identically.",
-        "why_that_fails": "A trailing average smooths seasonality by construction. Applied to a business where one income stream is stable and the other swings hard by month, it is guaranteed to be wrong in both peak and trough - and it cannot say which.",
+        "the_before": "The annual budget total divided into twelve equal months. Not a trailing average - a flat 1/12 split. This is the detail that makes the story land: it is obviously wrong once said out loud, which is why it survived so long. Nobody looked at it.",
+        "why_that_fails": "It assumes every month is identical. For mobile home rent that is nearly true. For RV income it is badly false - the income concentrates in summer. Averaged together, the forecast is too high all winter and far too low at peak, and the stable half hides how wrong the seasonal half is.",
         "the_split": "Mobile home rent forecast as a stable monthly figure. RV income forecast driver-based: occupancy by month x daily site rate.",
         "cash_timing": "RV deposits land before the stay, so cash and revenue fall in different months. Mapped against fixed monthly costs - payroll, utilities, mortgage.",
         "scenarios": "Conservative, base, aggressive. The point is the range for advance commitments, not predicting the outcome.",
         "the_measurement": "Forecast versus actual, through the season, park by park. 25% variance down to about 5%. CONFIRMED by the candidate that she measured this herself.",
-        "RETIRED_NUMBERS": "An earlier draft said 12 parks (it is 10), 3% variance (it is 5%), $180,000 of accelerated upgrades and a 4-week-to-5-day budget cycle. The park count and the variance are corrected. The other two are unverified - see open_questions - and are not in the script."
+        "RETIRED_NUMBERS": "Drafts of this story have carried figures that changed between versions, which means they are not remembered. DO NOT USE: 12 parks (it is 10); 3% variance (the candidate confirmed 5%); $180,000 and $120,000 of accelerated improvements (two different values for the same claim); '4 weeks to 5 days' and '3 days to 2 hours' (two different claims about process time). Only 25% to 5% is confirmed and measured.",
+        "the_data": "Three years of pad-level billing data across all 700 units, from the property management software."
       },
       "pocket_answers": {
-        "How did you measure the 5%?": "Forecast against actuals, month by month through the season, park by park. Before the rebuild the peak months were coming in as much as 25% away from budget. After it, the gap was around 5%. I checked it rather than assuming it worked, because a forecast nobody measures is just an opinion.",
+        "How did you measure the 5%?": "Forecast against actuals, month by month through the year, park by park. Before the rebuild, monthly variance was running as high as 25%. After it, around 5%. I checked rather than assuming it worked, because a forecast nobody measures is just an opinion.",
         "Why was the trailing average wrong?": "Because it smooths by design. It takes twelve months and averages them, so a seasonal swing disappears into the middle. That is fine for a stable income stream and useless for one that triples in July. And because both streams were in the same average, the stable half was hiding how wrong the seasonal half was.",
         "What were the drivers?": "Occupancy by month and the daily site rate. Those are the two things that actually determine RV income, and both are observable - I had years of booking history for occupancy, and the rates are ours.",
         "Why three scenarios rather than one number?": "Because leadership was committing to work months ahead. A single number invites people to treat it as certain. A range makes the uncertainty part of the decision, which is what it actually is.",
-        "Isn't 5% still a big variance?": "For a seasonal short-stay business, no. Occupancy depends on weather and travel behaviour, neither of which I control. The useful comparison is where it started - 25% is a number you cannot plan against at all. 5% is one you can."
+        "Isn't 5% still a big variance?": "For a seasonal short-stay business, no. Occupancy depends on weather and travel behaviour, neither of which I control. The useful comparison is where it started - 25% is a number you cannot plan against at all. 5% is one you can.",
+        "Why was a flat twelve-month split so wrong?": "Because it assumes every month is the same, and ours are not. Mobile home rent genuinely is close to flat. RV income concentrates in the summer. Put them in one average and the forecast is too high every winter month and far too low at peak — and the stable half disguises how wrong the seasonal half is.",
+        "Why a rolling forecast rather than a better annual budget?": "Because a fixed annual budget is a prediction made once and then defended. A rolling forecast updates as actuals arrive, so by March it knows things that January did not. For a seasonal business that matters, because the summer is where the money is and you learn about it as the bookings come in."
       },
       "delivery_notes": [
         "THE FORECASTING LEAD. Your forecasting bench was two stories; this is now the strongest of them and it maps directly to the JD line about contributing to consolidated forecasts.",
         "DO NOT USE IN THE SAME SLOT AS S32. Both are seasonal, both involve cash timing, both are these parks. S42 is the planning and forecasting story; S32 is the crisis and ownership story. Across a loop they reinforce each other. In one slot they blur.",
         "'A forecast nobody checks against reality is just an opinion' is the line this story turns on. It is what separates building a model from owning a number.",
         "The insight is the SPLIT, not the model. One stable income stream and one seasonal one, averaged together, means the stable half hides how wrong the seasonal half is. Say that - it is the part that shows judgement rather than technique.",
-        "NEVER say 12 parks or 3% variance. An earlier draft had both. It is ten parks and about 5%, and four other stories say ten.",
+        "NEVER say 12 parks, 3% variance, $180K or $120K of improvements, or any process-time figure. Those appeared in drafts and changed between versions. Ten parks and 25% to 5% are the confirmed numbers. See calc_sheet.RETIRED_NUMBERS.",
         "Do not claim weather or fuel price drivers unless they were genuinely in the model - see open_questions."
       ]
     }
@@ -2915,7 +2921,7 @@
           "Revenue modelling",
           "Scenario analysis"
         ],
-        "one_line": "Replaced a trailing-average forecast with a driver-based one and measured the variance down from 25% to 5%."
+        "one_line": "Replaced a flat 1/12 annual budget with a driver-based rolling forecast and measured variance down from 25% to 5%."
       }
     },
     "by_function": {
