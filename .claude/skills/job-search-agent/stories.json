@@ -306,7 +306,7 @@
         "Calls dropped to almost none.",
         "Rolled out to 5 other projects.",
         "Staff check-in time dropped from 5 hours/week to 1 hour - 80% reduction.",
-        "Freed up time to take on more projects without adding headcount."
+        "Freed up time to take on more projects without adding staff."
       ],
       "delivery_notes": [
         "The only story outside the real-estate firm. Use it deliberately to vary the setting across a loop.",
@@ -1047,7 +1047,7 @@
       "calc_sheet": {
         "how_the_budget_is_built": "Bottom-up: crew size x duration x rate.",
         "the_three_drivers": "Crew size, rate, duration. Crew and rate were both as planned; the variance was entirely duration.",
-        "why_duration_matters": "It is the driver that dominates headcount forecasting too - a req filled in Q3 costs a quarter, not a year. Same mechanic, found on a labour line.",
+        "why_duration_matters": "Hours are what you actually pay for. Crew size and rate set the per-week cost, but duration decides how many weeks you pay it. It is the driver people forget because a schedule slip is not reported as a cost. Same mechanic on any hourly labour line.",
         "project_scale": "Mercer Island renovation, about $50K a month of capital spend - the same project as S29.",
         "the_fix": "Schedule contingency now sits in the duration assumption. Budgeting the planned timeline as if it were fixed is what let a slip land as a cost surprise.",
         "the_slip": "Two weeks. Same crew, same rate, two weeks longer - which is the entire variance."
@@ -1062,7 +1062,7 @@
       "delivery_notes": [
         "THE VALUE IS LOOKING PAST THE OBVIOUS TWO. Everyone checks volume and rate. This is the story where both came back clean and you kept going - that is what separates a checklist from an investigation.",
         "PAIRS WITH S41 for an FP&A loop: same question, different answer. There it was loss and a broken pass-through; here it was neither crew nor rate but duration. Told across a loop they show a method rather than a lucky find - do not put them in the same slot.",
-        "THIS IS THE LABOUR-LINE STORY. For the WW Ops Finance role it is the closest thing to the headcount half of the mandate - forecasting a workforce line, tracking spend against it, and diagnosing the variance. Lead with it if the question is about employee expense.",
+        "THIS IS THE LABOUR-COST STORY. Our construction crews are paid hourly and we track their hours, so the labour line is budgeted and forecast as crew x duration x rate, and I explain the variance on it every month. Lead with this if the question is about employee expense or labour cost. Do NOT stretch it into headcount planning - we were not hiring, and that claim does not survive a follow-up.",
         "SAY 'DURATION' EXPLICITLY as the third driver. Naming crew, rate and time as the three things that move a labour line shows you think in drivers, which is the language an FP&A interviewer works in.",
         "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S41's meter tracker, S3's self-funding question. Say what changed, not just that something did.",
         "DIVE DEEP RUBRIC: covers five of seven cleanly. Thin on 'steps in and gets work done' and 'difficult or time-consuming' - see rubric_coverage. If a Dive Deep interviewer is clearly working a checklist, lead with S41 and keep this as the second answer."
@@ -2279,22 +2279,11 @@
           "risk": "MEDIUM. Basic qualification is 1+ years, preferred is 3+. Sitting at the lower end is fine for the bar but invites 'have you done this at this level'.",
           "answer": "Lean on breadth rather than tenure. Multi-entity FP&A, month-end close, consolidated P&L across ten entities, acquisition modelling, variance analysis to invoice level, and automation across all of it - that is a wider surface than most analysts touch in three years at a large company."
         },
-        "Headcount": {
-          "risk": "HIGHEST alongside scale, and previously missed. The team is Central Headcount AND Operating Expense FP&A. The opex half is directly yours - variance analysis, accruals, budget against actual. The headcount half is absent from the bank entirely: no workforce planning, no employee expense forecasting, no productivity metrics. 'Payroll' appears only as an obligation in the cash tracker.",
-          "answer": "Lead with what you have rather than the gap. 'On employee expense I've booked payroll accruals through close - wages earned but not yet paid at the cutoff, accrued into the period the work happened. And I plan and budget crew staffing on our construction projects, so forecasting a labour line and tracking spend against it is familiar - contractor labour rather than salaried headcount, but the same shape. What I haven't owned is a salaried headcount forecast at scale - hiring plans, attrition, start-date timing. The analysis I'd bring to it is the one I already run on any cost line: the last variance I chased, everyone assumed it was volume and it turned out to be rate. On a headcount line that's the same question - more heads than plan, or higher cost per head.'",
-          "the_transferable_claim": "The occupancy dashboard in S6 is structurally a utilisation metric - sites occupied against sites available, tracked against a target with a threshold that flags underperformance early. That is the same shape as units per labour hour or cost per unit. Say that link out loud; it is the closest thing in the bank to workforce productivity and it is a real parallel, not a stretch.",
-          "do_not": "Do not claim salaried headcount forecasting at scale, hiring plans, or attrition modelling. DO claim payroll accruals and contractor labour budgeting - both are real. The earlier note saying not to claim payroll accrual experience was wrong and is corrected.",
-          "what_you_actually_have": {
-            "S34 - volume versus rate": "The strongest bridge, and it is not a stretch. The property manager assumed the overspend was volume - more move-outs. It was rate: the vendor had raised the price per unit. Volume versus rate is the core diagnostic in headcount variance too - did we overspend because we hired more heads than plan, or because cost per head moved? Same analysis, different cost line. Say that out loud.",
-            "S8 - capacity without a hire": "Staff check-in time went from five hours a week to one, and that freed capacity to take on more projects without adding anyone. That is workforce productivity in the sense the JD means it - same people, more output, because the work per unit came down. About 200 hours a year returned.",
-            "S28 - accruing before the invoice": "The estimation method maps one-to-one onto a payroll accrual: PO contract amount -> roster times fully-loaded rate; what they billed last month -> last period's actual payroll; historical average -> average rate adjusted for known changes. Say the mapping, not 'it's similar'. NOTE: she has not booked a payroll accrual - do not imply otherwise.",
-            "S32 - payroll as a forecast line": "Weakest of the surviving bridges but true - the rolling tracker forecast payroll day by day. Staffing at the properties is constant, so there is no seasonal headcount planning to claim.",
-            "S6 - utilisation against a target": "Occupancy against a 90% target with a threshold that flags underperformance early is structurally what units per labour hour is."
-          },
-          "direct_experience": {
-            "payroll accruals": "BOOKED THEM. This is direct experience, not a bridge - say it plainly. Wages earned but unpaid at the cutoff, accrued into the period the work happened and reversed on payment. It is a standard part of employee expense close and it is a real answer to 'have you worked on employee expense'.",
-            "labour budgeting on construction projects": "Plans and budgets crew staffing for construction projects - contractor labour rather than W-2 headcount, but it is labour cost planning: forecasting a workforce line, then tracking spend against it. Relevant beyond the obvious, because Amazon Operations runs heavily on flex, seasonal and contingent labour, so a variable workforce line is closer to that team's actual work than a fixed salaried roster would be."
-          }
+        "Employee expense and labour cost": {
+          "risk": "MEDIUM-HIGH. The team's remit includes employee expense. What she has is an hourly labour line - construction crews whose hours are tracked - plus payroll on the opex side and payroll accruals booked through close. What she does NOT have is headcount planning: hiring plans, req timing, attrition. The company was not hiring at volume, so there was no workforce plan to build.",
+          "answer": "Lead with what is real. 'Payroll is one of the operating lines I own. Our construction crews are paid hourly, so we track their hours, and I budget and forecast that line as crew size times duration times rate — then I explain the variance on it at month end. I've also booked payroll accruals through close, for wages earned before the cutoff but not yet paid. What I haven't done is headcount planning in the hiring sense — we weren't adding people at volume, so there was no hiring plan to forecast. But the mechanics of a labour line are the mechanics of a labour line: when it moves, the question is always whether it's more people, a higher rate, or longer than planned.'",
+          "do_not": "Do NOT claim headcount planning, hiring plans, req timing, attrition modelling, or workforce planning. The company was not hiring at volume and the claim collapses on one follow-up. DO claim: the payroll line, hourly labour cost, hours tracking, crew x duration x rate budgeting, labour variance analysis, and payroll accruals. All real.",
+          "the_bridge": "Hours times rate is the same arithmetic as heads times rate. She has genuinely owned a workforce cost line and diagnosed its variance - S40. That transfers honestly. Naming the limit herself is what makes the rest credible."
         }
       },
       "questions_to_ask": [
@@ -2309,27 +2298,15 @@
         "comp": "UNKNOWN - the posted range was not included in what was pasted. Confirm it clears the $81K floor before the offer stage."
       },
       "employee_expense_primer": {
-        "why": "Not experience to claim - background so a technical follow-up does not land flat. The role is employee expense FP&A; these are the mechanics anyone in it assumes you know.",
-        "payroll accrual": "Pay periods rarely align with month-end, so wages earned but unpaid at the cutoff are accrued into the month the work happened and reversed when paid. Without it, monthly labour cost moves for calendar reasons and variance analysis cannot separate a timing artefact from a real overspend.",
-        "fully loaded rate": "Base salary plus employer taxes, benefits, and equity or bonus. Headcount forecasts are built on fully loaded cost, not base - using base understates the line badly.",
-        "timing is most of the variance": "A req filled in Q3 costs a quarter, not a year. Most headcount variance to plan comes from hiring earlier or later than assumed rather than from paying a different rate.",
-        "the two drivers": "Heads and rate - and duration, which is the one people forget. Every headcount variance reduces to which moved. That is exactly the question S40 answers on a labour line: crew and rate were both as planned, so it was duration.",
-        "attrition": "Forecasts assume a leaver rate; under-assuming it overstates cost, over-assuming it hides an under-hiring problem.",
-        "productivity metrics": "Units per labour hour, cost per unit, or hours per unit of output. The JD's 'workforce productivity' means these."
+        "_comment": "Vocabulary for the employee-expense half of the remit. Understanding it is fine; do not claim to have forecast headcount at scale.",
+        "hourly labour - what she actually owns": "Crew size x hours x rate. Hours are tracked, so the line is budgeted and forecast bottom-up and the variance is explained monthly. This is S40.",
+        "payroll accrual": "Wages earned before the period cutoff but not yet paid, accrued into the period the work happened so the expense lands in the right month. She has booked these through close.",
+        "the three drivers": "People, rate, duration. Any labour line that moves moved on one of them, and the fix is different for each. S40 is exactly this - crew and rate held, duration slipped.",
+        "fully loaded rate": "Base pay plus employer taxes and benefits. Worth knowing as vocabulary; a salaried forecast is built on fully loaded cost, not base.",
+        "the honest limit": "She has owned and forecast a labour cost line. She has not built a hiring plan. Those are different jobs and she should say so."
       },
       "loop_note": "S41 leads slot one: portfolio-level variance work with two root causes, which is the closest thing in the bank to what this team does daily. S40 moves to slot five as the labour-line story - the role is half employee expense, so it must reach someone. The two pair well across a loop but must not share a slot.",
       "key_responsibilities_coverage": {
-        "1. Month-end, quarterly and annual planning cycles; consolidated forecasts and reports supporting headcount and employee expense decisions": {
-          "strength": "GOOD on cycles, THIN on headcount",
-          "lead": "S28",
-          "support": [
-            "S19",
-            "S40",
-            "S32"
-          ],
-          "detail": "S28 is month-end close under a hard filing deadline - the cleanest cycle story. S19 is the annual consolidation across ten entities. S32 and S40 are the forecasting ones. HEADCOUNT AND EMPLOYEE EXPENSE rests almost entirely on S40, the labour budget built crew x duration x rate - plus the payroll line she owns and the payroll accruals she has booked. Say the payroll line explicitly; it is the direct bridge and it is easy to leave out.",
-          "gap": "'Consolidated forecast' - S19 consolidates actuals, not forecasts. If pressed on consolidated forecasting at scale, be straight: the consolidation was of actuals across ten entities; the forecasting was per-property and bottom-up. Both are real, they were just not the same exercise."
-        },
         "2. Analyze complex financial data, cross-check against multiple sources for accuracy": {
           "strength": "STRONGEST - this is the best-covered responsibility in the bank",
           "lead": "S41",
@@ -2371,6 +2348,17 @@
           ],
           "detail": "Influencing executive decisions is well covered: S5 fed a $55K price negotiation, S3 changed her manager's mind on financing, S26 reversed a $6,000 spend decision, S32 shaped how a cash shortfall was covered.",
           "gap": "Documentation is now answered - see top-level knowledge_transfer, and the handover is written into S7, S29 and S30. Remaining honest limit: partnering with finance PEERS. She partners with the CPA, ops managers and project managers rather than other analysts, because there mostly aren't any. Say that plainly if asked - it is a function of company size, not of how she works."
+        },
+        "1. Month-end, quarterly and annual planning cycles; consolidated forecasts and reports supporting employee expense decisions": {
+          "strength": "GOOD on cycles and on the labour line; the hiring-plan half is genuinely absent",
+          "lead": "S28",
+          "support": [
+            "S19",
+            "S40",
+            "S32"
+          ],
+          "detail": "S28 is month-end close under a hard filing deadline. S19 is the annual consolidation across ten entities. S32 and S40 are the forecasting ones. EMPLOYEE EXPENSE rests on S40 - construction crews paid hourly, hours tracked, the line budgeted as crew x duration x rate and the variance explained monthly - plus payroll as an opex line she owns and the payroll accruals she has booked. Say payroll explicitly. Do not extend it into headcount planning.",
+          "gap": "'Consolidated forecast' - S19 consolidates actuals, not forecasts. If pressed on consolidated forecasting at scale, be straight: the consolidation was of actuals across ten entities; the forecasting was per-property and bottom-up. Both are real, they were just not the same exercise."
         }
       }
     }
@@ -2408,7 +2396,7 @@
         "rank": 3,
         "id": "S40",
         "tier": "tier1",
-        "why": "Only labour/headcount story, and headcount FP&A is half the team remit. Newest and least rehearsed - highest risk per hour spent."
+        "why": "Your only labour-cost story - hourly crews, hours tracked, the line forecast and its variance explained. That is the employee-expense bridge. Newest and least rehearsed, so highest risk per hour spent."
       },
       {
         "rank": 4,
