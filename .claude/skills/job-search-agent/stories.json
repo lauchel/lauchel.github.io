@@ -1205,7 +1205,7 @@
     "Bias for Action is KNOWN WEAK - the candidate self-identified this as an underperforming LP in a prior loop. The bench is nominally 3 (S6, S28, S32) but effectively 2: S6 is tagged BFA in the weak 'built it unasked' sense and misreads as a tool-building story against a speed prompt. S28 is the real default; S32 is the strong backup (contractor renegotiated, LOC drawn, gap closed in-month).",
     "14 of 15 stories are set at the same real-estate firm; S8 (Signature Photo) is the only outside setting. Across a 5-interviewer loop the setting will repeat - vary the property and the stakeholder so the stories don't blur together.",
     "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss.",
-    "Two benches are thin. Think Big is S27 and S32 after S6's tag was removed (a one-park dashboard is execution, not scale-thinking). Are Right, A Lot is S26, S3 and S35 after S5's was removed (S5 is a story about being wrong twice) and S34's retirement. S26 now leads it. Neither bench has real depth if a loop probes twice."
+    "Are Right, A Lot is covered 7 of 7 but has no deep bench: S26 leads, with S3 and S35 behind, and the 'when were you wrong' half is carried by S30, S5 and S3. Think Big is the thinner one - S27 and S32 only, after S6's tag was removed (a one-park dashboard is execution, not scale-thinking)."
   ],
   "usage_rules": [
     "Never use both S29 variants with the same interviewer.",
@@ -1735,6 +1735,10 @@
         ],
         "7": [
           "S8"
+        ],
+        "0": [
+          "S26",
+          "S3"
         ]
       },
       "Frugality": {
