@@ -396,7 +396,9 @@
       "pocket_answers": {
         "How many duplicates exactly?": "More than a dozen, roughly $20,000 in all. I'd have to pull the file for the exact count.",
         "How did you know they were duplicates and not two legitimate payments?": "Same tenant, same amount, same month, in two different systems - somebody paid on the platform and also mailed a check that got logged separately. A real second payment would be a different month or a different amount.",
-        "What if you'd removed a legitimate payment?": "That's why the macro flagged rather than deleted, and why I validated the whole thing against QuickBooks before it went to the CPA."
+        "What if you'd removed a legitimate payment?": "That's why the macro flagged rather than deleted, and why I validated the whole thing against QuickBooks before it went to the CPA.",
+        "Were you running other things at the same time?": "Yes - this was built around month-end close and the ongoing reporting, not instead of it. The reason it took two weeks by hand was that it competed with everything else; the reason automating it mattered was that it stopped competing.",
+        "How did you keep the CPA informed while you built it?": "I gave them the entities that reconciled first rather than holding everything back until all ten were done, so they could start work while I finished. The duplicates I flagged as I found them rather than in one batch at the end."
       },
       "primary_lps": [
         "Deliver Results"
@@ -499,7 +501,8 @@
         "Ordering that lands: the accident -> the question it raised -> teaching yourself SQL to answer it at portfolio scale -> the 5-KPI monthly report. Learning the tool is a beat in the middle, not the headline.",
         "The Result deliberately closes by echoing the Situation - 'instead of whenever a person happens to open the right file' calls back to the tenant you found by accident. That lands harder than a specific example would, and it needs no figure you'd have to defend. If they ask for a concrete catch, give one if you have it; if not, 'I'd have to pull the numbers' is fine.",
         "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
-        "USE THIS TO ESTABLISH SCALE - 10 properties, 700 tenants is the largest number in the bank. If it comes early in the loop it frames everything after it."
+        "USE THIS TO ESTABLISH SCALE - 10 properties, 700 tenants is the largest number in the bank. If it comes early in the loop it frames everything after it.",
+        "LEARN AND BE CURIOUS RUBRIC: 'if one slipped through because nobody was looking, how many others were there?' is the single best line you own for this LP - it is the 'I wonder what would happen if' criterion said out loud. Lead with it."
       ],
       "primary_lps": [
         "Learn and Be Curious",
@@ -690,7 +693,8 @@
       ],
       "delivery_notes": [
         "BEST FAILURE STORY IN THE BANK. The strongest beat is quoting the manager's criticism and agreeing with it - that reads as genuinely coachable.",
-        "Now the lead for Insist on the Highest Standards as well as the failure story. It is the best answer to 'a decision between standards and delivery' - you chose accurate over on-time and said so."
+        "Now the lead for Insist on the Highest Standards as well as the failure story. It is the best answer to 'a decision between standards and delivery' - you chose accurate over on-time and said so.",
+        "EARN TRUST RUBRIC: covers 6 of 7. 'Provides feedback to others respectfully' is not in this story - S29 is the answer to that one. And on 'honors commitments': you missed the date, so frame it as renegotiating openly BEFORE the deadline rather than shipping something you knew was wrong."
       ],
       "pocket_answers": {
         "You knew on day 8 - why wait until day 11 to tell your manager?": "I spent those days scoping the true extent so I could bring a specific ask instead of a vague alarm - I wanted to say 'four days and here's exactly what's wrong', not 'this might slip.' In hindsight I'd have flagged it on day 8 with the estimate to follow, and that's what I do now.",
@@ -847,7 +851,8 @@
         "Why did the contractor agree to defer half?": "They'd finished early and knew the invoice was ahead of schedule. Splitting it 50/50 with the balance in 45 days kept them whole and kept us solvent - it was easier to ask because we had a working relationship and I asked before we missed anything.",
         "What did the revolver cost you?": "Interest on $30K for about a month - small against the alternative of missing payroll or a mortgage payment.",
         "Why $25K as the red line?": "Roughly half a month of fixed costs - enough cushion to absorb a surprise without being so conservative that it flags constantly.",
-        "Why didn't you see it coming?": "We had no forward visibility at all - that's the honest answer. We tracked cash monthly after the fact. The contractor finishing early was ordinary; not being able to see the collision coming was the actual problem, which is why the tracker was the real fix rather than the renegotiation."
+        "Why didn't you see it coming?": "We had no forward visibility at all - that's the honest answer. We tracked cash monthly after the fact. The contractor finishing early was ordinary; not being able to see the collision coming was the actual problem, which is why the tracker was the real fix rather than the renegotiation.",
+        "Who did you consult before acting?": "I renegotiated with the contractor myself - that was a conversation I could have without escalating, and waiting for a meeting would have cost us the timing. Drawing on the line of credit I did raise with ownership, because that is their decision, not mine. The tracker I just built. The rule I use is whether the decision is reversible: the contractor call and the tracker were, drawing debt was not."
       }
     },
     {
@@ -887,7 +892,8 @@
         "Richest Dive Deep detail in the bank - the debugging beats (circular dependency, Error 429, wrong meter math) are what sell it. Don't compress them away.",
         "TRIM TO THREE DEBUGGING BEATS, not six: the name-matching, the meter math, the 429 rate limit. Six will overrun four minutes and you will get cut off before the result.",
         "Promote the 'without changing the onsite manager's existing workflow' constraint into the spoken opening. Designing around someone else's habits is the Customer Obsession angle and it is currently buried in the Task.",
-        "Dive Deep was dropped from this story's primary tags - S41 and S40 carry it, and S33's arc is build-a-tool rather than investigate."
+        "Dive Deep was dropped from this story's primary tags - S41 and S40 carry it, and S33's arc is build-a-tool rather than investigate.",
+        "INVENT AND SIMPLIFY RUBRIC: 'actively gathers ideas from a wide range of sources' is the gap - you built this alone. If probed, say where the method came from rather than claiming collaboration that did not happen."
       ],
       "primary_lps": [
         "Invent and Simplify",
@@ -1881,6 +1887,38 @@
       "Strive to be Earth's Best Employer and Success and Scale Bring Broad Responsibility have no coverage at all. Both are rare in analyst loops and neither is worth manufacturing a story for."
     ],
     "lp_criteria": {
+      "Bias for Action": [
+        "Moves quickly on a project, even when some information is lacking",
+        "Understands when to consult with others and when it’s not necessary",
+        "Willing to make small progress toward a solution rather than finding the perfect solution right away",
+        "Deals with problems quickly so others can make progress",
+        "Carefully considers what is important to get done right away and what can wait"
+      ],
+      "Are Right, A Lot": [
+        "Makes good decisions in the face of ambiguity, uncertainty, and/or time pressure",
+        "Applies experience to determine the best approach",
+        "Seeks out additional perspective and data to make the best decision",
+        "Recognises they are not always right and supports the best idea",
+        "Recognizes when they are lacking expertise or information in a particular subject area"
+      ],
+      "Deliver Results": [
+        "Meet deadlines and expectations with products that are well-executed and high-quality",
+        "Focus on delivering the most important products",
+        "Able to deliver multiple projects at the same time",
+        "Overcome and persist in the face of obstacles",
+        "Communicates regularly about the status of projects"
+      ],
+      "Ownership": [
+        "Actively makes improvements outside of one’s area of responsibility",
+        "Makes decisions that consider risks and future outcomes",
+        "Makes decisions that are scalable and contribute to long-term success",
+        "Takes the lead in solving problems",
+        "Takes accountability for dependencies and their work",
+        "Takes ownership for mistakes",
+        "Accepts responsibility",
+        "Inspires others to take ownership",
+        "Sees things through to completion"
+      ],
       "Dive Deep": [
         "Stays connected to the details of projects and programs",
         "Understands how different groups or systems work together",
@@ -1888,9 +1926,66 @@
         "Asks good questions that provide clarity to situations",
         "Steps in and gets work done",
         "Investigates and gets details in order to solve a problem",
-        "Gathers information to solve a problem, even if it's difficult or time-consuming"
+        "Gathers information to solve a problem, even it’s difficult or time-consuming"
+      ],
+      "Think Big": [
+        "Identifies bold, yet rational and defensible directions, even if the steps to get there are unclear",
+        "Takes risks when necessary in pursuit of an idea",
+        "Carefully reviews of existing processes",
+        "Able to work around limitations or challenges",
+        "Tries to think about a problem from a new prospective"
+      ],
+      "Earn Trust": [
+        "Builds positive working relationships by treating others and their ideas with respect",
+        "Seeks out and accepts feedback for self or team",
+        "Takes responsibility for shortfalls",
+        "Openly acknowledges mistakes",
+        "Provides feedback to others in a respectful manner",
+        "Represents data and information entirely transparently",
+        "Honors commitments and makes good on promises"
+      ],
+      "Invent and Simplify": [
+        "Generates new ideas or methods for solving a problem",
+        "Identifies areas for improvement and delivers new features that are scalable and avoid unnecessary complexity",
+        "Actively gathers ideas from a wide range of internal and external sources",
+        "Focuses on solutions that will impact the customer experience long-term",
+        "Seeks out opportunities to improve a product or process"
+      ],
+      "Have Backbone, Disagree and Commit": [
+        "Disagrees with peers and supervisors using data to thoughtfully explain counter-arguments",
+        "Stands up for what they believe is in the best interest of the company and the customer",
+        "Advocates clearly and passionately for beliefs",
+        "Openly supports and commits to decisions that have been made, even if not originally in agreement"
+      ],
+      "Customer Obsession": [
+        "Take actions guided by customer input",
+        "Work backwards from the optimal customer experience",
+        "Tries to surprise and delight the customer",
+        "Applies time and energy to make the customer experience more efficient and enjoyable",
+        "Identifies new ways of gathering feedback from customers",
+        "Listens to feedback from customers and uses it to make improvements",
+        "Pushes back when necessary to ensure that decisions consider what is best for customer in the long term",
+        "Earns customers trust by delivering promised services and products which meet or exceed expectations",
+        "Stops activities that no longer enhance the customer experience"
+      ],
+      "Learn and Be Curious": [
+        "Seek opportunities to explore new possibilities and learn new skills",
+        "Show curiosity about how things work",
+        "Consistently ask “I wonder what would happen if” to make continued improvements",
+        "Accept new and challenging situations, despite the risk of failure",
+        "Willing to pursue knowledge that does not have an immediate gain or deliverable",
+        "Seeks and embraces feedback from others",
+        "Discuss lessons learned from past setbacks",
+        "Currently working on initiatives to improve themselves"
+      ],
+      "Frugality": [
+        "Maximise available resources",
+        "Examine what it takes to achieve something and explores less costly alternatives",
+        "Uses budget as one consideration when making business decisions",
+        "Looks for ways to standardise processes, automate, and eliminate waste"
       ]
-    }
+    },
+    "lp_criteria_source": "Verbatim from the candidate's Question_Bank_.docx, 'Criteria' block under each principle. The PDF version of the same bank does not extract these - its 'Definition and Indicators' sections come through empty. Twelve of sixteen principles are present; Hire and Develop the Best, Insist on the Highest Standards, Strive to be Earth's Best Employer and Success and Scale are not in this document."
   },
   "candidate_stories": {
     "why": "All seven proof points in profile.json are absent from the story bank. Each identified gap has raw material already - these are the stories to build, with the facts still needed for each.",
@@ -2302,5 +2397,100 @@
         "why": "Superseded by S19, which is the same idea at ten times the scale."
       }
     ]
+  },
+  "lp_criteria_audit": {
+    "_comment": "Each priority LP's lead stories scored against the real criteria. COVERED / PARTIAL / GAP per criterion.",
+    "Bias for Action": {
+      "leads": [
+        "S32"
+      ],
+      "score": "4.5 of 5",
+      "detail": {
+        "Moves quickly even when information is lacking": "COVERED - contractor billed $100K unexpectedly and you acted inside the same month.",
+        "Knows when to consult and when it's not necessary": "PARTIAL - the script never says who you did or did not involve. See the new pocket answer on S32.",
+        "Small progress over the perfect solution": "COVERED, strongly - you split the invoice half now, half in six weeks rather than solving the whole thing at once.",
+        "Deals with problems quickly so others can make progress": "COVERED - payroll and the mortgage were both made.",
+        "Considers what must happen now versus what can wait": "COVERED, strongly - deferring half the invoice IS this criterion. Say it in those words."
+      }
+    },
+    "Deliver Results": {
+      "leads": [
+        "S19",
+        "S28"
+      ],
+      "score": "3 of 5 on S19 alone; 4.5 of 5 with S28",
+      "detail": {
+        "Meets deadlines with well-executed, high-quality work": "COVERED - the CPA filed from your P&L without back-and-forth.",
+        "Focuses on delivering the most important things": "PARTIAL on S19. S28 carries it - the prioritisation pocket answer.",
+        "Delivers multiple projects at the same time": "GAP on S19. This is the biggest hole in Deliver Results. S28 (close, CPA deadline, competing year-end asks) is the only story that touches it - pair them.",
+        "Overcomes and persists through obstacles": "COVERED, strongly - four sources, mismatched exports, the John Smith / J. Smith problem.",
+        "Communicates regularly about project status": "GAP. Neither story says you kept anyone posted while the work ran. S30 does (day eight, day eleven) - borrow that habit when answering."
+      }
+    },
+    "Earn Trust": {
+      "leads": [
+        "S30",
+        "S29"
+      ],
+      "score": "6 of 7",
+      "detail": {
+        "Builds positive relationships, treats others and their ideas with respect": "PARTIAL on S30. S29 covers it outright - you sat down with the contractor rather than rejecting the invoice.",
+        "Seeks out and accepts feedback": "COVERED, strongly - 'he told me I should have scoped data quality first, and he was right.'",
+        "Takes responsibility for shortfalls": "COVERED, strongly - 'I went to my manager on day eleven and owned it.'",
+        "Openly acknowledges mistakes": "COVERED.",
+        "Provides feedback to others respectfully": "GAP on S30. S29 is the answer - an honest vendor error handled without blame.",
+        "Represents data and information entirely transparently": "COVERED - you chose accurate over on-time, which is this criterion in action.",
+        "Honors commitments and makes good on promises": "PARTIAL and delicate - you missed the date. Frame it as renegotiating openly before the deadline rather than delivering something you knew was wrong."
+      }
+    },
+    "Invent and Simplify": {
+      "leads": [
+        "S33",
+        "S6"
+      ],
+      "score": "3.5 of 5",
+      "detail": {
+        "Generates new ideas or methods": "COVERED.",
+        "Delivers scalable improvements without unnecessary complexity": "COVERED, strongly - 'without changing how the onsite manager worked' is exactly this.",
+        "Actively gathers ideas from a wide range of internal and external sources": "GAP. Both stories are you building alone. If probed, the honest answer is where you learned the method (YouTube for SQL in S27, the ops manager shaping the dashboard in S6) - do not claim collaboration that did not happen.",
+        "Focuses on solutions that improve the customer experience long-term": "PARTIAL - tenants get clean statements, but the script frames it as your time saved.",
+        "Seeks out opportunities to improve a process": "COVERED."
+      }
+    },
+    "Learn and Be Curious": {
+      "leads": [
+        "S27",
+        "S33"
+      ],
+      "score": "4 of 8 - the weakest priority LP",
+      "detail": {
+        "Seeks opportunities to explore new possibilities and learn new skills": "COVERED, strongly - self-taught SQL off YouTube.",
+        "Shows curiosity about how things work": "COVERED.",
+        "Asks 'I wonder what would happen if'": "COVERED, strongly - 'if one slipped through because nobody was looking, how many others were there?' That is the single best line you own for this LP.",
+        "Accepts new and challenging situations despite risk of failure": "COVERED.",
+        "Willing to pursue knowledge with no immediate gain": "PARTIAL - both stories had a clear deliverable, which is the opposite of this criterion.",
+        "Seeks and embraces feedback from others": "GAP here; S30 carries it.",
+        "Discusses lessons learned from past setbacks": "GAP here; S30 and S5 carry it.",
+        "Currently working on initiatives to improve themselves": "HARD GAP - NO STORY ANYWHERE, and this one is present tense. It is a real and common question and the bank cannot answer it. NEEDS A TRUE ANSWER FROM THE CANDIDATE about what she is learning right now."
+      }
+    },
+    "Customer Obsession": {
+      "leads": [
+        "S35",
+        "S8"
+      ],
+      "score": "6 of 9 across the pair; neither works alone",
+      "detail": {
+        "Takes actions guided by customer input": "COVERED - S35, tenant ease weighted highest.",
+        "Works backwards from the optimal customer experience": "COVERED, strongly - 'a system they won't adopt doesn't fix anything.'",
+        "Tries to surprise and delight": "COVERED by S8 only - the real scanned photos were more than he asked for.",
+        "Makes the customer experience more efficient and enjoyable": "COVERED.",
+        "Identifies new ways of gathering feedback": "GAP.",
+        "Listens to feedback and uses it to improve": "COVERED by S8 - the calls WERE the feedback, and you built from them.",
+        "Pushes back to protect the long-term customer interest": "COVERED - S35, you rejected the cheapest option.",
+        "Earns trust by delivering what was promised": "COVERED by S8.",
+        "Stops activities that no longer enhance the experience": "GAP."
+      }
+    }
   }
 }
