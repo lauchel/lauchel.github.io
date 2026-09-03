@@ -925,7 +925,7 @@
         "Ownership"
       ],
       "situation": [
-        "During month-end variance analysis for Concrete apartment project, Repairs and Maintenance line item triggered 10% negative variance flag two months in a row.",
+        "During month-end variance analysis for Concrete apartment project, Repairs and Maintenance ran about $2,000 over a $20,000 monthly budget - a 10% negative variance, two months in a row.",
         "Bleeding cash on unit turns - cleaning and painting when tenants move out."
       ],
       "task": [
@@ -953,7 +953,8 @@
         "Cut to Dive Deep primary, Highest Standards secondary. Six tags means reaching for this against prompts it only loosely fits.",
         "The finding reconciles exactly - 8 units x $250 = the $2,000 variance. Say the multiplication out loud; exact reconciliation is rare and very convincing.",
         "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
-        "Say '$100K a month capital budget' when scale matters. R&M variance analysis is the closest match to the operating expense half of the Ops Finance mandate.",
+        "Do NOT open with the $100K/month capital budget on this story. It sets up a 'why care about $2,000' counter. R&M is opex and sits outside that number. If they ask about project scale, give $100K then - not before.",
+        "$20,000 budget, $2,000 over, 10% - all three are confirmed and they reconcile. Say the dollar figure before the percentage; the dollars are what tie to 8 x $250.",
         "VOLUME VERSUS RATE IS THE HEADCOUNT BRIDGE. For an FP&A role with a headcount mandate, this is the story that proves the analysis transfers: the same question asked of a salary line is 'more heads than plan, or higher cost per head'. Say the parallel explicitly rather than hoping they see it."
       ],
       "primary_lps": [
@@ -967,23 +968,26 @@
           "Insist on the Highest Standards",
           "Deliver Results"
         ],
-        "s": "During month-end variance analysis on an apartment project running a $100K a month capital budget, repairs and maintenance came in more than 10% over budget — second month running. We were bleeding cash on unit turns, the cleaning and painting between tenants.",
+        "s": "During month-end variance analysis on an apartment project, repairs and maintenance came in about $2,000 over a $20,000 monthly budget — 10% over, and it was the second month running. We were bleeding cash on unit turns, the cleaning and painting between tenants.",
         "t": "The property manager assumed we were just doing more move-outs than usual. I needed to know whether that was actually true, because cost and volume are very different problems.",
         "a": "I exported the raw GL data from QuickBooks and ran a pivot by vendor and by unit. Volume was flat — still about eight turns a month, same as always.\n\nWhat had changed was our main painting vendor: they'd raised the price on a standard two-bedroom repaint from $1,250 to $1,500, a 20% increase, without renegotiating the contract. Eight units times $250 was exactly the $2,000 we were over.\n\nThe property manager had been approving invoices in a stack and hadn't caught the rate creep. I flagged it to leadership, we paused the vendor, and I worked with operations to build a standard rate card.",
         "r": "We recovered the overpayment and stopped about $2,000 a month of overcharging. Invoices now only get approved if they match the rate card, and the variance was back to zero the following month."
       },
       "calc_sheet": {
-        "the_flag": "R&M more than 10% over budget two months running. At about $2,000 over, that implies a monthly R&M budget near $20,000.",
+        "the_flag": "R&M budget was $20,000 a month. Actual came in about $2,000 over - a 10% negative variance, two months running. CONFIRMED by the candidate, not back-solved.",
         "volume_vs_cost": "Turns held at about 8 a month - flat. So it was price, not volume.",
         "the_reconciliation": "Vendor raised a standard 2-bedroom repaint from $1,250 to $1,500 - a 20% increase, $250 a unit. 8 x $250 = $2,000, exactly the variance.",
-        "the_fix": "Standard rate card; invoices only approved if they match it."
+        "the_fix": "Standard rate card; invoices only approved if they match it.",
+        "why_it_mattered": "$2,000/month = $24,000 a year, on one vendor at one property, and rate creep spreads. The R&M line is operating expense - it is NOT part of the project's $100K/month capital budget, so it is not '2% of budget'. It is 10% of the line it belongs to."
       },
       "pocket_answers": {
         "How did you know volume was flat?": "The pivot broke it out by unit as well as vendor - the turn count was steady at about eight a month, same as prior periods. If it had been volume, that count would have moved.",
         "Ten percent of what?": "About $2,000 over on the R&M line, so a monthly budget in the region of $20,000.",
         "Why didn't the property manager catch it?": "They were approving invoices in batches against the budget line rather than per-unit rates. Nothing looked wrong at the total level - the increase only shows up when you compare price per repaint across months.",
         "Did you recover the money?": "Yes, we recovered the overpayment, paused the vendor, and put a rate card in place so invoices only get approved when they match the agreed price.",
-        "Why not just switch vendors?": "That was on the table, but the issue was an unrenegotiated increase rather than the vendor's work. The rate card fixed the control gap, which would have existed with any vendor."
+        "Why not just switch vendors?": "That was on the table, but the issue was an unrenegotiated increase rather than the vendor's work. The rate card fixed the control gap, which would have existed with any vendor.",
+        "What was the R&M budget?": "$20,000 a month. We came in about $2,000 over, so 10% - and it was the second consecutive month, which is what made it worth chasing rather than writing off as timing.",
+        "Why did a $2,000 item deserve your time?": "Because it wasn't $2,000 - it was $2,000 a month and climbing. That's $24,000 a year on one vendor at one property, and nothing in the process would have caught it spreading. It's also 10% of the R&M line, not a rounding error against it."
       }
     },
     {
