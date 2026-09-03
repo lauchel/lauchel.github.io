@@ -313,7 +313,8 @@
         "MOST UNDERUSED STORY IN THE BANK. Only non-real-estate setting, only genuine human stakes, only story where the customer's feelings can be described. Place it mid-loop to break up the RV-park run.",
         "Cut the last Action beat (asking the owner about client priority and the colleague about delays) - unrelated to the spine and it dilutes the ending.",
         "Close on the client's reassurance, not the 80% time reduction. The hours figure is a pocket answer for 'what was the impact?', not the closer.",
-        "CARRIES A WORKFORCE PRODUCTIVITY OUTCOME - five hours a week to one, and capacity for more projects without a hire. That line had been cut for brevity and is restored. For an Ops Finance loop it is the closest thing in the bank to the JD's 'workforce productivity enhancements'."
+        "CARRIES A WORKFORCE PRODUCTIVITY OUTCOME - five hours a week to one, and capacity for more projects without a hire. That line had been cut for brevity and is restored. For an Ops Finance loop it is the closest thing in the bank to the JD's 'workforce productivity enhancements'.",
+        "CUSTOMER OBSESSION RUBRIC: S8 carries three criteria S35 cannot - surprise and delight (the real scanned photos), listening to feedback and acting on it, and delivering what was promised. Do not let this story go unused in a Customer Obsession loop."
       ],
       "spoken_star": {
         "primary": "Customer Obsession",
@@ -335,7 +336,8 @@
         "How did you know it was five hours a week?": "That was our own check-in time across the 20-30 active projects - calls and the follow-up they generated.",
         "What if the client had wanted more contact, not less?": "That's why I kept the bi-weekly calls. The email wasn't replacing the relationship, it was removing the wait - he could see progress without having to ask for it.",
         "How did you get leadership comfortable?": "Their worry was that automation would feel impersonal on a sensitive project. I made the case that what felt impersonal was him not knowing where his mother's photos were, and that showing him the actual scanned images was more personal than a status update over the phone.",
-        "Was that a headcount saving?": "Not a reduction - an avoidance. The four hours a week we got back is what let us take on more projects without hiring. That's the same shape as a productivity gain: same people, more output, because the work per project came down."
+        "Was that a headcount saving?": "Not a reduction - an avoidance. The four hours a week we got back is what let us take on more projects without hiring. That's the same shape as a productivity gain: same people, more output, because the work per project came down.",
+        "How did you find out what he actually needed?": "He told me, though not directly - he was calling every few days, and what he asked each time was the same: where is it now, and what happens next. The calls were the feedback. I stopped treating them as an interruption and started treating them as a specification."
       }
     },
     {
@@ -530,7 +532,8 @@
         "Why SQL? Seven hundred rows fits in Excel.": "It's not the row count, it's the joins and the repeatability. The data lived in ten separate files with their own layouts, and every month someone rebuilt the same view by hand. In a database it's one query that runs the same way every time.",
         "How long did it take to learn?": "I picked up enough to build it in a few weeks of evenings - YouTube mostly. It's a narrow slice of SQL: selects, joins, aggregates.",
         "Who else can use it?": "That's a fair challenge - I built the monthly report so leadership gets the output without writing queries, but the querying itself was mine. If I were doing it again I'd document the common queries from the start.",
-        "How does it stay current?": "Monthly load from the property exports, same as the report cycle."
+        "How does it stay current?": "Monthly load from the property exports, same as the report cycle.",
+        "Did you know SQL would solve it when you started?": "No. I knew spreadsheets couldn't answer the question and I'd have to learn something that could. Whether it would get me all the way there I found out by doing it."
       }
     },
     {
@@ -918,7 +921,8 @@
         "Walk me through the utility calculation.": "Current meter reading minus the previous reading gives usage, times $0.07394 a kilowatt hour, plus a $3 service fee, plus 6% tax. I'd originally multiplied the current reading rather than the usage, which inflated every bill until I caught it.",
         "What happens if a meter reading is missing?": "The bill for that unit doesn't generate rather than generating wrong - I'd rather chase one reading than send 42 statements with one bad number in them.",
         "Why Google Sheets rather than Excel?": "The onsite manager needed to keep working in their own sheet without a license or a new tool, and Apps Script let me automate the PDF generation on the same platform.",
-        "What happens when you're not there?": "It's four steps and they're documented - paste, let the ledger update, click, collect the PDFs. That was deliberate; a tool only one person can run isn't finished."
+        "What happens when you're not there?": "It's four steps and they're documented - paste, let the ledger update, click, collect the PDFs. That was deliberate; a tool only one person can run isn't finished.",
+        "Where did the design come from?": "The constraint came from the onsite manager - their spreadsheet worked and retraining them wasn't worth it, so the system had to fit around them rather than the other way round. The technique I picked up as I went; the shape of it came from watching how the work was already being done."
       }
     },
     {
@@ -977,7 +981,8 @@
         "How did you know payments were getting lost?": "They'd show up in the onsite manager's log without a matching deposit, or the other way round - which is the same reconciliation problem I later built the tracker for.",
         "Why Baselane specifically?": "Ease of use for the tenant. All three platforms handled the basics, but Baselane was the one someone could pay through without needing help - and given the problem was payments going missing outside the system, adoption was the thing that actually mattered.",
         "By how much did late payments drop?": "I don't have the exact figure. What I can say is why it moved - paying stopped requiring someone to physically get a check to the manager by a date, so the friction that caused most of the lateness was gone.",
-        "Why does four days matter?": "It's four days of rent sitting in the account instead of in transit. On a seasonal property where the off-season runs a cash deficit, timing is most of the problem - the same reason I later built the rolling cash tracker."
+        "Why does four days matter?": "It's four days of rent sitting in the account instead of in transit. On a seasonal property where the off-season runs a cash deficit, timing is most of the problem - the same reason I later built the rolling cash tracker.",
+        "How did you know the payment method was the problem?": "Because of where the money was getting lost - between the onsite manager collecting it and it landing in our books. That is not a tenant problem, it is a handling problem, and every step where a person touches a payment is a step where it can go missing."
       },
       "delivery_notes": [
         "THIS IS YOUR SECOND CUSTOMER OBSESSION STORY, and the bank badly needed one - S8 was carrying five of the nine official questions alone.",
@@ -986,7 +991,8 @@
         "Pairs with S33 - the billing automation at River Oaks. Do not tell both in one loop without varying the angle; S35 is about choosing for the tenant, S33 is about building around the onsite manager.",
         "'Not the cheapest, but the one a tenant could pay through without calling anyone' is the sentence that makes this Customer Obsession rather than procurement. You had a cheaper option and turned it down for the user. Do not soften it.",
         "THE 4 DAYS IS YOUR SECOND-BEST NUMBER after adoption, and it connects to S32 - faster deposits are a working-capital improvement on a property that runs a seasonal cash deficit. If the interviewer is a finance person, that link is worth making out loud.",
-        "SAY THE LATE-PAYMENT DROP WITH ITS MECHANISM, not as a bare claim. 'Late payments came down - paying stopped meaning getting a check to somebody by a certain day' is defensible without a figure. 'Late payments dropped significantly' is not."
+        "SAY THE LATE-PAYMENT DROP WITH ITS MECHANISM, not as a bare claim. 'Late payments came down - paying stopped meaning getting a check to somebody by a certain day' is defensible without a figure. 'Late payments dropped significantly' is not.",
+        "CUSTOMER OBSESSION RUBRIC: 'stops activities that no longer enhance the experience' is covered here - you retired check and cash collection. Say that as a decision you made, not as something that happened."
       ],
       "open_questions": []
     },
@@ -1231,7 +1237,8 @@
     "Bias for Action is KNOWN WEAK - the candidate self-identified this as an underperforming LP in a prior loop. The bench is nominally 3 (S6, S28, S32) but effectively 2: S6 is tagged BFA in the weak 'built it unasked' sense and misreads as a tool-building story against a speed prompt. S28 is the real default; S32 is the strong backup (contractor renegotiated, LOC drawn, gap closed in-month).",
     "14 of 15 stories are set at the same real-estate firm; S8 (Signature Photo) is the only outside setting. Across a 5-interviewer loop the setting will repeat - vary the property and the stakeholder so the stories don't blur together.",
     "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss.",
-    "Are Right, A Lot is covered 7 of 7 but has no deep bench: S26 leads, with S3 and S35 behind, and the 'when were you wrong' half is carried by S30, S5 and S3. Think Big is the thinner one - S27 and S32 only, after S6's tag was removed (a one-park dashboard is execution, not scale-thinking)."
+    "Are Right, A Lot is covered 7 of 7 but has no deep bench: S26 leads, with S3 and S35 behind, and the 'when were you wrong' half is carried by S30, S5 and S3. Think Big is the thinner one - S27 and S32 only, after S6's tag was removed (a one-park dashboard is execution, not scale-thinking).",
+    "HARD GAP - Learn and Be Curious criterion 'currently working on initiatives to improve themselves' is present tense and no story can answer it. Needs a true, current answer from the candidate: what she is learning or working on right now. UNRESOLVED as of 2026-09-03."
   ],
   "usage_rules": [
     "Never use both S29 variants with the same interviewer.",
@@ -2479,7 +2486,7 @@
         "S35",
         "S8"
       ],
-      "score": "6 of 9 across the pair; neither works alone",
+      "score": "7 of 9 across S35+S8; neither works alone",
       "detail": {
         "Takes actions guided by customer input": "COVERED - S35, tenant ease weighted highest.",
         "Works backwards from the optimal customer experience": "COVERED, strongly - 'a system they won't adopt doesn't fix anything.'",
@@ -2489,7 +2496,7 @@
         "Listens to feedback and uses it to improve": "COVERED by S8 - the calls WERE the feedback, and you built from them.",
         "Pushes back to protect the long-term customer interest": "COVERED - S35, you rejected the cheapest option.",
         "Earns trust by delivering what was promised": "COVERED by S8.",
-        "Stops activities that no longer enhance the experience": "GAP."
+        "Stops activities that no longer enhance the experience": "COVERED after review - S35 stopped check and cash collection entirely. 'Payments stopped going missing between collection and the books, because most of them no longer passed through anyone's hands.' That IS retiring an activity that had stopped serving the tenant. Say it as a decision, not a side effect."
       }
     }
   }
