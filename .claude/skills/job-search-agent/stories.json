@@ -1014,8 +1014,8 @@
     },
     {
       "id": "S41",
-      "title": "Portfolio Water Variance - Leak and Billing Glitch",
-      "setting": "10-park portfolio; 3 parks investigated",
+      "title": "Water Variance - Undetected Leak",
+      "setting": "One park in a 10-park portfolio",
       "lps": [
         "Dive Deep",
         "Insist on the Highest Standards",
@@ -1026,78 +1026,60 @@
         "Insist on the Highest Standards"
       ],
       "situation": [
-        "Monthly budget review across a 10-park RV and mobile home portfolio. Water cost jumped 18% at three parks with no change in occupancy."
+        "Monthly budget review across a 10-park portfolio. Water cost at one park came in 18% over budget, with occupancy flat and the other nine parks normal."
       ],
       "task": [
-        "Park managers attributed it to city rate increases. Water is billed through to tenants, so a rate increase should not hit the company P&L at all - the question was why it had."
+        "The park manager attributed it to a city rate increase. Water is metered per tenant and charged back, so a rate rise should be cost-neutral - and flat occupancy ruled out volume."
       ],
       "action": [
-        "Pulled main-meter bills and individual tenant meter readings for all three parks and matched them in Excel.",
-        "Park 1: main meter showed 35% more water than tenants had used - a physical loss, traced to an underground pipe leak.",
-        "Parks 2 and 3: the city rate had risen but the billing system had not picked up the new rate, so tenants were charged the old rate and the company absorbed the difference.",
-        "Repaired the pipe; corrected the billing rate settings.",
-        "Built a monthly tracker comparing main-meter usage to summed tenant meters so a gap surfaces the month it appears."
+        "Pulled the city's main-meter bills and every tenant's individual meter reading, matched line by line in Excel.",
+        "Main meter ran 35% above summed tenant usage. On a ~$6,000 monthly bill, about $1,600 of water paid for and billable to nobody.",
+        "Raised it with operations as a physical loss rather than a billing issue; they located an underground pipe leak that had been running about three months.",
+        "Ran the same comparison at the other nine parks to bound the problem - all agreed.",
+        "Built a monthly tracker comparing main-meter usage against summed tenant meters across all ten parks, shown as a percentage."
       ],
       "result": [
-        "Billing correction recovers about $24,000 a year, permanently - a rate fix recurs every month.",
-        "Leak was costing about $1,600 a month; caught at three months instead of running a full year - roughly $19,000 a year off the cost base going forward.",
-        "Combined forward run-rate about $43,000 a year across the three parks.",
+        "Leak repaired. About $1,600 a month, caught at three months rather than a year - roughly $19,000 a year off the cost base going forward.",
         "Tracker turns a once-a-year budget-review discovery into a monthly exception."
       ],
-      "open_questions": [
-        "WHY WERE THE OTHER SEVEN PARKS FINE? Same rate change should have hit them the same way. Possible answers: they sit under a different water authority or district; they are on a different billing cycle; they were updated and these two weren't, which means something about these two is different - added to the portfolio later, a different onsite manager, a different billing setup. LOOK THIS UP. An interviewer will ask what made those two the ones that broke, and 'I don't know' is weak here because the data to answer it is sitting in the billing system."
-      ],
+      "open_questions": [],
       "spoken_star": {
         "primary": "Dive Deep",
         "also": [
           "Ownership"
         ],
-        "s": "I manage the monthly finances and utilities for ten RV and mobile home parks, about seven hundred tenants. Every month I review each property's actual costs against the budget. One month, water cost was 18% higher at three parks. The other seven were normal, and occupancy had not changed.",
-        "t": "The park managers said the city increased its rates, which was true. But tenants are metered individually and we charge the water straight back to them, so a rate increase should not cost us anything. I wanted to know why this one did.",
-        "a": "So I collected the raw data. The city's bills from the main meter at each park, and every tenant's individual meter reading. Then I matched them in Excel, one line at a time, park by park. Slow work — three parks, every tenant — but it is the only way the gap shows up.\n\nI found two different problems.\n\nAt the first park, the main meter showed 35% more water than the tenants actually used. That water went somewhere, but not to any tenant. It was a pipe leaking underground, which is why nobody could see it.\n\nAt the other two parks, the meters matched. The usage was normal. The problem was that the city increased its rate and our billing system still had the old rate. So we paid the new rate and charged tenants the old rate. Every month, we paid the difference ourselves.\n\nThen I checked the rate in our system for the other seven parks against the city's current rate, because I wanted to know if this was two parks or ten. They were all correct.\n\nSo the managers were right that rates increased. What they missed was that we were the ones paying for it. I wrote both findings up with the cost of each and took them to leadership. Operations repaired the pipe, and the billing rate was corrected.",
-        "r": "The billing correction recovers about $24,000 a year, and it continues — once the rate is correct, it is correct every month. The leak was costing about $1,600 a month, and we found it after three months instead of after a year. Together that is about $40,000 a year lower cost. I also built a tracker that compares the main meter against the tenant meters every month, so the next problem appears immediately."
+        "s": "I manage the monthly finances and utilities for ten RV and mobile home parks. Every month I review each property's actual costs against budget. One month, water cost at one park was 18% over. The other nine were normal, and occupancy had not changed.",
+        "t": "The park manager said the city had increased its rates. But tenants are metered individually and we charge the water straight back to them, so a rate increase should not cost us anything. And with occupancy flat, it was not more people using more water. I wanted to know where the money was going.",
+        "a": "The city bills us off one main meter for the whole park. Each tenant has their own meter, and we bill them for what they use. So I pulled both — the city's bills and every tenant's meter reading — and matched them in Excel, one line at a time. Slow work, but it is the only way the gap shows up.\n\nThe main meter showed 35% more water than the tenants had actually used. On a bill of about $6,000 a month, that is roughly $1,600 of water we were paying for and could not bill to anyone.\n\nThat water was going somewhere, and it was not going to a tap. So I raised it with operations as a physical problem rather than a billing one, and they found an underground pipe leak. It had been running about three months.\n\nI also ran the same comparison at the other nine parks, because I wanted to know whether this was one park or all of them. Everywhere else the two meters agreed.\n\nThen I built a tracker that runs that comparison every month across all ten parks — main meter against the total of the tenant meters, shown as a percentage.",
+        "r": "The leak was repaired. It had been costing about $1,600 a month, so catching it at three months instead of letting it run a year took roughly $19,000 a year off our cost base.\n\nAnd the tracker means the next one shows up the month it starts, instead of at a budget review. An underground leak is invisible by definition — the gap between the two meters is the only place it appears."
       },
       "calc_sheet": {
-        "the_flag": "Water cost up 18% at three of ten parks, occupancy flat. Flat occupancy is what rules out volume before you start.",
+        "the_flag": "Water 18% over budget at one park, occupancy flat, other nine parks normal.",
+        "how_water_is_billed": "The city bills the park off one main meter. Each tenant is separately metered and billed for their own use. So the company is in the middle, and in a normal month the two roughly cancel.",
+        "why_a_rate_rise_is_neutral": "If the city raises the rate, our bill rises and what we charge tenants rises with it. So a cost increase landing on us means either more usage - ruled out by flat occupancy - or water we are paying for and cannot bill.",
         "leak_park_bill": "Main meter about $6,000 a month.",
-        "leak_size": "Main meter ran 35% above summed tenant usage. So tenant usage = $6,000 / 1.35 = about $4,444, and the leak = about $1,556 a month. Call it $1,600.",
-        "leak_actual_vs_annual": "It ran three months, so about $4,700 was actually lost. Annualised, it was on track for about $19,000 a year - that is the avoided figure, and it must be stated as forward run-rate, NOT as money saved.",
-        "billing_glitch": "Two parks, similar size, so about $12,000 a month of water billed. An 18% rate rise not passed through leaves 18/118 = about 15% of the new bill unrecovered = about $1,830 a month = roughly $22,000 a year. The candidate's own figure of $24,000 corroborates this independently.",
-        "combined": "About $43,000 a year forward run-rate. Over the three months before it was caught, about $10,200 was actually at stake.",
-        "valuation_if_asked": "At a 6% cap rate, $43,000 of NOI is about $717,000 of value. Do not volunteer this - it is the only number not observed, and it moves the conversation to cap rate assumptions.",
-        "RETIRED_NUMBERS": "An earlier telling claimed $42,000/yr leak, $66,000/yr total and $1.1M of value. The $42,000 is impossible against a $6,000/month bill (it would need over half the water to be leaking) and $66,000 and $1.1M fall with it. Do not use them.",
-        "why_only_three_parks": "A rate rise is neutral to us - the bill goes up and what we charge tenants goes up with it. It only costs us where the charging breaks. Two parks were still billing tenants the old rate. The third wasn't a rate problem at all - that was the leak. The other seven were flat, which is what says 'something is broken here' rather than 'the city raised prices'.",
-        "how_water_is_billed": "CONFIRMED 2026-09-03: at these parks tenants are separately metered and billed for their own water use - the company charges it on. It is NOT included in rent at the parks in this story. That is what makes the finding possible: a rate rise should be neutral to the P&L, so cost landing on the company means the charge-on broke.",
-        "the_frame_in_one_line": "The company sits between the city and the tenants: pays the main meter, bills the individual meters, and in a normal month those cancel. Every finding in this story is one of those two sides failing to match the other. A leak is water paid for and billed to nobody; the glitch is water billed at the old price. USE THIS FRAME if anyone looks confused - it makes both root causes obvious in one sentence.",
-        "the_negative_check": "The rate loaded at the other seven parks was verified against the city's current schedule and was correct. This is what bounds the problem: two broken, seven fine, one leaking. Without it, 'the billing system was wrong' is an unbounded claim. WHY the seven were fine is still unanswered - see open_questions."
+        "leak_size": "Main meter ran 35% above summed tenant usage. Tenant usage = $6,000 / 1.35 = about $4,444, so the leak = about $1,556 a month. Call it $1,600.",
+        "actual_vs_annual": "It ran three months, so about $4,700 was actually lost. Annualised it was on track for about $19,000 a year - state that as forward run-rate avoided, NOT as money saved.",
+        "the_negative_check": "The same comparison at the other nine parks showed the meters agreeing. This bounds the problem to one park and is a deliberate step, not tidiness.",
+        "RETIRED_NUMBERS": "Earlier tellings claimed $42,000/yr, $66,000/yr and $1.1M of property value. All impossible against a $6,000 monthly bill. A billing-rate finding at two other parks (~$24,000/yr) was also part of an earlier version and has been deliberately cut to keep the story to one thread - do not reintroduce it mid-answer."
       },
       "pocket_answers": {
-        "What was the water bill?": "About $6,000 a month at the leak park. The main meter was running 35% above what the tenants actually used, so roughly $1,600 a month was going into the ground.",
-        "How did you know the gap was a leak and not bad tenant meters?": "A meter problem would show up as one or two units reading oddly. This was a consistent gap between the main meter and the sum of all the tenant meters, month after month - that pattern is loss between the main and the units. We confirmed it by finding the pipe.",
-        "So the managers were wrong about the rate increase?": "No, they were right that rates went up. What they'd missed is that a rate increase is supposed to pass through to tenants, so it shouldn't reach our P&L. The real finding was that the pass-through had stopped working.",
-        "Is that $43,000 money you saved?": "It's forward run-rate. The billing correction recovers about $24,000 a year and keeps doing it. The leak was about $1,600 a month and ran three months, so roughly $4,700 was actually lost - the $19,000 is what it would have cost over a full year if we hadn't found it.",
-        "Did you back-bill the tenants for the undercharge?": "The correction was applied going forward. The under-recovery over those three months was about $5,500, and the ongoing rate fix is the larger number by far.",
-        "What did it do to property value?": "At a 6% cap rate, about $43,000 of recurring NOI is roughly $700,000 of value across those parks - though that's a valuation assumption, not an observed number.",
-        "How would you catch it faster next time?": "That's what the tracker does. Main-meter usage against summed tenant meters, every month, with the variance shown as a percentage. Anything above a few percent is either a leak or a billing error, and both are worth a look.",
-        "If it was a rate increase, why did it only hit three parks?": "That was the question. A rate increase shouldn't hit us at all — tenants are billed for their own use, so when the rate goes up, what we charge them goes up with it. It only costs us where that breaks. At two parks the billing system was still charging the old rate, so we ate the difference. The third park wasn't a rate problem — that was the leak. The other seven being flat is what told me it was something broken, not something external.",
-        "Was the 18% the water bill or your cost?": "Our cost — what we were left carrying after tenant billing, which is what shows in the P&L. The city invoice going up is normal. The invoice going up while what we recover doesn't is the problem.",
-        "How were tenants billed for water?": "Individually metered. Each tenant has their own meter and gets billed for what they use, and the park pays the city off the main meter. That's why comparing the two is possible — and why the difference between them means something.",
-        "Walk me through how the water actually flows financially.": "We're in the middle of it. The city bills the park off the main meter and we pay that. Each tenant has their own meter and we bill them for what they used. In a normal month those two roughly cancel — water passes through us. So an 18% jump isn't a water problem, it's those two not cancelling, and there are only two ways that happens: water we paid for that never reached a tenant, or water we billed at the wrong price. One park was the first, two were the second.",
-        "What made those two parks the ones that broke?": "[LOOK THIS UP BEFORE THE LOOP - do not answer this from guesswork.] The check itself is solid: I verified the rate at the other seven against the city's schedule and they were correct. The reason those two were different is the part to confirm - whether it's a different water authority, a different billing cycle, or those two simply not having been updated when the others were."
+        "What was the water bill?": "About $6,000 a month at that park. The main meter was running 35% above what the tenants actually used, so roughly $1,600 a month was going into the ground.",
+        "How did you know it was a leak and not a faulty meter?": "A meter fault shows up as one or two units reading strangely. This was a consistent gap between the main meter and the sum of all the tenant meters, month after month. That pattern is loss between the main and the units. Operations confirmed it when they found the pipe.",
+        "Why would a rate increase not have explained it?": "Because tenants pay for their own water. If the city raises the rate, our bill goes up and what we charge tenants goes up with it. It should be neutral to us. So a cost landing on our side meant either more usage, which flat occupancy ruled out, or water we were paying for and could not bill.",
+        "Is the $19,000 money you saved?": "It is forward run-rate. The leak was about $1,600 a month and it ran three months, so roughly $4,700 was actually lost. The $19,000 is what it would have cost over a full year if we had not found it.",
+        "Why check the other nine parks?": "Because I wanted to know whether I had found one problem or the start of a pattern. If the same gap had shown up elsewhere it would have been a systemic issue rather than one pipe, and that is a different conversation with a different fix.",
+        "How does the tracker work?": "It compares main-meter usage against the sum of the tenant meters every month, at every park, and shows the difference as a percentage. Anything more than a few percent is either a leak or a billing error, and both are worth looking at."
       },
       "delivery_notes": [
-        "LEAD DIVE DEEP STORY, and the lead for Insist on the Highest Standards alongside S30. Portfolio scale, an assumption from people closer to the asset, and two distinct root causes from one investigation.",
-        "SAY 'AND STAYED FLAT AT THE OTHER SEVEN'. It is the control group, and it is what makes the managers' explanation fail - a city rate rise doesn't stop at three parks. Without that clause the setup is ambiguous and the interviewer gets stuck there instead of following you.",
-        "THE NEGATIVE CHECK IS THE STRONGEST ANALYTICAL MOVE IN THIS STORY. Verifying the seven that were fine is what bounds the problem - it turns 'I found two issues' into 'I established the scope'. Say it as a deliberate step, not an afterthought: 'I wanted to know whether this was two parks or ten.'",
-        "OPEN QUESTION - why were the other seven fine? This is the obvious next question and the bank cannot answer it yet. Find out before the loop. Saying 'I don't know' here is weaker than elsewhere, because you had the data in front of you.",
-        "Plain words only on the billing mechanic: 'tenants are billed for their own water use - we charge it on'. Do not say pass-through, recovery, or RUBS. The mechanic is simple and saying it simply is what lets the finding land.",
-        "IF THEY LOOK LOST, use the middleman frame: 'we pay the city off the main meter, we bill each tenant off theirs, and normally those cancel'. Both root causes become obvious from that one sentence. It is in the pocket answers - do not put it in the script, it is only needed if the mechanic doesn't land first time.",
-        "Do not say the managers were wrong. Say they were right about the rate rise and had missed that it shouldn't have reached us. That framing is both more accurate and more generous, and it is what leads to the billing finding.",
-        "NEVER say $42,000, $66,000, or $1.1 million. Those numbers do not survive a question about the size of the water bill. See calc_sheet.RETIRED_NUMBERS.",
-        "Say '$24,000 a year, permanently' before the leak figure. It is the recurring one and it is the one that survives any probe.",
-        "Flat occupancy is the hinge of the whole story - it rules out volume in one clause. Say it in the Situation, not later.",
-        "Hold the valuation back. Answer it if asked, with the cap rate stated out loud.",
-        "DIVE DEEP RUBRIC: this story covers all seven criteria - see rubric_coverage. The 'difficult or time-consuming' one lives entirely in the 'line by line, tedious' clause, so do not cut it for time."
+        "LEAD DIVE DEEP STORY. One thread: a cost line moved, the stated cause could not explain it, and the real cause was found by comparing two data sources.",
+        "SAY 'THE OTHER NINE WERE NORMAL'. It is the control group, and it is what makes the manager's explanation fail before you even open Excel.",
+        "Plain words on the billing mechanic: 'tenants are metered individually and we charge the water straight back to them'. Do not say pass-through or cost recovery.",
+        "'Slow work, but it is the only way the gap shows up' earns the Dive Deep criterion about gathering information even when it is difficult or time-consuming. Do not cut it for time.",
+        "Running the same check at the other nine parks bounds the problem. Say it as a deliberate step - 'I wanted to know whether this was one park or all of them' - not as an afterthought.",
+        "SCOPE - you found it and reported it. Operations repaired the pipe. Do not say you fixed it.",
+        "NEVER say $42,000, $66,000 or $1.1 million. See calc_sheet.RETIRED_NUMBERS.",
+        "A billing-rate finding at two other parks was cut from this story deliberately, to keep it to one thread. Do not add it back mid-answer - the numbers were rebuilt around the leak alone."
       ],
       "rubric_coverage": {
         "Stays connected to the details": "STRONG. 'In a monthly budget review, water cost jumped 18% at three of them.' You are in the numbers every month and you caught a three-park pattern, not a single anomaly.",
