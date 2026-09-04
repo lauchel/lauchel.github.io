@@ -687,18 +687,18 @@
         "Q4"
       ],
       "situation": [
-        "Decided to migrate property financial records into centralized SQLite database.",
-        "Committed to completing within 2 weeks. 18 months of historical GL data."
+        "Property financial records spread across separate files by property, making anything portfolio-level slow.",
+        "Proposed migrating 18 months of general ledger data - a full prior year plus current year to date, enough to compare year over year - into one central database. Unprompted."
       ],
       "task": [
-        "Extract, standardize, and upload all vendor payment logs and CapEx records."
+        "Fixed external deadline: it had to be ready before annual planning season.",
+        "It had to be right, because next year's numbers would be built from it. She committed to two weeks."
       ],
       "action": [
-        "Day 8: found 7 vendors logged under multiple names, GL codes didn't match across files.",
-        "150+ transactions scattered across wrong P&L lines - mixing OpEx and CapEx.",
-        "Audited past invoices to reclassify $40K properly.",
-        "Alerted manager on day 11. Took full ownership for underestimating data-cleaning scope.",
-        "Showed what was done, proposed 4-day extension rather than pushing dirty data."
+        "Pulled data from QuickBooks, the bank statements and the individual property files; standardised into one structure.",
+        "Day 8: found seven vendors under multiple names, GL codes inconsistent across files, and 100+ transactions on the wrong P&L lines - about $40K of opex/capex to reclassify against old invoices.",
+        "Spent two days trying to hold the date; concluded she could not without loading data she knew was wrong.",
+        "Day 11: went to her manager, owned the estimate rather than the data, showed what was done and what remained, and asked for four more days."
       ],
       "result": [
         "Launched 4 days late with 100% accurate data.",
@@ -709,27 +709,34 @@
       "delivery_notes": [
         "BEST FAILURE STORY IN THE BANK. The strongest beat is quoting the manager's criticism and agreeing with it - that reads as genuinely coachable.",
         "Now the lead for Insist on the Highest Standards as well as the failure story. It is the best answer to 'a decision between standards and delivery' - you chose accurate over on-time and said so.",
-        "EARN TRUST RUBRIC: covers 6 of 7. 'Provides feedback to others respectfully' is not in this story - S29 is the answer to that one. And on 'honors commitments': you missed the date, so frame it as renegotiating openly BEFORE the deadline rather than shipping something you knew was wrong."
+        "EARN TRUST RUBRIC: covers 6 of 7. 'Provides feedback to others respectfully' is not in this story - S29 is the answer to that one. And on 'honors commitments': you missed the date, so frame it as renegotiating openly BEFORE the deadline rather than shipping something you knew was wrong.",
+        "Two deadlines here and the distinction matters: the two weeks was HERS, the planning season was EXTERNAL. Owning a self-imposed estimate that ran into a real deadline is the story. Say both.",
+        "The Action leads with what she DID - pulled from three named sources and standardised - before what she found. Keep that order; the earlier version narrated the discovery and read passive."
       ],
       "pocket_answers": {
         "You knew on day 8 - why wait until day 11 to tell your manager?": "I spent those days scoping the true extent so I could bring a specific ask instead of a vague alarm - I wanted to say 'four days and here's exactly what's wrong', not 'this might slip.' In hindsight I'd have flagged it on day 8 with the estimate to follow, and that's what I do now.",
         "How did you know four days was enough?": "By then I'd counted the affected transactions and knew the reclassification rate. It was a measured number rather than a guess, which is the only reason I was willing to commit to it a second time.",
         "Why did the misclassification matter?": "Operating expenses mixed with capital expenditures distorts both the P&L and what gets depreciated. Loading that into a system people would rely on would have propagated the error rather than fixing it.",
-        "What would you do differently?": "Run a data quality check before committing to any timeline. That's the whole lesson, and the validation macro that came out of it cut verification time about 60%."
+        "What would you do differently?": "Run a data quality check before committing to any timeline. That's the whole lesson, and the validation macro that came out of it cut verification time about 60%.",
+        "Why eighteen months?": "A full prior year plus the current year to date. Less than that and you cannot compare year over year, which is most of the reason for putting it in one place.",
+        "Was the deadline yours or someone else's?": "The two weeks was mine — I offered it. The real constraint was annual planning season, which is fixed. That is why four days was survivable and why I asked for four rather than open-ended: planning had room for four days, it would not have had room for a rebuild."
       },
       "spoken_star": {
         "primary": "Earn Trust",
         "also": [],
-        "s": "This is one I did wrong. Our property financial records were spread across separate files, one for each property, so anything at portfolio level was slow. I proposed moving them into one central database — eighteen months of general ledger data. Nobody asked me to do it. And I said I could finish in two weeks.",
-        "t": "I had to extract all the data, standardise it, and load it into a system people would use for reporting. It had to be right, because they would make decisions from it.",
-        "a": "On day eight I had a serious problem.\n\nThe data was much less clean than I expected. Seven vendors were entered under several different names, so one supplier looked like several. The GL codes did not match between files, because different people had coded things differently over eighteen months. And more than a hundred transactions were on the wrong P&L lines — operating expenses mixed together with capital expenditure, which matters, because they are treated completely differently. I had to go back through old invoices to decide which was which and reclassify about $40K.\n\nI spent two days trying to still meet the original deadline. I could not, unless I loaded data I already knew had problems into a system people would use for decisions.\n\nSo on day eleven I went to my manager and told him directly. I said I committed to a date before checking the data quality, and that was my mistake — not the messy data, but giving a date before I looked. I showed him what was finished, what remained, and what I had found. Then I asked for four more days.",
-        "r": "We launched four days late, but the data was correct.\n\nHis feedback was that I should have checked data quality before committing to a date. He was right, and I now do that on every migration.\n\nThe other result was more useful than the database. The validation macro I wrote to find those problems became the standard check for uploads. It is documented, so other people run it, and it reduced checking time by more than half."
+        "s": "This is one I did wrong. Our property financial records were spread across separate files, one for each property, so anything at portfolio level was slow. I proposed moving eighteen months of general ledger data into one central database — a full prior year plus the current year to date, so we could actually compare year over year. Nobody asked me to do it.",
+        "t": "It had to be ready before annual planning season, which is a fixed date, and it had to be right, because people would build next year's numbers from it. I said I could finish in two weeks.",
+        "a": "I pulled the data from three places — QuickBooks, the bank statements, and the individual property files — and started standardising it into one structure.\n\nOn day eight I hit a wall. Seven vendors were entered under several different names, so one supplier looked like several. The GL codes did not match between files, because different people had coded things differently over eighteen months. And more than a hundred transactions were on the wrong P&L lines — operating expenses mixed together with capital expenditure, which matters, because they are treated completely differently. I went back through old invoices to decide which was which and reclassified about $40K.\n\nI spent two days trying to still meet the date. I could not, unless I loaded data I already knew had problems into a system people would build next year's plan from.\n\nSo on day eleven I went to my manager and told him directly. I said I committed to a date before checking the data quality, and that was my mistake — not the messy data, but giving a date before I looked. I showed him what was finished, what remained, and asked for four more days. Planning season had room for four days. It would not have had room for a rebuild.",
+        "r": "We launched four days late but ahead of planning season, and the data was correct.\n\nHis feedback was that I should have checked data quality before committing to a date. He was right, and I now do that on every migration.\n\nThe other result was more useful than the database. The validation macro I wrote to find those problems became the standard check for uploads. It is documented, so other people run it, and it reduced checking time by more than half."
       },
       "calc_sheet": {
         "scope": "18 months of general ledger data, committed to a 2-week migration.",
         "what_broke": "7 vendors under multiple names, mismatched GL codes, 150+ transactions on the wrong P&L lines - about $40K of OpEx and CapEx to reclassify.",
         "timeline": "Problem found day 8, escalated day 11, delivered 4 days past the 2-week commitment.",
-        "downstream": "The validation macro cut verification time about 60% on every upload after."
+        "downstream": "The validation macro cut verification time about 60% on every upload after.",
+        "why_18_months": "A full prior year plus the current year to date. That is the minimum that lets you compare year over year, which is the point of having it in one place.",
+        "the_deadline": "Annual planning season - an external fixed date, not one she set. Four days of slippage fit inside it; a rebuild would not have.",
+        "the_sources": "QuickBooks, bank statements, and the individual property files."
       },
       "primary_lps": [
         "Earn Trust",
@@ -738,7 +745,7 @@
     },
     {
       "id": "S31",
-      "title": "Concrete Weekly Payouts",
+      "title": "Weekly Payroll - Disagree and Commit",
       "setting": "Concrete apartment project, $100K monthly CapEx",
       "lps": [
         "Have Backbone, Disagree and Commit",
@@ -749,30 +756,27 @@
         "Q3"
       ],
       "situation": [
-        "Concrete apartment project, running bi-weekly payouts on $100K monthly CapEx budget.",
-        "Project manager wanted weekly to keep contractors on-site and speed timeline."
+        "Construction crew are company employees, paid hourly with tracked hours, on a two-week payroll cycle.",
+        "The project manager wanted to move them to weekly pay to help keep crew on site."
       ],
       "task": [
-        "Evaluate cash flow impact and ensure working capital and invoice controls stayed stable."
+        "Work out the cost and workload impact of doubling the payroll runs, and recommend."
       ],
       "action": [
-        "Disagreed. Showed three risks: ACH fees increase 15%, double GL reconciliation workload, higher duplicate payment risk.",
-        "Proposed staying bi-weekly.",
-        "Leadership overruled - vendor satisfaction and speed mattered more.",
-        "Committed fully. Built automated Excel macro flagging duplicate invoice numbers and cross-referencing weekly draws against contract limits."
+        "Raised three specific costs: ACH fees up about 15% (per-payment charges double, the fixed monthly charge does not), payroll processing doubles, reconciliation doubles.",
+        "Recommended staying on the two-week cycle.",
+        "Overruled - leadership weighted crew retention and schedule above the processing cost, which on that project size is the larger number.",
+        "Accepted the decision and absorbed the additional work."
       ],
       "result": [
-        "Construction accelerated 10 days.",
-        "Processing costs rose, reconciliation jumped 6 hours/week - exactly what I flagged.",
-        "Maintained 100% accuracy with zero duplicates.",
-        "Learned that operational momentum sometimes outweighs financial friction."
+        "Construction finished about ten days earlier.",
+        "Costs rose and reconciliation added about six hours a week - the amount she had forecast, and which she took on."
       ],
       "delivery_notes": [
-        "This is the true 'disagree and commit' story - the commit half is what makes it land. S3 and S26 are backbone stories where the candidate won; this is the one where they lost and executed anyway.",
-        "Deliver the cost line FLATLY. 'Exactly what I flagged' is true but lands as 'I told you so', which undercuts the commit half you are actually scored on. Say instead: 'The costs did rise and reconciliation went up about six hours a week - so I built the controls to absorb that, and we ran it with zero duplicates.'",
-        "Make sure you reach the closing line about operational momentum outweighing financial friction. It is the best sentence in the story.",
-        "ALSO ANSWERS THE CROSS-TEAM ALIGNMENT QUESTION. Project management and finance had genuinely conflicting goals - schedule versus cost control - and mutual dependency. Framed that way it is an Earn Trust answer: you protected the other team's decision by building the controls that made it safe, and both goals were met. Open on the conflicting goals, not on your disagreement, when the question is framed around teams.",
-        "SAY 'I ESTIMATED FEES WOULD RISE ABOUT 15%', NOT 'FEES ROSE 15%'. It was a forward-looking risk you raised while arguing the case, not a measured result - framing it as an estimate removes the need to defend it precisely. If probed on why not double, the answer is that most of the ACH cost was the fixed monthly charge; only the per-payment portion scaled with the number of runs."
+        "SCOPE - these are our own hourly employees, not vendors or subcontractors. Do not say vendor payouts, invoices, or duplicate payments; there are no invoices in this story.",
+        "This is Have Backbone, Disagree and Commit. The commit half is the stronger half: you were overruled, you absorbed the six hours a week you had forecast, and you did not raise it again.",
+        "The best line is the reflection: you priced the cost of the change but not the cost of the alternative. It is a real analytical lesson and it is why they were right.",
+        "Do not oversell the disagreement. Three costed concerns and a recommendation is the whole of it - it was a professional difference, not a confrontation."
       ],
       "spoken_star": {
         "primary": "Have Backbone, Disagree and Commit",
@@ -780,26 +784,24 @@
           "Deliver Results",
           "Earn Trust"
         ],
-        "s": "We paid vendors every two weeks on an apartment project with a $100K monthly capital budget. The project manager wanted to change to weekly payments. His reasoning was that contractors stay on site when they are paid regularly, so the construction moves faster. That is a real effect.",
-        "t": "My job was to calculate what that would do to our cash flow and our invoice controls, and give a recommendation. Doubling the number of payment runs is not neutral for finance, even though it looks simple from the site.",
-        "a": "I disagreed, and I gave three specific reasons instead of a general objection.\n\nOur ACH fees would increase about 15% — the per-payment charges double, even though the fixed monthly charge does not. The reconciliation work would double, because everything that happens for each payment run happens twice as often. And more payment runs means more chances of paying the same invoice twice. That last one concerned me most.\n\nI recommended staying with two weeks.\n\nLeadership decided that keeping vendors on site and the schedule moving was more important, and changed to weekly. Looking back, they were considering something I was not. I was measuring the cost of the change. They were measuring the cost of the construction taking longer, and on a project that size, that is the larger number.\n\nSo I accepted the decision and built what we needed to make it safe: a macro that identifies duplicate invoice numbers before any payment goes out, and a check of every weekly payment against the contract limits.\n\nMy view was that if we were going to make twice as many payments, the controls needed to be twice as strong, not the same ones running faster.",
-        "r": "The construction finished about ten days earlier. It did cost more, and the reconciliation added about six hours a week. But I had planned for that, and we completed the entire project without paying any invoice twice.\n\nWhat I learned is that keeping a project moving can be worth real financial cost, and that decision belongs to leadership, not to the numbers alone. My job was to measure the cost and control the risk, not to win the argument."
+        "s": "We paid our construction crew every two weeks. They are our own employees, paid hourly, and we track their hours. The project manager wanted to move them to weekly. His reasoning was that weekly pay helps keep crew on site, and on a construction schedule that matters.",
+        "t": "My job was to work out what doubling the payroll runs would cost us and what it would do to the workload, and give a recommendation.",
+        "a": "I disagreed, and I gave three specific reasons instead of a general objection.\n\nOur ACH fees would go up about 15% — the per-payment charges double, even though the fixed monthly charge does not. Payroll processing would double, because every run is the same work whether it covers one week or two. And the reconciliation behind it would double as well.\n\nI recommended staying with two weeks.\n\nLeadership decided that keeping the crew on site and the schedule moving mattered more, and went weekly. Looking back, they were weighing something I was not. I was measuring the cost of the change. They were measuring the cost of the build running long, and on a project that size that is the larger number.\n\nSo I accepted it and absorbed the work rather than pushing back again.",
+        "r": "The construction finished about ten days earlier. It did cost more, and the reconciliation added about six hours a week, which I had said it would and which I took on.\n\nWhat I learned is that keeping a project moving can be worth real financial cost, and that decision belongs to leadership, not to the numbers alone. My job was to price the cost accurately and then make the decision work, not to win the argument."
       },
       "calc_sheet": {
-        "scale": "$100K monthly capital budget, moving from 2 payment runs a month to 4.",
-        "costs": "ACH fees up about 15%, reconciliation up about 6 hours a week.",
-        "benefit": "Construction accelerated about 10 days.",
-        "controls": "Macro flags duplicate invoice numbers and cross-references each weekly draw against contract limits. Zero duplicates across the run.",
-        "the_15_percent": "An ex-ante estimate, not a measured outcome - it was one of three risks raised while arguing against the change. It is also defensible on the mechanics: ACH cost is a fixed monthly service charge plus per-payment fees, and doubling the runs doubles only the variable half. For the total to rise about 15%, the fixed charge has to be roughly 11x the per-run fees - e.g. ~$57/month fixed against ~$5 of transaction fees a run, which is ordinary for a business account.",
-        "ATTRIBUTION": "'I recommended staying at two weeks' and 'I committed to it' are both correct. The payment frequency decision was leadership's and the story says so. The controls she built are hers."
+        "who_is_paid": "Our own construction employees, paid hourly with tracked hours. NOT vendors or subcontractors - the earlier version said vendors and that was wrong.",
+        "the_change": "Payroll cycle from every two weeks to weekly. Two runs a month becomes four.",
+        "the_three_costs": "ACH fees up about 15%; payroll processing doubles; reconciliation doubles (about six hours a week).",
+        "the_15_percent": "ACH cost is a fixed monthly service charge plus per-payment fees. Doubling the runs doubles only the variable half, so the total rises well under 100%. About 15% implies the fixed charge is roughly 11x the per-run fees, which is ordinary for a business account.",
+        "the_benefit": "Construction finished about ten days earlier.",
+        "RETIRED": "An earlier version described this as vendor payouts with a duplicate-invoice risk and a control macro. Both were wrong - these are employees paid by hours, so there are no invoices to duplicate. Do not reintroduce either."
       },
       "pocket_answers": {
-        "Why did ACH fees only rise 15% if you doubled the runs?": "CHECK THIS BEFORE USING - doubling payment runs would normally roughly double per-transaction fees. If the 15% is right, know why: batch pricing, a fixed monthly component, or only part of the vendor list moving to weekly.",
-        "Was the ten days worth it?": "Not on my numbers, and I said so. Leadership weighed contractor availability and schedule risk higher than the processing cost, and that's a call above the spreadsheet - keeping crews on site has value that doesn't show up in ACH fees.",
-        "How did you stop duplicate payments?": "A macro flagging repeated invoice numbers and cross-referencing every weekly draw against the contract limit. More payment runs means more chances to pay twice, so the control had to scale with the frequency.",
-        "How did you handle being overruled?": "I'd made my case and it didn't win, so the useful thing left was making their decision work. I built the controls the same week.",
-        "Tell me about a time your goals were out of alignment with another team you depended on.": "On the apartment project, project management and finance wanted different things. They wanted weekly payouts to keep contractors on site and protect the schedule; I wanted bi-weekly to hold down processing cost and duplicate-payment risk. Both goals were legitimate and we depended on each other - they couldn't pay contractors without me, I couldn't control the spend without their schedule. Leadership went their way. So rather than treat it as lost, I built the controls that made their decision safe: a macro flagging duplicate invoice numbers and cross-referencing every weekly draw against the contract limit. They got their ten days, and we ran it with zero duplicate payments. Both goals landed.",
-        "Why would fees only rise 15% if you doubled the payment runs?": "Because most of the cost was the fixed monthly service charge, not per-payment fees. Doubling the runs doubles only the variable half. If it had been pure per-transaction pricing the answer would have been closer to double - the fact that it wasn't is why the number was 15%. That was also an estimate I made before the change, arguing against it, not something I measured afterwards."
+        "Why would ACH fees only rise 15% if you doubled the runs?": "Because the ACH cost is a fixed monthly charge plus a per-payment fee. Doubling the runs doubles only the per-payment half. For the total to move about 15%, the fixed charge has to be much the larger part, which it is on a business account.",
+        "Was the ten days worth it?": "On that project, yes, and leadership were right. Ten days of construction on a build that size is worth more than the processing cost I was pricing. I was measuring my side of it accurately and it was still the smaller number.",
+        "How did you handle being overruled?": "I made the decision work. I had said the reconciliation would roughly double, and it did — about six hours a week — so I took that on rather than raising it again as a reason we should not have done it. Once a decision is made, relitigating it is not analysis, it is friction.",
+        "Would you argue it differently now?": "Yes. I priced the cost of the change but I did not price the alternative — what a slower build would cost. If I had put both numbers side by side, I would have reached the same conclusion they did, and I would have got there myself instead of being corrected."
       },
       "open_questions": []
     },
@@ -979,9 +981,9 @@
           "Deliver Results"
         ],
         "s": "I was the finance person on our Mercer Island renovation, a project with about $50,000 a month of capital spending. One of my responsibilities was the labour budget, and I built it myself from the bottom up instead of using the contractor's number. Crew size, how long the work should take, and the hourly rate.",
-        "t": "After a couple of months the labour line came in over budget. I wanted to know which part of it had moved before I changed the forecast.",
-        "a": "Only three things can move that budget — crew size, rate, duration — so I checked each one separately.\n\nCrew size was what we planned, the same number of people. The rate was what we had in the contract. Neither had moved. So it was duration.\n\nI looked at the schedule and it had slipped. One of the crew had been moved to another site, so the same work was spread across more weeks.\n\nI rebuilt the forecast using the actual timeline instead of the planned one, so we had a number we could rely on for the rest of the project. And I took it to the project manager as a schedule problem rather than a cost problem, because the schedule was the part he could act on.\n\nThen I changed how I build these budgets. I now put contingency into the duration assumption instead of using the planned timeline as if it were fixed.",
-        "r": "The project finished within the revised budget. It ran two weeks longer with the same crew at the same rate, and once those two weeks were in the forecast, the number was stable for the rest of the project.\n\nI also changed how I build these budgets. I now include contingency in the duration assumption instead of treating the planned timeline as fixed. Treating the plan as certain is what allowed a delay to become a cost surprise."
+        "t": "After a couple of months the labour line came in 20% over budget. I wanted to know which part of it had moved before I changed the forecast.",
+        "a": "Only three things can move that budget — crew size, rate, duration — so I checked each one separately.\n\nCrew size was what we planned, the same number of people. The rate was what we had in the contract. Neither had moved. So it was duration.\n\nI looked at the schedule and it had slipped. It was planned as a ten-week job and it was running twelve — one of the crew had been moved to another site, so the same work was spread across more weeks. Two weeks on ten is 20%, which is exactly the overspend.\n\nI rebuilt the forecast using the actual timeline instead of the planned one, so we had a number we could rely on for the rest of the project. And I took it to the project manager as a schedule problem rather than a cost problem, because the schedule was the part he could act on.\n\nThen I changed how I build these budgets. I now put contingency into the duration assumption instead of using the planned timeline as if it were fixed.",
+        "r": "The 20% reconciled exactly to the schedule slip — two weeks on a ten-week job — so once the real timeline was in the forecast, the rest of the project ran to the revised number with no further variance.\n\nAnd I changed how I build these budgets. I now include contingency in the duration assumption instead of treating the planned timeline as fixed. Treating the plan as certain is what allowed a delay to become a cost surprise."
       },
       "calc_sheet": {
         "how_the_budget_is_built": "Bottom-up: crew size x duration x rate.",
@@ -989,14 +991,16 @@
         "why_duration_matters": "Hours are what you actually pay for. Crew size and rate set the per-week cost, but duration decides how many weeks you pay it. It is the driver people forget because a schedule slip is not reported as a cost. Same mechanic on any hourly labour line.",
         "project_scale": "Mercer Island renovation, about $50K a month of capital spend - the same project as S29.",
         "the_fix": "Schedule contingency now sits in the duration assumption. Budgeting the planned timeline as if it were fixed is what let a slip land as a cost surprise.",
-        "the_slip": "Two weeks. Same crew, same rate, two weeks longer - which is the entire variance."
+        "the_slip": "Two weeks. Same crew, same rate, two weeks longer on a ten-week job.",
+        "the_reconciliation": "Planned 10 weeks, ran 12. Two weeks on ten is 20% - exactly the labour overspend, with crew size and rate both unchanged. The variance reconciles to the slip with nothing left over."
       },
       "pocket_answers": {
         "How did you know it wasn't crew size or rate?": "Because I'd built the budget from those two, so I could check them directly - the crew on site matched the plan and the rate matched the contract. When both come back clean, the only thing left is time.",
         "Why did the schedule slip matter so much?": "Because labour cost is crew times rate times time. If the first two hold and the third stretches, the line moves regardless. That's also why a hiring plan's start dates matter more than the rate you assumed.",
         "Wasn't the crew being pulled someone else's decision?": "It was, and that's the point - the cost showed up on my line but the cause sat in the schedule. Flagging it that way meant it got solved where it actually lived instead of being absorbed as an overspend.",
         "How much contingency do you build in now?": "It depends on how much of the schedule depends on crews I don't control. The point isn't a fixed percentage - it's that duration is an assumption like any other, and budgeting the planned timeline as though it were fixed is what turned a schedule problem into a cost surprise.",
-        "How much did the two weeks cost?": "I'd have to pull the exact figure, but the mechanic is straightforward - same crew at the same rate for two more weeks. That's the point: nothing about the crew or the rate changed, only the time, and the time was the one input I'd treated as fixed."
+        "How much did the two weeks cost?": "I'd have to pull the exact figure, but the mechanic is straightforward - same crew at the same rate for two more weeks. That's the point: nothing about the crew or the rate changed, only the time, and the time was the one input I'd treated as fixed.",
+        "How do you know the slip explains the whole 20%?": "Because the arithmetic closes. Crew size was unchanged and the rate was contracted, so the only variable left is time. Ten weeks planned, twelve actual — that is 20% more weeks at the same weekly cost, which is 20% more labour cost. There is nothing left over to explain."
       },
       "delivery_notes": [
         "THE VALUE IS LOOKING PAST THE OBVIOUS TWO. Everyone checks volume and rate. This is the story where both came back clean and you kept going - that is what separates a checklist from an investigation.",
@@ -1004,7 +1008,8 @@
         "THIS IS THE LABOUR-COST STORY. Our construction crews are paid hourly and we track their hours, so the labour line is budgeted and forecast as crew x duration x rate, and I explain the variance on it every month. Lead with this if the question is about employee expense or labour cost. Do NOT stretch it into headcount planning - we were not hiring, and that claim does not survive a follow-up.",
         "SAY 'DURATION' EXPLICITLY as the third driver. Naming crew, rate and time as the three things that move a labour line shows you think in drivers, which is the language an FP&A interviewer works in.",
         "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S41's meter tracker, S3's self-funding question. Say what changed, not just that something did.",
-        "DIVE DEEP RUBRIC: covers five of seven cleanly. Thin on 'steps in and gets work done' and 'difficult or time-consuming' - see rubric_coverage. If a Dive Deep interviewer is clearly working a checklist, lead with S41 and keep this as the second answer."
+        "DIVE DEEP RUBRIC: covers five of seven cleanly. Thin on 'steps in and gets work done' and 'difficult or time-consuming' - see rubric_coverage. If a Dive Deep interviewer is clearly working a checklist, lead with S41 and keep this as the second answer.",
+        "The 20% reconciling exactly to two weeks on ten is the strongest moment here - same shape as an exact tie-out. Say the arithmetic out loud: crew unchanged, rate unchanged, ten weeks became twelve, so the line is 20% over and nothing is left unexplained."
       ],
       "open_questions": [],
       "rubric_coverage": {
