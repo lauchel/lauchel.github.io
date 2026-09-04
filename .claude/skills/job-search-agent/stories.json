@@ -838,6 +838,8 @@
       ],
       "delivery_notes": [
         "OPEN WITH THE THREE INPUTS, NOT WITH 'I AUTOMATED BILLING'. Meter readings from the onsite manager, the checks he collected, the online payments. That is the work. Leading with 'automation' skips what you actually did and invites 'automated what, exactly?' - the tool is how, not what.",
+        "NOTHING WENT OUT WRONG. The meter-reading mistake was in the formula while you were BUILDING it, and you caught it in testing. Never say it reached a real statement - it did not. Claiming a live billing error you did not make invites questions about refunds, restatements and controls, and there are no answers because it never happened.",
+        "THE BEAT IS STILL WORTH TELLING. 'I checked my own work against a month I already had right, and found I had used the wrong input' is a Highest Standards beat - it just belongs to testing, not to a live error. Catching it before it shipped is the point.",
         "Richest Dive Deep detail in the bank - the debugging beats (circular dependency, Error 429, wrong meter math) are what sell it. Don't compress them away.",
         "TRIM TO THREE DEBUGGING BEATS, not six: the name-matching, the meter math, the 429 rate limit. Six will overrun four minutes and you will get cut off before the result.",
         "Promote the 'without changing the onsite manager's existing workflow' constraint into the spoken opening. Designing around someone else's habits is the Customer Obsession angle and it is currently buried in the Task.",
@@ -855,7 +857,7 @@
         ],
         "s": "We added a 42-unit RV park, and it had no billing system. Every month the onsite manager sent me the meter readings and a spreadsheet of the checks he had collected, and the online payments came through a separate platform. None of it connected, so I worked out each bill by hand and made 42 statements one at a time.",
         "t": "About five hours every month, and every hour was a chance to type something wrong. I wanted one place where the readings and both payment sources came together — without changing how the onsite manager worked.",
-        "a": "I built it in Google Sheets with Apps Script. I had not used Apps Script before, so I learned it while building — documentation, an AI assistant when I got stuck, and a lot of testing.\n\nThe readings go in at one end. His checks and the online payments come into one ledger, both matched to the rent roll, so I can see who has paid. The statements come out the other end.\n\nThree things were difficult.\n\nFirst, the payment platform's data was inconsistent. Sometimes a payment arrived labelled \"32 Jennifer Holmes\", sometimes only \"32\". The same tenant, two formats. So I wrote something that separates the site number from the text and finds the tenant in the rent roll, so the format does not matter.\n\nSecond, I found my own mistake. I had been calculating utilities from the current meter reading instead of the usage, so I was billing people on the total number instead of the difference from last month. I found it while testing and rebuilt that part to subtract the previous reading. That error had been going onto real statements.\n\nThird, when I automated the PDFs, Google limited how many I could create at once — it will not generate 42 documents continuously. So I added a pause and a retry, so it works through them steadily instead of stopping halfway.",
+        "a": "I built it in Google Sheets with Apps Script. I had not used Apps Script before, so I learned it while building — documentation, an AI assistant when I got stuck, and a lot of testing.\n\nThe readings go in at one end. His checks and the online payments come into one ledger, both matched to the rent roll, so I can see who has paid. The statements come out the other end.\n\nThree things were difficult.\n\nFirst, the payment platform's data was inconsistent. Sometimes a payment arrived labelled \"32 Jennifer Holmes\", sometimes only \"32\". The same tenant, two formats. So I wrote something that separates the site number from the text and finds the tenant in the rent roll, so the format does not matter.\n\nSecond, I found my own mistake. I had written the calculation off the current meter reading instead of the usage — usage is the difference from last month's reading, not the number on the meter. I caught it in testing, before any statement went out, and rebuilt that part to subtract the previous reading.\n\nThird, when I automated the PDFs, Google limited how many I could create at once — it will not generate 42 documents continuously. So I added a pause and a retry, so it works through them steadily instead of stopping halfway.",
         "r": "Now it is four steps. Paste the data, the ledger updates, click a button, and all 42 statements appear in Drive.\n\nFive hours a month became about thirty minutes. But the more important result is the error rate. Every statement used to be calculated by hand, and now none of them are. And the onsite manager's process did not change at all. Their spreadsheet simply feeds the system now.",
         "bullets": {
           "s": [
@@ -874,9 +876,9 @@
             "# Structure: **readings in one end** - checks and online payments into **one ledger**, both matched to the rent roll - **statements out the other end**",
             "# Platform data inconsistent - \"32 Jennifer Holmes\" vs \"32\"",
             "> Wrote a parser: pulls the site number, matches the rent roll - format stops mattering",
-            "# **Found my own mistake** - billing off the **meter reading**, not the **usage**",
+            "# **Found my own mistake in testing** - calculated off the **meter reading**, should be the **usage difference**",
             "> Rebuilt to subtract the prior reading",
-            "> **That error had been going onto real statements**",
+            "> Caught it **before any statement went out** - rebuilt to subtract the previous reading",
             "# Google caps bulk PDFs - will not do 42 continuously",
             "> Added **pause + retry** - works through steadily instead of stopping halfway"
           ],
@@ -890,19 +892,20 @@
       },
       "calc_sheet": {
         "scale": "42 units, previously about 5 hours a month of manual billing, now about 30 minutes - a 90% reduction.",
-        "utility_math": "(current meter reading - previous reading) x $0.07394/kWh, + $3 service fee, + 6% tax. The original error was multiplying the current reading instead of the usage.",
+        "utility_math": "(current meter reading - previous reading) x $0.07394/kWh, + $3 service fee, + 6% tax. While building it she first wrote the formula off the current reading rather than the difference. CAUGHT IN TESTING - no tenant was ever billed on it, and no statement went out wrong.",
         "rate_limit": "Generating 42 PDFs in a loop hit Google's API limit (error 429), fixed with a 3-second retry delay.",
         "the_three_inputs": "Meter readings from the onsite manager, the checks he collected, and the online platform payments. Say all three - they are the actual monthly job. 'I automated billing' skips the work and invites 'automated what?'"
       },
       "pocket_answers": {
-        "Walk me through the utility calculation.": "Current meter reading minus the previous reading gives usage, times $0.07394 a kilowatt hour, plus a $3 service fee, plus 6% tax. I'd originally multiplied the current reading rather than the usage, which inflated every bill until I caught it.",
+        "Walk me through the utility calculation.": "Current meter reading minus the previous reading gives the usage, times $0.07394 a kilowatt hour, plus a $3 service fee, plus 6% tax. When I first wrote it I used the current reading rather than the difference, which would have inflated every bill — I caught that in testing, before anything went out.",
         "What happens if a meter reading is missing?": "The bill for that unit doesn't generate rather than generating wrong - I'd rather chase one reading than send 42 statements with one bad number in them.",
         "Why Google Sheets rather than Excel?": "The onsite manager needed to keep working in their own sheet without a license or a new tool, and Apps Script let me automate the PDF generation on the same platform.",
         "What happens when you're not there?": "It's four steps and they're documented - paste, let the ledger update, click, collect the PDFs. That was deliberate; a tool only one person can run isn't finished.",
         "Where did the design come from?": "Two places. The constraint came from the onsite manager - their spreadsheet worked and retraining them wasn't worth it, so the system had to fit around them rather than the other way round. The technique I researched as I went, since I hadn't written Apps Script before - documentation and forums, and asking around the office where someone had done something similar.",
         "Did you actually understand the code, or did the AI write it?": "I understood it, because I had to debug it. When Google started rate-limiting the PDF generation, nothing tells you that is what is happening — you just see it fail halfway. Working out that it was a rate limit and that the fix was a pause and a retry is not something you can get without understanding what the script is doing.",
         "What were you actually pulling together?": "Three things. The onsite manager sent me the meter readings and a spreadsheet of the checks he had taken in. The online payments came through a separate platform. None of those talked to each other, so every month I was reconciling by hand before I could bill anyone.",
-        "How do you know the two payment sources are reconciled?": "Both land in the same ledger and both are matched against the rent roll, so every payment is attached to a tenant and I can see who has paid and who has not. Before, the checks were in the manager's file and the online payments were on the platform, and nobody was comparing them."
+        "How do you know the two payment sources are reconciled?": "Both land in the same ledger and both are matched against the rent roll, so every payment is attached to a tenant and I can see who has paid and who has not. Before, the checks were in the manager's file and the online payments were on the platform, and nobody was comparing them.",
+        "Did any tenant get a wrong bill?": "No. I found it while testing the new system, before it produced a single statement. That is the reason I tested it against a month I already had correct numbers for rather than going straight live."
       }
     },
     {
