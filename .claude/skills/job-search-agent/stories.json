@@ -481,9 +481,10 @@
       "title": "Rent Roll Consolidation (Power Query/VBA)",
       "setting": "10-property portfolio, ~700 tenants",
       "lps": [
+        "Customer Obsession",
+        "Dive Deep",
         "Learn and Be Curious",
-        "Think Big",
-        "Dive Deep"
+        "Think Big"
       ],
       "situation": [
         "When portfolio was smaller, ownership tracked each property's rent roll individually - worked fine with a few properties.",
@@ -512,7 +513,9 @@
         "LEARN AND BE CURIOUS RUBRIC: 'if one slipped through because nobody was looking, how many others were there?' is the single best line you own for this LP - it is the 'I wonder what would happen if' criterion said out loud. Lead with it.",
         "On the AI element: the useful part is HOW you used it - to understand why something was wrong, not to be handed an answer. That distinction is the judgement being scored. Saying you used AI tools is neutral; saying you used them without losing ownership of the work is positive.",
         "THIS IS THE POWER QUERY STORY, not the SQL one. SQL and the SQLite database belong to S19. An earlier version of the bank had them swapped.",
-        "LEARN AND BE CURIOUS now rests on the NOTICING, not on learning a tool. 'If I found one by accident, how many were in the other nine files?' is the whole of it, and it was always the stronger half. The self-taught story moved to S19 with the SQL."
+        "LEARN AND BE CURIOUS now rests on the NOTICING, not on learning a tool. 'If I found one by accident, how many were in the other nine files?' is the whole of it, and it was always the stronger half. The self-taught story moved to S19 with the SQL.",
+        "ALSO A CUSTOMER OBSESSION ANSWER, with leadership as the customer. Same facts, different half in front: lead on the fact that leadership had never seen the portfolio whole, and that nobody had asked for the report because there was nothing to ask for. 'Instead of waiting for someone to ask the right question' is the line.",
+        "Against Learn and Be Curious, lead on the NOTICING. Against Customer Obsession, lead on the MONTHLY REPORT and the standing thresholds."
       ],
       "primary_lps": [
         "Learn and Be Curious",
@@ -542,7 +545,9 @@
         "How long did it take to learn?": "I picked up enough to build it in a few weeks of evenings - YouTube mostly. It's a narrow slice of SQL: selects, joins, aggregates.",
         "Who else can use it?": "That's a fair challenge - I built the monthly report so leadership gets the output without writing queries, but the querying itself was mine. If I were doing it again I'd document the common queries from the start.",
         "How does it stay current?": "Monthly load from the property exports, same as the report cycle.",
-        "Why Power Query rather than a database?": "Because the rent rolls were already ten Excel files in a consistent shape, and Power Query is built for exactly that — combine them, clean them, refresh in one click. A database would have been more machinery than the problem needed. Where I did need a database was the P&L consolidation, because that was four different source systems rather than ten copies of the same thing."
+        "Why Power Query rather than a database?": "Because the rent rolls were already ten Excel files in a consistent shape, and Power Query is built for exactly that — combine them, clean them, refresh in one click. A database would have been more machinery than the problem needed. Where I did need a database was the P&L consolidation, because that was four different source systems rather than ten copies of the same thing.",
+        "Who was the customer here?": "Leadership. They were making decisions about a seven-hundred-tenant portfolio without ever being able to see it whole. Nobody had asked me for a monthly report — there was no report to ask for. What I built was the thing they would have asked for if they had known it was possible.",
+        "How did you know what they needed?": "From what they kept asking for one property at a time. Every question about arrears or collections came to me as a separate request, and I would open the relevant file and answer it. The pattern in those requests is the report — the five measures I track are the five things they had already been asking about individually."
       }
     },
     {
@@ -1296,6 +1301,7 @@
     "Customer Obsession": [
       "S6",
       "S8",
+      "S27",
       "S33",
       "S35"
     ],
@@ -1756,6 +1762,7 @@
           "S8"
         ],
         "2": [
+          "S27",
           "S8"
         ],
         "3": [
@@ -1777,7 +1784,7 @@
           "S3"
         ],
         "8": [
-          "S35",
+          "S27",
           "S6"
         ],
         "9": [
