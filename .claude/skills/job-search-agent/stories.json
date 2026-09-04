@@ -70,155 +70,6 @@
       }
     },
     {
-      "id": "S5",
-      "title": "River Oaks Tax Assumption Error",
-      "setting": "River Oaks RV park acquisition, Lewis County (~$2M)",
-      "lps": [
-        "Earn Trust",
-        "Insist on the Highest Standards",
-        "Dive Deep"
-      ],
-      "is_failure_story": true,
-      "situation": [
-        "Evaluating purchase of River Oaks RV park in Lewis County for roughly $2M.",
-        "I built the pro forma to forecast operating income and loan coverage."
-      ],
-      "task": [
-        "Needed to accurately estimate annual operating costs, especially property taxes, to meet lender's 1.25x DSCR requirement."
-      ],
-      "action": [
-        "Found two mistakes in my draft, both from the same root: I'd built the model on the seller's numbers without asking what changes when the property changes hands.",
-        "First: took the seller's $3,583 tax payment as the annual bill. It was semi-annual - the real annual figure was $7,126.",
-        "Second, and the bigger one: grew historical costs forward at a flat 3% inflation. But property tax is assessed value times rate, not an inflation-driven cost. The county's valuation was years old and low, and our purchase price would reset it.",
-        "That line was not drifting up 3% - it was resetting to about $11,400, an extra $4,300 a year.",
-        "Consulted the CPA on revaluation mechanics and the staff accountant on billing structure. Both changed the model.",
-        "Corrected both, rebuilt the cash flow model, and went back to leadership to tell them the operating income I had given them was overstated."
-      ],
-      "result": [
-        "Leadership negotiated $55K price reduction using my corrected model.",
-        "Corrected model still cleared the lender's 1.25x DSCR requirement.",
-        "Surfaced a $4.3K annual expense increase before close that the original model had missed."
-      ],
-      "delivery_notes": [
-        "RETAGGED - 'Are Right, A Lot' removed. This is a story about being wrong twice; against a judgement prompt it answers the opposite of what was asked. Lead it as Earn Trust, with Dive Deep second.",
-        "'Saved over $4K annually' was corrected to 'surfaced' - the revaluation was a cost the acquisition caused, not a saving you produced. The real win is the $55K price reduction.",
-        "HAVE THE $55K BRIDGE READY - 'how does a tax error become a $55K price cut?' is the obvious probe. The corrected NOI was about $7,800/year lower ($3,543 of understated tax plus the $4,300 revaluation). Capitalised at 6-8% that implies $98K-$131K of value, so $55K is what the negotiation actually landed, not the full theoretical hit. Saying that unprompted is what makes you sound like you own the model.",
-        "This is an error CAUGHT BEFORE DAMAGE, not a failure with consequences. Against 'tell me about a time you failed', use S30 - it has a real cost. Use S5 when the prompt is about standards, catching your own work, or telling someone something they did not want to hear.",
-        "The $7,800 is your own arithmetic - $3,543 of understated tax plus the $4,300 revaluation. Stating the size of your own error before the $55K is what makes the story Earn Trust rather than a humblebrag about a negotiation win.",
-        "THE TAX FIGURES RECONCILE - do not 'fix' them. $3,583 and $7,126 imply a second installment of $3,543, a $40 difference from the first. Unequal property-tax installments are normal (rounding on the split, or a fee on one). The script now states both figures directly instead of saying 'understated by half', so nobody is invited to double $3,583 and query the $40. If asked: the installments weren't identical.",
-        "SAY 'FINANCIAL MODEL' OR 'BUSINESS CASE', NOT 'PRO FORMA'. Pro forma is real-estate and private-equity vernacular; Amazon finance says business case, financial model, payback, free cash flow. Do not scrub the domain entirely though - the real-estate specifics are genuine expertise. Translate the container, keep the contents.",
-        "EXPLAIN DSCR, DON'T NAME IT. 'The lender required the property to earn 1.25 times its loan payments' lands with anyone; 'we needed a 1.25x DSCR' only lands with someone who already knows, and invites a definition question you gain nothing from answering.",
-        "THE REVALUATION IS THE SMARTER OF THE TWO ERRORS - the semi-annual mix-up is a slip, but catching that a blanket 3% inflation factor was wrong because the acquisition itself resets the tax basis shows real modelling judgement. Spend your words there, not on the tax-payment slip.",
-        "THREE LEVERS THAT MAKE THIS STORY STRONG - the errors themselves never will be. (1) ONE ROOT, NOT TWO SLIPS: say 'they had the same root - I'd built the model on the seller's numbers without asking what changes when the property changes hands.' That turns two careless-sounding mistakes into one insight. (2) MECHANISM, NOT JUST THE NUMBER: 'our purchase price would tell the county what the park was actually worth' shows you understand why, not just that you were off. (3) THE WALK-BACK IS THE STORY: going to leadership to say the deal looks worse than you told them is the uncomfortable part and the whole reason this is Earn Trust. Slow down on that sentence - do not deliver it as a subordinate clause.",
-        "DEFEND THE 3%, THEN NARROW THE ERROR. Do not concede the rate - it is the convention and it was correct for most lines. The precise error is scope, not rate: a convention applied uniformly instead of asking which lines it actually describes. 'The number was fine, I applied it too broadly' is a far stronger position than 'I shouldn't have used 3%'."
-      ],
-      "open_questions": [],
-      "spoken_star": {
-        "primary": "Earn Trust",
-        "also": [
-          "Insist on the Highest Standards",
-          "Dive Deep"
-        ],
-        "s": "I built the financial model for a $2M RV park purchase — the business case leadership used to decide whether to buy it. It was my model and my assumptions, and the operating income at the bottom was the number the decision depended on.",
-        "t": "I needed the operating costs to be correct, especially property taxes, because the lender would not finance it unless the property earned 1.25 times its loan payments. If that line was wrong, either the deal would not meet the lender's requirement, or we would pay too much.",
-        "a": "When I reviewed it, I found two mistakes. Both came from the same cause — I built the model on the seller's numbers without asking what changes when a property changes owner.\n\nThe first was simple. I used the seller's tax payment as the annual bill. It was actually a half-year payment, so the real number was double. About $7,000.\n\nThe second was more important. I increased their historical costs by 3% for inflation, which is what you normally do with an operating cost. But property tax does not work that way. The county taxes you based on what they believe the property is worth, and their number was several years old and low. Our purchase price was about to tell them what it was really worth. So that line was not increasing by 3% a year. It was resetting — to about $11,000. An extra $4,000 a year.\n\nI confirmed both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I gave them was too high.",
-        "r": "The corrected model was about $8,000 a year lower. Leadership used it in the negotiation and reduced the purchase price by $55K, and it still met the lender's requirement.\n\nWhat I learned is to ask what resets in a transaction. Anything the seller pays because of what they paid — instead of what we are about to pay — needs to be checked, not increased for inflation."
-      },
-      "pocket_answers": {
-        "What do you mean you inflated historical costs by 3%?": "I'd taken the seller's historical operating expenses and grown them forward at 3% a year, which is standard for most lines - insurance, utilities, wages. But property tax isn't an inflation-driven cost, it's assessed value times the tax rate, and buying the park would trigger a county reassessment against our $2M purchase price. The seller's assessment was years old and well below that, so that line wasn't going up 3%, it was going up about $4,300.",
-        "How big was the jump?": "The historical bill was about $7,100. Three percent inflation would have put it at $7,300. After reassessment it was closer to $11,400 - roughly a 60% increase, because the county had the park assessed about 38% below what we paid.",
-        "What did you take from it?": "That a blanket inflation factor is fine until something structurally resets how a cost is calculated. Now I ask of every expense line whether anything about the transaction changes the basis, not just how fast it grows. Property tax on an acquisition is the obvious one, but it's the same trap with insurance after a claim or any fee that's a percentage of revenue.",
-        "Why would the tax jump just because you bought it?": "The county taxes you on what they think the property is worth, and they don't re-check every year - they use an old number until something tells them otherwise. A sale is that something. Our purchase price told them what the park was actually worth, and the bill reset against it.",
-        "Why 3%?": "Three percent is the standard expense-growth assumption in property underwriting - roughly long-run inflation, and slightly conservative, which is what you want on a buy decision because it pushes operating income down rather than talking yourself into the deal. And it was the right assumption for most of the lines: insurance, utilities, maintenance, wages all drift like that. My mistake wasn't the rate. It was applying it to a line that doesn't work that way at all.",
-        "Did you sensitivity-test that assumption?": "Not on that model, and that's part of what I changed. Now I run the expense assumptions across a range and check whether the deal still clears the lender's coverage requirement at the top end, rather than relying on a single point estimate."
-      },
-      "calc_sheet": {
-        "tax_understated": "Seller's payment $3,583 was semi-annual. Real annual $7,126. Understated by $3,543.",
-        "revaluation": "County reassesses on sale. Old assessment was stale; our $2M price reset it. Tax went to about $11,426 - a 60% jump, +$4,300/yr.",
-        "implied_rate": "$11,426 / $2,000,000 = 0.57% effective rate, and $7,126 / 0.57% implies the old assessed value was ~$1.25M, about 38% below what we paid.",
-        "noi_impact": "$3,543 + $4,300 = about $7,800/year of overstated operating income.",
-        "value_bridge": "$7,800 capitalised at 6-8% implies $98K-$131K of value. The $55K achieved is what the negotiation landed, not the full theoretical hit."
-      }
-    },
-    {
-      "id": "S6",
-      "title": "Packwood Weekly Occupancy Dashboard",
-      "setting": "Packwood RV park (100 units)",
-      "lps": [
-        "Deliver Results",
-        "Invent and Simplify",
-        "Bias for Action",
-        "Customer Obsession"
-      ],
-      "situation": [
-        "Packwood is a 100-unit RV park.",
-        "Onsite manager could see bookings in the system's calendar, but no structured report tracking pacing against targets.",
-        "Only formal reporting was month-end reports - by then the month was closed and too late to act."
-      ],
-      "task": [
-        "Needed to build a forward-looking tool that shows how we're pacing for the next few weeks, so operations can adjust pricing before we lose revenue."
-      ],
-      "action": [
-        "Pulled reservation data from Camplife, our booking software. Raw export was messy: a guest booking Friday to Sunday shows as one row when I needed each night as its own line; dates came as text with timestamps Excel couldn't read; the export lumps firewood and pet fees in with site rental charges.",
-        "Wrote a VBA macro to handle it all. Download CSV, click one button: strips extra charges, fixes dates, splits multi-night bookings, drops clean data into calculation tab.",
-        "Dashboard shows next 4 weeks: occupancy rate, sites still open, average rate per site per night, revenue per available site.",
-        "If any period 3+ weeks out is below 90% occupancy, cell turns red.",
-        "Ran the cycle once a week - pulled the CSV, ran the macro, dashboard refreshed in about a minute. The ops manager read it on their own and called me when a week went red.",
-        "Before any promotion runs, stress tested three discount levels - 10%, 15%, 20%. 10% didn't move bookings, 20% cut too deep into margin, 15% was the sweet spot."
-      ],
-      "result": [
-        "Went from only seeing revenue after month closed to seeing 4 weeks ahead.",
-        "Saved about 4 hours a week.",
-        "Mid-May: dashboard flagged weekend at 68% occupancy, 32 sites open. Ops manager ran 15% discount. Booked 18 of 32 sites, pushed occupancy to 86%, protected $2,500 that weekend.",
-        "Over one quarter, occupancy on slow weekends went up 12%, captured extra $15K."
-      ],
-      "spoken_result": "Before, we only saw revenue after the month closed. Now we could see four weeks out. In mid-May it flagged a weekend sitting at 68% - the ops manager sent a discount to past guests and we filled it to 86% before that weekend arrived. The next month we ran that same play a few more times, and slow weekends stopped catching us off guard.",
-      "delivery_notes": [
-        "Lead with the trimmed spoken_result. Hold the $2,500 / 12% / $15K / 4-hours figures as pocket answers - offer them only when asked.",
-        "Say 'revenue per available site', not 'RevPAS'. Avoid industry jargon that invites a probe.",
-        "Don't skip the cadence beat. 'They called me when it went red' is the adoption proof - it shows the tool worked without the candidate pushing it, which is what separates a built tool from a used one.",
-        "Weekly cadence is confirmed; the specific day is not established. Say 'once a week', not 'Monday morning'.",
-        "DO NOT LEAD WITH THIS FOR BIAS FOR ACTION. The BFA tag here is the weak sense - nobody asked for the tool and the candidate built it anyway. But a BFA prompt asks about moving fast under uncertainty, and this is a careful multi-week build. Answering a speed question with a tool-building story reads as missing the question. Route BFA prompts to S28 first, S32 second.",
-        "'Think Big' tag removed - a dashboard for one 100-unit park is strong execution, not scale-thinking. Route Think Big prompts to S27 or S32.",
-        "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
-        "OPEN ON THE PORTFOLIO for the Ops Finance loop: 'one of ten properties in a roughly 700-tenant portfolio'. Also the closest thing in the bank to a utilisation metric - occupancy against a target with an early-warning threshold is structurally what units per labour hour is."
-      ],
-      "pocket_answers": {
-        "How did you communicate this tool?": "I walked the ops manager through it once - how to read it, what the red flag means, and what to do when they see it. I kept running the refresh each week, but they read the dashboard on their own. That was the real signal it worked: they'd call me when a week went red, instead of me chasing them.",
-        "Who ran it?": "I ran the weekly refresh - download, macro, about a minute. The manager didn't need to touch the pipeline. They just needed the read.",
-        "Doesn't Camplife already do this?": "Camplife shows you raw bookings and generates reports, but it doesn't track pacing against a target or flag low occupancy. It tells you what you have - it doesn't tell you whether that's good enough or what to do about it.",
-        "What KPIs drove the promotion decision?": "Three things: occupancy rate against our 90% target, average rate per site per night, and revenue per available site. Occupancy tells you how full you are, average rate tells you what you're earning, and revenue per available site combines both - it shows the total yield on your inventory whether it's occupied or not.",
-        "Did it save you time?": "About four hours a week of manual pulling.",
-        "Any dollar impact?": "That one weekend was roughly $2,500 protected. Over the quarter it was around $15K.",
-        "How did you get to $2,500?": "Eighteen sites over a two-night weekend is thirty-six site-nights, at roughly $69 a night after the 15% discount.",
-        "Why 90%, and why three weeks out?": "90% was our occupancy target. Three weeks is the lead time a promotion actually needs to fill sites - flagging something a week out is just telling you what you already lost.",
-        "Didn't the discount just cannibalise full-price bookings?": "It went to past guests rather than the open market, and only on periods already tracking below target - so we weren't discounting weekends that were going to fill anyway.",
-        "Doesn't the booking software already do this?": "It shows you raw bookings and generates reports, but it doesn't track pacing against a target or flag low occupancy. It tells you what you have - not whether that's good enough or what to do about it."
-      },
-      "open_questions": [],
-      "primary_lps": [
-        "Invent and Simplify",
-        "Customer Obsession"
-      ],
-      "spoken_star": {
-        "primary": "Invent and Simplify",
-        "also": [
-          "Customer Obsession",
-          "Deliver Results"
-        ],
-        "s": "We managed ten properties, about seven hundred tenants. At one of them, a 100-unit RV park, we only had month-end reporting. By the time we saw the numbers the month was finished, so if a weekend had low bookings we found out weeks later, when nobody could do anything.",
-        "t": "I wanted something that looked forward instead of backward, so operations could change the price while there was still time to fill the sites.",
-        "a": "I exported the reservation data from our booking software, and it was very messy.\n\nA guest booking Friday to Sunday appeared as a single row, but I needed each night separately to calculate occupancy correctly. The dates were text that Excel would not read as dates. And site rental was combined with firewood and pet fees, so the revenue figure was not clean.\n\nI wrote a macro that cleans all of that with one click. It separates the multi-night bookings, converts the dates, and separates site revenue from the extra charges.\n\nThen I built a dashboard for the next four weeks: occupancy, sites still available, average rate, and revenue per available site. Anything more than three weeks ahead and below 90% turns red. Three weeks because that is the time a promotion needs to actually fill sites — any closer and there is no point showing it.\n\nI ran it once a week and it took about a minute. The operations manager read it himself and called me when something turned red. That is how I knew it was working. I was no longer the person in the middle.",
-        "r": "In mid-May it showed a weekend well below target. They sent a discount to previous guests and filled it to 86% before that weekend arrived. That was about $2,500 we would otherwise have lost on one weekend.\n\nAnd it took one minute a week instead of the four hours I used to spend collecting numbers. But the time saved was not really the point. The point was that operations could act on a number while it still mattered."
-      },
-      "calc_sheet": {
-        "occupancy": "68% occupancy on 100 sites = 68 booked, 32 open. Booking 18 of the 32 takes it to 86.",
-        "the_$2,500": "18 sites x 2 weekend nights = 36 site-nights, at roughly $69 a night after the 15% discount.",
-        "threshold": "90% is the occupancy target. 3 weeks out is the lead time needed for a promotion to actually fill sites.",
-        "discount": "Stress-tested 10 / 15 / 20%. 10% didn't move bookings, 20% cut too far into margin."
-      }
-    },
-    {
       "id": "S8",
       "title": "Signature Photo Client Communication",
       "setting": "Signature Photo",
@@ -573,69 +424,6 @@
       "primary_lps": [
         "Deliver Results"
       ]
-    },
-    {
-      "id": "S29",
-      "title": "Mercer Island Duplicate Invoice",
-      "setting": "Mercer Island house renovation, $50K monthly CapEx",
-      "lps": [
-        "Insist on the Highest Standards",
-        "Earn Trust",
-        "Ownership"
-      ],
-      "has_variants": true,
-      "situation": [
-        "Managing vendor payments for Mercer Island house renovation. $50K monthly CapEx budget. Tight deadlines."
-      ],
-      "task": [
-        "Subcontractor submitted $20K invoice for structural concrete work. Needed to verify every dollar before releasing funds."
-      ],
-      "variants": {
-        "A - Insist on the Highest Standards": [
-          "Cross-referenced invoice against QuickBooks and site progress photos.",
-          "Found $8,500 foundation prep charge already paid 2 months earlier.",
-          "Met with contractor and site manager collaboratively. Honest admin error - their accounting person re-billed a milestone.",
-          "Relationship got stronger. Built Excel template flagging duplicates."
-        ],
-        "B - Self-audit / Earn Trust": [
-          "Almost sent report trusting raw GL at face value.",
-          "Caught myself, paused, audited against source documents.",
-          "Found the $8,500 duplicate. Built cross-reference check."
-        ]
-      },
-      "result": [
-        "Prevented $8,500 duplicate payment.",
-        "Contractor started proactively reviewing draws before submission.",
-        "Template adopted across all active projects."
-      ],
-      "delivery_notes": [
-        "HARD RULE: never use both variants with the same interviewer.",
-        "Variant B is NOT a failure story - 'almost trusted the GL, then caught myself' is a success with tension. Offered against 'tell me about a mistake' it reads as dodging, which scores worse than a real mistake would. Send failure prompts to S30 or S5.",
-        "'Over 40% of the invoice' lands harder than $8,500 alone - it shows the scale of what was nearly paid twice. 8,500 of 20,000 is 42.5%, so 'over 40%' is safe."
-      ],
-      "spoken_star": {
-        "primary": "Insist on the Highest Standards",
-        "also": [
-          "Earn Trust",
-          "Ownership"
-        ],
-        "s": "I managed vendor payments on a house renovation with a $50K monthly capital budget. A subcontractor sent us a $20K invoice for structural concrete work. That is close to half of one month's spending at that property, so it was not something to approve quickly.",
-        "t": "Before releasing that much I wanted to check every line against what we had already paid. At that size, on work done in stages, each line should be something new.",
-        "a": "I checked it line by line against QuickBooks, and separately against the site progress photos.\n\nOne line was a problem. $8,500 for foundation preparation. We had already paid for that two months earlier. The photos confirmed it — that work was finished and photographed at that time, so it was not a second stage of the same work. It was the same work billed twice.\n\nI prepared it as evidence, not as an accusation: the QuickBooks entry, the payment date, and the photograph. Then I took it to the project manager, because the contractor relationship is his. That mattered for how it was received.\n\nIt was an honest mistake. Their accounting person had re-billed a milestone that was already completed, and nobody on their side had noticed.\n\nThen I built an Excel template that checks new invoice lines against everything already paid on that project, so a completed milestone is identified before it reaches approval.",
-        "r": "We did not pay the $8,500 twice. That was more than 40% of the bill, and about 17% of the month's whole capital budget.\n\nAnd because it was presented as evidence instead of a rejection, it did not damage the relationship. Afterwards they checked their own invoices before sending them. The template was used on every active project, with the instructions written inside it, so finding these does not depend on one person being careful."
-      },
-      "calc_sheet": {
-        "share": "$8,500 of a $20,000 invoice - over 40% of the bill was already paid.",
-        "context": "$50K monthly capital budget, so the duplicate was about 17% of a month's spend.",
-        "how_found": "Cross-referenced the invoice line by line against QuickBooks payments and the site progress photos.",
-        "ATTRIBUTION": "Reviewing capital invoices against the ledger is in remit. Talking to the contractor is not - that is the project manager's relationship. The story is the catch, the evidence, and the control."
-      },
-      "pocket_answers": {
-        "How did you spot it?": "I cross-referenced the invoice against what we'd already paid in QuickBooks and against the site progress photos. The foundation prep line was work that was finished and paid two months earlier.",
-        "How do you know it wasn't a legitimate second charge?": "Same milestone, already closed out and photographed as complete. There was nothing left to bill against it.",
-        "Was it deliberate?": "No - their accounting person re-billed a milestone that had already been settled. That's why I raised it as a conversation rather than a rejection.",
-        "What if they'd disputed it?": "I had the payment record and the dated photos. But it didn't come to that, and handling it that way is why they started self-reviewing their draws afterwards."
-      }
     },
     {
       "id": "S30",
@@ -1182,18 +970,15 @@
   ],
   "lp_index": {
     "Customer Obsession": [
-      "S6",
       "S8",
       "S27",
       "S33"
     ],
     "Ownership": [
-      "S29",
       "S41",
       "S42"
     ],
     "Invent and Simplify": [
-      "S6",
       "S8",
       "S19",
       "S33",
@@ -1211,8 +996,6 @@
     ],
     "Hire and Develop the Best": [],
     "Insist on the Highest Standards": [
-      "S5",
-      "S29",
       "S30",
       "S41"
     ],
@@ -1220,7 +1003,6 @@
       "S27"
     ],
     "Bias for Action": [
-      "S6",
       "S28",
       "S43"
     ],
@@ -1228,13 +1010,10 @@
       "S26"
     ],
     "Earn Trust": [
-      "S5",
-      "S29",
       "S30",
       "S31"
     ],
     "Dive Deep": [
-      "S5",
       "S27",
       "S40",
       "S41",
@@ -1248,7 +1027,6 @@
     ],
     "Deliver Results": [
       "S3",
-      "S6",
       "S19",
       "S28",
       "S31",
@@ -1399,7 +1177,7 @@
       "reframe": "Lead with the obstacle and the deadline, not the tooling. 'The CPA needed one consolidated P&L to file, and nobody had ever combined our four rent sources. When I tried, the numbers didn't reconcile and doing it by hand took two weeks.' Then the fix, then the before/after.",
       "why_it_works": "Deliver Results wants an outcome delivered despite obstacles. S19 has the cleanest quantified swing in the bank - two weeks to one day, across ten entities.",
       "backup_reframe": "S28 is the better pick when the prompt stresses a deadline or pressure: a hard filing date, three missing invoices, delivered on time anyway. S33 is better when the prompt stresses scale of improvement: five hours to thirty minutes.",
-      "collision": "S19 and S33 are both Invent and Simplify leads, but that bench has three stories (S6, S19, S33), so borrowing one for Deliver Results costs nothing."
+      "collision": "S19 and S33 are both Invent and Simplify leads, but that bench has three stories (S33, S19, S33), so borrowing one for Deliver Results costs nothing."
     },
     "Influenced a decision (question shape, not an LP)": {
       "lead": "S26",
@@ -1407,7 +1185,7 @@
       "convinced someone senior": "S3 - manager objected on the record (eight months of uncollected rent), changed his mind on the debt ratio analysis.",
       "influenced without authority": "S8 - two objectors, two different arguments: relationship-plus-not-instead for leadership, two days against four hours a week for the teammate.",
       "could not persuade them": "S31 - tried, lost, committed, and built the controls anyway. Stronger than a win for that question shape.",
-      "do_not_use": "S5. Leadership acted on the corrected model, but that is a self-correction story, not persuasion - the facts did the arguing."
+      "do_not_use": "S30. Leadership acted on the corrected model, but that is a self-correction story, not persuasion - the facts did the arguing."
     }
   },
   "vocabulary_notes": {
@@ -1619,18 +1397,15 @@
           "S28"
         ],
         "3": [
-          "S6",
           "S28"
         ],
         "4": [
-          "S28",
-          "S6"
+          "S28"
         ],
         "5": [
           "S28"
         ],
         "6": [
-          "S6",
           "S28"
         ],
         "7": [],
@@ -1645,7 +1420,6 @@
           "S8"
         ],
         "3": [
-          "S6",
           "S8"
         ],
         "4": [
@@ -1662,8 +1436,7 @@
           "S3"
         ],
         "8": [
-          "S27",
-          "S6"
+          "S27"
         ],
         "9": [
           "S33"
@@ -1711,9 +1484,7 @@
         "5": [
           "S31"
         ],
-        "6": [
-          "S5"
-        ],
+        "6": [],
         "7": [],
         "8": [],
         "9": []
@@ -1739,9 +1510,7 @@
         "6": [
           "S30"
         ],
-        "7": [
-          "S6"
-        ]
+        "7": []
       },
       "Dive Deep": {
         "1": [
@@ -1765,13 +1534,10 @@
         "6": [
           "S33"
         ],
-        "7": [
-          "S5"
-        ]
+        "7": []
       },
       "Invent and Simplify": {
         "1": [
-          "S6",
           "S33"
         ],
         "2": [
@@ -1784,9 +1550,7 @@
           "S43",
           "S33"
         ],
-        "5": [
-          "S6"
-        ],
+        "5": [],
         "6": [
           "S19",
           "S33"
@@ -1809,9 +1573,7 @@
         "4": [
           "S30"
         ],
-        "5": [
-          "S5"
-        ],
+        "5": [],
         "6": [
           "S31"
         ],
@@ -1871,24 +1633,17 @@
       },
       "Insist on the Highest Standards": {
         "1": [
-          "S30",
-          "S29"
+          "S30"
         ],
-        "2": [
-          "S29"
-        ],
+        "2": [],
         "3": [
           "S30"
         ],
         "4": [
           "S30"
         ],
-        "5": [
-          "S5"
-        ],
-        "6": [
-          "S29"
-        ],
+        "5": [],
+        "6": [],
         "7": [
           "S19"
         ]
@@ -1899,18 +1654,13 @@
           "S41"
         ],
         "2": [
-          "S42",
-          "S29"
+          "S42"
         ],
         "3": [
           "S30"
         ],
-        "4": [
-          "S29"
-        ],
-        "5": [
-          "S6"
-        ],
+        "4": [],
+        "5": [],
         "6": []
       },
       "Think Big": {
@@ -2408,6 +2158,236 @@
           ],
           "open_questions": []
         }
+      },
+      "S5": {
+        "id": "S5",
+        "title": "River Oaks Tax Assumption Error",
+        "status": "retired 2026-09-03 (load trim to 13)",
+        "why_retired": "Redundant against stronger stories. Being wrong analytically is covered by S30, which is the better failure story; acquisition modelling has no other home but was never asked for; Dive Deep, Highest Standards and Earn Trust all keep leads without it. Cut for load, not for quality - the two unequal tax installments and the reassessment logic are genuinely good, and it can come back if an acquisition or modelling question is likely.",
+        "archived_story": {
+          "id": "S5",
+          "title": "River Oaks Tax Assumption Error",
+          "setting": "River Oaks RV park acquisition, Lewis County (~$2M)",
+          "lps": [
+            "Earn Trust",
+            "Insist on the Highest Standards",
+            "Dive Deep"
+          ],
+          "is_failure_story": true,
+          "situation": [
+            "Evaluating purchase of River Oaks RV park in Lewis County for roughly $2M.",
+            "I built the pro forma to forecast operating income and loan coverage."
+          ],
+          "task": [
+            "Needed to accurately estimate annual operating costs, especially property taxes, to meet lender's 1.25x DSCR requirement."
+          ],
+          "action": [
+            "Found two mistakes in my draft, both from the same root: I'd built the model on the seller's numbers without asking what changes when the property changes hands.",
+            "First: took the seller's $3,583 tax payment as the annual bill. It was semi-annual - the real annual figure was $7,126.",
+            "Second, and the bigger one: grew historical costs forward at a flat 3% inflation. But property tax is assessed value times rate, not an inflation-driven cost. The county's valuation was years old and low, and our purchase price would reset it.",
+            "That line was not drifting up 3% - it was resetting to about $11,400, an extra $4,300 a year.",
+            "Consulted the CPA on revaluation mechanics and the staff accountant on billing structure. Both changed the model.",
+            "Corrected both, rebuilt the cash flow model, and went back to leadership to tell them the operating income I had given them was overstated."
+          ],
+          "result": [
+            "Leadership negotiated $55K price reduction using my corrected model.",
+            "Corrected model still cleared the lender's 1.25x DSCR requirement.",
+            "Surfaced a $4.3K annual expense increase before close that the original model had missed."
+          ],
+          "delivery_notes": [
+            "RETAGGED - 'Are Right, A Lot' removed. This is a story about being wrong twice; against a judgement prompt it answers the opposite of what was asked. Lead it as Earn Trust, with Dive Deep second.",
+            "'Saved over $4K annually' was corrected to 'surfaced' - the revaluation was a cost the acquisition caused, not a saving you produced. The real win is the $55K price reduction.",
+            "HAVE THE $55K BRIDGE READY - 'how does a tax error become a $55K price cut?' is the obvious probe. The corrected NOI was about $7,800/year lower ($3,543 of understated tax plus the $4,300 revaluation). Capitalised at 6-8% that implies $98K-$131K of value, so $55K is what the negotiation actually landed, not the full theoretical hit. Saying that unprompted is what makes you sound like you own the model.",
+            "This is an error CAUGHT BEFORE DAMAGE, not a failure with consequences. Against 'tell me about a time you failed', use S30 - it has a real cost. Use S5 when the prompt is about standards, catching your own work, or telling someone something they did not want to hear.",
+            "The $7,800 is your own arithmetic - $3,543 of understated tax plus the $4,300 revaluation. Stating the size of your own error before the $55K is what makes the story Earn Trust rather than a humblebrag about a negotiation win.",
+            "THE TAX FIGURES RECONCILE - do not 'fix' them. $3,583 and $7,126 imply a second installment of $3,543, a $40 difference from the first. Unequal property-tax installments are normal (rounding on the split, or a fee on one). The script now states both figures directly instead of saying 'understated by half', so nobody is invited to double $3,583 and query the $40. If asked: the installments weren't identical.",
+            "SAY 'FINANCIAL MODEL' OR 'BUSINESS CASE', NOT 'PRO FORMA'. Pro forma is real-estate and private-equity vernacular; Amazon finance says business case, financial model, payback, free cash flow. Do not scrub the domain entirely though - the real-estate specifics are genuine expertise. Translate the container, keep the contents.",
+            "EXPLAIN DSCR, DON'T NAME IT. 'The lender required the property to earn 1.25 times its loan payments' lands with anyone; 'we needed a 1.25x DSCR' only lands with someone who already knows, and invites a definition question you gain nothing from answering.",
+            "THE REVALUATION IS THE SMARTER OF THE TWO ERRORS - the semi-annual mix-up is a slip, but catching that a blanket 3% inflation factor was wrong because the acquisition itself resets the tax basis shows real modelling judgement. Spend your words there, not on the tax-payment slip.",
+            "THREE LEVERS THAT MAKE THIS STORY STRONG - the errors themselves never will be. (1) ONE ROOT, NOT TWO SLIPS: say 'they had the same root - I'd built the model on the seller's numbers without asking what changes when the property changes hands.' That turns two careless-sounding mistakes into one insight. (2) MECHANISM, NOT JUST THE NUMBER: 'our purchase price would tell the county what the park was actually worth' shows you understand why, not just that you were off. (3) THE WALK-BACK IS THE STORY: going to leadership to say the deal looks worse than you told them is the uncomfortable part and the whole reason this is Earn Trust. Slow down on that sentence - do not deliver it as a subordinate clause.",
+            "DEFEND THE 3%, THEN NARROW THE ERROR. Do not concede the rate - it is the convention and it was correct for most lines. The precise error is scope, not rate: a convention applied uniformly instead of asking which lines it actually describes. 'The number was fine, I applied it too broadly' is a far stronger position than 'I shouldn't have used 3%'."
+          ],
+          "open_questions": [],
+          "spoken_star": {
+            "primary": "Earn Trust",
+            "also": [
+              "Insist on the Highest Standards",
+              "Dive Deep"
+            ],
+            "s": "I built the financial model for a $2M RV park purchase — the business case leadership used to decide whether to buy it. It was my model and my assumptions, and the operating income at the bottom was the number the decision depended on.",
+            "t": "I needed the operating costs to be correct, especially property taxes, because the lender would not finance it unless the property earned 1.25 times its loan payments. If that line was wrong, either the deal would not meet the lender's requirement, or we would pay too much.",
+            "a": "When I reviewed it, I found two mistakes. Both came from the same cause — I built the model on the seller's numbers without asking what changes when a property changes owner.\n\nThe first was simple. I used the seller's tax payment as the annual bill. It was actually a half-year payment, so the real number was double. About $7,000.\n\nThe second was more important. I increased their historical costs by 3% for inflation, which is what you normally do with an operating cost. But property tax does not work that way. The county taxes you based on what they believe the property is worth, and their number was several years old and low. Our purchase price was about to tell them what it was really worth. So that line was not increasing by 3% a year. It was resetting — to about $11,000. An extra $4,000 a year.\n\nI confirmed both with our CPA and the staff accountant, rebuilt the model, and went back to leadership to tell them the operating income I gave them was too high.",
+            "r": "The corrected model was about $8,000 a year lower. Leadership used it in the negotiation and reduced the purchase price by $55K, and it still met the lender's requirement.\n\nWhat I learned is to ask what resets in a transaction. Anything the seller pays because of what they paid — instead of what we are about to pay — needs to be checked, not increased for inflation."
+          },
+          "pocket_answers": {
+            "What do you mean you inflated historical costs by 3%?": "I'd taken the seller's historical operating expenses and grown them forward at 3% a year, which is standard for most lines - insurance, utilities, wages. But property tax isn't an inflation-driven cost, it's assessed value times the tax rate, and buying the park would trigger a county reassessment against our $2M purchase price. The seller's assessment was years old and well below that, so that line wasn't going up 3%, it was going up about $4,300.",
+            "How big was the jump?": "The historical bill was about $7,100. Three percent inflation would have put it at $7,300. After reassessment it was closer to $11,400 - roughly a 60% increase, because the county had the park assessed about 38% below what we paid.",
+            "What did you take from it?": "That a blanket inflation factor is fine until something structurally resets how a cost is calculated. Now I ask of every expense line whether anything about the transaction changes the basis, not just how fast it grows. Property tax on an acquisition is the obvious one, but it's the same trap with insurance after a claim or any fee that's a percentage of revenue.",
+            "Why would the tax jump just because you bought it?": "The county taxes you on what they think the property is worth, and they don't re-check every year - they use an old number until something tells them otherwise. A sale is that something. Our purchase price told them what the park was actually worth, and the bill reset against it.",
+            "Why 3%?": "Three percent is the standard expense-growth assumption in property underwriting - roughly long-run inflation, and slightly conservative, which is what you want on a buy decision because it pushes operating income down rather than talking yourself into the deal. And it was the right assumption for most of the lines: insurance, utilities, maintenance, wages all drift like that. My mistake wasn't the rate. It was applying it to a line that doesn't work that way at all.",
+            "Did you sensitivity-test that assumption?": "Not on that model, and that's part of what I changed. Now I run the expense assumptions across a range and check whether the deal still clears the lender's coverage requirement at the top end, rather than relying on a single point estimate."
+          },
+          "calc_sheet": {
+            "tax_understated": "Seller's payment $3,583 was semi-annual. Real annual $7,126. Understated by $3,543.",
+            "revaluation": "County reassesses on sale. Old assessment was stale; our $2M price reset it. Tax went to about $11,426 - a 60% jump, +$4,300/yr.",
+            "implied_rate": "$11,426 / $2,000,000 = 0.57% effective rate, and $7,126 / 0.57% implies the old assessed value was ~$1.25M, about 38% below what we paid.",
+            "noi_impact": "$3,543 + $4,300 = about $7,800/year of overstated operating income.",
+            "value_bridge": "$7,800 capitalised at 6-8% implies $98K-$131K of value. The $55K achieved is what the negotiation landed, not the full theoretical hit."
+          }
+        }
+      },
+      "S6": {
+        "id": "S6",
+        "title": "Packwood Weekly Occupancy Dashboard",
+        "status": "retired 2026-09-03 (load trim to 13)",
+        "why_retired": "The least missed of the sixteen. Forward-looking reporting is done better by S27, automation better by S33. Its one distinctive beat - the ops manager reading it unprompted and calling when something went red - is worth keeping as a line elsewhere if a self-service reporting question comes up.",
+        "archived_story": {
+          "id": "S6",
+          "title": "Packwood Weekly Occupancy Dashboard",
+          "setting": "Packwood RV park (100 units)",
+          "lps": [
+            "Deliver Results",
+            "Invent and Simplify",
+            "Bias for Action",
+            "Customer Obsession"
+          ],
+          "situation": [
+            "Packwood is a 100-unit RV park.",
+            "Onsite manager could see bookings in the system's calendar, but no structured report tracking pacing against targets.",
+            "Only formal reporting was month-end reports - by then the month was closed and too late to act."
+          ],
+          "task": [
+            "Needed to build a forward-looking tool that shows how we're pacing for the next few weeks, so operations can adjust pricing before we lose revenue."
+          ],
+          "action": [
+            "Pulled reservation data from Camplife, our booking software. Raw export was messy: a guest booking Friday to Sunday shows as one row when I needed each night as its own line; dates came as text with timestamps Excel couldn't read; the export lumps firewood and pet fees in with site rental charges.",
+            "Wrote a VBA macro to handle it all. Download CSV, click one button: strips extra charges, fixes dates, splits multi-night bookings, drops clean data into calculation tab.",
+            "Dashboard shows next 4 weeks: occupancy rate, sites still open, average rate per site per night, revenue per available site.",
+            "If any period 3+ weeks out is below 90% occupancy, cell turns red.",
+            "Ran the cycle once a week - pulled the CSV, ran the macro, dashboard refreshed in about a minute. The ops manager read it on their own and called me when a week went red.",
+            "Before any promotion runs, stress tested three discount levels - 10%, 15%, 20%. 10% didn't move bookings, 20% cut too deep into margin, 15% was the sweet spot."
+          ],
+          "result": [
+            "Went from only seeing revenue after month closed to seeing 4 weeks ahead.",
+            "Saved about 4 hours a week.",
+            "Mid-May: dashboard flagged weekend at 68% occupancy, 32 sites open. Ops manager ran 15% discount. Booked 18 of 32 sites, pushed occupancy to 86%, protected $2,500 that weekend.",
+            "Over one quarter, occupancy on slow weekends went up 12%, captured extra $15K."
+          ],
+          "spoken_result": "Before, we only saw revenue after the month closed. Now we could see four weeks out. In mid-May it flagged a weekend sitting at 68% - the ops manager sent a discount to past guests and we filled it to 86% before that weekend arrived. The next month we ran that same play a few more times, and slow weekends stopped catching us off guard.",
+          "delivery_notes": [
+            "Lead with the trimmed spoken_result. Hold the $2,500 / 12% / $15K / 4-hours figures as pocket answers - offer them only when asked.",
+            "Say 'revenue per available site', not 'RevPAS'. Avoid industry jargon that invites a probe.",
+            "Don't skip the cadence beat. 'They called me when it went red' is the adoption proof - it shows the tool worked without the candidate pushing it, which is what separates a built tool from a used one.",
+            "Weekly cadence is confirmed; the specific day is not established. Say 'once a week', not 'Monday morning'.",
+            "DO NOT LEAD WITH THIS FOR BIAS FOR ACTION. The BFA tag here is the weak sense - nobody asked for the tool and the candidate built it anyway. But a BFA prompt asks about moving fast under uncertainty, and this is a careful multi-week build. Answering a speed question with a tool-building story reads as missing the question. Route BFA prompts to S28 first, S32 second.",
+            "'Think Big' tag removed - a dashboard for one 100-unit park is strong execution, not scale-thinking. Route Think Big prompts to S27 or S32.",
+            "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
+            "OPEN ON THE PORTFOLIO for the Ops Finance loop: 'one of ten properties in a roughly 700-tenant portfolio'. Also the closest thing in the bank to a utilisation metric - occupancy against a target with an early-warning threshold is structurally what units per labour hour is."
+          ],
+          "pocket_answers": {
+            "How did you communicate this tool?": "I walked the ops manager through it once - how to read it, what the red flag means, and what to do when they see it. I kept running the refresh each week, but they read the dashboard on their own. That was the real signal it worked: they'd call me when a week went red, instead of me chasing them.",
+            "Who ran it?": "I ran the weekly refresh - download, macro, about a minute. The manager didn't need to touch the pipeline. They just needed the read.",
+            "Doesn't Camplife already do this?": "Camplife shows you raw bookings and generates reports, but it doesn't track pacing against a target or flag low occupancy. It tells you what you have - it doesn't tell you whether that's good enough or what to do about it.",
+            "What KPIs drove the promotion decision?": "Three things: occupancy rate against our 90% target, average rate per site per night, and revenue per available site. Occupancy tells you how full you are, average rate tells you what you're earning, and revenue per available site combines both - it shows the total yield on your inventory whether it's occupied or not.",
+            "Did it save you time?": "About four hours a week of manual pulling.",
+            "Any dollar impact?": "That one weekend was roughly $2,500 protected. Over the quarter it was around $15K.",
+            "How did you get to $2,500?": "Eighteen sites over a two-night weekend is thirty-six site-nights, at roughly $69 a night after the 15% discount.",
+            "Why 90%, and why three weeks out?": "90% was our occupancy target. Three weeks is the lead time a promotion actually needs to fill sites - flagging something a week out is just telling you what you already lost.",
+            "Didn't the discount just cannibalise full-price bookings?": "It went to past guests rather than the open market, and only on periods already tracking below target - so we weren't discounting weekends that were going to fill anyway.",
+            "Doesn't the booking software already do this?": "It shows you raw bookings and generates reports, but it doesn't track pacing against a target or flag low occupancy. It tells you what you have - not whether that's good enough or what to do about it."
+          },
+          "open_questions": [],
+          "primary_lps": [
+            "Invent and Simplify",
+            "Customer Obsession"
+          ],
+          "spoken_star": {
+            "primary": "Invent and Simplify",
+            "also": [
+              "Customer Obsession",
+              "Deliver Results"
+            ],
+            "s": "We managed ten properties, about seven hundred tenants. At one of them, a 100-unit RV park, we only had month-end reporting. By the time we saw the numbers the month was finished, so if a weekend had low bookings we found out weeks later, when nobody could do anything.",
+            "t": "I wanted something that looked forward instead of backward, so operations could change the price while there was still time to fill the sites.",
+            "a": "I exported the reservation data from our booking software, and it was very messy.\n\nA guest booking Friday to Sunday appeared as a single row, but I needed each night separately to calculate occupancy correctly. The dates were text that Excel would not read as dates. And site rental was combined with firewood and pet fees, so the revenue figure was not clean.\n\nI wrote a macro that cleans all of that with one click. It separates the multi-night bookings, converts the dates, and separates site revenue from the extra charges.\n\nThen I built a dashboard for the next four weeks: occupancy, sites still available, average rate, and revenue per available site. Anything more than three weeks ahead and below 90% turns red. Three weeks because that is the time a promotion needs to actually fill sites — any closer and there is no point showing it.\n\nI ran it once a week and it took about a minute. The operations manager read it himself and called me when something turned red. That is how I knew it was working. I was no longer the person in the middle.",
+            "r": "In mid-May it showed a weekend well below target. They sent a discount to previous guests and filled it to 86% before that weekend arrived. That was about $2,500 we would otherwise have lost on one weekend.\n\nAnd it took one minute a week instead of the four hours I used to spend collecting numbers. But the time saved was not really the point. The point was that operations could act on a number while it still mattered."
+          },
+          "calc_sheet": {
+            "occupancy": "68% occupancy on 100 sites = 68 booked, 32 open. Booking 18 of the 32 takes it to 86.",
+            "the_$2,500": "18 sites x 2 weekend nights = 36 site-nights, at roughly $69 a night after the 15% discount.",
+            "threshold": "90% is the occupancy target. 3 weeks out is the lead time needed for a promotion to actually fill sites.",
+            "discount": "Stress-tested 10 / 15 / 20%. 10% didn't move bookings, 20% cut too far into margin."
+          }
+        }
+      },
+      "S29": {
+        "id": "S29",
+        "title": "Mercer Island Duplicate Invoice",
+        "status": "retired 2026-09-03 (load trim to 13)",
+        "why_retired": "Loses the collaborative-correction beat, which was the 'provides feedback to others respectfully' answer for Earn Trust. Highest Standards keeps S30 and S41; Ownership keeps S42 and S41. Cutting this AND S31 would have pushed Earn Trust to a single story, which is why the cut stopped at thirteen.",
+        "archived_story": {
+          "id": "S29",
+          "title": "Mercer Island Duplicate Invoice",
+          "setting": "Mercer Island house renovation, $50K monthly CapEx",
+          "lps": [
+            "Insist on the Highest Standards",
+            "Earn Trust",
+            "Ownership"
+          ],
+          "has_variants": true,
+          "situation": [
+            "Managing vendor payments for Mercer Island house renovation. $50K monthly CapEx budget. Tight deadlines."
+          ],
+          "task": [
+            "Subcontractor submitted $20K invoice for structural concrete work. Needed to verify every dollar before releasing funds."
+          ],
+          "variants": {
+            "A - Insist on the Highest Standards": [
+              "Cross-referenced invoice against QuickBooks and site progress photos.",
+              "Found $8,500 foundation prep charge already paid 2 months earlier.",
+              "Met with contractor and site manager collaboratively. Honest admin error - their accounting person re-billed a milestone.",
+              "Relationship got stronger. Built Excel template flagging duplicates."
+            ],
+            "B - Self-audit / Earn Trust": [
+              "Almost sent report trusting raw GL at face value.",
+              "Caught myself, paused, audited against source documents.",
+              "Found the $8,500 duplicate. Built cross-reference check."
+            ]
+          },
+          "result": [
+            "Prevented $8,500 duplicate payment.",
+            "Contractor started proactively reviewing draws before submission.",
+            "Template adopted across all active projects."
+          ],
+          "delivery_notes": [
+            "HARD RULE: never use both variants with the same interviewer.",
+            "Variant B is NOT a failure story - 'almost trusted the GL, then caught myself' is a success with tension. Offered against 'tell me about a mistake' it reads as dodging, which scores worse than a real mistake would. Send failure prompts to S30 or S5.",
+            "'Over 40% of the invoice' lands harder than $8,500 alone - it shows the scale of what was nearly paid twice. 8,500 of 20,000 is 42.5%, so 'over 40%' is safe."
+          ],
+          "spoken_star": {
+            "primary": "Insist on the Highest Standards",
+            "also": [
+              "Earn Trust",
+              "Ownership"
+            ],
+            "s": "I managed vendor payments on a house renovation with a $50K monthly capital budget. A subcontractor sent us a $20K invoice for structural concrete work. That is close to half of one month's spending at that property, so it was not something to approve quickly.",
+            "t": "Before releasing that much I wanted to check every line against what we had already paid. At that size, on work done in stages, each line should be something new.",
+            "a": "I checked it line by line against QuickBooks, and separately against the site progress photos.\n\nOne line was a problem. $8,500 for foundation preparation. We had already paid for that two months earlier. The photos confirmed it — that work was finished and photographed at that time, so it was not a second stage of the same work. It was the same work billed twice.\n\nI prepared it as evidence, not as an accusation: the QuickBooks entry, the payment date, and the photograph. Then I took it to the project manager, because the contractor relationship is his. That mattered for how it was received.\n\nIt was an honest mistake. Their accounting person had re-billed a milestone that was already completed, and nobody on their side had noticed.\n\nThen I built an Excel template that checks new invoice lines against everything already paid on that project, so a completed milestone is identified before it reaches approval.",
+            "r": "We did not pay the $8,500 twice. That was more than 40% of the bill, and about 17% of the month's whole capital budget.\n\nAnd because it was presented as evidence instead of a rejection, it did not damage the relationship. Afterwards they checked their own invoices before sending them. The template was used on every active project, with the instructions written inside it, so finding these does not depend on one person being careful."
+          },
+          "calc_sheet": {
+            "share": "$8,500 of a $20,000 invoice - over 40% of the bill was already paid.",
+            "context": "$50K monthly capital budget, so the duplicate was about 17% of a month's spend.",
+            "how_found": "Cross-referenced the invoice line by line against QuickBooks payments and the site progress photos.",
+            "ATTRIBUTION": "Reviewing capital invoices against the ledger is in remit. Talking to the contractor is not - that is the project manager's relationship. The story is the catch, the evidence, and the control."
+          },
+          "pocket_answers": {
+            "How did you spot it?": "I cross-referenced the invoice against what we'd already paid in QuickBooks and against the site progress photos. The foundation prep line was work that was finished and paid two months earlier.",
+            "How do you know it wasn't a legitimate second charge?": "Same milestone, already closed out and photographed as complete. There was nothing left to bill against it.",
+            "Was it deliberate?": "No - their accounting person re-billed a milestone that had already been settled. That's why I raised it as a conversation rather than a rejection.",
+            "What if they'd disputed it?": "I had the payment record and the dated photos. But it didn't come to that, and handling it that way is why they started self-reviewing their draws afterwards."
+          }
+        }
       }
     }
   },
@@ -2633,7 +2613,7 @@
     }
   },
   "memorisation_order": {
-    "_comment": "Ranked study order for the WW Ops Finance final (Job ID 10522171). Tier 1 = memorise cold. Tier 2 = know well. Tier 3 = know the beats. Bench = know it exists, read the card before the loop.",
+    "_comment": "Thirteen stories. Five to know cold (tier1), five fluent (tier2), three to recognise (tier3/bench). In a five-slot loop you will tell five to eight; the rest are insurance.",
     "ranked": [
       {
         "rank": 1,
@@ -2703,30 +2683,12 @@
       },
       {
         "rank": 12,
-        "id": "S29",
-        "tier": "tier3",
-        "why": "Short and clean. Backup to S30 on Highest Standards; variant A only."
-      },
-      {
-        "rank": 13,
-        "id": "S6",
-        "tier": "bench",
-        "why": "Redundant with S33 and S32 - same tool-building arc, same park. Do not use it against a speed prompt."
-      },
-      {
-        "rank": 14,
         "id": "S26",
         "tier": "bench",
         "why": "Only Frugality story, and Frugality is unlikely in this loop."
       },
       {
-        "rank": 15,
-        "id": "S5",
-        "tier": "bench",
-        "why": "Good Earn Trust backup. Know the two unequal installments cold or do not open it."
-      },
-      {
-        "rank": 16,
+        "rank": 13,
         "id": "S3",
         "tier": "bench",
         "why": "Have Backbone backup behind S31 and S26."
@@ -3008,22 +2970,6 @@
         ],
         "one_line": "Priced the cost of doubling payment frequency, then built the controls when overruled."
       },
-      "S29": {
-        "primary": "Controls / controllership",
-        "also": [
-          "Capital expenditure tracking",
-          "Invoice review"
-        ],
-        "one_line": "Caught a duplicated invoice line and built the control that catches the next one."
-      },
-      "S6": {
-        "primary": "Reporting",
-        "also": [
-          "Automation",
-          "Forward-looking analysis"
-        ],
-        "one_line": "Turned backward-looking month-end reporting into a four-week forward view operations acted on."
-      },
       "S26": {
         "primary": "Capital business case",
         "also": [
@@ -3031,14 +2977,6 @@
           "Payback analysis"
         ],
         "one_line": "Tested the assumption behind a $6,000 capex request and found a cheaper way to the same outcome."
-      },
-      "S5": {
-        "primary": "Financial modelling",
-        "also": [
-          "Planning",
-          "Acquisition analysis"
-        ],
-        "one_line": "Built the model behind a $2M purchase, found my own two errors in the tax assumptions."
       },
       "S3": {
         "primary": "Scenario analysis",
@@ -3086,8 +3024,7 @@
         "lead": "S3",
         "also": [
           "S26",
-          "S40",
-          "S5"
+          "S40"
         ],
         "depth": "STRONG"
       },
@@ -3101,8 +3038,6 @@
       "Reporting to leadership": {
         "lead": "S27",
         "also": [
-          "S6",
-          "S5",
           "S41"
         ],
         "depth": "STRONG"
@@ -3119,15 +3054,13 @@
         "lead": "S33",
         "also": [
           "S19",
-          "S27",
-          "S6"
+          "S27"
         ],
         "depth": "STRONGEST - five stories, every one with a number"
       },
       "Controls and controllership": {
-        "lead": "S29",
+        "lead": "S31",
         "also": [
-          "S31",
           "S30",
           "S19"
         ],
@@ -3136,8 +3069,7 @@
       "Reconciliation and data accuracy": {
         "lead": "S19",
         "also": [
-          "S41",
-          "S29"
+          "S41"
         ],
         "depth": "STRONG"
       },
