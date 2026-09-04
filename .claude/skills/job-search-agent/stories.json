@@ -343,11 +343,12 @@
     },
     {
       "id": "S19",
-      "title": "P&L Consolidation (Power Query/VBA)",
+      "title": "P&L Consolidation (SQL)",
       "setting": "Packwood, rolled out across 10 entities",
       "lps": [
+        "Deliver Results",
         "Invent and Simplify",
-        "Deliver Results"
+        "Learn and Be Curious"
       ],
       "situation": [
         "CPA needed one consolidated P&L for Packwood for tax filing.",
@@ -359,13 +360,11 @@
         "Produce clean, accurate consolidated P&L the CPA could file confidently without back-and-forth - and build a repeatable process for every year."
       ],
       "action": [
-        "Each platform exported differently - Camplife as CSV, Hemlane as Excel - different columns, date formats, naming conventions.",
-        "Same tenant might be 'John Smith' in Camplife and 'J. Smith' in mailed check log.",
-        "Power Query pulled each export into one workbook, standardized columns.",
-        "VBA macro: first piece was lookup table mapping tenant name variations to single master ID. Second piece was duplicate detection scanning amounts, dates, and tenant IDs across all 4 sources.",
-        "Caught 10-20 duplicate payments at $1-2K each - tenants who paid through Camplife and also had mailed check logged for same month. $20K total.",
-        "Cleaned it all, validated against QuickBooks, delivered corrected P&L to CPA.",
-        "Rolled out across all 10 entities."
+        "Ruled out Excel - ten entities and four sources means maintained links and more ways to break.",
+        "Taught herself SQL in her own time (YouTube plus an AI assistant), built a SQLite database and loaded all four sources across all ten entities.",
+        "Built a lookup mapping tenant name variations to one master ID - the same person appeared differently across systems.",
+        "Built duplicate detection matching on amount, date and tenant ID together; all three, because matching on two flags a genuine repeat payment as a duplicate.",
+        "Validated the output against QuickBooks before it went to the CPA."
       ],
       "result": [
         "P&L prep from 2 weeks to 1 day across 10 entities.",
@@ -379,7 +378,9 @@
         "Say 'more than a dozen' and 'roughly $20,000' - both are true to your records and defensible. The earlier problem was pairing a precise-sounding $20K with a range spanning $10K-$40K. An approximation you label as one is safe; a false-precise number is not. If pushed for exact: 'I'd have to pull the file, but it was in the teens and about $20,000.'",
         "PROMOTED TO LEAD DELIVER RESULTS. Two weeks to one day across ten entities is the cleanest before/after in the bank, and Deliver Results had no lead story. Invent and Simplify still has S6 and S33, so nothing is lost.",
         "FOR THE OPS FINANCE LOOP this is the lead story - it answers four of the six listed responsibilities. Lead with 'consolidated P&L across all ten entities', not with Packwood.",
-        "The story is a P&L consolidation where REVENUE was the blocker - expenses were already clean in QuickBooks. Say that in the opening or the whole thing sounds like a rent-roll exercise rather than a close deliverable."
+        "The story is a P&L consolidation where REVENUE was the blocker - expenses were already clean in QuickBooks. Say that in the opening or the whole thing sounds like a rent-roll exercise rather than a close deliverable.",
+        "THIS IS THE SQL STORY. Self-taught SQL, SQLite, the P&L consolidation. Power Query and VBA are S27's rent roll. Do not mix them up - an earlier version of the bank had them swapped.",
+        "Because the self-taught SQL sits here now, this is also a Learn and Be Curious option - but S27 remains the lead for that principle, on the noticing rather than the learning."
       ],
       "open_questions": [],
       "spoken_star": {
@@ -389,13 +390,14 @@
         ],
         "s": "Our CPA needed one consolidated P&L across all ten entities for the tax filing. The expense side was straightforward — it was already in QuickBooks. Revenue was the problem. Rent came from four sources: two booking platforms, payments sent by text message, and checks in the mail. Each was tracked separately, and nobody had ever combined them.",
         "t": "When I tried, the numbers did not agree, and the CPA kept finding income that looked counted twice. By hand it took two weeks. I needed to give them something clean they could file, and I wanted it repeatable, not two weeks of work every year.",
-        "a": "The main problem was that every platform exported differently. Different columns, different date formats, different naming.\n\nThe most difficult part was tenant names. The same person might be \"John Smith\" in one system and \"J. Smith\" in the check log. So one person could appear as two people, or two payments could be combined into one.\n\nI used Power Query to bring all four exports into one workbook, which solved the structural differences.\n\nThen I wrote a macro that did two things. First, a lookup table that maps every name variation to one master tenant ID, so \"John Smith\" and \"J. Smith\" become the same person. Second, duplicate detection that checks amount, date and tenant ID across all four sources together. It has to be all three, because if you only check two, a tenant who genuinely pays the same amount two months in a row looks like a duplicate, and you would delete real income.\n\nI worked the matching logic through with an AI assistant — I knew what the rule had to be, the harder part was expressing it in code. Then I validated the whole result against QuickBooks before sending anything to the CPA.",
+        "a": "Doing it in Excel meant maintaining links across ten entities and four sources — the same problem with more steps and more ways to break.\n\nSo I taught myself SQL in my own time. YouTube for the basics, and an AI assistant to work through problems when I got stuck. I built a SQLite database and loaded all four sources, for all ten entities, into it.\n\nThe hardest part was tenant names. The same person might be \"John Smith\" in one system and \"J. Smith\" in the check log, so one person could appear as two, or two payments could collapse into one. I built a lookup that maps every name variation back to one master tenant ID.\n\nThen duplicate detection — matching on amount, date and tenant ID together. It has to be all three, because if you only check two, a tenant who genuinely pays the same amount two months in a row looks like a duplicate and you would delete real income.\n\nThen I validated the whole result against QuickBooks before sending anything to the CPA.",
         "r": "It found more than a dozen duplicate payments — tenants who paid on a platform and also had a check recorded for the same month. About $20,000 in total, which had been in our reported income, making it too high.\n\nAnd the preparation went from two weeks to one day, across all ten entities. That saving repeats every filing. The CPA stopped sending questions, because the consolidation now arrives already reconciled."
       },
       "calc_sheet": {
         "speed": "Two weeks of manual cross-referencing (about 10 working days) down to 1 = roughly 90%.",
         "duplicates": "More than a dozen payments at $1-2K each, roughly $20,000 in total.",
-        "scale": "Rolled across 10 entities, so the saving repeats every filing."
+        "scale": "Rolled across 10 entities, so the saving repeats every filing.",
+        "the_tool": "SQL and SQLite, self-taught. Power Query and VBA belong to S27, the rent roll. An earlier version of the bank had these the wrong way round."
       },
       "pocket_answers": {
         "How many duplicates exactly?": "More than a dozen, roughly $20,000 in all. I'd have to pull the file for the exact count.",
@@ -403,7 +405,9 @@
         "What if you'd removed a legitimate payment?": "That's why the macro flagged rather than deleted, and why I validated the whole thing against QuickBooks before it went to the CPA.",
         "Were you running other things at the same time?": "Yes - this was built around month-end close and the ongoing reporting, not instead of it. The reason it took two weeks by hand was that it competed with everything else; the reason automating it mattered was that it stopped competing.",
         "How did you keep the CPA informed while you built it?": "I gave them the entities that reconciled first rather than holding everything back until all ten were done, so they could start work while I finished. The duplicates I flagged as I found them rather than in one batch at the end.",
-        "How much of the macro was yours?": "The logic was mine. I knew it had to match on tenant, amount and date together, and I knew why — matching on only two would flag a genuine repeat payment as a duplicate. What I used the assistant for was turning that into working code faster than I would have on my own. Then I validated the output against QuickBooks, which is the real test."
+        "How much of the macro was yours?": "The logic was mine. I knew it had to match on tenant, amount and date together, and I knew why — matching on only two would flag a genuine repeat payment as a duplicate. What I used the assistant for was turning that into working code faster than I would have on my own. Then I validated the output against QuickBooks, which is the real test.",
+        "How did you learn SQL?": "YouTube for the fundamentals, and an AI assistant when I hit something I could not work out. I used it to understand why a query was wrong rather than to hand me one — if you paste in an answer you cannot debug it later, and I was going to own this. Then I built the real thing with our actual data, which is where you find out what you actually understand.",
+        "Why a database rather than Excel?": "Ten entities and four sources. In Excel that is a workbook of maintained links, and every month somebody has to not break it. In a database the structure holds and I ask it a question instead. The first build was slower; every month after that was faster."
       },
       "primary_lps": [
         "Deliver Results"
@@ -474,7 +478,7 @@
     },
     {
       "id": "S27",
-      "title": "SQL Rent Roll Consolidation",
+      "title": "Rent Roll Consolidation (Power Query/VBA)",
       "setting": "10-property portfolio, ~700 tenants",
       "lps": [
         "Learn and Be Curious",
@@ -490,10 +494,11 @@
         "That made me realize we needed a consolidated view. If one slipped through, others probably were too. Wanted to build something leadership could rely on for the full portfolio picture every month."
       ],
       "action": [
-        "Taught myself SQL through YouTube and Claude AI.",
-        "Built SQLite database, loaded all 700 tenants.",
-        "Can run queries in seconds - filter tenants owing more than $5K or more than 5 months, pull total rent revenue by month or year, all in one place.",
-        "Built monthly summary report tracking 5 KPIs: rent collection rate, vacancy by property, aging buckets at 30/60/90, revenue per occupied unit, expense per unit."
+        "Ruled out ten linked Excel files - the same problem with more steps.",
+        "Used Power Query to combine all ten rent rolls into one table, with a macro handling the monthly-changing parts so refresh is one click.",
+        "Portfolio now filterable in seconds - who owes over $5,000, who is more than five months behind, collections month over month.",
+        "Built a monthly report on five measures: collection rate, vacancy by property, arrears ageing, revenue per occupied unit, cost per unit.",
+        "Set standing thresholds so anyone crossing $5,000 owed or five months late surfaces automatically."
       ],
       "result": [
         "30-45 minutes to under 1 minute.",
@@ -501,14 +506,13 @@
         "Catch delinquencies earlier across full portfolio."
       ],
       "delivery_notes": [
-        "DEFAULT PICK for Learn and Be Curious, but REFRAME THE OPENING. Do not open with 'I taught myself SQL' - that answers 'can you learn a tool', which is not what the LP asks.",
-        "Open with the accidental catch instead: found a delinquent tenant only because you happened to open that one sheet, then asked 'if one slipped through, how many others did?' That question is the curiosity. The SQL is just how you answered it.",
-        "Ordering that lands: the accident -> the question it raised -> teaching yourself SQL to answer it at portfolio scale -> the 5-KPI monthly report. Learning the tool is a beat in the middle, not the headline.",
         "The Result deliberately closes by echoing the Situation - 'instead of whenever a person happens to open the right file' calls back to the tenant you found by accident. That lands harder than a specific example would, and it needs no figure you'd have to defend. If they ask for a concrete catch, give one if you have it; if not, 'I'd have to pull the numbers' is fine.",
         "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
         "USE THIS TO ESTABLISH SCALE - 10 properties, 700 tenants is the largest number in the bank. If it comes early in the loop it frames everything after it.",
         "LEARN AND BE CURIOUS RUBRIC: 'if one slipped through because nobody was looking, how many others were there?' is the single best line you own for this LP - it is the 'I wonder what would happen if' criterion said out loud. Lead with it.",
-        "On the AI element: the useful part is HOW you used it - to understand why something was wrong, not to be handed an answer. That distinction is the judgement being scored. Saying you used AI tools is neutral; saying you used them without losing ownership of the work is positive."
+        "On the AI element: the useful part is HOW you used it - to understand why something was wrong, not to be handed an answer. That distinction is the judgement being scored. Saying you used AI tools is neutral; saying you used them without losing ownership of the work is positive.",
+        "THIS IS THE POWER QUERY STORY, not the SQL one. SQL and the SQLite database belong to S19. An earlier version of the bank had them swapped.",
+        "LEARN AND BE CURIOUS now rests on the NOTICING, not on learning a tool. 'If I found one by accident, how many were in the other nine files?' is the whole of it, and it was always the stronger half. The self-taught story moved to S19 with the SQL."
       ],
       "primary_lps": [
         "Learn and Be Curious",
@@ -523,22 +527,22 @@
         ],
         "s": "We had ten properties and about seven hundred tenants, and every property's rent roll was in its own spreadsheet — one file for each property, updated by whoever was closest to it. That works with two or three properties. With ten, nothing connects.",
         "t": "What changed it was an accident. I opened one of those files for something unrelated and found a tenant several months behind on rent that nobody had noticed. The only way to find it was for a person to open that file and look. If I found one by accident, how many were in the other nine files?",
-        "a": "There was no portfolio-level view of anything, and building one in Excel would mean maintaining ten linked files — the same problem with more steps and more ways to break.\n\nSo I taught myself SQL in my own time — YouTube for the basics, and an AI assistant to work through problems when I got stuck. I built a SQLite database and loaded all seven hundred tenants into it, from all ten properties, in one place.\n\nThe difference is that I can ask a question instead of searching. Who owes more than $5,000. Who is more than five months behind. What we collected this month compared to last month. The answers come in seconds, and they cover the whole portfolio, not only the file I happened to open.\n\nThen I built a monthly report on top of it with five measures: collection rate, vacancy by property, how the unpaid balances are ageing, revenue per occupied unit, and cost per unit. Those five because a change in any of them shows up before it reaches the P&L.\n\nI also set standing thresholds, so anyone who passes $5,000 owed or five months late appears automatically, instead of waiting for someone to ask the right question.",
+        "a": "There was no portfolio-level view of anything, and keeping ten linked files in Excel is the same problem with more steps.\n\nSo I used Power Query to pull all ten rent rolls into one table, and wrote a macro for the parts that change every month, so refreshing it is one click instead of a rebuild.\n\nNow the whole portfolio sits in one place. I can filter it in seconds — who owes more than $5,000, who is more than five months behind, what we collected this month compared to last.\n\nThen I built a monthly report on top of it with five measures: collection rate, vacancy by property, how the unpaid balances are ageing, revenue per occupied unit, and cost per unit. Those five because a change in any of them shows up before it reaches the P&L.\n\nI also set standing thresholds, so anyone who passes $5,000 owed or five months late appears automatically, instead of waiting for someone to ask the right question.",
         "r": "What used to take half an hour of opening files one at a time now takes less than a minute.\n\nBut the real change is that leadership never had a view across all seven hundred tenants. It did not exist. Now they receive one every month. And the original problem is solved — the tenant I found by accident was the last one we would find that way."
       },
       "calc_sheet": {
         "scale": "10 properties, about 700 tenants, previously one spreadsheet each.",
         "speed": "Half an hour of opening files one at a time, down to a query in under a minute.",
         "kpis": "Five tracked monthly: collection rate, vacancy by property, aging at 30/60/90, revenue per occupied unit, expense per unit.",
-        "thresholds": "Standing queries flag anyone owing more than $5,000 or more than five months behind."
+        "thresholds": "Standing queries flag anyone owing more than $5,000 or more than five months behind.",
+        "the_tool": "Power Query to combine the ten rent rolls, plus a VBA macro for the monthly refresh. NOT SQL - the SQL and the SQLite database belong to S19, the P&L consolidation. An earlier version of the bank had these swapped."
       },
       "pocket_answers": {
         "Why SQL? Seven hundred rows fits in Excel.": "It's not the row count, it's the joins and the repeatability. The data lived in ten separate files with their own layouts, and every month someone rebuilt the same view by hand. In a database it's one query that runs the same way every time.",
         "How long did it take to learn?": "I picked up enough to build it in a few weeks of evenings - YouTube mostly. It's a narrow slice of SQL: selects, joins, aggregates.",
         "Who else can use it?": "That's a fair challenge - I built the monthly report so leadership gets the output without writing queries, but the querying itself was mine. If I were doing it again I'd document the common queries from the start.",
         "How does it stay current?": "Monthly load from the property exports, same as the report cycle.",
-        "Did you know SQL would solve it when you started?": "No. I knew spreadsheets couldn't answer the question and I'd have to learn something that could. Whether it would get me all the way there I found out by doing it.",
-        "How did you teach yourself SQL?": "YouTube for the fundamentals, and an AI assistant when I hit something I could not work out. I used it to understand why a query was wrong rather than to hand me a query — if you paste in an answer you cannot debug it later, and I was going to own this database. Then I built the real thing with our actual data, because that is where you find out what you actually understand."
+        "Why Power Query rather than a database?": "Because the rent rolls were already ten Excel files in a consistent shape, and Power Query is built for exactly that — combine them, clean them, refresh in one click. A database would have been more machinery than the problem needed. Where I did need a database was the P&L consolidation, because that was four different source systems rather than ten copies of the same thing."
       }
     },
     {
@@ -1248,6 +1252,7 @@
       "S35"
     ],
     "Learn and Be Curious": [
+      "S19",
       "S27",
       "S33",
       "S35"
@@ -2880,7 +2885,7 @@
           "Reconciliation",
           "Annual cycle"
         ],
-        "one_line": "Consolidated a P&L across ten entities for the annual filing and automated it."
+        "one_line": "Taught herself SQL, built a database across ten entities and four income sources, and cut filing prep from two weeks to one day."
       },
       "S27": {
         "primary": "Reporting to leadership",
@@ -2889,7 +2894,7 @@
           "Ad hoc analysis",
           "Data extraction"
         ],
-        "one_line": "Built the portfolio-level view and the monthly KPI report that did not exist before."
+        "one_line": "Combined ten rent rolls with Power Query into one portfolio view with monthly KPIs and standing arrears thresholds."
       },
       "S28": {
         "primary": "Month-end close",
