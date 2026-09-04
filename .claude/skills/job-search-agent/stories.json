@@ -638,7 +638,9 @@
         "SAY THE DIRECTION OF THE RECLASS. 'Moved $40,000 out of operating expenses' is specific; 'reclassified $40,000' is not, and a finance interviewer will ask which way. Out of opex, because capital items had been expensed.",
         "AVOID: 'data corruption', 'diagnostic audit', 'proactive escalation', 'COA framework'. None of it is how you talk, and 'corruption' is wrong anyway - the data was not damaged, it was coded inconsistently by people who were not accountants.",
         "DO NOT NAME A SPECIFIC ITEM. 'Capital items coded as routine maintenance' carries the whole point on its own. Naming an example you cannot place is the one thing in this story an interviewer could catch you on, and it adds nothing.",
-        "PAIR EACH PROBLEM WITH ITS FIX. The weak version of this story lists what was wrong and then jumps to the escalation, which makes you sound like you found problems rather than solved them. Say the fix in the same breath as the problem: mapping key, one chart of accounts, line-by-line from the invoices."
+        "PAIR EACH PROBLEM WITH ITS FIX. The weak version of this story lists what was wrong and then jumps to the escalation, which makes you sound like you found problems rather than solved them. Say the fix in the same breath as the problem: mapping key, one chart of accounts, line-by-line from the invoices.",
+        "SAY SQL. The point of this story is a database migration, and I dropped the tool out of an earlier tightening pass. 'One SQL database' in the Situation and 'a SQLite database' in the Action - without them it sounds like a spreadsheet cleanup, and the four-day slip is much harder to justify.",
+        "S19 AND S30 ARE BOTH SQL. Keep them straight: S19 is where you TAUGHT YOURSELF SQL (that is its Learn and Be Curious beat), S30 is where you APPLIED it. Do not claim the learning twice, and do not tell both in the same interview slot - a second SQLite database in the same loop invites 'how many of these did you build?' Answer prepared if it comes up."
       ],
       "pocket_answers": {
         "You knew on day 8 - why wait until day 11 to tell your manager?": "I spent those days scoping the true extent so I could bring a specific ask instead of a vague alarm - I wanted to say 'four days and here's exactly what's wrong', not 'this might slip.' In hindsight I'd have flagged it on day 8 with the estimate to follow, and that's what I do now.",
@@ -649,20 +651,22 @@
         "Was the deadline yours or someone else's?": "The two weeks was mine — I offered it. The real constraint was annual planning season, which is fixed. That is why four days was survivable and why I asked for four rather than open-ended: planning had room for four days, it would not have had room for a rebuild.",
         "How did that get miscoded in the first place?": "Whoever coded the invoice was close to the work, not to the accounting. From the property a replacement looks like maintenance. It is a judgement call that needs the invoice in front of you, which is why fixing it meant going back through them one by one rather than running a rule.",
         "Did you fix the cause or just the data?": "Both, but the data first because planning season was coming. The lasting fix was the validation macro — it flags a transaction that looks like a capital item sitting on a maintenance line, so it gets caught at upload rather than eighteen months later.",
-        "Why didn't the GL codes match?": "Eighteen months of entries coded by different people at different properties, with no standard to code against. Nobody did anything wrong — there was just no single chart of accounts, so each file drifted its own way. That is why the fix was standardising them rather than correcting anyone's work."
+        "Why didn't the GL codes match?": "Eighteen months of entries coded by different people at different properties, with no standard to code against. Nobody did anything wrong — there was just no single chart of accounts, so each file drifted its own way. That is why the fix was standardising them rather than correcting anyone's work.",
+        "Why a database rather than Excel?": "Ten linked spreadsheets is the same problem with more steps — every portfolio question means opening ten files and hoping the links held. In one database it is a single query, and eighteen months of history is small for SQLite but painful in Excel.",
+        "You built a SQL database here and in the P&L consolidation — which came first?": "The P&L consolidation is where I taught myself SQL, and this is where I used it on something bigger. Same tool, and the second one is why I knew a migration was worth doing at all."
       },
       "spoken_star": {
         "primary": "Earn Trust",
         "also": [],
-        "s": "This is one I did wrong. Our property records sat in ten separate files, one per property, so anything at portfolio level was slow. I proposed moving eighteen months of general ledger data into one database. Nobody asked me to do it.",
+        "s": "This is one I did wrong. Our property records sat in ten separate files, one per property, so anything at portfolio level meant opening ten spreadsheets. I proposed moving eighteen months of general ledger data into one SQL database. Nobody asked me to do it.",
         "t": "It had to be ready before annual planning season, which is a fixed date, and it had to be right, because people would build next year's numbers from it. I said two weeks.",
-        "a": "I pulled from three places — QuickBooks, the bank statements, and the property files — and started standardising it into one structure.\n\nOn day eight I hit a wall. Seven vendors were entered under different names, so one supplier looked like several — I built a mapping key that points every spelling back to one vendor. The GL codes did not match between files, so I standardised them to one chart of accounts across all ten properties.\n\nAnd more than a hundred transactions were on the wrong lines — capital items coded as routine maintenance. Those are assets, not repairs, and coding them that way overstates operating cost. I could not fix that with a rule, so I went back through the invoices and moved about $40,000 out of operating expenses.\n\nThat is what broke the timeline. Two days trying to still meet the date, and I could not — not without loading data I knew was wrong into the system people would plan from.\n\nSo on day eleven I went to my manager. I told him I committed to a date before checking the data quality, and that was my mistake — not the messy data, giving a date before I looked. I showed him what was left and asked for four more days. Planning season had room for four days. It would not have had room for a rebuild.",
+        "a": "I pulled from three places — QuickBooks, the bank statements, and the property files — and started loading them into a SQLite database, standardising the structure as I went.\n\nOn day eight I hit a wall. Seven vendors were entered under different names, so one supplier looked like several — I built a mapping table that points every spelling back to one vendor. The GL codes did not match between files, so I standardised them to one chart of accounts across all ten properties.\n\nAnd more than a hundred transactions were on the wrong lines — capital items coded as routine maintenance. Those are assets, not repairs, and coding them that way overstates operating cost. I could not fix that with a rule, so I went back through the invoices and moved about $40,000 out of operating expenses.\n\nThat is what broke the timeline. Two days trying to still meet the date, and I could not — not without loading data I knew was wrong into the system people would plan from.\n\nSo on day eleven I went to my manager. I told him I committed to a date before checking the data quality, and that was my mistake — not the messy data, giving a date before I looked. I showed him what was left and asked for four more days. Planning season had room for four days. It would not have had room for a rebuild.",
         "r": "We launched four days late but ahead of planning season, and the data was correct. Next year's operating budget would otherwise have been built on $40,000 of cost that was never operating cost.\n\nHis feedback was that I should have checked data quality before committing to a date. He was right, and I do that on every migration now.\n\nAnd the validation macro I wrote became the standard check for uploads — documented, run by other people, and it cut checking time by more than half.",
         "bullets": {
           "s": [
             "\"This is one I did wrong.\"",
             "Records in **10 separate files**, one per property - portfolio view slow",
-            "Proposed **18 months** of GL into one database",
+            "Proposed **18 months** of GL into one **SQL database**",
             "**Nobody asked me to do it**"
           ],
           "t": [
@@ -671,9 +675,9 @@
             "**I said two weeks**"
           ],
           "a": [
-            "# Pulled from **3 sources** - QuickBooks, bank statements, property files - into one structure",
+            "# Pulled from **3 sources** - QuickBooks, bank statements, property files - into a **SQLite database**",
             "# **Day 8 - hit a wall. Three problems, three fixes:**",
-            "> **7 vendors** under different names - **built a mapping key**, every spelling to one vendor",
+            "> **7 vendors** under different names - **built a mapping table**, every spelling to one vendor",
             "> GL codes did not match - **standardised to one chart of accounts across all 10 properties**",
             "> **100+ transactions** on wrong lines - capital items coded as routine maintenance",
             "\"Those are assets, not repairs - coding them that way overstates operating cost.\"",
@@ -703,7 +707,8 @@
         "the_sources": "QuickBooks, bank statements, and the individual property files.",
         "the_reclass": "Direction matters: capital items had been expensed as repairs and maintenance. Moving them out of opex lowers reported operating cost and capitalises the asset. The planning baseline is built on operating cost, so leaving it would have inflated next year's opex budget by about $40K of spend that was never really operating cost.",
         "why_it_happened": "Whoever coded the invoice at the property was closest to the work, not to the accounting. A replacement looks like maintenance from the site. It is a judgement call that needs the invoice in front of you, which is why fixing it meant going back through them.",
-        "what_i_built": "Three fixes, not one: a vendor mapping key that collapses every spelling variation to one vendor; one standard chart of accounts applied across all ten properties; and a line-by-line reclassification of the capital items, done from the invoices because no rule could tell a repair from an asset. The validation macro came out of the third one."
+        "what_i_built": "Three fixes, not one: a vendor mapping table that collapses every spelling variation to one vendor; one standard chart of accounts applied across all ten properties in the load; and a line-by-line reclassification of the capital items, done from the invoices because no query could tell a repair from an asset. The validation macro came out of the third one.",
+        "the_tool": "SQLite. Ten property files plus QuickBooks and the bank statements loaded into one database, so portfolio-level questions become one query instead of opening ten spreadsheets. That is the whole reason for the migration - say it, because 'database' without the reason sounds like tidying."
       },
       "primary_lps": [
         "Earn Trust",
