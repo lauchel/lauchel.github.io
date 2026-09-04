@@ -219,62 +219,6 @@
       }
     },
     {
-      "id": "S7",
-      "title": "Packwood Consolidation",
-      "setting": "Packwood RV park, rolled out across 4 properties",
-      "lps": [
-        "Dive Deep",
-        "Invent and Simplify"
-      ],
-      "situation": [
-        "Packwood RV park had cash from 4 sources - short-term platform, long-term platform, onsite manager cash, and QuickBooks.",
-        "Process was entirely manual - onsite manager sent receipts, I entered into QuickBooks by hand.",
-        "With 4 sources and manual entry, transactions were getting missed or entered incorrectly."
-      ],
-      "task": [
-        "Needed to build a single reconciliation tracker matching every dollar across all 4 sources and catching discrepancies from manual entry."
-      ],
-      "action": [
-        "Used Power Query to pull exports from each platform into one workbook, standardize formats.",
-        "Built VBA matching logic - same tenant could appear under different names across systems.",
-        "Macro mapped name variations to single tenant ID, cross-referenced payment amounts and dates.",
-        "Found $10K in discrepancies - transactions missed during manual entry.",
-        "Designed it so both onsite manager and I could see the same reconciled data instead of me chasing receipts.",
-        "Rolled out across 4 properties."
-      ],
-      "result": [
-        "Caught and recovered $10K in discrepancies across 4 properties.",
-        "Every source now reconciled automatically every month.",
-        "Tracker became standard process for all properties with onsite cash collection."
-      ],
-      "delivery_notes": [
-        "Overlaps heavily with S19 (both are multi-source consolidation + VBA tenant-name matching). Do not use both in the same loop.",
-        "BACKUP ONLY. If used, lead with the shared-visibility design (the onsite manager and the candidate seeing the same reconciled data) - that is the one thing S7 has that S19 does not."
-      ],
-      "open_questions": [],
-      "spoken_star": {
-        "primary": "Dive Deep",
-        "also": [
-          "Invent and Simplify"
-        ],
-        "s": "One of our properties received rent from four different places — two booking platforms, cash the onsite manager collected, and QuickBooks. They sent me receipts and I entered them by hand. With four sources and a person typing in the middle, things were being missed.",
-        "t": "I wanted one tracker that matched every dollar across all four sources and found what manual entry had already missed. Not only going forward — I wanted to know what we had already lost, because if payments were being missed, some had already been missed.",
-        "a": "I used Power Query to bring every platform's export into one workbook, which handled the fact that they all export differently.\n\nThen I wrote a macro to match them, working the VBA through with an AI assistant rather than spending the time on syntax. The difficult part was that the same tenant appeared under different names in different systems, so the macro first maps all the variations to one tenant ID.\n\nThen it matches on three things together: tenant, amount and date. It has to be all three, because if you only match two, a tenant who genuinely pays the same amount twice looks like a duplicate, and you would delete real income.\n\nWhat it found was the opposite of what I expected. I was looking for double counting. What was actually there were payments recorded in a platform with nothing matching in QuickBooks — money that came in and was never entered.\n\nI also set it up so the onsite manager and I saw the same reconciled data, instead of me asking him for receipts and him wondering what happened to them.",
-        "r": "It found $10K that had been missed in manual entry, and we recovered all of it.\n\nThen I wrote the process down — the steps in order, so someone could follow it without me — and I sat with the onsite manager and we ran one month together. That is what made it work. It was used across four properties, and it changed from something I did when someone asked, to something that runs every month without me. The $10K was one recovery. The monthly reconciliation is what prevents the next one."
-      },
-      "pocket_answers": {
-        "How did the macro match tenants across systems?": "A lookup table mapping name variations to one tenant ID, then cross-referencing amount and date. The same person might be 'John Smith' in one system and 'J. Smith' in another.",
-        "How did you know the $10K was genuinely missed and not double-counted?": "Because the match is on tenant, amount and date together - a real payment appears once in the source system and once in QuickBooks. What I was finding was payments in a source with no QuickBooks entry at all.",
-        "Was it recovered?": "Yes - once we could see which payments hadn't been booked, we posted them."
-      },
-      "calc_sheet": {
-        "sources": "Four cash sources reconciled: two booking platforms, onsite manager's collected cash, and QuickBooks.",
-        "matching": "Lookup table maps tenant name variations to one ID, then matches on tenant, amount and date together - all three, so a genuine payment doesn't read as a duplicate.",
-        "found": "$10K of payments present in a source system with no corresponding QuickBooks entry - missed during manual keying. All recovered.",
-        "scale": "Rolled out across 4 properties, reconciling every month instead of on request."
-      }
-    },
-    {
       "id": "S8",
       "title": "Signature Photo Client Communication",
       "setting": "Signature Photo",
@@ -309,6 +253,7 @@
         "Freed up time to take on more projects without adding staff."
       ],
       "delivery_notes": [
+        "NOW THE CUSTOMER OBSESSION LEAD. It is the only story with a real person on the other side and genuine stakes - the only copy of his late mother's photos. S27 is the leadership-as-customer variant; this is the human one.",
         "The only story outside the real-estate firm. Use it deliberately to vary the setting across a loop.",
         "MOST UNDERUSED STORY IN THE BANK. Only non-real-estate setting, only genuine human stakes, only story where the customer's feelings can be described. Place it mid-loop to break up the RV-park run.",
         "Cut the last Action beat (asking the owner about client priority and the colleague about delays) - unrelated to the spine and it dilutes the ending.",
@@ -339,7 +284,10 @@
         "How did you get leadership comfortable?": "Their worry was that automation would feel impersonal on a sensitive project. I made the case that what felt impersonal was him not knowing where his mother's photos were, and that showing him the actual scanned images was more personal than a status update over the phone.",
         "Was that a headcount saving?": "Not a reduction - an avoidance. The four hours a week we got back is what let us take on more projects without hiring. That's the same shape as a productivity gain: same people, more output, because the work per project came down.",
         "How did you find out what he actually needed?": "He told me, though not directly - he was calling every few days, and what he asked each time was the same: where is it now, and what happens next. The calls were the feedback. I stopped treating them as an interruption and started treating them as a specification."
-      }
+      },
+      "primary_lps": [
+        "Customer Obsession"
+      ]
     },
     {
       "id": "S19",
@@ -446,16 +394,16 @@
         "Track results via PayRange transaction dashboard month over month."
       ],
       "delivery_notes": [
+        "NOW THE ARE RIGHT A LOT LEAD. A contrary view formed against the people above you, argued from comparable data rather than instinct, and validated by the outcome - the uplift beat your own estimate. Own the miss openly; being beaten by your own forecast is still being right about the decision.",
         "Only Frugality story in the bank. Protect it - don't spend it on a Have Backbone prompt if Frugality might come up later in the loop.",
         "STATE THE ADAPTER PAYBACK - it is the strongest number in the story and it is currently missing. Replacement: $6,000 / $220 per month = 27 months. Adapters: $560 / ($220 - $69 subscription) = 3.7 months. At the actual $300/month uplift, 2.4 months. 27 against 3.7 ends the argument.",
         "Prepared answer for 'your estimate was 22% and it came in at 30% - so your analysis was wrong too?': the 22% was deliberately conservative for a go/no-go, and the decision holds at either number. That is what a conservative case is for.",
         "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you."
       ],
       "spoken_star": {
-        "primary": "Frugality",
+        "primary": "Are Right, A Lot",
         "also": [
-          "Have Backbone, Disagree and Commit",
-          "Are Right, A Lot"
+          "Frugality"
         ],
         "s": "Our park earned about $1,000 a month from the coin laundry — eight machines. Ownership wanted to replace half of them with tap-payment machines, about $6,000, because they believed going cashless would increase laundry revenue by 50%. The machines we had were old but working.",
         "t": "I was asked to check the numbers before we committed. The 50% was the thing to test, because everything else depended on it.",
@@ -474,7 +422,11 @@
         "Your estimate was 22% and it came in at 30% - so your analysis was off?": "I was deliberately conservative, because it was a go/no-go on $6,000. And the decision holds at either number: the point was that 50% was wrong and full replacement wasn't justified.",
         "Doesn't the $69 monthly subscription eat the saving over time?": "Over three years the adapters cost $560 plus about $2,500 of subscription - roughly $3,000 against $6,000 for replacement, and that's assuming we keep it running the whole time. And if tenants hadn't used it we could pull it out, which we couldn't have done with the hardware.",
         "Why not replace them anyway for the guest experience?": "That was ownership's instinct and it wasn't wrong - the adapters gave us the same tap payment on the machines we had. If usage had proved the demand, replacing them later was still open."
-      }
+      },
+      "primary_lps": [
+        "Are Right, A Lot",
+        "Have Backbone, Disagree and Commit"
+      ]
     },
     {
       "id": "S27",
@@ -883,79 +835,6 @@
       }
     },
     {
-      "id": "S35",
-      "title": "Rent Collection Platform",
-      "setting": "Newly acquired property",
-      "lps": [
-        "Customer Obsession",
-        "Learn and Be Curious",
-        "Are Right, A Lot"
-      ],
-      "primary_lps": [
-        "Customer Obsession"
-      ],
-      "situation": [
-        "Newly acquired property where tenants still paid by check and cash.",
-        "Payments were going missing between the onsite manager collecting them and them landing in the books."
-      ],
-      "task": [
-        "Find a rent collection platform that tenants would actually use - a system they won't adopt doesn't solve anything."
-      ],
-      "action": [
-        "Compared platforms on three criteria: transaction fees, how fast money actually landed in our account, and how easy it was for a tenant to pay without help.",
-        "The criteria pulled against each other - the cheapest option was not the easiest to use.",
-        "Weighted tenant ease highest: a cheaper platform that half the tenants wouldn't touch leaves you exactly where you started, still chasing paper.",
-        "Went with Baselane. Not the cheapest option, but the one a tenant could pay through without needing help."
-      ],
-      "result": [
-        "About 70% of tenants moved to online payment.",
-        "Deposits landed about 4 days faster.",
-        "Late payments came down - paying stopped meaning getting a check to somebody by a certain day.",
-        "Payments stopped going missing between collection and the books, because most no longer passed through anyone's hands."
-      ],
-      "spoken_star": {
-        "primary": "Customer Obsession",
-        "also": [
-          "Learn and Be Curious",
-          "Are Right, A Lot"
-        ],
-        "s": "We acquired a property where the tenants still paid by check and cash. The onsite manager collected the payments, and eventually they reached us and went into the books. The problem was that payments were disappearing somewhere in between.",
-        "t": "Not often and not large amounts, but often enough that reconciling that property meant searching for things that had gone missing. I was asked to find a rent collection platform and move the tenants onto it. It had to be one the tenants would actually use.",
-        "a": "I compared the options on three things: the transaction fees, how quickly the money reached our account after a tenant paid, and how easy it was for a tenant to pay without needing help.\n\nThe three did not agree. The cheapest platform was not the easiest to use.\n\nI gave the most weight to how easy it was for tenants. The fee difference between the options was small, and it was certain — I could calculate it exactly. The difference in how many tenants would use it was large, and it was uncertain. If I chose based on fees and half our tenants continued paying by check, I would save a small known amount and still have the whole problem I was asked to solve.\n\nI also thought about the tenants themselves. If someone has to learn an app to pay their rent, some of them simply will not. They will keep writing checks.\n\nI recommended Baselane. It was not the cheapest, but it was the one someone could use without calling anybody for help. I presented it that way, and leadership agreed.",
-        "r": "About 70% of tenants moved to online payment, and the money reached our account about four days faster. Across a full rent roll, that is four days of rent in our account instead of in transit, every month.\n\nLate payments also decreased, and the reason is the part I would explain. Paying no longer meant physically delivering a check to someone by a certain date. And the original problem stopped, because most payments no longer passed through anyone's hands."
-      },
-      "calc_sheet": {
-        "adoption": "About 70% of tenants moved to online payment after launch.",
-        "why_that_matters": "Adoption is the customer's verdict on the criteria weighting. Optimising purely on fees would have bought a cheaper platform with lower uptake - and the lost-payment problem would have survived.",
-        "the_tradeoff": "Cheapest was not easiest. Fees, deposit timing and tenant ease were the three axes, and they did not point the same way.",
-        "deposit_timing": "About 4 days faster from tenant payment to money in the account. Across a full rent roll that is 4 days of rent sitting in the bank instead of in transit - the same timing problem the cash tracker in S32 was built for.",
-        "late_payments": "Came down, no figure recorded. The mechanism is the credible part: paying no longer required physically getting a check to someone by a date.",
-        "ATTRIBUTION": "She was asked to evaluate and recommend. The choice of platform is leadership's - say 'I recommended', not 'I went with'. The evaluation, the weighting and the case for it are hers, and they are the part being scored anyway."
-      },
-      "pocket_answers": {
-        "Why did you weight tenant ease over fees?": "Because the problem wasn't cost, it was payments going missing. A cheaper platform that tenants didn't adopt would have left the paper trail intact and saved us nothing that mattered. Fees only matter on payments that actually come through the system.",
-        "Is 70% good?": "It's the number that tells you the weighting was right. Going from everyone paying by check and cash to seven in ten paying online in the first stretch means the barrier was low enough - and the remaining 30% are the ones who were always going to hand the manager a check.",
-        "What about the 30% who didn't move?": "They still pay the old way, and the onsite manager still logs those. The point wasn't to force everyone online, it was to take most of the volume out of the path where things were getting lost.",
-        "How did you know payments were getting lost?": "They'd show up in the onsite manager's log without a matching deposit, or the other way round - which is the same reconciliation problem I later built the tracker for.",
-        "Why Baselane specifically?": "Ease of use for the tenant. All three platforms handled the basics, but Baselane was the one someone could pay through without needing help - and given the problem was payments going missing outside the system, adoption was the thing that actually mattered.",
-        "By how much did late payments drop?": "I don't have the exact figure. What I can say is why it moved - paying stopped requiring someone to physically get a check to the manager by a date, so the friction that caused most of the lateness was gone.",
-        "Why does four days matter?": "It's four days of rent sitting in the account instead of in transit. On a seasonal property where the off-season runs a cash deficit, timing is most of the problem - the same reason I later built the rolling cash tracker.",
-        "How did you know the payment method was the problem?": "Because of where the money was getting lost - between the onsite manager collecting it and it landing in our books. That is not a tenant problem, it is a handling problem, and every step where a person touches a payment is a step where it can go missing."
-      },
-      "delivery_notes": [
-        "SCOPE - say 'I recommended Baselane', not 'I went with Baselane'. Procuring a system isn't your authority, and the recommendation is the part that shows judgement.",
-        "THIS IS YOUR SECOND CUSTOMER OBSESSION STORY, and the bank badly needed one - S8 was carrying five of the nine official questions alone.",
-        "THE WHOLE STORY TURNS ON ONE SENTENCE: tenant ease beat cost, and 70% adoption proved the weighting right. If you only get one line out, that is the line.",
-        "Say 'a system they won't use doesn't fix anything' early. It states the customer-first logic before you list criteria, so the comparison reads as customer-led rather than procurement-led.",
-        "Pairs with S33 - the billing automation at River Oaks. Do not tell both in one loop without varying the angle; S35 is about choosing for the tenant, S33 is about building around the onsite manager.",
-        "'Not the cheapest, but the one a tenant could pay through without calling anyone' is the sentence that makes this Customer Obsession rather than procurement. You had a cheaper option and turned it down for the user. Do not soften it.",
-        "THE 4 DAYS IS YOUR SECOND-BEST NUMBER after adoption, and it connects to S32 - faster deposits are a working-capital improvement on a property that runs a seasonal cash deficit. If the interviewer is a finance person, that link is worth making out loud.",
-        "SAY THE LATE-PAYMENT DROP WITH ITS MECHANISM, not as a bare claim. 'Late payments came down - paying stopped meaning getting a check to somebody by a certain day' is defensible without a figure. 'Late payments dropped significantly' is not.",
-        "CUSTOMER OBSESSION RUBRIC: 'stops activities that no longer enhance the experience' is covered here - you retired check and cash collection. Say that as a decision you made, not as something that happened."
-      ],
-      "open_questions": []
-    },
-    {
       "id": "S40",
       "title": "Construction Labour Variance",
       "setting": "Mercer Island renovation (~$50K/month capital budget)",
@@ -1302,8 +1181,7 @@
       "S6",
       "S8",
       "S27",
-      "S33",
-      "S35"
+      "S33"
     ],
     "Ownership": [
       "S29",
@@ -1312,7 +1190,6 @@
     ],
     "Invent and Simplify": [
       "S6",
-      "S7",
       "S8",
       "S19",
       "S33",
@@ -1321,14 +1198,12 @@
     ],
     "Are Right, A Lot": [
       "S3",
-      "S26",
-      "S35"
+      "S26"
     ],
     "Learn and Be Curious": [
       "S19",
       "S27",
-      "S33",
-      "S35"
+      "S33"
     ],
     "Hire and Develop the Best": [],
     "Insist on the Highest Standards": [
@@ -1356,7 +1231,6 @@
     ],
     "Dive Deep": [
       "S5",
-      "S7",
       "S27",
       "S40",
       "S41",
@@ -1388,7 +1262,8 @@
     "Bias for Action is KNOWN WEAK - the candidate self-identified this as an underperforming LP in a prior loop. The bench is nominally 3 (S6, S28, S32) but effectively 2: S6 is tagged BFA in the weak 'built it unasked' sense and misreads as a tool-building story against a speed prompt. S28 is the real default; S32 is the strong backup (contractor renegotiated, LOC drawn, gap closed in-month).",
     "14 of 15 stories are set at the same real-estate firm; S8 (Signature Photo) is the only outside setting. Across a 5-interviewer loop the setting will repeat - vary the property and the stakeholder so the stories don't blur together.",
     "Failure stories available: S5 and S30. S29 variant B also reads as a near-miss.",
-    "Are Right, A Lot is covered 7 of 7 but has no deep bench: S26 leads, with S3 and S35 behind, and the 'when were you wrong' half is carried by S30, S5 and S3. Think Big is the thinner one - S27 and S32 only, after S6's tag was removed (a one-park dashboard is execution, not scale-thinking)."
+    "Are Right, A Lot is covered 7 of 7 but has no deep bench: S26 leads, with S3 and S35 behind, and the 'when were you wrong' half is carried by S30, S5 and S3. Think Big is the thinner one - S27 and S32 only, after S6's tag was removed (a one-park dashboard is execution, not scale-thinking).",
+    "Think Big is down to one story (S27) after S32's retirement and the S7/S35 cuts. It is not a priority LP for this role, but a second Think Big prompt has no backup. Closest available material is S42 - rebuilding how the company forecasts is arguably scale-thinking - though it is not tagged that way."
   ],
   "usage_rules": [
     "Never use both S29 variants with the same interviewer.",
@@ -1500,10 +1375,10 @@
     "why": "Three principles have no story built for them after the audit retagging. Each is covered by re-entering an existing story on a different beat - the facts do not change, only which moment you open on.",
     "Are Right, A Lot": {
       "lead": "S26",
-      "backup": "S3 or S35",
+      "backup": "S3",
       "reframe": "Open on the judgement, not the adapters. 'Ownership's number was 50% uplift. My read was that was too high, and rather than argue from instinct I pulled comparable data.' Then the two options and the payback. Own the miss openly - you estimated 22% and actual came in 30% - because being beaten by your own forecast is still being right about the decision, and saying so is what makes the story credible.",
       "why_it_works": "Are Right, A Lot tests judgement against incomplete information. S26 is the cleanest case in the bank: a contrary view formed against the people above you, argued from data rather than instinct, and validated by the outcome - the uplift beat your own estimate and the $5,440 of avoided spend was real.",
-      "backup_reframe": "S3: you argued against the cheaper option on risk grounds and were proved right. S35: you judged that the friction was the payment method rather than the tenants, and 70% moved online.",
+      "backup_reframe": "S3: you argued against the cheaper option on risk grounds and were proved right - the debt ratio was the reason, and it held.",
       "collision": "S26 is only tagged Frugality, Customer Obsession, Have Backbone and Are Right A Lot, so it rarely collides. If Frugality has already taken it, go to S3."
     },
     "Think Big": {
@@ -1773,7 +1648,6 @@
           "S8"
         ],
         "5": [
-          "S35",
           "S8"
         ],
         "6": [
@@ -1812,7 +1686,8 @@
           "S30"
         ],
         "7": [
-          "S35"
+          "S26",
+          "S33"
         ]
       },
       "Earn Trust": {
@@ -1874,7 +1749,6 @@
           "S40"
         ],
         "3": [
-          "S7",
           "S19"
         ],
         "4": [
@@ -1903,7 +1777,8 @@
           "S33"
         ],
         "4": [
-          "S7"
+          "S43",
+          "S33"
         ],
         "5": [
           "S6"
@@ -1922,8 +1797,7 @@
           "S26"
         ],
         "2": [
-          "S3",
-          "S35"
+          "S3"
         ],
         "3": [
           "S3"
@@ -2389,6 +2263,147 @@
             "Why didn't the budget catch it?": "Because the budget was right — the money was approved and planned. What moved was the timing, and a monthly P&L view has nothing to say about timing inside a month. The invoice arriving in February instead of April did not change the annual number at all. It changed which week we had cash."
           }
         }
+      },
+      "S7": {
+        "id": "S7",
+        "title": "Packwood Consolidation",
+        "status": "retired 2026-09-03",
+        "why_retired": "Superseded by S19. Both reconcile multiple rent sources and both recover money missed by manual entry; S19 does it across ten entities with a database and a $20K recovery, S7 across four sources at one property with $10K. Carried no primary LP. Its one unique routing (Invent and Simplify q4, driving new thinking in a team) was thin - it is a build-alone story, not a team-influence one.",
+        "archived_story": {
+          "id": "S7",
+          "title": "Packwood Consolidation",
+          "setting": "Packwood RV park, rolled out across 4 properties",
+          "lps": [
+            "Dive Deep",
+            "Invent and Simplify"
+          ],
+          "situation": [
+            "Packwood RV park had cash from 4 sources - short-term platform, long-term platform, onsite manager cash, and QuickBooks.",
+            "Process was entirely manual - onsite manager sent receipts, I entered into QuickBooks by hand.",
+            "With 4 sources and manual entry, transactions were getting missed or entered incorrectly."
+          ],
+          "task": [
+            "Needed to build a single reconciliation tracker matching every dollar across all 4 sources and catching discrepancies from manual entry."
+          ],
+          "action": [
+            "Used Power Query to pull exports from each platform into one workbook, standardize formats.",
+            "Built VBA matching logic - same tenant could appear under different names across systems.",
+            "Macro mapped name variations to single tenant ID, cross-referenced payment amounts and dates.",
+            "Found $10K in discrepancies - transactions missed during manual entry.",
+            "Designed it so both onsite manager and I could see the same reconciled data instead of me chasing receipts.",
+            "Rolled out across 4 properties."
+          ],
+          "result": [
+            "Caught and recovered $10K in discrepancies across 4 properties.",
+            "Every source now reconciled automatically every month.",
+            "Tracker became standard process for all properties with onsite cash collection."
+          ],
+          "delivery_notes": [
+            "Overlaps heavily with S19 (both are multi-source consolidation + VBA tenant-name matching). Do not use both in the same loop.",
+            "BACKUP ONLY. If used, lead with the shared-visibility design (the onsite manager and the candidate seeing the same reconciled data) - that is the one thing S7 has that S19 does not."
+          ],
+          "open_questions": [],
+          "spoken_star": {
+            "primary": "Dive Deep",
+            "also": [
+              "Invent and Simplify"
+            ],
+            "s": "One of our properties received rent from four different places — two booking platforms, cash the onsite manager collected, and QuickBooks. They sent me receipts and I entered them by hand. With four sources and a person typing in the middle, things were being missed.",
+            "t": "I wanted one tracker that matched every dollar across all four sources and found what manual entry had already missed. Not only going forward — I wanted to know what we had already lost, because if payments were being missed, some had already been missed.",
+            "a": "I used Power Query to bring every platform's export into one workbook, which handled the fact that they all export differently.\n\nThen I wrote a macro to match them, working the VBA through with an AI assistant rather than spending the time on syntax. The difficult part was that the same tenant appeared under different names in different systems, so the macro first maps all the variations to one tenant ID.\n\nThen it matches on three things together: tenant, amount and date. It has to be all three, because if you only match two, a tenant who genuinely pays the same amount twice looks like a duplicate, and you would delete real income.\n\nWhat it found was the opposite of what I expected. I was looking for double counting. What was actually there were payments recorded in a platform with nothing matching in QuickBooks — money that came in and was never entered.\n\nI also set it up so the onsite manager and I saw the same reconciled data, instead of me asking him for receipts and him wondering what happened to them.",
+            "r": "It found $10K that had been missed in manual entry, and we recovered all of it.\n\nThen I wrote the process down — the steps in order, so someone could follow it without me — and I sat with the onsite manager and we ran one month together. That is what made it work. It was used across four properties, and it changed from something I did when someone asked, to something that runs every month without me. The $10K was one recovery. The monthly reconciliation is what prevents the next one."
+          },
+          "pocket_answers": {
+            "How did the macro match tenants across systems?": "A lookup table mapping name variations to one tenant ID, then cross-referencing amount and date. The same person might be 'John Smith' in one system and 'J. Smith' in another.",
+            "How did you know the $10K was genuinely missed and not double-counted?": "Because the match is on tenant, amount and date together - a real payment appears once in the source system and once in QuickBooks. What I was finding was payments in a source with no QuickBooks entry at all.",
+            "Was it recovered?": "Yes - once we could see which payments hadn't been booked, we posted them."
+          },
+          "calc_sheet": {
+            "sources": "Four cash sources reconciled: two booking platforms, onsite manager's collected cash, and QuickBooks.",
+            "matching": "Lookup table maps tenant name variations to one ID, then matches on tenant, amount and date together - all three, so a genuine payment doesn't read as a duplicate.",
+            "found": "$10K of payments present in a source system with no corresponding QuickBooks entry - missed during manual keying. All recovered.",
+            "scale": "Rolled out across 4 properties, reconciling every month instead of on request."
+          }
+        }
+      },
+      "S35": {
+        "id": "S35",
+        "title": "Rent Collection Platform",
+        "status": "retired 2026-09-03",
+        "why_retired": "Dropped at the candidate's direction - she did not want a platform-selection story. Everything it carried is covered: Customer Obsession by S27 (leadership as customer, anticipating the need) and S8 (the human one); Are Right A Lot by S26 as lead with S3 behind. The genuine loss is the tenant-adoption angle - 70% moved online, deposits four days faster - which nothing else replaces.",
+        "archived_story": {
+          "id": "S35",
+          "title": "Rent Collection Platform",
+          "setting": "Newly acquired property",
+          "lps": [
+            "Customer Obsession",
+            "Learn and Be Curious",
+            "Are Right, A Lot"
+          ],
+          "primary_lps": [
+            "Customer Obsession"
+          ],
+          "situation": [
+            "Newly acquired property where tenants still paid by check and cash.",
+            "Payments were going missing between the onsite manager collecting them and them landing in the books."
+          ],
+          "task": [
+            "Find a rent collection platform that tenants would actually use - a system they won't adopt doesn't solve anything."
+          ],
+          "action": [
+            "Compared platforms on three criteria: transaction fees, how fast money actually landed in our account, and how easy it was for a tenant to pay without help.",
+            "The criteria pulled against each other - the cheapest option was not the easiest to use.",
+            "Weighted tenant ease highest: a cheaper platform that half the tenants wouldn't touch leaves you exactly where you started, still chasing paper.",
+            "Went with Baselane. Not the cheapest option, but the one a tenant could pay through without needing help."
+          ],
+          "result": [
+            "About 70% of tenants moved to online payment.",
+            "Deposits landed about 4 days faster.",
+            "Late payments came down - paying stopped meaning getting a check to somebody by a certain day.",
+            "Payments stopped going missing between collection and the books, because most no longer passed through anyone's hands."
+          ],
+          "spoken_star": {
+            "primary": "Customer Obsession",
+            "also": [
+              "Learn and Be Curious",
+              "Are Right, A Lot"
+            ],
+            "s": "We acquired a property where the tenants still paid by check and cash. The onsite manager collected the payments, and eventually they reached us and went into the books. The problem was that payments were disappearing somewhere in between.",
+            "t": "Not often and not large amounts, but often enough that reconciling that property meant searching for things that had gone missing. I was asked to find a rent collection platform and move the tenants onto it. It had to be one the tenants would actually use.",
+            "a": "I compared the options on three things: the transaction fees, how quickly the money reached our account after a tenant paid, and how easy it was for a tenant to pay without needing help.\n\nThe three did not agree. The cheapest platform was not the easiest to use.\n\nI gave the most weight to how easy it was for tenants. The fee difference between the options was small, and it was certain — I could calculate it exactly. The difference in how many tenants would use it was large, and it was uncertain. If I chose based on fees and half our tenants continued paying by check, I would save a small known amount and still have the whole problem I was asked to solve.\n\nI also thought about the tenants themselves. If someone has to learn an app to pay their rent, some of them simply will not. They will keep writing checks.\n\nI recommended Baselane. It was not the cheapest, but it was the one someone could use without calling anybody for help. I presented it that way, and leadership agreed.",
+            "r": "About 70% of tenants moved to online payment, and the money reached our account about four days faster. Across a full rent roll, that is four days of rent in our account instead of in transit, every month.\n\nLate payments also decreased, and the reason is the part I would explain. Paying no longer meant physically delivering a check to someone by a certain date. And the original problem stopped, because most payments no longer passed through anyone's hands."
+          },
+          "calc_sheet": {
+            "adoption": "About 70% of tenants moved to online payment after launch.",
+            "why_that_matters": "Adoption is the customer's verdict on the criteria weighting. Optimising purely on fees would have bought a cheaper platform with lower uptake - and the lost-payment problem would have survived.",
+            "the_tradeoff": "Cheapest was not easiest. Fees, deposit timing and tenant ease were the three axes, and they did not point the same way.",
+            "deposit_timing": "About 4 days faster from tenant payment to money in the account. Across a full rent roll that is 4 days of rent sitting in the bank instead of in transit - the same timing problem the cash tracker in S32 was built for.",
+            "late_payments": "Came down, no figure recorded. The mechanism is the credible part: paying no longer required physically getting a check to someone by a date.",
+            "ATTRIBUTION": "She was asked to evaluate and recommend. The choice of platform is leadership's - say 'I recommended', not 'I went with'. The evaluation, the weighting and the case for it are hers, and they are the part being scored anyway."
+          },
+          "pocket_answers": {
+            "Why did you weight tenant ease over fees?": "Because the problem wasn't cost, it was payments going missing. A cheaper platform that tenants didn't adopt would have left the paper trail intact and saved us nothing that mattered. Fees only matter on payments that actually come through the system.",
+            "Is 70% good?": "It's the number that tells you the weighting was right. Going from everyone paying by check and cash to seven in ten paying online in the first stretch means the barrier was low enough - and the remaining 30% are the ones who were always going to hand the manager a check.",
+            "What about the 30% who didn't move?": "They still pay the old way, and the onsite manager still logs those. The point wasn't to force everyone online, it was to take most of the volume out of the path where things were getting lost.",
+            "How did you know payments were getting lost?": "They'd show up in the onsite manager's log without a matching deposit, or the other way round - which is the same reconciliation problem I later built the tracker for.",
+            "Why Baselane specifically?": "Ease of use for the tenant. All three platforms handled the basics, but Baselane was the one someone could pay through without needing help - and given the problem was payments going missing outside the system, adoption was the thing that actually mattered.",
+            "By how much did late payments drop?": "I don't have the exact figure. What I can say is why it moved - paying stopped requiring someone to physically get a check to the manager by a date, so the friction that caused most of the lateness was gone.",
+            "Why does four days matter?": "It's four days of rent sitting in the account instead of in transit. On a seasonal property where the off-season runs a cash deficit, timing is most of the problem - the same reason I later built the rolling cash tracker.",
+            "How did you know the payment method was the problem?": "Because of where the money was getting lost - between the onsite manager collecting it and it landing in our books. That is not a tenant problem, it is a handling problem, and every step where a person touches a payment is a step where it can go missing."
+          },
+          "delivery_notes": [
+            "SCOPE - say 'I recommended Baselane', not 'I went with Baselane'. Procuring a system isn't your authority, and the recommendation is the part that shows judgement.",
+            "THIS IS YOUR SECOND CUSTOMER OBSESSION STORY, and the bank badly needed one - S8 was carrying five of the nine official questions alone.",
+            "THE WHOLE STORY TURNS ON ONE SENTENCE: tenant ease beat cost, and 70% adoption proved the weighting right. If you only get one line out, that is the line.",
+            "Say 'a system they won't use doesn't fix anything' early. It states the customer-first logic before you list criteria, so the comparison reads as customer-led rather than procurement-led.",
+            "Pairs with S33 - the billing automation at River Oaks. Do not tell both in one loop without varying the angle; S35 is about choosing for the tenant, S33 is about building around the onsite manager.",
+            "'Not the cheapest, but the one a tenant could pay through without calling anyone' is the sentence that makes this Customer Obsession rather than procurement. You had a cheaper option and turned it down for the user. Do not soften it.",
+            "THE 4 DAYS IS YOUR SECOND-BEST NUMBER after adoption, and it connects to S32 - faster deposits are a working-capital improvement on a property that runs a seasonal cash deficit. If the interviewer is a finance person, that link is worth making out loud.",
+            "SAY THE LATE-PAYMENT DROP WITH ITS MECHANISM, not as a bare claim. 'Late payments came down - paying stopped meaning getting a check to somebody by a certain day' is defensible without a figure. 'Late payments dropped significantly' is not.",
+            "CUSTOMER OBSESSION RUBRIC: 'stops activities that no longer enhance the experience' is covered here - you retired check and cash collection. Say that as a decision you made, not as something that happened."
+          ],
+          "open_questions": []
+        }
       }
     }
   },
@@ -2672,57 +2687,45 @@
       },
       {
         "rank": 10,
-        "id": "S35",
-        "tier": "tier2",
-        "why": "Customer Obsession lead. Tenant-side, which nothing else in the bank is."
-      },
-      {
-        "rank": 11,
         "id": "S8",
         "tier": "tier2",
         "why": "Only non-real-estate setting and the only human stakes in the loop. Use it mid-loop or it never gets heard."
       },
       {
-        "rank": 12,
+        "rank": 11,
         "id": "S31",
         "tier": "tier3",
         "why": "Have Backbone with a real cost admitted - you owned the six hours a week the decision added."
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "S29",
         "tier": "tier3",
         "why": "Short and clean. Backup to S30 on Highest Standards; variant A only."
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "S6",
         "tier": "bench",
         "why": "Redundant with S33 and S32 - same tool-building arc, same park. Do not use it against a speed prompt."
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "S26",
         "tier": "bench",
         "why": "Only Frugality story, and Frugality is unlikely in this loop."
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "S5",
         "tier": "bench",
         "why": "Good Earn Trust backup. Know the two unequal installments cold or do not open it."
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "S3",
         "tier": "bench",
         "why": "Have Backbone backup behind S31 and S26."
-      },
-      {
-        "rank": 18,
-        "id": "S7",
-        "tier": "bench",
-        "why": "Superseded by S19, which is the same idea at ten times the scale."
       }
     ]
   },
@@ -2986,14 +2989,6 @@
         ],
         "one_line": "Closed on time with an accrual when three vendor invoices did not arrive."
       },
-      "S35": {
-        "primary": "Ad hoc analysis",
-        "also": [
-          "Vendor / system evaluation",
-          "Business case"
-        ],
-        "one_line": "Evaluated payment platforms on three criteria and recommended one."
-      },
       "S8": {
         "primary": "Process improvement",
         "also": [
@@ -3049,15 +3044,6 @@
         ],
         "one_line": "Modelled borrow-versus-self-fund on a $200K renovation and recommended waiting."
       },
-      "S7": {
-        "primary": "Reconciliation",
-        "also": [
-          "Automation",
-          "Month-end",
-          "Knowledge transfer"
-        ],
-        "one_line": "Reconciled four rent sources into one tracker and handed it over so it runs monthly."
-      },
       "S42": {
         "primary": "Forecasting",
         "also": [
@@ -3081,7 +3067,6 @@
         "lead": "S28",
         "also": [
           "S19",
-          "S7",
           "S41"
         ],
         "depth": "STRONG"
@@ -3121,7 +3106,6 @@
       "Ad hoc analysis": {
         "lead": "S26",
         "also": [
-          "S35",
           "S31",
           "S3"
         ],
@@ -3132,7 +3116,6 @@
         "also": [
           "S19",
           "S27",
-          "S7",
           "S6"
         ],
         "depth": "STRONGEST - five stories, every one with a number"
@@ -3149,7 +3132,6 @@
       "Reconciliation and data accuracy": {
         "lead": "S19",
         "also": [
-          "S7",
           "S41",
           "S29"
         ],
