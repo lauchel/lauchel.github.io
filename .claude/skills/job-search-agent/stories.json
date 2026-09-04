@@ -53,7 +53,33 @@
         "s": "Leadership wanted to renovate half of Packwood — fifty of our hundred sites — to increase the property's value and the rent it could charge. It would cost about $200,000, and those fifty sites would be unavailable during the work, so we would also lose their rent.",
         "t": "They asked me to calculate the options and recommend whether to do it now or wait. Nobody disagreed about renovating. Everyone agreed on that. The question was only the timing, and how we would pay for it.",
         "a": "I built two scenarios.\n\nDoing it now meant borrowing the $200,000. I calculated the interest cost and compared it against our debt ratio. We were already carrying debt from another project, so this would not be the only obligation.\n\nWaiting meant paying for it ourselves. I calculated how much we could set aside each month from the property's cash flow. It was about eight months to cover most of it.\n\nThe interesting part was that borrowing was actually slightly cheaper on interest alone. So on the narrow financial question, borrowing was better. But it moved our debt ratio to a level I was not comfortable with, considering what we already carried. And waiting only cost us a few months of higher rent, which is a delay, not a loss.\n\nSo I recommended waiting and paying for it ourselves. My manager disagreed, and fairly — eight months meant eight months of rent we were not collecting. I showed him where the debt ratio would be under each option, and he agreed the risk was not worth the time we would save.",
-        "r": "We waited and paid for it ourselves, so we took no new debt at all. Rent on the renovated sites increased about 15%, which is about $11,000 a month across the fifty sites.\n\nAnd it changed how we made these decisions. Borrow or pay ourselves became a question we asked before every renovation after that, instead of assuming we would borrow because that is what we always did."
+        "r": "We waited and paid for it ourselves, so we took no new debt at all. Rent on the renovated sites increased about 15%, which is about $11,000 a month across the fifty sites.\n\nAnd it changed how we made these decisions. Borrow or pay ourselves became a question we asked before every renovation after that, instead of assuming we would borrow because that is what we always did.",
+        "bullets": {
+          "s": [
+            "Leadership wanted to renovate half of Packwood - **fifty of our hundred sites** - to increase the property's value and the rent it could charge",
+            "It would cost about **$200,000**, and those fifty sites would be **out of service** during the work, so we would also lose their rent"
+          ],
+          "t": [
+            "Calculate the options and recommend whether to do it now or wait",
+            "**Nobody disagreed about renovating.** The question was only the timing, and how we would pay for it."
+          ],
+          "a": [
+            "I built two scenarios:",
+            "# **Now** = borrow the $200,000. Calculated the interest cost and compared it against our **debt ratio** - we were already carrying debt from another project.",
+            "# **Wait** = pay for it ourselves. Calculated what we could set aside each month from the property's cash flow: about **eight months** to cover most of it.",
+            "**Borrowing was actually slightly cheaper on interest.** So on the narrow financial question, borrowing was better.",
+            "> But it moved our debt ratio to a level I was not comfortable with, given what we already carried",
+            "> And waiting only cost a few months of higher rent - **a delay, not a loss**",
+            "Recommended **waiting and self-funding**",
+            "**My manager disagreed, and fairly** - eight months meant eight months of rent we were not collecting",
+            "> I showed him where the debt ratio would land under each option, and he agreed the risk was not worth the time we would save"
+          ],
+          "r": [
+            "We waited and paid for it ourselves, so we took **no new debt at all**",
+            "Rent on the renovated sites increased about **15%** - about **$11,000 a month** across the fifty sites",
+            "And it changed how we made these decisions: **borrow or self-fund became a standing question before every renovation**, instead of assuming we would borrow because that is what we always did"
+          ]
+        }
       },
       "calc_sheet": {
         "scope": "50 of 100 sites renovated, $200,000 total cost.",
@@ -121,7 +147,36 @@
         "s": "A client hired us to digitise photos of his late mother. He called every few days to ask how it was going. That was completely understandable — it was the only copy, and he had given them to strangers. But we had twenty or thirty projects running, and every call took someone away from the work.",
         "t": "I did not want to solve it by asking him to call less. What he wanted was to know the status, and calling was the only way he had to find out. So the thing to fix was the visibility, not the calls.",
         "a": "I proposed a weekly email, sent automatically, with a page showing the actual photos we had scanned that week and what was coming next.\n\nTwo people disagreed, for different reasons.\n\nLeadership was concerned that an automatic email would feel impersonal for something this personal. That is a fair concern, considering what we were handling. I explained that the email was not replacing the relationship. We would keep the check-in calls exactly as they were. It only meant he did not have to wait for a call to know the status. It was in addition, not instead.\n\nA colleague thought we did not have time to build it. So I calculated it for them: two days to build, against about four hours a week saved across the projects we were running. It would pay for itself in about a month, and after that it was free.\n\nI built it in Excel with mail merge.\n\nThen I checked with him two weeks after it started, to find out if it was actually helping.",
-        "r": "He told me that seeing the real photos, and knowing what was coming next, was exactly the reassurance he had been calling for. The calls stopped almost completely — not because we discouraged them, but because he did not need them.\n\nWe used it for five other projects, and staff time spent on status updates went from five hours a week to one. That is what allowed us to take on more projects without hiring anyone."
+        "r": "He told me that seeing the real photos, and knowing what was coming next, was exactly the reassurance he had been calling for. The calls stopped almost completely — not because we discouraged them, but because he did not need them.\n\nWe used it for five other projects, and staff time spent on status updates went from five hours a week to one. That is what allowed us to take on more projects without hiring anyone.",
+        "bullets": {
+          "s": [
+            "A client hired us to **digitise photos of his late mother**",
+            "He called every few days to ask how it was going",
+            "> Completely understandable - it was the only copy, and he had given them to strangers",
+            "But we had **twenty or thirty projects** running, and every call took someone away from the work"
+          ],
+          "t": [
+            "I did not want to solve it by asking him to call less",
+            "What he wanted was **to know the status**, and calling was the only way he had to find out",
+            "\"So the thing to fix was the visibility, not the calls.\""
+          ],
+          "a": [
+            "# Proposed a **weekly email, sent automatically**, with a page showing the **actual photos** we had scanned that week and what was coming next",
+            "# **Two people disagreed, for different reasons:**",
+            "> **Leadership** - an automatic email would feel impersonal for something this personal. A fair concern, considering what we were handling.",
+            "> I explained it was not replacing the relationship. We keep the check-in calls exactly as they are. It only means he does not wait for a call to know the status. **In addition, not instead.**",
+            "> **A colleague** - we did not have time to build it. So I calculated it: **two days to build** against about **four hours a week saved** across the projects running.",
+            "> Pays for itself in about a month, and after that it is free.",
+            "# Built it in **Excel with mail merge**",
+            "# **Checked with him two weeks after it started**, to find out if it was actually helping"
+          ],
+          "r": [
+            "He told me that seeing the real photos, and knowing what was coming next, was **exactly the reassurance he had been calling for**",
+            "The calls stopped almost completely - not because we discouraged them, but because **he did not need them**",
+            "We used it for **five other projects**, and status-update time went from **five hours a week to one**",
+            "That is what allowed us to take on more projects without hiring anyone"
+          ]
+        }
       },
       "calc_sheet": {
         "time_saved": "Staff check-in time 5 hours/week down to 1 = an 80% reduction.",
@@ -190,7 +245,37 @@
         "s": "Our CPA needed one consolidated P&L across all ten entities for the tax filing. The expense side was straightforward — it was already in QuickBooks. Revenue was the problem. Rent came from four sources: two booking platforms, payments sent by text message, and checks in the mail. Each was tracked separately, and nobody had ever combined them.",
         "t": "When I tried, the numbers did not agree, and the CPA kept finding income that looked counted twice. By hand it took two weeks. I needed to give them something clean they could file, and I wanted it repeatable, not two weeks of work every year.",
         "a": "Doing it in Excel meant maintaining links across ten entities and four sources — the same problem with more steps and more ways to break.\n\nSo I taught myself SQL in my own time. YouTube for the basics, and an AI assistant to work through problems when I got stuck. I built a SQLite database and loaded all four sources, for all ten entities, into it.\n\nThe hardest part was tenant names. The same person might be \"John Smith\" in one system and \"J. Smith\" in the check log, so one person could appear as two, or two payments could collapse into one. I built a lookup that maps every name variation back to one master tenant ID.\n\nThen duplicate detection — matching on amount, date and tenant ID together. It has to be all three, because if you only check two, a tenant who genuinely pays the same amount two months in a row looks like a duplicate and you would delete real income.\n\nThen I validated the whole result against QuickBooks before sending anything to the CPA.",
-        "r": "It found more than a dozen duplicate payments — tenants who paid on a platform and also had a check recorded for the same month. About $20,000 in total, which had been in our reported income, making it too high.\n\nAnd the preparation went from two weeks to one day, across all ten entities. That saving repeats every filing. The CPA stopped sending questions, because the consolidation now arrives already reconciled."
+        "r": "It found more than a dozen duplicate payments — tenants who paid on a platform and also had a check recorded for the same month. About $20,000 in total, which had been in our reported income, making it too high.\n\nAnd the preparation went from two weeks to one day, across all ten entities. That saving repeats every filing. The CPA stopped sending questions, because the consolidation now arrives already reconciled.",
+        "bullets": {
+          "s": [
+            "Our CPA needed **one consolidated P&L across all ten entities** for the tax filing",
+            "The expense side was straightforward - already in QuickBooks",
+            "**Revenue was the problem.** Rent came from **four sources**: two booking platforms, payments sent by text message, and checks in the mail",
+            "> Each tracked separately, and nobody had ever combined them"
+          ],
+          "t": [
+            "When I tried, the numbers did not agree, and the CPA kept finding income that looked **counted twice**",
+            "By hand it took **two weeks**",
+            "I needed something clean they could file - and **repeatable**, not two weeks of work every year"
+          ],
+          "a": [
+            "Doing it in Excel meant maintaining links across ten entities and four sources - the same problem with more steps and more ways to break",
+            "# **Taught myself SQL in my own time** - YouTube for the basics, and **an AI assistant** to work through problems when I got stuck",
+            "# Built a **SQLite database** and loaded all four sources, for all ten entities, into it",
+            "# Hardest part was **tenant names** - the same person might be \"John Smith\" in one system and \"J. Smith\" in the check log",
+            "> So one person could appear as two, or two payments could collapse into one",
+            "> Built a lookup that maps every name variation back to **one master tenant ID**",
+            "# **Duplicate detection** - matching on **amount, date and tenant ID together**",
+            "> It has to be all three. On only two, a tenant who genuinely pays the same amount two months in a row looks like a duplicate - and you would delete real income.",
+            "# Validated the whole result **against QuickBooks** before sending anything to the CPA"
+          ],
+          "r": [
+            "Found **more than a dozen duplicate payments** - tenants who paid on a platform and also had a check recorded for the same month",
+            "> About **$20,000**, which had been in our reported income, making it **too high**",
+            "Preparation went from **two weeks to one day**, across all ten entities - and that saving **repeats every filing**",
+            "The CPA stopped sending questions, because the consolidation now arrives already reconciled"
+          ]
+        }
       },
       "calc_sheet": {
         "speed": "Two weeks of manual cross-referencing (about 10 working days) down to 1 = roughly 90%.",
@@ -259,7 +344,36 @@
         "s": "Our park earned about $1,000 a month from the coin laundry — eight machines. Ownership wanted to replace half of them with tap-payment machines, about $6,000, because they believed going cashless would increase laundry revenue by 50%. The machines we had were old but working.",
         "t": "I was asked to check the numbers before we committed. The 50% was the thing to test, because everything else depended on it.",
         "a": "I obtained usage data from a comparable park, looked at our own occupancy, and calculated what residents actually pay per load and how often they do laundry.\n\nA realistic increase was about 20%, not 50. That is about $200 a month. On $6,000 of spending, that is more than two years to recover the cost, on machines that already worked. So based on the numbers, the answer was no.\n\nOwnership disagreed. They felt tap payment would genuinely improve the park, and they were not wrong about that. It is a better experience for tenants, and the payback calculation does not measure that.\n\nSo instead of only defending my number, I looked for another way to give them what they actually wanted. I found coin-to-card adapters that attach to the machines we already had. About $500 for all of them, plus a small monthly fee. The same tap payment for tenants, and it recovers its cost in under four months instead of two years.\n\nAnd it had one more advantage: if nobody used it, the adapters can be removed.",
-        "r": "They chose the adapters. Revenue increased about 30% — better than my estimate, and I say that openly, because being wrong in that direction is still worth knowing about yourself.\n\nWe did not spend the $5,000 replacing machines that were working. And because the adapters can be removed, the decision stayed reversible, which buying four new machines would not have been."
+        "r": "They chose the adapters. Revenue increased about 30% — better than my estimate, and I say that openly, because being wrong in that direction is still worth knowing about yourself.\n\nWe did not spend the $5,000 replacing machines that were working. And because the adapters can be removed, the decision stayed reversible, which buying four new machines would not have been.",
+        "bullets": {
+          "s": [
+            "Our park earned about **$1,000 a month** from the coin laundry - **eight machines**",
+            "Ownership wanted to replace half of them with tap-payment machines, about **$6,000**",
+            "> They believed going cashless would increase laundry revenue by **50%**",
+            "The machines we had were **old but working**"
+          ],
+          "t": [
+            "Check the numbers before we committed",
+            "**The 50% was the thing to test**, because everything else depended on it"
+          ],
+          "a": [
+            "# Obtained usage data from a **comparable park**, looked at our own occupancy, and calculated what residents actually pay per load and how often they do laundry",
+            "# A realistic increase was about **20%, not 50** - about **$200 a month**",
+            "> On **$6,000** of spending, that is **more than two years** to recover the cost, on machines that already worked. So on the numbers, the answer was no.",
+            "# **Ownership disagreed** - they felt tap payment would genuinely improve the park, and **they were not wrong about that**",
+            "> It is a better experience for tenants, and the payback calculation does not measure that",
+            "# So instead of only defending my number, I looked for another way to give them **what they actually wanted**",
+            "> Found **coin-to-card adapters** that attach to the machines we already had - about **$500** for all of them plus a small monthly fee",
+            "> Same tap payment for tenants, and it recovers its cost in **under four months instead of two years**",
+            "# And one more advantage: **if nobody used it, the adapters can be removed**"
+          ],
+          "r": [
+            "They chose the adapters. Revenue increased about **30%** - better than my estimate",
+            "\"And I say that openly, because being wrong in that direction is still worth knowing about yourself.\"",
+            "We did not spend the **$5,000** replacing machines that were working",
+            "And because the adapters can be removed, the decision stayed **reversible** - which buying four new machines would not have been"
+          ]
+        }
       },
       "calc_sheet": {
         "replacement": "$6,000 for 4 sets. At $220/month of realistic uplift that is a 27-month payback, on machines that still worked.",
@@ -334,7 +448,35 @@
         "s": "We had ten properties and about seven hundred tenants, and every property's rent roll was in its own spreadsheet — one file for each property, updated by whoever was closest to it. That works with two or three properties. With ten, nothing connects.",
         "t": "What changed it was an accident. I opened one of those files for something unrelated and found a tenant several months behind on rent that nobody had noticed. The only way to find it was for a person to open that file and look. If I found one by accident, how many were in the other nine files?",
         "a": "There was no portfolio-level view of anything, and keeping ten linked files in Excel is the same problem with more steps.\n\nSo I used Power Query to pull all ten rent rolls into one table, and wrote a macro for the parts that change every month, so refreshing it is one click instead of a rebuild.\n\nNow the whole portfolio sits in one place. I can filter it in seconds — who owes more than $5,000, who is more than five months behind, what we collected this month compared to last.\n\nThen I built a monthly report on top of it with five measures: collection rate, vacancy by property, how the unpaid balances are ageing, revenue per occupied unit, and cost per unit. Those five because a change in any of them shows up before it reaches the P&L.\n\nI also set standing thresholds, so anyone who passes $5,000 owed or five months late appears automatically, instead of waiting for someone to ask the right question.",
-        "r": "What used to take half an hour of opening files one at a time now takes less than a minute.\n\nBut the real change is that leadership never had a view across all seven hundred tenants. It did not exist. Now they receive one every month. And the original problem is solved — the tenant I found by accident was the last one we would find that way."
+        "r": "What used to take half an hour of opening files one at a time now takes less than a minute.\n\nBut the real change is that leadership never had a view across all seven hundred tenants. It did not exist. Now they receive one every month. And the original problem is solved — the tenant I found by accident was the last one we would find that way.",
+        "bullets": {
+          "s": [
+            "**Ten properties, about seven hundred tenants**",
+            "Every property's rent roll was in its own spreadsheet - one file each, updated by whoever was closest to it",
+            "\"That works with two or three properties. With ten, nothing connects.\""
+          ],
+          "t": [
+            "**What changed it was an accident.**",
+            "I opened one of those files for something unrelated and found a tenant **several months behind on rent** that nobody had noticed",
+            "The only way to find it was for a person to open that file and look",
+            "\"If I found one by accident, how many were in the other nine files?\""
+          ],
+          "a": [
+            "There was no portfolio-level view of anything, and keeping ten linked files in Excel is the same problem with more steps",
+            "# Used **Power Query** to pull all ten rent rolls into one table",
+            "# Wrote a **macro** for the parts that change every month, so refreshing it is one click instead of a rebuild",
+            "# Now the whole portfolio sits in one place - I can filter it in seconds",
+            "> Who owes more than **$5,000**, who is more than **five months** behind, what we collected this month compared to last",
+            "# Built a **monthly report** on top of it with **five measures**: collection rate, vacancy by property, ageing of unpaid balances, revenue per occupied unit, cost per unit",
+            "> Those five because a change in any of them shows up **before it reaches the P&L**",
+            "# Set **standing thresholds** - anyone past $5,000 owed or five months late appears automatically, instead of waiting for someone to ask the right question"
+          ],
+          "r": [
+            "Half an hour of opening files one at a time now takes **less than a minute**",
+            "But the real change: leadership **never had a view across all seven hundred tenants**. It did not exist. Now they receive one every month.",
+            "\"The tenant I found by accident was the last one we would find that way.\""
+          ]
+        }
       },
       "calc_sheet": {
         "scale": "10 properties, about 700 tenants, previously one spreadsheet each.",
@@ -402,7 +544,37 @@
         "s": "It was month-end close and the CPA was waiting for our P&L for a tax filing. Three vendor bills had not arrived, about $50K in total. Without them the expenses would be too low and the filing would be wrong. And the filing deadline had a penalty.",
         "t": "So I could either delay the close until the invoices arrived and miss the filing, or find a way to give the CPA an accurate P&L without them. Only two options, and one of them had a cost.",
         "a": "I considered three approaches carefully.\n\nI could ask the vendors to send the invoices. But based on experience with these three, they would not send them in two days. Possible, but not something to risk a penalty on.\n\nI could ask the CPA for more time. I checked, and their filing schedule could not move. It was not them being unhelpful — the date was set externally.\n\nOr I could estimate the bills and record them as an accrual.\n\nWhat decided it was working out which deadline could actually move. A filing date with a penalty cannot. Vendor paperwork can. So the question changed from whether to deliver without the invoices, to how to do it accurately.\n\nI chose the accrual because it can be corrected. If the actual amounts are different, you adjust the difference next month and nothing after that breaks. Being slightly wrong costs one adjusting entry. Missing the filing costs a penalty. Those are not the same size of mistake.\n\nFor each vendor I estimated three ways — the contract amount from the purchase order, what they billed the previous month, and their historical average. And I marked every accrued item, so the CPA knew which numbers were estimates.",
-        "r": "The $50K of accruals was about 80% accurate, so about $10K to correct the following month, which we did during the next close.\n\nThe close went out on time, the CPA filed on schedule, and we did not pay the penalty. And because the accrued lines were marked, the CPA could work with them directly, without coming back to ask which numbers were estimates."
+        "r": "The $50K of accruals was about 80% accurate, so about $10K to correct the following month, which we did during the next close.\n\nThe close went out on time, the CPA filed on schedule, and we did not pay the penalty. And because the accrued lines were marked, the CPA could work with them directly, without coming back to ask which numbers were estimates.",
+        "bullets": {
+          "s": [
+            "Month-end close, and the CPA was waiting for our P&L for a tax filing",
+            "**Three vendor bills had not arrived - about $50K in total**",
+            "Without them the expenses would be too low and the filing would be wrong",
+            "**And the filing deadline had a penalty.**"
+          ],
+          "t": [
+            "Either delay the close until the invoices arrive and miss the filing, or find a way to give the CPA an accurate P&L without them",
+            "Only two options, and one of them had a cost"
+          ],
+          "a": [
+            "I considered three approaches:",
+            "# **Ask the vendors** - based on experience with these three, they would not send in two days. Possible, but not something to risk a penalty on.",
+            "# **Ask the CPA for more time** - I checked, their filing schedule could not move. Not them being unhelpful; the date was set externally.",
+            "# **Estimate the bills and record them as an accrual**",
+            "What decided it was working out **which deadline could actually move**",
+            "> A filing date with a penalty cannot. Vendor paperwork can.",
+            "> So the question changed from **whether** to deliver without the invoices, to **how** to do it accurately",
+            "Chose the accrual because **it can be corrected** - if the actual amounts differ, you adjust next month and nothing after that breaks",
+            "\"Being slightly wrong costs one adjusting entry. Missing the filing costs a penalty. Those are not the same size of mistake.\"",
+            "For each vendor I estimated **three ways** - the contract amount from the purchase order, what they billed the previous month, and their historical average",
+            "And **marked every accrued item**, so the CPA knew which numbers were estimates"
+          ],
+          "r": [
+            "The **$50K** of accruals was about **80% accurate** - about **$10K** to correct the following month, which we did during the next close",
+            "Close went out on time, the CPA filed on schedule, and **we did not pay the penalty**",
+            "And because the accrued lines were marked, the CPA could work with them directly, without coming back to ask which numbers were estimates"
+          ]
+        }
       },
       "calc_sheet": {
         "accrual": "Three vendor bills, about $50K total, estimated from PO contract amounts, prior-month actuals and historical averages.",
@@ -479,7 +651,39 @@
         "s": "This is one I did wrong. Our property financial records were spread across separate files, one for each property, so anything at portfolio level was slow. I proposed moving eighteen months of general ledger data into one central database — a full prior year plus the current year to date, so we could actually compare year over year. Nobody asked me to do it.",
         "t": "It had to be ready before annual planning season, which is a fixed date, and it had to be right, because people would build next year's numbers from it. I said I could finish in two weeks.",
         "a": "I pulled the data from three places — QuickBooks, the bank statements, and the individual property files — and started standardising it into one structure.\n\nOn day eight I hit a wall. Seven vendors were entered under several different names, so one supplier looked like several. The GL codes did not match between files, because different people had coded things differently over eighteen months. And more than a hundred transactions were on the wrong P&L lines — operating expenses mixed together with capital expenditure, which matters, because they are treated completely differently. I went back through old invoices to decide which was which and reclassified about $40K.\n\nI spent two days trying to still meet the date. I could not, unless I loaded data I already knew had problems into a system people would build next year's plan from.\n\nSo on day eleven I went to my manager and told him directly. I said I committed to a date before checking the data quality, and that was my mistake — not the messy data, but giving a date before I looked. I showed him what was finished, what remained, and asked for four more days. Planning season had room for four days. It would not have had room for a rebuild.",
-        "r": "We launched four days late but ahead of planning season, and the data was correct.\n\nHis feedback was that I should have checked data quality before committing to a date. He was right, and I now do that on every migration.\n\nThe other result was more useful than the database. The validation macro I wrote to find those problems became the standard check for uploads. It is documented, so other people run it, and it reduced checking time by more than half."
+        "r": "We launched four days late but ahead of planning season, and the data was correct.\n\nHis feedback was that I should have checked data quality before committing to a date. He was right, and I now do that on every migration.\n\nThe other result was more useful than the database. The validation macro I wrote to find those problems became the standard check for uploads. It is documented, so other people run it, and it reduced checking time by more than half.",
+        "bullets": {
+          "s": [
+            "\"This is one I did wrong.\"",
+            "Property financial records were spread across separate files, one per property - anything at portfolio level was slow",
+            "I proposed moving **eighteen months** of general ledger data into one central database",
+            "> A full prior year plus the current year to date, so we could actually compare year over year",
+            "**Nobody asked me to do it.**"
+          ],
+          "t": [
+            "It had to be ready before **annual planning season** - a fixed date",
+            "And it had to be right, because people would build next year's numbers from it",
+            "**I said I could finish in two weeks.**"
+          ],
+          "a": [
+            "# Pulled the data from **three places** - QuickBooks, the bank statements, and the individual property files - and started standardising it",
+            "# **Day eight - hit a wall:**",
+            "> **Seven vendors** entered under several different names, so one supplier looked like several",
+            "> GL codes did not match between files - different people had coded things differently over eighteen months",
+            "> **More than a hundred transactions** on the wrong P&L lines - opex mixed with capex, which are treated completely differently",
+            "> Went back through old invoices to decide which was which and reclassified about **$40K**",
+            "# Spent two days trying to still meet the date. I could not - not without loading data I already knew had problems into a system people would plan from.",
+            "# **Day eleven - went to my manager and told him directly**",
+            "\"I committed to a date before checking the data quality, and that was my mistake - not the messy data, but giving a date before I looked.\"",
+            "# Showed him what was finished, what remained, and asked for **four more days**",
+            "> Planning season had room for four days. It would not have had room for a rebuild."
+          ],
+          "r": [
+            "Launched **four days late but ahead of planning season**, and the data was correct",
+            "His feedback: check data quality **before** committing to a date. He was right, and I now do that on every migration.",
+            "The other result was more useful than the database - the **validation macro** I wrote became the standard check for uploads. Documented, other people run it, and it **cut checking time by more than half**."
+          ]
+        }
       },
       "calc_sheet": {
         "scope": "18 months of general ledger data, committed to a 2-week migration.",
@@ -539,7 +743,33 @@
         "s": "We paid our construction crew every two weeks. They are our own employees, paid hourly, and we track their hours. The project manager wanted to move them to weekly. His reasoning was that weekly pay helps keep crew on site, and on a construction schedule that matters.",
         "t": "My job was to work out what doubling the payroll runs would cost us and what it would do to the workload, and give a recommendation.",
         "a": "I disagreed, and I gave three specific reasons instead of a general objection.\n\nOur ACH fees would go up about 15% — the per-payment charges double, even though the fixed monthly charge does not. Payroll processing would double, because every run is the same work whether it covers one week or two. And the reconciliation behind it would double as well.\n\nI recommended staying with two weeks.\n\nLeadership decided that keeping the crew on site and the schedule moving mattered more, and went weekly. Looking back, they were weighing something I was not. I was measuring the cost of the change. They were measuring the cost of the build running long, and on a project that size that is the larger number.\n\nSo I accepted it and absorbed the work rather than pushing back again.",
-        "r": "The construction finished about ten days earlier. It did cost more, and the reconciliation added about six hours a week, which I had said it would and which I took on.\n\nWhat I learned is that keeping a project moving can be worth real financial cost, and that decision belongs to leadership, not to the numbers alone. My job was to price the cost accurately and then make the decision work, not to win the argument."
+        "r": "The construction finished about ten days earlier. It did cost more, and the reconciliation added about six hours a week, which I had said it would and which I took on.\n\nWhat I learned is that keeping a project moving can be worth real financial cost, and that decision belongs to leadership, not to the numbers alone. My job was to price the cost accurately and then make the decision work, not to win the argument.",
+        "bullets": {
+          "s": [
+            "We paid our construction crew **every two weeks** - our own employees, paid **hourly**, and we track their hours",
+            "The project manager wanted to move them to **weekly**",
+            "> His reasoning: weekly pay helps keep crew on site, and on a construction schedule that matters"
+          ],
+          "t": [
+            "Work out what **doubling the payroll runs** would cost us and what it would do to the workload, and give a recommendation"
+          ],
+          "a": [
+            "I disagreed, and I gave **three specific reasons** instead of a general objection:",
+            "# **ACH fees up about 15%** - the per-payment charges double, even though the fixed monthly charge does not",
+            "# **Payroll processing doubles** - every run is the same work whether it covers one week or two",
+            "# **Reconciliation behind it doubles as well**",
+            "I recommended staying with two weeks",
+            "**Leadership went weekly** - keeping the crew on site and the schedule moving mattered more",
+            "\"Looking back, they were weighing something I was not. I was measuring the cost of the change. They were measuring the cost of the build running long - and on a project that size, that is the larger number.\"",
+            "So I accepted it and **absorbed the work** rather than pushing back again"
+          ],
+          "r": [
+            "The construction finished about **ten days earlier**",
+            "It did cost more, and the reconciliation added about **six hours a week** - which I had said it would, and which **I took on**",
+            "What I learned: keeping a project moving can be worth real financial cost, and that decision belongs to leadership, not to the numbers alone",
+            "\"My job was to price the cost accurately and then make the decision work, not to win the argument.\""
+          ]
+        }
       },
       "calc_sheet": {
         "who_is_paid": "Our own construction employees, paid hourly with tracked hours. NOT vendors or subcontractors - the earlier version said vendors and that was wrong.",
@@ -609,7 +839,35 @@
         "s": "We added a 42-unit RV park to the portfolio, and it had no billing system at all. The onsite manager recorded check payments in a spreadsheet, online payments came through a separate platform, and the two did not connect. Every month I took data from both, calculated each tenant's utility bill by hand, and created 42 statements one at a time.",
         "t": "That was about five hours every month, and every one of those hours was a chance to type something incorrectly. I wanted one system where both payment sources went into the same ledger and all the invoices were created with one click — without changing how the onsite manager worked.",
         "a": "I built it in Google Sheets with Apps Script. I had not used Apps Script before, so I learned it while building — documentation, an AI assistant when I got stuck, and a lot of testing.\n\nThree things were difficult.\n\nFirst, the payment platform's data was inconsistent. Sometimes a payment arrived labelled \"32 Jennifer Holmes\", sometimes only \"32\". The same tenant, two formats. So I wrote something that separates the site number from the text and finds the tenant in the rent roll, so the format does not matter.\n\nSecond, I found my own mistake. I had been calculating utilities from the current meter reading instead of the usage, so I was billing people on the total number instead of the difference from last month. I found it while testing and rebuilt that part to subtract the previous reading. That error had been going onto real statements.\n\nThird, when I automated the PDFs, Google limited how many I could create at once — it will not generate 42 documents continuously. So I added a pause and a retry, so it works through them steadily instead of stopping halfway.",
-        "r": "Now it is four steps. Paste the data, the ledger updates, click a button, and all 42 statements appear in Drive.\n\nFive hours a month became about thirty minutes. But the more important result is the error rate. Every statement used to be calculated by hand, and now none of them are. And the onsite manager's process did not change at all. Their spreadsheet simply feeds the system now."
+        "r": "Now it is four steps. Paste the data, the ledger updates, click a button, and all 42 statements appear in Drive.\n\nFive hours a month became about thirty minutes. But the more important result is the error rate. Every statement used to be calculated by hand, and now none of them are. And the onsite manager's process did not change at all. Their spreadsheet simply feeds the system now.",
+        "bullets": {
+          "s": [
+            "We added a **42-unit** RV park to the portfolio - **no billing system at all**",
+            "The onsite manager recorded check payments in a spreadsheet; online payments came through a separate platform; the two did not connect",
+            "Every month I took data from both, calculated each tenant's utility bill by hand, and created **42 statements one at a time**"
+          ],
+          "t": [
+            "That was about **five hours every month**, and every one of those hours was a chance to type something incorrectly",
+            "I wanted one system - both payment sources into the same ledger, all invoices created with **one click**",
+            "**Without changing how the onsite manager worked**"
+          ],
+          "a": [
+            "Built it in **Google Sheets with Apps Script**. I had not used Apps Script before, so I learned it while building - documentation, **an AI assistant** when I got stuck, and a lot of testing.",
+            "Three things were difficult:",
+            "# The platform's data was **inconsistent** - sometimes a payment arrived as \"32 Jennifer Holmes\", sometimes only \"32\". Same tenant, two formats.",
+            "> Wrote something that separates the site number from the text and finds the tenant in the rent roll, so the format does not matter",
+            "# **I found my own mistake.** I had been calculating utilities from the **current meter reading** instead of the **usage** - billing people on the total instead of the difference from last month.",
+            "> Found it while testing and rebuilt that part to subtract the previous reading. **That error had been going onto real statements.**",
+            "# When I automated the PDFs, Google limits how many you can create at once - it will not generate 42 continuously",
+            "> Added a **pause and a retry**, so it works through them steadily instead of stopping halfway"
+          ],
+          "r": [
+            "Now it is **four steps**: paste the data, the ledger updates, click a button, and all **42 statements** appear in Drive",
+            "**Five hours a month became about thirty minutes**",
+            "But the more important result is the **error rate** - every statement used to be calculated by hand, and now none of them are",
+            "And the onsite manager's process did not change at all. Their spreadsheet simply feeds the system now."
+          ]
+        }
       },
       "calc_sheet": {
         "scale": "42 units, previously about 5 hours a month of manual billing, now about 30 minutes - a 90% reduction.",
@@ -662,7 +920,34 @@
         "s": "I was the finance person on our Mercer Island renovation, a project with about $50,000 a month of capital spending. One of my responsibilities was the labour budget, and I built it myself from the bottom up instead of using the contractor's number. Crew size, how long the work should take, and the hourly rate.",
         "t": "After a couple of months the labour line came in 20% over budget. I wanted to know which part of it had moved before I changed the forecast.",
         "a": "Only three things can move that budget — crew size, rate, duration — so I checked each one separately.\n\nCrew size was what we planned, the same number of people. The rate was what we had in the contract. Neither had moved. So it was duration.\n\nI looked at the schedule and it had slipped. It was planned as a ten-week job and it was running twelve — one of the crew had been moved to another site, so the same work was spread across more weeks. Two weeks on ten is 20%, which is exactly the overspend.\n\nI rebuilt the forecast using the actual timeline instead of the planned one, so we had a number we could rely on for the rest of the project. And I took it to the project manager as a schedule problem rather than a cost problem, because the schedule was the part he could act on.\n\nThen I changed how I build these budgets. I now put contingency into the duration assumption instead of using the planned timeline as if it were fixed.",
-        "r": "The 20% reconciled exactly to the schedule slip — two weeks on a ten-week job — so once the real timeline was in the forecast, the rest of the project ran to the revised number with no further variance.\n\nAnd I changed how I build these budgets. I now include contingency in the duration assumption instead of treating the planned timeline as fixed. Treating the plan as certain is what allowed a delay to become a cost surprise."
+        "r": "The 20% reconciled exactly to the schedule slip — two weeks on a ten-week job — so once the real timeline was in the forecast, the rest of the project ran to the revised number with no further variance.\n\nAnd I changed how I build these budgets. I now include contingency in the duration assumption instead of treating the planned timeline as fixed. Treating the plan as certain is what allowed a delay to become a cost surprise.",
+        "bullets": {
+          "s": [
+            "Finance person on our Mercer Island renovation - about **$50,000 a month** of capital spending",
+            "I owned the labour budget and **built it myself from the bottom up**, not the contractor's number",
+            "> Crew size, how long the work should take, and the hourly rate"
+          ],
+          "t": [
+            "After a couple of months the labour line came in **20% over budget**",
+            "I wanted to know **which part had moved** before I changed the forecast"
+          ],
+          "a": [
+            "Only three things can move that budget - **crew size, rate, duration** - so I checked each one separately",
+            "# **Crew size** - what we planned. Same number of people.",
+            "# **Rate** - what we had in the contract. Neither had moved.",
+            "# So it was **duration**. Looked at the schedule and it had slipped:",
+            "> Planned as a **ten-week** job, running **twelve**",
+            "> One of the crew had been moved to another site, so the same work was spread across more weeks",
+            "> **Two weeks on ten is 20%** - exactly the overspend",
+            "# Rebuilt the forecast on the **actual** timeline, so we had a number we could rely on for the rest of the project",
+            "# Took it to the project manager as a **schedule** problem, not a cost problem - the schedule was the part he could act on"
+          ],
+          "r": [
+            "The 20% reconciled **exactly** to the schedule slip, so once the real timeline was in the forecast the rest of the project ran to the revised number with no further variance",
+            "Changed how I build these budgets: contingency now goes into the **duration assumption**, instead of treating the planned timeline as fixed",
+            "\"Treating the plan as certain is what allowed a delay to become a cost surprise.\""
+          ]
+        }
       },
       "calc_sheet": {
         "how_the_budget_is_built": "Bottom-up: crew size x duration x rate.",
@@ -741,7 +1026,36 @@
         "s": "I manage the monthly finances and utilities for ten RV and mobile home parks. Every month I review each property's actual costs against budget. One month, water cost at one park was 18% over. The other nine were normal, and occupancy had not changed.",
         "t": "The park manager said the city had increased its rates. But tenants are metered individually and we charge the water straight back to them, so a rate increase should not cost us anything. And with occupancy flat, it was not more people using more water. I wanted to know where the money was going.",
         "a": "The city bills us off one main meter for the whole park. Each tenant has their own meter, and we bill them for what they use. So I pulled both — the city's bills and every tenant's meter reading — and matched them in Excel, one line at a time. Slow work, but it is the only way the gap shows up.\n\nThe main meter showed 35% more water than the tenants had actually used. On a bill of about $6,000 a month, that is roughly $1,600 of water we were paying for and could not bill to anyone.\n\nThat water was going somewhere, and it was not going to a tap. So I raised it with operations as a physical problem rather than a billing one, and they found an underground pipe leak. It had been running about three months.\n\nI also ran the same comparison at the other nine parks, because I wanted to know whether this was one park or all of them. Everywhere else the two meters agreed.\n\nThen I built a tracker that runs that comparison every month across all ten parks — main meter against the total of the tenant meters, shown as a percentage.",
-        "r": "The leak was repaired. It had been costing about $1,600 a month, so catching it at three months instead of letting it run a year took roughly $19,000 a year off our cost base.\n\nAnd the tracker means the next one shows up the month it starts, instead of at a budget review. An underground leak is invisible by definition — the gap between the two meters is the only place it appears."
+        "r": "The leak was repaired. It had been costing about $1,600 a month, so catching it at three months instead of letting it run a year took roughly $19,000 a year off our cost base.\n\nAnd the tracker means the next one shows up the month it starts, instead of at a budget review. An underground leak is invisible by definition — the gap between the two meters is the only place it appears.",
+        "bullets": {
+          "s": [
+            "Ten RV and mobile home parks - I review actuals against budget every month",
+            "One park: water **18% over budget**",
+            "The other nine were normal. Occupancy had not changed."
+          ],
+          "t": [
+            "The park manager said the city had raised its rates",
+            "> But tenants are metered individually and we bill the water straight back to them - a rate rise costs **us** nothing",
+            "> And occupancy was flat - so it was not more people using more water",
+            "The explanation did not hold. I wanted to know where the money was going."
+          ],
+          "a": [
+            "# The city bills us off **one main meter** for the whole park. Each tenant has **their own meter**.",
+            "# Pulled both - the city's bills and every tenant's reading - and matched them in Excel, one line at a time",
+            "\"Slow work, but it is the only way the gap shows up.\"",
+            "# Main meter showed **35% more water** than the tenants had actually used",
+            "> On a bill of about **$6,000 a month**, that is roughly **$1,600** we were paying for and could not bill to anyone",
+            "# That water was going somewhere, and it was not going to a tap - so I raised it with operations as a **physical** problem, not a billing one",
+            "# They found an **underground pipe leak**. It had been running about **three months**.",
+            "# Ran the same comparison at the **other nine parks** - I wanted to know if this was one park or all of them. Everywhere else the two meters agreed.",
+            "# Built a **monthly tracker**: main meter against the total of the tenant meters, shown as a percentage, all ten parks"
+          ],
+          "r": [
+            "Leak repaired. At **~$1,600 a month**, catching it at three months instead of letting it run a year took **~$19,000 a year** off our cost base.",
+            "The tracker means the next one shows up **the month it starts**, not at a budget review",
+            "\"An underground leak is invisible by definition - the gap between the two meters is the only place it appears.\""
+          ]
+        }
       },
       "calc_sheet": {
         "the_flag": "Water 18% over budget at one park, occupancy flat, other nine parks normal.",
@@ -834,7 +1148,38 @@
         "s": "We had ten parks, running about $2.8 million a year in rental income, and a lot of that comes from short-term RV guests, which is highly seasonal. Our monthly forecast was just the annual plan divided by twelve.",
         "t": "Nobody had questioned that, because the annual number was right — it only becomes wrong when you read it month by month. But months were coming in as much as 25% off forecast, and leadership was holding back routine maintenance because they could not trust it.",
         "a": "An even split cannot work for a seasonal business. It is too high every winter and too low every summer.\n\nI did three things.\n\nFirst, I got the history — three years of monthly revenue for the RV parks. Three years because you need at least two full cycles before a seasonal pattern shows up at all.\n\nSecond, I forecast off that history using Excel's forecasting function, which reads the trend out of the data. So instead of one twelfth each month, the forecast follows the pattern the revenue actually has.\n\nThird, I added a second timeline for the cash. Guests book in March for a July stay and pay a deposit then, so I re-dated each month's revenue to the month the money actually arrives. Costs are flat and monthly, so what leadership needs to know is what will be in the bank, not what we will earn. And because deposits come first, they tell us how the season is shaping up before it starts.\n\nThen I checked it — forecast against actuals, month by month, park by park.",
-        "r": "Monthly variance came down from about 25% to about 5% across all ten parks. I measured that against actuals, because a forecast nobody checks against reality is just an opinion.\n\nAnd leadership stopped holding back. They could schedule maintenance in advance, because the forecast finally told them what a given month would actually look like.\n\nOne thing I would still change: it is phased off historical patterns rather than built up from occupancy and rate. A pattern-based forecast tells you a month is off but not why. Building it from the underlying drivers is the next version."
+        "r": "Monthly variance came down from about 25% to about 5% across all ten parks. I measured that against actuals, because a forecast nobody checks against reality is just an opinion.\n\nAnd leadership stopped holding back. They could schedule maintenance in advance, because the forecast finally told them what a given month would actually look like.\n\nOne thing I would still change: it is phased off historical patterns rather than built up from occupancy and rate. A pattern-based forecast tells you a month is off but not why. Building it from the underlying drivers is the next version.",
+        "bullets": {
+          "s": [
+            "Ten parks, about **$2.8 million a year** in rental income",
+            "A lot of it is short-term RV guests, so it is **highly seasonal**",
+            "Our monthly forecast was just **the annual plan divided by twelve**"
+          ],
+          "t": [
+            "Nobody had questioned it, because the annual number was right",
+            "\"It only becomes wrong when you read it month by month.\"",
+            "Months were coming in as much as **25% off forecast**",
+            "Leadership was **holding back routine maintenance** because they could not trust it"
+          ],
+          "a": [
+            "An even split cannot work for a seasonal business - too high every winter, too low every summer",
+            "# Got the history - **three years** of monthly revenue for the RV parks",
+            "> Three years because you need at least **two full cycles** before a seasonal pattern shows up at all",
+            "# Forecast off that history using **Excel's forecasting function**, which reads the trend out of the data",
+            "> So instead of one twelfth each month, the forecast follows the pattern the revenue actually has",
+            "# Added a **second timeline for the cash**",
+            "> Guests book in March for a July stay and pay a deposit then - so I re-dated each month's revenue to the month the money actually arrives",
+            "> Costs are flat and monthly, so what leadership needs is **what will be in the bank**, not what we will earn",
+            "> And because deposits come first, they tell us how the season is shaping up **before it starts**",
+            "# Then checked it - forecast against actuals, month by month, park by park"
+          ],
+          "r": [
+            "Monthly variance came down from about **25% to about 5%** across all ten parks",
+            "\"I measured that against actuals, because a forecast nobody checks against reality is just an opinion.\"",
+            "Leadership stopped holding back - they could schedule maintenance in advance",
+            "One thing I would still change: it is phased off **historical patterns**, not built up from occupancy and rate. A pattern tells you a month is off, but not why. **Driver-based is the next version.**"
+          ]
+        }
       },
       "calc_sheet": {
         "the_before": "The monthly forecast was the annual plan divided by twelve. Note the distinction: the annual PLAN was fine, the monthly FORECAST derived from it was not. Say forecast, not budget - the story is about fixing the forecast, and using both words muddles what was actually broken.",
@@ -942,7 +1287,31 @@
         "s": "During monthly close, compiling the general ledger into consolidated property P&L reports took about twelve hours of manual copy-pasting. Every month. I wanted to automate it, but building it properly would have taken about two months, and the next close started in three days.",
         "t": "So the choice was to build it properly and start using it in two months, or put something rough in place before this close and get the twelve hours back now.",
         "a": "I built the rough version.\n\nI automated the part that took the most time — pulling the raw general ledger transactions and mapping them into standard P&L categories. That is the bulk of the twelve hours, and it is the same work every month.\n\nWhat I deliberately left out was error handling. Building something that handles every edge case properly is most of the two months, and most of those cases come up rarely. So instead of coding for them, I added a colour-coded flag: anything the script cannot map turns red, and someone fixes it by hand in a few seconds.\n\nThat was the trade. The script does the repetitive part, a person handles the exceptions, and nobody waits two months for the difference.\n\nThen I improved it over the next two closes — using what actually broke, rather than what I had guessed might.",
-        "r": "The first run cut close reporting from twelve hours to two. That is ten hours back in the same month, and it went into variance analysis instead of copy-pasting.\n\nAnd refining it afterwards turned out better than building it properly up front would have been, because I was fixing the things that actually came up rather than the ones I had imagined."
+        "r": "The first run cut close reporting from twelve hours to two. That is ten hours back in the same month, and it went into variance analysis instead of copy-pasting.\n\nAnd refining it afterwards turned out better than building it properly up front would have been, because I was fixing the things that actually came up rather than the ones I had imagined.",
+        "bullets": {
+          "s": [
+            "During monthly close, compiling the general ledger into consolidated property P&Ls took about **twelve hours** of manual copy-pasting. Every month.",
+            "I wanted to automate it - but building it properly would take about **two months**, and the next close started in **three days**"
+          ],
+          "t": [
+            "Build it properly and start using it in two months, or put something rough in place before this close and **get the twelve hours back now**"
+          ],
+          "a": [
+            "**I built the rough version.**",
+            "# Automated the part that took the most time - pulling the raw GL transactions and mapping them into standard P&L categories",
+            "> That is the bulk of the twelve hours, and it is the same work every month",
+            "# What I **deliberately left out was error handling**",
+            "> Handling every edge case properly is most of the two months, and most of those cases come up rarely",
+            "# Instead I added a **colour-coded flag** - anything the script cannot map turns **red**, and someone fixes it by hand in a few seconds",
+            "\"That was the trade. The script does the repetitive part, a person handles the exceptions, and nobody waits two months for the difference.\"",
+            "# Then improved it over the next two closes - using **what actually broke**, rather than what I had guessed might"
+          ],
+          "r": [
+            "First run cut close reporting from **twelve hours to two**",
+            "That is **ten hours back in the same month**, and it went into **variance analysis** instead of copy-pasting",
+            "And refining it afterwards turned out better than building it properly up front, because I was fixing the things that actually came up rather than the ones I had imagined"
+          ]
+        }
       },
       "calc_sheet": {
         "the_before": "About 12 hours of manual copy-pasting per close to compile GL data into consolidated property P&L reports.",
@@ -3175,5 +3544,17 @@
       "lead": "S40 and S41",
       "evidence": "S40 is the textbook answer to the volume-versus-rate probe - three drivers, two ruled out, the third isolated, and the arithmetic closes exactly. S41 rules out volume via flat occupancy and finds a physical cause. Communicating to non-finance partners: S40 framed it to the project manager as a schedule problem rather than a cost problem; S29 took evidence to the project manager rather than rejecting an invoice; S31 priced a trade-off for leadership, lost, and committed; S3 changed a manager's mind with a debt ratio."
     }
+  },
+  "bullet_format": {
+    "_comment": "A cue-card version of every spoken_star, under spoken_star.bullets. Same beats, same numbers, no sentences to recite. Use it once a story is known: the full script teaches the shape, the bullets keep you from sounding memorised.",
+    "markers": {
+      "plain": "A point to make. Say it in your own words.",
+      "# prefix": "A numbered step in the Action. The ORDER matters here - this is the spine of the story.",
+      "> prefix": "A sub-point under the line above. Supporting detail; drop it if you are running long.",
+      "quoted line": "Say this close to word for word. It is the line the answer turns on.",
+      "**bold**": "A number or a phrase that must survive. Never approximate a bolded figure."
+    },
+    "how_to_rehearse": "Read the full script twice to learn the shape. Then close it and speak only from the bullets. If a bullet does not produce a sentence, that beat is not learned yet - go back to the script for that beat only, not the whole story.",
+    "timing": "Same as the script: S about 30 seconds, T about 30, A about 60, R about 30. The bullets are shorter to read, not shorter to say - do not race."
   }
 }
