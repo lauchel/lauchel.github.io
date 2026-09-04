@@ -630,23 +630,23 @@
         "Validation macro became standard for all future uploads, cutting verification time by 60%."
       ],
       "delivery_notes": [
-        "CONFIRM BEFORE YOU USE IT: the water heater example. If capital items were miscoded but you cannot remember which ones, say 'capital items coded as routine maintenance' and stop there. Do not name an item you are not sure of - a made-up example is the one thing an interviewer can catch you on.",
         "TWO WEEKS, NOT TEN DAYS. A ten-day commitment contradicts going to your manager on day eleven - that would mean you had already missed. The whole point is that you renegotiated BEFORE the deadline. Keep two weeks.",
         "BEST FAILURE STORY IN THE BANK. The strongest beat is quoting the manager's criticism and agreeing with it - that reads as genuinely coachable.",
         "Now the lead for Insist on the Highest Standards as well as the failure story. It is the best answer to 'a decision between standards and delivery' - you chose accurate over on-time and said so.",
         "EARN TRUST RUBRIC: covers 6 of 7. 'Provides feedback to others respectfully' is not in this story - S29 is the answer to that one. And on 'honors commitments': you missed the date, so frame it as renegotiating openly BEFORE the deadline rather than shipping something you knew was wrong.",
         "Two deadlines here and the distinction matters: the two weeks was HERS, the planning season was EXTERNAL. Owning a self-imposed estimate that ran into a real deadline is the story. Say both.",
         "SAY THE DIRECTION OF THE RECLASS. 'Moved $40,000 out of operating expenses' is specific; 'reclassified $40,000' is not, and a finance interviewer will ask which way. Out of opex, because capital items had been expensed.",
-        "AVOID: 'data corruption', 'diagnostic audit', 'proactive escalation', 'COA framework'. None of it is how you talk, and 'corruption' is wrong anyway - the data was not damaged, it was coded inconsistently by people who were not accountants."
+        "AVOID: 'data corruption', 'diagnostic audit', 'proactive escalation', 'COA framework'. None of it is how you talk, and 'corruption' is wrong anyway - the data was not damaged, it was coded inconsistently by people who were not accountants.",
+        "DO NOT NAME A SPECIFIC ITEM. 'Capital items coded as routine maintenance' carries the whole point on its own. Naming an example you cannot place is the one thing in this story an interviewer could catch you on, and it adds nothing."
       ],
       "pocket_answers": {
         "You knew on day 8 - why wait until day 11 to tell your manager?": "I spent those days scoping the true extent so I could bring a specific ask instead of a vague alarm - I wanted to say 'four days and here's exactly what's wrong', not 'this might slip.' In hindsight I'd have flagged it on day 8 with the estimate to follow, and that's what I do now.",
         "How did you know four days was enough?": "By then I'd counted the affected transactions and knew the reclassification rate. It was a measured number rather than a guess, which is the only reason I was willing to commit to it a second time.",
-        "Why did the misclassification matter?": "Because capital items had been coded as routine maintenance. A water heater or a similar replacement is an asset with a life of years, not a repair. Coded as maintenance it overstates operating cost in the year it was bought and understates what we had actually invested in the property. And the planning baseline is built on operating cost — so next year's budget would have carried about $40,000 of expense that was never really operating cost.",
+        "Why did the misclassification matter?": "Because capital items had been coded as routine maintenance. A capital item is an asset with a life of years, not a repair. Coded as maintenance it overstates operating cost in the year it was bought and understates what we had actually invested in the property. And the planning baseline is built on operating cost — so next year's budget would have carried about $40,000 of expense that was never really operating cost.",
         "What would you do differently?": "Run a data quality check before committing to any timeline. That's the whole lesson, and the validation macro that came out of it cut verification time about 60%.",
         "Why eighteen months?": "A full prior year plus the current year to date. Less than that and you cannot compare year over year, which is most of the reason for putting it in one place.",
         "Was the deadline yours or someone else's?": "The two weeks was mine — I offered it. The real constraint was annual planning season, which is fixed. That is why four days was survivable and why I asked for four rather than open-ended: planning had room for four days, it would not have had room for a rebuild.",
-        "How did that get miscoded in the first place?": "Whoever coded the invoice was close to the work, not to the accounting. From the property a water heater looks like maintenance. It is a judgement call that needs the invoice in front of you, which is why fixing it meant going back through them one by one rather than running a rule.",
+        "How did that get miscoded in the first place?": "Whoever coded the invoice was close to the work, not to the accounting. From the property a replacement looks like maintenance. It is a judgement call that needs the invoice in front of you, which is why fixing it meant going back through them one by one rather than running a rule.",
         "Did you fix the cause or just the data?": "Both, but the data first because planning season was coming. The lasting fix was the validation macro — it flags a transaction that looks like a capital item sitting on a maintenance line, so it gets caught at upload rather than eighteen months later."
       },
       "spoken_star": {
@@ -654,7 +654,7 @@
         "also": [],
         "s": "This is one I did wrong. Our property records sat in ten separate files, one per property, so anything at portfolio level was slow. I proposed moving eighteen months of general ledger data into one database, so we could compare year over year. Nobody asked me to do it.",
         "t": "It had to be ready before annual planning season, which is a fixed date, and it had to be right, because people would build next year's numbers from it. I said two weeks.",
-        "a": "I pulled from three places — QuickBooks, the bank statements, and the property files — and started standardising them.\n\nOn day eight I hit a wall. Seven vendors were entered under different names, so one supplier looked like several. GL codes did not match between files. And more than a hundred transactions were on the wrong lines — capital items coded as routine maintenance. A water heater is an asset, not a repair, and coding it that way overstates operating cost. I went back through the invoices and moved about $40,000 out of operating expenses.\n\nI spent two days trying to still meet the date. I could not, unless I loaded data I knew was wrong into the system people would plan from.\n\nSo on day eleven I went to my manager. I told him I committed to a date before checking the data quality, and that was my mistake — not the messy data, giving a date before I looked. I showed him what was left and asked for four more days. Planning season had room for four days. It would not have had room for a rebuild.",
+        "a": "I pulled from three places — QuickBooks, the bank statements, and the property files — and started standardising them.\n\nOn day eight I hit a wall. Seven vendors were entered under different names, so one supplier looked like several. GL codes did not match between files. And more than a hundred transactions were on the wrong lines — capital items coded as routine maintenance. Those are assets, not repairs, and coding them that way overstates operating cost. I went back through the invoices and moved about $40,000 out of operating expenses.\n\nI spent two days trying to still meet the date. I could not, unless I loaded data I knew was wrong into the system people would plan from.\n\nSo on day eleven I went to my manager. I told him I committed to a date before checking the data quality, and that was my mistake — not the messy data, giving a date before I looked. I showed him what was left and asked for four more days. Planning season had room for four days. It would not have had room for a rebuild.",
         "r": "We launched four days late but ahead of planning season, and the data was correct. The $40,000 mattered more than the database did — next year's operating budget would have been built on a cost we never really had.\n\nHis feedback was that I should have checked data quality before committing to a date. He was right, and I do that on every migration now.\n\nAnd the validation macro I wrote became the standard check for uploads — documented, run by other people, and it cut checking time by more than half.",
         "bullets": {
           "s": [
@@ -675,8 +675,8 @@
             "> **7 vendors** under several names - one supplier looked like several",
             "> GL codes did not match between files",
             "> **100+ transactions** on wrong lines - **capital items coded as routine maintenance**",
-            "\"A water heater is an asset, not a repair.\"",
-            "> Overstates operating cost - **and the planning baseline is built on operating cost**",
+            "\"Those are assets, not repairs - coding them that way overstates operating cost.\"",
+            "> **The planning baseline is built on operating cost**",
             "> Moved **~$40,000** out of opex to where it belonged",
             "# Two days trying to still hit the date - could not, not without loading data I knew was wrong",
             "# **Day 11 - went to my manager**",
@@ -700,15 +700,13 @@
         "the_deadline": "Annual planning season - an external fixed date, not one she set. Four days of slippage fit inside it; a rebuild would not have.",
         "the_sources": "QuickBooks, bank statements, and the individual property files.",
         "the_reclass": "Direction matters: capital items had been expensed as repairs and maintenance. Moving them out of opex lowers reported operating cost and capitalises the asset. The planning baseline is built on operating cost, so leaving it would have inflated next year's opex budget by about $40K of spend that was never really operating cost.",
-        "why_it_happened": "Whoever coded the invoice at the property was closest to the work, not to the accounting. A water heater looks like maintenance from the site. It is a judgement call that needs the invoice, which is why fixing it meant going back through them."
+        "why_it_happened": "Whoever coded the invoice at the property was closest to the work, not to the accounting. A replacement looks like maintenance from the site. It is a judgement call that needs the invoice in front of you, which is why fixing it meant going back through them."
       },
       "primary_lps": [
         "Earn Trust",
         "Insist on the Highest Standards"
       ],
-      "open_questions": [
-        "Is the water heater a real example of what was miscoded, or a stand-in? If you cannot confirm it, the story works without naming an item."
-      ]
+      "open_questions": []
     },
     {
       "id": "S31",
