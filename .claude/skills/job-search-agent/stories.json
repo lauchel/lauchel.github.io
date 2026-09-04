@@ -523,16 +523,16 @@
         "Trued up the difference next month. No filing impact."
       ],
       "delivery_notes": [
+        "NO CPA, NO TAX FILING, NO PENALTY IN THIS STORY. S19 is the CPA filing story - two answers opening on 'the CPA was waiting for a filing' in one loop sounds like the same event told twice. The deadline here is leadership's monthly review. (The prioritisation pocket answer may still mention the filing - that is fine, it is an example inside an answer, not this story's setup.)",
+        "THE STAKE IS DECISION QUALITY, NOT A FINE. 'They decide without numbers, or they do not decide at all' is the cost. It is a stronger stake than a penalty, because it is about the numbers being used rather than a box being ticked - and it puts you next to the decision, which is what this role is.",
         "S43 is now the Bias for Action lead - it fits the criteria more directly. This story stays as the month-end close story and as a Bias for Action backup; its strength is the judgement about which deadline could flex, not speed.",
         "NOW THE BIAS FOR ACTION LEAD, taking over from S32. It fits the criteria better than S32 ever did: you moved with information missing (three invoices), you judged which deadline could flex, and you chose a reversible option rather than waiting for certainty. Lead on the speed of the judgement, not the accounting.",
         "DEFAULT PICK for Bias for Action - lead with this one, not S6. It is the only story with the true BFA shape: a hard deadline, incomplete information, options weighed and discarded fast, a reversible call made rather than waiting for certainty.",
         "Say 'two-way door' out loud - it is already the structure of the decision, and it signals you think in Amazon's terms.",
         "The 80% accuracy is a strength, not a weakness. It shows the estimate was disciplined and the true-up was planned, not a lucky guess. Don't apologize for it.",
-        "Thinnest story in the bank - it will not fill four minutes as written. Add the stakes (the CPA's filing deadline and the consequence of missing it) and the real true-up figures.",
-        "Name the late-filing penalty early - it is what makes the deadline real. Without it the urgency is asserted rather than shown.",
         "'About 80% accurate' is your own recollection and is fine to say. If probed on the exact split: 'I don't have the figure in front of me - we accrued $50K and landed within about 20%, and trued up the next month.' Not knowing a detail two levels down is normal; inventing one is not.",
         "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
-        "CARRIES THE PRIORITISATION ANSWER TOO. The 'how do you prioritise competing demands' pocket answer holds what used to be a separate year-end story: three criteria with deadline-flexibility as the decider, and the observation that annual planning is built off closed books so sequencing close first served both demands. Use it as an answer, not as a second story - it shares this story's setup (close, CPA, missing invoices) and has no quantified outcome of its own.",
+        "CARRIES THE PRIORITISATION ANSWER TOO. The 'how do you prioritise competing demands' pocket answer holds what used to be a separate year-end story: three criteria with deadline-flexibility as the decider, and the observation that annual planning is built off closed books so sequencing close first served both demands. Use it as an answer, not as a second story - it shares this story's setup (close, missing invoices) and has no quantified outcome of its own.",
         "Expect the mechanics probes here: opex or capex, cash flow versus net income, how you handled the true-up. All three now have pocket answers. This story is where accounting fundamentals get tested, so know them cold rather than reasoning them out live."
       ],
       "open_questions": [],
@@ -541,37 +541,36 @@
         "also": [
           "Bias for Action"
         ],
-        "s": "It was month-end close and the CPA was waiting for our P&L for a tax filing. Three vendor bills had not arrived, about $50K in total. Without them the expenses would be too low and the filing would be wrong. And the filing deadline had a penalty.",
-        "t": "So I could either delay the close until the invoices arrived and miss the filing, or find a way to give the CPA an accurate P&L without them. Only two options, and one of them had a cost.",
-        "a": "I considered three approaches carefully.\n\nI could ask the vendors to send the invoices. But based on experience with these three, they would not send them in two days. Possible, but not something to risk a penalty on.\n\nI could ask the CPA for more time. I checked, and their filing schedule could not move. It was not them being unhelpful — the date was set externally.\n\nOr I could estimate the bills and record them as an accrual.\n\nWhat decided it was working out which deadline could actually move. A filing date with a penalty cannot. Vendor paperwork can. So the question changed from whether to deliver without the invoices, to how to do it accurately.\n\nI chose the accrual because it can be corrected. If the actual amounts are different, you adjust the difference next month and nothing after that breaks. Being slightly wrong costs one adjusting entry. Missing the filing costs a penalty. Those are not the same size of mistake.\n\nFor each vendor I estimated three ways — the contract amount from the purchase order, what they billed the previous month, and their historical average. And I marked every accrued item, so the CPA knew which numbers were estimates.",
-        "r": "The $50K of accruals was about 80% accurate, so about $10K to correct the following month, which we did during the next close.\n\nThe close went out on time, the CPA filed on schedule, and we did not pay the penalty. And because the accrued lines were marked, the CPA could work with them directly, without coming back to ask which numbers were estimates.",
+        "s": "It was month-end close, and leadership had their monthly review scheduled — they go through the numbers and make decisions from them. Three vendor bills had not arrived, about $50K in total. Without them our expenses would be too low, so the P&L would show the month better than it actually was.",
+        "t": "So either I delayed the close until the invoices came, and they went into that review without numbers, or I found a way to give them an accurate P&L without the invoices.",
+        "a": "I considered three approaches.\n\nI could chase the vendors. But based on experience with these three, they would not send in two days. Possible, but not something to build the close around.\n\nI could ask to move the review. It was already on everyone's calendar, and there were decisions waiting on those numbers — moving the meeting just moves the decisions.\n\nOr I could estimate the bills and record them as an accrual.\n\nWhat decided it was working out which deadline could actually move. A review with decisions waiting on it does not move easily. Vendor paperwork does. So the question changed from whether to close without the invoices, to how to do it accurately.\n\nI chose the accrual because it can be corrected. If the actual amounts are different, you adjust the difference next month and nothing after that breaks. Being slightly wrong costs one adjusting entry. Closing late means they decide without numbers, or they do not decide at all. Those are not the same size of mistake.\n\nFor each vendor I estimated three ways — the contract amount from the purchase order, what they billed the previous month, and their historical average. And I marked every accrued item, so leadership knew which numbers were estimates.",
+        "r": "The $50K of accruals was about 80% accurate, so about $10K to correct the following month, which we did during the next close.\n\nThe close went out on time and leadership had the numbers for their review. And because the accrued lines were marked, they knew which figures were estimates instead of treating every line as equally solid.",
         "bullets": {
           "s": [
-            "Month-end close - CPA waiting on the P&L for a tax filing",
+            "Month-end close - **leadership's monthly review** scheduled, decisions made off the numbers",
             "**3 vendor bills missing - ~$50K**",
-            "Without them expenses understated - filing wrong",
-            "**Filing deadline carried a penalty**"
+            "Without them expenses too low - **P&L shows the month better than it was**"
           ],
           "t": [
-            "Delay the close and miss the filing, or deliver an accurate P&L without the invoices"
+            "Delay the close and they review without numbers, or deliver an accurate P&L without the invoices"
           ],
           "a": [
-            "Three options:",
-            "# **Chase the vendors** - history said not in 2 days. Not worth a penalty.",
-            "# **Ask the CPA for time** - checked. Schedule set externally, could not move.",
+            "Three approaches:",
+            "# **Chase the vendors** - history said not in 2 days. Not something to build the close around.",
+            "# **Move the review** - already on everyone's calendar, decisions waiting. Moving the meeting just moves the decisions.",
             "# **Estimate and accrue**",
             "Deciding question: **which deadline could actually move**",
-            "> Penalty filing date cannot. Vendor paperwork can.",
-            "> Changed it from **whether** to deliver, to **how accurately**",
+            "> A review with decisions waiting does not. Vendor paperwork does.",
+            "> Changed it from **whether** to close, to **how accurately**",
             "Chose the accrual because **it is correctable** - adjust next month, nothing downstream breaks",
-            "\"Being slightly wrong costs one adjusting entry. Missing the filing costs a penalty. Those are not the same size of mistake.\"",
+            "\"Being slightly wrong costs one adjusting entry. Closing late means they decide without numbers. Those are not the same size of mistake.\"",
             "Estimated each vendor **3 ways** - PO contract amount, prior month, historical average",
-            "**Marked every accrued line** so the CPA knew which were estimates"
+            "**Marked every accrued line** so leadership knew which were estimates"
           ],
           "r": [
             "**$50K** accrued - **~80% accurate** - **~$10K** corrected in the next close",
-            "Close on time, CPA filed on schedule, **no penalty**",
-            "Marked lines - CPA worked with them directly, no follow-up questions"
+            "Close on time - **leadership had the numbers for their review**",
+            "Marked lines - they knew which figures were estimates, not every line equally solid"
           ]
         }
       },
@@ -579,18 +578,20 @@
         "accrual": "Three vendor bills, about $50K total, estimated from PO contract amounts, prior-month actuals and historical averages.",
         "accuracy": "Estimates came in about 80% accurate, so roughly $10K to true up the following month.",
         "why_reversible": "An accrual is a two-way door - if actuals differ you adjust next month and nothing downstream breaks.",
-        "prioritisation_criteria": "Urgency, impact if it slips, and - the deciding one - which deadline can genuinely move. A filing date with a penalty cannot; an internal request usually can.",
-        "ATTRIBUTION": "'I went with the accrual' is correct and in remit - booking an accrual is an accounting judgement made by whoever closes the books, and that is her. Do not soften this one to 'I recommended'."
+        "prioritisation_criteria": "Urgency, impact if it slips, and - the deciding one - which deadline can genuinely move. A review with decisions waiting on it does not; vendor paperwork does.",
+        "ATTRIBUTION": "'I went with the accrual' is correct and in remit - booking an accrual is an accounting judgement made by whoever closes the books, and that is her. Do not soften this one to 'I recommended'.",
+        "the_deadline": "Leadership's monthly review - a fixed internal date with decisions attached. The cost of missing it is not a fine, it is that they decide without numbers or postpone the decision. That is the asymmetry the story turns on."
       },
       "pocket_answers": {
         "Is accruing an estimate actually allowed?": "Yes - that's what accruals are for. The obligation existed, we just didn't have the invoice. You recognise the expense in the period it belongs to and true it up when the actual arrives.",
         "How did you land on $50K?": "Per vendor: contract amount off the purchase order, cross-checked against what they'd billed the prior month, and their historical average. Three lines, three estimates.",
         "What if you'd been badly wrong?": "Then we'd have trued up a larger number the following month - which is the point of a reversible call. The alternative was holding the close, which wasn't reversible at all once the filing date passed.",
-        "What did the actuals come in at?": "About 80% accurate, so roughly $10K trued up the next month. No impact on the filing.",
-        "How do you prioritise competing demands?": "Urgency and impact first, but the thing that usually decides it is which deadline can actually move. A filing date with a penalty behind it can't; an internal request often can, even when it feels louder. At year-end I had the CPA's filing and leadership's annual planning numbers land in the same window - I sequenced close first, because the planning numbers come off the closed books anyway. Starting their work early would have meant building on figures I'd have to revise. So it wasn't choosing one over the other, it was finding the order that served both.",
+        "What did the actuals come in at?": "About 80% accurate, so roughly $10K trued up the next month. It did not change any of the decisions taken at the review.",
+        "How do you prioritise competing demands?": "Urgency and impact first, but the thing that usually decides it is which deadline can actually move. A date with decisions or a filing behind it can't; an internal request often can, even when it feels louder. At year-end I had the tax filing and leadership's annual planning numbers land in the same window — I sequenced close first, because the planning numbers come off the closed books anyway. Starting their work early would have meant building on figures I'd have to revise. So it wasn't choosing one over the other, it was finding the order that served both.",
         "How do you handle the person whose request you pushed back?": "Give them a date, not an apology. What damages trust isn't waiting - it's not knowing how long you're waiting for.",
         "How did the accrual affect cash flow versus net income?": "They move at different times, which is the point of the accrual. In the month I booked it, the expense lands on the P&L, so net income comes down by the $50K. No cash moves — nothing has been paid, so it sits in accounts payable. On the cash flow statement it comes back as an increase in payables.\n\nThe following month, when the real invoices arrive and we pay them, cash goes out and the payable clears. There is no second hit to net income, because the expense was already recognised — only the $10K difference between my estimate and the actual runs through the P&L as the true-up.\n\nSo the accrual moves the expense into the period the work happened, and leaves the cash where it actually happens.",
-        "Was that opex or capex?": "Operating expense. These were vendor bills for services in the period, so they belong on the P&L in the month the work was done. Capital items are different — those sit on the balance sheet and come through the P&L as depreciation over time, so accruing one wrong has a much longer tail. That distinction is exactly what I had to untangle on the database migration, where about $40K of transactions were sitting on the wrong side of it."
+        "Was that opex or capex?": "Operating expense. These were vendor bills for services in the period, so they belong on the P&L in the month the work was done. Capital items are different — those sit on the balance sheet and come through the P&L as depreciation over time, so accruing one wrong has a much longer tail. That distinction is exactly what I had to untangle on the database migration, where about $40K of transactions were sitting on the wrong side of it.",
+        "Why not show the P&L with a note that three invoices were missing?": "Because a number you know is wrong is worse than an estimate. They would either discount the whole P&L or read the expense line as real. An accrual gives them the best figure I have, marked as an estimate, so they know how much room is in it."
       },
       "primary_lps": [
         "Deliver Results"
