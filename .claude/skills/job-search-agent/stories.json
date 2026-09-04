@@ -1409,7 +1409,9 @@
           "S28"
         ],
         "7": [],
-        "8": []
+        "8": [
+          "S43"
+        ]
       },
       "Customer Obsession": {
         "1": [
@@ -1484,7 +1486,10 @@
         "5": [
           "S31"
         ],
-        "6": [],
+        "6": [
+          "S41",
+          "S30"
+        ],
         "7": [],
         "8": [],
         "9": []
@@ -1534,7 +1539,9 @@
         "6": [
           "S33"
         ],
-        "7": []
+        "7": [
+          "S41"
+        ]
       },
       "Invent and Simplify": {
         "1": [
@@ -1550,7 +1557,10 @@
           "S43",
           "S33"
         ],
-        "5": [],
+        "5": [
+          "S26",
+          "S42"
+        ],
         "6": [
           "S19",
           "S33"
@@ -1573,7 +1583,9 @@
         "4": [
           "S30"
         ],
-        "5": [],
+        "5": [
+          "S30"
+        ],
         "6": [
           "S31"
         ],
@@ -1604,7 +1616,10 @@
         "6": [
           "S26"
         ],
-        "7": [],
+        "7": [
+          "S26",
+          "S30"
+        ],
         "8": []
       },
       "Have Backbone, Disagree and Commit": {
@@ -1635,15 +1650,23 @@
         "1": [
           "S30"
         ],
-        "2": [],
+        "2": [
+          "S27",
+          "S43"
+        ],
         "3": [
           "S30"
         ],
         "4": [
           "S30"
         ],
-        "5": [],
-        "6": [],
+        "5": [
+          "S30"
+        ],
+        "6": [
+          "S43",
+          "S33"
+        ],
         "7": [
           "S19"
         ]
@@ -1659,8 +1682,12 @@
         "3": [
           "S30"
         ],
-        "4": [],
-        "5": [],
+        "4": [
+          "S3"
+        ],
+        "5": [
+          "S27"
+        ],
         "6": []
       },
       "Think Big": {
@@ -1678,7 +1705,9 @@
           "S27"
         ],
         "5": [],
-        "6": [],
+        "6": [
+          "S42"
+        ],
         "7": [],
         "8": []
       },
@@ -1793,7 +1822,49 @@
         "Looks for ways to standardise processes, automate, and eliminate waste"
       ]
     },
-    "lp_criteria_source": "Verbatim from the candidate's Question_Bank_.docx, 'Criteria' block under each principle. The PDF version of the same bank does not extract these - its 'Definition and Indicators' sections come through empty. Twelve of sixteen principles are present; Hire and Develop the Best, Insist on the Highest Standards, Strive to be Earth's Best Employer and Success and Scale are not in this document."
+    "lp_criteria_source": "Verbatim from the candidate's Question_Bank_.docx, 'Criteria' block under each principle. The PDF version of the same bank does not extract these - its 'Definition and Indicators' sections come through empty. Twelve of sixteen principles are present; Hire and Develop the Best, Insist on the Highest Standards, Strive to be Earth's Best Employer and Success and Scale are not in this document.",
+    "unanswerable": {
+      "_comment": "Questions that presuppose managing or leading a team. The candidate is an individual contributor at a small company with no direct reports. These are not preparation gaps - the bank is written for a pool that includes managers. If one comes up, say so plainly and offer the nearest thing you have; do not stretch a peer interaction into a management story.",
+      "questions": [
+        "Earn Trust q7 - improving team morale and productivity",
+        "Earn Trust q8 - helping a struggling team member",
+        "Earn Trust q9 - a team member not performing well",
+        "Bias for Action q7 - your team not moving to action quickly enough",
+        "Deliver Results q7 - setting challenging but achievable goals for a team",
+        "Frugality q8 - challenging your team for a more efficient process",
+        "Ownership q6 - a peer struggling, stepping in to help",
+        "Think Big q5 - a vision adopted by global stakeholders",
+        "Think Big q7 - encouraging someone to take a big risk",
+        "Think Big q8 - establishing a vision where there wasn't one",
+        "Have Backbone q8 - persisting over a long period for business gain"
+      ],
+      "how_to_answer": "'I haven't managed a team - I'm an individual contributor at a company of our size, so I don't have a direct example of that.' Then offer the nearest real thing: handing a process to the onsite manager and running a month with him (knowledge_transfer), taking a finding to the project manager so he could act on it (S40), or raising a vendor error as evidence rather than an accusation. Naming the limit is stronger than manufacturing a team.",
+      "the_notable_routes": "Dive Deep q7 asks about validating a DIRECT REPORT's assumptions. Route it to S41 but reframe: 'not a direct report, but the same thing with a park manager - he had an explanation and I checked it rather than taking it.' Ownership q5 asks about transitioning a project to a new owner - that is the knowledge_transfer answer, the written procedure plus running a month together."
+    },
+    "coverage": {
+      "as_of": "13-story bank, after the reroute.",
+      "in_scope": "98 questions across the 13 principles that apply to an individual-contributor finance role.",
+      "answered": "87 of 98.",
+      "unanswered": "11 - all listed under question_bank.unanswerable. Every one presupposes managing or leading a team.",
+      "out_of_scope": "30 more questions sit under Hire and Develop the Best (10), Strive to be Earth's Best Employer (11) and Success and Scale Bring Broad Responsibility (9). These are written for managers and for people with company-wide remit; none are routed and none should be forced.",
+      "full_bank": "87 of 128 if you count every question in the document.",
+      "per_principle": {
+        "Are Right, A Lot": "7/7",
+        "Bias for Action": "7/8",
+        "Customer Obsession": "9/9",
+        "Deliver Results": "6/7",
+        "Dive Deep": "7/7",
+        "Earn Trust": "6/9",
+        "Frugality": "7/8",
+        "Have Backbone, Disagree and Commit": "7/8",
+        "Insist on the Highest Standards": "7/7",
+        "Invent and Simplify": "7/7",
+        "Learn and Be Curious": "7/7",
+        "Ownership": "5/6",
+        "Think Big": "5/8"
+      },
+      "read": "No principle that matters for this role is uncovered. The thin one is Think Big at 5/8, and all three misses are team-vision questions."
+    }
   },
   "candidate_stories": {
     "why": "All seven proof points in profile.json are absent from the story bank. Each identified gap has raw material already - these are the stories to build, with the facts still needed for each.",
