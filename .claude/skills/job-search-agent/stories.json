@@ -573,6 +573,7 @@
         "Trued up the difference next month. No filing impact."
       ],
       "delivery_notes": [
+        "S43 is now the Bias for Action lead - it fits the criteria more directly. This story stays as the month-end close story and as a Bias for Action backup; its strength is the judgement about which deadline could flex, not speed.",
         "NOW THE BIAS FOR ACTION LEAD, taking over from S32. It fits the criteria better than S32 ever did: you moved with information missing (three invoices), you judged which deadline could flex, and you chose a reversible option rather than waiting for certainty. Lead on the speed of the judgement, not the accounting.",
         "DEFAULT PICK for Bias for Action - lead with this one, not S6. It is the only story with the true BFA shape: a hard deadline, incomplete information, options weighed and discarded fast, a reversible call made rather than waiting for certainty.",
         "Say 'two-way door' out loud - it is already the structure of the decision, and it signals you think in Amazon's terms.",
@@ -585,9 +586,9 @@
       ],
       "open_questions": [],
       "spoken_star": {
-        "primary": "Bias for Action",
+        "primary": "Deliver Results",
         "also": [
-          "Deliver Results"
+          "Bias for Action"
         ],
         "s": "It was month-end close and the CPA was waiting for our P&L for a tax filing. Three vendor bills had not arrived, about $50K in total. Without them the expenses would be too low and the filing would be wrong. And the filing deadline had a penalty.",
         "t": "So I could either delay the close until the invoices arrived and miss the filing, or find a way to give the CPA an accurate P&L without them. Only two options, and one of them had a cost.",
@@ -610,7 +611,6 @@
         "How do you handle the person whose request you pushed back?": "Give them a date, not an apology. What damages trust isn't waiting - it's not knowing how long you're waiting for."
       },
       "primary_lps": [
-        "Bias for Action",
         "Deliver Results"
       ]
     },
@@ -1224,6 +1224,72 @@
         "Only two months are named in this story - March and July - and they are the two ends of the same booking. Do not add a third; a listener will try to work out why it matters and it does not.",
         "Keep the forecasting step to one clause - 'which reads the trend out of the data'. The full breakdown into baseline, growth and seasonal shape is in the pocket answers. It is a good answer to a probe and a bad thing to volunteer; it slows the story down and most listeners do not need it."
       ]
+    },
+    {
+      "id": "S43",
+      "title": "Shipping the 70% Close Tool",
+      "setting": "Monthly close, consolidated property P&L",
+      "lps": [
+        "Bias for Action",
+        "Invent and Simplify",
+        "Deliver Results"
+      ],
+      "primary_lps": [
+        "Bias for Action"
+      ],
+      "situation": [
+        "Compiling general ledger data into consolidated property P&L reports took about 12 hours of manual copy-pasting every month.",
+        "Building it properly would take about two months. The next close started in three days."
+      ],
+      "task": [
+        "Choose between building the full tool and using it in two months, or putting a rough version in place before this close."
+      ],
+      "action": [
+        "Automated the highest-volume part only - pulling raw GL transactions and mapping them into standard P&L categories.",
+        "Deliberately left out error handling, which was most of the two months and covered cases that occur rarely.",
+        "Added a colour-coded flag instead: anything the script cannot map turns red for manual fixing in seconds.",
+        "Refined it over the following two closes based on what actually broke rather than what she had predicted might."
+      ],
+      "result": [
+        "First run cut close reporting from 12 hours to 2 - ten hours returned in the same month, spent on variance analysis.",
+        "Refinement was driven by real failures rather than imagined ones."
+      ],
+      "open_questions": [
+        "An earlier draft claimed 'eliminated 80% of manual data entry errors'. That figure has no derivation and is not in the script. If there is a real basis for it - a count of errors before and after - say so and it can go in. Otherwise the 12-to-2 hours carries the Result on its own."
+      ],
+      "spoken_star": {
+        "primary": "Bias for Action",
+        "also": [
+          "Invent and Simplify",
+          "Deliver Results"
+        ],
+        "s": "During monthly close, compiling the general ledger into consolidated property P&L reports took about twelve hours of manual copy-pasting. Every month. I wanted to automate it, but building it properly would have taken about two months, and the next close started in three days.",
+        "t": "So the choice was to build it properly and start using it in two months, or put something rough in place before this close and get the twelve hours back now.",
+        "a": "I built the rough version.\n\nI automated the part that took the most time — pulling the raw general ledger transactions and mapping them into standard P&L categories. That is the bulk of the twelve hours, and it is the same work every month.\n\nWhat I deliberately left out was error handling. Building something that handles every edge case properly is most of the two months, and most of those cases come up rarely. So instead of coding for them, I added a colour-coded flag: anything the script cannot map turns red, and someone fixes it by hand in a few seconds.\n\nThat was the trade. The script does the repetitive part, a person handles the exceptions, and nobody waits two months for the difference.\n\nThen I improved it over the next two closes — using what actually broke, rather than what I had guessed might.",
+        "r": "The first run cut close reporting from twelve hours to two. That is ten hours back in the same month, and it went into variance analysis instead of copy-pasting.\n\nAnd refining it afterwards turned out better than building it properly up front would have been, because I was fixing the things that actually came up rather than the ones I had imagined."
+      },
+      "calc_sheet": {
+        "the_before": "About 12 hours of manual copy-pasting per close to compile GL data into consolidated property P&L reports.",
+        "the_two_options": "Full build about two months. Rough version in three days, before the next close.",
+        "what_was_automated": "The high-volume repetitive part - pulling raw GL transactions and mapping them to standard P&L categories.",
+        "what_was_left_out": "Error handling. Most of the two months, covering cases that occur rarely. Replaced with a colour-coded flag for unmapped accounts, fixed manually in seconds.",
+        "the_saving": "12 hours to 2 on the first run. Ten hours returned, in the same month.",
+        "RETIRED": "An earlier draft claimed 'eliminated 80% of manual data entry errors'. No derivation - not used. The hours carry the result."
+      },
+      "pocket_answers": {
+        "How did you decide what to leave out?": "By volume, not by difficulty. The mapping is the same work on hundreds of lines every month, so automating it returns hours immediately. Error handling is the opposite — it is hard to build and it fires rarely. So I automated the thing that happens constantly and left a person on the thing that happens occasionally.",
+        "Wasn't leaving out error handling risky?": "It would have been if errors were silent. That is why the flag exists — anything the script cannot map turns red rather than being guessed at or dropped. The failure mode is visible and it stops at a human. A wrong number that looks right is the dangerous version, and that is what I was avoiding.",
+        "Did you ever finish the other 30%?": "Over the next two closes, yes — but not the 30% I would have built up front. Once it was running I could see which cases actually came up, and several of the things I would have coded for never happened. Building it later meant building less of it.",
+        "Why not just ask for more time?": "Because the twelve hours was being spent every month regardless. Waiting two months to save it means paying it twice more first. The rough version cost three days and started returning ten hours a month immediately.",
+        "What made this urgent?": "Nothing external — that is the honest answer. The close would have happened either way. What made it worth doing quickly is that the cost was recurring: every month I waited was another twelve hours I would not get back."
+      },
+      "delivery_notes": [
+        "BIAS FOR ACTION LEAD. It matches the criterion almost word for word - 'willing to make small progress toward a solution rather than finding the perfect solution right away'. Say the trade out loud: rough version now versus proper version in two months.",
+        "The strongest beat is what you left out and why. Automating by VOLUME rather than by difficulty is a judgement, and the colour-coded flag is what makes leaving error handling out responsible rather than reckless.",
+        "'I was fixing the things that actually came up rather than the ones I had imagined' is the closing line. It is the argument for shipping early, made from experience rather than principle.",
+        "DO NOT tell this in the same slot as S19. Both are P&L consolidation automation. They are different stories - S19 is annual, SQL, and about finding \\$20K of duplicates; this is monthly, VBA, and about the decision to ship incomplete - but back to back they blur.",
+        "Do not claim '80% fewer data entry errors'. It appeared in a draft with no basis. The twelve-to-two hours is the result and it is enough."
+      ]
     }
   ],
   "lp_index": {
@@ -1244,7 +1310,8 @@
       "S8",
       "S19",
       "S33",
-      "S42"
+      "S42",
+      "S43"
     ],
     "Are Right, A Lot": [
       "S3",
@@ -1269,7 +1336,8 @@
     ],
     "Bias for Action": [
       "S6",
-      "S28"
+      "S28",
+      "S43"
     ],
     "Frugality": [
       "S26"
@@ -1301,7 +1369,8 @@
       "S28",
       "S31",
       "S40",
-      "S42"
+      "S42",
+      "S43"
     ],
     "Strive to be Earth's Best Employer": [],
     "Success and Scale Bring Broad Responsibility": []
@@ -2584,60 +2653,66 @@
       },
       {
         "rank": 8,
+        "id": "S43",
+        "tier": "tier2",
+        "why": "Your Bias for Action lead - shipping a rough tool three days before close rather than a perfect one in two months. Matches the criterion almost word for word."
+      },
+      {
+        "rank": 9,
         "id": "S28",
         "tier": "tier2",
         "why": "Now the Bias for Action lead. Moved with three invoices missing rather than wait, and judged which deadline could actually flex."
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "S35",
         "tier": "tier2",
         "why": "Customer Obsession lead. Tenant-side, which nothing else in the bank is."
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "S8",
         "tier": "tier2",
         "why": "Only non-real-estate setting and the only human stakes in the loop. Use it mid-loop or it never gets heard."
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "S31",
         "tier": "tier3",
         "why": "Have Backbone with a real cost admitted - you owned the six hours a week the decision added."
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "S29",
         "tier": "tier3",
         "why": "Short and clean. Backup to S30 on Highest Standards; variant A only."
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "S6",
         "tier": "bench",
         "why": "Redundant with S33 and S32 - same tool-building arc, same park. Do not use it against a speed prompt."
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "S26",
         "tier": "bench",
         "why": "Only Frugality story, and Frugality is unlikely in this loop."
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "S5",
         "tier": "bench",
         "why": "Good Earn Trust backup. Know the two unequal installments cold or do not open it."
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "S3",
         "tier": "bench",
         "why": "Have Backbone backup behind S31 and S26."
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "S7",
         "tier": "bench",
         "why": "Superseded by S19, which is the same idea at ten times the scale."
@@ -2984,6 +3059,14 @@
           "Scenario analysis"
         ],
         "one_line": "Replaced a flat 1/12 annual budget with a seasonally phased forecast and measured variance down from 25% to 5%."
+      },
+      "S43": {
+        "primary": "Automation",
+        "also": [
+          "Month-end close",
+          "Process improvement"
+        ],
+        "one_line": "Shipped a deliberately incomplete close-automation tool in three days rather than a complete one in two months; 12 hours to 2."
       }
     },
     "by_function": {
