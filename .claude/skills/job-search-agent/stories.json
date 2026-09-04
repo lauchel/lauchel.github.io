@@ -539,7 +539,8 @@
         "Name the late-filing penalty early - it is what makes the deadline real. Without it the urgency is asserted rather than shown.",
         "'About 80% accurate' is your own recollection and is fine to say. If probed on the exact split: 'I don't have the figure in front of me - we accrued $50K and landed within about 20%, and trued up the next month.' Not knowing a detail two levels down is normal; inventing one is not.",
         "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
-        "CARRIES THE PRIORITISATION ANSWER TOO. The 'how do you prioritise competing demands' pocket answer holds what used to be a separate year-end story: three criteria with deadline-flexibility as the decider, and the observation that annual planning is built off closed books so sequencing close first served both demands. Use it as an answer, not as a second story - it shares this story's setup (close, CPA, missing invoices) and has no quantified outcome of its own."
+        "CARRIES THE PRIORITISATION ANSWER TOO. The 'how do you prioritise competing demands' pocket answer holds what used to be a separate year-end story: three criteria with deadline-flexibility as the decider, and the observation that annual planning is built off closed books so sequencing close first served both demands. Use it as an answer, not as a second story - it shares this story's setup (close, CPA, missing invoices) and has no quantified outcome of its own.",
+        "Expect the mechanics probes here: opex or capex, cash flow versus net income, how you handled the true-up. All three now have pocket answers. This story is where accounting fundamentals get tested, so know them cold rather than reasoning them out live."
       ],
       "open_questions": [],
       "spoken_star": {
@@ -565,7 +566,9 @@
         "What if you'd been badly wrong?": "Then we'd have trued up a larger number the following month - which is the point of a reversible call. The alternative was holding the close, which wasn't reversible at all once the filing date passed.",
         "What did the actuals come in at?": "About 80% accurate, so roughly $10K trued up the next month. No impact on the filing.",
         "How do you prioritise competing demands?": "Urgency and impact first, but the thing that usually decides it is which deadline can actually move. A filing date with a penalty behind it can't; an internal request often can, even when it feels louder. At year-end I had the CPA's filing and leadership's annual planning numbers land in the same window - I sequenced close first, because the planning numbers come off the closed books anyway. Starting their work early would have meant building on figures I'd have to revise. So it wasn't choosing one over the other, it was finding the order that served both.",
-        "How do you handle the person whose request you pushed back?": "Give them a date, not an apology. What damages trust isn't waiting - it's not knowing how long you're waiting for."
+        "How do you handle the person whose request you pushed back?": "Give them a date, not an apology. What damages trust isn't waiting - it's not knowing how long you're waiting for.",
+        "How did the accrual affect cash flow versus net income?": "They move at different times, which is the point of the accrual. In the month I booked it, the expense lands on the P&L, so net income comes down by the $50K. No cash moves — nothing has been paid, so it sits in accounts payable. On the cash flow statement it comes back as an increase in payables.\n\nThe following month, when the real invoices arrive and we pay them, cash goes out and the payable clears. There is no second hit to net income, because the expense was already recognised — only the $10K difference between my estimate and the actual runs through the P&L as the true-up.\n\nSo the accrual moves the expense into the period the work happened, and leaves the cash where it actually happens.",
+        "Was that opex or capex?": "Operating expense. These were vendor bills for services in the period, so they belong on the P&L in the month the work was done. Capital items are different — those sit on the balance sheet and come through the P&L as depreciation over time, so accruing one wrong has a much longer tail. That distinction is exactly what I had to untangle on the database migration, where about $40K of transactions were sitting on the wrong side of it."
       },
       "primary_lps": [
         "Deliver Results"
@@ -897,7 +900,8 @@
         "SAY 'DURATION' EXPLICITLY as the third driver. Naming crew, rate and time as the three things that move a labour line shows you think in drivers, which is the language an FP&A interviewer works in.",
         "SCHEDULE CONTINGENCY IS THE INSTITUTIONAL FIX and it follows the pattern of the strongest stories in the bank - S41's meter tracker, S3's self-funding question. Say what changed, not just that something did.",
         "DIVE DEEP RUBRIC: covers five of seven cleanly. Thin on 'steps in and gets work done' and 'difficult or time-consuming' - see rubric_coverage. If a Dive Deep interviewer is clearly working a checklist, lead with S41 and keep this as the second answer.",
-        "The 20% reconciling exactly to two weeks on ten is the strongest moment here - same shape as an exact tie-out. Say the arithmetic out loud: crew unchanged, rate unchanged, ten weeks became twelve, so the line is 20% over and nothing is left unexplained."
+        "The 20% reconciling exactly to two weeks on ten is the strongest moment here - same shape as an exact tie-out. Say the arithmetic out loud: crew unchanged, rate unchanged, ten weeks became twelve, so the line is 20% over and nothing is left unexplained.",
+        "THIS IS YOUR DRIVER-BASED MODELLING ANSWER, not S42. The labour budget was built bottom-up from crew size, duration and rate, and the variance was diagnosed by testing each driver in turn. If a driver-based question comes, lead here. S42 is pattern-based and you have said so."
       ],
       "open_questions": [],
       "rubric_coverage": {
@@ -3142,6 +3146,31 @@
         "also": [],
         "depth": "ONE STORY. Supported by the payroll line you own and the payroll accruals you have booked - say those too."
       }
+    }
+  },
+  "technical_competencies": {
+    "_comment": "The four technical competencies this loop tests, and which stories answer each. These are probes ON your STAR stories, not separate questions - they arrive as follow-ups.",
+    "1. Financial mechanics and accounting fundamentals": {
+      "verdict": "STRONG",
+      "lead": "S30 and S28",
+      "evidence": "S30 is opex versus capex at the transaction level - 100+ items on the wrong P&L lines, about $40K reclassified against original invoices. S28 is accrual mechanics end to end: estimate, flag, true up $10K the following period. S29 and S31 both sit on capital budgets. S41 knows water is opex and knows the charge-back mechanic.",
+      "the_probes": "'Did that hit opex or capex?' - S30, and you can answer it at line level. 'How did you handle period-over-period true-ups?' - S28. 'How did the accrual affect cash flow versus net income?' - see the new pocket answer on S28; that one was missing."
+    },
+    "2. Driver-based modelling and forecasting": {
+      "verdict": "CONDITIONAL - depends entirely on which story you lead with",
+      "lead": "S40, NOT S42",
+      "evidence": "S40 is genuinely driver-based: the labour budget was built bottom-up from crew size, duration and rate, and the variance was diagnosed by testing each driver in turn. That is exactly what this competency asks for. S26 is the same shape on a smaller scale - occupancy and usage per load driving a revenue estimate. S27 tracks revenue per occupied unit and cost per unit, which is unit economics.",
+      "the_trap": "S42 is NOT driver-based and you have already corrected the bank to say so. It is phased off historical patterns. If a driver-based question comes and you reach for S42, you will either overclaim or have to concede mid- answer. Lead with S40. Then S42 becomes the honest follow-up: 'at portfolio level my forecast is pattern-based, and building it up from occupancy and rate is the version I would want next.' That sequence is strong. The reverse is weak."
+    },
+    "3. Data scaffolding and technical proficiency": {
+      "verdict": "STRONGEST - this is your deepest competency",
+      "lead": "S19, S27, S43",
+      "evidence": "All three named tools appear, on real work. SQL and SQLite in S19 - four source systems across ten entities. Power Query plus VBA in S27 - ten rent roll files into one refreshable table. VBA in S43 - raw GL transactions mapped into P&L categories. Raw GL manipulation specifically: S30 (18 months, three sources, reclassification), S43 (the mapping), S19 (the consolidation). Eliminating manual error: S43's colour-coded flag, S30's validation macro, S19's three-field duplicate matching."
+    },
+    "4. Business partnership and operational variance analysis": {
+      "verdict": "STRONG",
+      "lead": "S40 and S41",
+      "evidence": "S40 is the textbook answer to the volume-versus-rate probe - three drivers, two ruled out, the third isolated, and the arithmetic closes exactly. S41 rules out volume via flat occupancy and finds a physical cause. Communicating to non-finance partners: S40 framed it to the project manager as a schedule problem rather than a cost problem; S29 took evidence to the project manager rather than rejecting an invoice; S31 priced a trade-off for leadership, lost, and committed; S3 changed a manager's mind with a debt ratio."
     }
   }
 }
