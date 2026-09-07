@@ -198,44 +198,40 @@
     {
       "id": "S19",
       "title": "P&L Consolidation (SQL)",
-      "setting": "Packwood, rolled out across 10 entities",
+      "setting": "Started on one property, then rolled across 10 entities",
       "lps": [
         "Deliver Results",
         "Invent and Simplify",
         "Learn and Be Curious"
       ],
       "situation": [
-        "CPA needed one consolidated P&L for Packwood for tax filing.",
-        "Rent income from 4 sources - Camplife, Hemlane, texted payments, mailed checks. Each tracked separately, which worked for day-to-day.",
-        "Nobody had combined all 4 into one P&L before. When I tried for the first time, numbers didn't add up - CPA kept questioning double-counted income.",
-        "Manual cross-referencing took about 2 weeks."
+        "CPA needed a consolidated P&L and balance sheet across all ten entities.",
+        "The totals were there but not their composition. Debtors and insurance were the worst lines.",
+        "One insurance policy - or one debtor - covers several properties, so a single invoice sits across several properties and the books carried only the total.",
+        "Every question from the CPA meant going back through the invoices by hand. About 2 weeks of manual work."
       ],
       "task": [
-        "Produce clean, accurate consolidated P&L the CPA could file confidently without back-and-forth - and build a repeatable process for every year."
+        "Make the composition of a line something you can show on demand, by property - and repeatable, not two weeks of invoice-digging every filing."
       ],
       "action": [
-        "Ruled out Excel - ten entities and four sources means maintained links and more ways to break.",
-        "Taught herself SQL in her own time (YouTube plus an AI assistant), built a SQLite database and loaded all four sources across all ten entities.",
-        "Built a lookup mapping tenant name variations to one master ID - the same person appeared differently across systems.",
-        "Built duplicate detection matching on amount, date and tenant ID together; all three, because matching on two flags a genuine repeat payment as a duplicate.",
-        "Validated the output against QuickBooks before it went to the CPA."
+        "Ruled out Excel - maintained links across ten entities, and a rebuild every time the question changed slightly.",
+        "Taught herself SQL in her own time (YouTube plus an AI assistant) and built a SQLite database.",
+        "Started with ONE property rather than all ten, so the cost of a wrong approach was one property's tagging.",
+        "Tagged every invoice line to the property it belonged to - an insurance policy covering four properties becomes four tagged lines.",
+        "Validated per line: summed the tagged detail and tied it back to the balance in the books; not tying meant something was untagged, and the gap sized what was missing.",
+        "Once one property worked end to end, rolled it across the other nine."
       ],
       "result": [
-        "P&L prep from 2 weeks to 1 day across 10 entities.",
-        "Caught $20K in double-counted income before CPA filing.",
-        "CPA questions stopped.",
-        "Tool became standard for all tax filings."
+        "Prep from 2 weeks to 1 day across 10 entities, repeating every filing.",
+        "CPA questions stopped - the composition of a line can be shown by property in seconds.",
+        "Became the standard for every filing after."
       ],
       "delivery_notes": [
-        "Overlaps heavily with S7. Do not use both in the same loop - S19 is the stronger version (bigger scale, clearer stakes).",
-        "Nail down the exact duplicate count and total before using this. '10-20 at $1-2K each' spans $10K-$40K but you state $20K - and this is the number an interviewer repeats back. Precision is the whole credential in a story about catching imprecision.",
-        "Say 'more than a dozen' and 'roughly $20,000' - both are true to your records and defensible. The earlier problem was pairing a precise-sounding $20K with a range spanning $10K-$40K. An approximation you label as one is safe; a false-precise number is not. If pushed for exact: 'I'd have to pull the file, but it was in the teens and about $20,000.'",
-        "PROMOTED TO LEAD DELIVER RESULTS. Two weeks to one day across ten entities is the cleanest before/after in the bank, and Deliver Results had no lead story. Invent and Simplify still has S6 and S33, so nothing is lost.",
-        "FOR THE OPS FINANCE LOOP this is the lead story - it answers four of the six listed responsibilities. Lead with 'consolidated P&L across all ten entities', not with Packwood.",
-        "The story is a P&L consolidation where REVENUE was the blocker - expenses were already clean in QuickBooks. Say that in the opening or the whole thing sounds like a rent-roll exercise rather than a close deliverable.",
-        "THIS IS THE SQL STORY. Self-taught SQL, SQLite, the P&L consolidation. Power Query and VBA are S27's rent roll. Do not mix them up - an earlier version of the bank had them swapped.",
-        "Because the self-taught SQL sits here now, this is also a Learn and Be Curious option - but S27 remains the lead for that principle, on the noticing rather than the learning.",
-        "THE VALIDATION IS PER ENTITY, NOT IN TOTAL. That distinction is the whole answer to 'how did you know it was right' - a portfolio total can tie while two entities are wrong in opposite directions. Say 'entity by entity' out loud."
+        "THIS IS NOT A RENTAL INCOME STORY. An earlier version had it as consolidating rent from four payment sources with duplicate detection and a $20,000 finding. That was wrong. This is about line composition - debtors and insurance - and none of the old numbers apply. If '$20,000 of duplicates' comes out of your mouth you have reverted to a story that did not happen.",
+        "THE ONE-PROPERTY-FIRST BEAT IS THE STRONGEST PART. Proving it on one property before tagging ten is judgement, not just method - the cost of being wrong is one property's work. Say why, not just that you did it.",
+        "LEAD WITH THE MECHANIC, NOT THE TOOL. 'One insurance policy covers several properties' is what makes the problem real and it takes one sentence. SQL is how you solved it.",
+        "SELF-TAUGHT SQL LIVES HERE. S30 is where you APPLIED SQL to a migration; this is where you learned it. Do not claim the learning in both.",
+        "THE VALIDATION IS PER LINE. Sum the tagged detail, tie it to the balance. Not tying means something is untagged. That is the answer to 'how did you know it was complete', and it is better than 'I checked it'."
       ],
       "open_questions": [],
       "spoken_star": {
@@ -243,61 +239,57 @@
         "also": [
           "Invent and Simplify"
         ],
-        "s": "Our CPA needed one consolidated P&L across all ten entities for the tax filing. Expenses were straightforward — already in QuickBooks. Revenue was the problem: rent came from four sources — two booking platforms, payments by text, and checks in the mail — each tracked separately, never combined.",
-        "t": "When I tried, the numbers did not agree, and the CPA kept finding income that looked counted twice. By hand it took two weeks. I needed something clean they could file, and repeatable — not two weeks every year.",
-        "a": "Doing it in Excel meant maintaining links across ten entities and four sources — the same problem with more steps and more ways to break.\n\nSo I taught myself SQL in my own time. YouTube for the basics, and an AI assistant to work through problems when I got stuck. I built a SQLite database and loaded all four sources, for all ten entities, into it.\n\nThe hardest part was tenant names. The same person might be \"John Smith\" in one system and \"J. Smith\" in the check log, so one person could appear as two, or two payments could collapse into one. I built a lookup that maps every name variation back to one master tenant ID.\n\nThen duplicate detection — matching on amount, date and tenant ID together. It has to be all three, because if you only check two, a tenant who genuinely pays the same amount two months in a row looks like a duplicate and you would delete real income.\n\nThen I checked it before anything went to the CPA. I summed revenue by entity in the database and compared each one against QuickBooks for the same period. If an entity did not tie, the size of the gap told me which source to look at. And I pulled every payment that had not matched to a tenant — with name matching, those are the ones that disappear quietly.",
-        "r": "It found more than a dozen duplicate payments — tenants who paid on a platform and also had a check recorded for the same month. About $20,000 in total, which had been in our reported income, making it too high.\n\nAnd the preparation went from two weeks to one day, across all ten entities. That saving repeats every filing. The CPA stopped sending questions, because the consolidation now arrives already reconciled.",
+        "s": "Our CPA needed a consolidated P&L and balance sheet across all ten entities. The totals were there, but not what made them up. Two lines were the worst — debtors and insurance. The CPA would ask what was in the number, and I had to go back through the invoices by hand to answer.",
+        "t": "It was hard because one insurance policy covers several properties, and one debtor can too. So a single invoice sits across several properties, and the books only carried the total. Every question meant going back to the paper. By hand the whole thing took two weeks.",
+        "a": "Doing it in Excel meant maintaining links across ten entities — the same problem with more steps.\n\nSo I taught myself SQL in my own time. YouTube for the basics, and an AI assistant to work through problems when I got stuck. I built a SQLite database.\n\nI started with one property, not all ten. If the approach was wrong, I wanted to find that out on one property rather than after tagging everything.\n\nThe work was going into each invoice and tagging every line to the property it actually belonged to. An insurance policy covering four properties becomes four tagged lines. Once that detail is in the database, the composition of a balance is something you query, instead of something you rebuild from paper.\n\nThen I checked it. For each line I summed the tagged detail and compared it back to the balance in the books. If it did not tie, something was untagged — and the size of the gap told me how much I was still missing.\n\nOnce one property worked end to end, I did the other nine.",
+        "r": "Preparation went from two weeks to one day, across all ten entities, and that saving repeats every filing.\n\nAnd the CPA stopped sending questions. When they ask what is in the debtor line now, I can show the composition by property in a few seconds, instead of going back through invoices to reconstruct it.",
         "bullets": {
           "s": [
-            "CPA needed one consolidated P&L - **10 entities** - tax filing",
-            "Expenses fine (QuickBooks). **Revenue was the problem.**",
-            "**4 sources**: 2 booking platforms, text payments, mailed checks - never combined"
+            "CPA needed a consolidated **P&L and balance sheet** - **10 entities**",
+            "Totals were there - **not what made them up**",
+            "Worst two lines: **debtors and insurance**",
+            "CPA asks what is in the number - **I went back through the invoices by hand**"
           ],
           "t": [
-            "Numbers did not agree - CPA kept finding **income counted twice**",
-            "By hand: **2 weeks**",
-            "Needed it clean **and repeatable**"
+            "**One insurance policy covers several properties.** One debtor can too.",
+            "A single invoice sits across several properties - **books only carried the total**",
+            "Every question meant going back to the paper. By hand: **two weeks**."
           ],
           "a": [
-            "Excel = 10 entities x 4 sources of links - more steps, more ways to break",
-            "# **Taught myself SQL in my own time** - YouTube, **an AI assistant** when stuck",
-            "# Built a **SQLite database** - all 4 sources, all 10 entities",
-            "# Hardest part: **tenant names** - \"John Smith\" vs \"J. Smith\"",
-            "> One person as two, or two payments collapsing into one",
-            "> Lookup maps every variation to **one master tenant ID**",
-            "# Duplicate detection on **amount + date + tenant ID together**",
-            "> All three. On two, a tenant paying the same amount twice looks like a duplicate - you delete real income.",
-            "# **Validation - three checks:**",
-            "> **Summed revenue by entity**, compared each against QuickBooks for the same period",
-            "> If an entity did not tie, **the size of the gap said which source to look at**",
-            "> Pulled every **payment that matched no tenant** - with name matching those disappear quietly"
+            "Excel = links across ten entities - same problem, more steps",
+            "# **Taught myself SQL in my own time** - YouTube, **an AI assistant** when stuck. Built a **SQLite database**.",
+            "# **Started with one property, not all ten**",
+            "\"If the approach was wrong, I wanted to find that out on one property rather than after tagging everything.\"",
+            "# The work: **tag every invoice line to the property it belonged to**",
+            "> An insurance policy covering **4 properties** becomes **4 tagged lines**",
+            "> Composition of a balance becomes something you **query**, not something you rebuild from paper",
+            "# **Checked it**: summed the tagged detail per line, tied back to the balance in the books",
+            "> Did not tie = something untagged - **the size of the gap said how much was missing**",
+            "# Once one property worked end to end - **did the other nine**"
           ],
           "r": [
-            "**More than a dozen duplicates** - platform payment plus a check logged the same month",
-            "> **~$20,000** - had been inflating reported income",
             "Prep **2 weeks to 1 day**, all ten entities - **repeats every filing**",
-            "CPA stopped sending questions - arrives already reconciled"
+            "**CPA stopped sending questions**",
+            "Ask what is in the debtor line - **composition by property in seconds**, not a trip back through invoices"
           ]
         }
       },
       "calc_sheet": {
-        "speed": "Two weeks of manual cross-referencing (about 10 working days) down to 1 = roughly 90%.",
-        "duplicates": "More than a dozen payments at $1-2K each, roughly $20,000 in total.",
-        "scale": "Rolled across 10 entities, so the saving repeats every filing.",
-        "the_tool": "SQL and SQLite, self-taught. Power Query and VBA belong to S27, the rent roll. An earlier version of the bank had these the wrong way round.",
-        "the_validation": "Tie-out per entity: SUM of revenue by entity in SQLite against the QuickBooks total for the same period. Ten comparisons, not one - a portfolio total can tie while two entities are wrong in opposite directions. Plus an unmatched-payments check, which is the natural failure mode of a name-mapping design: a payment whose name resolves to nothing drops out silently and the total just comes in low."
+        "the_problem": "The P&L and balance sheet carried totals with no composition behind them. Debtors and insurance were the worst, because one policy or one debtor spans several properties - so a single invoice belongs to several properties at once and the books only recorded the total.",
+        "the_work": "Tagging every invoice line to the property it belonged to. An insurance policy covering four properties becomes four tagged lines. That detail lives in the database, so a balance can be broken down by query rather than reconstructed from paper.",
+        "the_approach": "One property first, then the other nine. Proving it on one is the de-risking beat - the cost of being wrong is one property's tagging, not ten.",
+        "the_validation": "Per line: sum the tagged detail and compare it back to the balance in the books. Not tying means something is untagged, and the gap sizes what is missing.",
+        "speed": "Two weeks of manual work down to one day, and it repeats every filing.",
+        "the_tool": "SQL and SQLite, self-taught. Power Query and VBA belong to S27, the rent roll. Excel and VBA belong to S43, the close tool.",
+        "RETIRED": "An earlier version framed this as consolidating RENTAL INCOME across four payment sources, with tenant name matching (John Smith / J. Smith), duplicate detection on amount+date+tenant, and a finding of 'more than a dozen duplicate payments, about $20,000'. That framing was wrong and all of it is retired. NEVER say the $20,000 or the duplicate payments in this story - the story is line composition, not duplicate income."
       },
       "pocket_answers": {
-        "How many duplicates exactly?": "More than a dozen, roughly $20,000 in all. I'd have to pull the file for the exact count.",
-        "How did you know they were duplicates and not two legitimate payments?": "Same tenant, same amount, same month, in two different systems - somebody paid on the platform and also mailed a check that got logged separately. A real second payment would be a different month or a different amount.",
-        "What if you'd removed a legitimate payment?": "That's why the macro flagged rather than deleted, and why I validated the whole thing against QuickBooks before it went to the CPA.",
-        "Were you running other things at the same time?": "Yes - this was built around month-end close and the ongoing reporting, not instead of it. The reason it took two weeks by hand was that it competed with everything else; the reason automating it mattered was that it stopped competing.",
-        "How did you keep the CPA informed while you built it?": "I gave them the entities that reconciled first rather than holding everything back until all ten were done, so they could start work while I finished. The duplicates I flagged as I found them rather than in one batch at the end.",
-        "How much of the macro was yours?": "The logic was mine. I knew it had to match on tenant, amount and date together, and I knew why — matching on only two would flag a genuine repeat payment as a duplicate. What I used the assistant for was turning that into working code faster than I would have on my own. Then I validated the output against QuickBooks, which is the real test.",
-        "How did you learn SQL?": "YouTube for the fundamentals, and an AI assistant when I hit something I could not work out. I used it to understand why a query was wrong rather than to hand me one — if you paste in an answer you cannot debug it later, and I was going to own this. Then I built the real thing with our actual data, which is where you find out what you actually understand.",
-        "Why a database rather than Excel?": "Ten entities and four sources. In Excel that is a workbook of maintained links, and every month somebody has to not break it. In a database the structure holds and I ask it a question instead. The first build was slower; every month after that was faster.",
-        "How did you know the consolidated number was right?": "I tied it out per entity rather than in total. I summed revenue by entity in the database and compared each one to QuickBooks for the same period. Doing it entity by entity matters — a portfolio total can look right while two entities are wrong in opposite directions and cancel each other out.",
-        "What if the name mapping merged two real people?": "That is the risk with name matching, so I checked the other direction too — I pulled every payment that had not resolved to a tenant at all. Those are the dangerous ones, because they do not error, they just quietly drop out and the total comes in low. And I read the flagged duplicates before deleting any, since deleting real income is the expensive mistake."
+        "Why were those two lines so hard?": "Because one insurance policy covers several properties, and a debtor can too. The invoice arrives as one number for the whole policy, and the books recorded it as one number. So when someone asked what was in it, there was nothing to look at except the original invoice.",
+        "Why start with one property?": "Because if the approach was wrong I wanted to find out after one property, not after ten. Tagging is slow work. Doing all of it and then discovering the structure did not answer the question would have been the expensive version of that mistake.",
+        "How did you know the detail was complete?": "I tied it out per line. For each one I summed the tagged detail and compared it back to the balance in the books. If it did not tie, something was untagged — and the size of the gap told me how much I still had to find. A line only counted as done when the detail summed to the balance.",
+        "Why a database rather than a spreadsheet?": "Because the question is always 'what is in this number', and that is a query. In Excel it means links across ten entities and a rebuild every time somebody asks something slightly different. In the database the detail sits underneath the total permanently.",
+        "What did you actually learn in SQL?": "Enough to structure the tables properly and to write the queries that break a balance down and tie it back. YouTube for the basics and an AI assistant when I got stuck on a specific problem — but the structure had to be mine, because it depends on how the business actually works.",
+        "Was this worth two weeks of your time?": "It was two weeks a year before, every filing. It is one day now, and that repeats. And the part that mattered more than the time was that a question from the CPA stopped being a research project."
       },
       "primary_lps": [
         "Deliver Results"
@@ -2505,7 +2497,7 @@
         "id": "S7",
         "title": "Packwood Consolidation",
         "status": "retired 2026-09-03",
-        "why_retired": "Superseded by S19. Both reconcile multiple rent sources and both recover money missed by manual entry; S19 does it across ten entities with a database and a $20K recovery, S7 across four sources at one property with $10K. Carried no primary LP. Its one unique routing (Invent and Simplify q4, driving new thinking in a team) was thin - it is a build-alone story, not a team-influence one.",
+        "why_retired": "Retired for load, not because S19 covers it. S19 has since been rewritten - it is about the composition of P&L and balance sheet lines, not about reconciling rent across payment sources - so S7's four-source rent matching is no longer duplicated by anything in the live bank. If a Customer Obsession or Dive Deep gap ever opens up, this is the first story to reconsider.",
         "archived_story": {
           "id": "S7",
           "title": "Packwood Consolidation",
@@ -3015,7 +3007,7 @@
             "S7",
             "S29"
           ],
-          "detail": "S41 cross-checks main-meter bills against individual tenant meters. S19 reconciles four payment sources and validates against QuickBooks. S7 does the same across four sources. S29 checks an invoice against the ledger AND the site photographs - three sources on one line. Every one of these is literally 'cross-check against multiple sources to ensure accuracy'. Use their language back."
+          "detail": "S41 cross-checks main-meter bills against individual tenant meters. S19 ties the tagged invoice detail behind each line back to the balance in the books, per line. S7 does the same across four sources. S29 checks an invoice against the ledger AND the site photographs - three sources on one line. Every one of these is literally 'cross-check against multiple sources to ensure accuracy'. Use their language back."
         },
         "3. Extract, validate and synthesize data into reports and models enabling leadership decisions": {
           "strength": "STRONG",
@@ -3203,7 +3195,7 @@
         "Meets deadlines with well-executed, high-quality work": "COVERED - the CPA filed from your P&L without back-and-forth.",
         "Focuses on delivering the most important things": "PARTIAL on S19. S28 carries it - the prioritisation pocket answer.",
         "Delivers multiple projects at the same time": "GAP on S19. This is the biggest hole in Deliver Results. S28 (close, CPA deadline, competing year-end asks) is the only story that touches it - pair them.",
-        "Overcomes and persists through obstacles": "COVERED, strongly - four sources, mismatched exports, the John Smith / J. Smith problem.",
+        "Overcomes and persists through obstacles": "COVERED, strongly - S19's invoice-by-invoice tagging where one policy spans several properties, and S30's eighteen months of inconsistent coding found on day eight.",
         "Communicates regularly about project status": "GAP. Neither story says you kept anyone posted while the work ran. S30 does (day eight, day eleven) - borrow that habit when answering."
       }
     },
