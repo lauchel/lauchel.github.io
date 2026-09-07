@@ -234,7 +234,8 @@
         "FOR THE OPS FINANCE LOOP this is the lead story - it answers four of the six listed responsibilities. Lead with 'consolidated P&L across all ten entities', not with Packwood.",
         "The story is a P&L consolidation where REVENUE was the blocker - expenses were already clean in QuickBooks. Say that in the opening or the whole thing sounds like a rent-roll exercise rather than a close deliverable.",
         "THIS IS THE SQL STORY. Self-taught SQL, SQLite, the P&L consolidation. Power Query and VBA are S27's rent roll. Do not mix them up - an earlier version of the bank had them swapped.",
-        "Because the self-taught SQL sits here now, this is also a Learn and Be Curious option - but S27 remains the lead for that principle, on the noticing rather than the learning."
+        "Because the self-taught SQL sits here now, this is also a Learn and Be Curious option - but S27 remains the lead for that principle, on the noticing rather than the learning.",
+        "THE VALIDATION IS PER ENTITY, NOT IN TOTAL. That distinction is the whole answer to 'how did you know it was right' - a portfolio total can tie while two entities are wrong in opposite directions. Say 'entity by entity' out loud."
       ],
       "open_questions": [],
       "spoken_star": {
@@ -242,16 +243,15 @@
         "also": [
           "Invent and Simplify"
         ],
-        "s": "Our CPA needed one consolidated P&L across all ten entities for the tax filing. The expense side was straightforward — it was already in QuickBooks. Revenue was the problem. Rent came from four sources: two booking platforms, payments sent by text message, and checks in the mail. Each was tracked separately, and nobody had ever combined them.",
-        "t": "When I tried, the numbers did not agree, and the CPA kept finding income that looked counted twice. By hand it took two weeks. I needed to give them something clean they could file, and I wanted it repeatable, not two weeks of work every year.",
-        "a": "Doing it in Excel meant maintaining links across ten entities and four sources — the same problem with more steps and more ways to break.\n\nSo I taught myself SQL in my own time. YouTube for the basics, and an AI assistant to work through problems when I got stuck. I built a SQLite database and loaded all four sources, for all ten entities, into it.\n\nThe hardest part was tenant names. The same person might be \"John Smith\" in one system and \"J. Smith\" in the check log, so one person could appear as two, or two payments could collapse into one. I built a lookup that maps every name variation back to one master tenant ID.\n\nThen duplicate detection — matching on amount, date and tenant ID together. It has to be all three, because if you only check two, a tenant who genuinely pays the same amount two months in a row looks like a duplicate and you would delete real income.\n\nThen I validated the whole result against QuickBooks before sending anything to the CPA.",
+        "s": "Our CPA needed one consolidated P&L across all ten entities for the tax filing. Expenses were straightforward — already in QuickBooks. Revenue was the problem: rent came from four sources — two booking platforms, payments by text, and checks in the mail — each tracked separately, never combined.",
+        "t": "When I tried, the numbers did not agree, and the CPA kept finding income that looked counted twice. By hand it took two weeks. I needed something clean they could file, and repeatable — not two weeks every year.",
+        "a": "Doing it in Excel meant maintaining links across ten entities and four sources — the same problem with more steps and more ways to break.\n\nSo I taught myself SQL in my own time. YouTube for the basics, and an AI assistant to work through problems when I got stuck. I built a SQLite database and loaded all four sources, for all ten entities, into it.\n\nThe hardest part was tenant names. The same person might be \"John Smith\" in one system and \"J. Smith\" in the check log, so one person could appear as two, or two payments could collapse into one. I built a lookup that maps every name variation back to one master tenant ID.\n\nThen duplicate detection — matching on amount, date and tenant ID together. It has to be all three, because if you only check two, a tenant who genuinely pays the same amount two months in a row looks like a duplicate and you would delete real income.\n\nThen I checked it before anything went to the CPA. I summed revenue by entity in the database and compared each one against QuickBooks for the same period. If an entity did not tie, the size of the gap told me which source to look at. And I pulled every payment that had not matched to a tenant — with name matching, those are the ones that disappear quietly.",
         "r": "It found more than a dozen duplicate payments — tenants who paid on a platform and also had a check recorded for the same month. About $20,000 in total, which had been in our reported income, making it too high.\n\nAnd the preparation went from two weeks to one day, across all ten entities. That saving repeats every filing. The CPA stopped sending questions, because the consolidation now arrives already reconciled.",
         "bullets": {
           "s": [
             "CPA needed one consolidated P&L - **10 entities** - tax filing",
             "Expenses fine (QuickBooks). **Revenue was the problem.**",
-            "**4 revenue sources**: 2 booking platforms, text payments, mailed checks",
-            "> Tracked separately, never combined"
+            "**4 sources**: 2 booking platforms, text payments, mailed checks - never combined"
           ],
           "t": [
             "Numbers did not agree - CPA kept finding **income counted twice**",
@@ -267,7 +267,10 @@
             "> Lookup maps every variation to **one master tenant ID**",
             "# Duplicate detection on **amount + date + tenant ID together**",
             "> All three. On two, a tenant paying the same amount twice looks like a duplicate - you delete real income.",
-            "# Validated against **QuickBooks** before anything went to the CPA"
+            "# **Validation - three checks:**",
+            "> **Summed revenue by entity**, compared each against QuickBooks for the same period",
+            "> If an entity did not tie, **the size of the gap said which source to look at**",
+            "> Pulled every **payment that matched no tenant** - with name matching those disappear quietly"
           ],
           "r": [
             "**More than a dozen duplicates** - platform payment plus a check logged the same month",
@@ -281,7 +284,8 @@
         "speed": "Two weeks of manual cross-referencing (about 10 working days) down to 1 = roughly 90%.",
         "duplicates": "More than a dozen payments at $1-2K each, roughly $20,000 in total.",
         "scale": "Rolled across 10 entities, so the saving repeats every filing.",
-        "the_tool": "SQL and SQLite, self-taught. Power Query and VBA belong to S27, the rent roll. An earlier version of the bank had these the wrong way round."
+        "the_tool": "SQL and SQLite, self-taught. Power Query and VBA belong to S27, the rent roll. An earlier version of the bank had these the wrong way round.",
+        "the_validation": "Tie-out per entity: SUM of revenue by entity in SQLite against the QuickBooks total for the same period. Ten comparisons, not one - a portfolio total can tie while two entities are wrong in opposite directions. Plus an unmatched-payments check, which is the natural failure mode of a name-mapping design: a payment whose name resolves to nothing drops out silently and the total just comes in low."
       },
       "pocket_answers": {
         "How many duplicates exactly?": "More than a dozen, roughly $20,000 in all. I'd have to pull the file for the exact count.",
@@ -291,7 +295,9 @@
         "How did you keep the CPA informed while you built it?": "I gave them the entities that reconciled first rather than holding everything back until all ten were done, so they could start work while I finished. The duplicates I flagged as I found them rather than in one batch at the end.",
         "How much of the macro was yours?": "The logic was mine. I knew it had to match on tenant, amount and date together, and I knew why — matching on only two would flag a genuine repeat payment as a duplicate. What I used the assistant for was turning that into working code faster than I would have on my own. Then I validated the output against QuickBooks, which is the real test.",
         "How did you learn SQL?": "YouTube for the fundamentals, and an AI assistant when I hit something I could not work out. I used it to understand why a query was wrong rather than to hand me one — if you paste in an answer you cannot debug it later, and I was going to own this. Then I built the real thing with our actual data, which is where you find out what you actually understand.",
-        "Why a database rather than Excel?": "Ten entities and four sources. In Excel that is a workbook of maintained links, and every month somebody has to not break it. In a database the structure holds and I ask it a question instead. The first build was slower; every month after that was faster."
+        "Why a database rather than Excel?": "Ten entities and four sources. In Excel that is a workbook of maintained links, and every month somebody has to not break it. In a database the structure holds and I ask it a question instead. The first build was slower; every month after that was faster.",
+        "How did you know the consolidated number was right?": "I tied it out per entity rather than in total. I summed revenue by entity in the database and compared each one to QuickBooks for the same period. Doing it entity by entity matters — a portfolio total can look right while two entities are wrong in opposite directions and cancel each other out.",
+        "What if the name mapping merged two real people?": "That is the risk with name matching, so I checked the other direction too — I pulled every payment that had not resolved to a tenant at all. Those are the dangerous ones, because they do not error, they just quietly drop out and the total comes in low. And I read the flagged duplicates before deleting any, since deleting real income is the expensive mistake."
       },
       "primary_lps": [
         "Deliver Results"
@@ -424,6 +430,7 @@
         "Catch delinquencies earlier across full portfolio."
       ],
       "delivery_notes": [
+        "THE STORY IS THE MEASURES, NOT THE CONSOLIDATION. Power Query and the macro are one sentence of plumbing - say 'that was the plumbing, what mattered was what went on top'. Then spend the time on the five measures and WHY each one, because choosing what to measure is the finance judgement and the consolidation is just file handling.",
         "The Result deliberately closes by echoing the Situation - 'instead of whenever a person happens to open the right file' calls back to the tenant you found by accident. That lands harder than a specific example would, and it needs no figure you'd have to defend. If they ask for a concrete catch, give one if you have it; if not, 'I'd have to pull the numbers' is fine.",
         "Result carries a business-impact figure - do not drop it when compressing for time. It is the only part of the answer that shows the work mattered to the business rather than just to you.",
         "USE THIS TO ESTABLISH SCALE - 10 properties, 700 tenants is the largest number in the bank. If it comes early in the loop it frames everything after it.",
@@ -446,9 +453,9 @@
           "Dive Deep"
         ],
         "s": "We had ten properties and about seven hundred tenants, and every property's rent roll was in its own spreadsheet — one file for each property, updated by whoever was closest to it. That works with two or three properties. With ten, nothing connects.",
-        "t": "What changed it was an accident. I opened one of those files for something unrelated and found a tenant several months behind on rent that nobody had noticed. The only way to find it was for a person to open that file and look. If I found one by accident, how many were in the other nine files?",
-        "a": "There was no portfolio-level view of anything, and keeping ten linked files in Excel is the same problem with more steps.\n\nSo I used Power Query to pull all ten rent rolls into one table, and wrote a macro for the parts that change every month, so refreshing it is one click instead of a rebuild.\n\nNow the whole portfolio sits in one place. I can filter it in seconds — who owes more than $5,000, who is more than five months behind, what we collected this month compared to last.\n\nThen I built a monthly report on top of it with five measures: collection rate, vacancy by property, how the unpaid balances are ageing, revenue per occupied unit, and cost per unit. Those five because a change in any of them shows up before it reaches the P&L.\n\nI also set standing thresholds, so anyone who passes $5,000 owed or five months late appears automatically, instead of waiting for someone to ask the right question.",
-        "r": "What used to take half an hour of opening files one at a time now takes less than a minute.\n\nBut the real change is that leadership never had a view across all seven hundred tenants. It did not exist. Now they receive one every month. And the original problem is solved — the tenant I found by accident was the last one we would find that way.",
+        "t": "What changed it was an accident. I opened one of those files for something unrelated and found a tenant several months behind on rent that nobody had noticed. If I found one by accident, how many were in the other nine? And there was no way to answer that — nobody could see the portfolio at all.",
+        "a": "Ten linked files in Excel is the same problem with more steps. So I used Power Query to pull all ten rent rolls into one table, and wrote a macro for the parts that change every month, so refreshing it is one click.\n\nThat was the plumbing. What mattered was what went on top of it.\n\nI built a monthly report with five measures. Collection rate — what we billed against what we actually collected. Vacancy by property, so an empty unit shows up as a property problem rather than disappearing into a portfolio average. Ageing of the unpaid balances at thirty, sixty and ninety days, because a tenant one month behind and a tenant five months behind are different problems and need different actions. Revenue per occupied unit, and cost per unit — the two halves of whether a property is actually working.\n\nI chose those five because each one moves before it reaches the P&L. By the time a collection problem shows up in the monthly numbers, it is already months old.\n\nAnd I set standing thresholds on top — anyone past $5,000 owed or more than five months behind appears automatically, so it does not depend on somebody thinking to ask.",
+        "r": "Leadership had never had a view across all seven hundred tenants. It did not exist. Now they get one every month, and the thresholds mean the problems come to them instead of waiting to be asked for.\n\nThe refresh takes under a minute, where it used to be half an hour of opening files one at a time. And the original problem is solved — the tenant I found by accident was the last one we would find that way.",
         "bullets": {
           "s": [
             "**10 properties, ~700 tenants**",
@@ -458,22 +465,26 @@
           "t": [
             "**Found it by accident** - opened one file for something else",
             "Tenant **months behind on rent**, nobody had noticed",
-            "Only way to find it: a person opens that file and looks",
-            "\"If I found one by accident, how many were in the other nine files?\""
+            "\"If I found one by accident, how many were in the other nine?\"",
+            "**And there was no way to answer that** - nobody could see the portfolio at all"
           ],
           "a": [
-            "No portfolio view - ten linked Excel files is the same problem with more steps",
-            "# **Power Query** - all ten rent rolls into one table",
-            "# **Macro** for the monthly changes - refresh is one click",
-            "# Filter the portfolio in seconds",
-            "> Owes **over $5,000** - **over 5 months** behind - this month vs last",
-            "# Monthly report on top - **5 measures**: collection rate, vacancy, ageing balances, revenue per occupied unit, cost per unit",
-            "> Chosen because they move **before it reaches the P&L**",
-            "# **Standing thresholds** - $5,000 owed or 5 months late surfaces automatically"
+            "# **Power Query** - all ten rent rolls into one table. **Macro** for the monthly refresh, one click.",
+            "That was the plumbing. **What mattered was what went on top.**",
+            "# **Monthly report - five measures:**",
+            "> **Collection rate** - what we billed vs what we actually collected",
+            "> **Vacancy by property** - so an empty unit is a property problem, not a portfolio average",
+            "> **Ageing at 30/60/90** - one month behind and five months behind need different actions",
+            "> **Revenue per occupied unit** + **cost per unit** - the two halves of whether a property works",
+            "\"I chose those five because each one moves before it reaches the P&L.\"",
+            "> By the time a collection problem shows in the monthly numbers, it is **already months old**",
+            "# **Standing thresholds** - past **$5,000** owed or **5 months** behind appears automatically",
+            "> Does not depend on somebody thinking to ask"
           ],
           "r": [
-            "**30 minutes to under a minute**",
             "Leadership **never had a view across 700 tenants** - it did not exist. Now monthly.",
+            "Thresholds mean **the problems come to them**, not the other way round",
+            "Refresh **30 minutes to under a minute**",
             "\"The tenant I found by accident was the last one we would find that way.\""
           ]
         }
@@ -483,7 +494,8 @@
         "speed": "Half an hour of opening files one at a time, down to a query in under a minute.",
         "kpis": "Five tracked monthly: collection rate, vacancy by property, aging at 30/60/90, revenue per occupied unit, expense per unit.",
         "thresholds": "Standing queries flag anyone owing more than $5,000 or more than five months behind.",
-        "the_tool": "Power Query to combine the ten rent rolls, plus a VBA macro for the monthly refresh. NOT SQL - the SQL and the SQLite database belong to S19, the P&L consolidation. An earlier version of the bank had these swapped."
+        "the_tool": "Power Query to combine the ten rent rolls, plus a VBA macro for the monthly refresh. NOT SQL - the SQL and the SQLite database belong to S19, the P&L consolidation. An earlier version of the bank had these swapped.",
+        "why_these_five": "Each is a leading indicator - it moves before the P&L does. Collection rate turns first; ageing separates a one-month problem from a five-month one; vacancy by property stops an empty unit hiding in an average; revenue and cost per unit are the two halves of whether a property works. That reasoning is the point of the story, not the consolidation."
       },
       "pocket_answers": {
         "Why SQL? Seven hundred rows fits in Excel.": "It's not the row count, it's the joins and the repeatability. The data lived in ten separate files with their own layouts, and every month someone rebuilt the same view by hand. In a database it's one query that runs the same way every time.",
@@ -492,7 +504,9 @@
         "How does it stay current?": "Monthly load from the property exports, same as the report cycle.",
         "Why Power Query rather than a database?": "Because the rent rolls were already ten Excel files in a consistent shape, and Power Query is built for exactly that — combine them, clean them, refresh in one click. A database would have been more machinery than the problem needed. Where I did need a database was the P&L consolidation, because that was four different source systems rather than ten copies of the same thing.",
         "Who was the customer here?": "Leadership. They were making decisions about a seven-hundred-tenant portfolio without ever being able to see it whole. Nobody had asked me for a monthly report — there was no report to ask for. What I built was the thing they would have asked for if they had known it was possible.",
-        "How did you know what they needed?": "From what they kept asking for one property at a time. Every question about arrears or collections came to me as a separate request, and I would open the relevant file and answer it. The pattern in those requests is the report — the five measures I track are the five things they had already been asking about individually."
+        "How did you know what they needed?": "From what they kept asking for one property at a time. Every question about arrears or collections came to me as a separate request, and I would open the relevant file and answer it. The pattern in those requests is the report — the five measures I track are the five things they had already been asking about individually.",
+        "Why those five measures?": "Because each one moves before the P&L does. Collection rate turns first — you see it in the month it happens. Ageing tells you whether you have a reminder problem or a real one. Vacancy by property stops an empty unit hiding inside a portfolio average. And revenue and cost per unit are the two halves of whether a property is actually working. By the time any of it reaches the P&L, it is months old.",
+        "Did leadership actually use it?": "Yes, monthly. The part that changed how it got used was the thresholds — anyone past $5,000 owed or five months behind surfaces on their own, so it does not depend on somebody thinking to ask the right question. That is the difference between a report and something people act on."
       }
     },
     {
@@ -1309,7 +1323,7 @@
         ],
         "s": "During monthly close, compiling the general ledger into consolidated property P&L reports took about twelve hours of manual copy-pasting. Every month. I wanted to automate it, but building it properly would have taken about two months, and the next close started in three days.",
         "t": "So the choice was to build it properly and start using it in two months, or put something rough in place before this close and get the twelve hours back now.",
-        "a": "I built the rough version.\n\nI automated the part that took the most time — pulling the raw general ledger transactions and mapping them into standard P&L categories. That is the bulk of the twelve hours, and it is the same work every month.\n\nWhat I deliberately left out was error handling. Building something that handles every edge case properly is most of the two months, and most of those cases come up rarely. So instead of coding for them, I added a colour-coded flag: anything the script cannot map turns red, and someone fixes it by hand in a few seconds.\n\nThat was the trade. The script does the repetitive part, a person handles the exceptions, and nobody waits two months for the difference.\n\nThen I improved it over the next two closes — using what actually broke, rather than what I had guessed might.",
+        "a": "I built the rough version.\n\nIt is a macro in Excel. I export the general ledger for the month, the macro reads it, and for each transaction it looks up the account code against a mapping table — every GL account pointing to a P&L line. Then it groups by property and writes out a P&L for each one. That is the bulk of the twelve hours, and it is identical work every month.\n\nWhat I deliberately left out was error handling. Handling every edge case properly is most of the two months, and most of those cases come up rarely. So instead of coding for them, anything with an account code that is not in the mapping table turns red. Someone looks at it and fixes it by hand in a few seconds.\n\nThat was the trade. The macro does the repetitive part, a person handles the exceptions, and nobody waits two months for the difference.\n\nThen I improved it over the next two closes — using what actually broke, rather than what I had guessed might.",
         "r": "The first run cut close reporting from twelve hours to two. That is ten hours back in the same month, and it went into variance analysis instead of copy-pasting.\n\nAnd refining it afterwards turned out better than building it properly up front would have been, because I was fixing the things that actually came up rather than the ones I had imagined.",
         "bullets": {
           "s": [
@@ -1321,12 +1335,15 @@
           ],
           "a": [
             "**Shipped the rough version**",
-            "# Automated the biggest piece - pulling raw GL, mapping to standard P&L categories",
-            "> Bulk of the 12 hours - identical work every month",
-            "# **Deliberately skipped error handling**",
+            "# **A macro in Excel:**",
+            "> Export the **general ledger** for the month",
+            "> Macro reads each transaction, looks up its **account code against a mapping table** - every GL account to a P&L line",
+            "> **Groups by property**, writes out a P&L for each",
+            "> That is the bulk of the 12 hours - **identical work every month**",
+            "# **Deliberately left out error handling**",
             "> Edge cases are most of the two months - and most come up rarely",
-            "# Instead: **colour-coded flag**. Unmappable turns **red**, fixed by hand in seconds.",
-            "\"The script does the repetitive part, a person handles the exceptions, and nobody waits two months.\"",
+            "> Instead: an account code **not in the mapping table turns red**, fixed by hand in seconds",
+            "\"The macro does the repetitive part, a person handles the exceptions, and nobody waits two months.\"",
             "# Refined over the next two closes - on **what actually broke**, not what I had guessed"
           ],
           "r": [
@@ -1339,17 +1356,20 @@
       "calc_sheet": {
         "the_before": "About 12 hours of manual copy-pasting per close to compile GL data into consolidated property P&L reports.",
         "the_two_options": "Full build about two months. Rough version in three days, before the next close.",
-        "what_was_automated": "The high-volume repetitive part - pulling raw GL transactions and mapping them to standard P&L categories.",
+        "what_was_automated": "The high-volume repetitive part - reading the GL export, mapping each account code to a P&L line, and grouping by property. Not the exceptions.",
         "what_was_left_out": "Error handling. Most of the two months, covering cases that occur rarely. Replaced with a colour-coded flag for unmapped accounts, fixed manually in seconds.",
         "the_saving": "12 hours to 2 on the first run. Ten hours returned, in the same month.",
-        "RETIRED": "An earlier draft claimed 'eliminated 80% of manual data entry errors'. No derivation - not used. The hours carry the result."
+        "RETIRED": "An earlier draft claimed 'eliminated 80% of manual data entry errors'. No derivation - not used. The hours carry the result.",
+        "the_tool": "An Excel macro (VBA). Monthly GL export in, each transaction's account code looked up against a mapping table of GL account to P&L line, grouped by property, one P&L written per property. The red-flag exception path is an account code missing from the mapping table."
       },
       "pocket_answers": {
         "How did you decide what to leave out?": "By volume, not by difficulty. The mapping is the same work on hundreds of lines every month, so automating it returns hours immediately. Error handling is the opposite — it is hard to build and it fires rarely. So I automated the thing that happens constantly and left a person on the thing that happens occasionally.",
         "Wasn't leaving out error handling risky?": "It would have been if errors were silent. That is why the flag exists — anything the script cannot map turns red rather than being guessed at or dropped. The failure mode is visible and it stops at a human. A wrong number that looks right is the dangerous version, and that is what I was avoiding.",
         "Did you ever finish the other 30%?": "Over the next two closes, yes — but not the 30% I would have built up front. Once it was running I could see which cases actually came up, and several of the things I would have coded for never happened. Building it later meant building less of it.",
         "Why not just ask for more time?": "Because the twelve hours was being spent every month regardless. Waiting two months to save it means paying it twice more first. The rough version cost three days and started returning ten hours a month immediately.",
-        "What made this urgent?": "Nothing external — that is the honest answer. The close would have happened either way. What made it worth doing quickly is that the cost was recurring: every month I waited was another twelve hours I would not get back."
+        "What made this urgent?": "Nothing external — that is the honest answer. The close would have happened either way. What made it worth doing quickly is that the cost was recurring: every month I waited was another twelve hours I would not get back.",
+        "How does the mapping actually work?": "There is a table of every GL account against the P&L line it belongs to. The macro reads the month's GL export, looks up each transaction's account code in that table, assigns it a line, then groups by property and writes out a P&L for each. The mapping table is the whole tool really — the rest is reading and grouping.",
+        "What happens to an account the mapping does not know?": "It turns red instead of being guessed at or silently dropped. That was deliberate: I would rather a person spends ten seconds on it than have the macro make an assumption I cannot see. In practice it was usually a new account somebody had opened, and the fix was adding one row to the mapping table."
       },
       "delivery_notes": [
         "BIAS FOR ACTION LEAD. It matches the criterion almost word for word - 'willing to make small progress toward a solution rather than finding the perfect solution right away'. Say the trade out loud: rough version now versus proper version in two months.",
