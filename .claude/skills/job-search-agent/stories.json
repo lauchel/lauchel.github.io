@@ -399,7 +399,8 @@
         "Customer Obsession",
         "Dive Deep",
         "Learn and Be Curious",
-        "Think Big"
+        "Think Big",
+        "Ownership"
       ],
       "situation": [
         "When portfolio was smaller, ownership tracked each property's rent roll individually - worked fine with a few properties.",
@@ -431,7 +432,8 @@
         "THIS IS THE POWER QUERY STORY, not the SQL one. SQL and the SQLite database belong to S19. An earlier version of the bank had them swapped.",
         "LEARN AND BE CURIOUS now rests on the NOTICING, not on learning a tool. 'If I found one by accident, how many were in the other nine files?' is the whole of it, and it was always the stronger half. The self-taught story moved to S19 with the SQL.",
         "ALSO A CUSTOMER OBSESSION ANSWER, with leadership as the customer. Same facts, different half in front: lead on the fact that leadership had never seen the portfolio whole, and that nobody had asked for the report because there was nothing to ask for. 'Instead of waiting for someone to ask the right question' is the line.",
-        "Against Learn and Be Curious, lead on the NOTICING. Against Customer Obsession, lead on the MONTHLY REPORT and the standing thresholds."
+        "Against Learn and Be Curious, lead on the NOTICING. Against Customer Obsession, lead on the MONTHLY REPORT and the standing thresholds.",
+        "ALSO AN OWNERSHIP STORY. Found one tenant behind by accident, asked how many were in the other nine files, and built a portfolio view nobody had asked for - plus standing thresholds so problems surface without anyone asking. Use it if Ownership comes up and S42 is spent."
       ],
       "primary_lps": [
         "Learn and Be Curious",
@@ -609,7 +611,8 @@
       "setting": "Centralized SQLite migration, 18 months of GL data",
       "lps": [
         "Earn Trust",
-        "Insist on the Highest Standards"
+        "Insist on the Highest Standards",
+        "Ownership"
       ],
       "is_failure_story": true,
       "target_questions": [
@@ -647,7 +650,8 @@
         "DO NOT NAME A SPECIFIC ITEM. 'Capital items coded as routine maintenance' carries the whole point on its own. Naming an example you cannot place is the one thing in this story an interviewer could catch you on, and it adds nothing.",
         "PAIR EACH PROBLEM WITH ITS FIX. The weak version of this story lists what was wrong and then jumps to the escalation, which makes you sound like you found problems rather than solved them. Say the fix in the same breath as the problem: mapping key, one chart of accounts, line-by-line from the invoices.",
         "SAY SQL. The point of this story is a database migration, and I dropped the tool out of an earlier tightening pass. 'One SQL database' in the Situation and 'a SQLite database' in the Action - without them it sounds like a spreadsheet cleanup, and the four-day slip is much harder to justify.",
-        "S19 AND S30 ARE BOTH SQL. Keep them straight: S19 is where you TAUGHT YOURSELF SQL (that is its Learn and Be Curious beat), S30 is where you APPLIED it. Do not claim the learning twice, and do not tell both in the same interview slot - a second SQLite database in the same loop invites 'how many of these did you build?' Answer prepared if it comes up."
+        "S19 AND S30 ARE BOTH SQL. Keep them straight: S19 is where you TAUGHT YOURSELF SQL (that is its Learn and Be Curious beat), S30 is where you APPLIED it. Do not claim the learning twice, and do not tell both in the same interview slot - a second SQLite database in the same loop invites 'how many of these did you build?' Answer prepared if it comes up.",
+        "ALSO AN OWNERSHIP STORY. Proposed and built the migration when nobody asked, then refused to load data she knew was bad into the system next year's plan would be built from - long-term value over hitting her own date. That is the Ownership criterion almost word for word. Use it if Ownership comes up and S42 is spent."
       ],
       "pocket_answers": {
         "You knew on day 8 - why wait until day 11 to tell your manager?": "I spent those days scoping the true extent so I could bring a specific ask instead of a vague alarm - I wanted to say 'four days and here's exactly what's wrong', not 'this might slip.' In hindsight I'd have flagged it on day 8 with the estimate to follow, and that's what I do now.",
@@ -1379,6 +1383,8 @@
       "S33"
     ],
     "Ownership": [
+      "S27",
+      "S30",
       "S41",
       "S42"
     ],
@@ -3591,5 +3597,25 @@
     },
     "how_to_rehearse": "Read the full script twice to learn the shape. Then close it and speak only from the cues. A cue is a fact, not a phrase - if it does not produce a sentence, that beat is not learned yet. Go back to the script for that beat only, not the whole story.",
     "timing": "Same as the script: S about 30 seconds, T about 30, A about 60, R about 30. The bullets are shorter to read, not shorter to say - do not race."
+  },
+  "confirmed_lps": {
+    "_comment": "The seven principles the candidate was told will be covered in the loop. Study order and slot planning follow this list; the other nine are bench.",
+    "as_of": "2026-09-10",
+    "list": [
+      "Insist on the Highest Standards",
+      "Dive Deep",
+      "Learn and Be Curious",
+      "Deliver Results",
+      "Ownership",
+      "Bias for Action",
+      "Customer Obsession"
+    ],
+    "not_named": [
+      "Are Right A Lot",
+      "Bias for Action is named; Earn Trust, Frugality, Have Backbone, Invent and Simplify, Think Big and the three manager principles are not"
+    ],
+    "caveat": "A stated list is what they plan to probe, not a contract. Bar raisers roam, and 'tell me about a disagreement' is common enough that S31 and S3 stay on the bench rather than being dropped. But rehearsal time goes to the seven.",
+    "thin_spots": "Ownership and Bias for Action each had a single lead. Ownership is now S42 lead with S41, S30 and S27 behind it. Bias for Action is S43 lead with S28 behind it - two stories, no third.",
+    "collision_risk": "S41 and S42 each carry three of the seven, and both carry Dive Deep AND Ownership. If Dive Deep takes S41 and Deliver Results takes S42 early in the loop, Ownership later has to come from S30 or S27 - which is why they are now tagged for it."
   }
 }
