@@ -6,7 +6,9 @@ description: Evaluate job postings against candidate criteria (visa/comp gates, 
 # Job Search Agent
 
 A Claude Code skill for evaluating job postings, drafting tailored application
-materials, and tracking applications. Reads candidate data from `profile.json`.
+materials, tracking applications, and prepping behavioral interviews. Reads
+candidate data from `profile.json` and the behavioral story bank from
+`stories.json`.
 
 ## Modes
 
@@ -67,13 +69,34 @@ date_added, notes.
 Check for existing rows with the same company+role before adding - update
 status instead of duplicating.
 
+### 5. story-prep
+
+Input: a role/loop to prep for (or a single behavioral question).
+
+Read `stories.json`. It holds 15 locked STAR stories in the candidate's own
+wording, plus `lp_index` (leadership principle -> story IDs), `coverage_gaps`,
+and `usage_rules`.
+
+For a **loop**: infer the likely LP mix from the role (ops/analyst roles lean
+Dive Deep and Invent and Simplify; product/customer-facing roles lean Customer
+Obsession and Think Big), then map stories to LPs via `lp_index`. Flag any LP
+the loop is likely to test that `coverage_gaps` says is thin or empty.
+
+For a **single question**: name the 1-2 best-fit stories and why, then deliver
+the story's own text - `spoken_result` over `result` where one exists.
+
+Always enforce `usage_rules` and surface a story's `open_questions` before
+recommending it. Never present a story as loop-ready while its open questions
+are unresolved - ask the candidate to settle them first.
+
 ## Design principles
 
 - **Human decides, agent analyzes.** Never mark something "applied" unless
   the user confirms they actually applied.
 - **No fabrication.** Every resume bullet must trace back to a real
-  `proof_points` entry. Rephrasing and keyword injection are fine;
-  invented numbers or responsibilities are not.
+  `proof_points` entry, and every interview answer to a real `stories.json`
+  entry. Rephrasing and keyword injection are fine; invented numbers,
+  responsibilities, or outcomes are not.
 - **Visa/comp gates are hard stops**, not soft signals - they're cheaper
   to check first than to score a role that's disqualified anyway.
 - **Ask before guessing.** If a JD is genuinely ambiguous on sponsorship,
